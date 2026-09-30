@@ -5,6 +5,17 @@
 !/audit/phase2_independent_review.md
 !/audit/phase2_publication_review.md
 !/audit/phase2_validation_summary.json
+!/audit/phase3_final_content_review.md
+!/audit/phase3_independent_review.md
+!/audit/phase3_citation_review.md
+!/audit/phase3_citation_inventory.json
+!/audit/phase3_track_discrepancies.md
+!/audit/phase3_traceability.md
+!/audit/phase3_claims_inventory.json
+!/audit/phase3_validation_summary.json
+!/audit/phase3_safety_report.md
+!/audit/phase3_content_changes.md
+!/audit/publication_report.md
 
 /.venv/
 /_site/
@@ -14,4 +25,3 @@
 **/*.pyc
 /.preview/
 /.local/
-

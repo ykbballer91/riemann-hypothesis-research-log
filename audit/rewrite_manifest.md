@@ -65,3 +65,7 @@ scriptsは原本の相対配置を前提とするため、公開treeで直接走
 - phase2_export_summary.jsonはファイル変換の検証であり数学証明の新しいPASSではない。
 
 **STATUS: RIEMANN HYPOTHESIS OPEN**
+
+## Phase 3: finite-head dated update
+
+Fourteen authored Priority 2 sources were added with separate original/export hashes. Markdown TeX spans, Python ASTs and original JSON fields are preserved. Relative links now resolve across archive, artifact and state destinations. The Gautschi section receives an explicit Unicode anchor so its existing section link works in both the static site and GitHub. No source research file or earlier archive snapshot was changed. The private source-preservation manifest was not exported.

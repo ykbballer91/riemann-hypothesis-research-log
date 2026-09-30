@@ -21,6 +21,11 @@ PUBLIC_AUDITS = {
     "rewrite_manifest.md", "phase2_safety_report.md",
     "phase2_independent_review.md", "phase2_publication_review.md",
     "phase2_validation_summary.json",
+    "phase3_final_content_review.md", "phase3_independent_review.md",
+    "phase3_citation_review.md", "phase3_citation_inventory.json", "phase3_track_discrepancies.md",
+    "phase3_traceability.md", "phase3_claims_inventory.json",
+    "phase3_validation_summary.json", "phase3_safety_report.md",
+    "phase3_content_changes.md", "publication_report.md",
 }
 ROOT_FILES = {
     "README.md", "LICENSE-TEXT", "LICENSE-CODE", "CITATION.cff",
@@ -104,6 +109,10 @@ def rewrite_links(body, source, destination, existing):
 
 
 def page(body, title, destination):
+    publication = json.loads((ROOT / "data/publication.json").read_text()) if (ROOT / "data/publication.json").exists() else {}
+    release_label = ("Published " + publication["publication_date"] + " · v0.1.0"
+                     if publication.get("status") == "PUBLIC" and publication.get("publication_date")
+                     else "Publication-review draft · v0.1.0")
     def link(p):
         return quote(os.path.relpath(p, destination.parent), safe="/-_.~")
     nav = [
@@ -122,7 +131,7 @@ def page(body, title, destination):
 </head><body>
 <a class="skip" href="#content">Skip to content</a>
 <header><a class="brand" href="{link('index.html')}">RH <span>Research Log</span></a><nav aria-label="Main navigation">{links}</nav></header>
-<div class="status-band"><strong>STATUS: RIEMANN HYPOTHESIS OPEN</strong><span>Publication-review draft · v0.1.0</span></div>
+<div class="status-band"><strong>STATUS: RIEMANN HYPOTHESIS OPEN</strong><span>{html.escape(release_label)}</span></div>
 <main id="content">{body}</main>
 <footer><span>@ykbballer91 · AI-assisted research</span><a href="{link('docs/methodology.html')}">Evidence &amp; method</a><a href="{link('docs/licensing.html')}">CC BY 4.0 text / MIT code</a></footer>
 </body></html>'''
@@ -165,4 +174,3 @@ if __name__ == "__main__":
     parser.add_argument("--output", type=Path, default=ROOT / "_site")
     args = parser.parse_args()
     build(args.output)
-

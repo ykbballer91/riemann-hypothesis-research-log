@@ -68,3 +68,7 @@ Toolchains and Mathlib are not vendored. To rebuild, first reconstruct the layou
 The result is an ordinary analytic proof of density of the even derivatives in even L². Its internal audit checks the Fourier normalization, exponential moments, moment criterion and direct uniqueness proof. It has no finite-head numerical certificate and no claimed conditioning estimate. Density in L² is not a statement about the Weil form topology or full ground capture.
 
 A new rerun should record the script and dependency versions, exported payload hash, parameters, precision, output and which analytic assumptions were checked. That would be new evidence with a new scope. It should not overwrite a historical claim or turn a scoped check into a global RH assertion.
+
+## Subsequent finite-head update
+
+The [Priority 2 record](tracks/19-finite-even-head-spanning.md) separates written rank arguments, high-precision diagnostics and analytic-plus-Arb certificates. Its raw singular-value/rank certificates apply to two stated parameter intervals. Physical-Gram SVD values use finite theta sums and a finite integration interval and remain diagnostic. The code, original outputs and independent internal audit are linked on the track page. Their original research executions are not represented as new publication-review runs.

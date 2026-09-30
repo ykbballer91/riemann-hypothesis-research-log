@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "scope": "Publication files and local link/build consistency; no external URL crawl or mathematical proof check",
+  "public_files": 439,
+  "source_records": 378,
+  "markdown_local_links_checked": 1459,
+  "site_local_links_checked": 3911,
+  "errors": []
+}

@@ -1,0 +1,64 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "source_path": "research/full_ground_capture/priority2/experiments/diagnostic_validation.json",
+    "source_sha256": "667afe205a6baac6cda5bba95d49198f4c5241dd3972df90e5a44f241d9c0d79",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "historical_snapshot": true,
+    "scope": "Priority 2 only; no growing-m, full-ground or RH claim"
+  },
+  "RH_assumed": false,
+  "diagnostics_not_proof": true,
+  "checks": [
+    {
+      "a": "0.5",
+      "N": 2,
+      "raw_repeat_agreement_relative": "<1e-30; comparisons of 35-digit serialized values",
+      "physical_min_repeat_agreement_relative": "<1e-19",
+      "independent_quadrature_relative": "<1e-95"
+    },
+    {
+      "a": "1.0",
+      "N": 2,
+      "raw_repeat_agreement_relative": "<1e-30; comparisons of 35-digit serialized values",
+      "physical_min_repeat_agreement_relative": "<1e-19",
+      "independent_quadrature_relative": "<1e-95"
+    },
+    {
+      "a": "1.0",
+      "N": 4,
+      "raw_repeat_agreement_relative": "<1e-30; comparisons of 35-digit serialized values",
+      "physical_min_repeat_agreement_relative": "<1e-19",
+      "independent_quadrature_relative": "<1e-95"
+    },
+    {
+      "a": "1.5",
+      "N": 4,
+      "raw_repeat_agreement_relative": "<1e-30; comparisons of 35-digit serialized values",
+      "physical_min_repeat_agreement_relative": "<1e-19",
+      "independent_quadrature_relative": "<1e-95"
+    },
+    {
+      "a": "2.0",
+      "N": 4,
+      "raw_repeat_agreement_relative": "<1e-30; comparisons of 35-digit serialized values",
+      "physical_min_repeat_agreement_relative": "<1e-19",
+      "independent_quadrature_relative": "<1e-95"
+    },
+    {
+      "a": "2.0",
+      "N": 6,
+      "raw_repeat_agreement_relative": "<1e-30; comparisons of 35-digit serialized values",
+      "physical_min_repeat_agreement_relative": "<1e-19",
+      "independent_quadrature_relative": "<1e-95"
+    },
+    {
+      "a": "0.22226061151439122613214092695083205",
+      "N": 1,
+      "raw_repeat_agreement_relative": "<1e-30; comparisons of 35-digit serialized values",
+      "physical_min_repeat_agreement_relative": "<1e-19",
+      "independent_quadrature_relative": "<1e-95"
+    }
+  ]
+}

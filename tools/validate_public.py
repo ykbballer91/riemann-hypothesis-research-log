@@ -80,7 +80,13 @@ def validate(site=False):
     citation = yaml.safe_load((ROOT / "CITATION.cff").read_text())
     if citation.get("authors") != [{"name":"@ykbballer91", "website":"https://github.com/ykbballer91"}]:
         errors.append({"file":"CITATION.cff", "type":"creator_attribution_mismatch"})
-    if citation.get("date-released"):
+    publication_path = ROOT / "data/publication.json"
+    publication = json.loads(publication_path.read_text()) if publication_path.exists() else {}
+    released = citation.get("date-released")
+    if publication.get("status") == "PUBLIC":
+        if not released or str(released) != publication.get("publication_date"):
+            errors.append({"file":"CITATION.cff", "type":"public_release_date_mismatch"})
+    elif released:
         errors.append({"file":"CITATION.cff", "type":"premature_public_release_date"})
     state = json.loads((ROOT / "data/research-state.json").read_text())
     if state.get("rh_status") != "OPEN" or state.get("rh_closed") is not False:

@@ -55,3 +55,5 @@ Cyclicity: **proved in the written argument, with scoped internal AI-agent audit
 - [Dated state record](../../data/source-records/research/full_ground_capture/state.json)
 
 [Research timeline](../timeline.md) · [Reproducibility](../reproducibility.md) · [References](../references.md)
+
+A later, separately scoped [Priority 2 update](19-finite-even-head-spanning.md) addresses fixed finite-head rank and conditioning. It does not change what was established at the time of this cyclicity update.

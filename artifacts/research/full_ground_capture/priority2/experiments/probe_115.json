@@ -1,0 +1,281 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "source_path": "research/full_ground_capture/priority2/experiments/probe_115.json",
+    "source_sha256": "0b8b279869452de4a24831f58be5efc4d0d4776a0c0011013e53073515bcc581",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "historical_snapshot": true,
+    "scope": "Priority 2 only; no growing-m, full-ground or RH claim"
+  },
+  "scope": "PRIORITY 2 ONLY; RH OPEN; floating diagnostics, not rank proof",
+  "mpmath_version": "1.4.1",
+  "decimal_precision": 115,
+  "Gauss_Legendre_nodes": 208,
+  "theta_terms": 16,
+  "global_Gram_integration_interval": [
+    -4,
+    4
+  ],
+  "global_Gram_tail": "omitted only for numerical diagnostics; no theorem uses these quadratures",
+  "records": [
+    {
+      "label": "regular",
+      "a": "0.5",
+      "N": 2,
+      "m": 2,
+      "Xi_grid_values": [
+        "0.49712077818831410991277373968539772",
+        "0.19330776691192234879270879771653864",
+        "0.0049770681991102486361430312971719086"
+      ],
+      "ideal_sigma_min": "0.12421628301892274879344411842014694",
+      "actual_sigma_min": "0.055905643347781751663281398491068233",
+      "actual_raw_condition": "2298.2985254570213776903567901606981",
+      "tail_operator_norm": "22.308846948309291256456495790320964",
+      "tail_relative_to_ideal_min": "179.59680008224707645127112986112232",
+      "tail_times_ideal_inverse_norm": "1.2830868336640942123001897149847316",
+      "actual_global_Gram_singular_values": [
+        "0.99999231679149621681864843506621547",
+        "0.97815586158623362991838373091671182",
+        "0.38454740302299137530523667532827051"
+      ],
+      "actual_support_Gram_singular_values": [
+        "0.99999990532528134485682803604278637",
+        "0.99992739312494899099733502797766426",
+        "0.90730029202994821817152935336726935"
+      ],
+      "largest_global_subspace_angle_radians": "1.1760788526903623312898389474489397",
+      "quadrature_crosscheck_relative": "5.3234855936698459612973602340115027e-115",
+      "diagnostic_full_rank_relative_1e_45": true,
+      "minimal_m_diagnostic": 2,
+      "rank_is_a_proof": false,
+      "projected_subspace_angles_if_full_rank": "all zero by equality with the head; this is not a lift-cost estimate"
+    },
+    {
+      "label": "regular",
+      "a": "1.0",
+      "N": 2,
+      "m": 2,
+      "Xi_grid_values": [
+        "0.49712077818831410991277373968539772",
+        "0.39502045832222886351736161112779803",
+        "0.19330776691192234879270879771653864"
+      ],
+      "ideal_sigma_min": "0.087172533324852002181993359376995512",
+      "actual_sigma_min": "0.087156076961174951678635049791930051",
+      "actual_raw_condition": "871.4392068690951634407665972330586",
+      "tail_operator_norm": "0.013218393912341027706781548854336826",
+      "tail_relative_to_ideal_min": "0.15163484882425228443986264073369839",
+      "tail_times_ideal_inverse_norm": "0.00066029652549925072523207398848647279",
+      "actual_global_Gram_singular_values": [
+        "0.99999856598798665910389214249391754",
+        "0.98941713366470351711492372192636401",
+        "0.29546618661796861489252524533920304"
+      ],
+      "actual_support_Gram_singular_values": [
+        "0.99999856611125042634743835205086312",
+        "0.98941716524486676607930129735041309",
+        "0.29546620665836700022511062541163573"
+      ],
+      "largest_global_subspace_angle_radians": "1.2708528718673130724699884501204989",
+      "quadrature_crosscheck_relative": "5.8136945501626762593054469953276136e-115",
+      "diagnostic_full_rank_relative_1e_45": true,
+      "minimal_m_diagnostic": 2,
+      "rank_is_a_proof": false,
+      "projected_subspace_angles_if_full_rank": "all zero by equality with the head; this is not a lift-cost estimate"
+    },
+    {
+      "label": "regular",
+      "a": "1.0",
+      "N": 4,
+      "m": 4,
+      "Xi_grid_values": [
+        "0.49712077818831410991277373968539772",
+        "0.39502045832222886351736161112779803",
+        "0.19330776691192234879270879771653864",
+        "0.052467057683451632959411379078806065",
+        "0.0049770681991102486361430312971719086"
+      ],
+      "ideal_sigma_min": "0.086958038719816883010010904645668326",
+      "actual_sigma_min": "0.08533023892350761445913218608519328",
+      "actual_raw_condition": "13255347.148493966533388606387743635",
+      "tail_operator_norm": "13213.765128968888937549171220433524",
+      "tail_relative_to_ideal_min": "151955.64807463397443143759609719485",
+      "tail_times_ideal_inverse_norm": "0.12382536087163813727428378560413157",
+      "actual_global_Gram_singular_values": [
+        "0.99999999999815304830604074864118605",
+        "0.99999993875705863477856048406132305",
+        "0.99992461873097966917174884756667181",
+        "0.96136180170790439709087662979548704",
+        "0.29708607107825109062311591074168029"
+      ],
+      "actual_support_Gram_singular_values": [
+        "0.99999999999931247029154225179493112",
+        "0.9999999602100647475554295590955419",
+        "0.99997692438567845315587795651169146",
+        "0.96288620043693661186102964360987658",
+        "0.29746276617295276746754108203866884"
+      ],
+      "largest_global_subspace_angle_radians": "1.2691568392388673992988061413317898",
+      "quadrature_crosscheck_relative": "1.8551832874463002037280703649820609e-114",
+      "diagnostic_full_rank_relative_1e_45": true,
+      "minimal_m_diagnostic": 4,
+      "rank_is_a_proof": false,
+      "projected_subspace_angles_if_full_rank": "all zero by equality with the head; this is not a lift-cost estimate"
+    },
+    {
+      "label": "regular",
+      "a": "1.5",
+      "N": 4,
+      "m": 4,
+      "Xi_grid_values": [
+        "0.49712077818831410991277373968539772",
+        "0.44904424632911742628668463359280691",
+        "0.32945349181628431361811792325596753",
+        "0.19330776691192234879270879771653864",
+        "0.08766300270427746475289655702963194"
+      ],
+      "ideal_sigma_min": "0.067962545060070492795957970315995333",
+      "actual_sigma_min": "0.067962545060064656968383616826583578",
+      "actual_raw_condition": "6543572.8007179931334973902209694644",
+      "tail_operator_norm": "0.000000003007925548316114733632012051987419",
+      "tail_relative_to_ideal_min": "0.00000004425857721569255815592842606388241",
+      "tail_times_ideal_inverse_norm": "3.7066330742111087258247925930637079e-13",
+      "actual_global_Gram_singular_values": [
+        "0.99999999855710825370459042694529958",
+        "0.99997207520278100429336635824645735",
+        "0.97885230701240270220446684266425454",
+        "0.3687807240155561918615905818947294",
+        "0.012369918697531728093437001497920659"
+      ],
+      "actual_support_Gram_singular_values": [
+        "0.99999999855710825370459042694530046",
+        "0.9999720752027810042933663582478559",
+        "0.97885230701240270220446684274761769",
+        "0.36878072401555619186159058197799392",
+        "0.012369918697531728093437001499087554"
+      ],
+      "largest_global_subspace_angle_radians": "1.5584260926120192468546290188859768",
+      "quadrature_crosscheck_relative": "2.958798110659113628073206960166281e-114",
+      "diagnostic_full_rank_relative_1e_45": true,
+      "minimal_m_diagnostic": 4,
+      "rank_is_a_proof": false,
+      "projected_subspace_angles_if_full_rank": "all zero by equality with the head; this is not a lift-cost estimate"
+    },
+    {
+      "label": "regular",
+      "a": "2.0",
+      "N": 4,
+      "m": 4,
+      "Xi_grid_values": [
+        "0.49712077818831410991277373968539772",
+        "0.46951950539681137199862192907093006",
+        "0.39502045832222886351736161112779803",
+        "0.29471639162853384874806520292063686",
+        "0.19330776691192234879270879771653864"
+      ],
+      "ideal_sigma_min": "0.052306197631786359947336722101127911",
+      "actual_sigma_min": "0.052306197631786359947336722101127911",
+      "actual_raw_condition": "1605901.0432907255586396477856839775",
+      "tail_operator_norm": "3.4281277612309013384631749520084308e-52",
+      "tail_relative_to_ideal_min": "6.5539609385554642643840104785498057e-51",
+      "tail_times_ideal_inverse_norm": "4.4926499001961659160260003822123726e-55",
+      "actual_global_Gram_singular_values": [
+        "0.99999840373570218804784126304070885",
+        "0.99517987768114048169465706296045027",
+        "0.63919235461149652973448957846779632",
+        "0.055185050989735238303326221213074157",
+        "0.00082821394220399564718004859139062372"
+      ],
+      "actual_support_Gram_singular_values": [
+        "0.99999840373570218804784126304070885",
+        "0.99517987768114048169465706296045027",
+        "0.63919235461149652973448957846779632",
+        "0.055185050989735238303326221213074157",
+        "0.00082821394220399564718004859139062372"
+      ],
+      "largest_global_subspace_angle_radians": "1.5699681127580086457308936806612059",
+      "quadrature_crosscheck_relative": "8.6389898414148118243497418278268801e-111",
+      "diagnostic_full_rank_relative_1e_45": true,
+      "minimal_m_diagnostic": 4,
+      "rank_is_a_proof": false,
+      "projected_subspace_angles_if_full_rank": "all zero by equality with the head; this is not a lift-cost estimate"
+    },
+    {
+      "label": "regular",
+      "a": "2.0",
+      "N": 6,
+      "m": 6,
+      "Xi_grid_values": [
+        "0.49712077818831410991277373968539772",
+        "0.46951950539681137199862192907093006",
+        "0.39502045832222886351736161112779803",
+        "0.29471639162853384874806520292063686",
+        "0.19330776691192234879270879771653864",
+        "0.10977435958601567187049254125840287",
+        "0.052467057683451632959411379078806065"
+      ],
+      "ideal_sigma_min": "0.051299100975030331906496479312156384",
+      "actual_sigma_min": "0.051299100975030331906496479312156384",
+      "actual_raw_condition": "91262070850.117955990594262382524362",
+      "tail_operator_norm": "4.3665985288666132473088797443321762e-42",
+      "tail_relative_to_ideal_min": "8.5120371427016638553514336443681777e-41",
+      "tail_times_ideal_inverse_norm": "1.196990775079799714461283300681639e-48",
+      "actual_global_Gram_singular_values": [
+        "0.99999999998491432192421594362376046",
+        "0.99999958701306712768874905444786534",
+        "0.9991999674327004016700376700475606",
+        "0.90045984155808507107822227981129834",
+        "0.24706552078447816280319334463614933",
+        "0.011639581342098322814518062970436705",
+        "0.000080984213017819033286774849213623693"
+      ],
+      "actual_support_Gram_singular_values": [
+        "0.99999999998491432192421594362376046",
+        "0.99999958701306712768874905444786534",
+        "0.9991999674327004016700376700475606",
+        "0.90045984155808507107822227981129834",
+        "0.24706552078447816280319334463614933",
+        "0.011639581342098322814518062970436705",
+        "0.000080984213017819033286774849213623693"
+      ],
+      "largest_global_subspace_angle_radians": "1.5707153425817902784768755964664188",
+      "quadrature_crosscheck_relative": "1.7332638733902637856686800945683952e-104",
+      "diagnostic_full_rank_relative_1e_45": true,
+      "minimal_m_diagnostic": 6,
+      "rank_is_a_proof": false,
+      "projected_subspace_angles_if_full_rank": "all zero by equality with the head; this is not a lift-cost estimate"
+    },
+    {
+      "label": "grid_hit_diagnostic_not_exact_numeric_equality",
+      "a": "0.22226061151439122613214092695083205",
+      "N": 1,
+      "m": 1,
+      "Xi_grid_values": [
+        "0.49712077818831410991277373968539772",
+        "3.3439402695571544434169918299193786e-119"
+      ],
+      "ideal_sigma_min": "3.5427622071324423179026223867593345e-117",
+      "actual_sigma_min": "0.034361427326619367510679437804885534",
+      "actual_raw_condition": "58.157428711597811485092234719863674",
+      "tail_operator_norm": "1.995008943763292792816868035029573",
+      "tail_relative_to_ideal_min": "5.631224527987947879520736871523982e+116",
+      "tail_times_ideal_inverse_norm": null,
+      "actual_global_Gram_singular_values": [
+        "0.96971081258973022834178640312988512",
+        "0.2534375839587406511150688363594597"
+      ],
+      "actual_support_Gram_singular_values": [
+        "0.99999988246886827920697403437316918",
+        "0.98097199691671931921922162718278935"
+      ],
+      "largest_global_subspace_angle_radians": "1.3145641139688015101899688328907066",
+      "quadrature_crosscheck_relative": "5.9158860934979440994622390159099486e-115",
+      "diagnostic_full_rank_relative_1e_45": true,
+      "minimal_m_diagnostic": 1,
+      "rank_is_a_proof": false,
+      "projected_subspace_angles_if_full_rank": "all zero by equality with the head; this is not a lift-cost estimate"
+    }
+  ]
+}

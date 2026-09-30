@@ -1,6 +1,8 @@
-# A research log, including the dead ends
+# Riemann Hypothesis Research Log
 
 **STATUS: RIEMANN HYPOTHESIS OPEN**
+
+An adversarial research log of AI-assisted exploration: auxiliary results, failed approaches, counterexamples, numerical diagnostics, literature audits, and an unresolved global comparison.
 
 This record asks how the arithmetic of the Riemann zeta function could force all its nontrivial zeros onto the line $\Re s=1/2$. It follows several formulations of that question and records when a reformulation merely transfers the same unresolved requirement to a new language.
 
@@ -8,7 +10,7 @@ Curated by **[@ykbballer91](https://github.com/ykbballer91)**, with AI assistanc
 
 ## Three ways to read
 
-**For the result and its limits:** start with [current state](current-state.md), then the [dependency roadmap](roadmap.md). The newest unconditional auxiliary result is even-$L^2$ cyclicity of a theta-kernel derivative family. The unresolved problem is quantitative full-ground comparison.
+**For the result and its limits:** start with [current state](current-state.md), then the [dependency roadmap](roadmap.md). The latest auxiliary results concern even-$L^2$ cyclicity and exact spanning of fixed finite even Fourier heads. Uniform estimates for changing heads and full-ground comparison remain unresolved.
 
 **For the reasoning across attempts:** read the [timeline](timeline.md). Each track explains its starting idea, what was tested, what survived, what failed, and the reason for the next question. Tracks that ran independently are not presented as a single chronological proof.
 
@@ -28,7 +30,9 @@ An internal AI audit is not external peer review. A successful script run is not
 
 ## Latest update
 
-The [cyclicity update](tracks/18-even-l2-cyclicity.md) proves that $\{k,k'',k^{(4)},\ldots\}$ spans a dense subspace of even $L^2(\mathbb R)$ without using RH. It does not supply the conditioning, joint-limit estimates, or form-domain control needed for full ground capture.
+The [cyclicity update](tracks/18-even-l2-cyclicity.md) establishes that $\{k,k'',k^{(4)},\ldots\}$ spans a dense subspace of even $L^2(\mathbb R)$ without using RH. It does not supply the conditioning, joint-limit estimates, or form-domain control needed for full ground capture.
 
-[Publication review](../audit/phase2_publication_review.md) · [Methodology](methodology.md) · [Licensing](licensing.md)
+The subsequent [finite-head update](tracks/19-finite-even-head-spanning.md) gives a rank theorem, explicit tail criteria, and two finite interval certificates. Exact representation in a fixed projected space does not control a moving ground or its Weil energy.
+
+[Phase 3 publication review](../audit/phase3_final_content_review.md) · [Methodology](methodology.md) · [Licensing](licensing.md)
 

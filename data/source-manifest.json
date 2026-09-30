@@ -2,7 +2,7 @@
   "schema_version": "public-source-export-v1",
   "status": "RIEMANN HYPOTHESIS OPEN",
   "exported_on": "2026-09-30",
-  "phase": "PHASE_2_LOCAL_EXPORT_NO_GITHUB_WRITE",
+  "phase": "PHASE_3_REVIEW_EXPORT",
   "source_commit": "c4b6fc587ebb6ad2cec37b9a24c38a3a7e823423",
   "public_credit": "@ykbballer91",
   "licenses": {
@@ -13,12 +13,12 @@
   "source_root_policy": "All source_path values are relative provenance identifiers. No machine paths are published.",
   "selected_phase1_sources": 359,
   "priority1_cyclicity_additions": 5,
-  "total_source_files": 364,
+  "total_source_files": 378,
   "source_modified": false,
   "old_phase1_audits_modified": false,
   "publication_github_write": false,
   "historical_results_rerun": false,
-  "latest_mathematical_scope": "Even L2 cyclicity is proved; no form-core, growing-order, full-ground capture, ES, G* or RH proof.",
+  "latest_mathematical_scope": "Fixed-head finite-prefix spanning and explicit interval certificates; no uniform growing-m, full-ground capture, ES, G* or RH proof.",
   "schema_exceptions": [
     "artifacts/research/rate_history/experiments/prime_event_results.json",
     "artifacts/research/rate_history/experiments/prolate_trials.json",
@@ -14658,7 +14658,417 @@
       "rewrite_reason": "Add historical provenance and map links into the curated layout; preserve mathematical claims and saved results.",
       "content_semantics_changed": "NO",
       "semantics_definition": "Mathematical statements, logical status, chronology and recorded check outcomes; added metadata/presentation and path redactions are recorded separately."
+    },
+    {
+      "source_path": "research/full_ground_capture/priority2/experiments/certify_tail_criterion.py",
+      "public_path": "artifacts/research/full_ground_capture/priority2/experiments/certify_tail_criterion.py",
+      "source_sha256": "fee1b9b6f7fae6598c2e567e876ad792d70a8ab2277eb05098a31ef823a75c3e",
+      "export_sha256": "a88b0072e890c660746bd74da633e2844d63cc748649198464f484406959f8dd",
+      "source_bytes": 3307,
+      "export_bytes": 3587,
+      "roles": [
+        "priority2_finite_even_head"
+      ],
+      "track_ids": [
+        "19"
+      ],
+      "public_credit": "@ykbballer91",
+      "license": "MIT",
+      "historical_snapshot": true,
+      "checks_rerun": false,
+      "rewrites": {
+        "comment_header_added_ast_unchanged": 1
+      },
+      "references": {}
+    },
+    {
+      "source_path": "research/full_ground_capture/priority2/experiments/diagnostic_validation.json",
+      "public_path": "artifacts/research/full_ground_capture/priority2/experiments/diagnostic_validation.json",
+      "source_sha256": "667afe205a6baac6cda5bba95d49198f4c5241dd3972df90e5a44f241d9c0d79",
+      "export_sha256": "21bdecb209d9bf1d8df039d8e3ec9cb8af2da09459376cb2733a76ccbea97052",
+      "source_bytes": 1826,
+      "export_bytes": 2251,
+      "roles": [
+        "priority2_finite_even_head"
+      ],
+      "track_ids": [
+        "19"
+      ],
+      "public_credit": "@ykbballer91",
+      "license": "CC-BY-4.0",
+      "historical_snapshot": true,
+      "checks_rerun": false,
+      "rewrites": {
+        "additive_json_provenance_metadata": 1
+      },
+      "references": {}
+    },
+    {
+      "source_path": "research/full_ground_capture/priority2/experiments/finite_head_probe.py",
+      "public_path": "artifacts/research/full_ground_capture/priority2/experiments/finite_head_probe.py",
+      "source_sha256": "3a958083eea64a993cb3c23188b32c23bacd03536de3f6469b34b49a0c49251c",
+      "export_sha256": "06d359e7ff48fa7decc701179e869a321ca7a72ca5d0180a93808a1491ce5cf9",
+      "source_bytes": 6001,
+      "export_bytes": 6276,
+      "roles": [
+        "priority2_finite_even_head"
+      ],
+      "track_ids": [
+        "19"
+      ],
+      "public_credit": "@ykbballer91",
+      "license": "MIT",
+      "historical_snapshot": true,
+      "checks_rerun": false,
+      "rewrites": {
+        "comment_header_added_ast_unchanged": 1
+      },
+      "references": {}
+    },
+    {
+      "source_path": "research/full_ground_capture/priority2/experiments/probe_115.json",
+      "public_path": "artifacts/research/full_ground_capture/priority2/experiments/probe_115.json",
+      "source_sha256": "0b8b279869452de4a24831f58be5efc4d0d4776a0c0011013e53073515bcc581",
+      "export_sha256": "f53f58581e85c28f241acec3d85e6ab29010ff029410bcfea7ed464df1378e4d",
+      "source_bytes": 12332,
+      "export_bytes": 12745,
+      "roles": [
+        "priority2_finite_even_head"
+      ],
+      "track_ids": [
+        "19"
+      ],
+      "public_credit": "@ykbballer91",
+      "license": "CC-BY-4.0",
+      "historical_snapshot": true,
+      "checks_rerun": false,
+      "rewrites": {
+        "additive_json_provenance_metadata": 1
+      },
+      "references": {}
+    },
+    {
+      "source_path": "research/full_ground_capture/priority2/experiments/probe_85.json",
+      "public_path": "artifacts/research/full_ground_capture/priority2/experiments/probe_85.json",
+      "source_sha256": "8b19c1b6b00f12df574296e5656acc2925b26562291bdc7f5037e072a7485f17",
+      "export_sha256": "ab815f6e7a6e146a4039b350c33b89cd887306bfb16509dc5e0e285f6a05d750",
+      "source_bytes": 12324,
+      "export_bytes": 12736,
+      "roles": [
+        "priority2_finite_even_head"
+      ],
+      "track_ids": [
+        "19"
+      ],
+      "public_credit": "@ykbballer91",
+      "license": "CC-BY-4.0",
+      "historical_snapshot": true,
+      "checks_rerun": false,
+      "rewrites": {
+        "additive_json_provenance_metadata": 1
+      },
+      "references": {}
+    },
+    {
+      "source_path": "research/full_ground_capture/priority2/experiments/tail_certificates.json",
+      "public_path": "artifacts/research/full_ground_capture/priority2/experiments/tail_certificates.json",
+      "source_sha256": "afd934e9e37d121c92920410e4ee763ac373284b0bee1b735f84461bfa43dcc6",
+      "export_sha256": "1ebeb3171444196b13a5ee1eafb51fc5a31c95ace8ab4ed370fbd43f9d93f514",
+      "source_bytes": 13893,
+      "export_bytes": 14314,
+      "roles": [
+        "priority2_finite_even_head"
+      ],
+      "track_ids": [
+        "19"
+      ],
+      "public_credit": "@ykbballer91",
+      "license": "CC-BY-4.0",
+      "historical_snapshot": true,
+      "checks_rerun": false,
+      "rewrites": {
+        "additive_json_provenance_metadata": 1
+      },
+      "references": {}
+    },
+    {
+      "source_path": "research/full_ground_capture/priority2/experiments/validate_diagnostics.py",
+      "public_path": "artifacts/research/full_ground_capture/priority2/experiments/validate_diagnostics.py",
+      "source_sha256": "ee6de8bb5ff8bc793e74e3e97a3187950ceefaa4985c03853efef108778ee24c",
+      "export_sha256": "9d4d4833e213cddc108a0fee475627273cb411c9498ad3ebb988c69ac9b5bbe7",
+      "source_bytes": 1474,
+      "export_bytes": 1752,
+      "roles": [
+        "priority2_finite_even_head"
+      ],
+      "track_ids": [
+        "19"
+      ],
+      "public_credit": "@ykbballer91",
+      "license": "MIT",
+      "historical_snapshot": true,
+      "checks_rerun": false,
+      "rewrites": {
+        "comment_header_added_ast_unchanged": 1
+      },
+      "references": {}
+    },
+    {
+      "source_path": "research/full_ground_capture/priority2/finite_even_head_spanning.md",
+      "public_path": "archive/reports/research/full_ground_capture/priority2/finite_even_head_spanning.md",
+      "source_sha256": "b5af4c2a73f0388a401b99533191258ec5f47a4744ed71c71ce3b7b3a3dc60e5",
+      "export_sha256": "51c0561fc81723db1ae3a85ca18f805e8e422f9d62563116d721c7818e00b36c",
+      "source_bytes": 7871,
+      "export_bytes": 8509,
+      "roles": [
+        "priority2_finite_even_head"
+      ],
+      "track_ids": [
+        "19"
+      ],
+      "public_credit": "@ykbballer91",
+      "license": "CC-BY-4.0",
+      "historical_snapshot": true,
+      "checks_rerun": false,
+      "rewrites": {
+        "provenance_header_added": 1,
+        "portable_links": true,
+        "tex_spans_preserved": true
+      },
+      "references": {
+        "research/full_ground_capture/priority2/notes/algebraic_rank.md": {
+          "public_path": "archive/reports/research/full_ground_capture/priority2/notes/algebraic_rank.md",
+          "status": "EXPORTED"
+        },
+        "research/full_ground_capture/priority2/notes/tail_conditioning.md": {
+          "public_path": "archive/reports/research/full_ground_capture/priority2/notes/tail_conditioning.md",
+          "status": "EXPORTED"
+        },
+        "research/full_ground_capture/priority2/notes/conditioning_literature.md": {
+          "public_path": "archive/reports/research/full_ground_capture/priority2/notes/conditioning_literature.md",
+          "status": "EXPORTED"
+        },
+        "research/full_ground_capture/priority2/notes/diagnostics.md": {
+          "public_path": "archive/reports/research/full_ground_capture/priority2/notes/diagnostics.md",
+          "status": "EXPORTED"
+        },
+        "proofs/audits/full_ground_finite_head_adversarial.md": {
+          "public_path": "archive/audits/proofs/audits/full_ground_finite_head_adversarial.md",
+          "status": "EXPORTED"
+        },
+        "research/full_ground_capture/priority2/state.json": {
+          "public_path": "data/source-records/research/full_ground_capture/priority2/state.json",
+          "status": "EXPORTED"
+        },
+        "research/full_ground_capture/priority2/preservation_check.json": {
+          "public_path": null,
+          "status": "SOURCE_REFERENCE_NOT_INCLUDED"
+        }
+      }
+    },
+    {
+      "source_path": "research/full_ground_capture/priority2/notes/algebraic_rank.md",
+      "public_path": "archive/reports/research/full_ground_capture/priority2/notes/algebraic_rank.md",
+      "source_sha256": "a7b88f62d53d9c7a8ed92c97cd74a0bc750fdc2167f8ae3b64f1e2192c0bc95a",
+      "export_sha256": "83b01b95e67813359272f043b3178f2a311769db59d45f0eab3bde602457a479",
+      "source_bytes": 13506,
+      "export_bytes": 13971,
+      "roles": [
+        "priority2_finite_even_head"
+      ],
+      "track_ids": [
+        "19"
+      ],
+      "public_credit": "@ykbballer91",
+      "license": "CC-BY-4.0",
+      "historical_snapshot": true,
+      "checks_rerun": false,
+      "rewrites": {
+        "provenance_header_added": 1,
+        "portable_links": true,
+        "tex_spans_preserved": true
+      },
+      "references": {
+        "research/full_ground_capture/cyclicity.md": {
+          "public_path": "archive/reports/research/full_ground_capture/cyclicity.md",
+          "status": "EXPORTED"
+        },
+        "research/rate_history/notes/boundary_rate_analysis.md": {
+          "public_path": "archive/reports/research/rate_history/notes/boundary_rate_analysis.md",
+          "status": "EXPORTED"
+        }
+      }
+    },
+    {
+      "source_path": "research/full_ground_capture/priority2/notes/conditioning_literature.md",
+      "public_path": "archive/reports/research/full_ground_capture/priority2/notes/conditioning_literature.md",
+      "source_sha256": "8ee50f66fa18cc433b6508507afd975c36f969148e5ada4b9cfd517ddcaf0a51",
+      "export_sha256": "796d89b8553ec6736d7794c806934405fb26405998a745d4acf8a7845f292aa7",
+      "source_bytes": 12575,
+      "export_bytes": 13105,
+      "roles": [
+        "priority2_finite_even_head"
+      ],
+      "track_ids": [
+        "19"
+      ],
+      "public_credit": "@ykbballer91",
+      "license": "CC-BY-4.0",
+      "historical_snapshot": true,
+      "checks_rerun": false,
+      "rewrites": {
+        "provenance_header_added": 1,
+        "portable_links": true,
+        "tex_spans_preserved": true
+      },
+      "references": {
+        "research/full_ground_capture/cyclicity.md": {
+          "public_path": "archive/reports/research/full_ground_capture/cyclicity.md",
+          "status": "EXPORTED"
+        }
+      }
+    },
+    {
+      "source_path": "research/full_ground_capture/priority2/notes/diagnostics.md",
+      "public_path": "archive/reports/research/full_ground_capture/priority2/notes/diagnostics.md",
+      "source_sha256": "889566b20bc655d60037e86b6d8f7bcb61259ed6eff2e0e4de938d75d330ec1e",
+      "export_sha256": "23df017ee754627c833275ff9592e3de3305de8d8f62c4f204bdc93656a47a00",
+      "source_bytes": 4648,
+      "export_bytes": 5494,
+      "roles": [
+        "priority2_finite_even_head"
+      ],
+      "track_ids": [
+        "19"
+      ],
+      "public_credit": "@ykbballer91",
+      "license": "CC-BY-4.0",
+      "historical_snapshot": true,
+      "checks_rerun": false,
+      "rewrites": {
+        "provenance_header_added": 1,
+        "portable_links": true,
+        "tex_spans_preserved": true
+      },
+      "references": {
+        "research/full_ground_capture/priority2/experiments/finite_head_probe.py": {
+          "public_path": "artifacts/research/full_ground_capture/priority2/experiments/finite_head_probe.py",
+          "status": "EXPORTED"
+        },
+        "research/full_ground_capture/priority2/experiments/probe_115.json": {
+          "public_path": "artifacts/research/full_ground_capture/priority2/experiments/probe_115.json",
+          "status": "EXPORTED"
+        },
+        "research/full_ground_capture/priority2/experiments/validate_diagnostics.py": {
+          "public_path": "artifacts/research/full_ground_capture/priority2/experiments/validate_diagnostics.py",
+          "status": "EXPORTED"
+        },
+        "research/full_ground_capture/priority2/experiments/diagnostic_validation.json": {
+          "public_path": "artifacts/research/full_ground_capture/priority2/experiments/diagnostic_validation.json",
+          "status": "EXPORTED"
+        },
+        "research/full_ground_capture/priority2/experiments/certify_tail_criterion.py": {
+          "public_path": "artifacts/research/full_ground_capture/priority2/experiments/certify_tail_criterion.py",
+          "status": "EXPORTED"
+        },
+        "research/full_ground_capture/priority2/experiments/tail_certificates.json": {
+          "public_path": "artifacts/research/full_ground_capture/priority2/experiments/tail_certificates.json",
+          "status": "EXPORTED"
+        }
+      }
+    },
+    {
+      "source_path": "research/full_ground_capture/priority2/notes/tail_conditioning.md",
+      "public_path": "archive/reports/research/full_ground_capture/priority2/notes/tail_conditioning.md",
+      "source_sha256": "d1ebde4f59a381a6bdaefb76fe89e2e23355b4421a85b1e2d1225eaa63c73fe8",
+      "export_sha256": "9b9140b1446036e0ddf4ef69292e7fa18c10108dc76500d9864262b9d3ff21f5",
+      "source_bytes": 8934,
+      "export_bytes": 9530,
+      "roles": [
+        "priority2_finite_even_head"
+      ],
+      "track_ids": [
+        "19"
+      ],
+      "public_credit": "@ykbballer91",
+      "license": "CC-BY-4.0",
+      "historical_snapshot": true,
+      "checks_rerun": false,
+      "rewrites": {
+        "provenance_header_added": 1,
+        "portable_links": true,
+        "tex_spans_preserved": true
+      },
+      "references": {
+        "research/full_ground_capture/priority2/notes/algebraic_rank.md": {
+          "public_path": "archive/reports/research/full_ground_capture/priority2/notes/algebraic_rank.md",
+          "status": "EXPORTED"
+        },
+        "research/full_ground_capture/priority2/notes/conditioning_literature.md": {
+          "public_path": "archive/reports/research/full_ground_capture/priority2/notes/conditioning_literature.md",
+          "status": "EXPORTED"
+        },
+        "research/full_ground_capture/priority2/experiments/certify_tail_criterion.py": {
+          "public_path": "artifacts/research/full_ground_capture/priority2/experiments/certify_tail_criterion.py",
+          "status": "EXPORTED"
+        },
+        "research/full_ground_capture/priority2/experiments/tail_certificates.json": {
+          "public_path": "artifacts/research/full_ground_capture/priority2/experiments/tail_certificates.json",
+          "status": "EXPORTED"
+        },
+        "research/full_ground_capture/priority2/notes/diagnostics.md": {
+          "public_path": "archive/reports/research/full_ground_capture/priority2/notes/diagnostics.md",
+          "status": "EXPORTED"
+        }
+      }
+    },
+    {
+      "source_path": "research/full_ground_capture/priority2/state.json",
+      "public_path": "data/source-records/research/full_ground_capture/priority2/state.json",
+      "source_sha256": "788e093efb38c5dda549cd027893e40c7464fd0a1c2615627ae8565f1109d81c",
+      "export_sha256": "c1770f49f7f8fc7931ba2c20e1bac9c529aa5278dee1e3f25e9642293139c089",
+      "source_bytes": 2418,
+      "export_bytes": 2899,
+      "roles": [
+        "priority2_finite_even_head"
+      ],
+      "track_ids": [
+        "19"
+      ],
+      "public_credit": "@ykbballer91",
+      "license": "CC-BY-4.0",
+      "historical_snapshot": true,
+      "checks_rerun": false,
+      "rewrites": {
+        "additive_json_provenance_metadata": 1
+      },
+      "references": {}
+    },
+    {
+      "source_path": "proofs/audits/full_ground_finite_head_adversarial.md",
+      "public_path": "archive/audits/proofs/audits/full_ground_finite_head_adversarial.md",
+      "source_sha256": "bbc8b202d83c210cc2aaf1f178c55d8a194e338e55877fe974650410dacd0f90",
+      "export_sha256": "65b5a864bdb3fb84ae49117823319c010c6d60fdd27e5a0ed17787682afa0447",
+      "source_bytes": 13384,
+      "export_bytes": 13839,
+      "roles": [
+        "priority2_finite_even_head"
+      ],
+      "track_ids": [
+        "19"
+      ],
+      "public_credit": "@ykbballer91",
+      "license": "CC-BY-4.0",
+      "historical_snapshot": true,
+      "checks_rerun": false,
+      "rewrites": {
+        "provenance_header_added": 1,
+        "portable_links": true,
+        "tex_spans_preserved": true
+      },
+      "references": {}
     }
   ],
-  "export_operation_scope": "This records the local export operation before private remote creation. The remote publication status is recorded separately in audit/phase2_publication_review.md."
+  "export_operation_scope": "Local export operation only. publication_github_write describes the exporter, not the repository history. Git/visibility status is recorded in the current publication review and data/publication.json.",
+  "priority2_finite_head_additions": 14
 }

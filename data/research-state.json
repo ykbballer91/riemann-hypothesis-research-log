@@ -10,7 +10,8 @@
   "public_release_date": null,
   "original_phase1_track_count": 17,
   "subsequent_updates": [
-    "Even-L2 cyclicity / full-ground capture Priority 1"
+    "Even-L2 cyclicity / full-ground capture Priority 1",
+    "Finite even Fourier head spanning / Priority 2"
   ],
   "source_repository_head": "c4b6fc587ebb6ad2cec37b9a24c38a3a7e823423",
   "claims": {
@@ -112,6 +113,42 @@
       "public_source": "source-records/research/local_global_state.json",
       "source_commit": null,
       "source_commit_note": "Uncommitted research document at snapshot; historical repository HEAD is recorded separately."
+    },
+    "finite_head_fixed_exact_spanning": {
+      "value": true,
+      "source_path": "research/full_ground_capture/priority2/state.json",
+      "source_key": "actual_finite_prefix_spanning_for_each_fixed_head",
+      "source_sha256": "788e093efb38c5dda549cd027893e40c7464fd0a1c2615627ae8565f1109d81c",
+      "public_source": "source-records/research/full_ground_capture/priority2/state.json",
+      "source_commit": null,
+      "scope": "Fixed head exact span is not uniform capture, Weil-form control or RH."
+    },
+    "finite_head_explicit_all_parameter_minimal_order": {
+      "value": false,
+      "source_path": "research/full_ground_capture/priority2/state.json",
+      "source_key": "explicit_minimal_m_for_all_parameters",
+      "source_sha256": "788e093efb38c5dda549cd027893e40c7464fd0a1c2615627ae8565f1109d81c",
+      "public_source": "source-records/research/full_ground_capture/priority2/state.json",
+      "source_commit": null,
+      "scope": "Fixed head exact span is not uniform capture, Weil-form control or RH."
+    },
+    "finite_head_interval_certificates": {
+      "value": "Two finite parameter intervals; raw rank/singular-value bounds only",
+      "source_path": "research/full_ground_capture/priority2/state.json",
+      "source_key": "interval_certified_ranges",
+      "source_sha256": "788e093efb38c5dda549cd027893e40c7464fd0a1c2615627ae8565f1109d81c",
+      "public_source": "source-records/research/full_ground_capture/priority2/state.json",
+      "source_commit": null,
+      "scope": "Fixed head exact span is not uniform capture, Weil-form control or RH."
+    },
+    "uniform_moving_head_capture": {
+      "value": false,
+      "source_path": "research/full_ground_capture/priority2/state.json",
+      "source_key": "full_ground_capture_started",
+      "source_sha256": "788e093efb38c5dda549cd027893e40c7464fd0a1c2615627ae8565f1109d81c",
+      "public_source": "source-records/research/full_ground_capture/priority2/state.json",
+      "source_commit": null,
+      "scope": "Fixed head exact span is not uniform capture, Weil-form control or RH."
     }
   },
   "rh_closed": false,

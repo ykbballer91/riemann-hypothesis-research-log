@@ -31,6 +31,19 @@ The inherited bibliography includes bounded audits of proof claims and explorato
 | Exponential decay of Xi | [DLMF 5.11.9](https://dlmf.nist.gov/5.11#E9), [25.9.3](https://dlmf.nist.gov/25.9#E3), [25.4.4](https://dlmf.nist.gov/25.4#E4) | Standard Gamma decay, an unconditional zeta estimate and completion conventions. No RH input. |
 | Supplementary moments | [Simonič–Starichkova, 2105.06821v3](https://arxiv.org/html/2105.06821v3) | A mean-square error estimate used for a moment asymptotic; the cyclicity theorem does not depend on that refinement. |
 
+## Finite-head interpolation and conditioning
+
+The [Priority 2 update](tracks/19-finite-even-head-spanning.md) uses the following established tools. These prose citations supplement the historical statement ledger; they do not change its recorded verification statuses.
+
+| Source | Passage checked and scope |
+|---|---|
+| Walter Gautschi, *Norm Estimates for Inverses of Vandermonde Matrices*, Numerische Mathematik 23 (1975), 337–347. [Author-hosted paper](https://www.cs.purdue.edu/homes/wxg/selected_works/section_01/051.pdf). | §3, p.339, equation (3.3), gives the cardinal-polynomial inverse; §4, p.340, equation (4.1), gives its norm bound. The paper places nodes in columns, so its infinity-norm formula becomes a 1-norm formula for the transposed convention used here. |
+| Pablo D. Brubeck, Yuji Nakatsukasa and Lloyd N. Trefethen, *Vandermonde with Arnoldi*, SIAM Review 63(2) (2021), 405–415. [Author-hosted paper](https://people.maths.ox.ac.uk/trefethen/vandermonde_arnoldi.pdf), [DOI:10.1137/19M130100X](https://doi.org/10.1137/19M130100X). | §4, p.409, equations (4.2)–(4.5), relate monomial and discrete orthogonal coordinates through QR. The polynomial span is preserved; this does not by itself control the physical function norm or the sharp-support perturbation. |
+| NIST Digital Library of Mathematical Functions, [§18.2.3](https://dlmf.nist.gov/18.2#E3), [§18.2.5](https://dlmf.nist.gov/18.2#E5), [§18.2.12–13](https://dlmf.nist.gov/18.2#E12). | Discrete orthogonality, its norm, and the Christoffel–Darboux kernel. Normalizing the head Gram does not identify it with the global or support-restricted physical Gram. |
+| Albert Cohen, Mark A. Davenport and Dany Leviatan, *On the stability and accuracy of least squares approximations*, [arXiv:1111.4422v3](https://arxiv.org/pdf/1111.4422v3), revised 15 June 2018; first submitted 2011. | Theorem 1, p.3, equation (1.2), is a probabilistic Gram estimate with independent samples from the prescribed measure. That theorem is not a certificate for this project's deterministic Xi-weighted Fourier grid. Other sampling results in the paper are not being ruled out by this applicability check. |
+
+The [conditioning note](../archive/reports/research/full_ground_capture/priority2/notes/conditioning_literature.md) records the exact matrix conventions and the distinction between raw coefficients, head norm and physical norm. Reading these passages is a scoped citation check, not a new verification of every proof in the cited works.
+
 ## Where the exact statement-level records live
 
 - [Initial theorem and computation ledger](../archive/literature/literature/sources.json).

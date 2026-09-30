@@ -1,0 +1,61 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "source_path": "research/full_ground_capture/priority2/state.json",
+    "source_sha256": "788e093efb38c5dda549cd027893e40c7464fd0a1c2615627ae8565f1109d81c",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "historical_snapshot": true,
+    "scope": "Priority 2 only; no growing-m, full-ground or RH claim"
+  },
+  "date": "2026-09-30",
+  "rh_status": "OPEN",
+  "scope": "PRIORITY_2_ONLY",
+  "verdict": "FINITE EVEN HEAD SPANNING: PROVED",
+  "verdict_scope": "Every fixed actual finite even head has an exact finite-prefix spanning family. Minimal prefix m=N is proved eventually for each fixed N and on explicit interval-certified finite parameter ranges. No uniform growing-m or ground-capture conclusion.",
+  "even_head_dimension": "N+1",
+  "ideal_rank_theorem": "rank=min(m+1, number of nonzero Xi grid samples among n=0,...,N)",
+  "ideal_minimal_m_without_grid_hits": "N",
+  "actual_finite_prefix_spanning_for_each_fixed_head": true,
+  "actual_minimal_prefix_eventually_for_fixed_N": true,
+  "actual_minimal_prefix_exception_set_finite_for_fixed_N": true,
+  "exception_set_locations_or_emptiness_determined": false,
+  "explicit_minimal_m_for_all_parameters": false,
+  "tail_matrix_identity_fixed": true,
+  "full_line_sampling_distinguished_from_interval_projection": true,
+  "quantitative_tail_majorant_proved": true,
+  "quantitative_inverse_vandermonde_bound_proved": true,
+  "interval_certified_ranges": [
+    {
+      "a_min": "1.499999",
+      "a_max": "1.500001",
+      "N": 4,
+      "m": 4,
+      "eta_upper": "4.529e-7",
+      "raw_sigma_min_lower": "0.0517"
+    },
+    {
+      "a_min": "1.999999",
+      "a_max": "2.000001",
+      "N": 6,
+      "m": 6,
+      "eta_upper": "7.135e-40",
+      "raw_sigma_min_lower": "0.0340"
+    }
+  ],
+  "raw_fixed_N_sigma_min_asymptotic": "Theta_N(a^(-2N-1/2)) for m=N, a to infinity",
+  "raw_fixed_N_condition_asymptotic": "Theta_N(a^(2N)) for m=N",
+  "physical_gram_and_coordinate_conditioning_separated": true,
+  "fixed_head_physical_gram_limit_proved": true,
+  "quantitative_m_for_physical_gram_limit": null,
+  "finite_even_ground_algebraic_containment": "Yes in the projected hierarchy for each fixed head, by spanning; not a full-ground capture theorem",
+  "growing_m_analysis_started": false,
+  "full_ground_capture_started": false,
+  "parity_analysis_started": false,
+  "G_star_proved": false,
+  "rh_closed": false,
+  "new_mathematical_novelty_claimed": false,
+  "independent_audit": "PASS_WITH_EXPLICIT_SCOPE",
+  "current_obstruction": "No explicit optimal prefix at every parameter, no quantitative m(a,N,epsilon), and no uniform physical lift/form-norm control along changing heads. Fixed-m hierarchy cannot yet be applied to the whole ground.",
+  "next_action": "STOP after Priority 2; do not begin Priority 3 or later without a subsequent instruction."
+}

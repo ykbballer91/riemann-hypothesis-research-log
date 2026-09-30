@@ -9,7 +9,7 @@ The organizing question is what additional arithmetic information could constrai
 ## Start here
 
 - [Reader's guide](docs/index.md): the question, terminology, and how to read the evidence.
-- [Research timeline](docs/timeline.md): 17 tracks in the original inventory, followed by the cyclicity update.
+- [Research timeline](docs/timeline.md): 17 tracks in the original inventory, followed by the cyclicity and finite-head updates.
 - [Current state](docs/current-state.md): established auxiliary results and the remaining gap.
 - [Dependency roadmap](docs/roadmap.md): which implications are conditional or open.
 - [Methodology](docs/methodology.md) and [status legend](docs/status-legend.md): what each label means.
@@ -37,7 +37,7 @@ $$
 =L^2_{\mathrm{even}}(\mathbb R).
 $$
 
-This is qualitative density. It supplies neither uniform approximation of a parameter-dependent ground state nor control of finite derivative-column conditioning. **Full finite-ground capture, the required even/simple ground-state condition, the transform comparison $G^*$, and RH remain open.** See the [current state](docs/current-state.md) for the exact boundaries.
+Cyclicity itself is qualitative density. A subsequent [finite-head update](docs/tracks/19-finite-even-head-spanning.md) proves exact spanning by some finite derivative prefix for each fixed head, and minimal-prefix spanning on specified ranges. It separates coordinate conditioning from physical lift cost. Neither result supplies uniform approximation of a parameter-dependent ground state or Weil-form control. **Growing-order selection, full finite-ground capture, the required even/simple ground-state condition, the transform comparison $G^*$, and RH remain open.** See the [current state](docs/current-state.md) for the exact boundaries.
 
 ## What is in this repository
 
@@ -49,7 +49,7 @@ The [source manifest](data/source-manifest.json) records original and exported h
 
 ## Publication and citation
 
-Version **0.1.0** is a publication-review draft. No public release date has been assigned. The repository is being prepared privately, and the Pages deployment workflow is explicitly gated. See the [publication review](audit/phase2_publication_review.md).
+Version **0.1.0** is a publication-review draft. No public release date has been assigned. The repository is being prepared privately, and the Pages deployment workflow is explicitly gated. See the [current publication review](audit/phase3_final_content_review.md).
 
 If you use this research log, please cite this repository using [CITATION.cff](CITATION.cff). The author display is `@ykbballer91`; AI assistance is disclosed in [methodology](docs/methodology.md).
 

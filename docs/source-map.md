@@ -6,7 +6,7 @@ The English pages are an edited guide by **@ykbballer91** to a Japanese, AI-assi
 
 ## What is canonical here
 
-The Phase 1 inventory identified 17 tracks. This publication adds a separately dated, Priority 1 cyclicity update. There are 364 selected source files: the 359-file historical selection and five cyclicity files. The [source manifest](../data/source-manifest.json) is the complete file-level authority. It records the original relative source identifier, public destination, original hash and exported hash. Publication headers, removal of private paths and repaired links can change an exported hash without changing the mathematical claim.
+The Phase 1 inventory identified 17 tracks. This publication adds separately dated Priority 1 cyclicity and Priority 2 finite-head updates. There are 378 selected source files: the 359-file historical selection, five cyclicity files, and fourteen finite-head files. The [source manifest](../data/source-manifest.json) is the complete file-level authority. It records the original relative source identifier, public destination, original hash and exported hash. Publication headers, removal of private paths and repaired links can change an exported hash without changing the mathematical claim.
 
 The table identifies the main argument, its scoped audit and its state. A state file is evidence of what was recorded at that point; it is not a new proof or a promise that every linked experiment has just been rerun. Detailed completion and validation links are on each track page.
 
@@ -30,6 +30,7 @@ The table identifies the main argument, its scoped audit and its state. A state 
 | 16 | [Rates, history and finite-cutoff splitting](tracks/16-rate-history.md) | [Report](../archive/reports/research/rate_history_selection.md) | [Audit](../archive/audits/proofs/audits/rate_history_selection_adversarial.md) | [State](../data/source-records/research/rate_history_state.json) |
 | 17 | [Hierarchical selection in fixed derivative families](tracks/17-hierarchical-selection.md) | [Report](../archive/reports/research/hierarchical_selection.md) | [Audit](../archive/audits/proofs/audits/hierarchical_selection_adversarial.md) | [State](../data/source-records/research/hierarchical_selection_state.json) |
 | 18 | [Cyclicity of the even derivative family](tracks/18-even-l2-cyclicity.md) | [Report](../archive/reports/research/full_ground_capture/cyclicity.md) | [Audit](../archive/audits/proofs/audits/full_ground_cyclicity_adversarial.md) | [State](../data/source-records/research/full_ground_capture/state.json) |
+| 19 | [Finite even Fourier heads](tracks/19-finite-even-head-spanning.md) | [Report](../archive/reports/research/full_ground_capture/priority2/finite_even_head_spanning.md) | [Audit](../archive/audits/proofs/audits/full_ground_finite_head_adversarial.md) | [State](../data/source-records/research/full_ground_capture/priority2/state.json) |
 
 ## Historical records that must not be merged silently
 
@@ -38,7 +39,9 @@ The table identifies the main argument, its scoped audit and its state. A state 
 - Historical README, PDF and release-manifest versions describe earlier scopes. They are not the current overview. The [timeline](timeline.md) and dated track pages explain later work.
 - The Phase 1 inventory recorded 29 Git commits. Untracked working-tree additions and source-file report dates are distinguished from those commits. No individual research timestamp or author identity is inferred from an import.
 - The five older release versions are 01, 02, 03, 04 and 06. Their ZIP/TAR pairs duplicate payloads; there is no invented version 05. The public archive uses selected copies once, rather than republishing duplicate bundles or operating-system metadata.
-- The latest cyclicity update adds its main proof, two supporting notes, state and audit. Private preservation/validation manifests were not added as public mathematical evidence.
+- The cyclicity update adds its main proof, two supporting notes, state and audit. Private preservation/validation manifests were not added as public mathematical evidence.
+
+- The later finite-head update adds fourteen scoped reports, code/results and audit/state artifacts. Its private preservation manifest is excluded; publication checks do not reclassify diagnostics as certified results.
 
 ## Theorem stacks and dependencies worth reading together
 

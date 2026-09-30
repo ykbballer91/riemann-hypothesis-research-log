@@ -225,3 +225,13 @@ The Phase 1 Git inventory records 29 commits. Those commits are an archival chro
 **Status.** Cyclicity proved; full ground, G* and RH open.
 
 Internal audits are not external peer review. A proved auxiliary statement, a conditional criterion, an interval computation and a floating-point diagnostic are different kinds of evidence. None of the entries establishes RH.
+
+## 19. 2026-09-30 — [Finite even Fourier heads](tracks/19-finite-even-head-spanning.md)
+
+**Question and test.** After cyclicity, the next authorized task fixed the actual even Fourier head, separated ideal full-line samples from support-restricted columns, and compared tail errors with Vandermonde inverse bounds.
+
+**Retained.** Every fixed head has exact finite-prefix spanning. For fixed Fourier dimension, the minimal prefix works eventually and has only finitely many possible exceptional window widths. Two finite parameter intervals have analytic-plus-Arb rank certificates.
+
+**Boundary.** The exception set is not explicitly classified. Physical singular values can deteriorate despite exact rank. No uniform cutoff, coefficient, form-error or moving-ground estimate follows. Floating physical-Gram diagnostics are not interval certificates.
+
+**Transition and status.** Priority 2 stopped here. Growing-order selection, full-ground capture, parity/ES, G* and RH remain open. No later priority was started.

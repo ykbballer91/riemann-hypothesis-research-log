@@ -4,6 +4,10 @@
 
 This is an AI-assisted research log curated by @ykbballer91. It records proposed mechanisms, exact calculations, literature comparisons, attempted constructions, counterexamples, and reasons to stop. The public prose has been edited so that readers do not need the original conversation.
 
+## Human direction and AI assistance
+
+The creator supplied problem framing, hypotheses, changes of abstraction, interpretation and instructions about which avenues to continue or stop. AI/Codex assisted with literature retrieval, symbolic derivations, numerical diagnostics, proof attempts, counterexample searches, separate internal reviews, and preparation of this repository. The author display is @ykbballer91; this is neither a claim of human-only derivation nor of an autonomous AI proof of RH.
+
 ## What an audit means here
 
 An internal independent audit means a separate AI reviewer examined the stated mathematical argument or computational artifact. It is useful adversarial checking; it is not external peer review, endorsement by a named mathematician, or machine verification of all claims. The archived audit identifies the material and scope it checked.
@@ -25,11 +29,11 @@ Formal Lean files cover selected lemmas in the recorded environment. A successfu
 
 The source research tree is preserved. Public archive copies have separate hashes and a [rewrite manifest](../audit/rewrite_manifest.md). Editorial changes remove machine-local references, explain internal shorthand, and improve navigation. They do not strengthen mathematical claims or erase failed routes.
 
-The timeline distinguishes Git timestamps from dates explicitly recorded in later uncommitted research documents. Navigation order is not a fabricated chronology of parallel work. The original 17-track inventory is retained, and the subsequent cyclicity theorem is identified as an update.
+The timeline distinguishes Git timestamps from dates explicitly recorded in later uncommitted research documents. Navigation order is not a fabricated chronology of parallel work. The original 17-track inventory is retained, and the subsequent cyclicity and finite-head results are identified as separate updates.
 
 Known results are attributed to primary literature where the research records provide it. A statement-level verification note is not a declaration that every theorem in a cited paper has been independently reproved. External papers are linked, not redistributed.
 
 ## Publication scope
 
-Version 0.1.0 is being prepared as a private review draft. Public visibility and live Pages deployment require the creator's later approval. This repository's licenses govern original exported material; third-party works retain their own rights.
+Version 0.1.0 is being prepared as a private review draft. Public visibility and live Pages deployment remain blocked until all conditions in the creator's explicit publication authorization pass; no further approval is required after that gate. This repository's licenses govern original exported material; third-party works retain their own rights.
 
