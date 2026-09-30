@@ -12,25 +12,25 @@ The fixed finite-dimensional selection theorem leaves a basic question: does the
 
 Use the actual normalization
 
-\[
+$$
 \widehat{k}(x)=\int_{\mathbb R}k(t)e^{-ixt}\,dt=\Xi(x)/4,
 \qquad \Xi(x)=\xi(1/2+ix).
-\]
+$$
 
-The proof studies the positive measure \(d\mu(x)=|\Xi(x)|^2dx\). Standard Gamma decay and an unconditional zeta bound imply a finite exponential moment for every exponent below \(\pi/2\). Since Xi is a nonzero entire function, its real zeros have measure zero; RH and simplicity of those zeros are unnecessary.
+The proof studies the positive measure $d\mu(x)=|\Xi(x)|^2dx$. Standard Gamma decay and an unconditional zeta bound imply a finite exponential moment for every exponent below $\pi/2$. Since Xi is a nonzero entire function, its real zeros have measure zero; RH and simplicity of those zeros are unnecessary.
 
 ## What survived
 
 The unconditional conclusion is
 
-\[
-\boxed{\overline{\operatorname{span}_{\mathbb C}\{k^{(2j)}:j\ge0\}}^{\,L^2(\mathbb R)}
+$$
+\boxed{\overline{\mathrm{span}\,_{\mathbb C}\lbrace k^{(2j)}:j\ge0\rbrace}^{\,L^2(\mathbb R)}
 =L^2_{\mathrm{even}}(\mathbb R).}
-\]
+$$
 
-The real-span version also holds in real even L². Carleman's condition gives polynomial density in L²(μ); even symmetrization, the onto isometry \(h\mapsto\Xi h\), and Plancherel give the result. A second proof uses analytic Fourier transforms and uniqueness. Neither proof divides by a uniformly bounded inverse of Xi.
+The real-span version also holds in real even L². Carleman's condition gives polynomial density in L²(μ); even symmetrization, the onto isometry $h\mapsto\Xi h$, and Plancherel give the result. A second proof uses analytic Fourier transforms and uniqueness. Neither proof divides by a uniformly bounded inverse of Xi.
 
-For the change of variable \(y=x^2\), the Stieltjes moment condition uses \(m_{2n}^{-1/(2n)}\). It must not be replaced by the different Hamburger condition involving \(m_{4n}\). A supplementary moment asymptotic is not needed for the density proof.
+For the change of variable $y=x^2$, the Stieltjes moment condition uses $m_{2n}^{-1/(2n)}$. It must not be replaced by the different Hamburger condition involving $m_{4n}$. A supplementary moment asymptotic is not needed for the density proof.
 
 ## What remains unproved
 

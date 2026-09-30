@@ -2,6 +2,7 @@ cff-version: 1.2.0
 message: "If you use this research log, please cite this repository."
 title: "Riemann Hypothesis Research Log"
 type: software
+repository-code: "https://github.com/ykbballer91/riemann-hypothesis-research-log"
 version: "0.1.0"
 authors:
   - name: "@ykbballer91"

@@ -8,7 +8,7 @@ Editorial snapshot: **2026-09-30**. This page aggregates the latest independent 
 
 Set $a=\log\lambda$, $Y=\pi\lambda^2$, and
 
-$$\mathcal R_m=\operatorname{span}\{k,k'',\ldots,k^{(2m)}\},\qquad \widehat k(x)=\Xi(x)/4.$$
+$$\mathcal R_m=\mathrm{span}\,\lbrace k,k'',\ldots,k^{(2m)}\rbrace,\qquad \widehat k(x)=\Xi(x)/4.$$
 
 The hierarchical-selection record establishes a support-only selection theorem for **each fixed finite $m$**: the minimizing direction within the restricted family tends to $k$. For the canonical support restriction followed by Fourier projection, the same restricted conclusion is obtained under
 
@@ -20,7 +20,7 @@ This is a sufficient resolution condition. The record does not identify it as ne
 
 The subsequent auxiliary theorem states
 
-$$\overline{\operatorname{span}\{k^{(2j)}:j\ge0\}}^{L^2}=L^2_{\mathrm{even}}(\mathbb R).$$
+$$\overline{\mathrm{span}\,\lbrace k^{(2j)}:j\ge0\rbrace}^{L^2}=L^2_{\mathrm{even}}(\mathbb R).$$
 
 The proof uses exponential integrability of $|\Xi(x)|^2dx$, a polynomial-density argument, and Plancherel. It does not assume RH or simple zeros. Even polynomials are dense in the **even** weighted sector, not in the entire weighted space. See [cyclicity](tracks/18-even-l2-cyclicity.md).
 
