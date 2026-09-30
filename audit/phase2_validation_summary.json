@@ -1,0 +1,55 @@
+{
+  "status": "PASS_LOCAL_REVIEW",
+  "rh_status": "OPEN",
+  "review_date": "2026-09-30",
+  "author": "@ykbballer91",
+  "public_visibility_authorized": false,
+  "source_preservation": {
+    "regular_files_checked": 61698,
+    "symlinks_checked": 4,
+    "changes": 0,
+    "source_head_unchanged": true
+  },
+  "export": {
+    "phase1_selected": 359,
+    "cyclicity_additions": 5,
+    "total_source_artifacts": 364,
+    "required_rewrites_completed": 11,
+    "excluded_source_regular_files": 61334,
+    "excluded_source_symlinks": 4
+  },
+  "content_checks": {
+    "tex_documents_unchanged": 215,
+    "python_ast_unchanged": 47,
+    "json_original_values_preserved": 96,
+    "historical_research_tests_rerun": false,
+    "replay_prepare_only": "PASS"
+  },
+  "local_validation": {
+    "markdown_pages": 229,
+    "broken_links": 0,
+    "scope": "Local targets and anchors, build, JSON, citation, status and source hashes. External links are not exhaustively crawled."
+  },
+  "browser_validation": {
+    "current_state_math_nodes": 15,
+    "math_errors": 0,
+    "horizontal_overflow": false,
+    "additional_pages": [
+      "guide home",
+      "even-L2 cyclicity update"
+    ],
+    "cyclicity_math_nodes": 8
+  },
+  "safety": {
+    "payload": "PASS",
+    "prospective_files": 414,
+    "history": "PASS_INITIAL_TWO_COMMITS",
+    "reachable_blobs_scanned": 409,
+    "blocking_findings": 0
+  },
+  "github": {
+    "visibility": "NOT_CREATED",
+    "pages_deployed": false,
+    "build": "PENDING_PRIVATE_PUSH"
+  }
+}
