@@ -1,9 +1,9 @@
 {
   "status": "PASS",
   "scope": "Publication files and local link/build consistency; no external URL crawl or mathematical proof check",
-  "public_files": 439,
+  "public_files": 440,
   "source_records": 378,
-  "markdown_local_links_checked": 1459,
-  "site_local_links_checked": 3911,
+  "markdown_local_links_checked": 1469,
+  "site_local_links_checked": 3932,
   "errors": []
 }

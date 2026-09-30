@@ -6,7 +6,11 @@
   "pages_url": "https://ykbballer91.github.io/riemann-hypothesis-research-log/",
   "creator_authorization": "Conditional authorization to publish only after all Phase 3 gates pass; no additional approval is required after that point.",
   "rh_status": "OPEN",
-  "pages_deployment_status": "PENDING",
+  "pages_deployment_status": "DEPLOYED",
   "public_visibility_confirmed_at_utc": "2026-09-30T05:39:26Z",
-  "prepublication_ci_run": 36674309588
+  "prepublication_ci_run": 36674309588,
+  "first_successful_pages_run": 36674703523,
+  "first_pages_deployed_at_utc": "2026-09-30T05:43:50Z",
+  "postpublication_anonymous_access": "PASS",
+  "postpublication_safety_scan": "PASS"
 }

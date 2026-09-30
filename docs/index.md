@@ -6,7 +6,7 @@ An adversarial research log of AI-assisted exploration: auxiliary results, faile
 
 This record asks how the arithmetic of the Riemann zeta function could force all its nontrivial zeros onto the line $\Re s=1/2$. It follows several formulations of that question and records when a reformulation merely transfers the same unresolved requirement to a new language.
 
-Curated by **[@ykbballer91](https://github.com/ykbballer91)**, with AI assistance. The research record begins on 2026-09-29; the current editorial snapshot is dated 2026-09-30. These are research and preparation dates, not a public release date.
+Curated by **[@ykbballer91](https://github.com/ykbballer91)**, with AI assistance. The research record begins on 2026-09-29; the current editorial snapshot is dated 2026-09-30. These are research snapshot dates. The actual public release occurred on 2026-09-30, as recorded in the publication report.
 
 ## Three ways to read
 
@@ -34,5 +34,5 @@ The [cyclicity update](tracks/18-even-l2-cyclicity.md) establishes that $\{k,k''
 
 The subsequent [finite-head update](tracks/19-finite-even-head-spanning.md) gives a rank theorem, explicit tail criteria, and two finite interval certificates. Exact representation in a fixed projected space does not control a moving ground or its Weil energy.
 
-[Phase 3 publication review](../audit/phase3_final_content_review.md) · [Methodology](methodology.md) · [Licensing](licensing.md)
+[Publication report](../audit/publication_report.md) · [Phase 3 publication review](../audit/phase3_final_content_review.md) · [Methodology](methodology.md) · [Licensing](licensing.md)
 

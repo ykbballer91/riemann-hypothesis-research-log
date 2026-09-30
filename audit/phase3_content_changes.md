@@ -20,4 +20,4 @@ The prior Phase 1/2 audit reports remain dated checkpoints. Their private/draft 
 
 The creator's subsequent explicit authorization supersedes the earlier instruction to stop after review, but only when every stated publication gate passes. Publication metadata and the final report record actual actions separately from this pre-publication review.
 
-After the actual PUBLIC transition on 2026-09-30, only release metadata and current publication prose were updated: CITATION, publication/research-state metadata, README, methodology and licensing. The mathematical text, canonical exports and historical pre-publication reports were not revised.
+After the actual PUBLIC transition on 2026-09-30, only release metadata and current publication prose were updated: CITATION, publication/research-state metadata, README/guide, methodology and licensing. The mathematical text, canonical exports and historical pre-publication reports were not revised.
