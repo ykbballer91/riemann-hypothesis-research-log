@@ -21,7 +21,7 @@ The organizing question is what additional arithmetic information could constrai
 The latest restricted selection result concerns **each fixed finite** derivative space
 
 $$
-\mathcal R_m=\mathrm{span}\,\lbrace k,k'',\ldots,k^{(2m)}\rbrace.
+\mathcal R_m=\mathrm{span} \lbrace k,k'',\ldots,k^{(2m)}\rbrace.
 $$
 
 Here $k$ is the actual Riemann theta kernel in the recorded normalization $\widehat k=\Xi/4$, with $\Xi(x)=\xi(1/2+ix)$. In the support hierarchy, the minimizing direction within that finite space tends to $k$. This restricted conclusion survives the canonical Fourier projection under the recorded **sufficient** resolution condition
@@ -33,7 +33,7 @@ $$
 A subsequent auxiliary theorem proves, without RH,
 
 $$
-\overline{\mathrm{span}\,\lbrace k^{(2j)}:j\ge0\rbrace}^{L^2}
+\overline{\mathrm{span} \lbrace k^{(2j)}:j\ge0\rbrace}^{L^2}
 =L^2_{\mathrm{even}}(\mathbb R).
 $$
 

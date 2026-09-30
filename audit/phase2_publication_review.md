@@ -2,7 +2,7 @@
 
 **STATUS: RIEMANN HYPOTHESIS OPEN**
 
-Review date: 2026-09-30. **LOCAL EXPORT COMPLETE — PRIVATE PUSH PENDING.** This is a publication-review draft, not a public release or a mathematical completion claim.
+Review date: 2026-09-30. **PHASE 2 READY FOR PUBLICATION REVIEW.** This is a publication-review draft, not a public release or a mathematical completion claim.
 
 ## Creator decisions applied
 
@@ -47,14 +47,22 @@ The reader guide is rewritten in English for external readers; the supporting ar
 
 ## Remote and Pages boundary
 
-The intended remote is a PRIVATE repository named `riemann-hypothesis-research-log` under the authenticated `ykbballer91` account. Creation, push, remote README rendering, and the GitHub build will be recorded after they are verified.
+Private repository: [ykbballer91/riemann-hypothesis-research-log](https://github.com/ykbballer91/riemann-hypothesis-research-log). GitHub API and the authenticated browser both confirm PRIVATE visibility. The export is an independent Git repository with author/committer display @ykbballer91 and the account's GitHub noreply address. The source repository's history was not copied.
+
+The [initial build](https://github.com/ykbballer91/riemann-hypothesis-research-log/actions/runs/36669125866) and [rendering-fix build](https://github.com/ykbballer91/riemann-hypothesis-research-log/actions/runs/36669403032) succeeded, including local-link validation and the official Pages artifact upload. Deployment was **SKIPPED**. The repository reports no Pages site.
+
+The live GitHub README was inspected after push. OPEN status, the selected author, internal navigation, both licenses, citation metadata, and the auxiliary-result scope are present. The initial GitHub renderer rejected two operator-name expressions; equivalent notation in the edited README/current-state/cyclicity guide was used instead. Historical TeX artifacts were not changed. The formulas now render; thin-space markup was also removed from these edited documents because GitHub parsed it as punctuation.
+
+The locally rendered Pages artifact was inspected in a browser. Formula rendering works on the home guide, README, current-state page and latest cyclicity guide. The complete static HTML file/anchor scan passes. A local rendering check is not represented as a live Pages deployment.
 
 The workflow builds and uploads a Pages artifact on a private push, but cannot deploy there. Deployment requires manual dispatch, public visibility, and an explicit creator-approval variable. No Pages site is published in Phase 2.
 
 ## Remaining review boundary
 
-No local payload blocker remains after the checks above. The remote and GitHub build checks are pending. External citations have not all been freshly crawled, and internal AI review is not external mathematical peer review.
+No technical publication blocker remains in the reviewed export. Remote creation, private visibility, initial push, README rendering, and GitHub builds have been verified. The final report/formatting-only commit is subjected to the same local validation and pre-push scan. External citations have not all been freshly crawled, and internal AI review is not external mathematical peer review.
 
 **Creator approval required before public visibility: YES.**
 
-Publication status will be finalized after the private remote checks; this interim report does not authorize public visibility.
+The remaining publication gate is the creator’s explicit approval to change visibility. This report grants no such approval. No public release or Pages deployment was performed.
+
+**PHASE 2 READY FOR PUBLICATION REVIEW**

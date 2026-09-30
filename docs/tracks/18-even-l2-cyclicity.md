@@ -13,7 +13,7 @@ The fixed finite-dimensional selection theorem leaves a basic question: does the
 Use the actual normalization
 
 $$
-\widehat{k}(x)=\int_{\mathbb R}k(t)e^{-ixt}\,dt=\Xi(x)/4,
+\widehat{k}(x)=\int_{\mathbb R}k(t)e^{-ixt} dt=\Xi(x)/4,
 \qquad \Xi(x)=\xi(1/2+ix).
 $$
 
@@ -24,7 +24,7 @@ The proof studies the positive measure $d\mu(x)=|\Xi(x)|^2dx$. Standard Gamma de
 The unconditional conclusion is
 
 $$
-\boxed{\overline{\mathrm{span}\,_{\mathbb C}\lbrace k^{(2j)}:j\ge0\rbrace}^{\,L^2(\mathbb R)}
+\boxed{\overline{\mathrm{span} _{\mathbb C}\lbrace k^{(2j)}:j\ge0\rbrace}^{ L^2(\mathbb R)}
 =L^2_{\mathrm{even}}(\mathbb R).}
 $$
 

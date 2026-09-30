@@ -1,5 +1,5 @@
 {
-  "status": "PASS_LOCAL_REVIEW",
+  "status": "PASS_PUBLICATION_REVIEW",
   "rh_status": "OPEN",
   "review_date": "2026-09-30",
   "author": "@ykbballer91",
@@ -28,7 +28,11 @@
   "local_validation": {
     "markdown_pages": 229,
     "broken_links": 0,
-    "scope": "Local targets and anchors, build, JSON, citation, status and source hashes. External links are not exhaustively crawled."
+    "scope": "Local targets and anchors, build, JSON, citation, status and source hashes. External links are not exhaustively crawled.",
+    "site_public_files": 412,
+    "git_tracked_files": 414,
+    "markdown_links_checked": 1313,
+    "html_links_checked": 3624
   },
   "browser_validation": {
     "current_state_math_nodes": 15,
@@ -36,20 +40,34 @@
     "horizontal_overflow": false,
     "additional_pages": [
       "guide home",
+      "README",
       "even-L2 cyclicity update"
     ],
     "cyclicity_math_nodes": 8
   },
   "safety": {
     "payload": "PASS",
-    "prospective_files": 414,
-    "history": "PASS_INITIAL_TWO_COMMITS",
-    "reachable_blobs_scanned": 409,
-    "blocking_findings": 0
+    "tracked_files": 414,
+    "history": "PASS_AT_RENDERING_FIX_SNAPSHOT",
+    "reachable_blobs_scanned": 418,
+    "blocking_findings": 0,
+    "reviewed_revision": "b54be47ea5468750cb56326c783fe42b5532956c",
+    "note": "Final report-only updates are rescanned before push."
   },
   "github": {
-    "visibility": "NOT_CREATED",
+    "url": "https://github.com/ykbballer91/riemann-hypothesis-research-log",
+    "visibility": "PRIVATE",
     "pages_deployed": false,
-    "build": "PENDING_PRIVATE_PUSH"
-  }
+    "has_pages": false,
+    "build": "SUCCESS",
+    "verified_run": 36669403032,
+    "build_job": "success",
+    "deploy_job": "skipped",
+    "readme_browser_review": "PASS after equivalent notation correction",
+    "public_release_date": null
+  },
+  "creator_approval_required": true,
+  "open_publication_blockers": [
+    "Creator approval for PUBLIC visibility has not been given."
+  ]
 }
