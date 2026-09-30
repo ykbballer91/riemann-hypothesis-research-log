@@ -10,7 +10,7 @@ A before/after SHA-256 inventory covered **60,812 regular files and four symlink
 
 ## Payload and history safety
 
-The assembled 438-file candidate snapshot and all 425 reachable Git blobs across its five pre-review commits passed the credential, private-key, personal-contact, machine-path and private-URL patterns in [the safety scanner](../tools/scan_publication.py). Author and committer metadata use the selected public handle and GitHub noreply address. There were **0 secret findings and 0 unintended sensitive-path/contact findings**. The final staged snapshot and resulting Git history are rescanned before publication; the publication report records the later public-history scan separately.
+The committed 441-file review snapshot and all 470 reachable Git blobs across its six commits passed the credential, private-key, personal-contact, machine-path and private-URL patterns in [the safety scanner](../tools/scan_publication.py). Commit messages were also scanned. Author and committer metadata use the selected public handle and GitHub noreply address. There were **0 secret findings and 0 unintended sensitive-path/contact findings**. The final staged snapshot and resulting Git history are rescanned before publication; the publication report records the later public-history scan separately.
 
 No original private Git history, runtime environment, dependency source tree, private full inventory, third-party paper PDF, screenshot or binary research bundle is in the public payload. Only allowlisted publication audits are exported. The source manifest and rewrite records distinguish original hashes from the portable public copies.
 

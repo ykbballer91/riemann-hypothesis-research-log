@@ -34,12 +34,14 @@ The [safety report](phase3_safety_report.md) records credential/path/contact/his
 - Browser checks: landing/current-state/cyclicity/finite-head formulas and all 19 track pages retain OPEN; no MathJax errors on checked pages. A long historical plain-text formula now wraps at narrow widths. No universal rendering claim is made for every historical artifact/browser.
 - Git diff review: PASS; no unintended source-history import or archive overwrite.
 - Original research preservation: **60,812 regular files and four symlinks unchanged** under the original inventory convention, source HEAD and Git status unchanged. **Source research modifications: 0.**
-- CI: **PENDING final private-branch run**. Local validation is not substituted for GitHub CI.
+- CI: **PASS** — [private review build 36674209451](https://github.com/ykbballer91/riemann-hypothesis-research-log/actions/runs/36674209451), commit `7932f05d09e50d896288ea9e1138f8f9bef03138`. The final audit-record commit must also pass CI before visibility changes; local validation is not substituted for GitHub CI.
 
 GitHub visibility at this review stage: **PRIVATE**.
 
 Pages public deployment at this review stage: **NO**.
 
-No release date has been assigned. The creator has separately authorized direct publication only after every gate passes. That authorization does not waive this final CI requirement. Later publication actions and the actual release date will be recorded in a separate publication report.
+No release date has been assigned. The creator has separately authorized direct publication only after every gate passes. All blocking content, privacy/security, secret, link, misleading-claim, license and material-citation counts are zero. Source research modifications are zero. The authorization does not waive CI on the final pre-publication commit. Later publication actions and the actual release date will be recorded in a separate publication report.
 
-**Final verdict: NOT READY FOR PUBLICATION: final private-branch CI pending.**
+**Final verdict: READY FOR CREATOR PUBLICATION APPROVAL**
+
+The creator has already supplied the required conditional approval. Once CI confirms this final pre-publication record, proceed under that authorization without another approval request. This dated pre-publication review remains a historical PRIVATE/NO checkpoint; the publication report records the later public state.
