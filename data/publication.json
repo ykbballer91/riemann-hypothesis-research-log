@@ -1,9 +1,12 @@
 {
-  "status": "PRIVATE_REVIEW",
-  "publication_date": null,
+  "status": "PUBLIC",
+  "publication_date": "2026-09-30",
   "author_display": "@ykbballer91",
   "repository": "https://github.com/ykbballer91/riemann-hypothesis-research-log",
-  "pages_url": null,
+  "pages_url": "https://ykbballer91.github.io/riemann-hypothesis-research-log/",
   "creator_authorization": "Conditional authorization to publish only after all Phase 3 gates pass; no additional approval is required after that point.",
-  "rh_status": "OPEN"
+  "rh_status": "OPEN",
+  "pages_deployment_status": "PENDING",
+  "public_visibility_confirmed_at_utc": "2026-09-30T05:39:26Z",
+  "prepublication_ci_run": 36674309588
 }

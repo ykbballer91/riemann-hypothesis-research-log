@@ -35,5 +35,5 @@ Known results are attributed to primary literature where the research records pr
 
 ## Publication scope
 
-Version 0.1.0 is being prepared as a private review draft. Public visibility and live Pages deployment remain blocked until all conditions in the creator's explicit publication authorization pass; no further approval is required after that gate. This repository's licenses govern original exported material; third-party works retain their own rights.
+Version 0.1.0 was made public on 2026-09-30, after the creator-authorized Phase 3 review gates and final private-branch CI passed. Publication metadata records release state separately from the historical research snapshots. This repository's licenses govern original exported material; third-party works retain their own rights.
 

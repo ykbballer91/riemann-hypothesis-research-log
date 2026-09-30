@@ -10,7 +10,7 @@ authors:
 abstract: >-
   An AI-assisted research log documenting auxiliary results, failed routes,
   counterexamples, and unresolved gaps in exploration of the Riemann
-  Hypothesis. Status: RIEMANN HYPOTHESIS OPEN. Publication-review draft.
+  Hypothesis. Status: RIEMANN HYPOTHESIS OPEN.
 license:
   - CC-BY-4.0
   - MIT
@@ -20,4 +20,4 @@ keywords:
   - auxiliary theorems
   - counterexamples
   - AI-assisted research
-# date-released is intentionally absent until the actual public release.
+date-released: "2026-09-30"

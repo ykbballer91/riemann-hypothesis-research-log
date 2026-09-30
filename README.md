@@ -49,7 +49,7 @@ The [source manifest](data/source-manifest.json) records original and exported h
 
 ## Publication and citation
 
-Version **0.1.0** is a publication-review draft. No public release date has been assigned. The repository is being prepared privately, and the Pages deployment workflow is explicitly gated. See the [current publication review](audit/phase3_final_content_review.md).
+Version **0.1.0** was published on **2026-09-30**, after the Phase 3 review and final private-branch CI passed. Read the [documentation website](https://ykbballer91.github.io/riemann-hypothesis-research-log/) and [pre-publication content review](audit/phase3_final_content_review.md). The Pages workflow retains its explicit deployment guard.
 
 If you use this research log, please cite this repository using [CITATION.cff](CITATION.cff). The author display is `@ykbballer91`; AI assistance is disclosed in [methodology](docs/methodology.md).
 
