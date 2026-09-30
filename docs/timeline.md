@@ -235,3 +235,16 @@ Internal audits are not external peer review. A proved auxiliary statement, a co
 **Boundary.** The exception set is not explicitly classified. Physical singular values can deteriorate despite exact rank. No uniform cutoff, coefficient, form-error or moving-ground estimate follows. Floating physical-Gram diagnostics are not interval certificates.
 
 **Transition and status.** Priority 2 stopped here. Growing-order selection, full-ground capture, parity/ES, G* and RH remain open. No later priority was started.
+
+
+## 20. 2026-10-01 公開更新 — [既存定理の委譲と CMP / ES](updates/2026-10-01-cmp-es.md)
+
+**更新。** 2026-09-30の完了済み研究を反映。既存定理監査の19項目中12項目は一般理論・固定範囲の証明を委譲できる。actual moving-Weil の未解決漸近評価が新たに解決した件数は0。
+
+**残った義務。** 現在採用する直接ルートはCMPとESの二種類に集中する。CMPの複素一様比較は具体的な速度の十分条件へ、ESは偶・奇の最低値差と偶側内部の固有値差へ整理された。双方とも未証明であり、同じ共終列上での成立が必要。一点の単純・偶最低状態の有限認証を、最終的なESへ一般化しない。
+
+**なぜ変えたか。** 既存数学で閉じている一般部分を外し、実際のゼータに固有の未証明部分へ対象を絞るため。
+
+**NEXT ACTION。** 必要な速度での最低状態・プロレート近似の接近と、最終的な単純・偶性を独立に検証する。第三ルートへ自動的に広げない。
+
+**状態。** CASE D — CMP OPEN + ES OPEN. EVEN FULL-GROUND CAPTURE: NOT ESTABLISHED. STATUS: RIEMANN HYPOTHESIS OPEN.

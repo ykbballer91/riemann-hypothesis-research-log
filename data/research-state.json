@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "rh_status": "OPEN",
-  "as_of": "2026-09-30",
+  "as_of": "2026-10-01",
   "editorial_aggregation": true,
   "source_states_modified": false,
   "author_display": "@ykbballer91",
@@ -11,7 +11,8 @@
   "original_phase1_track_count": 17,
   "subsequent_updates": [
     "Even-L2 cyclicity / full-ground capture Priority 1",
-    "Finite even Fourier head spanning / Priority 2"
+    "Finite even Fourier head spanning / Priority 2",
+    "Existing-theorem import audit and Direct CMP / ES: CASE D; public update 2026-10-01"
   ],
   "source_repository_head": "c4b6fc587ebb6ad2cec37b9a24c38a3a7e823423",
   "claims": {
@@ -152,5 +153,46 @@
     }
   },
   "rh_closed": false,
-  "evidence_scope": "Written auxiliary proofs with scoped internal independent AI audits; not external peer review or full formal verification."
+  "evidence_scope": "Written auxiliary proofs with scoped internal independent AI audits; not external peer review or full formal verification.",
+  "historical_claims_snapshot_date": "2026-09-30",
+  "source_repository_head_scope": "Original archived snapshot; later editorial updates do not rewrite its claims or source records.",
+  "latest_update": {
+    "public_update_date": "2026-10-01",
+    "research_as_of": "2026-09-30",
+    "public_summary": "../docs/updates/2026-10-01-cmp-es.md",
+    "provenance": "Editorial summary of completed import/CMP/ES work, confirmed by the creator for this publication update.",
+    "new_research_performed_for_publication": false,
+    "import_audit": {
+      "items_reviewed": 19,
+      "generic_or_fixed_scope_items_delegated": 12,
+      "new_actual_moving_weil_asymptotic_obligations_discharged": 0
+    },
+    "combined_case": "CASE D — CMP OPEN + ES OPEN",
+    "CMP": {
+      "status": "OPEN",
+      "scope": "Value-normalized transforms converge uniformly on every compact subset of |Im z|<1/2; anchor z_star=i/4.",
+      "sufficient_condition": "lambda^r D_{lambda,N}->0 for every 0<r<1/2 on a common admissible cofinal sequence with lambda^r log(lambda)/(N+1)->0.",
+      "D_definition": "L2 norm of (I-P_v) P_N R_a k_lambda, where k_lambda is the raw prolate proxy and P_v projects onto the selected unit actual finite ground.",
+      "sufficient_condition_proved": false,
+      "equivalence_to_CMP_claimed": false,
+      "ordinary_L2_convergence_sufficient": false
+    },
+    "ES": {
+      "status": "OPEN",
+      "eventual_conditions": [
+        "e_minus(a,N)>e_plus(a,N)",
+        "Delta_plus(a,N)>0"
+      ],
+      "finite_certification": {
+        "c": 13,
+        "N": 4,
+        "scope": "Simple even ground at this one fixed endpoint only; not eventual ES."
+      }
+    },
+    "same_cofinal_sequence_required": true,
+    "same_cofinal_sequence_established": false,
+    "full_even_ground_capture_proved": false,
+    "rh_closed": false,
+    "next_action": "Investigate CMP and ES independently on the same admissible cofinal sequence; no automatic third route."
+  }
 }

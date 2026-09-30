@@ -9,14 +9,22 @@ The organizing question is what additional arithmetic information could constrai
 ## Start here
 
 - [Reader's guide](docs/index.md): the question, terminology, and how to read the evidence.
-- [Research timeline](docs/timeline.md): 17 tracks in the original inventory, followed by the cyclicity and finite-head updates.
+- [Research timeline](docs/timeline.md): 17 tracks in the original inventory, followed by dated auxiliary-result and research-status updates.
 - [Current state](docs/current-state.md): established auxiliary results and the remaining gap.
 - [Dependency roadmap](docs/roadmap.md): which implications are conditional or open.
 - [Methodology](docs/methodology.md) and [status legend](docs/status-legend.md): what each label means.
 - [Source map](docs/source-map.md), [references](docs/references.md), and [reproducibility](docs/reproducibility.md): the supporting record.
 - [Build the documentation site](docs/site-building.md): local preview and the gated Pages workflow.
 
-## Current frontier
+## Latest update — 2026-10-01
+
+[既存定理の委譲と CMP / ES](docs/updates/2026-10-01-cmp-es.md)：19項目中12項目の一般理論・固定範囲の証明を既存定理へ委譲。新たに解決した actual moving-Weil の漸近評価は0。現在採用する直接ルートの未証明の中心義務は、複素領域での最低状態・プロレート近似の比較（CMP）と、同じ共終列上での最終的な単純・偶性（ES）の二種類に絞られた。
+
+**CASE D — CMP OPEN + ES OPEN.** 通常の $L^2$ 収束や一点の有限認証でこれらを置き換えない。**EVEN FULL-GROUND CAPTURE: NOT ESTABLISHED.**
+
+## Retained frontier snapshot — 2026-09-30
+
+The following snapshot predates the import/CMP/ES update and is retained as history.
 
 The latest restricted selection result concerns **each fixed finite** derivative space
 

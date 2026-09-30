@@ -2,7 +2,22 @@
 
 **STATUS: RIEMANN HYPOTHESIS OPEN**
 
-Editorial snapshot: **2026-09-30**. This page aggregates the latest independent tracks; it is not a modification of their historical state files. Evidence is mapped in [source-map](source-map.md) and [research-state.json](../data/research-state.json).
+Latest public update: **2026-10-01**, summarizing completed research dated **2026-09-30**. Historical source states remain unchanged; the latest editorial status is recorded in [research-state.json](../data/research-state.json).
+
+## 現在の直接ルート — CMP OPEN / ES OPEN
+
+[最新更新](updates/2026-10-01-cmp-es.md)では、既存定理監査の19項目中12項目を一般理論・固定範囲の証明として委譲した。actual moving-Weil の未解決漸近評価が新たに解決した件数は **0**。現在採用する直接ルートの中心義務は次の二種類で、いずれも未証明である。
+
+- **CMP：** 実際の有限Weil最低状態とプロレート近似の値規格化フーリエ変換を、$|\Im z|<1/2$ の各コンパクト集合上で一様に比較する。$\lambda^rD_{\lambda,N}\to0$（すべての $0<r<1/2$）は、記載された解像条件のもとでの十分条件であり、未証明。通常の $L^2$ 収束だけでは足りない。
+- **ES：** 同じ共終列上で最終的に $e_->e_+$、$\Delta_+>0$ を示す。一点 $c=13,N=4$ の単純・偶最低状態の有限認証を、最終的なESへ一般化しない。
+
+**CASE D — CMP OPEN + ES OPEN.** 両義務を独立に検証し、同じ列で全前件を満たして初めて、既知の有限実零点定理・プロレート近似の収束・Hurwitz／Rouchéを接続できる。新しい第三ルートへ自動的に広げない。
+
+**EVEN FULL-GROUND CAPTURE: NOT ESTABLISHED.**
+
+## Retained snapshot — 2026-09-30, before the import/CMP/ES update
+
+The following earlier summary is preserved as history, not as an expanded list of current main tracks. Its evidence is mapped in [source-map](source-map.md).
 
 ## Fixed finite derivative spaces
 
