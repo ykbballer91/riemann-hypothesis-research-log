@@ -1,0 +1,17 @@
+# Local publication working papers and full private inventories.
+/audit/*
+!/audit/rewrite_manifest.md
+!/audit/phase2_safety_report.md
+!/audit/phase2_independent_review.md
+!/audit/phase2_publication_review.md
+!/audit/phase2_validation_summary.json
+
+/.venv/
+/_site/
+/.DS_Store
+**/.DS_Store
+**/__pycache__/
+**/*.pyc
+/.preview/
+/.local/
+
