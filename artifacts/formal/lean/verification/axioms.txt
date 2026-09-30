@@ -1,0 +1,15 @@
+STATUS: RIEMANN HYPOTHESIS OPEN
+SANITIZED HISTORICAL SOURCE SNAPSHOT — not a new execution or proof validation.
+Public credit: @ykbballer91; AI-assisted research log; text CC BY 4.0.
+Source: formal/lean/verification/axioms.txt
+Original SHA-256: 041883ac77409732b395a19aa5124097d85cbf4733b9981ae86f38e1bc538e0f
+Internal source paths are provenance identifiers; see data/source-manifest.json for public paths.
+
+'RhAudit.nonneg_of_pointwise_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RhAudit.nonneg_of_vanishing_lower_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RhAudit.nonneg_on_dense' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RhAudit.coordinate_restrictions_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RhAudit.larger_block_negative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RhAudit.quartet_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RhAudit.two_block_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RhAudit.scalar_schur_equivalence' depends on axioms: [propext, Classical.choice, Quot.sound]

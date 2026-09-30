@@ -1,0 +1,83 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "experiments/results/phase2-scattering-checks.json",
+    "source_sha256": "1c7fda45891aaf9965e2a4ae8130ae5207d51ff66ea6fb7f070d86ee589eaaa0",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {}
+  },
+  "precision_decimal_digits": 70,
+  "certified": false,
+  "proves_RH": false,
+  "refutes_RH": false,
+  "purpose": "Catch normalization, parameter and pole-versus-eigenvalue errors; analytic proofs are in the research note.",
+  "source_sha256": "c33d4a7b5edd2acda0c786273434cfc329cb7076bf9b7f7bd8cb27fa5dbd49a0",
+  "functional_equation_errors": [
+    "2.0037517e-71",
+    "2.2482816e-72"
+  ],
+  "unitarity_errors": [
+    "9.0556791e-72",
+    "0.0"
+  ],
+  "log_derivative_identity_error": "1.2806664e-71",
+  "boundary_reconstruction": [
+    {
+      "factors": 4,
+      "telescoping_error": "3.7337521e-71",
+      "remaining_error_to_zeta": "0.0382087837232"
+    },
+    {
+      "factors": 8,
+      "telescoping_error": "1.8111358e-71",
+      "remaining_error_to_zeta": "0.00220924294899"
+    },
+    {
+      "factors": 16,
+      "telescoping_error": "9.7952146e-71",
+      "remaining_error_to_zeta": "8.47163541574e-6"
+    },
+    {
+      "factors": 32,
+      "telescoping_error": "1.2317055e-70",
+      "remaining_error_to_zeta": "1.29169623743e-10"
+    }
+  ],
+  "sample_zeta_zero": {
+    "re": "0.5",
+    "im": "14.1347251417346937904572519835624702707842571"
+  },
+  "scattering_pole_parameter": {
+    "re": "0.25",
+    "im": "7.06736257086734689522862599178123513539212856"
+  },
+  "continued_laplacian_parameter": {
+    "re": "50.1351137080967148658412964903503947617061928",
+    "im": "3.53368128543367344761431299589061756769606428"
+  },
+  "imaginary_part_identity_error": "0.0",
+  "actual_constant_term_at_scattering_pole": [
+    {
+      "a": 1,
+      "constant_term_abs": "0.0000142273401410640829973036046355",
+      "noncancellation_identity_error": "5.5271479e-76"
+    },
+    {
+      "a": 2,
+      "constant_term_abs": "0.0000239274386464321295602670357867",
+      "noncancellation_identity_error": "1.2739446e-75"
+    },
+    {
+      "a": 10,
+      "constant_term_abs": "0.0000800062130885982445493140165955",
+      "noncancellation_identity_error": "4.1453609e-75"
+    }
+  ]
+}

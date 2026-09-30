@@ -1,0 +1,184 @@
+STATUS: RIEMANN HYPOTHESIS OPEN
+SANITIZED HISTORICAL SOURCE SNAPSHOT — not a new execution or proof validation.
+Public credit: @ykbballer91; AI-assisted research log; text CC BY 4.0.
+Source: research/prime_complex/completion_report.txt
+Original SHA-256: f02b17d3c5557caa7b5105881bef73a7272b45778ccbbe050f9022cd031ecacc
+Internal source paths are provenance identifiers; see data/source-manifest.json for public paths.
+
+Prime Complex Parity Pairing / Topological Cancellation 完了報告
+2026年9月30日
+
+RHはOPENです。今回、平方根級のMöbius相殺は証明していません。
+
+結論は明確です。自然な算術的parity pairingは存在し、鎖レベルでも完全に書けます。しかし、この複体の位相を保ったまま残るセルやkernelの総数を平方根規模にする方法は、既知のBetti数と矛盾します。残差の総数は約2X/pi²で、線形規模です。その大きな残差の正負の差を小さくする算術機構は、依然として得られていません。
+
+ユーザー指定のStage A（自然なpairing）とStage B（未対応集合の明示）まで成立します。これは既知構造の直接再確認と具体化です。Stage C以降の小残差評価は得られず、通常のMorse/Hodgeルートについては不可能性が示せます。3つの主要構成を検査し、kill conditionとstrategy reviewに従って終了しました。
+
+1. 以前の研究の保持
+
+Phase I〜IV、Continuous Scale Flow、One-Prime Return、Dyadic Arithmetic Reductionのファイル、反例、failed routes、state、主証明graphは変更していません。前回の未commitのdyadic成果も保存対象に含め、既存262ファイルを開始時にSHA-256で記録しました。今回の成果はprime_complex専用の新規ファイルだけに保存しています。
+
+終了時の照合でも262ファイル全件が一致し、変更・削除はいずれも0でした。指定ファイル、JSON state、計算結果、ローカル参照リンクの整合性も確認済みです。
+
+前回のdyadic構成では、explicit representativeの上界が2^(n/2)(1+n)まで下がりました。しかし、その準指数endpointへ進めるためのMertens評価はRH同値でした。今回はその評価を仮定せず、元のMöbius符号に明示的な組合せ的対応を作ることだけを攻撃しました。新しい解析的Mertens評価、random signs、有限数値からのgrowth fitは採用していません。
+
+2. prime complexと符号の規約
+
+Delta_Xは、素数の有限集合Sの積がX以下であるものを全て集めたsimplicial complexです。empty faceは整数1に対応し、含めます。squarefree整数nのfaceの次元はomega(n)-1です。
+
+この規約では、M(X)はreduced Euler characteristicのマイナスです。普通のEuler characteristicは1-M(X)です。homologyの次数で偶奇を付ける場合と、素因数個数omegaで偶奇を付ける場合には、符号が一つ反転します。全ログでこの点を固定しました。
+
+Björnerの指定原文で、複体、Euler-Mertens関係、Betti数公式、Betti総数の漸近を確認しました。Knillのdivisibility graphによる表現は、nonempty facesのorder complex、すなわちbarycentric subdivisionとして対応します。
+
+ただし、素数だけを頂点にしてpq<=Xを辺とするgraphのflag completionとは違います。X=15では2,3,5の全辺がある一方、三角形の積30はcutoff外です。この三角形を埋めると元のhomologyを変えてしまいます。
+
+3. 第一構成：素数2の挿入／除去
+
+奇数のsquarefree mで2m<=Xのものを、mと2mで対応させます。これはcutoffを保つ明示的な符号反転pairingです。全てのeven squarefree faceが一意に対を持ちます。
+
+このmatchingはacyclicです。matched edgeを上向きにすると上向き移動は2の追加だけで、いったん2を含んだ後は2を除くedgeを逆向きには通れません。他の移動はodd verticesを減らすのでcycleになりません。
+
+未対応の集合は正確に、X/2<n<=Xにあるodd squarefree整数です。従ってM(X)はこの集合のMöbius符号和になります。これは単にM(X)と等しくなるように残差を定義したものではなく、actual matchingの失敗箇所を独立に列挙したものです。
+
+ここまではboundary仮説が成立します。bulkは完全に対になり、残るのはmultiplicative cutoffの境界層です。しかし、この境界層は小さくありません。
+
+4. 残差が線形規模であること
+
+odd squarefree整数の計数は、mu²(n)=sum_{d²|n}mu(d)から初等的に4Y/pi²+O(sqrt Y)と評価できます。RHもPNTもMertensの符号相殺も使いません。
+
+したがって未対応数は
+
+2X/pi²+O(sqrt X)
+
+です。全squarefree facesは約6X/pi²で、そのうち約4X/pi²が対になり、約2X/pi²が残ります。固定割合の相殺であり、o(X)のnear-perfect pairingではありません。
+
+log座標では境界の幅はlog2ですが、その幅の中にあるface数は線形に増えます。「境界に集中する」と「境界が平方根規模しかない」は別の命題でした。
+
+5. 別のMorse matchingに替えても、この総数は減らせない
+
+star(2)はconeなのでcontractibleです。その外のfaceは上の未対応集合そのものです。未対応faceのproper facesは、少なくとも一つのodd primeを除くので、積がX/3以下になり、すべてstar(2)へ入ります。
+
+star(2)を一点へ潰すと、未対応のnごとにS^(omega(n)-1)が一つ現れます。従ってDelta_Xはこれらの球面のwedgeと同じhomotopy typeを持ち、全reduced Betti数の総和が未対応数と厳密に一致します。
+
+Morse inequalitiesにより、元のhomologyを保つacyclic matchingのcritical cell数はBetti数以上でなければなりません。素数2のmatchingはすでにその下界を達成しています。Morseの意味でperfectというのはこの最小性の意味であり、すべてのfaceが対になったという意味ではありません。
+
+通常の非空faceだけのMorse規約なら、emptyと2の対を使わず、基点のcritical vertexが一個追加されます。その差1も区別しました。
+
+従って、通常のMorse matchingでcritical総数をo(X)、まして平方根規模へ減らす戦略は不可能です。
+
+6. 鎖レベルでの明示的な分解
+
+odd squarefree n=p_1...p_kについて、b_n=[2,p_1,...,p_k]、z_n=boundary b_nとします。z_nにはsigma_nのほか、積2n/p_i<nのfacesだけが現れるので、b_nがまだcutoff外でもz_nは時刻nに存在します。
+
+odd simplexの基底をz_nに置き換え、even simplexの基底b_nは残すと、これは整数係数の可逆なfiltered basis changeです。その基底ではboundary b_n=z_n、boundary z_n=0となります。
+
+したがって共通のacyclic部分と未対応のhomology部分を、実際にchain-levelで直和分解できました。ユーザーの求めた「共通部分Pを偶奇から相殺する」という形は具体的に成立しています。ただし残った偶奇部分の総次元が線形であり、その差の制御は出ません。
+
+7. persistenceの出生と消滅
+
+各odd squarefree nに対し、degree omega(n)-1のreduced persistence intervalが正確に[n,2n)となります。n=1はdegree -1の[1,2)です。ordinary H0なら[2,infinity)が別に一本加わります。
+
+例えば、n=3は[3]-[2]という0-cycleで3に生まれ6に消えます。n=15は[3,5]-[2,5]+[2,3]という1-cycleで15に生まれ30に消えます。
+
+全barのlog座標での寿命は正確にlog2です。coneを付けるchain homotopyにより、Delta_XからDelta_(2X)への包含はreduced homology上でゼロにもなります。
+
+それでも、その時点で生きているbarは2X/pi²+O(sqrt X)本です。「すべてのクラスが有限時間で消える」から「同時に残るクラスは少ない」と推論できないことが、actual arithmetic complexで明確になりました。
+
+8. 第二構成：大素数と平方根スケール
+
+p>sqrt Xのprimeはn<=Xに高々一個しか含まれません。その意味でsqrt Xは自然に現れます。しかしn=pmからmへのmapは多対一です。X=5では3と5がどちらも1、すなわちempty faceへ送られます。
+
+small parentsがsqrt X以下に限られても、同じparentを何度もmatchingに使うことはできません。m=1だけでも多数のlarge-prime facesが集まります。このmultiplicityを捨ててparentの個数だけ数えると誤ります。
+
+さらに一般的な反証があります。pが(X/2,X]のprimeなら、singleton {p}には上方cofaceがありません。primeを一つ入れる／除くmatchingでの唯一の相手はempty faceですが、それは一度しか使えません。
+
+従って、cycleを許した任意のface-incidence matchingでも、未対応数はpi(X)-pi(X/2)-1以上です。PNTからこれは約X/(2log X)になります。固定delta>0に対するO(X^(1-delta))は達成できません。平方根規模も不可能です。
+
+この不可能性の対象はprime insertion/removalのincidence matchingです。任意の非局所な整数pairingやhomology間の別の算術mapまでは否定していません。
+
+9. 再帰的なコピーとlocal divisor cancellation
+
+prime pを含まない複体をD_p(X)とすれば、Delta_X=D_p(X) union p*D_p(X/p)というexactな再帰分解があります。linkはpを除いたD_p(X/p)であり、一般にfull Delta_(X/p)と同じではありません。
+
+この再帰はM(X)=M_p(X)-M_p(X/p)に対応します。largest-prime分解やBuchstab型の分割も正確に書けますが、共通のbasesやattachment multiplicitiesを保持すると、未解決のsigned sumが残ります。
+
+また、各整数nのdivisor latticeでsum_{d|n}mu(d)=0となる局所相殺は、n<=Xでも壊れていません。その全divisorsもX以下だからです。問題は異なるnのsimplexesが重なり、一つのfaceを何度も数えることです。
+
+全部足すとsum_{d<=X}mu(d)floor(X/d)=1であり、無重みのM(X)とは違います。このmultiplicityの差をboundary defectと呼び直すだけでは、相殺評価になりません。
+
+10. 第三構成：Hodge、odd operator、spectral pairing
+
+actual simplicial boundaryをd、向き付きsimplexをorthonormalとするadjointをd*とし、D=d+d*、L=D²を作れます。positive eigenvaluesはDを使って偶奇にexactに対応します。物理的仮定は何も使いません。
+
+しかし、Hodge theoremによりkernelの総次元は全reduced Betti数そのものであり、やはり約2X/pi²です。正定値metricを変えてもこの次元は減りません。
+
+cardinality parityでのindexとheat supertraceはM(X)になります。homological degree parityなら符号が反転します。nonzero modesを相殺した後、線形個のzero modesの正負の差がそのまま残ります。
+
+なお、上の整数filtered basisはunimodularですがunitaryではありません。自然なLaplacianのspectrumが全部0と1になるとは主張していません。
+
+残った正負の基底を任意に順番でpairすれば未対応をabs(M(X))個にできますが、それは目的の量を別名で書く方法であり、独立したstructural boundではありません。この案も新しい候補として採用していません。
+
+11. exact experimentsとsynthetic tests
+
+有限実験は構造の反証・検算だけに使いました。
+
+最大X=10000までの12個のcutoff標本で、全squarefree faces、toggle2 matching、未対応の位置・parity・最大素因数を列挙しました。10個の小cutoffについては、actual boundary matricesのrankを有理数で独立計算し、Betti公式と一致しました。小さい例ではLaplacianのkernelもexact rational rankで検査しました。
+
+標準のF2 persistence reductionをcutoff1000まで実行し、204本の消滅済みintervalがすべて[n,2n)に一致しました。まだ生きている200本は予測された未対応集合と一致しました。整数係数の正当化は数値とは別の鎖証明で与えています。
+
+X=15ではacyclicなtoggle matchingの未対応数は3ですが、cycleを許す最大incidence matchingは未対応1にできます。この例により、Morse matchingと任意のmatchingの障害を混同していません。
+
+X=1000では未対応200、正符号101、負符号99、M=2です。X=10000では未対応2029、M=-23です。これらの小さな差を全Xの証明には使っていません。
+
+finite prime sets、modified weights、固定seedによるprime-weight perturbationsにも最小頂点pairingを適用しました。同様の構造が成立するため、この構造自体はactual prime arithmeticを特定しません。全頂点のweightを同じ4にした8頂点の例では、cutoff4のsigned residualは-7です。これは一般構造の十分性を壊す模型であり、actual zetaの反例ではありません。
+
+全整数への拡張では2と4が同じprime setになり、Möbius値の違いを保持できません。元のsquarefree complexをそのまま全整数へ置換する方法は棄却しました。
+
+12. 文献と独立監査
+
+必須文献のBjörner、Knillを指定版で確認し、Morse inequalitiesはFormanの著者解説を確認しました。主なEuler・wedge・Betti・総数結果は既知です。persistenceの明示式も新規性を主張していません。
+
+builderがinteger filtered chain modelとpersistenceを構成し、destroyerがcone collapse、linear count、Hodge kernel、singleton obstruction、large-prime collisionを独立検算しました。literature担当が原文の規約と該当定理を照合しました。
+
+13. Dyadic Reductionへの影響
+
+今回得た絶対値上界は、未対応数を使うO(X)だけです。新しいtheta<1のMertens boundは得ていません。従って前回の条件付き2^((theta-1/2)n)評価を改善する材料はありません。
+
+theta=1を、theta<1を必要とする式へそのまま代入することもしていません。前回の無条件2^(n/2)(1+n)p_4(g)がそのまま残ります。以前のdyadicファイルは変更していません。
+
+14. 終了判断と保存先
+
+Stage A：成立。自然なexact pairingあり。
+Stage B：成立。未対応集合と完全なhomologyを明示。
+Stage C：このacyclic matchingでは不可能。残余はTheta(X)。
+Stage D：incidence matching全体でも固定power savingに障害。
+Stage E：未達。square-root cancellationなし。
+新しいRH-independent bridge：なし。
+RH：OPEN。
+
+linear critical count、linear kernel、共有parentのkill条件が成立したため、3主要構成の後に探索を終了しました。第4の類似候補へは進んでいません。一般の未知のnonlocal arithmetic parity pairingまで不可能と証明したわけではありません。
+
+保存ファイル：
+research/prime_complex_parity_pairing.md
+research/prime_complex_matching_matrix.md
+proofs/audits/prime_complex_adversarial.md
+research/prime_complex_state.json
+research/prime_complex/notes/matching_persistence.md
+research/prime_complex/notes/independent_audit.md
+research/prime_complex/notes/literature.md
+research/prime_complex/experiments/check_complex.py
+research/prime_complex/experiments/results.json
+research/prime_complex/preservation_baseline.json
+research/prime_complex/preservation_check.json
+research/prime_complex/validation.json
+
+主要出典：
+https://arxiv.org/html/1101.5704v1
+https://arxiv.org/pdf/1608.06877v1
+https://www.mat.univie.ac.at/~slc/wpapers/s48forman.pdf
+
+今回の整理で明らかになったのは、局所的・非零modeの相殺構造が不足しているというより、その相殺を全て実行した後にも実際のtopologyが線形個のzero modesを残すということです。平方根級の結論に必要なのは、その大きなhomology空間の正負を結ぶ追加の算術的機構であり、Euler characteristic、Morse matching、有限persistence、Hodge positivityだけからは出ません。この範囲を明記して完了報告とします。
+
+
+PUBLIC EXPORT EDITORIAL NOTE — SOURCE REFERENCES NOT INCLUDED:
+- research/prime_complex/preservation_baseline.json

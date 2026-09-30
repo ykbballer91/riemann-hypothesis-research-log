@@ -1,0 +1,107 @@
+{
+  "schema_version": "public-release-history-v1",
+  "status": "RIEMANN HYPOTHESIS OPEN",
+  "public_credit": "@ykbballer91",
+  "license": "CC-BY-4.0",
+  "historical_archives_redistributed": false,
+  "catalog_scope": "Historical private source checkpoints, not public releases or completed proofs. Archive members and third-party cache are not copied.",
+  "checkpoints": [
+    {
+      "version": "checkpoint-2026-09-29-01",
+      "source_commit": "a429fb5dbb6a5efe336eb853d0a86f05c72b74d7",
+      "zip": {
+        "source_path": "release/rh-research-checkpoint-2026-09-29-01.zip",
+        "sha256": "2d86aefea1f01b718beb12214295b7b30c3828141cc8f206fc30a7394a749c5b"
+      },
+      "tar_gz": {
+        "source_path": "release/rh-research-checkpoint-2026-09-29-01.tar.gz",
+        "sha256": "8c873a1925d9aec5fa13af04c02fc3e1c14822e110ea0cb7da7b2d1bbaf9b42c"
+      },
+      "file_count": 68,
+      "same_file_payloads_across_formats": true,
+      "has_platform_metadata": false,
+      "selection": "HISTORICAL_CATALOG_ONLY",
+      "copy_policy": "DO_NOT_COPY_EXISTING_BINARY_ARCHIVES",
+      "phase2_action": "Record version/hash/member-count; selectively export historically distinct authored documents only after interior safety and rights audit."
+    },
+    {
+      "version": "checkpoint-2026-09-29-02",
+      "source_commit": "f17620860bfc0dcdaafce537fa5449e626157a7a",
+      "zip": {
+        "source_path": "release/rh-research-checkpoint-2026-09-29-02.zip",
+        "sha256": "a6a117219bc9629507c402164490a37140e7332839061377b73ad0deb785ecb0"
+      },
+      "tar_gz": {
+        "source_path": "release/rh-research-checkpoint-2026-09-29-02.tar.gz",
+        "sha256": "b7bdb020a57dff15fc34474ef4daf72a2158dc78a265f9112fa2cadba99bcf27"
+      },
+      "file_count": 80,
+      "same_file_payloads_across_formats": true,
+      "has_platform_metadata": true,
+      "selection": "HISTORICAL_CATALOG_ONLY",
+      "copy_policy": "DO_NOT_COPY_EXISTING_BINARY_ARCHIVES",
+      "phase2_action": "Record version/hash/member-count; selectively export historically distinct authored documents only after interior safety and rights audit."
+    },
+    {
+      "version": "checkpoint-2026-09-29-03",
+      "source_commit": "49d3fbe93ffb78902e8cf09bf57e6039d02711a6",
+      "zip": {
+        "source_path": "release/rh-research-checkpoint-2026-09-29-03.zip",
+        "sha256": "221dc65b2eadd7aad1b174320a048b352f7faf1b65ac03d1e5c07c1d4dcc6a82"
+      },
+      "tar_gz": {
+        "source_path": "release/rh-research-checkpoint-2026-09-29-03.tar.gz",
+        "sha256": "e04aadab7f2acdc7d0dfec04c2f37d9c9ea44667a7591f0c845c641d7930d2cd"
+      },
+      "file_count": 91,
+      "same_file_payloads_across_formats": true,
+      "has_platform_metadata": true,
+      "selection": "HISTORICAL_CATALOG_ONLY",
+      "copy_policy": "DO_NOT_COPY_EXISTING_BINARY_ARCHIVES",
+      "phase2_action": "Record version/hash/member-count; selectively export historically distinct authored documents only after interior safety and rights audit."
+    },
+    {
+      "version": "checkpoint-2026-09-29-04",
+      "source_commit": "9123847926979960c6dfe29faf333969cff8fb5c",
+      "zip": {
+        "source_path": "release/rh-research-checkpoint-2026-09-29-04.zip",
+        "sha256": "e652cdb8a643e2e3db57a0bc041011ac00259d37607ff666e3909009890ea8c3"
+      },
+      "tar_gz": {
+        "source_path": "release/rh-research-checkpoint-2026-09-29-04.tar.gz",
+        "sha256": "b812887004cadb5a500ea888f686dbcce28c2622b2c537b7c4aae1303e799fe1"
+      },
+      "file_count": 103,
+      "same_file_payloads_across_formats": true,
+      "has_platform_metadata": true,
+      "selection": "HISTORICAL_CATALOG_ONLY",
+      "copy_policy": "DO_NOT_COPY_EXISTING_BINARY_ARCHIVES",
+      "phase2_action": "Record version/hash/member-count; selectively export historically distinct authored documents only after interior safety and rights audit."
+    },
+    {
+      "version": "checkpoint-2026-09-29-06",
+      "source_commit": "d31ca1325140a8e83d30e4dff0a41688db95055c",
+      "zip": {
+        "source_path": "release/rh-research-checkpoint-2026-09-29-06.zip",
+        "sha256": "52cd792af3296b21081f501ef46001161e5b6b5ca2a98202395375db8983f6ae"
+      },
+      "tar_gz": {
+        "source_path": "release/rh-research-checkpoint-2026-09-29-06.tar.gz",
+        "sha256": "1113645a55bdb38ce5abbf13863de0115350a606dcf9360658e081eb82788ee4"
+      },
+      "file_count": 196,
+      "same_file_payloads_across_formats": true,
+      "has_platform_metadata": true,
+      "selection": "HISTORICAL_CATALOG_ONLY",
+      "copy_policy": "DO_NOT_COPY_EXISTING_BINARY_ARCHIVES",
+      "phase2_action": "Record version/hash/member-count; selectively export historically distinct authored documents only after interior safety and rights audit."
+    }
+  ],
+  "current_export": {
+    "source_commit": "c4b6fc587ebb6ad2cec37b9a24c38a3a7e823423",
+    "firstparty_source_files": 364,
+    "includes_uncommitted_independent_tracks": true,
+    "includes_priority1_cyclicity": true,
+    "public_release_uploaded": false
+  }
+}

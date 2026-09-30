@@ -1,0 +1,167 @@
+STATUS: RIEMANN HYPOTHESIS OPEN
+SANITIZED HISTORICAL SOURCE SNAPSHOT — not a new execution or proof validation.
+Public credit: @ykbballer91; AI-assisted research log; text CC BY 4.0.
+Source: research/local_to_global/completion_report.txt
+Original SHA-256: b10ca2c90c58a2424d2b780931d41efff2c9b64a045f6fd1ecc90ce804840cba
+Internal source paths are provenance identifiers; see data/source-manifest.json for public paths.
+
+LOCAL-TO-GLOBAL ZERO CONFINEMENT / ADELIC GLUING 完了報告
+2026-09-30
+
+結論：指定された三方向の限定監査を完了しました。RH は OPEN です。今回の到達点は Level 1、すなわち local・semilocal・global の対象を分離し、既知定理の適用条件、正規化、必要な収束位相、未証明の比較命題を固定した段階です。新しい大域零点拘束の証明は得られていません。既存の研究ファイル、state、proof graphは変更せず、自動mergeも行っていません。
+
+最も重要な発見は、実零点性が証明されている関数族と、actual Xi への収束が証明されている関数族が、同じものではないことです。
+
+前者は actual Weil form の最小固有関数のFourier変換です。ただし最小固有値が単純で、その固有関数が偶であるという条件が必要です。
+
+後者は prolate関数から構成された、明示的な算術和のFourier変換です。この別の族には、critical strip内の一様収束評価があります。しかし、この族の全零点が実数だという保証は得られていません。
+
+この二つを無断で同一視する箇所が、今回特定した最も具体的な切断点です。
+
+1. Local RHで零点を1/2へ拘束している本当のmechanism
+
+実数体のBump–Choi–Kurlberg–Vaalerの定理では、指定されたHermite関数のMellin変換がGamma因子と有限多項式に分解されます。Hermite関数の直交性をMellin-Plancherel変換で移すことで、その多項式がcritical line上の正のGamma重みについて直交します。直交多項式の実単純零点定理が、Mellin変数では Re(s)=1/2 を与えます。
+
+従って「harmonic oscillatorが自己共役だから、そのMellin変換の零点も臨界線」という一段の推論ではありません。特定の固有関数、有限多項式への分解、正測度への直交性が必要です。任意の線形結合には同じ結論を適用できません。
+
+同論文の別証明は、r(z)=(z+a)q(z+2)−(z−a)q(z−2) という作用で零点stripを縮める絶対値比較です。有限多項式で最大実部が達成されることと、qがこの作用の固有多項式になることを組み合わせて中心線を強制します。これは一般の無限次元・整関数族へ自動では移りません。
+
+2. realとp-adicに共通するもの
+
+共通するのは「特別な局所算術入力の変換に、零点の絶対値を固定するexact identityがある」という機能です。同一の正測度・同一のoscillator証明が全場所を覆うわけではありません。
+
+Kurlberg IIの非アルキメデスの場合は、特定のWeil表現vectorと局所Mellin変換を使います。変数 y=q^(1/2−s) で零点条件を単位円の内外に分けて評価すると、|y|=1 が強制されます。ramified caseでは二項式の係数比がGauss和の絶対値により決まり、同じ結論になります。この原典の範囲は奇数剰余標数です。
+
+Sauvalleの非退化二次characterの弱Mellin変換は別の構成で、p=2も含みます。実数体ではKummer方程式のWronskian identityに現れる正の積分がparameterの実部を固定します。非アルキメデス体ではvaluationと局所Fourier/Weil構造が働きます。
+
+ここで確認されたlocal RHを、任意のlocal test functionの定理へ拡張してはいけません。
+
+3. Sauvalleのlocal→adelicでRH同値になるexact step
+
+Q上の具体的な二次characterについて、global weak Mellin transformは
+
+Xi_f(s)=exp(−πis/4) C_2(s) 2xi(s)/(s(s−1)),
+
+C_2(s)=2^(1−s)−1+exp(πi/4)(2^s−1)
+
+となります。
+
+C_2の零点は全て Re(s)=1/2 にあります。従ってcritical strip内の臨界線外では、この補正は非零であり、Xi_fの零点はactual zetaの零点と重複度まで一致します。
+
+つまり、local confinementがglobalのoff-line零点を消すのではありません。global L-factorがそのまま残ります。この具体例のglobal confinementはRH同値です。
+
+「局所因子を全て掛ければ大域でも臨界線」という推論は使えません。標準local Euler factorはそもそも零点を持たない場合があり、Euler積の絶対収束域 Re(s)>1 とcritical stripの解析接続を区別する必要があります。
+
+4. Connesのfinite-prime constructionで何が厳密か
+
+有限行列Q_(lambda,N)はactual Weil formのFourier/Galerkin制限です。prime-power terms、Gamma項、pole termsが初めから含まれます。Nは素数個数ではなくFourier次数です。
+
+ESを「最小固有値が単純、対応する固有vector v_(lambda,N) が反転について偶」と定義します。
+
+ESの下では、Qから最小固有値を引いた形式が有限商上で正内積を与え、対応するDirac型構成が自己共役になります。ここで得る正性は、元のWeil formが非負だという証明ではありません。
+
+CCMのexact determinant identityは
+
+d_(lambda,N)(z)=det_reg(D_(lambda,N)−z)
+              =−i exp(−iz log lambda) vhat_(lambda,N)(z)
+
+です。これによりvhatの全零点が実数になります。ただし必要なcofinalな算術的系列についてESを無条件に確認する義務は残っています。
+
+また、この構成は有限行列だけではありません。有限商に、未変更の無限Dirac tailが付いています。
+
+2024年のSonin-space stabilityが保存するのは有限places間のbounded isomorphism、Fourier intertwining、completed Mellin表示での同一の整関数です。normはplacesに依存します。個別の関数の零点がそのまま保存されることと、任意の関数がcritical-line zerosしか持たないことは別です。ground stateやWeil positivityまで保存する定理ではありません。
+
+5. finite→globalに必要な最小収束命題
+
+座標は X(z)=xi(1/2+iz) とします。RHはXの全零点が実数という命題になります。全非自明零点は無条件に Omega={|Im z|<1/2} に入るので、全複素平面でなくこのstrip内のcompact上の収束で十分です。
+
+規格化点を z*=i/4 とします。X(z*)=xi(1/4)>0 はRHなしで分かり、実零点族vhatもここでは非零です。
+
+比較する実零点関数は
+
+F_(lambda,N)(z)
+ =X(z*) exp(i(z−z*) log lambda) d_(lambda,N)(z)/d_(lambda,N)(z*)
+ =X(z*) vhat_(lambda,N)(z)/vhat_(lambda,N)(z*)
+
+です。raw determinantには、定数だけでなく上記の非消失phase因子の補正が必要です。
+
+一方、prolateから構成されたk_lambdaの変換は、印刷されたhとdu/uの規約では X(z)/4 に収束します。これはGamma積分で二担当が独立に再計算し、数値診断でも確認しました。単なるスカラーの差なので値規格化で解消します。
+
+G_lambda(z)=X(z*) khat_lambda(z)/khat_lambda(z*)
+
+とすれば、G_lambda→X はOmegaのcompact上一様に成立します。
+
+したがって正確な未証明命題は次です。
+
+ESを満たし lambda_j→∞ となる列(lambda_j,N_j)が存在して、Omegaの任意compact Kについて
+
+sup_(z in K) | vhat_(lambda_j,N_j)(z)/vhat_(lambda_j,N_j)(z*)
+             −khat_lambda_j(z)/khat_lambda_j(z*) | → 0。
+
+この命題は、ESの確認と、正規化した二つの変換の比較という二つの義務を含みます。これを一つの式に書いたからといって、どちらかを証明済みと扱ってはいません。
+
+これが成立すればF→Xとなり、HurwitzまたはRouchéにより非実零点は不可能です。多重零点も個数に含まれます。逆にRHからこの特定のground/prolate比較が従うとは証明していません。
+
+6. 2024–2026の既知結果から新しく使えるestimateはあるか
+
+あります。ただし真のground stateまで届いていません。
+
+CCM §7には、固定次数0,4のprolate関数とHermite関数のO(lambda^(−2))近似があります。これを算術和へ渡すと、任意0<r<1/2について
+
+sup_(|Im z|<=r) |khat_lambda(z)−X(z)/4|
+ <= C_r lambda^(−1/2+r) + polynomial(lambda) exp(−π lambda^2)
+
+という評価が得られます。有限和の外に残るGaussian tailも明示して検算しました。この既知のestimateは今回の実質的な外部入力です。
+
+しかし、k_lambdaがtrue Weil ground stateに近いというestimateではありません。prolateのconcentration eigenvalueとWeil ground-state gapも異なる量です。CvSの固定窓のground-state近似定理は、固定operatorの孤立単純groundを前提にしたもので、窓が大きくなる際のgap・残差・規格化の一様な算術評価を供給しません。
+
+従って「外部入力は何もなかった」でも「収束問題は解けた」でもありません。収束する側の具体的な族は固定できましたが、実零点性を持つ側との比較が不足しています。
+
+今回の反証・独立監査
+
+未変更Dirac tailの零点は πj/log lambda、|j|>N にあります。そのため、非零の局所一様極限を得るには N/log lambda→∞ が必要です。比が有界のままだとtail零点が実区間に稠密化し、正則極限は恒等零になります。これは必要条件であり十分条件ではありません。
+
+さらにactual N=0構成ではESが自動的に成立しますが、a=log lambdaとして
+
+f_a(z)=(sin(az)/z)/(4 sinh(a/4))
+
+は全実零点でf_a(i/4)=1を保つ一方、実軸では0へ、z=2i/5では無限大へ向かいます。有限段階の実零点性と一点規格化だけではnormal familyは出ません。
+
+したがって「全パラメータ族は正規族」という主張は反例があります。未解決として残すのは、適切なcofinal経路上で必要な比較評価を得ることです。
+
+独立destroyerは、norm-resolvent収束だけでもdeterminantに余分なGaussian因子が残り得る反例を確認しました。固有値ごとの収束、数個の低零点一致、有限個のcounting一致では、high-spectrumの累積と正規化を制御できません。
+
+追加の2026年関連preprintも監査しました。数値結果は収束証明へ昇格させず、actual operatorを通常の有限compressionと取り違えた不確実性原理の議論も入力として採用しませんでした。確認できなかったことを、将来の不可能性の証明とは呼んでいません。
+
+これまでの研究との関係
+
+Phase III/IV以来の「算術的忠実性」と「正性・実スペクトル性」が同じ対象へ結び付かないという障害は残っています。ただし今回は、その差を抽象的なmissing metricやmissing cohomologyと呼ぶのではなく、既存の二つの明示的な関数族の正規化した変換の差として指定できました。
+
+重複監査では、旧 research/notes/accumulation_spectrum.md の第4節が、CCM Theorem 5.10、CvS Theorem 6.1、simple/evenとground近似の二つのmissing stepsを既に記録していたことを確認しました。その結論自体の再発見は成果に数えていません。今回詳しく取り込んだ外部estimateはprolate/Hermiteおよびproxy変換の具体的な収束率です。さらに、比較の正規化、十分なstrip、二変数経路の必要条件、実際の最低次数反例を明示しました。
+
+Sauvalle側ではglobal L-factorそのものが残ります。Connes側ではtrue groundとproxyの比較が残ります。両者は同一の定理ではありません。有限体のように、同じglobal carrier上で算術作用と拘束原理が既に結び付いている状況とも異なります。
+
+Asano、Lee–Yang、stable-polynomial preserverについては、actual有限prime構成へのexact dictionaryが得られないため追加のproof inputにはしませんでした。新しい作用素、cohomology、topology、positive metricを作る方向へも移っていません。
+
+保存したもの
+
+主報告：research/local_to_global_zero_confinement.md
+定理stack：research/local_global_theorem_stack.md
+候補比較：research/local_global_candidate_matrix.md
+独立監査：proofs/audits/local_global_zero_confinement_adversarial.md
+機械可読state：research/local_global_state.json
+原典・計算ノート：research/local_to_global/notes/
+診断実験：research/local_to_global/experiments/
+
+原典の式・定理番号、固定した版、URLは各ノートに記録しています。BCKV Iは著者preliminary版、Kurlberg IIは著者公開版、Sauvalleは刊行版、CCMとCvSは特定arXiv版に基づきます。出版社版を未取得の部分を出版社本文確認済みとは記載していません。
+
+保存検査では旧343ファイルのSHA-256が全件一致し、変更0、欠落0でした。HEADも開始時と一致しています。新規Markdownのローカルリンク、数式区切り、制御文字、JSON、必須stateキー、診断実験結果の整合性も確認しました。詳細は research/local_to_global/validation.json にあります。
+
+達成したのは、条件付きtheorem stackとexact missing propositionの固定です。Level 2以上の新しいactual ground-state比較やnormal-family boundは得られていません。RHはOPENのまま、三方向の限定監査をここで終了します。
+
+THE EXACT BREAK IS: ESを満たすcofinalなactual Weil ground-state列について、値規格化したFourier変換が、既知のprolate近似関数の値規格化したFourier変換へ |Im z|<1/2 の各compact上で一様に近づくという比較定理が、まだ証明されていません。
+
+
+PUBLIC EXPORT EDITORIAL NOTE — SOURCE REFERENCES NOT INCLUDED:
+- research/local_to_global/experiments
+- research/local_to_global/notes

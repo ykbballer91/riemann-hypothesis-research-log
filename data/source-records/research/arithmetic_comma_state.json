@@ -1,0 +1,82 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "research/arithmetic_comma_state.json",
+    "source_sha256": "4342fb16894cbeb3eb2511d86969a3493216a052dc430c4a52de9b926bde6462",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {}
+  },
+  "track": "ARITHMETIC_COMMA_PRIME_LOG_KRONECKER_DEPHASING",
+  "date": "2026-09-30",
+  "rh_status": "OPEN",
+  "status": "CLOSED_AFTER_THREE_DIRECTION_STRATEGY_REVIEW",
+  "success_level": 1,
+  "success_level_scope": "Known exact reconstruction bridges fixed and audited; no new cancellation estimate.",
+  "bohr_model_fixed": true,
+  "exact_cutoff_bridge_found": true,
+  "quantitative_nonresonance_found": true,
+  "quantitative_nonresonance_scope": "Elementary integer-ratio gap and fixed-dimensional Matveev bounds; not new and not an RH-scale cancellation theorem.",
+  "best_mertens_exponent": 1.0,
+  "best_mertens_exponent_scope": "Fixed exponent proved by this track; does not summarize all known analytic estimates.",
+  "square_root_cancellation": false,
+  "rh_closed": false,
+  "new_proof_critical_bridge": false,
+  "merged_into_main_proof_graph": false,
+  "prior_files_modified": false,
+  "known_exact_bridges": [
+    "Normalized Haar coefficient extraction preserving the weighted cutoff",
+    "Finite-prime Fourier reconstruction",
+    "Damped full-arithmetic Mellin reconstruction for Re(s)>1",
+    "Compact smoothing with error at most 2*X*sinh(h)+1",
+    "Exact finite-time sinc correlation formula"
+  ],
+  "direct_obstructions": [
+    "F_X(z)=C_X(-z) gives identical Haar and limiting time laws but different identity values",
+    "Supremum over every infinite forward time tail of the truncated actual Mobius polynomial is its squarefree term count",
+    "Continuous Kronecker flow is equidistributed but not mixing",
+    "H2 boundary evaluation at the identity is unbounded",
+    "Halasz comparison expression cannot produce fixed power saving from distance bounded by 2*log(log(X))+O(1)"
+  ],
+  "active_candidates": [],
+  "closed_directions": [
+    {
+      "id": "A",
+      "name": "Fourier/discrepancy bridge",
+      "saved": "Exact identities, arithmetic fidelity, smoothing and endpoint conditions",
+      "missing": "Independent bound on the signed cutoff-kernel correlation"
+    },
+    {
+      "id": "B",
+      "name": "Quantitative Kronecker/nonresonance",
+      "saved": "Gap bounds, phase-box signs, same-law counterexample, weighted gap measure",
+      "missing": "Arithmetic information about the distinguished phase not contained in marginal phase laws"
+    },
+    {
+      "id": "C",
+      "name": "Pretentious/character formulation",
+      "saved": "Correct general-multiplicative Halasz statement and distance normalization",
+      "missing": "Additional arithmetic input beyond the logarithmic-scale black box"
+    }
+  ],
+  "audit": {
+    "exact_identity_review": "PASS_WITH_STATED_DOMAINS",
+    "independent_phase_gate_review": "PASS",
+    "exact_moment_cases": 6,
+    "independently_recomputed_count_cases": 4,
+    "independently_recomputed_finite_time_values": 8,
+    "independently_recomputed_near_return_records": 7,
+    "diagnostic_phase_samples": 40000,
+    "numerics_prove_asymptotics": false,
+    "all_assertions_passed": true
+  },
+  "current_obstruction": "Exact phase reconstruction still requires an uncontrolled arithmetic correlation with the weighted cutoff kernel; marginal phase laws cannot distinguish Mobius from positive coefficients.",
+  "next_action": null,
+  "reopen_condition": "A concrete unconditional identity or estimate controlling the actual cutoff-kernel correlation from known arithmetic, not an assumption of the desired Mertens bound."
+}

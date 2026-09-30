@@ -1,0 +1,16 @@
+# STATUS: RIEMANN HYPOTHESIS OPEN
+# Historical source snapshot; no new proof validation.
+# Public credit: @ykbballer91; SPDX-License-Identifier: MIT
+# Source: formal/lean/lakefile.toml
+# Original SHA-256: 3698fc545cbeb730524c4908fe9981ab7bc81d461c0c8039a28449e1aaf6ad6e
+name = "RhAudit"
+version = "0.1.0"
+defaultTargets = ["RhAudit"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "v4.19.0"
+
+[[lean_lib]]
+name = "RhAudit"

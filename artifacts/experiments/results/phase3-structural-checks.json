@@ -1,0 +1,102 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "experiments/results/phase3-structural-checks.json",
+    "source_sha256": "df77df4681843934ad1c446667a0f588876b6f6f5d50ba24c320da4531e33c2d",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {}
+  },
+  "scope": "algebraic checks exact; mpmath diagnostic only; all-n proof in research note",
+  "source_sha256": "bcf2b66ee7c2db4544fc6b90ea2ca2f8e8390babf8bd1c990122718fd7ff26b3",
+  "q": 9,
+  "F": [
+    [
+      0,
+      -9
+    ],
+    [
+      1,
+      7
+    ]
+  ],
+  "J": [
+    [
+      0,
+      1
+    ],
+    [
+      -1,
+      0
+    ]
+  ],
+  "indefinite_symmetric_H": [
+    [
+      2,
+      7
+    ],
+    [
+      7,
+      18
+    ]
+  ],
+  "det_H": -13,
+  "formal_adjoint_negative_trace": -2,
+  "positive_integer_closed_point_counts_checked_through": 200,
+  "first_closed_point_counts": [
+    3,
+    24,
+    191,
+    1428,
+    10968,
+    84760,
+    666432,
+    5301960,
+    42678272,
+    346914876,
+    2844348504,
+    23494555492
+  ],
+  "all_n_proof_bound_at_2": "409/648",
+  "alpha_diagnostics": [
+    "5.30277563773199464655961063373524797312564829",
+    "1.69722436226800535344038936626475202687435171"
+  ],
+  "zero_real_part_diagnostics": [
+    "0.75924436942502379200252672040913250034923323",
+    "0.24075563057497620799747327959086749965076677"
+  ],
+  "archimedean_determinant_noncertified_checks": [
+    {
+      "s": "0.5",
+      "absolute_error": "4.7162163e-64"
+    },
+    {
+      "s": "1.0",
+      "absolute_error": "1.6772596e-63"
+    },
+    {
+      "s": "2.0",
+      "absolute_error": "5.553702e-63"
+    },
+    {
+      "s": "3.0",
+      "absolute_error": "1.1159625e-62"
+    },
+    {
+      "s": "7.0",
+      "absolute_error": "2.9388216e-62"
+    }
+  ],
+  "numerical_checks_prove_infinite_statement": false,
+  "is_actual_curve": false,
+  "is_actual_zeta_counterexample": false,
+  "proves_RH": false,
+  "refutes_RH": false
+}

@@ -1,0 +1,119 @@
+{
+  "schema_version": "1.0",
+  "rh_status": "OPEN",
+  "as_of": "2026-09-30",
+  "editorial_aggregation": true,
+  "source_states_modified": false,
+  "author_display": "@ykbballer91",
+  "version": "0.1.0",
+  "publication_status": "PRIVATE_REVIEW_DRAFT",
+  "public_release_date": null,
+  "original_phase1_track_count": 17,
+  "subsequent_updates": [
+    "Even-L2 cyclicity / full-ground capture Priority 1"
+  ],
+  "source_repository_head": "c4b6fc587ebb6ad2cec37b9a24c38a3a7e823423",
+  "claims": {
+    "fixed_finite_m_support_selection": {
+      "value": true,
+      "source_path": "research/hierarchical_selection_state.json",
+      "source_key": "support_all_fixed_finite_m_selection_proved",
+      "source_sha256": "b4f57fe270afe210ad4ed3883bd3dbe4bdd3aa5d3778c5e8aad155c608b51294",
+      "public_source": "source-records/research/hierarchical_selection_state.json",
+      "source_commit": null,
+      "source_commit_note": "Uncommitted research document at snapshot; historical repository HEAD is recorded separately."
+    },
+    "restricted_projection_selection_scope": {
+      "value": "Only the lowest direction restricted to P_N R_a span{k,k'',...,k^(2m)}, for each fixed finite m. Not the full finite Weil ground.",
+      "source_path": "research/hierarchical_selection_state.json",
+      "source_key": "resolved_full_selector_scope",
+      "source_sha256": "b4f57fe270afe210ad4ed3883bd3dbe4bdd3aa5d3778c5e8aad155c608b51294",
+      "public_source": "source-records/research/hierarchical_selection_state.json",
+      "source_commit": null,
+      "source_commit_note": "Uncommitted research document at snapshot; historical repository HEAD is recorded separately."
+    },
+    "sufficient_resolution": {
+      "value": "liminf N/(a*Y)>4/pi^2; in particular N/(a*Y)->infinity",
+      "source_path": "research/hierarchical_selection_state.json",
+      "source_key": "sufficient_path_condition",
+      "source_sha256": "b4f57fe270afe210ad4ed3883bd3dbe4bdd3aa5d3778c5e8aad155c608b51294",
+      "public_source": "source-records/research/hierarchical_selection_state.json",
+      "source_commit": null,
+      "source_commit_note": "Uncommitted research document at snapshot; historical repository HEAD is recorded separately."
+    },
+    "cyclicity": {
+      "value": "PROVED",
+      "source_path": "research/full_ground_capture/state.json",
+      "source_key": "cyclicity_status",
+      "source_sha256": "8905c11ad1eaa7dd83f1ef89714c8dae133ed3b13cfb9d798a9845967df5d4e9",
+      "public_source": "source-records/research/full_ground_capture/state.json",
+      "source_commit": null,
+      "source_commit_note": "Uncommitted research document at snapshot; historical repository HEAD is recorded separately."
+    },
+    "cyclicity_scope": {
+      "value": "K IS CYCLIC IN EVEN L2: PROVED",
+      "source_path": "research/full_ground_capture/state.json",
+      "source_key": "conclusion",
+      "source_sha256": "8905c11ad1eaa7dd83f1ef89714c8dae133ed3b13cfb9d798a9845967df5d4e9",
+      "public_source": "source-records/research/full_ground_capture/state.json",
+      "source_commit": null,
+      "source_commit_note": "Uncommitted research document at snapshot; historical repository HEAD is recorded separately."
+    },
+    "cyclicity_RH_used": {
+      "value": false,
+      "source_path": "research/full_ground_capture/state.json",
+      "source_key": "RH_used",
+      "source_sha256": "8905c11ad1eaa7dd83f1ef89714c8dae133ed3b13cfb9d798a9845967df5d4e9",
+      "public_source": "source-records/research/full_ground_capture/state.json",
+      "source_commit": null,
+      "source_commit_note": "Uncommitted research document at snapshot; historical repository HEAD is recorded separately."
+    },
+    "growing_dimension_control": {
+      "value": false,
+      "source_path": "research/hierarchical_selection_state.json",
+      "source_key": "uniform_m_to_infinity_control_proved",
+      "source_sha256": "b4f57fe270afe210ad4ed3883bd3dbe4bdd3aa5d3778c5e8aad155c608b51294",
+      "public_source": "source-records/research/hierarchical_selection_state.json",
+      "source_commit": null,
+      "source_commit_note": "Uncommitted research document at snapshot; historical repository HEAD is recorded separately."
+    },
+    "full_ground_comparison": {
+      "value": false,
+      "source_path": "research/hierarchical_selection_state.json",
+      "source_key": "actual_full_ground_to_k_comparison_proved",
+      "source_sha256": "b4f57fe270afe210ad4ed3883bd3dbe4bdd3aa5d3778c5e8aad155c608b51294",
+      "public_source": "source-records/research/hierarchical_selection_state.json",
+      "source_commit": null,
+      "source_commit_note": "Uncommitted research document at snapshot; historical repository HEAD is recorded separately."
+    },
+    "ES_on_required_sequence": {
+      "value": false,
+      "source_path": "research/local_global_state.json",
+      "source_key": "finite_prime_ES_for_required_cofinal_sequence_proved",
+      "source_sha256": "4ba6b5027bf8aec5b923ef60f86fd42f9cd3b756285bc8ec2c1a7c5c875b38e0",
+      "public_source": "source-records/research/local_global_state.json",
+      "source_commit": null,
+      "source_commit_note": "Uncommitted research document at snapshot; historical repository HEAD is recorded separately."
+    },
+    "G_star": {
+      "value": false,
+      "source_path": "research/hierarchical_selection_state.json",
+      "source_key": "G_star_proved",
+      "source_sha256": "b4f57fe270afe210ad4ed3883bd3dbe4bdd3aa5d3778c5e8aad155c608b51294",
+      "public_source": "source-records/research/hierarchical_selection_state.json",
+      "source_commit": null,
+      "source_commit_note": "Uncommitted research document at snapshot; historical repository HEAD is recorded separately."
+    },
+    "exact_break": {
+      "value": "G*: There exists an ES-admissible sequence (lambda_j,N_j), lambda_j -> infinity, such that for every compact K contained in Omega, sup_K |vhat(lambda_j,N_j;z)/vhat(lambda_j,N_j;z_star) - khat_lambda_j(z)/khat_lambda_j(z_star)| -> 0. ES and the comparison estimate are both unproved obligations.",
+      "source_path": "research/local_global_state.json",
+      "source_key": "exact_break_proposition",
+      "source_sha256": "4ba6b5027bf8aec5b923ef60f86fd42f9cd3b756285bc8ec2c1a7c5c875b38e0",
+      "public_source": "source-records/research/local_global_state.json",
+      "source_commit": null,
+      "source_commit_note": "Uncommitted research document at snapshot; historical repository HEAD is recorded separately."
+    }
+  },
+  "rh_closed": false,
+  "evidence_scope": "Written auxiliary proofs with scoped internal independent AI audits; not external peer review or full formal verification."
+}

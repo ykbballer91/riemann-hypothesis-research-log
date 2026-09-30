@@ -1,0 +1,46 @@
+STATUS: RIEMANN HYPOTHESIS OPEN
+SANITIZED HISTORICAL SOURCE SNAPSHOT — not a new execution or proof validation.
+Public credit: @ykbballer91; AI-assisted research log; text CC BY 4.0.
+Source: release/phase3_handoff_2026-09-29.txt
+Original SHA-256: a35c77711e7d87d7574760bf853daadcff1ffff5e09ca4c6cfdd7a1c7614c9a0
+Internal source paths are provenance identifiers; see data/source-manifest.json for public paths.
+
+RH Phase III 完了報告（2026-09-29、第25研究サイクル）
+
+この報告で完了したのは、指定された有限体との依存比較、三つの限定された移植試験、独立監査、strategy reviewです。リーマン予想は未証明でOPENです。Phase Iの23サイクルとPhase IIの第24サイクルの成果・反例・failed routesは全て保存しました。
+
+今回の中心的な確認は、有限体の曲線ではFrobeniusの存在だけでなく、同じJacobian上で算術的Frobeniusと幾何的な正性が結び付いていることです。ample polarizationがRosatiの正性を与え、同じFrobeniusについてπ†π=qが成立します。正のnormを使う固有vector計算により|α|²=qとなり、trace/determinant公式を通して実際のzetaの零点がRe(s)=1/2へ拘束されます。対称性から1/2が自然だと言うだけの説明とは区別しました。
+
+Deligneの一般次元の証明は、この曲線の正内積の議論をそのまま延長したものとして扱いませんでした。La conjecture de Weil Iの必要箇所を調べ、偶数tensorのtraceに由来する非負係数、monodromyによるtensor coinvariantsの制約、Euler積の極の制御、Künnethによる誤差の除去を分けました。hard Lefschetzを1974年の証明の既知前提にはしていません。全原論文の再証明や形式検証をしたという意味でもありません。
+
+古典的ζ側については、「Frobeniusに相当するものもcohomologyも全くない」という分類を避けました。Connes–Consani–Marcolliには、アデール算術のrestrictionから構成するcyclic quotientがあり、指定された急減少関数空間におけるtraceが全非自明零点を重複度付きで回収します。これは零点を入力して対角作用素を作る方法とは異なります。ただし、そのtrace形式の正値性は既知のRH同値条件のままです。
+
+Arithmetic Siteの点とscaling、分布的countingからの完成ζ再構成、Scaling Hamiltonianの半局所trace公式も、それぞれ成立範囲を確認しました。これらを一括して正の大域cohomologyが完成しているとは扱いませんでした。Deningerについても、実在するWitt-vector dynamical spaces、層cohomologyの定義、H0の定理、局所Gamma構成を認めた上で、必要なH1の全零点同定・graded determinant・positive starとの接続が未供給であることを明記しました。Deningerの全幾何の存在をRHと同値だとは断定していません。逆含意は確認されていません。
+
+初期比較後はTrack B、Missing purityへ集中しました。対象は既存の算術商であり、新しい作用素を無差別に作る方針は取りませんでした。以下の三つの橋を検査しました。
+
+第一の試験では、点数・反復・rational determinant・dualityから正性を導けるかを調べました。q=9、F=[[0,-9],[1,7]]を使い、Z(T)=(1-7T+9T²)/((1-T)(1-9T))という模型を構成しました。この模型は全次数で正整数の閉点数を持ち、trace formulaとfunctional equationも成立します。それでも固有値の絶対値は3ではありません。対応する零点の実部は約0.240756と0.759244です。これは実際の曲線やリーマンζの反例ではなく、正のpolarizationを省いた形式公理の不足を示すものです。全次数の主張は解析的に証明し、200次数までの計算を証明の代わりにはしていません。
+
+第二の試験では、周囲のunitaryな空間の正性を算術商へ移せるかを検査しました。まず、強いtest-function位相の商に存在するmodeがL2閉包では消える厳密な模型を作りました。さらにCCMのProposition 6.4から、実際の算術商でも、特定の自然な重み付きL2 normで像を閉じると商がゼロになることを確認しました。ζに対応する自明文字sectorでも、compact-unit平均により同じ結論が保たれます。unitarityはあっても、その商では零点情報を全て失います。これは既知命題の帰結であり、新しいRH補題ではありません。他の幾何的偏極全般を否定する結果でもありません。
+
+第三の試験では、各素数の局所作用とGamma factorを接着しました。長さlog pのcircleのtraceはprime-power分布を正確に再現し、局所Gamma towerの正則化determinantも正確に計算できました。しかしcircleのHilbert直和には無限個のzero modesがあり、それらを除いても低周波の集積が残るため、必要なcompact resolventやordinary trace class性が得られません。分布的traceがあることを、正の大域H1や全零点のdeterminant同定と混同できません。局所的に既知のFrobenius=1、weight 0から、大域零点を担うweight 1が自動的に出ることもありません。
+
+Gamma factorは捨てず、Θ∞e_n=−2ne_nからdet_ζ((s−Θ∞)/(2π))=√2/Γ_R(s)を再計算しました。√2は正則化規約で決まる定数です。この局所構成があることは、大域の接着と正性が解決したことを意味しません。infinityだけが全障害だとする根拠も得られませんでした。
+
+三つの試験の後も、既知算術から全零点を担う同じ商の正性を独立に導く比較定理は得られませんでした。「positive trace pairingがあればよい」と一つの命題にまとめるだけならRH同値です。具体的なfunctorial geometryまで要求すると、存在・比較・domain・重複度保持という複数の未解決義務が残ります。そのため今回をLevel 1達成とは数えていません。Level 1からLevel 5までは全て未達です。
+
+独立監査では、有限体の原典依存、Connes–Consaniの位相とtrace、Deningerの成立範囲、三つの反証計算を分担して照合しました。主要計算は監査を通過しました。数値のGamma値はmpmathによる非認証診断で、整数・有理数部分と区別しています。新しいLean宣言はありません。主証明グラフ19 nodesと、RHに相当する未解決同値クラス1は変わりません。主グラフへの新規合流0、追加仮定0、新規性主張なしです。
+
+今回の研究上の成果は、既に存在する算術構成を正しく認めた上で、有限体での正性の接続箇所と、数体で単純な商・接着が失敗する箇所を明確にしたことです。RHへの証明距離を短縮したとは報告しません。
+
+指定の3試行後のstrategy reviewを行い、これらのルートは終了しました。同じ符号条件をFrobenius、weight、cohomologyなどと呼び替えて4回目を続けたり、固定窓の数値拡張へ戻ったりはしていません。再開には、既存算術商のtraceと全零点を保ったまま正性を独立に与える、具体的な算術的intersectionまたはtensor/pole identityが必要です。現時点でその内容を持つ未処理候補はありません。
+
+正準ファイルは次の通りです。
+research/phase3_missing_frobenius.md
+research/finite_field_dependency_spine.md
+research/number_field_gap_matrix.md
+research/phase3_gap_state.json
+research/phase3_sources.json
+proofs/audits/phase3-independent-audit.md
+
+Phase Iまでの詳細報告はrelease/research_handoff_2026-09-29.txt、Phase IIはresearch/generator_boundary_hypothesis.mdに保持しています。本報告はそれらを置き換えず、Phase IIIの結果を追加するものです。

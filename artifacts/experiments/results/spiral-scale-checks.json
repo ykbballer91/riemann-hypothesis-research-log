@@ -1,0 +1,255 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "experiments/results/spiral-scale-checks.json",
+    "source_sha256": "60af5279f181b964d621a5d4d64bf0b808999f3d8afb516af5685fc496e39254",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {}
+  },
+  "kind": "spiral_scale_countermodels",
+  "rh_status": "OPEN",
+  "proves_RH": false,
+  "disproves_RH": false,
+  "source_sha256": "ab779348ed4487693dbade52b4fd69e86eb5b4f5764900b21509d306afb1dad2",
+  "arithmetic": {
+    "rational": "Python Fraction",
+    "balls": "Arb/ACB",
+    "python_flint_version": "0.9.0",
+    "precision_bits": 192
+  },
+  "expanding_reversible_flow": {
+    "matrix": [
+      [
+        "6/5",
+        "-8/5",
+        "0",
+        "0"
+      ],
+      [
+        "8/5",
+        "6/5",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "3/10",
+        "-2/5"
+      ],
+      [
+        "0",
+        "0",
+        "2/5",
+        "3/10"
+      ]
+    ],
+    "determinant": "1",
+    "symplectic_identity": true,
+    "indefinite_energy_identity": true,
+    "involutive_time_reversal": true,
+    "positive_norm_preserved": false,
+    "eigenvalue_moduli": [
+      "2",
+      "2",
+      "1/2",
+      "1/2"
+    ],
+    "orbits": [
+      {
+        "iterate": 0,
+        "indefinite_energy": "2",
+        "euclidean_norm_squared": "2"
+      },
+      {
+        "iterate": 1,
+        "indefinite_energy": "2",
+        "euclidean_norm_squared": "17/4"
+      },
+      {
+        "iterate": 2,
+        "indefinite_energy": "2",
+        "euclidean_norm_squared": "257/16"
+      },
+      {
+        "iterate": 3,
+        "indefinite_energy": "2",
+        "euclidean_norm_squared": "4097/64"
+      },
+      {
+        "iterate": 4,
+        "indefinite_energy": "2",
+        "euclidean_norm_squared": "65537/256"
+      },
+      {
+        "iterate": 5,
+        "indefinite_energy": "2",
+        "euclidean_norm_squared": "1048577/1024"
+      },
+      {
+        "iterate": 6,
+        "indefinite_energy": "2",
+        "euclidean_norm_squared": "16777217/4096"
+      },
+      {
+        "iterate": 7,
+        "indefinite_energy": "2",
+        "euclidean_norm_squared": "268435457/16384"
+      },
+      {
+        "iterate": 8,
+        "indefinite_energy": "2",
+        "euclidean_norm_squared": "4294967297/65536"
+      },
+      {
+        "iterate": 9,
+        "indefinite_energy": "2",
+        "euclidean_norm_squared": "68719476737/262144"
+      },
+      {
+        "iterate": 10,
+        "indefinite_energy": "2",
+        "euclidean_norm_squared": "1099511627777/1048576"
+      }
+    ]
+  },
+  "meromorphic_unitary_boundary": {
+    "formula": "((z-i)^2-4)/((z+i)^2-4)",
+    "genuine_poles": [
+      "-2-i",
+      "2-i"
+    ],
+    "real_samples": [
+      {
+        "t": "-5",
+        "modulus_squared": "1"
+      },
+      {
+        "t": "-2",
+        "modulus_squared": "1"
+      },
+      {
+        "t": "-1",
+        "modulus_squared": "1"
+      },
+      {
+        "t": "0",
+        "modulus_squared": "1"
+      },
+      {
+        "t": "1",
+        "modulus_squared": "1"
+      },
+      {
+        "t": "2",
+        "modulus_squared": "1"
+      },
+      {
+        "t": "5",
+        "modulus_squared": "1"
+      }
+    ],
+    "scope": "unitary meromorphic scalar toy; no zeta identification"
+  },
+  "quartet_winding": [
+    {
+      "a": 0.0,
+      "sampled_winding": 4.0,
+      "status": "float diagnostic; exact root count is 4"
+    },
+    {
+      "a": 0.125,
+      "sampled_winding": 4.0,
+      "status": "float diagnostic; exact root count is 4"
+    },
+    {
+      "a": 0.25,
+      "sampled_winding": 4.0,
+      "status": "float diagnostic; exact root count is 4"
+    }
+  ],
+  "selfsimilar_model": {
+    "formula": "(1-2*8^(-s))*(1-2*8^(-(1-s)))",
+    "symbolic_identity": "3/2-sqrt(2)*cosh((s-1/2)*log(8))",
+    "critical_line_uniform_positive_floor": "[0.085786437626904951198311275790301921430328124623052 +/- 7.34e-53]",
+    "zeros": [
+      {
+        "real_part": "1/3",
+        "period_index": -2,
+        "value_enclosure": "[+/- 6.57e-58] + [+/- 8.74e-57]j"
+      },
+      {
+        "real_part": "1/3",
+        "period_index": -1,
+        "value_enclosure": "[+/- 6.28e-58] + [+/- 4.37e-57]j"
+      },
+      {
+        "real_part": "1/3",
+        "period_index": 0,
+        "value_enclosure": "[+/- 4.39e-58]"
+      },
+      {
+        "real_part": "1/3",
+        "period_index": 1,
+        "value_enclosure": "[+/- 6.28e-58] + [+/- 4.37e-57]j"
+      },
+      {
+        "real_part": "1/3",
+        "period_index": 2,
+        "value_enclosure": "[+/- 6.57e-58] + [+/- 8.74e-57]j"
+      },
+      {
+        "real_part": "2/3",
+        "period_index": -2,
+        "value_enclosure": "[+/- 8.19e-58] + [+/- 8.74e-57]j"
+      },
+      {
+        "real_part": "2/3",
+        "period_index": -1,
+        "value_enclosure": "[+/- 7.90e-58] + [+/- 4.37e-57]j"
+      },
+      {
+        "real_part": "2/3",
+        "period_index": 0,
+        "value_enclosure": "[+/- 5.22e-58]"
+      },
+      {
+        "real_part": "2/3",
+        "period_index": 1,
+        "value_enclosure": "[+/- 7.90e-58] + [+/- 4.37e-57]j"
+      },
+      {
+        "real_part": "2/3",
+        "period_index": 2,
+        "value_enclosure": "[+/- 8.19e-58] + [+/- 8.74e-57]j"
+      }
+    ],
+    "identities_consistent": true,
+    "identity_status": "symbolically proved; balls only check consistency",
+    "geometric_sum_at_s1": "87381/65536",
+    "geometric_tail_at_s1": "1/196608",
+    "total_at_s1": "4/3"
+  },
+  "indefinite_pair_translation": {
+    "parameter": "1",
+    "frequencies": [
+      "1+i/4",
+      "1-i/4"
+    ],
+    "original_energy": "-2",
+    "translated_energy": "[-2.0000000000000000000000000000000000000000000000000 +/- 3e-54]"
+  },
+  "limitations": [
+    "Synthetic models only; no counterexample to zeta or RH.",
+    "Finite floating winding values are not a topology certificate.",
+    "No Hilbert eigenmode identification for zeta is asserted.",
+    "No fixed-window expansion or numerical Weil certificate is attempted."
+  ]
+}

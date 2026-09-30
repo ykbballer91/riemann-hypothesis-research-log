@@ -1,0 +1,116 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "research/phase4/sources.json",
+    "source_sha256": "c998dc6bb4e8187b5ec650cbd3424f98f49a267ee553dfeed7a0496d10bbe861",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {}
+  },
+  "phase": 4,
+  "scope": "Relevant primary statements and conventions, not complete reproofs",
+  "records": [
+    {
+      "id": "GS",
+      "title": "Gillet–Soule, Arithmetic intersection theory",
+      "url": "https://www.numdam.org/item/10.1007/BF02699132.pdf",
+      "locator": "3.4.3;4.3;5.1.4",
+      "role": "Spec Z degree, intersection dimension and projection formula",
+      "verification_status": "PRIMARY_TEXT_CHECKED"
+    },
+    {
+      "id": "M",
+      "title": "Moriwaki, Hodge index theorem for arithmetic cycles of codimension one",
+      "url": "https://arxiv.org/pdf/alg-geom/9403011v4",
+      "locator": "Theorems A/B;1.1",
+      "role": "Primitive sign, arithmetic ampleness and base radical",
+      "verification_status": "PRIMARY_TEXT_CHECKED"
+    },
+    {
+      "id": "BHM",
+      "title": "van Bommel–Holmes–Muller, Explicit arithmetic intersection theory and computation of Neron–Tate heights",
+      "url": "https://arxiv.org/html/1809.06791v2",
+      "locator": "2;3.1;4.1 Thm4.1",
+      "role": "Local height and 2theta normalization",
+      "verification_status": "PRIMARY_TEXT_CHECKED"
+    },
+    {
+      "id": "AV",
+      "title": "Milne, Abelian Varieties",
+      "url": "https://www.jmilne.org/math/CourseNotes/AV.pdf",
+      "locator": "I11,14;II1",
+      "role": "Rosati/finite-field architecture",
+      "verification_status": "AUTHOR_NOTES_CHECKED"
+    },
+    {
+      "id": "FH-F",
+      "title": "Faltings, Calculus on arithmetic surfaces",
+      "url": "https://annals.math.princeton.edu/1984/119-2/p04",
+      "locator": "Bibliography only",
+      "role": "Original theorem attribution; exact normalization checked through M/BHM",
+      "verification_status": "ORIGINAL_FULL_TEXT_NOT_OBTAINED"
+    },
+    {
+      "id": "FH-H",
+      "title": "Hriljac, Heights and Arakelov intersection theory",
+      "url": "https://www.jstor.org/stable/2374455",
+      "locator": "Bibliography only",
+      "role": "Original theorem attribution; exact normalization checked through M/BHM",
+      "verification_status": "ORIGINAL_FULL_TEXT_NOT_OBTAINED"
+    },
+    {
+      "id": "CCM",
+      "title": "Connes–Consani–Marcolli, Weil proof and geometry of adeles class space",
+      "url": "https://arxiv.org/pdf/math/0703392v1",
+      "locator": "4.10–4.16;6.2–6.4;7.1–7.3",
+      "role": "Arithmetic quotient, dense radical, intersection equivalence",
+      "verification_status": "PRIMARY_TEXT_CHECKED"
+    },
+    {
+      "id": "CC21",
+      "title": "Connes–Consani, Weil positivity and Trace formula, the archimedean place",
+      "url": "https://alainconnes.org/wp-content/uploads/Selecta.pdf",
+      "locator": "Appendix B (148)–(154); Appendix C PropC.1",
+      "role": "Exact Gamma/pole normalization and restricted criterion",
+      "verification_status": "PRIMARY_TEXT_CHECKED"
+    },
+    {
+      "id": "KUDLA",
+      "title": "Kudla, Tate thesis lectures",
+      "url": "https://u.cs.biu.ac.il/~reznikov/courses/kudla-1.pdf",
+      "locator": "2;3.5–3.6;4.1–4.8",
+      "role": "Product formula, global/local Fourier and Gamma",
+      "verification_status": "AUTHOR_NOTES_CHECKED_NOT_TATE_ORIGINAL"
+    },
+    {
+      "id": "DS",
+      "title": "Deninger–Singhof, Real polarizable Hodge structures arising from foliations",
+      "url": "https://arxiv.org/pdf/math/0204111v1",
+      "locator": "4;Prop4.6",
+      "role": "Actual leafwise positive star; no arithmetic zero identification",
+      "verification_status": "PRIMARY_TEXT_CHECKED"
+    },
+    {
+      "id": "DEN10",
+      "title": "Deninger, Hilbert–Polya strategy and height pairings",
+      "url": "https://arxiv.org/abs/1001.1621",
+      "locator": "2 Conj2",
+      "role": "Conditional arithmetic positive star; not assumed",
+      "verification_status": "PRIMARY_TEXT_CHECKED"
+    },
+    {
+      "id": "AKCOR",
+      "title": "Alvarez Lopez–Kordyukov, Hodge decomposition corrigendum",
+      "url": "https://doi.org/10.1112/S0010437X26102930",
+      "locator": "Corrected Corollary C",
+      "role": "Extra condition for lifted twisted coefficient foliation",
+      "verification_status": "PRIMARY_TEXT_CHECKED"
+    }
+  ]
+}

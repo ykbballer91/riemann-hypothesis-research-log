@@ -1,0 +1,29 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "proofs/audits/metadata-validation.json",
+    "source_sha256": "0a8c7fa6e2480cab1ca688a576fea3c7e15d99c5d446c9ed1393e58f80b8fab2",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {}
+  },
+  "metadata_validation": "PASS",
+  "nodes": 19,
+  "main_literature_records": 31,
+  "separate_structural_statement_records": 22,
+  "lean_declarations": 7,
+  "finite_interval_certificate_dimension": 9,
+  "fixed_window_certified": "[-1/2,1/2] only",
+  "fixed_window_shifted_head_dimensions": [
+    32,
+    32
+  ],
+  "rh_status": "OPEN",
+  "mathematical_proof_validation": false
+}

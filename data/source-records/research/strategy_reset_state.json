@@ -1,0 +1,98 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "research/strategy_reset_state.json",
+    "source_sha256": "4f621bd6492cd637fda4445091e34edd6508cfbebb8296c0edb2843489e3c5db",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {
+      "research/strategy_reset/preservation_baseline.json": {
+        "public_path": null,
+        "status": "SOURCE_REFERENCE_NOT_INCLUDED"
+      },
+      "research/strategy_reset/preservation_check.json": {
+        "public_path": "data/source-records/research/strategy_reset/preservation_check.json",
+        "status": "EXPORTED"
+      }
+    }
+  },
+  "audit_date": "2026-09-30",
+  "task_kind": "ARITHMETIC_INVENTORY_AUDIT_ONLY",
+  "rh_status": "OPEN",
+  "closure_identity_verified": true,
+  "closure_absolute_convergence": "For each real u and c>1, the absolute double sum is at most exp(c*u+c*c/4)*zeta(c)^2; locally uniform in u.",
+  "closure_laplace_domain": "Re(z)>1/2 for the directly justified bilateral Laplace product",
+  "classical_zero_exponential_modes_rejected": true,
+  "formal_zero_mode_correction": "At z=rho-1/2 the ordinary delay sum contains the divergent series sum m^(-rho). Zero modes refer to the analytically continued symbol, not to classical solutions in the absolute-sum domain.",
+  "gaussian_past_solution_unique": true,
+  "uniqueness_implies_stability": false,
+  "mangoldt_convolution_sign": "mu * log = +Lambda; (mu log) * 1 = -Lambda",
+  "higher_log_closure_positivity_verified": true,
+  "higher_log_closure_independent_growth_bound": false,
+  "prior_tracks_compressed": true,
+  "prior_track_count": 11,
+  "unused_arithmetic_inputs_identified": [
+    {
+      "input": "Quantitative Type I/II estimates and finite Vaughan/Heath-Brown decompositions",
+      "unused_scope": "No essential quantitative application to the fixed Gaussian observable located in the inspected prior logs",
+      "actual_arithmetic": true,
+      "qualified_next_track": false,
+      "obstruction": "No verified pointwise estimate beyond known PNT type for the nonoscillatory block; a decomposition alone does not provide cancellation."
+    },
+    {
+      "input": "Short-interval and averaged Mobius correlation theorems",
+      "unused_scope": "Specific theorem estimates not previously applied to the faithful Gaussian scalar",
+      "actual_arithmetic": true,
+      "qualified_next_track": false,
+      "obstruction": "Rates, shifts, averaging, exceptional intervals/scales and weighted-readout requirements do not supply the all-window subexponential bound."
+    },
+    {
+      "input": "Arithmetic progression averages, dispersion and Dirichlet-polynomial mean-value technology",
+      "unused_scope": "Specific quantitative uses largely absent from the inspected prior routes",
+      "actual_arithmetic": true,
+      "qualified_next_track": false,
+      "obstruction": "Mean estimates or removal of the principal component do not bound the distinguished global Mobius readout at the required precision."
+    },
+    {
+      "input": "Quantitative BSZ/Katai criterion applied to the raw Gaussian readout",
+      "unused_scope": "Concrete hypothesis audit first made in this inventory",
+      "actual_arithmetic": true,
+      "qualified_next_track": false,
+      "obstruction": "Prime-dilation correlations are positive at the natural scale, so the required uniformly small correlation hypothesis fails for this direct application."
+    }
+  ],
+  "candidate_A_bilinear_status": "AUDITED_NOT_JUSTIFIED_FOR_NEXT_TRACK",
+  "candidate_B_causal_closure_status": "AUDITED_EXACT_INVERSION_AND_UNIQUENESS_ONLY_NO_STABILITY_BRIDGE",
+  "candidate_C_correlation_status": "AUDITED_NOT_JUSTIFIED_FOR_NEXT_TRACK",
+  "number_of_surviving_candidates": 0,
+  "surviving_candidates": [],
+  "recommended_next_track": null,
+  "decision": "NO JUSTIFIED NEXT TRACK",
+  "reason": "Actual arithmetic information unused in earlier tracks exists, but no verified estimate or implication meets the requested pointwise growth target. C2 is the same Mobius inverse and does not independently imply forward stability.",
+  "new_proof_route_started": false,
+  "new_topology_metric_or_cohomology_constructed": false,
+  "proof_graph_merge": false,
+  "rh_closed": false,
+  "new_mertens_or_zero_bound": null,
+  "finite_checks": {
+    "max_n": 1000,
+    "divisor_identity_cases": 1000,
+    "log_sign_cases": 1000,
+    "generalized_mangoldt_cases": 4000,
+    "exact_integer_arithmetic": true,
+    "asymptotic_inference": false
+  },
+  "prior_file_preservation": {
+    "baseline_count": 315,
+    "baseline": "research/strategy_reset/preservation_baseline.json",
+    "verification": "research/strategy_reset/preservation_check.json"
+  },
+  "scope_limit": "Audit of inspected prior files and identified primary results; not a universal impossibility theorem, exhaustive literature survey, or full re-verification of every referenced proof.",
+  "next_action": "STOP_AFTER_AUDIT_REPORT; no fourth candidate and no automatic proof-graph merge"
+}

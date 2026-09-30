@@ -1,0 +1,127 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "research/prime_complex_state.json",
+    "source_sha256": "7f90aa0afbb5aa7b5fb685553de8b22958a8d5c65cce170e81bda98d86928129",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {
+      "research/prime_complex/completion_report.txt": {
+        "public_path": "archive/reports/research/prime_complex/completion_report.txt",
+        "status": "EXPORTED"
+      },
+      "research/prime_complex/experiments/results.json": {
+        "public_path": "artifacts/research/prime_complex/experiments/results.json",
+        "status": "EXPORTED"
+      }
+    }
+  },
+  "track": "PRIME_COMPLEX_PARITY_PAIRING_TOPOLOGICAL_CANCELLATION",
+  "date": "2026-09-30",
+  "rh_status": "OPEN",
+  "status": "COMPLETED_AFTER_KILL_CONDITIONS_AND_STRATEGY_REVIEW",
+  "prime_complex_fixed": true,
+  "complex": "Delta_X = finite prime subsets S with product(S)<=X, empty face included; augmented degree |S|-1",
+  "natural_parity_pairing_found": true,
+  "explicit_matching_found": true,
+  "matching": "odd squarefree m<=X/2 paired with 2m",
+  "matching_is_acyclic": true,
+  "matching_is_perfect_in_morse_sense_only": true,
+  "unmatched_structure_identified": true,
+  "unmatched_structure": "odd squarefree n in (X/2,X]",
+  "unmatched_count": "2X/pi^2 + O(sqrt(X))",
+  "unmatched_count_equals_total_reduced_betti": true,
+  "best_unmatched_bound_exponent": 1.0,
+  "best_unmatched_bound_scope": "Total residual count of the explicit topology-preserving matching, not the signed Mertens sum or all possible nonlocal pairings",
+  "square_root_bound": false,
+  "rh_closed": false,
+  "stages": {
+    "A_natural_pairing": true,
+    "B_explicit_unmatched_set": true,
+    "C_unmatched_o_X": false,
+    "D_fixed_power_saving": false,
+    "E_square_root_bound": false
+  },
+  "stage_A_B_known_structure": true,
+  "new_independent_RH_bridge": false,
+  "novelty_claimed": false,
+  "integer_filtered_chain_decomposition_proved": true,
+  "chain_decomposition": "b_n=[2,sigma_n], z_n=boundary(b_n), boundary b_n=z_n, boundary z_n=0; n odd squarefree",
+  "reduced_persistence_intervals": "[n,2n), degree omega(n)-1, for every odd squarefree n; n=1 gives degree -1 interval [1,2)",
+  "ordinary_H0_extra_interval": "[2,infinity)",
+  "doubling_inclusion_reduced_homology_map_zero": true,
+  "acyclic_matching_sublinear_critical_count_impossible": true,
+  "hodge_kernel_sublinear_total_dimension_impossible": true,
+  "any_incidence_matching_lower_bound": "pi(X)-pi(X/2)-1 ~ X/(2 log X)",
+  "any_incidence_matching_fixed_power_saving_impossible": true,
+  "nonlocal_parity_pairings_generally_ruled_out": false,
+  "hodge_grading_sign": "Cardinality parity gives index M(X); homological-degree parity gives -M(X)",
+  "basis_change_unitary_claimed": false,
+  "large_prime_threshold_source": "p*q>X if both exceed sqrt(X)",
+  "large_prime_parent_injective": false,
+  "large_prime_parent_counterexample": "X=5: singleton faces 3 and 5 both map to the empty face 1",
+  "naive_smallest_admissible_involution": false,
+  "naive_toggle_counterexample": "X=5: {3}->empty->{2}",
+  "recursive_identity": "Delta_X = D_p(X) union p*D_p(X/p), where D_p excludes prime p",
+  "local_divisor_cancellation_preserved_under_cutoff": true,
+  "local_to_global_obstruction": "Overlapping divisor simplexes and shared parents create multiplicities, not new cancellation estimates",
+  "dyadic_connection": {
+    "new_signed_Mertens_power_bound": null,
+    "new_absolute_bound_from_residual": "O(X)",
+    "conditional_theta_less_than_one_gate_passed": false,
+    "previous_return_bound_unchanged": "C*2^(n/2)*(1+n)*p_4(g)",
+    "return_exponent_improvement": 0
+  },
+  "major_constructions_examined": 3,
+  "candidates": [
+    {
+      "id": "PC-A",
+      "name": "Prime insertion and discrete Morse matching",
+      "decision": "RETAIN_EXACT_STRUCTURE_REJECT_SMALL_CRITICAL_COUNT",
+      "reason": "The existing pairing is already Betti-optimal and leaves Theta(X) reduced critical cells"
+    },
+    {
+      "id": "PC-B",
+      "name": "Large-prime and recursive boundary assembly",
+      "decision": "REJECT_NEAR_PERFECT_INCIDENCE_PAIRING",
+      "reason": "Shared parents and isolated prime singletons prohibit any fixed power saving for face-incidence matchings"
+    },
+    {
+      "id": "PC-C",
+      "name": "Persistence and Hodge spectral parity pairing",
+      "decision": "REJECT_SMALL_KERNEL_INFERENCE",
+      "reason": "All bars have finite log length but the harmonic kernel remains Theta(X); its signed index is still M(X)"
+    }
+  ],
+  "independent_audit": "PASS_FOR_STATED_RESULTS_AND_LIMITATIONS",
+  "experiments": {
+    "exact_integer_cutoff_samples": 12,
+    "maximum_cutoff": 10000,
+    "exact_rational_homology_tests": 10,
+    "persistence_cutoff": 1000,
+    "completed_barcode_intervals_checked": 204,
+    "growth_fit_used": false,
+    "random_sign_assumption_used": false,
+    "all_checks_passed": true,
+    "results_path": "research/prime_complex/experiments/results.json"
+  },
+  "lean_formalization_performed": false,
+  "prior_art": [
+    "Bjorner arXiv:1101.5704v1 Eqs.(1.1)-(1.2), Theorems 2.1, 3.1, 3.4",
+    "Knill arXiv:1608.06877v1 sections 1.1, 3.4 and 4.2",
+    "Forman A User's Guide to Discrete Morse Theory, SLC 48 (2002), Theorems 2.5, 2.11, 6.2-6.3"
+  ],
+  "current_obstruction": "Exact topological pairing leaves a linear-dimensional homology space. Existing incidence, persistence and Hodge structures do not force the signed parity difference of that space to exhibit square-root arithmetic cancellation.",
+  "strategy_review": "Stop after the linear-critical-count and small-kernel kill conditions. Preserve the exact chain and persistence structure. Do not repeat a fourth renamed candidate.",
+  "prior_files_changed": 0,
+  "prior_files_baselined": 262,
+  "proof_graph_merges": 0,
+  "next_action": null,
+  "completion_report": "research/prime_complex/completion_report.txt"
+}

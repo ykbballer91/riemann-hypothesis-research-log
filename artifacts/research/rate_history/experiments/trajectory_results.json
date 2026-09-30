@@ -1,0 +1,191 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "research/rate_history/experiments/trajectory_results.json",
+    "source_sha256": "27f756e82d4cf7cfd03701213a05ac4769d00a1d1c30a7d79a5730ed6fd02951",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {}
+  },
+  "rh_status": "OPEN",
+  "same_cutoff_different_N": [
+    {
+      "cut": 25,
+      "Ns": [
+        4,
+        5
+      ],
+      "ground_overlap_squared": "0.9964553443033530216050843913020327",
+      "radical_m3_global_overlap_squared": "0.99174713181613917103957480000535527"
+    },
+    {
+      "cut": 49,
+      "Ns": [
+        4,
+        8
+      ],
+      "ground_overlap_squared": "0.9661142514908488022747692310535415",
+      "radical_m3_global_overlap_squared": "0.88795514180487516959771230433528538"
+    },
+    {
+      "cut": 81,
+      "Ns": [
+        5,
+        11
+      ],
+      "ground_overlap_squared": "0.95617364104482494700297186312255292",
+      "radical_m3_global_overlap_squared": "0.91542738202910143663299182648872023"
+    },
+    {
+      "cut": 121,
+      "Ns": [
+        6,
+        14
+      ],
+      "ground_overlap_squared": "0.95100106455275158591733556648084155",
+      "radical_m3_global_overlap_squared": "0.92666019073442512058455149695543021"
+    },
+    {
+      "cut": 169,
+      "Ns": [
+        7,
+        17
+      ],
+      "ground_overlap_squared": "0.94802396434805390112725378913557597",
+      "radical_m3_global_overlap_squared": "0.93563713690444542168904327924959688"
+    }
+  ],
+  "successive_path_points": {
+    "quadratic": [
+      {
+        "from": [
+          9,
+          4
+        ],
+        "to": [
+          25,
+          4
+        ],
+        "ground_overlap_squared": "0.95064488634454506853251163827947937",
+        "radical_m3_global_overlap_squared": "0.966401782381567796594755964655869"
+      },
+      {
+        "from": [
+          25,
+          4
+        ],
+        "to": [
+          49,
+          4
+        ],
+        "ground_overlap_squared": "0.98553006142829122733069700685110082",
+        "radical_m3_global_overlap_squared": "0.95745976995427209174889421092071333"
+      },
+      {
+        "from": [
+          49,
+          4
+        ],
+        "to": [
+          81,
+          5
+        ],
+        "ground_overlap_squared": "0.99966886918115612927257832732008172",
+        "radical_m3_global_overlap_squared": "0.98540063847308836332604431372515744"
+      },
+      {
+        "from": [
+          81,
+          5
+        ],
+        "to": [
+          121,
+          6
+        ],
+        "ground_overlap_squared": "0.99999063182293198179293459908079065",
+        "radical_m3_global_overlap_squared": "0.99598498620036097506528623440148895"
+      },
+      {
+        "from": [
+          121,
+          6
+        ],
+        "to": [
+          169,
+          7
+        ],
+        "ground_overlap_squared": "0.99999613379582880707651027444918629",
+        "radical_m3_global_overlap_squared": "0.99843582183795059930314088825720803"
+      }
+    ],
+    "cubic": [
+      {
+        "from": [
+          9,
+          4
+        ],
+        "to": [
+          25,
+          5
+        ],
+        "ground_overlap_squared": "0.97281633312180932155806076055500365",
+        "radical_m3_global_overlap_squared": "0.99086015969346791080686184467701949"
+      },
+      {
+        "from": [
+          25,
+          5
+        ],
+        "to": [
+          49,
+          8
+        ],
+        "ground_overlap_squared": "0.99994212133437560699983921371744711",
+        "radical_m3_global_overlap_squared": "0.99422041070002047301328273527920037"
+      },
+      {
+        "from": [
+          49,
+          8
+        ],
+        "to": [
+          81,
+          11
+        ],
+        "ground_overlap_squared": "0.99990751573884572943803206283060737",
+        "radical_m3_global_overlap_squared": "0.9982263801281568982852689695002446"
+      },
+      {
+        "from": [
+          81,
+          11
+        ],
+        "to": [
+          121,
+          14
+        ],
+        "ground_overlap_squared": "0.99988680593627789269589086979993142",
+        "radical_m3_global_overlap_squared": "0.99917306974389017722144050264383325"
+      },
+      {
+        "from": [
+          121,
+          14
+        ],
+        "to": [
+          169,
+          17
+        ],
+        "ground_overlap_squared": "0.99991763452870500571262338281554867",
+        "radical_m3_global_overlap_squared": "0.9996861611211221952579630330374346"
+      }
+    ]
+  },
+  "scope": "Different finite endpoints can have different states. These finite prefixes prove neither distinct path limits nor history dependence at the same endpoint. Ground projectors compared via zero extension in the original real log coordinate."
+}

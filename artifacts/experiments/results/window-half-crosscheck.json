@@ -1,0 +1,60 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "experiments/results/window-half-crosscheck.json",
+    "source_sha256": "41b302c8ace7e46f392b01818c035fffa531e75c8a669bb3b93251b9d4bc576a",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {}
+  },
+  "rh_status": "OPEN",
+  "proves_RH": false,
+  "independent_adaptive_entry_checks": [
+    {
+      "n": 0,
+      "m": 0,
+      "adaptive_integral": "[0.0474411316605235468124225844054787951036124001323026283736775 +/- 3.71e-62]",
+      "contained": true,
+      "overlap": true
+    },
+    {
+      "n": 0,
+      "m": 2,
+      "adaptive_integral": "[0.124026064399695075049472454635231709186402513281426822486291 +/- 4.01e-61]",
+      "contained": true,
+      "overlap": true
+    },
+    {
+      "n": 1,
+      "m": 1,
+      "adaptive_integral": "[0.154922932706332303492084841509654565724871367677104755005910 +/- 5.02e-61]",
+      "contained": true,
+      "overlap": true
+    },
+    {
+      "n": 1,
+      "m": 3,
+      "adaptive_integral": "[0.143932538423827741492639755404668676962780580098003804992848 +/- 3.96e-61]",
+      "contained": true,
+      "overlap": true
+    },
+    {
+      "n": 62,
+      "m": 62,
+      "adaptive_integral": "[0.616350692921833871811599410844414179363245025426654723926851 +/- 6.74e-59]",
+      "contained": true,
+      "overlap": true
+    }
+  ],
+  "serialized_matrix_shift_replay": {
+    "even": 32,
+    "odd": 32
+  },
+  "note": "All five integral balls contained in original Gauss-error enclosures."
+}

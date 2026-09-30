@@ -1,0 +1,156 @@
+STATUS: RIEMANN HYPOTHESIS OPEN
+SANITIZED HISTORICAL SOURCE SNAPSHOT — not a new execution or proof validation.
+Public credit: @ykbballer91; AI-assisted research log; text CC BY 4.0.
+Source: research/arithmetic_comma/completion_report.txt
+Original SHA-256: c8776dfa716e14c63946d056d84143e5136f2892e4fcae5b945e263cf2e6cbe1
+Internal source paths are provenance identifiers; see data/source-manifest.json for public paths.
+
+ARITHMETIC COMMA / PRIME-LOG KRONECKER DEPHASING 完了報告
+2026年9月30日
+
+結論
+
+今回の独立トラックを終了しました。RH は未解決です。到達水準は Level 1、すなわち「素数対数の位相表現と、cutoff を保った Möbius 和の正確な接続式」の固定までです。新しい平方根相殺、固定べきの改善、RH の証明は得られていません。
+
+終了したのは今回検査した三経路です。全ての位相的手法の不可能性を証明したわけではありません。既存 Phase I〜IV、Continuous Scale Flow、One-Prime、Dyadic、Prime Complex のファイル・状態・主証明グラフは変更せず、このトラックから自動統合もしていません。
+
+今回の問い
+
+M(X) を、prime logs を重みとする Boolean lattice の半空間 cutoff 上の parity discrepancy として固定しました。平方自由整数 n の素因数集合を S とすると、log n は Σ log p、μ(n) は (−1)^|S| です。物理・音律・螺旋などを数学的前提にはしていません。
+
+前の Prime Complex Track では、多数の状態そのものを小さくする自然な pairing に限界がありました。今回はその状態数を減らさず、残った項の位相が構造的に相殺するかを調べました。
+
+1. 正確な橋は存在する
+
+有限素数集合 P に対し、B_P(z)=Π(1−z_p) と置き、C_{P,X}(z) を n≤X の squarefree monomials の和としました。正規化 Haar measure に関して、
+
+A_P(log X) = ∫ B_P(z) conjugate(C_{P,X}(z)) dm(z)
+
+が厳密に成立します。追加の 2^|P| は不要です。P が全ての p≤X を含めば、左辺は actual M(X) と完全一致します。cutoff は積の因子数に置き換えず、C_{P,X} の weighted half-space として保持しました。
+
+同じ量は有限 prime-log flow の時間平均としても書けます。しかし B_P 単独の平均は1であり、M(X) ではありません。cutoff を記憶したもう一つの因子との相関が必要です。
+
+compact smooth cutoff の Fourier inversion、および実部 σ>1 での actual 1/ζ(s) による Mellin 表示も直接導出しました。有限 Euler product を critical strip の無限積として扱うことはしていません。
+
+平滑化を sharp cutoff へ戻す誤差は、非負で幅 h の compact mollifier なら 2X sinh(h)+1 以下です。平方根規模を得るには h を X とともに縮め、そのとき増大する Fourier kernel の費用まで一様に評価する必要があります。整数 endpoint の Perron inversion が半跳躍になることも処理しました。
+
+これらは正確な接続式であって、新しい相殺評価ではありません。Bohr/Hardy–Dirichlet theory や Fourier inversion の既知内容として保存しています。
+
+2. 最も明確だった反証
+
+同じ actual prime logs と、同じ n≤X の squarefree cutoff を使い、
+
+C_X(z) = Σ z^κ(n)
+F_X(z) = Σ μ(n) z^κ(n)
+
+と定義すると、正確に F_X(z)=C_X(−z) です。
+
+Haar measure は全座標を −1 倍する操作で不変なので、この二つの複素値の分布は完全に同じです。分散だけではありません。全モーメント、全 L^q norm、固定 X での prime-log flow の極限時間分布まで一致します。
+
+ところが恒等位相 z=1 では、
+
+F_X(1)=M(X)
+C_X(1)=squarefree integers の個数 ≍X
+
+です。したがって、時間 RMS が平方根規模であることから、特定の位相における和も平方根規模になる、という一般則は偽です。位相分布をどれほど詳しく知っても、それだけではこの二つを区別できません。
+
+さらに actual truncated Möbius polynomial そのものについて、任意の開始時刻 t0 以降の supremum は squarefree count に等しいことが分かります。全座標が −1 に近づく時刻には符号が整列するためです。従って全時間一様の平方根 bound は成立しません。ただし最初にその時刻へ到達するまでの時間は、この議論では評価していません。
+
+この反証は M(X) の平方根 bound や RH が偽だという意味ではありません。恒等位相と reconstruction kernel との算術的相関を別途使う方法は、まだこの反証の対象外です。
+
+3. 近似共鳴を定量化して分かった範囲
+
+有限個の prime logs の整数独立性は素因数分解の一意性から直接証明できます。異なる整数 a,b について、
+
+|log(a/b)| ≥ 1/max(a,b)
+
+です。actual cutoff の a,b≤X なら 1/X が使えます。一般 Fourier coefficient height H に対しては primorial に依存する bound となり、Matveev の原典の定理も固定素数集合では改善しますが、次元が増えると定数が悪化します。
+
+これらは有限時間平均の誤差には使えます。しかし、平均から恒等位相の値を取り出すための追加の相関評価は与えません。粗い bound が要求する「十分な長い時間」を、実際に必要な return time の下界と誤認しないようにしました。
+
+Kronecker flow は等分布ですが mixing ではありません。非自明 character の自己相関の絶対値は常に1です。「dephasing」という言葉から相関の減衰を推論することはできません。
+
+full finite product Π(1−e^{it log p}) では、位相が0へ戻ると積は小さくなり、πへ近づくと積は大きくなります。近似 return の位置によって役割が逆です。cutoff 後の和には、この full product の評価をそのまま移せません。
+
+全ての arithmetic commas を扱うため、a,b≤X の符号 μ(a)μ(b)、multiplicity、差 log a−log b を保持する signed gap measure を構成しました。その Fourier transform は truncated Möbius polynomial の絶対値二乗です。これは正確ですが、この符号付き分布と kernel の積分を小さくする新しい estimate は得られませんでした。
+
+高次モーメントには 2×15=3×10 のような真の product equality が残ります。これは prime logs の独立性と矛盾しません。合成指数ベクトルが同じになるためです。高次モーメントを追加するだけでも、上記の同分布障害は消えません。
+
+4. Pretentious 理論の監査
+
+一般の乗法的関数に適用できる Halász–Montgomery–Tenenbaum の定理を原典の掲載版から確認しました。μ は完全乗法的でないので、完全乗法性を必要とする別の式を流用していません。
+
+μ と n^{it} の距離二乗は Σ_{p≤X}(1+cos(t log p))/p です。必要なのは固定 t の評価ではなく、増大する高さ窓の minimum に対する一様評価です。
+
+しかし、この距離二乗は常に 2 log log X+O(1) 以下です。既知の black-box bound の比較関数 (1+m)e^{-m} からは、それ自体をどれほど最適化しても固定 X^{-δ} の相対 bound は得られません。出力の規模が log-power にとどまるためです。
+
+これは実際の Mertens 和の下界ではありません。一般的な上界公式の精度の限界です。追加の算術構造を使う別証明を否定してはいません。
+
+5. 有限実験
+
+二素数 {2,3} の squarefree model は 1,2,3,6 の4状態だけです。cutoff を通過する累積和は 1,0,−1,0 になります。三素数 {2,3,5} では8状態を exact enumeration しました。
+
+m log2−n log3 の大きな係数による近似共鳴は、元の Boolean model に新しい squarefree states を追加しません。固定有限素数の模型が最終的に完全相殺することから、素数集合も増大する Mertens 問題への一様 bound は出ません。
+
+整数演算による6件の Haar moment 検査、4件の squarefree/Mertens 計数、finite product identity、7件の近似 return 記録、有限時間 sinc 積分、二・三素数で合計40,000点の診断 sampling を保存しました。
+
+例として X=100 では、M(X)=1、squarefree count=61 です。それでも signed と all-positive 模型の二次 Haar moment は共に61、四次 moment は共に11229です。これらは有限の検算であり、漸近 bound の証明には使用していません。
+
+独立担当が別実装で整数計数、モーメント、有限時間値、回帰記録を再照合し、重大な誤りなしと判定しました。
+
+6. 三試行の strategy review
+
+A. Fourier/discrepancy：
+exact bridge は得られました。未解決なのは cutoff kernel と位相積との相関評価です。その相関に必要な平方根 bound を仮定するだけなら Mertens 問題の再表現です。
+
+B. Quantitative nonresonance：
+基本的な lower bounds、有限時間式、反例を得ました。位相分布だけでは恒等位相の情報が足りないことを直接証明しました。
+
+C. Pretentious：
+正確な距離と既知 theorem の適用範囲を固定しました。その black box 単独では新しい固定べき改善を出せません。
+
+三つとも独立な新しい相関評価へ到達しなかったため、指定の終了規則に従って閉じました。別名の第四候補には進んでいません。
+
+7. 以前の成果への影響
+
+今回 M(X)=O(X^θ) の新しい exponent は得られていないので、Dyadic Reduction の 2^{(θ−1/2)n} を改善する新入力はありません。既存の reduction identity やその無条件 bound を変更していません。
+
+弱い Hilbert model の正値性だけでは指定 arithmetic boundary evaluation を保持できないという以前の障害も、Bohr H² で再確認しました。係数が square summable であることと、identity character での和を評価できることは別です。
+
+全体の RH status は OPEN のままです。Level 1 は exact bridge の確認を指し、新しい RH proof-critical bridge を得たという意味ではありません。
+
+8. 再開に必要な具体的内容
+
+再開には、actual weighted cutoff を保った reconstruction kernel と Möbius phase polynomial の相関を、既知算術から独立に評価する具体的 identity または estimate が必要です。
+
+単なる equidistribution、全モーメントの把握、任意 character に対する typical estimate、critical strip への未正当化 contour shift、あるいは「その相関が平方根級」と置く新仮定は、再開の新入力にはなりません。
+
+参照した一次資料
+
+Hedenmalm–Lindqvist–Seip, A Hilbert space of Dirichlet series and systems of dilated functions in L²(0,1), math/9512211v1, §§2.2,4.1.
+https://arxiv.org/html/math/9512211v1
+
+Matveev, An explicit lower bound for a homogeneous rational linear form in the logarithms of algebraic numbers. II, Izvestiya: Mathematics 64:6 (2000), §2, Corollary 2.3.
+https://www.mathnet.ru/php/getFT.phtml?jrnid=im&option_lang=eng&paperid=314&what=fullteng
+
+Granville–Soundararajan, Decay of Mean Values of Multiplicative Functions, Canadian Journal of Mathematics 55(6) (2003), p.1192.
+https://doi.org/10.4153/CJM-2003-047-0
+
+Granville–Soundararajan, Pretentious Multiplicative Functions and an Inequality for the Zeta-Function, CRM Proceedings and Lecture Notes 46 (2008), pp.205–211.
+https://dms.umontreal.ca/~andrew/PDF/Norm.pdf
+
+保存先
+
+research/arithmetic_comma_prime_log_flow.md
+research/arithmetic_comma_candidate_matrix.md
+proofs/audits/arithmetic_comma_adversarial.md
+research/arithmetic_comma_state.json
+research/arithmetic_comma/notes/
+research/arithmetic_comma/experiments/
+
+以上で今回の独立探索を完了しました。
+
+
+PUBLIC EXPORT EDITORIAL NOTE — SOURCE REFERENCES NOT INCLUDED:
+- research/arithmetic_comma/experiments
+- research/arithmetic_comma/notes

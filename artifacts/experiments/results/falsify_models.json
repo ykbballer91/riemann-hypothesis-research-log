@@ -1,0 +1,202 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "experiments/results/falsify_models.json",
+    "source_sha256": "3b33bc962e8cde3802a8aa2d8e66af0a695f6194ba22223935966fc0668ce35f",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {}
+  },
+  "status": "EXPERIMENTAL EVIDENCE; exact rational certificates separated",
+  "scope_ja": "抽象的な偽短絡の有限モデル。リーマン予想への反例ではない。",
+  "arithmetic": {
+    "exact": "fractions.Fraction",
+    "decimal_precision": 70,
+    "quadrature_error_certified": false
+  },
+  "F01_missing_form_convergence": {
+    "domain": "D=c00 direct_sum C*u inside l2, u_j=2^(-j), j>=1",
+    "form": "Q(x+alpha*u)=sum_j |x_j|^2 - |alpha|^2",
+    "all_coordinate_compressions_PSD": true,
+    "Q(u)": "-1",
+    "limit_Q(P_N_u)": "1/3",
+    "finite_values": [
+      {
+        "N": 1,
+        "Q(P_N_u)": "1/4"
+      },
+      {
+        "N": 2,
+        "Q(P_N_u)": "5/16"
+      },
+      {
+        "N": 4,
+        "Q(P_N_u)": "85/256"
+      },
+      {
+        "N": 8,
+        "Q(P_N_u)": "21845/65536"
+      },
+      {
+        "N": 16,
+        "Q(P_N_u)": "1431655765/4294967296"
+      }
+    ],
+    "missing_hypothesis": "Pointwise convergence of forms on the target domain"
+  },
+  "F01b_escaping_negative_direction": {
+    "operator": "A_n=I-2*projection_onto(e_n)",
+    "fixed_k_compression_for_n_gt_k": "I_k",
+    "Q_n(e_n)": "-1",
+    "strong_limit": "I",
+    "caution_ja": "実際のstrong limitはPSD。この例は極限PSDを反証せず、各nの全体PSDへの量化交換だけを反証する。"
+  },
+  "F02_dimension_and_window_growth": {
+    "dimension_example": {
+      "matrix": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "first_compression_eigenvalue": 1,
+      "full_negative_witness": [
+        0,
+        1
+      ],
+      "witness_value": -1
+    },
+    "window_matrix": "[[1,L],[L,1]]",
+    "window_values": [
+      {
+        "L": "0",
+        "eigenvalues": [
+          "1",
+          "1"
+        ],
+        "Q((1,-1))": "2"
+      },
+      {
+        "L": "1",
+        "eigenvalues": [
+          "0",
+          "2"
+        ],
+        "Q((1,-1))": "0"
+      },
+      {
+        "L": "2",
+        "eigenvalues": [
+          "-1",
+          "3"
+        ],
+        "Q((1,-1))": "-2"
+      }
+    ],
+    "increment_L0_to_L2_at_witness_1_minus1": "-4"
+  },
+  "F03_ordinates_are_insufficient": {
+    "entire_function": "((s-1/2-1/4)^2+1)*((s-1/2+1/4)^2+1)",
+    "functional_symmetries": [
+      "F(1-s)=F(s)",
+      "F(conj(s))=conj(F(s))"
+    ],
+    "roots_verified_exactly": [
+      {
+        "rho": {
+          "re": "1/4",
+          "im": "-1"
+        },
+        "F(rho)": {
+          "re": "0",
+          "im": "0"
+        }
+      },
+      {
+        "rho": {
+          "re": "1/4",
+          "im": "1"
+        },
+        "F(rho)": {
+          "re": "0",
+          "im": "0"
+        }
+      },
+      {
+        "rho": {
+          "re": "3/4",
+          "im": "-1"
+        },
+        "F(rho)": {
+          "re": "0",
+          "im": "0"
+        }
+      },
+      {
+        "rho": {
+          "re": "3/4",
+          "im": "1"
+        },
+        "F(rho)": {
+          "re": "0",
+          "im": "0"
+        }
+      }
+    ],
+    "self_adjoint_ordinate_operator": "diag(-1,1,-1,1)",
+    "all_roots_off_critical_line": true,
+    "not_zeta_ja": "ζやξではない。関数等式の基本対称性だけでは不十分だと示す。"
+  },
+  "F04_off_axis_Weil_type_quartet": {
+    "spectral_points": "z=+/-1 +/- i/4",
+    "test_function": "f=((iD+1)^2+1/16)(exp(-ix)*h_prime)",
+    "bump": "h(x)=exp(-1/(1-x^2)) for |x|<1, and 0 otherwise",
+    "A": "integral h(x)*exp(x/4) dx > 0",
+    "F_f(1+i/4)_div_A": {
+      "re": "1",
+      "im": "1/4"
+    },
+    "F_f(1-i/4)_div_A": {
+      "re": "-1",
+      "im": "1/4"
+    },
+    "F_f(-1+/-i/4)": "0",
+    "Q_quartet_div_A_squared": {
+      "re": "-15/8",
+      "im": "0"
+    },
+    "exact_negative_bound": "Q_quartet <= -(15/8)*exp(-8/3) < 0",
+    "numerical_only_integral_approximations": [
+      {
+        "subintervals": 256,
+        "A_approx": "0.4461914445269823181759903413587732780121488848051273634973992831958267",
+        "Q_quartet_approx": "-0.3732877596920158861810040939099787413819927709872957268822880860083038"
+      },
+      {
+        "subintervals": 512,
+        "A_approx": "0.446191444501585751251072799600773909584440769621924825837577488463444",
+        "Q_quartet_approx": "-0.3732877596495218953737566697451630256623219646245536793940680311377275"
+      },
+      {
+        "subintervals": 1024,
+        "A_approx": "0.4461914445015842151143199810714857572335605798436924333506178969662887",
+        "Q_quartet_approx": "-0.3732877596495193250822190744684866539371240444138859017588585540635578"
+      },
+      {
+        "subintervals": 2048,
+        "A_approx": "0.446191444501584215092600349489182923456472372344380987120826534630538",
+        "Q_quartet_approx": "-0.3732877596495193250458773977569244141577365961694657857663398825058702"
+      }
+    ]
+  }
+}

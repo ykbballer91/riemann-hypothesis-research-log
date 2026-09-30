@@ -1,0 +1,87 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "research/hierarchical_selection/notes/independent_audit_snapshot.json",
+    "source_sha256": "f1ab801fd96bfedd88a3d5fa6a1af3b85ae6b780f65f9507e8260c05c3545344",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {
+      "research/fourier_resolution_transition.md": {
+        "public_path": "archive/reports/research/fourier_resolution_transition.md",
+        "status": "EXPORTED"
+      },
+      "research/hierarchical_selection.md": {
+        "public_path": "archive/reports/research/hierarchical_selection.md",
+        "status": "EXPORTED"
+      },
+      "research/hierarchical_selection/experiments/actual_resolution_results.json": {
+        "public_path": "artifacts/research/hierarchical_selection/experiments/actual_resolution_results.json",
+        "status": "EXPORTED"
+      },
+      "research/hierarchical_selection/experiments/check_actual_resolution.py": {
+        "public_path": "artifacts/research/hierarchical_selection/experiments/check_actual_resolution.py",
+        "status": "EXPORTED"
+      },
+      "research/hierarchical_selection/experiments/check_scaled_boundary.py": {
+        "public_path": "artifacts/research/hierarchical_selection/experiments/check_scaled_boundary.py",
+        "status": "EXPORTED"
+      },
+      "research/hierarchical_selection/experiments/scaled_boundary_results.json": {
+        "public_path": "artifacts/research/hierarchical_selection/experiments/scaled_boundary_results.json",
+        "status": "EXPORTED"
+      },
+      "research/hierarchical_selection/final_report_ja.txt": {
+        "public_path": "archive/reports/research/hierarchical_selection/final_report_ja.txt",
+        "status": "EXPORTED"
+      },
+      "research/hierarchical_selection/notes/support_hierarchy.md": {
+        "public_path": "archive/reports/research/hierarchical_selection/notes/support_hierarchy.md",
+        "status": "EXPORTED"
+      },
+      "research/hierarchical_selection_candidate_matrix.md": {
+        "public_path": "archive/reports/research/hierarchical_selection_candidate_matrix.md",
+        "status": "EXPORTED"
+      },
+      "research/hierarchical_selection_state.json": {
+        "public_path": "data/source-records/research/hierarchical_selection_state.json",
+        "status": "EXPORTED"
+      },
+      "research/higher_order_gamma_selection.md": {
+        "public_path": "archive/reports/research/higher_order_gamma_selection.md",
+        "status": "EXPORTED"
+      },
+      "research/prime_rank_one_flow.md": {
+        "public_path": "archive/reports/research/prime_rank_one_flow.md",
+        "status": "EXPORTED"
+      },
+      "research/sonine_filtration_audit.md": {
+        "public_path": "archive/reports/research/sonine_filtration_audit.md",
+        "status": "EXPORTED"
+      }
+    }
+  },
+  "status": "PASS",
+  "date": "2026-09-30",
+  "sha256": {
+    "research/hierarchical_selection.md": "d707a1fb03b61273e71161c148186cf1c7a992846d9919b987e97a30e5182beb",
+    "research/hierarchical_selection_candidate_matrix.md": "11743ad1eafed38a04d4318c3d177224a1be39252db5bed222350977bac93c38",
+    "research/hierarchical_selection_state.json": "b4f57fe270afe210ad4ed3883bd3dbe4bdd3aa5d3778c5e8aad155c608b51294",
+    "research/higher_order_gamma_selection.md": "d8c937dbd2d49c3da5e167b29fcbf6429675241d2acdac8dffecf42f5121b29a",
+    "research/hierarchical_selection/notes/support_hierarchy.md": "49d4eaae5246290681ff45d30fd551b590aead13e9161df1880ec844df95c03e",
+    "research/fourier_resolution_transition.md": "ac2b80d86f43521954c2b240db27be7fd082d123ad0d9b08992acae79f568aa9",
+    "research/prime_rank_one_flow.md": "233051a64789382f58740dcf1193923713bc3bdba19b4c02deab1b95e4e42229",
+    "research/sonine_filtration_audit.md": "57154ab8795bf1c0068cd523fb3a8c36defb8a3808d1c1a9afbe3ad54a4ea05c",
+    "research/hierarchical_selection/experiments/check_scaled_boundary.py": "ae8ca40bd771faef22642381e97e5bbd385bbdd6e2248a05e2a37c38ccad0f9e",
+    "research/hierarchical_selection/experiments/scaled_boundary_results.json": "9c93754026c72a7830f1af08caf4735e5cc0264a70e872dd28f4856adec7444f",
+    "research/hierarchical_selection/experiments/check_actual_resolution.py": "076ab9c0e3f547bb3d5be39d747d60e7b5ce24e6308f6599fdbb3f25e8f8bf2d",
+    "research/hierarchical_selection/experiments/actual_resolution_results.json": "4efa77de0284519368a9c71ccd4708865756740a5c47b598102781ca4ba3da1f",
+    "research/hierarchical_selection/final_report_ja.txt": "87fcfc43aa6c51ea75247ad5709a955dbc8709718c0fbdc128aaa0daab46abed"
+  },
+  "scope": "Independent read-only mathematical audit of fixed-finite-m support hierarchy, canonical periodic Fourier transfer under liminf N/(aY)>4/pi^2, main/candidate/state/report scope, internal rank-one/Sonine dictionary gates, and static experiment/JSON transcription. No independent rereading of all external proofs; no interval certification or rerun of numerical experiments; no full-ground, uniform-m, G_star, ES or RH conclusion. Only the new audit and this new snapshot were written by this auditor."
+}

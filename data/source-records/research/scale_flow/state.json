@@ -1,0 +1,118 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "research/scale_flow/state.json",
+    "source_sha256": "4d91bbc02e05deada537264394dab635e134b85293de463d295c0583782a46e2",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {
+      "research/continuous_scale_flow_frobenius.md": {
+        "public_path": "archive/reports/research/continuous_scale_flow_frobenius.md",
+        "status": "EXPORTED"
+      }
+    }
+  },
+  "track": "CONTINUOUS_SCALE_FLOW_FROBENIUS_SECTION",
+  "rh_status": "OPEN",
+  "status": "BOUNDED_REVIEW_COMPLETE_NO_NEW_METRIC",
+  "independent_of": [
+    "PHASE_III",
+    "PHASE_IV"
+  ],
+  "active_candidates": [],
+  "major_candidates_reviewed": 3,
+  "failed_candidates": [
+    {
+      "id": "SF1",
+      "name": "Local Frobenius Haar metric as the full zero metric",
+      "reason": "Full local Haar space has infinitely many orthogonal modes in a bounded frequency band; no faithful arithmetic global transfer"
+    },
+    {
+      "id": "SF2",
+      "name": "Invariant pairing on the full arithmetic zero quotient",
+      "reason": "Exact growth identity exists; positivity of the actual Weil form is RH-equivalent and bare Hilbert completion loses arithmetic quotient"
+    },
+    {
+      "id": "SF3",
+      "name": "Stroboscopic or conservation-based metric propagation",
+      "reason": "Conditional averaging theorem is valid but no same-space arithmetic unitary return established; symplectic/reversal conservation allows nonzero growth"
+    }
+  ],
+  "additional_falsification": {
+    "literal_no_transverse_growth": "FALSE_ON_SPECIFIED_ARITHMETIC_PADIC_NORMAL_MODEL",
+    "normal_growth_forward_log_time": 1,
+    "normal_model_equals_smooth_ambient_chart": false,
+    "normal_model_map_is_topological_embedding": false,
+    "normal_growth_identified_with_zero_growth": false,
+    "is_counterexample_to_RH": false
+  },
+  "levels": {
+    "1": {
+      "achieved": true,
+      "scope": "Known exact prime-orbit Frobenius deck monodromy, with inverse positive-time return"
+    },
+    "2": {
+      "achieved": "SPECTRAL_CHARACTER_ONLY",
+      "geometric_normal_zero_character_identification": false
+    },
+    "3": {
+      "achieved": "SPECTRAL_CHARACTER_ONLY",
+      "identity": "growth = Re(rho)-1/2 on every nonzero arithmetic zero character"
+    },
+    "4": {
+      "achieved": false,
+      "reason": "No independent arithmetic invariant positive metric retaining all zero characters"
+    },
+    "5": {
+      "achieved": false
+    }
+  },
+  "component_facts": {
+    "exact_mapping_torus": true,
+    "prime_power_iteration": true,
+    "local_haar_positive_unitary": true,
+    "local_haar_compact_resolvent": false,
+    "exact_arithmetic_zero_character_growth": true,
+    "padic_half_density_fixed_point_weight": true,
+    "same_space_unitary_return_sufficient_lemma": true,
+    "new_arithmetic_unitary_return": false,
+    "new_arithmetic_positive_metric": false,
+    "full_zero_hilbert_identification": false
+  },
+  "current_minimal_gap": "Construct from arithmetic a common invariant positive norm on a faithful completion of the full-zero representation, with every zero character nonzero and bounded; multiplicity/trace identification is a further obligation for a full determinant model",
+  "gap_reduced_by_new_arithmetic_bridge": false,
+  "strategy_review_completed": true,
+  "next_action": "End this round. Reopen only with an independently arithmetic common-space metric or return theorem retaining all zero characters, not another orbit-log recoding or geometric no-transverse-growth claim.",
+  "known_programs_compared": [
+    "Berry-Keating",
+    "Connes spectral realization",
+    "Connes-Consani scaling Hamiltonian",
+    "Scaling site/adele class space",
+    "Deninger flow program",
+    "Dynamical zeta functions",
+    "Selberg trace formula",
+    "Gutzwiller periodic-orbit analogy"
+  ],
+  "source_audits": [
+    "notes/frobenius_mapping_torus.md",
+    "notes/spectral_growth.md",
+    "notes/program_comparison.md",
+    "notes/padic_transverse_audit.md"
+  ],
+  "independent_audit": "notes/independent_audit.md",
+  "experiment": "flow_checks.json",
+  "main_log": "research/continuous_scale_flow_frobenius.md",
+  "phase3_modified": false,
+  "phase4_modified_by_this_track": false,
+  "canonical_state_or_graph_modified": false,
+  "graph_merges": [],
+  "novelty_claimed": false,
+  "proof_of_RH": false,
+  "refutation_of_RH": false
+}

@@ -1,0 +1,80 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "experiments/results/imbalance-checks.json",
+    "source_sha256": "13fd0b30e99470477f5bd44711f01772d60c0afcee3b6d2d435edecc34fa6a63",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {}
+  },
+  "kind": "fixed_product_imbalance_adversarial_checks",
+  "rh_status": "OPEN",
+  "proves_RH": false,
+  "refutes_RH": false,
+  "arithmetic": "python-flint Arb/Acb",
+  "precision_bits": 224,
+  "python_flint_version": "0.9.0",
+  "source_sha256": "9f7d952a6d460cafe12eb25157fda00ced57b6cf3fb73659c96ad7378112f17f",
+  "convergent_aggregate_checks": [
+    {
+      "delta": "1/10",
+      "regulator": "3",
+      "cutoff": 1000,
+      "partial_prime_power_energy": "[0.00225111376398217375730170152418785410139961972855670198929378 +/- 4.69e-64]",
+      "log_zeta_finite_difference": "[0.00225111387960481985048687780609743337950239580526556099944148 +/- 1.95e-63]",
+      "remainder": "[1.15622646093185176281909579278102776076708859010147698527283e-10 +/- 1.40e-67]",
+      "elementary_tail_bound": "[2.84362264681069464835894503634108602491197883783843176332346e-9 +/- 1.80e-69]",
+      "passed": true
+    },
+    {
+      "delta": "1/4",
+      "regulator": "3",
+      "cutoff": 1000,
+      "partial_prime_power_energy": "[0.0143668043108151033254120403270414359018464942966594129933508 +/- 4.23e-62]",
+      "log_zeta_finite_difference": "[0.0143668059663448580038116041788014189859255806035520665846128 +/- 1.78e-62]",
+      "remainder": "[1.65552975467839956385175998308407908630689265359126197551321e-9 +/- 1.90e-67]",
+      "elementary_tail_bound": "[2.52982212813470346559911483554617482697564411146017346148600e-8 +/- 3.89e-68]",
+      "passed": true
+    },
+    {
+      "delta": "2/5",
+      "regulator": "3",
+      "cutoff": 1000,
+      "partial_prime_power_energy": "[0.0382654519014464022487233676733913719785193834991231398492027 +/- 4.96e-62]",
+      "log_zeta_finite_difference": "[0.0382654674598206297035628395143045733138289904113353952003300 +/- 1.05e-62]",
+      "remainder": "[1.55583742274548394718409132013353096069122122553511273391295e-8 +/- 5.88e-67]",
+      "elementary_tail_bound": "[2.28353311955416373735002915254484308559865281889315948061808e-7 +/- 3.83e-68]",
+      "passed": true
+    }
+  ],
+  "continuation_counterexample": {
+    "u": "1/10",
+    "delta": "1/5",
+    "dirichlet_series_converges": false,
+    "meromorphic_finite_difference": "[-21.3487410999574177676752935136304449386790377136585613079116 +/- 8.63e-61]",
+    "negative_certified": true
+  },
+  "holomorphic_extension_counterexample": {
+    "n": 2,
+    "z": "i*pi/(2*log(2))",
+    "real_amplitude_energy": "0",
+    "holomorphic_extension": "[-2.00000000000000000000000000000000000000000000000000000000000 +/- 3e-64]",
+    "exact_value": "-2"
+  },
+  "positive_measure_counterexample": {
+    "transform": "cosh(1/4)+cosh(z)",
+    "zero": "1/4+i*pi",
+    "exact_zero_proof": "cosh(a+i*pi)=-cosh(a)",
+    "residual": "[7.41841230137484277146347052309527902673512955751558200490608e-68 +/- 2.73e-67] + [8.64909979846258900293690050899298385470399724660395059810948e-69 +/- 1.88e-68]j",
+    "E2_at_real_part": "[0.0606601717798212866012665431572735589272539065327110548825098 +/- 3.50e-63]",
+    "positive_energy_certified": true,
+    "scope": "Refutes structural inference; not a counterexample to zeta/RH."
+  },
+  "decision": "Stop this proof route: zero-implies-zero-energy is exactly RH; structural-only strengthening is false."
+}

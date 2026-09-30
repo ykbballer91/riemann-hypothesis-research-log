@@ -1,0 +1,57 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "experiments/results/desogus-safe-cut-repair.json",
+    "source_sha256": "5cb77d4967b16a836de16381b1716a0f8fdcacaf1a2a5865c3ab6f2f558ff18d",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {}
+  },
+  "status": "FINITE_SCALAR_REPAIR_VERIFIED",
+  "proves_RH": false,
+  "refutes_RH": false,
+  "verifies_external_full_proof": false,
+  "range": [
+    7,
+    4999
+  ],
+  "integers_checked": 4993,
+  "precision_bits": 192,
+  "python_flint_version": "0.9.0",
+  "algorithm": "Arb prefix sums and harmonic quotient blocks; prime-power divisor removal",
+  "author_code_executed": false,
+  "uniform_gap_exceeds": "1.5202196525",
+  "minimum_lower_endpoint": "[1.5202196525197510393421407828913196124490004706357 +/- 4.46e-50]",
+  "minimum_at": 7,
+  "selected": [
+    {
+      "k": 7,
+      "gap": "[1.5202196525197510393421407828913196124490004706357 +/- 4.46e-50]"
+    },
+    {
+      "k": 8,
+      "gap": "[1.7600455781538323818640168998399468045936329595661 +/- 3.61e-50]"
+    },
+    {
+      "k": 33,
+      "gap": "[2.0659845208377526856757426626490225974439610199521 +/- 1.02e-50]"
+    },
+    {
+      "k": 4998,
+      "gap": "[2.7925825378349133131787226440111862923374203528563 +/- 1.29e-51]"
+    },
+    {
+      "k": 4999,
+      "gap": "[1.6898794733285379798594037084882637879966758681220 +/- 3.91e-50]"
+    }
+  ],
+  "analytic_tail_verified": false,
+  "operator_lift_verified": false,
+  "source_sha256": "5a8a0e4bb782200b4cb0670262055e419093adb06a4b1a6c29f8648666e71eab"
+}

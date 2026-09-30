@@ -1,0 +1,233 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "research/phase3_gap_state.json",
+    "source_sha256": "a079b62ece5fda2f9db245950b237365492c9bba4eeea1a543185e4aca4c5b27",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {
+      "experiments/results/phase3-structural-checks.json": {
+        "public_path": "artifacts/experiments/results/phase3-structural-checks.json",
+        "status": "EXPORTED"
+      },
+      "proofs/audits/phase3-independent-audit.md": {
+        "public_path": "archive/audits/proofs/audits/phase3-independent-audit.md",
+        "status": "EXPORTED"
+      },
+      "research/finite_field_dependency_spine.md": {
+        "public_path": "archive/reports/research/finite_field_dependency_spine.md",
+        "status": "EXPORTED"
+      },
+      "research/phase3_sources.json": {
+        "public_path": "archive/literature/research/phase3_sources.json",
+        "status": "EXPORTED"
+      }
+    }
+  },
+  "phase": 3,
+  "rh_status": "OPEN",
+  "status": "STOPPED_AFTER_THREE_BOUNDED_ATTEMPTS_AND_STRATEGY_REVIEW",
+  "finite_field_minimal_dependencies": [
+    {
+      "id": "FF1",
+      "statement": "Arithmetic finite-degree realization",
+      "number_field_analogue_status": "PARTIAL",
+      "details": "research/finite_field_dependency_spine.md#ff1",
+      "is_new_axiom_assumed": false
+    },
+    {
+      "id": "FF2",
+      "statement": "Faithful point/trace/determinant comparison",
+      "number_field_analogue_status": "PARTIAL",
+      "details": "research/finite_field_dependency_spine.md#ff2",
+      "is_new_axiom_assumed": false
+    },
+    {
+      "id": "FF3",
+      "statement": "Same polarized Jacobian and faithful arithmetic representation",
+      "number_field_analogue_status": "ABSENT",
+      "details": "research/finite_field_dependency_spine.md#ff3",
+      "is_new_axiom_assumed": false
+    },
+    {
+      "id": "FF4",
+      "statement": "Geometric positive Rosati trace",
+      "number_field_analogue_status": "CONJECTURAL",
+      "details": "research/finite_field_dependency_spine.md#ff4",
+      "is_new_axiom_assumed": false
+    },
+    {
+      "id": "FF5",
+      "statement": "Scaled adjoint identity on the same action",
+      "number_field_analogue_status": "PARTIAL",
+      "details": "research/finite_field_dependency_spine.md#ff5",
+      "is_new_axiom_assumed": false
+    },
+    {
+      "id": "FF6",
+      "statement": "Duality and reciprocal pairing",
+      "number_field_analogue_status": "PARTIAL",
+      "details": "research/finite_field_dependency_spine.md#ff6",
+      "is_new_axiom_assumed": false
+    },
+    {
+      "id": "D1",
+      "statement": "Geometric reduction by pencils and weak Lefschetz",
+      "number_field_analogue_status": "ABSENT",
+      "details": "research/finite_field_dependency_spine.md#d1",
+      "is_new_axiom_assumed": false
+    },
+    {
+      "id": "D2",
+      "statement": "Monodromy tensor invariants and local rationality",
+      "number_field_analogue_status": "PARTIAL",
+      "details": "research/finite_field_dependency_spine.md#d2",
+      "is_new_axiom_assumed": false
+    },
+    {
+      "id": "D3",
+      "statement": "Positive tensor coefficients with uniform pole control",
+      "number_field_analogue_status": "ABSENT",
+      "details": "research/finite_field_dependency_spine.md#d3",
+      "is_new_axiom_assumed": false
+    },
+    {
+      "id": "D4",
+      "statement": "Kunneth amplification with bounded exponent loss",
+      "number_field_analogue_status": "ABSENT",
+      "details": "research/finite_field_dependency_spine.md#d4",
+      "is_new_axiom_assumed": false
+    }
+  ],
+  "exact_number_field_analogues": [
+    {
+      "id": "closed_points",
+      "statement": "Primes are closed points of Spec Z with residue norm p"
+    },
+    {
+      "id": "local_frobenius",
+      "statement": "Trivial motive has local Frobenius1 and weight0; not global zero H1"
+    },
+    {
+      "id": "explicit_formula",
+      "statement": "Prime-power/Gamma/pole distribution equals full zero distribution on prescribed tests"
+    },
+    {
+      "id": "CCM_cyclic_quotient",
+      "statement": "Arithmetic construction and full nontrivial zero trace with natural multiplicities in nuclear-space setting",
+      "source": "P3-CCM07"
+    },
+    {
+      "id": "scaling_form",
+      "statement": "H(T_a f,T_a g)=a H(f,g); not a positivity theorem"
+    },
+    {
+      "id": "gamma_local",
+      "statement": "Regularized determinant of local tower gives sqrt2/Gamma_R",
+      "source": "P3-DEN98"
+    },
+    {
+      "id": "arithmetic_Hilbert_collapse",
+      "statement": "The specific natural weighted L2 quotient of CCM restriction range is zero, including trivial character sector",
+      "source": "P3-CCM07",
+      "original_theorem_reproved": false
+    }
+  ],
+  "partial_analogues": [
+    {
+      "id": "arithmetic_site",
+      "missing": "Positive Weil cohomology interpreting same counting"
+    },
+    {
+      "id": "Deninger_Witt",
+      "missing": "Global H1 zero/determinant identification and compatible positive star"
+    },
+    {
+      "id": "semilocal_scaling",
+      "missing": "All-support sign theorem; no finite-window enlargement attempted"
+    }
+  ],
+  "missing_structures": [
+    {
+      "id": "positive_arithmetic_comparison",
+      "statement": "Independently arithmetic positive polarization compatible with full-zero quotient and trace",
+      "status": "NOT_CONSTRUCTED"
+    },
+    {
+      "id": "natural_positive_graded_determinant",
+      "statement": "Same prime-built positive geometry with canonical graded determinant, domains and multiplicities",
+      "status": "NOT_CONSTRUCTED"
+    },
+    {
+      "id": "tensor_pole_alternative",
+      "statement": "Actual global-zero arithmetic tensor system with uniform pole control analogous to Deligne",
+      "status": "NOT_CONSTRUCTED_NOT_SELECTED_AS_SECOND_LONG_TRACK"
+    }
+  ],
+  "current_minimal_gap": {
+    "known_formulation": "Positivity of trace pairing on the existing arithmetic quotient",
+    "equivalent_to_RH": true,
+    "accepted_as_progress": false,
+    "independent_missing_theorem_obtained": false,
+    "geometric_upgrade": "Concrete positive comparison preserving arithmetic action, topology, zero divisor and multiplicities",
+    "RH_implies_geometric_upgrade": "UNKNOWN",
+    "bundle_must_not_be_counted_as_one_reduced_obligation": true
+  },
+  "active_track": {
+    "id": "B",
+    "name": "Missing purity",
+    "selection": "CCM full-zero arithmetic quotient",
+    "status": "BOUNDED_ROUND_CLOSED"
+  },
+  "failed_tracks": [
+    {
+      "id": "P3-M1",
+      "claim": "Formal point counts, determinant and reciprocal duality force purity",
+      "result": "EXACT_SYNTHETIC_COUNTEREXAMPLE",
+      "counterexample_is_actual_curve": false,
+      "all_n_closed_point_counts_proved": true
+    },
+    {
+      "id": "P3-M2",
+      "claim": "Ambient unitary norm descends without losing arithmetic quotient spectrum",
+      "result": "LF_COUNTEREXAMPLE_AND_ACTUAL_SPECIFIC_WEIGHTED_HILBERT_QUOTIENT_ZERO",
+      "does_not_rule_out_other_polarizations": true
+    },
+    {
+      "id": "P3-M3",
+      "claim": "Pure prime local factors and exact Gamma tower glue by direct sum to global weight1",
+      "result": "NONCOMPACT_NONTRACECLASS_AND_NO_GLOBAL_ZERO_IDENTIFICATION",
+      "does_not_rule_out_nontrivial_geometric_gluing": true
+    }
+  ],
+  "next_action": "Do not restart the same three mechanisms or finite-window enlargement. Re-entry requires a concrete independent arithmetic intersection or tensor/pole identity on the existing quotient, with exact topology/trace compatibility. No such unprocessed candidate was obtained in this round.",
+  "major_attempts_completed": 3,
+  "strategy_review_completed": true,
+  "gap_reduced": false,
+  "success_levels_achieved": [],
+  "new_unconditional_part_of_missing_structure": false,
+  "main_graph_merges": [],
+  "additional_assumptions": [],
+  "novelty_claimed": false,
+  "proves_RH": false,
+  "refutes_RH": false,
+  "audit": "proofs/audits/phase3-independent-audit.md",
+  "source_ledger": "research/phase3_sources.json",
+  "numerical_result": "experiments/results/phase3-structural-checks.json",
+  "numerical_results_certified": false,
+  "synthetic_status": "Formal axioms insufficient; positive scaled metric excludes model but spectral-form condition is equivalent to purity plus semisimplicity in finite dimensions",
+  "instruction_preservation": {
+    "phase_I": 23,
+    "phase_II_cycle": 24,
+    "new_cycle": 25,
+    "physical_heuristics_used_as_proof": false,
+    "zeros_used_to_define_new_operator": false,
+    "fixed_window_expansion_attempted": false
+  }
+}

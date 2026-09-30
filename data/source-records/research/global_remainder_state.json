@@ -1,0 +1,115 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "research/global_remainder_state.json",
+    "source_sha256": "aad511ed55e28cd4dfd92f78f36ffabb630310525a9f922d2dd88c82821b6798",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {
+      "proofs/audits/global_remainder_adversarial.md": {
+        "public_path": "archive/audits/proofs/audits/global_remainder_adversarial.md",
+        "status": "EXPORTED"
+      },
+      "research/global_remainder/completion_report.txt": {
+        "public_path": "archive/reports/research/global_remainder/completion_report.txt",
+        "status": "EXPORTED"
+      },
+      "research/global_remainder/experiments/results.json": {
+        "public_path": "artifacts/research/global_remainder/experiments/results.json",
+        "status": "EXPORTED"
+      },
+      "research/global_remainder/preservation_check.json": {
+        "public_path": "data/source-records/research/global_remainder/preservation_check.json",
+        "status": "EXPORTED"
+      },
+      "research/global_remainder/validation.json": {
+        "public_path": "data/source-records/research/global_remainder/validation.json",
+        "status": "EXPORTED"
+      },
+      "research/global_remainder_beyond_all_orders.md": {
+        "public_path": "archive/reports/research/global_remainder_beyond_all_orders.md",
+        "status": "EXPORTED"
+      },
+      "research/global_remainder_candidates.md": {
+        "public_path": "archive/reports/research/global_remainder_candidates.md",
+        "status": "EXPORTED"
+      }
+    }
+  },
+  "track": "GLOBAL_REMAINDER_BEYOND_ALL_ORDERS",
+  "record_date": "2026-09-30",
+  "status": "CLOSED_AFTER_THREE_DIRECTION_STRATEGY_REVIEW",
+  "rh_status": "OPEN",
+  "local_all_order_annihilation_fixed": true,
+  "smoothed_global_remainder_fixed": true,
+  "exact_zero_mode_decomposition": true,
+  "zero_mode_sum_convention": "Finite rectangles exactly; fixed negative line plus a compact-u uniformly convergent sum grouped by justified good heights. Individual absolute convergence is not asserted.",
+  "multiple_zeros_retained": true,
+  "kernel_nonvanishing_at_all_zeros": true,
+  "functional_pair_growth_analyzed": true,
+  "common_cosh_amplitude_claim": false,
+  "two_sided_arithmetic_bound_found": false,
+  "target_bound_interpretation": "The missing bound is independently proved forward subexponential growth or a sufficient global stability bound, not the available crude exponential upper bound.",
+  "local_to_global_constraint_found": false,
+  "one_prime_equivalence_checked": true,
+  "gaussian_subexponential_criterion": "Equivalent to RH; not a new unconditional arithmetic input.",
+  "completed_temperedness_criterion": "Sufficient for RH and a uniform multiplicity bound; converse from RH not established.",
+  "unweighted_l2_no_go_proved": true,
+  "finite_jet_symmetric_countermodels_constructed": true,
+  "same_full_analytic_germ_countermodel": false,
+  "identity_theorem_distinction_fixed": true,
+  "parameter_derivative_information_recovery_fixed": true,
+  "uniform_double_scaling_derived": true,
+  "resurgence_established": false,
+  "stokes_constants_constructed": false,
+  "new_arithmetic_growth_input_found": false,
+  "best_zero_real_part_bound": null,
+  "new_zero_free_strip": false,
+  "rh_closed": false,
+  "success_level": 0,
+  "novelty_status": "No new published theorem claimed. Explicit countermodels, constraints and decomposition are recorded as applications of known analytic principles.",
+  "active_candidates": [],
+  "completed_candidates": [
+    {
+      "id": "A",
+      "name": "Exact Gaussian global spectral decomposition",
+      "decision": "CLOSED_EQUIVALENT_GROWTH_INPUT",
+      "missing_input": "Actual Mobius convolution has forward subexponential growth without assuming the RH-equivalent Mertens bound."
+    },
+    {
+      "id": "B",
+      "name": "Completed two-sided inverse and closure",
+      "decision": "CLOSED_NO_INDEPENDENT_RIGHT_SIDE_BOUND",
+      "missing_input": "Bound the faithful arithmetic right-side inverse, rather than substituting a central Fourier inverse with a different convergence strip."
+    },
+    {
+      "id": "C",
+      "name": "Local annihilation and parameter transition",
+      "decision": "CLOSED_NO_LOCAL_TO_GLOBAL_RESTRICTION",
+      "missing_input": "Independent arithmetic control of the endpoint remainder beyond the vanishing local expansion."
+    }
+  ],
+  "major_attempts_completed": 3,
+  "fourth_candidate_started": false,
+  "proof_graph_merge": false,
+  "previous_tracks_modified": false,
+  "current_obstruction": "The exact arithmetic transform retains all poles, but neither local annihilation, functional symmetry nor a change of inverse-transform contour supplies the missing forward arithmetic cancellation estimate.",
+  "next_action": "STOP_THIS_TRACK. Preserve negative knowledge and await an independently specified arithmetic input; do not repeat an equivalent growth condition under a new name.",
+  "independent_audit_status": "PASS_WITH_SCOPE_LIMITS",
+  "numerical_status": "Diagnostic 50-digit floating arithmetic, not interval certified; separate exact rational jet checks passed.",
+  "artifacts": {
+    "main": "research/global_remainder_beyond_all_orders.md",
+    "candidates": "research/global_remainder_candidates.md",
+    "audit": "proofs/audits/global_remainder_adversarial.md",
+    "plain_text_report": "research/global_remainder/completion_report.txt",
+    "experiments": "research/global_remainder/experiments/results.json",
+    "preservation": "research/global_remainder/preservation_check.json",
+    "validation": "research/global_remainder/validation.json"
+  }
+}

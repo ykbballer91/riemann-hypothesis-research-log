@@ -1,0 +1,173 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "experiments/results/caceres-ratio-checks.json",
+    "source_sha256": "590b5f285140bd64ed2590b230dcf28b9f89b53473a4f3ac6f93699041dcc470",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {
+      "proofs/audits/caceres-asymptotic-adversarial.md": {
+        "public_path": "archive/audits/proofs/audits/caceres-asymptotic-adversarial.md",
+        "status": "EXPORTED"
+      }
+    }
+  },
+  "status": "FINITE_CHECKS_PASS_ANALYTIC_RIGIDITY_REFUTATION",
+  "proves_RH": false,
+  "refutes_RH": false,
+  "refutes_external_theorem": "Caceres 2609.28529v1 Theorem 4.1 / equation (55)",
+  "analytic_statement": "For every fixed 0<Re(s)<1, printed Q_N(s) tends to 1",
+  "proof": "proofs/audits/caceres-asymptotic-adversarial.md",
+  "author_code_executed": false,
+  "precision_bits": 192,
+  "python_flint_version": "0.9.0",
+  "rows": [
+    {
+      "sigma": "0.25",
+      "t": "0",
+      "N": 16,
+      "ratio": "[0.94200442739714251168125079689102895 +/- 4.32e-36]",
+      "analytic_epsilon": "[0.35937500000000000000000000000000000 +/- 1e-40]"
+    },
+    {
+      "sigma": "0.25",
+      "t": "0",
+      "N": 256,
+      "ratio": "[0.98684126081663339343319770420914058 +/- 3.96e-36]",
+      "analytic_epsilon": "[0.044921875000000000000000000000000000 +/- 1e-41]"
+    },
+    {
+      "sigma": "0.25",
+      "t": "0",
+      "N": 4096,
+      "ratio": "[0.99798457400703119532943896903011853 +/- 2.91e-36]",
+      "analytic_epsilon": "[0.0056152343750000000000000000000000000 +/- 1e-42]"
+    },
+    {
+      "sigma": "0.25",
+      "t": "0",
+      "N": 65536,
+      "ratio": "[0.99972507562752888638602984800819124 +/- 1.25e-36]",
+      "analytic_epsilon": "[0.00070190429687500000000000000000000000 +/- 1e-43]"
+    },
+    {
+      "sigma": "0.75",
+      "t": "0",
+      "N": 16,
+      "ratio": "[0.34269703602302889904978511486516016 +/- 3.51e-37]",
+      "analytic_epsilon": "[0.81250000000000000000000000000000000 +/- 1e-40]"
+    },
+    {
+      "sigma": "0.75",
+      "t": "0",
+      "N": 256,
+      "ratio": "[0.61763250300770565413097708731297511 +/- 3.45e-36]",
+      "analytic_epsilon": "[0.40625000000000000000000000000000000 +/- 1e-40]"
+    },
+    {
+      "sigma": "0.75",
+      "t": "0",
+      "N": 4096,
+      "ratio": "[0.79659349603634231642743709278058027 +/- 1.50e-36]",
+      "analytic_epsilon": "[0.20312500000000000000000000000000000 +/- 1e-40]"
+    },
+    {
+      "sigma": "0.75",
+      "t": "0",
+      "N": 65536,
+      "ratio": "[0.89535827277873255364206665493044699 +/- 2.55e-36]",
+      "analytic_epsilon": "[0.10156250000000000000000000000000000 +/- 1e-40]"
+    },
+    {
+      "sigma": "0.25",
+      "t": "1",
+      "N": 16,
+      "ratio": "[1.2753579336257468897369582722462343 +/- 2.19e-35]",
+      "analytic_epsilon": "[1.0036102540027594609095952899959495 +/- 3.52e-35]"
+    },
+    {
+      "sigma": "0.25",
+      "t": "1",
+      "N": 256,
+      "ratio": "[0.98399553195692847488808429755182413 +/- 1.01e-37]",
+      "analytic_epsilon": "[0.12545128175034493261369941124949369 +/- 1.90e-36]"
+    },
+    {
+      "sigma": "0.25",
+      "t": "1",
+      "N": 4096,
+      "ratio": "[1.0029106053567513067616313836111235 +/- 3.57e-35]",
+      "analytic_epsilon": "[0.015681410218793116576712426406186711 +/- 4.88e-37]"
+    },
+    {
+      "sigma": "0.25",
+      "t": "1",
+      "N": 65536,
+      "ratio": "[0.99977305814160393792706888831792602 +/- 1.94e-36]",
+      "analytic_epsilon": "[0.0019601762773491395720890533007733389 +/- 3.59e-38]"
+    },
+    {
+      "sigma": "0.75",
+      "t": "1",
+      "N": 16,
+      "ratio": "[2.1894779587863849532127601802800718 +/- 3.92e-35]",
+      "analytic_epsilon": "[2.1320626434736573009709747346564055 +/- 1.09e-35]"
+    },
+    {
+      "sigma": "0.75",
+      "t": "1",
+      "N": 256,
+      "ratio": "[0.58515849517389328631393956496754017 +/- 2.28e-36]",
+      "analytic_epsilon": "[1.0660313217368286504854873673282027 +/- 4.46e-35]"
+    },
+    {
+      "sigma": "0.75",
+      "t": "1",
+      "N": 4096,
+      "ratio": "[1.2237543909966361074426993216938590 +/- 1.37e-35]",
+      "analytic_epsilon": "[0.53301566086841432524274368366410137 +/- 2.29e-36]"
+    },
+    {
+      "sigma": "0.75",
+      "t": "1",
+      "N": 65536,
+      "ratio": "[0.92653965486094305383521295417278505 +/- 2.08e-36]",
+      "analytic_epsilon": "[0.26650783043420716262137184183205069 +/- 3.87e-36]"
+    },
+    {
+      "sigma": "0.5",
+      "t": "1",
+      "N": 16,
+      "ratio": "[1.5079240123962255720383255519323150 +/- 4.98e-35]",
+      "analytic_epsilon": "[1.2942627457812105680767200628871143 +/- 5.86e-36]"
+    },
+    {
+      "sigma": "0.5",
+      "t": "1",
+      "N": 256,
+      "ratio": "[0.90374587968415674310055821105901499 +/- 4.43e-36]",
+      "analytic_epsilon": "[0.32356568644530264201918001572177857 +/- 3.54e-36]"
+    },
+    {
+      "sigma": "0.5",
+      "t": "1",
+      "N": 4096,
+      "ratio": "[1.0236173793907581394019414934977604 +/- 1.63e-36]",
+      "analytic_epsilon": "[0.080891421611325660504795003930444643 +/- 3.85e-37]"
+    },
+    {
+      "sigma": "0.5",
+      "t": "1",
+      "N": 65536,
+      "ratio": "[0.99561731174925727410484117576785815 +/- 1.48e-37]",
+      "analytic_epsilon": "[0.020222855402831415126198750982611161 +/- 1.55e-37]"
+    }
+  ],
+  "source_sha256": "546262155bfe9161598108cdbc0f07f3521293fa0f18755dd60c64c0bc0f00c0"
+}

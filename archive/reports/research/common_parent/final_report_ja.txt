@@ -1,0 +1,81 @@
+STATUS: RIEMANN HYPOTHESIS OPEN
+SANITIZED HISTORICAL SOURCE SNAPSHOT — not a new execution or proof validation.
+Public credit: @ykbballer91; AI-assisted research log; text CC BY 4.0.
+Source: research/common_parent/final_report_ja.txt
+Original SHA-256: 0149ed6370f3c4b3a5391958b81677da4749c8fb8e965bb895aab25ed2c9bb6e
+Internal source paths are provenance identifiers; see data/source-manifest.json for public paths.
+
+RH COMMON PARENT VARIATIONAL PRINCIPLE — 限定監査結果
+2026-09-30
+RH OPEN
+
+結論：NO COMMON PARENT IDENTIFIED.
+
+依頼された「BをAの採点にそのまま入れる」を実行した。
+同じ有限空間に入れるため既存のL² Fourier射影を用いた。新しい内積や零点依存の補正は加えていない。
+
+1. Aは何を最適化しているか。
+
+log支持区間[-log λ,log λ]の有限Fourier空間で、標準L²ノルムを1に保ち、actual Weil quadratic formを最小化する。Gamma・pole・prime-power項を全部含む。最小固有値の単純性とevenness（ES）は別の条件である。
+
+2. Bは何を最適化しているか。
+
+ここは出発仮説の修正が必要だった。各prolate modeにはspace/frequency concentrationのmin–max原理がある。しかし今回のBは、一番集中したmodeではない。0次・4次modeを積分ゼロに組み合わせ、それを算術和へ写したproxyである。この組合せは、通常のeven mean-zero concentration問題の停留点でもないことをEuler–Lagrange式から確認した。
+
+3. 同じquantityの別表示か。
+
+確認できない。Weil形式とconcentration leakageの単純な同一化は、算術和写像のkernel上で破綻する。kernel内の関数は算術像もWeil採点もゼロだが、space/frequency leakageは正になる。
+
+4. 同じparent functionalへ持ち上げられるか。
+
+canonicalな算術和Sを使ってQ(Sh)/||Sh||²というpullbackは書ける。しかしそれはAを別座標で書いたもので、Bも同じ解として選ぶ原理ではない。共通のΓ/Mosco極限や共通の一意なEuler–Lagrange解は得られなかった。
+
+実際に共通する既知構造はある。Hermite極限seedの全域算術和はWeil形式のradicalに入る。この事実はConnes–Consaniの公刊原典で既知。だがradicalは無限次元であり、一つの最低状態を選ばない。有限切断prolate proxy全体がexact radicalだと主張しているわけでもない。
+
+5. BはAの採点でどれほど最低点に近いか。
+
+以下は高精度行列midpointと丸めたtrialによる診断。区間認証ではなく、有限例から漸近収束を推測しない。
+
+λ²   N   excess/gap       groundとのoverlap²
+2    4   0.00211972       0.99978990
+3    4   0.0000328082     0.99999995
+5    4   37.8112          0.99548421
+5    8   0.252341         0.99988509
+9    8   3.18280×10^6     0.99470913
+13   8   2.09852×10^10    0.98487843
+
+小さい例ではほぼ最低点を取る。一方、Rayleigh値が小さくてもgapはそれ以上に小さくなる例がある。大きい比は「AとBが遠い」ことの下界ではない。標準gap上界が弱いことと実際の距離を区別する。
+
+6. 1位と2位の差と比較してA≈Bを証明できたか。
+
+一般補題は厳密に固定した：
+dist(b,span(v0))² ≤ (R_B−e0)/(e1−e0).
+
+ただしactual arithmeticから右辺が0へ行く評価は得ていない。残差版でも近い固有値がgroundだという同定が必要である。さらに、λが増大するため、L²接近だけではG*に十分でない。全0<r<1/2について、概ねλ^rを掛けた誤差と有限Fourier射影tailを0にするrateが必要になる。
+
+三方向の判定：
+A Common Rayleigh：有限代入済み、一般gap補題あり、算術的な極限比は未証明。
+B Common parent / Γ-limit：単純なparentはkernelで反証。共通coercive unique-minimizer limitは未取得。
+C Common Euler equation：prolateの0/4混合と非局所Weil式を比較。共通極限方程式やintertwiningは未取得。
+
+既知radical、標準gap補題、有限数値を新しいRH進展とは扱わない。
+到達度は辞書・明示的比較式・限定no-goまでのLevel 1。
+3方向の限定監査を終了し、第4候補へ名前を変えて移行しない。
+既存研究・state・proof graphへ自動mergeしない。
+
+主記録：
+research/common_parent_variational_principle.md
+research/common_variational_dictionary.md
+research/common_parent_candidate_matrix.md
+proofs/audits/common_parent_variational_adversarial.md
+research/common_parent_state.json
+
+主要一次資料：
+Connes–Consani–Moscovici, Zeta Spectral Triples, §§3–8:
+https://arxiv.org/html/2511.22755v1
+Connes–Consani, Spectral triples and ζ-cycles, §3, pp.118–120:
+https://ems.press/content/serial-article-files/44477
+Slepian–Pollak, Prolate Spheroidal Wave Functions, Fourier Analysis and Uncertainty—I:
+https://doi.org/10.1002/j.1538-7305.1961.tb03976.x
+
+NO COMMON PARENT IDENTIFIED.

@@ -1,0 +1,165 @@
+STATUS: RIEMANN HYPOTHESIS OPEN
+SANITIZED HISTORICAL SOURCE SNAPSHOT — not a new execution or proof validation.
+Public credit: @ykbballer91; AI-assisted research log; text CC BY 4.0.
+Source: research/weighted_prime_halfspace/completion_report.txt
+Original SHA-256: f53b372da8da75d05fc5015a3f38a94f047d4da4a671688a409e47921000520a
+Internal source paths are provenance identifiers; see data/source-manifest.json for public paths.
+
+WEIGHTED PRIME HALF-SPACE / BOOLEAN PARITY CORRELATION 完了報告
+2026年9月30日
+
+結論
+
+今回指定された三つの探索系統を完了し、終了条件に従って閉じました。RH は未解決です。新しい固定べきの改善、平方根級相殺、独立な RH 証明材料は得られていません。
+
+今回の success ladder では Level 0 です。既知の exact identities と failure mechanisms を精密化しましたが、Level 1 が要求する「actual prime weights に固有の新しい exact structural identity」は得ていません。前回の Arithmetic Comma Track とは Level 1 の定義が異なるため、前回の水準を持ち越していません。
+
+最重要の結論
+
+平方自由生成族
+
+S_z(X)=Σ_{n≤X} μ(n)^2 z^{ω(n)}
+
+を優先して調べました。z=−1 では Mertens 和になります。その Dirichlet series は実部 s>1 で
+
+F(s,z)=Π_p(1+z p^{−s})=ζ(s)^z G(s,z)
+
+と書け、z=−1 では G(s,−1)=1 が素数因子ごとに厳密に成立します。
+
+Selberg–Delange の局所漸近項には 1/Γ(z−j) が掛かります。z=−1 では全ての j≥0 について、この因子が0になります。従って、先頭項だけでなく全ての局所漸近係数が消えます。
+
+この消失は既知であり、原典にも明記されていました。しかし、有限 X の和が0になるわけではありません。M(X) の全体が remainder に残ります。そこを小さくする独立な評価は、今回得られませんでした。
+
+この点が「bulk parity cancellation」という直感の正しい範囲です。漸近主項の係数は消えます。しかし finite Boolean states の bulk が厳密に対応して消え、低次元の境界だけになるという幾何学的定理は得られていません。
+
+1. 保持した実際の算術対象
+
+各 p≤X に0/1変数を置き、W=Σ ε_p log p、parity=(−1)^{Σ ε_p}、cutoff=W≤log X としました。この頂点集合は n≤X の squarefree integers と一対一です。
+
+uniform Boolean coefficient は 2^{−π(X)} M(X) です。正規化後の小ささを成果と数えず、全ての bound を counting scale の M(X) へ戻しました。rectangular cutoff、独立座標 cutoff、random signs への置換はしていません。
+
+2. Track A：高階有限差分
+
+τ_a f(u)=f(u−a)、J(u)=1_{u≥0} の規約で、正しい表示は
+
+M(X)=[Π_{p≤X}(I−τ_logp)J](log X)
+
+です。H_L(u)=1_{u≤L} を0で評価する表記を使うなら、translation の符号を反転する必要があります。最初にこの符号を修正・固定しました。
+
+primeを一個ずつ加える recurrence、および block 全体を一度に加える signed subset recurrence は厳密に成立します。しかし successive subtraction は一般に contraction ではありません。
+
+smooth function への m階差分は、m階導関数の box integral になります。positive box spline が出ますが、Mertens に対応する量はその高階導関数です。正の kernel 自体を目的量と同一視できません。
+
+平滑化幅 h を入れる直接評価は h^{−m} と m−1 階の mollifier derivative を支払います。m=π(X) が増大するため、通常の fixed-order smoothness bound では利得になりません。
+
+actual prime logs では subset sums が全て異なるので、全変動は正確に2^mです。標準 L∞ operator norm も2^mで、一般の収縮はありません。「内部が消えて境界だけ」という説明だけでは、小さい値は導けません。
+
+3. 一般の Boolean threshold の sharp bound
+
+任意の downset に対し、counting parity の最大絶対値は
+
+binom(m−1, floor((m−1)/2))
+
+以下で、equal-weight threshold が等号を達成します。正規化後では m^{−1/2} 程度ですが、counting scale では2^m/√mの規模です。m=π(X) としても、M(X) の自明界を改善しません。
+
+normalized layer densities の単調性から直接証明し、既知の Kozlov の convex-hull theorem と照合しました。これは新しい算術固有結果ではありません。
+
+さらに equal-weight threshold の margin を保つ微小な rationally independent perturbation でも、同じ大きな parity discrepancy が残ります。従って distinct subset sums や irrationality だけでこの bound を改善することはできません。
+
+Littlewood–Offord は unsigned shell count、noise は復元時のρ^{−m}、influenceは正規化係数をそれぞれ追跡しました。martingaleやprime順序の平均も、同じ最終値を返す以上、それだけでは新しい cancellation を与えません。
+
+4. 大素数・小素数の分解
+
+Y=√X とすると、一つの n≤X はYより大きい素因数を高々一つだけ持ちます。そのため、
+
+M(X)=A_{≤Y}(X)−Σ_{Y<p≤X}M(X/p)
+
+が厳密に成立します。parentごとに整理すると、
+
+M(X)=A_{≤Y}(X)−Σ_{r≤X/Y} μ(r)[π(X/r)−π(Y)]
+
+です。
+
+同じparentが複数回使われる multiplicity を保持しました。この係数をPNTで近似しても、μ(r)との符号付き相関は自動的に評価できません。このidentityも既知のprime-factor decompositionの範囲です。
+
+5. Track B：Selberg–Delangeの端点と剰余
+
+全局所係数消失は原典の公式と直接計算の両方で確認しました。既知定理の仮定をμへ適用すると、任意の固定Kに対する O_K(X/log^K X) が得られます。より強い古典的な零点自由領域を使う定理から、既知の X exp(−c√log X) 型規模も回収できます。
+
+どちらも固定δ>0の O(X^{1−δ}) ではありません。定数のK依存を無視してKをXと共に増やすことはしていません。
+
+しかも使用した定理は、ζ(s)^ρ の係数τ_ρの既存漸近に依存しており、ρ=−1ではτ_{−1}=μです。従ってこの適用を「異なる独立機構でPNTを再証明した」とは数えません。
+
+zが−1に近づくと、先頭係数は−(z+1)+O((z+1)^2)となります。端点を含む加法誤差の一様性は確認しましたが、消える先頭項で割った相対誤差の一様性とは違います。
+
+通常の Erdős–Kac 型CLTへ parity周波数πを代入することもできません。標準化した座標では、その周波数がXと共に増大するためです。一方でπを扱える強いmod-Poisson定理も存在するので、「どの分布定理もπを扱えない」とはしていません。平方自由条件と、交代和に必要な絶対誤差を別々に監査しました。
+
+局所的なs=1の零点から小さいremainderは出ないという推論の反例も作りました。s=1で正則かつ値0のDirichlet seriesでも、係数和がX^β、1/2<β<1、となる模型があります。これはactual Euler productを保たないため、RHの反例ではありません。局所情報だけの論理的不足を示す診断です。
+
+6. Track C：exponential tilt
+
+有限素数集合上で、Zσ=Π(1+p^{−σ})、Pσ(S)=e^{−σW(S)}/Zσ と置くと、
+
+M(X)=Zσ Eσ[parity × e^{σW} × 1_{W≤log X}]
+
+は厳密に成立します。prime coordinatesは独立ですが、cutoffを含むreadoutは独立積ではありません。
+
+parityの単独expectationは積で計算できます。しかしこれをreadout expectationとの積へ置き換えると誤ります。X=3、σ=1では、その積からの復元値は+1/2なのにactual M(3)=−1です。共分散項は−3/2で、無視すると符号まで逆になります。
+
+平均Wをlog Xへ合わせるsaddleは、0<log X<θ(X)で一意に存在します。大きいXではpositiveですが、X=2には有限解がなく、X=3では負です。
+
+PNTから、この自然なtiltの下ではW/log Xの極限Laplace transformが
+
+exp(∫_0^1 (e^{−tu}−1)du/u)
+
+となることを直接導出しました。これは非Gaussianで、分散は1/2です。actual saddleへ動かしても同じ極限が残ります。境界を平均へ移しただけで、狭いGaussian windowになるわけではありません。
+
+この結果は通常CLTを無条件に適用する近道を閉じますが、非Gaussian分布を使う別の精密な解析の不可能性までは主張しません。今回残った本質的問題は、parityとreadoutの共分散です。
+
+7. Sieve parity barrier
+
+μ²+μとμ²−μという非負列は反対のsquarefree parityに支えられます。それでも各固定divisorのleading densityは同じです。従って符号付き誤差を捨てたlocal densityだけでは両者を区別できません。
+
+divisor-sum upper/lower boundsに1±Liouvilleを掛ける有限の不等式も、signed errorを明記して確認しました。任意のsieve levelでそのerrorが小さいと仮定していません。
+
+これは全てのsieve法への普遍的不可能性定理ではありません。全exact divisor dataや追加のbilinear informationがあれば別です。Taoの原著者解説が広いbarrierをinformalと注意している範囲も保持しました。
+
+8. 計算と独立監査
+
+prime recursionをX=30,100,1000で検査しました。equal weightsの全rank identityを次元1〜20、全downsetsを次元1〜4で総当たりしました。
+
+最初の6素数の全720順序では最終値が全て一致し、途中の振幅だけが変わりました。この6素数subsystemをfull Mertensと混同していません。
+
+大素数分解、共有parent数、各primeのpivotal shell、ω別個数、z=−1近傍の有理多項式値、有限Gibbs identity、7種類のweight model、saddleの数値診断を保存しました。
+
+例えば S_z(100)=1+25z+30z²+5z³ なので、z=−1では1です。漸近主項係数が全て0というstatementと、有限和が0というstatementは明確に異なります。
+
+局所係数消失と剰余定理、有限Gibbs構造と非Gaussian極限は別担当が独立監査し、重大な数学的誤りは見つかりませんでした。数値実験は一般定理の証明やgrowth fitには使っていません。
+
+9. 終了と次の方針を決めるための残課題
+
+Aは、一般finite-difference/threshold理論がcounting scaleで改善を与えないところで終了しました。
+Bは、z=−1の全局所係数消失後に、Mertens全体を担う大域remainderが残るところで終了しました。
+Cは、傾斜測度で正確に復元した後もreadoutとの共分散が未評価であるところで終了しました。
+
+いずれも、必要なbound自体を新仮定として置いていません。第4候補へ名前を変えて続行していません。
+
+再開には、actual weighted cutoffのsigned correlation、またはz=−1のremainderに対する具体的な独立算術評価が必要です。局所主項の消失、unsignedな分布近似、単独parity expectation、正規化後の小ささだけでは足りません。
+
+新しいMertens exponentは得ていないため、以前のDyadic Reductionへの指数改善bridgeは作っていません。過去ファイルを保持し、proof graphへのmergeは0です。
+
+保存先
+
+research/weighted_prime_halfspace.md
+research/weighted_prime_halfspace_candidates.md
+proofs/audits/weighted_prime_halfspace_adversarial.md
+research/weighted_prime_halfspace_state.json
+research/weighted_prime_halfspace/notes/
+research/weighted_prime_halfspace/experiments/
+
+一次資料のURL、定理番号、適用条件、明示的な反例は上記の研究ログと各noteに記載しました。今回のトラックをこれで完了します。
+
+
+PUBLIC EXPORT EDITORIAL NOTE — SOURCE REFERENCES NOT INCLUDED:
+- research/weighted_prime_halfspace/experiments
+- research/weighted_prime_halfspace/notes

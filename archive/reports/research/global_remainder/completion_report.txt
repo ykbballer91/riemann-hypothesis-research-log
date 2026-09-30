@@ -1,0 +1,121 @@
+STATUS: RIEMANN HYPOTHESIS OPEN
+SANITIZED HISTORICAL SOURCE SNAPSHOT — not a new execution or proof validation.
+Public credit: @ykbballer91; AI-assisted research log; text CC BY 4.0.
+Source: research/global_remainder/completion_report.txt
+Original SHA-256: 39cc3e362ab04944b1cf36f03d0634b82f6f893d2409d6b6ab92607d57c485c2
+Internal source paths are provenance identifiers; see data/source-manifest.json for public paths.
+
+GLOBAL REMAINDER / BEYOND-ALL-ORDERS 完了報告
+2026-09-30
+
+結論
+
+指定された三つの主要方向を検査し、終了条件に従って本トラックを終了しました。RHはOPENです。新しい零点実部上界、Mertensの固定冪改善、RHから独立なsubexponential成長評価は得られていません。新規性を過大評価しないため、成功レベルはLevel 0とします。
+
+既存のPhase I–IV、Continuous Scale Flow、One-Prime Return、Dyadic Arithmetic Reduction、Prime Complex Parity Pairing、Arithmetic Comma、Weighted Prime Half-Spaceのファイル・state・proof graphは変更していません。開始時の既存302ファイルをhash照合の対象にしました。本成果は独立ファイルのみへ保存し、主グラフへmergeしていません。
+
+本トラックの出発点
+
+S_z(X)=sum_{n<=X} mu(n)^2 z^{omega(n)}について、z=-1ではDirichlet seriesが1/zeta(s)、和がM(X)になります。Selberg–Delangeのs=1由来の係数はh_j(z)/Gamma(z-j)であり、z=-1では全jで消えます。しかしこれは1/zetaのTaylor係数消失ではありません。1/zeta(1+w)=w-gamma*w^2+...で、解析germ自体は非零です。
+
+この違いを冒頭で固定しました。「同じ全Taylor germでも違う大域meromorphic関数を持てる」という言い方は、一価の共通連結領域では一致定理に反するので採用しません。
+
+Track A：Gaussian平滑化と大域分解
+
+R(u)=sum mu(n) exp(-(u-log n)^2)、A(u)=exp(-u/2)R(u)を固定しました。固定uで絶対収束し、複素uのcompact集合上でも微分込みで収束します。
+
+bilateral Laplace変換は、最初にRe s>1で絶対Fubiniを正当化して、
+
+Laplace[R](s)=sqrt(pi)*exp(s^2/4)/zeta(s)
+
+となります。Aではs=z+1/2へのshiftです。Gaussianの変換はentireで非消失なので、全非自明零点の極と多重度を保持します。
+
+固定右線c>1、固定左線a<0、有限高さTで、左右縦線・上下面・全横断留数を含むexact identityを証明しました。右線の切断tailにはerfcを用いた明示上界があります。零点計数とxiのgenus-1 productから適切な高さ列を選び、Gaussianが水平線の弱い逆zeta評価を抑えることを確認しました。これにより、固定左線の残余積分、有限個の自明零点、全非自明零点の高さ別grouped sumへの分解を無条件に得ました。
+
+ただしこれは既知のMellin・留数原理の適用です。零点ごとの絶対収束や任意並替えは主張しません。零点が単純なら係数はsqrt(pi)*exp(rho^2/4)/zeta'(rho)であり、累積Perron公式の1/rhoは付けません。位数mならexp(rho*u)に次数m-1の多項式が掛かり、その最高係数は非零です。
+
+反射quartetは共通係数のcoshに自動的にはなりません。Gamma因子とzeta導関数の係数を保つと、cosh・sinh・振動が組み合わさります。点ごとの絶対値が指数的に下から押さえられるとは言えません。多数の零点が相殺する可能性は、Laplace変換の正則性と非消失kernelを使って処理し、最大零点一つが支配するとは仮定しません。
+
+無限左移動は失敗します。自明零点-2kのGaussian留数の対数はk^2-2k log k+O_u(k)で増大し、項が0へ行きません。縦に減衰するGaussianは実方向には増大するため、全自明零点を足して残余を捨てる操作は認められません。
+
+最弱の十分条件と既存One-Primeとの比較
+
+A(u)が正方向で任意epsilon>0についてO(exp(epsilon*u))なら、そのLaplace変換はRe z>0で正則となります。非消失Gaussianはzetaの極を消さないためRe rho>1/2を排除し、反射でRHになります。
+
+逆にRHから既知のMertens評価を部分積分へ入れると同じsubexponential評価が得られます。従ってこの条件はRH同値です。Gaussian witnessが全零点を検出するという点は既存One-Prime trackと共通であり、新しい独立入力と数えません。対象自体は旧算術商のtest vectorではなくMöbius measureのscalar convolutionですが、必要な成長抑制の欠落は残ります。
+
+成長条件の強さについて、次を厳密に区別しました。
+
+任意epsilonのsubexponential性：RH同値。
+boundedness：RHに加え全非自明零点の単純性を要求。
+固定次数のpolynomial bound：RHに加え多重度の一様上限を要求。
+tempered distribution：RHの十分条件であり、一様多重度上限も必要。RHからの逆含意は証明していない。
+unweighted L2(R)：actual faithful objectでは不可能。
+
+最後のL2不可能性は重要な負結果です。正半軸のCauchy–SchwarzからLaplace変換の境界増大はepsilon^(-1/2)以下になります。しかし既知の臨界線零点では非消失kernelを掛けた逆zetaに次数m>=1の極があり、epsilon^(-m)で増大します。矛盾です。RHを仮定する必要はありません。finite energyを「弱い自然な安定性」として課す方針は強すぎます。weighted L2や平均二乗密度は別の条件なので、この不可能性をそこへ拡張しません。
+
+Track B：completed inverseと双側closure
+
+Xi(z)=xi(1/2+z)、E(z)=exp(z^2)を使い、Re z=c>1/2からのH_c(u)を定義しました。reciprocal Gammaの縦方向増大をEが抑えるため積分は絶対収束します。実際のEuler/Gamma/pole構造を全て保持したMöbius kernel sumも構成しました。
+
+対称性から出るのはH_{-c}(u)=H_c(-u)です。H_c自体が偶であるという結論は出ません。左右の積分路の差には零点留数が入ります。右側の同じHのtemperednessを独立に示せればRHになりますが、算術表示の絶対値評価では正側に指数的な上界しか得られませんでした。
+
+中央線のFourier inverseを先に定義すると、見かけの安定性を作れてしまいます。その反例を固定Gaussianまで含めて構成しました。
+
+exp(z^2)/(z^2-a^2)は偶・実meromorphicで、極±aを持ちます。中央線inverseはGaussianと-exp(-a|u|)/(2a)のconvolutionで、Schwartzです。全極の右からのinverseはGaussianと1_{u>=0}sinh(a*u)/aのconvolutionで、正方向に増大します。両者の差はexp(a^2+a*u)/(2a)という正確な留数です。
+
+したがって「temperedなinverseが存在する」だけでは軸外極を排除できません。算術が指定する収束半平面・積分路・同定を保ったまま評価する必要があります。複素quartetでも同じ反例が成立します。実際のright Hが偶なら負側の急減衰が正側にも移りL2になるため、実H自体は無条件に非偶であることも確認しました。
+
+Track C：局所消失とglobal singularities
+
+任意の有限Nについて、Q_N(z)=1+(z^2-1/4)^(N+1)*(A+B*z^2)という実係数偶多項式を作り、指定した軸外quartetを零点にできます。Xi*Q_Nはorder 1、実対称性、反射対称性、s=0,1のN-jetを保持します。Euler productとactual coefficientsは保持しないため、これはactual zetaやRHの反例ではありません。有限局所情報・対称性・有限位数だけの推論を反証するものです。
+
+同じ全analytic germは大域接続を一意に決めます。それに対して、全ゼロとなったSD係数列はgermそのものではありません。この写像が情報を落としていることを明確化しました。
+
+さらにlambda'_j(-1)=(-1)^(j+1)*(j+1)!*h_j(-1)なので、全jの正確なパラメータ微分があれば局所germを回復できます。「endpointの零形式級数から足りない」と「全parameter familyでも原理的に復元不能」は区別しました。
+
+ゼロ形式級数の通常Borel変換はゼロです。非ゼロremainderを自動的にStokes constantsとして得ることはできません。Mellin mapping、Darboux、Watson/Gevrey/Borelの一次資料を照合しましたが、必要なsectorial analyticity・factorial error・境界条件をactual Mertens remainderに構成したわけではありません。零点留数をそのままresurgenceの証明とは呼びません。
+
+double scalingについては、既知の複素パラメータ一様なSelberg–Delange型定理を使い、実際の和まで評価しました。
+
+L=log X、ell=log L、z=-1+c/ellとすると、有界cの範囲で
+
+(L^2*ell/X)*S_{-1+c/ell}(X) -> -c*exp(c)
+
+がc=0を含め一様に成立します。これは既知定理からの厳密な帰結ですが、c=0ではbulkが消え、その誤差の中のMertens remainderの平方根評価は残ります。したがって「二つの極限が必ず非可換」とは主張しません。正規化したこの極限はむしろ一様です。パラメータ微分S'_z|_{-1}の主項も評価できますが、値S_{-1}=Mそのものの新上界にはなりません。
+
+数値・exact実験
+
+Möbius係数をN=50000まで整数演算で作り、Gaussian和と逆変換を3点で照合しました。有限矩形では左右の縦線、自明零点-2、最初の非自明零点共役対、上下水平線をすべて保持し、50桁計算で一致しました。
+
+synthetic right/central inverseを6点、有限jetモデルを5次数、Gamma微分を7例、有限S_z多項式を3cutoffsで検査しました。finite-jet係数は有理数exact演算です。数値積分は50桁の浮動小数診断で、interval certificateではありません。数値で使った単純留数の例を一般の零点単純性へ拡張しません。growth fitや有限範囲のboundednessをRHの証拠にしていません。
+
+非実の軸外quartet ±0.2±i も別模型として4点で検査し、同じGaussianを掛けたright inverseとcentral inverseの差が右半平面留数和に一致することを確認しました。actual zetaへ軸外零点を見つけたという意味ではありません。
+
+独立監査
+
+Gaussian担当、双側変換の反証担当、局所展開・文献担当の三者がそれぞれ導出し、相互読取監査を行いました。good-height product estimate、block sum収束、無限trivial residue発散、L2矛盾、Gammaの冪と符号、quartet係数、double scalingを照合しています。
+
+総合稿の水平辺J_Tに1/(2*pi*i)を明示する軽微な修正が入り、修正済みです。重大な式の不一致は残っていません。監査PASSはこれらの限定した導出に対してであり、RH証明のPASSではありません。
+
+終了理由
+
+Aはexact decompositionとRH同値growth criterion、Bはfaithful right inverseに対する未証明のgrowth bound、Cは局所readoutの情報損失と既知一様漸近の端点へ戻りました。どれもactual primes・Euler product・mu(n)から、軸外指数モードを独立に禁止する新しい法則を得ていません。
+
+三主要試行で同じ欠落へ戻ったので、指定された停止条件を適用しました。第四候補、positivityやoperatorへの改名、既存トラックの再開は行いません。今回のno-goと正しい変換の定義域をnegative knowledgeとして保持します。
+
+再開に必要なのは、新しい名前のRH同値条件ではなく、actual Möbius sumまたは同じcompleted right inverseに対してRHを仮定せず証明できる具体的な算術評価です。
+
+保存した主要ファイル
+
+research/global_remainder_beyond_all_orders.md
+research/global_remainder_candidates.md
+proofs/audits/global_remainder_adversarial.md
+research/global_remainder_state.json
+research/global_remainder/notes/gaussian_global_decomposition.md
+research/global_remainder/notes/completed_two_sided.md
+research/global_remainder/notes/local_jets_beyond_orders.md
+research/global_remainder/experiments/check_global_remainder.py
+research/global_remainder/experiments/results.json
+
+文献の具体的な版、該当式、適用条件、本文中の証明は各ノートに記録しました。主に既知のMellin/contour theory、条件付きMertens評価、Selberg–Delangeの一様版を比較に用い、最新論文のRH証明候補を追い続ける方式は採用していません。

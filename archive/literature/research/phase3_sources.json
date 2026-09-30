@@ -1,0 +1,283 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "research/phase3_sources.json",
+    "source_sha256": "0d03052189496c7a316e2821652150a2dfd32969fcf4bcec5995f20cf7081061",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {}
+  },
+  "phase": 3,
+  "mandatory_sources_checked": true,
+  "weil_ii_full_audit": false,
+  "new_external_RH_claims_searched": false,
+  "records": [
+    {
+      "id": "P3-DE74",
+      "title": "La conjecture de Weil I",
+      "authors": [
+        "Pierre Deligne"
+      ],
+      "year": 1974,
+      "url": "https://www.numdam.org/item/PMIHES_1974__43__273_0.pdf",
+      "exact_theorem": "1.5.1/1.5.4; Thms3.2,5.10,6.2; Lemma7.1; 7.3",
+      "claim_used": "Trace-to-determinant and tensor/pole purity mechanism",
+      "assumptions": "Smooth projective main theorem; local sheaf assumptions separately stated",
+      "depends_on_RH": false,
+      "peer_reviewed": true,
+      "verified_independently": "Relevant primary statements and proof dependencies checked; not full proof reconstruction",
+      "notes": "Source theorem status is distinguished from any unproved positivity conjecture in the research notes."
+    },
+    {
+      "id": "P3-GR64",
+      "title": "Formule de Lefschetz et rationalité des fonctions L",
+      "authors": [
+        "Alexander Grothendieck"
+      ],
+      "year": 1966,
+      "url": "https://www.numdam.org/item/SB_1964-1966__9__41_0.pdf",
+      "exact_theorem": "Bourbaki279, Thm5.1, §§3–6",
+      "claim_used": "Cohomological trace/determinant spine",
+      "assumptions": "Finite type over finite field; constructible l-adic context; lecture Dec1964",
+      "depends_on_RH": false,
+      "peer_reviewed": true,
+      "verified_independently": "Relevant primary statements and proof dependencies checked; not full proof reconstruction",
+      "notes": "Source theorem status is distinguished from any unproved positivity conjecture in the research notes."
+    },
+    {
+      "id": "P3-MILNE",
+      "title": "Abelian Varieties",
+      "authors": [
+        "James S. Milne"
+      ],
+      "year": null,
+      "url": "https://www.jmilne.org/math/CourseNotes/AV.pdf",
+      "exact_theorem": "I §14 Thm14.3; II §1 Lemmas1.2–1.3",
+      "claim_used": "Rosati positivity and same arithmetic Frobenius adjoint identity",
+      "assumptions": "Polarized abelian varieties; author textbook notes",
+      "depends_on_RH": false,
+      "peer_reviewed": false,
+      "verified_independently": "Relevant primary statements and proof dependencies checked; not full proof reconstruction",
+      "notes": "Source theorem status is distinguished from any unproved positivity conjecture in the research notes."
+    },
+    {
+      "id": "P3-OORT",
+      "title": "Abelian varieties over finite fields",
+      "authors": [
+        "Frans Oort"
+      ],
+      "year": null,
+      "url": "https://math.nyu.edu/~tschinke/books/finite-fields/final/05_oort.pdf",
+      "exact_theorem": "§3 Props3.3–3.4",
+      "claim_used": "Curve Jacobian positivity and Frobenius",
+      "assumptions": "The printed simple-case proposition separated from general FV argument",
+      "depends_on_RH": false,
+      "peer_reviewed": false,
+      "verified_independently": "Relevant primary statements and proof dependencies checked; not full proof reconstruction",
+      "notes": "Source theorem status is distinguished from any unproved positivity conjecture in the research notes."
+    },
+    {
+      "id": "P3-KED",
+      "title": "RH for abelian varieties",
+      "authors": [
+        "Kiran S. Kedlaya"
+      ],
+      "year": null,
+      "url": "https://kskedlaya.org/weil-cohom/chapter-6.html",
+      "exact_theorem": "6.0.4–6.0.5",
+      "claim_used": "Faithful Tate-module realization",
+      "assumptions": "Author course notes",
+      "depends_on_RH": false,
+      "peer_reviewed": false,
+      "verified_independently": "Relevant primary statements and proof dependencies checked; not full proof reconstruction",
+      "notes": "Source theorem status is distinguished from any unproved positivity conjecture in the research notes."
+    },
+    {
+      "id": "P3-DJ96",
+      "title": "Smoothness, semi-stability and alterations",
+      "authors": [
+        "Aise Johan de Jong"
+      ],
+      "year": 1996,
+      "url": "https://www.numdam.org/item/PMIHES_1996__83__51_0.pdf",
+      "exact_theorem": "Thm4.1, Remark4.2",
+      "claim_used": "Later smooth proper extension, not Deligne1974 premise",
+      "assumptions": "Projective alteration, finite-field extension, degree push-pull",
+      "depends_on_RH": false,
+      "peer_reviewed": true,
+      "verified_independently": "Relevant primary statements and proof dependencies checked; not full proof reconstruction",
+      "notes": "Source theorem status is distinguished from any unproved positivity conjecture in the research notes."
+    },
+    {
+      "id": "P3-CCM07",
+      "title": "The Weil proof and the geometry of the adeles class space",
+      "authors": [
+        "Alain Connes",
+        "Caterina Consani",
+        "Matilde Marcolli"
+      ],
+      "year": 2007,
+      "url": "https://arxiv.org/pdf/math/0703392v1",
+      "exact_theorem": "Def4.10; Prop4.13; Thms4.16,6.1; Prop6.2/Cor6.3; Prop6.4",
+      "claim_used": "Arithmetic cyclic quotient, full zero trace, RH-equivalence of sign, natural Hilbert quotient collapse",
+      "assumptions": "Rapid-decay nuclear spaces; chosen closure; not positive Hilbert zero realization",
+      "depends_on_RH": false,
+      "peer_reviewed": true,
+      "verified_independently": "Relevant primary statements and proof dependencies checked; not full proof reconstruction",
+      "notes": "Source theorem status is distinguished from any unproved positivity conjecture in the research notes."
+    },
+    {
+      "id": "P3-AS14",
+      "title": "The Arithmetic Site",
+      "authors": [
+        "Alain Connes",
+        "Caterina Consani"
+      ],
+      "year": 2014,
+      "url": "https://arxiv.org/pdf/1405.4527v1",
+      "exact_theorem": "Thms2.6–2.7",
+      "claim_used": "Arithmetic points and scaling",
+      "assumptions": "Site points and semiring conventions; no positive Weil cohomology theorem",
+      "depends_on_RH": false,
+      "peer_reviewed": true,
+      "verified_independently": "Relevant primary statements and proof dependencies checked; not full proof reconstruction",
+      "notes": "Source theorem status is distinguished from any unproved positivity conjecture in the research notes."
+    },
+    {
+      "id": "P3-GAS15",
+      "title": "Geometry of the Arithmetic Site",
+      "authors": [
+        "Alain Connes",
+        "Caterina Consani"
+      ],
+      "year": 2015,
+      "url": "https://arxiv.org/pdf/1502.05580v1",
+      "exact_theorem": "Thms3.8,4.2,7.7; §4.3",
+      "claim_used": "Counting distribution reconstruction and missing Weil cohomology",
+      "assumptions": "Frobenius correspondences have exceptional tangential composition case",
+      "depends_on_RH": false,
+      "peer_reviewed": true,
+      "verified_independently": "Relevant primary statements and proof dependencies checked; not full proof reconstruction",
+      "notes": "Source theorem status is distinguished from any unproved positivity conjecture in the research notes."
+    },
+    {
+      "id": "P3-SH19",
+      "title": "The Scaling Hamiltonian",
+      "authors": [
+        "Alain Connes",
+        "Caterina Consani"
+      ],
+      "year": 2019,
+      "url": "https://arxiv.org/pdf/1910.14368v1",
+      "exact_theorem": "Thm2.5; Cor3.5; Fact3.6; Conj4.1",
+      "claim_used": "Semilocal trace theorem versus unproved sign claim",
+      "assumptions": "Finite place set and smooth compact tests; cutoff finite part is not automatically positive",
+      "depends_on_RH": false,
+      "peer_reviewed": true,
+      "verified_independently": "Relevant primary statements and proof dependencies checked; not full proof reconstruction",
+      "notes": "Source theorem status is distinguished from any unproved positivity conjecture in the research notes."
+    },
+    {
+      "id": "P3-DEN98",
+      "title": "Some Analogies Between Number Theory and Dynamical Systems on Foliated Spaces",
+      "authors": [
+        "Christopher Deninger"
+      ],
+      "year": 1998,
+      "url": "https://emis.de/ft/10155",
+      "exact_theorem": "§3 Prop3.1, Thm3.4",
+      "claim_used": "Local Gamma normalization and conditional global determinant framework",
+      "assumptions": "ICM article; conjectural global assumptions separated from local theorems",
+      "depends_on_RH": false,
+      "peer_reviewed": true,
+      "verified_independently": "Relevant primary statements and proof dependencies checked; not full proof reconstruction",
+      "notes": "Source theorem status is distinguished from any unproved positivity conjecture in the research notes."
+    },
+    {
+      "id": "P3-DEN01",
+      "title": "On the Gamma-Factors of Motives II",
+      "authors": [
+        "Christopher Deninger"
+      ],
+      "year": 2001,
+      "url": "https://www.maths.tcd.ie/EMIS/journals/DMJDMV/vol-06/05.pdf",
+      "exact_theorem": "Cor3.1; Prop4.1; §5 Theorems5.1–5.4",
+      "claim_used": "Actual Hodge/Rees local archimedean construction",
+      "assumptions": "Local sheaf construction is not global zeta cohomology",
+      "depends_on_RH": false,
+      "peer_reviewed": true,
+      "verified_independently": "Relevant primary statements and proof dependencies checked; not full proof reconstruction",
+      "notes": "Source theorem status is distinguished from any unproved positivity conjecture in the research notes."
+    },
+    {
+      "id": "P3-DEN10",
+      "title": "The Hilbert–Polya strategy and height pairings",
+      "authors": [
+        "Christopher Deninger"
+      ],
+      "year": 2010,
+      "url": "https://arxiv.org/abs/1001.1621",
+      "exact_theorem": "§2 Conjecture2 and pp3–5",
+      "claim_used": "Conditional conformal positive pairing gives degree/2",
+      "assumptions": "Entire functorial geometric existence is not proved RH-equivalent",
+      "depends_on_RH": false,
+      "peer_reviewed": true,
+      "verified_independently": "Relevant primary statements and proof dependencies checked; not full proof reconstruction",
+      "notes": "Source theorem status is distinguished from any unproved positivity conjecture in the research notes."
+    },
+    {
+      "id": "P3-DEN24",
+      "title": "Dynamical systems for arithmetic schemes",
+      "authors": [
+        "Christopher Deninger"
+      ],
+      "year": 2024,
+      "url": "https://arxiv.org/pdf/1807.06400v4",
+      "exact_theorem": "Intro; Prop4.5; §7 Thm7.10; §10 Def10.1",
+      "claim_used": "Actual Witt suspension, periodic orbit packets and H0",
+      "assumptions": "v4 fixed; relevant clauses checked, not full119pages; publication2026",
+      "depends_on_RH": false,
+      "peer_reviewed": true,
+      "verified_independently": "Relevant primary statements and proof dependencies checked; not full proof reconstruction",
+      "notes": "Source theorem status is distinguished from any unproved positivity conjecture in the research notes."
+    },
+    {
+      "id": "P3-DEN23",
+      "title": "There is no Weil-cohomology theory with real coefficients for arithmetic curves",
+      "authors": [
+        "Christopher Deninger"
+      ],
+      "year": 2023,
+      "url": "https://arxiv.org/html/2204.02714v2",
+      "exact_theorem": "§2 (2.1)–(2.12), Thm2.13",
+      "claim_used": "Limited no-go for untwisted real functorial realization of Artin central multiplicities",
+      "assumptions": "v2 removes v1 assumption; does not rule out all complex/quaternionic or zeta-only models",
+      "depends_on_RH": false,
+      "peer_reviewed": false,
+      "verified_independently": "Relevant primary statements and proof dependencies checked; not full proof reconstruction",
+      "notes": "Source theorem status is distinguished from any unproved positivity conjecture in the research notes."
+    },
+    {
+      "id": "P3-DLMF",
+      "title": "Hurwitz Zeta Function",
+      "authors": [
+        "NIST DLMF"
+      ],
+      "year": null,
+      "url": "https://dlmf.nist.gov/25.11",
+      "exact_theorem": "25.11.13,25.11.18",
+      "claim_used": "Local determinant computation with its sqrt2 factor",
+      "assumptions": "Hurwitz value and derivative at zero; Gamma branch and Re(s)>0 initial domain",
+      "depends_on_RH": false,
+      "peer_reviewed": false,
+      "verified_independently": "Relevant primary statements and proof dependencies checked; not full proof reconstruction",
+      "notes": "Source theorem status is distinguished from any unproved positivity conjecture in the research notes."
+    }
+  ]
+}

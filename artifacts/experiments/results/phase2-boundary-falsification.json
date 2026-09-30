@@ -1,0 +1,61 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "experiments/results/phase2-boundary-falsification.json",
+    "source_sha256": "93f386a2a02a2b2f05339fad627f23b3b1ee08802fc882c482fd9839f84e6d7d",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {}
+  },
+  "proves_RH": false,
+  "refutes_RH": false,
+  "source_sha256": "baf35026ab916a96036a21610f404798e282209a9437e84c15039e18da028196",
+  "synthetic_herglotz_test": {
+    "point": "1+i/5",
+    "imaginary_part_exact": "-428313920/24221529",
+    "strictly_negative_proved_by_rational_arithmetic": true,
+    "has_actual_Euler_Gamma": false
+  },
+  "synthetic_heat_test": {
+    "kernel_measure": "2 delta_0 + (delta_1+delta_-1)/2",
+    "time": "0",
+    "zero": "pi+i acosh(2)",
+    "exact_reason": "cos(pi+i a)=-cosh(a)",
+    "numerical_residual_noncertified": "1.3235897e-56",
+    "real_zero_threshold": "log(2)",
+    "has_actual_Euler_Gamma": false
+  },
+  "actual_newman_compactification": {
+    "certified": false,
+    "precision_decimal_digits": 55,
+    "theta_integer_cutoff": 12,
+    "integration_cutoff": 12,
+    "purpose": "Sign and normalization diagnostic of analytically proved local uniform asymptotic.",
+    "samples": [
+      {
+        "T": 8,
+        "error_to_gaussian": "0.199095184949333637",
+        "error_to_two_term": "0.108141106064422151",
+        "T_squared_error": "6.92103078812301764"
+      },
+      {
+        "T": 32,
+        "error_to_gaussian": "0.0652800731284909822",
+        "error_to_two_term": "0.00984217039556636586",
+        "T_squared_error": "10.0783824850599586"
+      },
+      {
+        "T": 128,
+        "error_to_gaussian": "0.0176415728311549592",
+        "error_to_two_term": "0.000694800196364554684",
+        "T_squared_error": "11.3836064172368639"
+      }
+    ]
+  }
+}

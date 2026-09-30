@@ -1,0 +1,182 @@
+STATUS: RIEMANN HYPOTHESIS OPEN
+SANITIZED HISTORICAL SOURCE SNAPSHOT — not a new execution or proof validation.
+Public credit: @ykbballer91; AI-assisted research log; text CC BY 4.0.
+Source: research/arithmetic_restoring_force/completion_report.txt
+Original SHA-256: cd2b514ecda94304de19ef7ff13964ec88d7610f1fe3ef6bcb645ac30b5152e9
+Internal source paths are provenance identifiers; see data/source-manifest.json for public paths.
+
+RH FOCUS TRACK — ARITHMETIC RESTORING FORCE / CRITICAL-LINE CONFINEMENT
+完了報告
+2026年9月30日
+
+結論：NO ARITHMETIC RESTORING FORCE IDENTIFIED。
+RHはOPENです。三方向の限定監査を終了します。
+
+この結論は「算術に復元機構が存在しないことを証明した」という意味ではありません。今回の三候補から、RHと独立に全零点を臨界線へ拘束する新しい法則は得られなかった、という判定です。
+
+既知の部分的な符号や変形の収縮則は実在します。それらまで否定していません。今回得られなかったのは、それらをactual ζの全零点・元の変形時刻0へ接続する独立の算術評価です。
+
+1. Track Bを最優先で確認した結果
+
+標準のRiemann theta核を、
+Φ(x)=Σ_{n≥1}(4π²n⁴exp(9x/2)−6πn²exp(5x/2))exp(−πn²exp(2x))
+とし、x≥0からPoisson反転により偶関数として扱いました。
+
+この核はactual全整数算術から得られ、各項の符号によりΦ>0が無条件に成立します。全指数momentが有限で、複素方向への積分・微分交換も正当化できます。
+
+F(w)=ξ(1/2+iw)=2∫₀∞Φ(x)cos(wx)dx
+にw=t−iaを代入すると、正確に
+
+Re ξ(1/2+a+it)=2∫₀∞Φ(x)cosh(ax)cos(tx)dx
+Im ξ(1/2+a+it)=2∫₀∞Φ(x)sinh(ax)sin(tx)dx
+
+となります。ユーザーが指定した二条件は正しいです。
+
+ただし、この式は過去のPhase II modular-generatorノートの(D4)と同一でした。今回新しい恒等式や拘束が増えたわけではありません。
+
+t=0では第一の積分が正なので零点はありません。しかしt≠0ではcosとsinが振動します。Φ、cosh、sinh/aが正でも、二つの積分の同時消滅を禁止する下界は出ません。
+
+actual核にはlog Φ(√u)の厳密凹性という既知の強い形状条件もあります。これは原典で確認しました。しかし過去の正・偶・強対数凹なquartic-Gaussian反例も同じ条件を持ち、Fourier変換に非実零点があります。shapeの名称を強くするだけでは足りません。
+
+過去には正seed、正completed kernel、Poisson対称性、帯内限定を保ったoff-axis模型も構成しています。ただし標準Gamma因子を変更した模型です。これをactual ζの反例とは扱いません。一方、一般的な正性・対称性だけを使う推論には反例となります。
+
+今回、actual thetaの標準算術に固有の新しい不等式で二条件の同時消滅を排除することはできませんでした。
+
+2. PF∞という強化の監査
+
+標準的なToeplitz核 Φ(x−y) の全次数total positivity、すなわちPF∞を検査しました。
+
+Schoenbergの変換定理によれば、そのbilateral Laplace transformは0を含むstripで、あるentire Laguerre–Pólya型関数の逆数です。
+
+actual ΦのLaplace transformは全平面でentireです。もしΦがPF∞なら、逆数との積1が全平面へ延長され、逆数側に零点因子が許されなくなります。偶性と非退化性も使うと、ΦはGaussianに限られます。
+
+actual核のdouble-exponential tailはGaussianではありません。したがってこの標準的Toeplitz PF∞候補は偽です。この結論にRHや既知ζ零点は不要です。
+
+ここで非常に重要なのは、PF∞の不成立と、F自身のLaguerre–Pólya所属を混同しないことです。後者はactual Riemann FについてRH同値の未解決条件です。前者を否定してRHを否定したわけではありません。
+
+3. Track A：scalar potentialの符号
+
+V=log|ξ|と置いたとき、零点以外で
+Q=∂σV=Re(ξ'/ξ)
+です。
+
+求める復元方向の符号は、
+(σ−1/2)Q>0
+です。この全a≠0、全t、ξ非零点での命題は、既知のRH同値条件でした。
+
+RHを仮定すればHadamard productから、各項a/(a²+(t−γ)²)の和となり符号が出ます。逆にoff-line zeroが存在すると、そのすぐ中心側で対数微分のpoleが逆符号を与えます。従ってこれを「復元力」という新しい弱い仮説として採用できません。
+
+無条件に成立する部分はあります。既知のzero-freeな外側半平面と、actual正theta核を使えるt=0の実軸です。しかし臨界帯内の全ての高さへ延長する独立証明は得ていません。
+
+V=−log|ξ|に符号を反転すると、t=0で中心が最大になり、forceの向きが外向きになります。この単純candidateはactual算術の反例で終了しました。
+
+4. Prime・Gamma・poleの分解
+
+ξ'/ξ = 1/s + 1/(s−1) −(logπ)/2 + ψ(s/2)/2 + ζ'/ζ
+
+を固定しました。s=0,1などで個別項に特異性があるときは、完成関数で相殺した極限を使います。
+
+σ>1ではprime部分は、
+Re(ζ'/ζ)(σ+it)=−ΣΛ(n)n^(−σ)cos(t log n)
+と絶対収束します。
+
+この符号は一定ではありません。σ=4でも8でも、t=0では負、t=π/log2では正になることを主項と全tailの比較から解析的に証明しました。有限数値だけの反例ではありません。
+
+ただしprime部分の符号反転は、完成ξの符号反転ではありません。Gammaとpole-removalを落としてはいけません。これらも単独で一様な「中心力」を与えるわけではありません。
+
+5. 曲率は何を示したか
+
+中心でξが非零なら対称性により∂σlog|ξ|=0です。水平曲率は、
+κ(t)=(F'(t)²−F(t)F''(t))/F(t)²
+という一次Laguerre expressionになります。
+
+RHの下ではκ(t)>0ですが、今回その全域正性を無条件に証明したわけではありません。
+
+一方、log|ξ|が全ての水平線で凸という候補は無条件に偽です。既知のcritical-line零点の水平近傍で、重複度mを用いれば曲率は−m/a²+O(1)となります。単純零点仮定は不要です。
+
+また「中心の全ての通常点で曲率が正なら十分」という一般推論も反証しました。
+
+Fsyn(w)=cos(10w) ((w−1)²+1/16) ((w+1)²+1/16)
+
+は実・偶・位数1で、w=±1±i/4に非実零点があります。しかし全てのreal nonzero点で対応する中心水平曲率は36以上です。
+
+従って局所的な中心minimumと、全横方向のmonotonicityは異なります。この模型はactual Euler/Gammaや正theta核を保ったものではなく、その一般条件だけへの反例です。
+
+さらにlog|ξ|はzero-free領域でharmonicです。水平minimumを二次元の安定minimumと呼ぶこともできません。s=1/2ではHessianに正負の方向がありsaddleです。
+
+|ξ|²の全水平凸性はlog凸性とは別で、こちらはRH同値条件です。log曲率の反例を別potentialへ誤用していません。
+
+6. Track C：自然変形に復元則はあるか
+
+Hτ(w)=∫exp(τx²)Φ(x)exp(iwx)dx
+では、
+∂τHτ=−∂w²Hτ
+です。τ増加方向ではbackward heatで、physical timeやunitary evolutionではありません。
+
+単純零点の局所枝はw'=H''/H'を満たします。multiple zerosでは分母が0なので、この式をそのまま使えません。
+
+de Bruijnの帯収縮定理は本当に存在します。この規約では初期の虚方向幅Δから、正時間h後の幅を√max(Δ²−2h,0)へ縮めます。actual初期幅Δ=1/2から得られる安全時刻はτ≥1/8です。
+
+しかし必要なのは元のτ=0の実零点性です。既知の正時間から0へ戻る独立な全高さ評価はありません。Newman閾値が0以下という条件へ戻ればRHそのものです。Rodgers–Taoの非負性定理は、その欲しい上界とは逆向きです。
+
+また、最外帯が縮むことと全ての内部非実枝が軸へ戻ることは違います。even real polynomialの同じheat deformationでも、内部の単純枝が最初に外向きへ動く例をexactに計算しました。例の速度の虚部は14/1275>0です。
+
+この模型はactual thetaの反例ではなく、heat equationと対称性だけから普遍的な各零点復元則を主張することへの反例です。
+
+7. Electrostatic analogyの監査
+
+Stieltjes型のorthogonal polynomial zerosでは、独立に与えられた正の直交測度、微分方程式、外場、境界条件があります。Hermiteの例では平衡式と正Hessianを直接検算しました。
+
+actual ζについて、それと同じ外場・直交性を算術から構成できたわけではありません。zerosからlog potentialを作り、同じzerosの位置を説明するだけでは循環です。
+
+random matrixのCoulomb gasも、Hermitian性や実配置が前提です。統計の類似をactual全零点の実部の証明として使っていません。
+
+8. Gaussian observableとの接続
+
+以前のA(u)をそのまま保持しました。もし全域scalar signまたはtheta二条件の全off-axis排除を独立に証明できれば、RHと既存criterionを通じてAの準指数成長が出ます。
+
+しかし今回、その最初の矢印は得られませんでした。
+
+actual Aがunweighted L²に入らないという以前の結果も尊重しました。有限energyを再仮定せず、後付けweight、新しいmetric、Hilbert–Pólya generatorは構成していません。
+
+9. 数値診断と独立監査
+
+零点から離れた点を含む128点でfirst-derivative signを診断し、中心曲率16点、既知零点近傍、theta二積分5点も照合しました。50桁計算と一部80桁の比較です。interval certificateではありません。
+
+first-derivative signの反例は見つかりませんでしたが、これを全域法則やRHの証拠とはしていません。log曲率の負値、prime側の反対符号には別に解析的反証があります。
+
+theta二積分とcompleted ξの数値差は最大約8.61×10^(−52)でした。一般恒等式の証明はMellin積分とPoisson反転によります。
+
+担当を分けてscalar、theta、変形を検査し、主要な符号・規約・反例を相互点検しました。原典の取得範囲も明示しています。Pólya1926は原論文英訳、de Bruijn・Newman・Schoenberg・Csordas–Varga等は一次資料の該当箇所を確認しました。Pólya1927とStieltjes1885の原著全文は取得できず、使用部分は別の著者一次論文で確認しました。Dyson1962は出版社abstractのみです。未読資料を証明材料に採用していません。
+
+10. 最終判定
+
+Track Aは、全域符号を求めると既知のRH同値条件に戻りました。単純な逆符号potentialや全域log凸性は反証されました。
+
+Track Bは、優先した二つの積分条件が過去の式と同一でした。actual核の既知正性・形状から独立の同時消滅禁止は出ず、Toeplitz PF∞という強化はactual核に対して偽でした。
+
+Track Cは、既知のforward収縮以上の、actual時刻0へ接続する法則が得られませんでした。
+
+したがって、NO ARITHMETIC RESTORING FORCE IDENTIFIED。
+
+これは物理的類比が説明上まったく無意味という結論ではありません。しかし証明に使える独立の算術法則にはなっていません。第4候補へ移らず、監査を終了します。
+
+RH OPEN。既存stateとproof graphへmergeせず、新しい自己共役作用素・正metric・topologyを導入していません。
+
+保存検証では旧329ファイルのSHA-256がすべて一致し、変更・欠落は0件でした。Git commitも不変です。今回の新規14ファイルについて、必須成果物、JSON、ローカル参照、数式区切り、stateと実験数の整合を確認しました。
+
+保存先：
+research/arithmetic_restoring_force.md
+research/arithmetic_restoring_force_candidates.md
+proofs/audits/arithmetic_restoring_force_adversarial.md
+research/arithmetic_restoring_force_state.json
+research/arithmetic_restoring_force/notes/
+research/arithmetic_restoring_force/experiments/
+
+本plain-text報告：
+research/arithmetic_restoring_force/completion_report.txt
+
+
+PUBLIC EXPORT EDITORIAL NOTE — SOURCE REFERENCES NOT INCLUDED:
+- research/arithmetic_restoring_force/experiments
+- research/arithmetic_restoring_force/notes

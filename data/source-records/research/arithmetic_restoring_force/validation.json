@@ -1,0 +1,123 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "research/arithmetic_restoring_force/validation.json",
+    "source_sha256": "33cc967add8e8e92afc7b73deccc4637a37427dc7379b6fb9c6d30db968c2a81",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {
+      "proofs/audits/arithmetic_restoring_force_adversarial.md": {
+        "public_path": "archive/audits/proofs/audits/arithmetic_restoring_force_adversarial.md",
+        "status": "EXPORTED"
+      },
+      "research/arithmetic_restoring_force.md": {
+        "public_path": "archive/reports/research/arithmetic_restoring_force.md",
+        "status": "EXPORTED"
+      },
+      "research/arithmetic_restoring_force/completion_report.txt": {
+        "public_path": "archive/reports/research/arithmetic_restoring_force/completion_report.txt",
+        "status": "EXPORTED"
+      },
+      "research/arithmetic_restoring_force/experiments/check_scalar_theta.py": {
+        "public_path": "artifacts/research/arithmetic_restoring_force/experiments/check_scalar_theta.py",
+        "status": "EXPORTED"
+      },
+      "research/arithmetic_restoring_force/experiments/results.json": {
+        "public_path": "artifacts/research/arithmetic_restoring_force/experiments/results.json",
+        "status": "EXPORTED"
+      },
+      "research/arithmetic_restoring_force/notes/deformation_and_electrostatics.md": {
+        "public_path": "archive/reports/research/arithmetic_restoring_force/notes/deformation_and_electrostatics.md",
+        "status": "EXPORTED"
+      },
+      "research/arithmetic_restoring_force/notes/diagnostics_and_scope.md": {
+        "public_path": "archive/reports/research/arithmetic_restoring_force/notes/diagnostics_and_scope.md",
+        "status": "EXPORTED"
+      },
+      "research/arithmetic_restoring_force/notes/scalar_sign_audit.md": {
+        "public_path": "archive/audits/research/arithmetic_restoring_force/notes/scalar_sign_audit.md",
+        "status": "EXPORTED"
+      },
+      "research/arithmetic_restoring_force/notes/theta_off_axis.md": {
+        "public_path": "archive/reports/research/arithmetic_restoring_force/notes/theta_off_axis.md",
+        "status": "EXPORTED"
+      },
+      "research/arithmetic_restoring_force/preservation_baseline.json": {
+        "public_path": null,
+        "status": "SOURCE_REFERENCE_NOT_INCLUDED"
+      },
+      "research/arithmetic_restoring_force/preservation_check.json": {
+        "public_path": "data/source-records/research/arithmetic_restoring_force/preservation_check.json",
+        "status": "EXPORTED"
+      },
+      "research/arithmetic_restoring_force/validation.json": {
+        "public_path": "data/source-records/research/arithmetic_restoring_force/validation.json",
+        "status": "EXPORTED"
+      },
+      "research/arithmetic_restoring_force_candidates.md": {
+        "public_path": "archive/reports/research/arithmetic_restoring_force_candidates.md",
+        "status": "EXPORTED"
+      },
+      "research/arithmetic_restoring_force_state.json": {
+        "public_path": "data/source-records/research/arithmetic_restoring_force_state.json",
+        "status": "EXPORTED"
+      }
+    }
+  },
+  "checks": {
+    "old_files_preserved": true,
+    "head_unchanged": true,
+    "required_files_exist": true,
+    "no_unexpected_new_files": true,
+    "local_markdown_links_resolve": true,
+    "latex_and_control_chars_ok": true,
+    "RH_OPEN": true,
+    "no_new_global_arithmetic_constraint": true,
+    "no_fourth_candidate_or_recommended_route": true,
+    "no_graph_merge": true,
+    "prior_overlap_checked": true,
+    "diagnostics_not_proof": true,
+    "experiment_counts_match_state": true
+  },
+  "all_checks_passed": true,
+  "new_files_checked": [
+    "proofs/audits/arithmetic_restoring_force_adversarial.md",
+    "research/arithmetic_restoring_force.md",
+    "research/arithmetic_restoring_force/completion_report.txt",
+    "research/arithmetic_restoring_force/experiments/check_scalar_theta.py",
+    "research/arithmetic_restoring_force/experiments/results.json",
+    "research/arithmetic_restoring_force/notes/deformation_and_electrostatics.md",
+    "research/arithmetic_restoring_force/notes/diagnostics_and_scope.md",
+    "research/arithmetic_restoring_force/notes/scalar_sign_audit.md",
+    "research/arithmetic_restoring_force/notes/theta_off_axis.md",
+    "research/arithmetic_restoring_force/preservation_baseline.json",
+    "research/arithmetic_restoring_force/preservation_check.json",
+    "research/arithmetic_restoring_force/validation.json",
+    "research/arithmetic_restoring_force_candidates.md",
+    "research/arithmetic_restoring_force_state.json"
+  ],
+  "json_files_parsed": [
+    "research/arithmetic_restoring_force/experiments/results.json",
+    "research/arithmetic_restoring_force/preservation_baseline.json",
+    "research/arithmetic_restoring_force/preservation_check.json",
+    "research/arithmetic_restoring_force/validation.json",
+    "research/arithmetic_restoring_force_state.json"
+  ],
+  "unexpected_new_files": [],
+  "broken_local_links": [],
+  "malformed_documents": [],
+  "independent_reviews": [
+    "Scalar law/domain and countermodels checked separately",
+    "PF-infinity derivation independently checked assuming cited Schoenberg theorem",
+    "Theta formula and old D4 overlap independently checked",
+    "Heat coefficient, normalization and rational outward-branch velocity independently checked"
+  ],
+  "source_limitations": "Not an independent proof-check of every source theorem; publication/translation/abstract access scope recorded in notes.",
+  "numerical_limitations": "mpmath diagnostics are not interval certificates or global sign proofs."
+}

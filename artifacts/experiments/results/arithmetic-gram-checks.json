@@ -1,0 +1,110 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "experiments/results/arithmetic-gram-checks.json",
+    "source_sha256": "0c4bedd956fbc2016934c46abe037209df76cd863ad9bd17f33379a6c144c8e8",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {
+      "research/arithmetic_gram_generator.md": {
+        "public_path": "archive/reports/research/arithmetic_gram_generator.md",
+        "status": "EXPORTED"
+      }
+    }
+  },
+  "status": "FULL_ARITHMETIC_GRAM_AND_CRITICAL_DOMAIN_OBSTRUCTIONS_VERIFIED",
+  "source_sha256": "246542040f0211b97a16d917d0461aae9848331654c997696187d9b1e9cbd708",
+  "proves_RH": false,
+  "refutes_RH": false,
+  "main_graph_merge": false,
+  "exact_sawtooth_integrals": [
+    {
+      "m": 1,
+      "n": 1,
+      "exact_integral": "1/12"
+    },
+    {
+      "m": 2,
+      "n": 3,
+      "exact_integral": "1/72"
+    },
+    {
+      "m": 4,
+      "n": 6,
+      "exact_integral": "1/72"
+    },
+    {
+      "m": 5,
+      "n": 12,
+      "exact_integral": "1/720"
+    },
+    {
+      "m": 6,
+      "n": 15,
+      "exact_integral": "1/120"
+    }
+  ],
+  "exact_divisor_feature_witnesses": [
+    {
+      "target_d": 1,
+      "prime_set": [
+        5,
+        7,
+        11,
+        13
+      ],
+      "weight": "2556/5005",
+      "input_norm_squared": "5005/2556",
+      "target_feature_norm_squared": 1,
+      "residual_norm_squared": "682769/408321",
+      "direct_Gram_equals_feature_Gram": true
+    },
+    {
+      "target_d": 2,
+      "prime_set": [
+        5,
+        7,
+        11,
+        13
+      ],
+      "weight": "2556/5005",
+      "input_norm_squared": "5005/852",
+      "target_feature_norm_squared": 1,
+      "residual_norm_squared": "682769/408321",
+      "direct_Gram_equals_feature_Gram": true
+    },
+    {
+      "target_d": 6,
+      "prime_set": [
+        5,
+        7,
+        11,
+        13
+      ],
+      "weight": "2556/5005",
+      "input_norm_squared": "5005/213",
+      "target_feature_norm_squared": 2,
+      "residual_norm_squared": "1365538/408321",
+      "direct_Gram_equals_feature_Gram": true
+    }
+  ],
+  "formal_log_prime_identity_cases": 48,
+  "interval_checks": {
+    "precision_bits": 192,
+    "critical_B_Hermitian_form_at_e1_minus_half_e2": "[-0.173286795139986327354308030364544142018875033590063813530 +/- 1.94e-58]",
+    "negative_certified": true,
+    "minus_log_Poisson_alpha_derivative_at_theta_zero_p2": "[1.96051628693709438342780344727046676258292139819810944208 +/- 4.99e-57]",
+    "minus_log_Poisson_alpha_derivative_at_theta_pi_p2": "[-1.96051628693709438342780344727046676258292139819810944208 +/- 4.99e-57]",
+    "opposite_signs_certified": true
+  },
+  "all_alpha_domain_classification": "proved analytically in note, not inferred from finite checks",
+  "all_beta_unbounded_below": "proved analytically by prime-star Schur complements",
+  "scope": "GCD Gram and its specified logarithmic conjugation, not actual Weil form",
+  "analytic_record": "research/arithmetic_gram_generator.md"
+}

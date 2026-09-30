@@ -1,0 +1,49 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "research/one_prime/validation.json",
+    "source_sha256": "25c1c3bd44776bb796d07a12eeb5f962e2329aa3830bde11cf97db3ff2c37913",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {
+      "proofs/audits/one_prime_return_adversarial.md": {
+        "public_path": "archive/audits/proofs/audits/one_prime_return_adversarial.md",
+        "status": "EXPORTED"
+      },
+      "research/one_prime_return_state.json": {
+        "public_path": "data/source-records/research/one_prime_return_state.json",
+        "status": "EXPORTED"
+      },
+      "research/one_prime_return_theorem.md": {
+        "public_path": "archive/reports/research/one_prime_return_theorem.md",
+        "status": "EXPORTED"
+      },
+      "research/one_prime_topology_matrix.md": {
+        "public_path": "archive/reports/research/one_prime_topology_matrix.md",
+        "status": "EXPORTED"
+      }
+    }
+  },
+  "metadata_pass": true,
+  "required_files_present": [
+    "research/one_prime_return_theorem.md",
+    "research/one_prime_topology_matrix.md",
+    "proofs/audits/one_prime_return_adversarial.md",
+    "research/one_prime_return_state.json"
+  ],
+  "prior_files_unchanged": 232,
+  "lean_scalar_declarations": 4,
+  "lean_source_sha256": "b870ee307670b880942c6d4396ba6772b929ecd7071276b6c4870cbee1b2bf69",
+  "formal_scope": "scalar growth lemma only",
+  "experiment_script_hash_valid": true,
+  "rh_status": "OPEN",
+  "arithmetic_subexponential_estimate_proved": false,
+  "success_level": 2,
+  "scope_note": "Level 2 retains all zero functionals in X1; it is not a new independent RH growth theorem."
+}

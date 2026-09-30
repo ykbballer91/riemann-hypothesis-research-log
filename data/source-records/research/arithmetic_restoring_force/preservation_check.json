@@ -1,0 +1,24 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "research/arithmetic_restoring_force/preservation_check.json",
+    "source_sha256": "9cc0cd85a2ed5103bc39bc249e1098c11706fa39a2aa51b655a2fb2f9866fbf7",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {}
+  },
+  "baseline_commit": "c4b6fc587ebb6ad2cec37b9a24c38a3a7e823423",
+  "current_commit": "c4b6fc587ebb6ad2cec37b9a24c38a3a7e823423",
+  "prior_files_checked": 329,
+  "changed_prior_files": [],
+  "missing_prior_files": [],
+  "all_prior_files_unchanged": true,
+  "git_commit_unchanged": true,
+  "proof_graph_auto_merge": false
+}

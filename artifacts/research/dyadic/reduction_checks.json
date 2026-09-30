@@ -1,0 +1,87 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "research/dyadic/reduction_checks.json",
+    "source_sha256": "70d56be07d262f5b5b5329b94d92f93a56d33c059da3eaf259010780cb038179",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {}
+  },
+  "rh_status": "OPEN",
+  "purpose": "finite arithmetic identities and numerical falsification only",
+  "precision_decimal_digits": 40,
+  "exact_divisor_identities_checked": 512,
+  "compact_bump": "H(x)=exp(-1/((x-1)(2-x))) for 1<x<2, zero otherwise",
+  "rows": [
+    {
+      "n": 1,
+      "a": 2,
+      "moment_c_a": "0.0007942648706771545313945",
+      "max_right_identity_abs_error": "2.2420775e-44",
+      "max_archimedean_recurrence_abs_error": "5.6051939e-45",
+      "sampled_left_p1_not_supremum": "0.295722619124269209",
+      "sampled_left_p1_div_sqrt_a_logfactor": "0.123502239931594643"
+    },
+    {
+      "n": 2,
+      "a": 4,
+      "moment_c_a": "0.0001333973251786167836572",
+      "max_right_identity_abs_error": "6.7262326e-44",
+      "max_archimedean_recurrence_abs_error": "8.9683102e-44",
+      "sampled_left_p1_not_supremum": "0.424865897136396053",
+      "sampled_left_p1_div_sqrt_a_logfactor": "0.0890221055831951116"
+    },
+    {
+      "n": 3,
+      "a": 8,
+      "moment_c_a": "0.00006146601664569762113696",
+      "max_right_identity_abs_error": "1.5694543e-43",
+      "max_archimedean_recurrence_abs_error": "2.2420775e-44",
+      "sampled_left_p1_not_supremum": "0.327141066203383739",
+      "sampled_left_p1_div_sqrt_a_logfactor": "0.0375593534064658394"
+    },
+    {
+      "n": 4,
+      "a": 16,
+      "moment_c_a": "-0.00003272930720289180942837",
+      "max_right_identity_abs_error": "1.1550759e-43",
+      "max_archimedean_recurrence_abs_error": "4.4841551e-44",
+      "sampled_left_p1_not_supremum": "0.272972835077919384",
+      "sampled_left_p1_div_sqrt_a_logfactor": "0.0180892256733895811"
+    }
+  ],
+  "dyadic_beurling_interval_limits": [
+    "1",
+    "1",
+    "2"
+  ],
+  "synthetic_offline_character": [
+    {
+      "delta": "-0.2",
+      "n": 40,
+      "absolute_multiplier": "0.00390625"
+    },
+    {
+      "delta": "0.0",
+      "n": 40,
+      "absolute_multiplier": "1.0"
+    },
+    {
+      "delta": "0.2",
+      "n": 40,
+      "absolute_multiplier": "256.0"
+    }
+  ],
+  "all_checks_passed": true,
+  "limitations": [
+    "Quadrature and sampled seminorm values are not interval certificates.",
+    "Samples do not prove the infinite-series theorem or its global bound.",
+    "No zero search, RH inference, or numerical fit to an asymptotic rate."
+  ]
+}

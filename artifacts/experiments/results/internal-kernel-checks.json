@@ -1,0 +1,104 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "experiments/results/internal-kernel-checks.json",
+    "source_sha256": "90f97232f4649ce1cc22106b35f99835f8ef57b4cd56db88fb2c31536f70bce4",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {}
+  },
+  "status": "EXACT_TOY_COUNTEREXAMPLE_VERIFIED",
+  "source_sha256": "3c9b0f626383a1844013bd793b7828e60abdf9549494974a0bd2b2480be0d9ce",
+  "proves_RH": false,
+  "refutes_RH": false,
+  "actual_Riemann_kernel_counterexample": false,
+  "arithmetic": "Python Fraction exact rational arithmetic",
+  "coefficient_matrix": [
+    [
+      "23473/160000",
+      "0",
+      "683/32000",
+      "0",
+      "1/800"
+    ],
+    [
+      "0",
+      "29/40000",
+      "0",
+      "3/16000",
+      "0"
+    ],
+    [
+      "683/32000",
+      "0",
+      "243/80000",
+      "0",
+      "3/16000"
+    ],
+    [
+      "0",
+      "3/16000",
+      "0",
+      "1/40000",
+      "0"
+    ],
+    [
+      "1/800",
+      "0",
+      "3/16000",
+      "0",
+      "1/80000"
+    ]
+  ],
+  "nodes": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "weights_after_Gaussian_cancellation": [
+    "-49/24",
+    "19/12",
+    "3",
+    "-43/12",
+    "25/24"
+  ],
+  "feature_moments": [
+    "0",
+    "1",
+    "0",
+    "-15/2",
+    "0"
+  ],
+  "negative_Gram_value": "-109/160000",
+  "odd_block_determinant": "-109/6400000000",
+  "negative_log_derivative_witness": "-76543/172850",
+  "Fourier_quadratic_discriminant": "-109/160000",
+  "numerical_cross_check": {
+    "method": "mpmath original integral, non-certified",
+    "decimal_precision": 70,
+    "value": "-0.000681250000000000000000000000000000000000000000000000000206292",
+    "absolute_error_against_exact": "2.0629199e-58"
+  },
+  "order_one_extension": "analytic existence by dominated convergence; no numerical epsilon claimed",
+  "actual_theta_factor_cone_obstruction": {
+    "arithmetic": "Arb 192 bits plus analytic relative tail bound",
+    "u_nodes": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "n_equals_one_log_third_difference": "[-13.21852414420906655704151623540814446386896569033748031 +/- 8.67e-54]",
+    "absolute_omitted_tail_bound": "[2.63587851387495105595128930358637107104511909091550938498e-128 +/- 1.44e-185]",
+    "negative_certified": true,
+    "scope": "excludes the Gaussian real-linear-factor cone, not RH"
+  }
+}

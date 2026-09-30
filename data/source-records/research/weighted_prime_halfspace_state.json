@@ -1,0 +1,75 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "research/weighted_prime_halfspace_state.json",
+    "source_sha256": "91a4c26f8112901268f837a77320de30dd2cd0e00b3e0bcf36da5064019ad111",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {
+      "research/weighted_prime_halfspace/completion_report.txt": {
+        "public_path": "archive/reports/research/weighted_prime_halfspace/completion_report.txt",
+        "status": "EXPORTED"
+      }
+    }
+  },
+  "track": "WEIGHTED_PRIME_HALFSPACE_BOOLEAN_PARITY_CORRELATION",
+  "date": "2026-09-30",
+  "rh_status": "OPEN",
+  "status": "CLOSED_AFTER_THREE_DIRECTION_STRATEGY_REVIEW",
+  "success_level": 0,
+  "success_level_scope": "Known identities and failure mechanisms clarified; current Level 1 requires a new arithmetic-specific identity and was not reached.",
+  "exact_boolean_identity_fixed": true,
+  "finite_difference_route_status": "CLOSED_GENERIC_BOUNDS_DO_NOT_IMPROVE_COUNTING_SCALE",
+  "selberg_delange_route_status": "CLOSED_ALL_LOCAL_COEFFICIENTS_VANISH_BUT_MERTENS_REMAINDER_REMAINS",
+  "tilted_measure_route_status": "CLOSED_EXACT_RECONSTRUCTION_WITH_UNCONTROLLED_COVARIANCE",
+  "parity_barrier_audited": true,
+  "parity_barrier_scope": "Explicit divisor-sum inequalities retaining signed error, and fixed-divisor leading-density countermodels; not a universal no-go for all sieve methods.",
+  "new_arithmetic_identity_found": false,
+  "known_exact_identities_verified": [
+    "Counting-normalized top Boolean Fourier coefficient",
+    "Signed finite difference and prime-block recursions",
+    "Positive box spline versus its high derivative",
+    "Sharp universal downset parity bound",
+    "Squarefree Euler factorization and G(s,-1)=1",
+    "All local Selberg-Delange coefficients vanish at z=-1",
+    "Finite Gibbs readout and covariance decomposition"
+  ],
+  "selberg_delange_endpoint": {
+    "all_local_asymptotic_coefficients_zero": true,
+    "finite_sum_proved_zero": false,
+    "lower_dimensional_remainder_constructed": false,
+    "known_fixed_log_power_bounds_recovered": true,
+    "new_independent_PNT_mechanism": false,
+    "critical_strip_euler_product_assumed": false
+  },
+  "tilt_audit": {
+    "finite_reconstruction": "EXACT_FOR_REAL_SIGMA",
+    "saddle_existence_condition": "0<log(X)<theta(X)",
+    "positive_saddle_condition": "log(X)<theta(X)/2",
+    "boundary_normalized_limit": "exp(integral_0^1 (exp(-t*u)-1)/u du), not Gaussian",
+    "infinite_parity_probability_domain": "sigma>1",
+    "covariance_control_obtained": false
+  },
+  "best_mertens_exponent": 1.0,
+  "best_mertens_exponent_scope": "No new fixed power saving; known log-power/subpower bounds do not change this fixed exponent field.",
+  "fixed_power_saving": false,
+  "square_root_cancellation": false,
+  "rh_closed": false,
+  "dyadic_exponent_bridge_added": false,
+  "active_candidates": [],
+  "major_attempts": 3,
+  "proof_graph_merges": 0,
+  "prior_files_modified": false,
+  "independent_math_audit": "PASS_WITH_STATED_SCOPE",
+  "experiment_assertions_passed": true,
+  "current_obstruction": "Actual weighted cutoff-parity correlation remains unbounded by new arithmetic input. At z=-1 every local Selberg-Delange coefficient vanishes, but the complete Mertens problem remains in the global remainder; tilt retains the same difficulty as a covariance.",
+  "next_action": null,
+  "reopen_condition": "A concrete unconditional arithmetic estimate for the actual signed cutoff correlation or the z=-1 remainder, beyond restating the desired Mertens bound.",
+  "completion_report": "research/weighted_prime_halfspace/completion_report.txt"
+}

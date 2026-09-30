@@ -1,0 +1,118 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "research/one_prime_return_state.json",
+    "source_sha256": "00033b358441296633e4fcd97a552c2029c7b906128497c13e4ed1c346bda58c",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {
+      "proofs/audits/one_prime_return_adversarial.md": {
+        "public_path": "archive/audits/proofs/audits/one_prime_return_adversarial.md",
+        "status": "EXPORTED"
+      },
+      "research/one_prime/formal/ReturnLemma.lean": {
+        "public_path": "artifacts/research/one_prime/formal/ReturnLemma.lean",
+        "status": "EXPORTED"
+      },
+      "research/one_prime_return_theorem.md": {
+        "public_path": "archive/reports/research/one_prime_return_theorem.md",
+        "status": "EXPORTED"
+      },
+      "research/one_prime_topology_matrix.md": {
+        "public_path": "archive/reports/research/one_prime_topology_matrix.md",
+        "status": "EXPORTED"
+      }
+    }
+  },
+  "track": "ONE_PRIME_RETURN_THEOREM",
+  "phase_label": "FOCUS_TRACK_PHASE_V",
+  "started_on_jst": "2026-09-29",
+  "completed_on_jst": "2026-09-30",
+  "rh_status": "OPEN",
+  "prime": 2,
+  "status": "BOUNDED_REVIEW_COMPLETE_LEVEL_2_NO_SUBEXPONENTIAL_ARITHMETIC_BOUND",
+  "abstract_subexponential_lemma": true,
+  "zero_bearing_space_fixed": true,
+  "zero_functionals_retained": true,
+  "natural_topology_constructed": true,
+  "natural_topology_scope": "X1 is the Banach completion of the Hausdorff quotient for q1 inherited from the standard all-exponential Schwartz test topology; choice is not uniquely canonical and no novelty is claimed",
+  "space": {
+    "arithmetic_quotient": "Q=E/closure_E(V), in the Q compact-unit invariant scalar sector",
+    "completion": "X1=completion(Q/ker(q1), q1)",
+    "zero_functional_bound": "|ell_rho(x)| <= 4 q1(x), for every nontrivial rho",
+    "finite_jet_bound": "|ell_rho,j(x)| <= 2^(j+2) j! q1(x), j < multiplicity(rho)",
+    "all_nonzero_zero_functionals_preserved": true,
+    "full_quotient_topological_equivalence_proved": false,
+    "no_extra_spectrum_proved": false,
+    "trace_extension_to_X1_proved": false
+  },
+  "return_growth_bound": {
+    "proven_upper_bound": "||T2^n||_X1 <= 2^|n| (1+|n| log 2)",
+    "two_sided_bounded_invertible_single_step": true,
+    "subexponential_target_proved": false,
+    "uniform_power_bound_proved": false,
+    "actual_exponential_lower_bound_proved": false,
+    "conditional_character_lower_bound": "q1(T2^n x) >= (1/4) 2^(n(Re rho-1/2)) |ell_rho(x)|"
+  },
+  "local_global_intertwiner": false,
+  "rh_closed": false,
+  "current_minimal_gap": {
+    "statement": "For every epsilon>0, prove from arithmetic that there exist M and C_epsilon with q1(T2^n x) <= C_epsilon 2^(epsilon |n|) q_M(x) for all integers n and all x in Q",
+    "allows_input_seminorm_change": true,
+    "needs_full_global_metric": false,
+    "needs_trace_or_determinant": false,
+    "RH_reverse_implication_proved": false,
+    "alternative": "An arithmetic forward intertwiner whose pullback of every zero character is nonzero and bounded on the local controlled representation"
+  },
+  "next_action": "Stop this bounded round after three major constructions. Reopen only for a specified arithmetic representative/cancellation estimate or a faithful bounded character transference. Do not repeat quotient order, interpolation endpoints, or similarity theorem names as substitutes.",
+  "success_level": 2,
+  "levels": {
+    "1": "PROVED: abstract Banach and locally-convex subexponential-return lemma; scalar kernel verified in Lean",
+    "2": "CONSTRUCTED_WITH_LIMITS: actual arithmetic q1 completion retains all zero functionals and finite jets; existing ingredients, no novelty claimed",
+    "3": "NOT_PROVED: no unconditional subexponential return bound",
+    "4": "NOT_PROVED: RH remains open",
+    "5": "NOT_ACHIEVED: bounded audit complete, but this is not an audit of a completed RH proof"
+  },
+  "major_constructions_completed": 3,
+  "active_candidates": [],
+  "failed_target_constructions": [
+    {
+      "id": "OP1",
+      "retention": "PASS",
+      "growth": "MISSING_ARITHMETIC_CANCELLATION_ESTIMATE"
+    },
+    {
+      "id": "OP2",
+      "retention": "LOST_AT_SUBEXPONENTIAL_ENDPOINTS",
+      "growth": "QUOTIENT_FIRST_AND_INTERPOLATION_DO_NOT_SUPPLY_TARGET"
+    },
+    {
+      "id": "OP3",
+      "retention": "ACTUAL_INTERTWINER_NOT_CONSTRUCTED",
+      "growth": "SIMILARITY_AND_DILATION_DO_NOT_SUPPLY_ARITHMETIC_BOUND"
+    }
+  ],
+  "strategy_review_completed": true,
+  "second_prime_used": false,
+  "proof_or_refutation_of_RH": false,
+  "all_natural_topologies_ruled_out": false,
+  "novelty_claimed": false,
+  "formalization": {
+    "file": "research/one_prime/formal/ReturnLemma.lean",
+    "scope": "Scalar growth comparison only, not arithmetic quotient or topological operator theory",
+    "verified_declarations": 4,
+    "sorry_or_new_axioms": false
+  },
+  "main_log": "research/one_prime_return_theorem.md",
+  "matrix": "research/one_prime_topology_matrix.md",
+  "audit": "proofs/audits/one_prime_return_adversarial.md",
+  "prior_files_modified": false,
+  "canonical_state_modified": false,
+  "main_graph_merges": []
+}

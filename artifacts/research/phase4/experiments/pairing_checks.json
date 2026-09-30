@@ -1,0 +1,73 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "research/phase4/experiments/pairing_checks.json",
+    "source_sha256": "5ba2c6b6cfad5ec3b0e98ad0e54e13433b58706eac29cf60f9444a22fc5e1bc7",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {}
+  },
+  "phase": 4,
+  "rh_status": "OPEN",
+  "source_sha256": "6fd3d973db55e1a583b40df76d03f1f5fe3f8798de4163fbf9777b796f25445e",
+  "exact_algebra": {
+    "primitive_star_trace": -486,
+    "J_identity_offline_counterexample": true,
+    "fourier_polynomial_coefficients": [
+      "0",
+      "-15",
+      "30",
+      "-8"
+    ],
+    "positive_norm_squared_times_sqrt2": "585/32",
+    "twisted_pairing_times_sqrt2": "-585/32",
+    "jet_model_dimension": 3,
+    "jet_trace_pairing_rank": 1
+  },
+  "numerical_diagnostics": {
+    "certified": false,
+    "fourier": [
+      {
+        "y": "0.0",
+        "absolute_error": "5.13621858e-65"
+      },
+      {
+        "y": "0.25",
+        "absolute_error": "1.555753819e-61"
+      },
+      {
+        "y": "0.75",
+        "absolute_error": "3.111507639e-61"
+      },
+      {
+        "y": "1.0",
+        "absolute_error": "3.597680708e-61"
+      }
+    ],
+    "mellin": [
+      {
+        "s": "1.5",
+        "absolute_error": "3.889384549e-62"
+      },
+      {
+        "s": "2.0",
+        "absolute_error": "0.0"
+      },
+      {
+        "s": "3.0",
+        "absolute_error": "3.111507639e-61"
+      }
+    ],
+    "norm_absolute_error": "0.0"
+  },
+  "scope": "Counterexamples to specified pairing/adjoint transfers; not to RH or full arithmetic programs",
+  "proves_RH": false,
+  "refutes_RH": false,
+  "zero_side_used_to_define_pairing": false
+}

@@ -1,0 +1,28 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "experiments/results/groskin-c13-n4-author-rerun.json",
+    "source_sha256": "21d315cce4956ff393c2fdeb9c87238d13366b0e19e7a2361141f7e97c59b1b1",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {}
+  },
+  "script": "arb_ldlt_certify.py",
+  "c": 13,
+  "N": 4,
+  "dimension": 9,
+  "prec_bits": 384,
+  "n_pos": 9,
+  "n_neg": 0,
+  "undetermined_pivot": null,
+  "certified_positive_definite": true,
+  "build_seconds": 0.0,
+  "ldlt_seconds": 0.0,
+  "date": "2026-09-29T15:50:04"
+}

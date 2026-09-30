@@ -1,0 +1,238 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "literature/notes/weil-sources.json",
+    "source_sha256": "d822b78a08654470eb9e6d351cfd93626db2a8720ab947d34345220e62ba29bf",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {}
+  },
+  "retrieved_on": "2026-09-29",
+  "timezone": "Asia/Tokyo",
+  "scope": "Weil quadratic forms / finite Galerkin forms / operator positivity, 2025-2026 and directly relevant earlier primary sources",
+  "exhaustive": false,
+  "verification_policy": "一次本文の存在と定理仮定を確認。査読・独立再現・著者検算を区別。Groskin小例と別実装固定窓の限定認証は個別監査へ記録。",
+  "sources": [
+    {
+      "id": "CC2021",
+      "authors": [
+        "Alain Connes",
+        "Caterina Consani"
+      ],
+      "title": "Weil positivity and trace formula, the archimedean place",
+      "year": 2021,
+      "arxiv": "2006.13771",
+      "doi": "10.1007/s00029-021-00689-4",
+      "primary_urls": [
+        "https://link.springer.com/article/10.1007/s00029-021-00689-4",
+        "https://alainconnes.org/wp-content/uploads/Selecta.pdf"
+      ],
+      "publication": "Selecta Mathematica 27, article 77; published 2021-07-29",
+      "peer_review": "査読誌掲載を出版社で確認",
+      "independent_verification": "今回未実施、第三者の独立計算再現は未調査",
+      "locators": [
+        "Theorem 1",
+        "Theorem 11"
+      ],
+      "domain": "g in C_c^infinity(R_+^*), support [2^(-1/2),2^(1/2)], transform vanishes at i/2 and 0 for Theorem 1",
+      "use_status": "限定domainを維持して引用可"
+    },
+    {
+      "id": "CC2023",
+      "authors": [
+        "Alain Connes",
+        "Caterina Consani"
+      ],
+      "title": "Spectral triples and zeta-cycles",
+      "year": 2023,
+      "arxiv": "2106.01715",
+      "doi": "10.4171/LEM/1049",
+      "primary_urls": [
+        "https://ems.press/journals/lem/articles/11033001",
+        "https://ems.press/content/serial-article-files/44477?nt=1"
+      ],
+      "publication": "Enseignement Mathematique 69 (2023), 93-148; published 2023-06-09",
+      "peer_review": "査読誌掲載を出版社で確認",
+      "independent_verification": "今回未実施",
+      "locators": [
+        "Section 2",
+        "Proposition 2.3 as restated in CCM2025 Proposition 3.4"
+      ],
+      "use_status": "localized form/coreの先行文献"
+    },
+    {
+      "id": "CvS2025",
+      "authors": [
+        "Alain Connes",
+        "Walter D. van Suijlekom"
+      ],
+      "title": "Quadratic Forms, Real Zeros and Echoes of the Spectral Action",
+      "year": 2025,
+      "arxiv": "2511.23257v1",
+      "doi": "10.1007/s00220-025-05493-1",
+      "primary_urls": [
+        "https://arxiv.org/html/2511.23257v1",
+        "https://link.springer.com/article/10.1007/s00220-025-05493-1"
+      ],
+      "publication": "Communications in Mathematical Physics 406, 312; accepted 2025-10-14, published 2025-11-18",
+      "peer_review": "出版社の受理日・version of record・本文referee謝辞を確認",
+      "independent_verification": "今回逐行再構成は未実施",
+      "locators": [
+        "Theorem 1.2 (informal overview)",
+        "Theorem 6.1 (precise)",
+        "Proposition 5.10"
+      ],
+      "domain": "real distribution on [0,L], quadratic form (6) on trigonometric polynomials; lower-bounded essentially self-adjoint operator; simple isolated lowest eigenvalue with reflection-even eigenfunction",
+      "use_status": "条件付き固定窓無限次元定理。全窓仮定やxi同定を結論に加えない"
+    },
+    {
+      "id": "CCM2025",
+      "authors": [
+        "Alain Connes",
+        "Caterina Consani",
+        "Henri Moscovici"
+      ],
+      "title": "Zeta Spectral Triples",
+      "year": 2025,
+      "arxiv": "2511.22755v1",
+      "doi": "10.48550/arXiv.2511.22755",
+      "book_doi": "10.4171/ELM/37",
+      "primary_urls": [
+        "https://arxiv.org/html/2511.22755v1",
+        "https://ems.press/content/book-chapter-files/53351",
+        "https://ems.press/content/book-chapter-files/53349",
+        "https://alainconnes.org/publications/"
+      ],
+      "publication": "arXiv 2025-11-27; EMS book chapter, pp.39-75, 2026, ISBN 978-3-98547-108-9",
+      "peer_review": "書籍掲載確認。章の個別査読過程は未確認",
+      "independent_verification": "今回未実施。本文の数値実験は著者によるもの",
+      "locators": [
+        "Propositions 3.3 and 3.4",
+        "Theorem 3.6",
+        "Theorem 5.10",
+        "Section 8"
+      ],
+      "domain": "QW_lambda on L2([lambda^-1,lambda],du/u), form core E=span(V_n); finite theorem uses E_N and simple-even ground-state assumptions",
+      "missing": [
+        "全窓simple-even条件",
+        "ground-state approximationとxi/zero limit同定"
+      ],
+      "use_status": "core・下有界性・条件付き有限作用素。global positivityには未使用"
+    },
+    {
+      "id": "Suzuki2026v3",
+      "authors": [
+        "Masatoshi Suzuki"
+      ],
+      "title": "Weil's quadratic form via the screw function",
+      "year": 2026,
+      "arxiv": "2606.09096v3",
+      "doi": "10.48550/arXiv.2606.09096",
+      "version_date": "2026-09-23",
+      "primary_urls": [
+        "https://arxiv.org/abs/2606.09096",
+        "https://arxiv.org/html/2606.09096v3"
+      ],
+      "peer_review": "preprint、査読掲載未確認",
+      "independent_verification": "定理仮定を本文確認、完全な独立証明監査は未実施",
+      "locators": [
+        "Theorems 1.1, 1.3, 1.4, 1.5",
+        "Corollaries 1.2, 1.6",
+        "Section 7"
+      ],
+      "domain": "B_a=D*G_aD on H_0^1(-a,a); G_a on mean-zero L2; small-a positivity only; shifted space uses lambda<lambda_a",
+      "version_warning": "v3 Corollary 1.6は上半平面compact上一様収束とxi/(xi+xi')。旧版のz^2 xi/xi'・全平面compactと異なる",
+      "use_status": "局所・構成定理は検証候補。極限仮説を採用しない"
+    },
+    {
+      "id": "Groskin2026v3",
+      "authors": [
+        "Akiva Groskin"
+      ],
+      "title": "A finite Guinand-Weil dictionary and archimedean tail order for the truncated Weil quadratic form",
+      "year": 2026,
+      "arxiv": "2607.02828v3",
+      "doi": "10.48550/arXiv.2607.02828",
+      "version_date": "2026-08-14",
+      "primary_urls": [
+        "https://arxiv.org/abs/2607.02828",
+        "https://arxiv.org/html/2607.02828v3"
+      ],
+      "peer_review": "preprint、査読掲載未確認",
+      "independent_verification": "2026-09-29限定監査: Theorem2.5実偶辞書とTheorem3.2主要tailを再導出。Lemma2.1係数2とCor3.3左端に修正注意。原著c13,N4再実行と独立Arb直接積分9次正定値認証が一致。原著401次証明書・論文全体の検証は未済。詳細proofs/audits/groskin-{dictionary,tail,computation}.md",
+      "locators": [
+        "Theorem 2.5",
+        "Theorem 3.2",
+        "Corollary 3.3"
+      ],
+      "domain": "fixed c>1,N; dictionary real-even vectors; tail theorem C^{[-N,N]}, T>max(2pi N/log(c),7)",
+      "use_status": "有限辞書・archimedean tailの条件を独立監査。c13,N4のみArb認証再現。全c,N正値性ではない"
+    },
+    {
+      "id": "Zhu2026v2",
+      "authors": [
+        "Xuefeng Zhu"
+      ],
+      "title": "Weil positivity in compact windows: a finite reduction, certified two-sided bounds, and a Landau-Widom decay law",
+      "year": 2026,
+      "arxiv": "2608.24827v2",
+      "doi": "10.48550/arXiv.2608.24827",
+      "version_date": "2026-09-02",
+      "primary_urls": [
+        "https://arxiv.org/abs/2608.24827",
+        "https://arxiv.org/html/2608.24827v2"
+      ],
+      "peer_review": "preprint、査読掲載未確認",
+      "independent_verification": "v2 PDF/TeX取得。§17のcode/matrix/factor/checksum一式の公開先を確認できず原著head未再現。一般entry boundを厳密反証、正しい係数でL.8 tail/couplingのみ独立修復。別のa=.5 fixed-window certificateは自作Arbで認証しT090に分離。",
+      "locators": [
+        "Theorems 1.1, 1.2, 1.3, 1.4",
+        "Theorem 6.2",
+        "Corollary 6.3",
+        "Section 7"
+      ],
+      "domain": "positivity claimed for complex f supported in [-0.8,0.8]; corresponding autocorrelation support [-1.6,1.6]",
+      "version_warning": "Section 7 explicitly retracts an earlier L=1.19 positivity certificate claim due to wrong-direction prime-comb bound",
+      "use_status": "正しい有限還元の独立再導出に使用。原著L.8 head・simple-even主張は依存採用保留。"
+    },
+    {
+      "id": "KimEtAl2026v2",
+      "authors": [
+        "Taebong Kim",
+        "Youngsik Hong",
+        "Minsik Kim",
+        "Sunyoung Choi",
+        "Jaewon Jang",
+        "Junghoon Shin",
+        "Minseo Kim"
+      ],
+      "title": "A Numerical Realization of Suzuki's Weil-Quadratic-Form Operator: The Archimedean Spectral Law, its Universality, and an Operator Form of Weil's Positivity Criterion",
+      "year": 2026,
+      "arxiv": "2607.24830v2",
+      "doi": "10.48550/arXiv.2607.24830",
+      "version_date": "2026-07-29",
+      "primary_urls": [
+        "https://arxiv.org/abs/2607.24830"
+      ],
+      "peer_review": "preprint、査読掲載未確認",
+      "independent_verification": "書誌・abstractだけ確認。本文定理監査・計算再現なし",
+      "use_status": "探索の参考のみ、主定理依存には使用しない"
+    }
+  ],
+  "excluded_from_proof_dependencies": [
+    "検索結果上のZenodo等の無条件RH証明主張",
+    "GitHubやSNSの二次要約",
+    "固定個数の零点の数値一致",
+    "未確認の全窓への延長"
+  ],
+  "remaining_audits": [
+    "Groskin finite-tail certificates independent execution",
+    "Zhu L=0.8 arithmetic/quadrature/rounding/tail certificates independent execution",
+    "CvS operator-core hypotheses versus Weil form-core construction"
+  ]
+}

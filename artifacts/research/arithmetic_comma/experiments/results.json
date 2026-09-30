@@ -1,0 +1,737 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "research/arithmetic_comma/experiments/results.json",
+    "source_sha256": "a3afa1513b676f1bfe273836119a0ecdc95b7f7950ee6012fca473f564537803",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {}
+  },
+  "rh_status": "OPEN",
+  "purpose": "finite falsification and identity checks; no asymptotic inference",
+  "toy_models": [
+    {
+      "primes": [
+        2,
+        3
+      ],
+      "rows": [
+        {
+          "birth_product": 1,
+          "mu": 1,
+          "factors": [],
+          "cumulative": 1
+        },
+        {
+          "birth_product": 2,
+          "mu": -1,
+          "factors": [
+            2
+          ],
+          "cumulative": 0
+        },
+        {
+          "birth_product": 3,
+          "mu": -1,
+          "factors": [
+            3
+          ],
+          "cumulative": -1
+        },
+        {
+          "birth_product": 6,
+          "mu": 1,
+          "factors": [
+            2,
+            3
+          ],
+          "cumulative": 0
+        }
+      ],
+      "product_identity_max_error": "4.99718044296303431248937109942560124481157897735367866844662e-60"
+    },
+    {
+      "primes": [
+        2,
+        3,
+        5
+      ],
+      "rows": [
+        {
+          "birth_product": 1,
+          "mu": 1,
+          "factors": [],
+          "cumulative": 1
+        },
+        {
+          "birth_product": 2,
+          "mu": -1,
+          "factors": [
+            2
+          ],
+          "cumulative": 0
+        },
+        {
+          "birth_product": 3,
+          "mu": -1,
+          "factors": [
+            3
+          ],
+          "cumulative": -1
+        },
+        {
+          "birth_product": 5,
+          "mu": -1,
+          "factors": [
+            5
+          ],
+          "cumulative": -2
+        },
+        {
+          "birth_product": 6,
+          "mu": 1,
+          "factors": [
+            2,
+            3
+          ],
+          "cumulative": -1
+        },
+        {
+          "birth_product": 10,
+          "mu": 1,
+          "factors": [
+            2,
+            5
+          ],
+          "cumulative": 0
+        },
+        {
+          "birth_product": 15,
+          "mu": 1,
+          "factors": [
+            3,
+            5
+          ],
+          "cumulative": 1
+        },
+        {
+          "birth_product": 30,
+          "mu": -1,
+          "factors": [
+            2,
+            3,
+            5
+          ],
+          "cumulative": 0
+        }
+      ],
+      "product_identity_max_error": "4.94930869845867222710806783937969956415008856791589429848466e-60"
+    },
+    {
+      "primes": [
+        2,
+        3,
+        5,
+        7,
+        11
+      ],
+      "rows": [
+        {
+          "birth_product": 1,
+          "mu": 1,
+          "factors": [],
+          "cumulative": 1
+        },
+        {
+          "birth_product": 2,
+          "mu": -1,
+          "factors": [
+            2
+          ],
+          "cumulative": 0
+        },
+        {
+          "birth_product": 3,
+          "mu": -1,
+          "factors": [
+            3
+          ],
+          "cumulative": -1
+        },
+        {
+          "birth_product": 5,
+          "mu": -1,
+          "factors": [
+            5
+          ],
+          "cumulative": -2
+        },
+        {
+          "birth_product": 6,
+          "mu": 1,
+          "factors": [
+            2,
+            3
+          ],
+          "cumulative": -1
+        },
+        {
+          "birth_product": 7,
+          "mu": -1,
+          "factors": [
+            7
+          ],
+          "cumulative": -2
+        },
+        {
+          "birth_product": 10,
+          "mu": 1,
+          "factors": [
+            2,
+            5
+          ],
+          "cumulative": -1
+        },
+        {
+          "birth_product": 11,
+          "mu": -1,
+          "factors": [
+            11
+          ],
+          "cumulative": -2
+        },
+        {
+          "birth_product": 14,
+          "mu": 1,
+          "factors": [
+            2,
+            7
+          ],
+          "cumulative": -1
+        },
+        {
+          "birth_product": 15,
+          "mu": 1,
+          "factors": [
+            3,
+            5
+          ],
+          "cumulative": 0
+        },
+        {
+          "birth_product": 21,
+          "mu": 1,
+          "factors": [
+            3,
+            7
+          ],
+          "cumulative": 1
+        },
+        {
+          "birth_product": 22,
+          "mu": 1,
+          "factors": [
+            2,
+            11
+          ],
+          "cumulative": 2
+        },
+        {
+          "birth_product": 30,
+          "mu": -1,
+          "factors": [
+            2,
+            3,
+            5
+          ],
+          "cumulative": 1
+        },
+        {
+          "birth_product": 33,
+          "mu": 1,
+          "factors": [
+            3,
+            11
+          ],
+          "cumulative": 2
+        },
+        {
+          "birth_product": 35,
+          "mu": 1,
+          "factors": [
+            5,
+            7
+          ],
+          "cumulative": 3
+        },
+        {
+          "birth_product": 42,
+          "mu": -1,
+          "factors": [
+            2,
+            3,
+            7
+          ],
+          "cumulative": 2
+        },
+        {
+          "birth_product": 55,
+          "mu": 1,
+          "factors": [
+            5,
+            11
+          ],
+          "cumulative": 3
+        },
+        {
+          "birth_product": 66,
+          "mu": -1,
+          "factors": [
+            2,
+            3,
+            11
+          ],
+          "cumulative": 2
+        },
+        {
+          "birth_product": 70,
+          "mu": -1,
+          "factors": [
+            2,
+            5,
+            7
+          ],
+          "cumulative": 1
+        },
+        {
+          "birth_product": 77,
+          "mu": 1,
+          "factors": [
+            7,
+            11
+          ],
+          "cumulative": 2
+        },
+        {
+          "birth_product": 105,
+          "mu": -1,
+          "factors": [
+            3,
+            5,
+            7
+          ],
+          "cumulative": 1
+        },
+        {
+          "birth_product": 110,
+          "mu": -1,
+          "factors": [
+            2,
+            5,
+            11
+          ],
+          "cumulative": 0
+        },
+        {
+          "birth_product": 154,
+          "mu": -1,
+          "factors": [
+            2,
+            7,
+            11
+          ],
+          "cumulative": -1
+        },
+        {
+          "birth_product": 165,
+          "mu": -1,
+          "factors": [
+            3,
+            5,
+            11
+          ],
+          "cumulative": -2
+        },
+        {
+          "birth_product": 210,
+          "mu": 1,
+          "factors": [
+            2,
+            3,
+            5,
+            7
+          ],
+          "cumulative": -1
+        },
+        {
+          "birth_product": 231,
+          "mu": -1,
+          "factors": [
+            3,
+            7,
+            11
+          ],
+          "cumulative": -2
+        },
+        {
+          "birth_product": 330,
+          "mu": 1,
+          "factors": [
+            2,
+            3,
+            5,
+            11
+          ],
+          "cumulative": -1
+        },
+        {
+          "birth_product": 385,
+          "mu": -1,
+          "factors": [
+            5,
+            7,
+            11
+          ],
+          "cumulative": -2
+        },
+        {
+          "birth_product": 462,
+          "mu": 1,
+          "factors": [
+            2,
+            3,
+            7,
+            11
+          ],
+          "cumulative": -1
+        },
+        {
+          "birth_product": 770,
+          "mu": 1,
+          "factors": [
+            2,
+            5,
+            7,
+            11
+          ],
+          "cumulative": 0
+        },
+        {
+          "birth_product": 1155,
+          "mu": 1,
+          "factors": [
+            3,
+            5,
+            7,
+            11
+          ],
+          "cumulative": 1
+        },
+        {
+          "birth_product": 2310,
+          "mu": -1,
+          "factors": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "cumulative": 0
+        }
+      ],
+      "product_identity_max_error": "7.61209791770554598669119879222219771968340695264841402408568e-60"
+    }
+  ],
+  "identity_phase_counterexamples": [
+    {
+      "X": 10,
+      "M": -1,
+      "squarefree_count": 7,
+      "shared_haar_second_moment": 7,
+      "all_positive_identity_value": 7,
+      "mobius_value_at_all_minus_one": 7
+    },
+    {
+      "X": 30,
+      "M": -3,
+      "squarefree_count": 19,
+      "shared_haar_second_moment": 19,
+      "all_positive_identity_value": 19,
+      "mobius_value_at_all_minus_one": 19
+    },
+    {
+      "X": 100,
+      "M": 1,
+      "squarefree_count": 61,
+      "shared_haar_second_moment": 61,
+      "all_positive_identity_value": 61,
+      "mobius_value_at_all_minus_one": 61
+    },
+    {
+      "X": 1000,
+      "M": 2,
+      "squarefree_count": 608,
+      "shared_haar_second_moment": 608,
+      "all_positive_identity_value": 608,
+      "mobius_value_at_all_minus_one": 608
+    }
+  ],
+  "exact_haar_moments": [
+    {
+      "X": 10,
+      "absolute_moment_order": 2,
+      "haar_mobius": 7,
+      "haar_all_positive": 7,
+      "distinct_tuple_products": 7
+    },
+    {
+      "X": 10,
+      "absolute_moment_order": 4,
+      "haar_mobius": 115,
+      "haar_all_positive": 115,
+      "distinct_tuple_products": 25
+    },
+    {
+      "X": 10,
+      "absolute_moment_order": 6,
+      "haar_mobius": 2725,
+      "haar_all_positive": 2725,
+      "distinct_tuple_products": 65
+    },
+    {
+      "X": 30,
+      "absolute_moment_order": 4,
+      "haar_mobius": 967,
+      "haar_all_positive": 967,
+      "distinct_tuple_products": 162
+    },
+    {
+      "X": 30,
+      "absolute_moment_order": 6,
+      "haar_mobius": 82909,
+      "haar_all_positive": 82909,
+      "distinct_tuple_products": 902
+    },
+    {
+      "X": 100,
+      "absolute_moment_order": 4,
+      "haar_mobius": 11229,
+      "haar_all_positive": 11229,
+      "distinct_tuple_products": 1523
+    }
+  ],
+  "two_prime_near_returns": [
+    {
+      "coefficient_log2": 2,
+      "coefficient_log3": -1,
+      "defect": "0.287682072451780927439219005994",
+      "elementary_lower_bound": "0.25",
+      "time_log2_exact_return": "9.064720283654387619255366",
+      "log3_phase_error": "2.60775751739738969892501"
+    },
+    {
+      "coefficient_log2": 3,
+      "coefficient_log3": -2,
+      "defect": "0.117783035656383454538794109471",
+      "elementary_lower_bound": "0.111111111111111",
+      "time_log2_exact_return": "18.12944056730877523851073",
+      "log3_phase_error": "1.067670272384807079075266"
+    },
+    {
+      "coefficient_log2": 8,
+      "coefficient_log3": -5,
+      "defect": "0.0521160011390140183616307870528",
+      "elementary_lower_bound": "0.00390625",
+      "time_log2_exact_return": "45.32360141827193809627683",
+      "log3_phase_error": "0.4724169726277755407744783"
+    },
+    {
+      "coefficient_log2": 19,
+      "coefficient_log3": -12,
+      "defect": "0.013551033378355417815532535365",
+      "elementary_lower_bound": "1.88167642315892e-6",
+      "time_log2_exact_return": "108.7766434038526514310644",
+      "log3_phase_error": "0.1228363271292559975263093"
+    },
+    {
+      "coefficient_log2": 65,
+      "coefficient_log3": -41,
+      "defect": "0.0114629010039477649150331809579",
+      "elementary_lower_bound": "2.71050543121376e-20",
+      "time_log2_exact_return": "371.65353162982989238947",
+      "log3_phase_error": "0.1039079912400075481955504"
+    },
+    {
+      "coefficient_log2": 84,
+      "coefficient_log3": -53,
+      "defect": "0.00208813237440765290049935440703",
+      "elementary_lower_bound": "5.15909470036496e-26",
+      "time_log2_exact_return": "480.4301750336825438205344",
+      "log3_phase_error": "0.01892833588924844933075896"
+    },
+    {
+      "coefficient_log2": 485,
+      "coefficient_log3": -306,
+      "defect": "0.00102223913190950041253640892277",
+      "elementary_lower_bound": "1.00104154759155e-146",
+      "time_log2_exact_return": "2773.804406798242611492142",
+      "log3_phase_error": "0.009266311793765301541755583"
+    }
+  ],
+  "finite_time_mean_squares": [
+    {
+      "X": 30,
+      "T": 10,
+      "mobius_mean_square": "4.711848682890159110789846",
+      "positive_mean_square": "50.12129140399788623132971",
+      "common_infinite_time_limit": 19
+    },
+    {
+      "X": 30,
+      "T": 100,
+      "mobius_mean_square": "18.62595078277415741606989",
+      "positive_mean_square": "18.39041969397462579449606",
+      "common_infinite_time_limit": 19
+    },
+    {
+      "X": 30,
+      "T": 1000,
+      "mobius_mean_square": "19.05223540753401619248155",
+      "positive_mean_square": "19.00763999197152496044265",
+      "common_infinite_time_limit": 19
+    },
+    {
+      "X": 30,
+      "T": 10000,
+      "mobius_mean_square": "18.99731432706304260895446",
+      "positive_mean_square": "18.9907451723155385511962",
+      "common_infinite_time_limit": 19
+    }
+  ],
+  "sampled_phase_boxes": [
+    {
+      "primes": [
+        2,
+        3
+      ],
+      "eta": 0.5,
+      "T": 1000.0,
+      "dt": 0.05,
+      "sample_count": 20000,
+      "zero_box_hits": 501,
+      "pi_box_hits": 516,
+      "zero_box_max_amplitude": 0.2302735562272498,
+      "pi_box_min_amplitude": 3.7596788144334607,
+      "haar_box_fraction_reference": 0.025330295910584447,
+      "sample_mean_amplitude": 1.6204920495611912,
+      "haar_mean_amplitude_reference": 1.6211389382774046,
+      "sample_mean_square": 3.997687538842254,
+      "haar_mean_square_reference": 4,
+      "rigorous_continuous_time_census": false
+    },
+    {
+      "primes": [
+        2,
+        3,
+        5
+      ],
+      "eta": 0.5,
+      "T": 1000.0,
+      "dt": 0.05,
+      "sample_count": 20000,
+      "zero_box_hits": 78,
+      "pi_box_hits": 78,
+      "zero_box_max_amplitude": 0.053058216693636175,
+      "pi_box_min_amplitude": 7.54753376928168,
+      "haar_box_fraction_reference": 0.004031441804149937,
+      "sample_mean_amplitude": 2.0630302965444076,
+      "haar_mean_amplitude_reference": 2.0640982037247677,
+      "sample_mean_square": 7.995637377692479,
+      "haar_mean_square_reference": 8,
+      "rigorous_continuous_time_census": false
+    }
+  ],
+  "cutoff_geometry_counterexample": {
+    "X": 100,
+    "primes": [
+      53,
+      59,
+      61,
+      67,
+      71,
+      73,
+      79,
+      83,
+      89,
+      97
+    ],
+    "admissible_terms": [
+      [
+        1,
+        1
+      ],
+      [
+        53,
+        -1
+      ],
+      [
+        59,
+        -1
+      ],
+      [
+        61,
+        -1
+      ],
+      [
+        67,
+        -1
+      ],
+      [
+        71,
+        -1
+      ],
+      [
+        73,
+        -1
+      ],
+      [
+        79,
+        -1
+      ],
+      [
+        83,
+        -1
+      ],
+      [
+        89,
+        -1
+      ],
+      [
+        97,
+        -1
+      ]
+    ],
+    "discrepancy": -9,
+    "not_full_Mertens": true
+  },
+  "higher_moment_resonance": {
+    "left": [
+      2,
+      15
+    ],
+    "right": [
+      3,
+      10
+    ],
+    "product": 30,
+    "signed_weight": 1
+  },
+  "all_assertions_passed": true
+}

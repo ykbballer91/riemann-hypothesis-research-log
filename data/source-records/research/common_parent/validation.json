@@ -1,0 +1,57 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "research/common_parent/validation.json",
+    "source_sha256": "cae59d5377273dfd6bc98401ffba3ea048b65e0f319e1af7b17a106fd09ac792",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {
+      "proofs/audits/common_parent_variational_adversarial.md": {
+        "public_path": "archive/audits/proofs/audits/common_parent_variational_adversarial.md",
+        "status": "EXPORTED"
+      },
+      "research/common_parent_candidate_matrix.md": {
+        "public_path": "archive/reports/research/common_parent_candidate_matrix.md",
+        "status": "EXPORTED"
+      },
+      "research/common_parent_state.json": {
+        "public_path": "data/source-records/research/common_parent_state.json",
+        "status": "EXPORTED"
+      },
+      "research/common_parent_variational_principle.md": {
+        "public_path": "archive/reports/research/common_parent_variational_principle.md",
+        "status": "EXPORTED"
+      },
+      "research/common_variational_dictionary.md": {
+        "public_path": "archive/reports/research/common_variational_dictionary.md",
+        "status": "EXPORTED"
+      }
+    }
+  },
+  "rh_status": "OPEN",
+  "status": "PASS",
+  "baseline_file_count": 358,
+  "prior_changed_files": [],
+  "prior_missing_files": [],
+  "git_head_unchanged": true,
+  "required_deliverables_present": true,
+  "new_python_syntax": "PASS",
+  "new_json_and_diagnostic_algebra": "PASS",
+  "diagnostic_algebra_is_interval_certificate": false,
+  "new_markdown_local_links": "PASS",
+  "independent_destroyer_final_disposition": "PASS; see audit V11",
+  "proof_graph_merged": false,
+  "required_deliverable_sha256": {
+    "research/common_parent_variational_principle.md": "ddab318de9b3001d623b713c8459a6bf1e4c0bedcb0a1240e8db6b2a63f730e8",
+    "research/common_variational_dictionary.md": "16cc6d1d6ab7e9b5d96d7f0e0c6c8573dcef62a00e41a40b121ba71152f2d513",
+    "research/common_parent_candidate_matrix.md": "416cf929f1be858b5e1d0502eeca3dee6349a148fe866d793c4e721f4b6723fb",
+    "proofs/audits/common_parent_variational_adversarial.md": "947b7e83dc692b6b2e416ba48667cb32e1cdab847fa951a827ed16354cd1b943",
+    "research/common_parent_state.json": "b0e3575ae929b73c9da5afd9d37040677e37f8d67e80ea737bd27667fd9b8080"
+  }
+}

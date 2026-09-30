@@ -1,0 +1,65 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "experiments/results/continuum-subtraction-checks.json",
+    "source_sha256": "55d1c1d2620ad02622597034aef219640ea0ee8760affea92004336b658b4f2a",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {
+      "research/continuum_subtraction.md": {
+        "public_path": "archive/reports/research/continuum_subtraction.md",
+        "status": "EXPORTED"
+      }
+    }
+  },
+  "status": "CONVERGENCE_REPAIRED_PSD_PROPAGATION_REJECTED",
+  "source_sha256": "2c1537e5c30fddab4608acf1818b542e8084ae81b768cadced74878685408df9",
+  "proves_RH": false,
+  "refutes_RH": false,
+  "main_graph_merge": false,
+  "exact_checks": {
+    "k_norm_squared_times_sqrt_two": "33/32",
+    "k_flux_norm_squared_times_sqrt_two": "1203/128",
+    "energy_square_comparison_gap": "23283/100000",
+    "all_N_negative_D_bound": "-(EulerGamma+log(4*pi))/64",
+    "finite_endpoint_value": "1/4",
+    "actual_xi_endpoint_value": "1/2"
+  },
+  "interval_checks": {
+    "precision_bits": 192,
+    "energy_N1": "[1.06066017177982128660126654315727355892725390653271105488 +/- 3.17e-57]",
+    "energy_N2": "[1.00168691220301541072096893176238491000575868496408760655 +/- 6.64e-57]",
+    "energy_increment": "[-0.05897325957680587588029761139488864892149522156862344833 +/- 4.59e-57]",
+    "D_N1_at_i_over_2": "[-0.0485662486229816195872563075679970981068821002746210262275 +/- 2.87e-59]",
+    "energy_increment_negative": true,
+    "D_negative": true
+  },
+  "noncertified_independent_integrals": {
+    "precision_decimal_digits": 60,
+    "certified": false,
+    "method": "mpmath quad on fixed finite intervals; no certified tails",
+    "F1_at_i_over_2": "0.25",
+    "D1_from_integrals": "-0.0485662486229816195872563075679970981068814",
+    "D_absolute_difference": "7.1503588e-43",
+    "energies": [
+      {
+        "N": 1,
+        "quadrature": "1.06066017177982128660126654315727355892725",
+        "absolute_difference": "1.860038e-44"
+      },
+      {
+        "N": 2,
+        "quadrature": "1.00168691220301541072096893176238491000576",
+        "absolute_difference": "1.860038e-44"
+      }
+    ]
+  },
+  "scope": "Canonical finite corrected kernels; no negativity claim about actual K_Phi or Weil form",
+  "analytic_proofs": "research/continuum_subtraction.md"
+}

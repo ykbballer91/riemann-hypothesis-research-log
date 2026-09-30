@@ -1,0 +1,141 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "experiments/results/desogus-targeted-checks.json",
+    "source_sha256": "c0d6691c17863d07502cba901f6c06b5188529607ec50167d9d7aebd5f753e39",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {}
+  },
+  "external_claim_status": "UNVERIFIED EXTERNAL PROOF CLAIM",
+  "proves_RH": false,
+  "refutes_RH": false,
+  "verifies_external_full_proof": false,
+  "source_sha256": "9c2b2045b65419380496a5c8475345a8c5afa57c4df856c46d09a126a8f3ad65",
+  "paper_tex_sha256": "af2f080510ec9dbeef6b2a1616e71f4727165573bccb480e7381e6a17bcbce79",
+  "precision_bits": 256,
+  "python_flint_version": "0.9.0",
+  "printed_matrix": {
+    "dimension": 7,
+    "exact_rational_gershgorin_pass": true,
+    "minimum_margin_exceeds": "0.5198729787",
+    "margin_enclosures": [
+      "[0.700738335724297033184443267899506795548769690 +/- 2.32e-46]",
+      "[0.573630926229253578677585895208930314180067573 +/- 4.11e-46]",
+      "[0.522741987854269695113622873092664623725201490 +/- 1.93e-46]",
+      "[0.519872978743408619261086394967795700558339005 +/- 8.25e-47]",
+      "[0.583623774066232923961750421243173354215816589 +/- 4.93e-46]",
+      "[0.682908027444328672134125487352460688999220590 +/- 1.73e-46]",
+      "[0.863360141220409463664735259304077873546328199 +/- 1.69e-47]"
+    ],
+    "verifies_from_weil_form_assembly": false,
+    "verifies_infinite_complement": false
+  },
+  "selected_arithmetic_budgets": {
+    "values": [
+      {
+        "k": 2,
+        "awgc_margin": "0",
+        "master_margin": "[1.19314718055994530941723212145817656807550013 +/- 4.37e-45]",
+        "safe_aligned_margin": "[1.19314718055994530941723212145817656807550013 +/- 4.37e-45]"
+      },
+      {
+        "k": 3,
+        "awgc_margin": "[0.127353668605825939906714013747563234671803791 +/- 3.50e-46]",
+        "master_margin": "[1.59861228866810969139524523692252570464749056 +/- 2.18e-45]",
+        "safe_aligned_margin": "[1.58990407779084229057315400363285490203487429 +/- 4.43e-45]"
+      },
+      {
+        "k": 7,
+        "awgc_margin": "[0.463523185592550253635024237511620470972571808 +/- 3.48e-46]",
+        "master_margin": "[2.32159365385872643820995026274372306757444153 +/- 8.30e-46]",
+        "safe_aligned_margin": "[2.28888280677212132067105307110654765624195987 +/- 7.65e-46]"
+      },
+      {
+        "k": 8,
+        "awgc_margin": "[0.524614594818670453947354743518199128660981741 +/- 2.04e-46]",
+        "master_margin": "[2.56520110961470776433753269580442725561693538 +/- 4.69e-45]",
+        "safe_aligned_margin": "[2.51924392438723805238719693392028026912950959 +/- 1.76e-45]"
+      },
+      {
+        "k": 32,
+        "awgc_margin": "[0.956825285759746681058652567620275037232383175 +/- 3.84e-46]",
+        "master_margin": "[3.22230145334809770669312401078235582696352474 +/- 3.47e-45]",
+        "safe_aligned_margin": "[3.11540469358673688840982809936437303711700321 +/- 7.32e-46]"
+      },
+      {
+        "k": 33,
+        "awgc_margin": "[0.111804998077434125983291499630783453684931218 +/- 2.54e-47]",
+        "master_margin": "[1.97650540314534906018637119462889026892870348 +/- 3.06e-45]",
+        "safe_aligned_margin": "[1.87814156017034755057910106868588525178093015 +/- 2.95e-45]"
+      },
+      {
+        "k": 34,
+        "awgc_margin": "[0.263253960993946783806508355485600599794288293 +/- 4.83e-46]",
+        "master_margin": "[2.13799605546944481656976216153061630282695132 +/- 3.33e-45]",
+        "safe_aligned_margin": "[2.05219872469382687304665316069857725987758393 +/- 3.72e-45]"
+      },
+      {
+        "k": 4999,
+        "awgc_margin": "[4.38459519397125459580950373511142953735034777 +/- 1.04e-45]",
+        "master_margin": "[6.86458075557056878201578864693498513614051672 +/- 2.85e-45]",
+        "safe_aligned_margin": "[6.56820727320003969820647136682622343068336442 +/- 1.79e-45]"
+      },
+      {
+        "k": 5000,
+        "awgc_margin": "[4.03270771900256325796359784445047041526061160 +/- 4.97e-45]",
+        "master_margin": "[6.95470088677001650752226914049438679349644079 +/- 4.47e-45]",
+        "safe_aligned_margin": "[6.65780903636528509442194772517089037823353372 +/- 1.05e-45]"
+      }
+    ],
+    "all_integers_certified": false,
+    "analytic_tail_certified": false,
+    "operator_lift_verified": false
+  },
+  "pivot_sign_models": [
+    {
+      "beta": "3/4",
+      "old_pivot": "1/4",
+      "x": [
+        "3",
+        "1"
+      ],
+      "cut_pivot": "-2",
+      "Q": "-2",
+      "D": "-2",
+      "formal_Q_minus_D": "0"
+    },
+    {
+      "beta": "1/4",
+      "old_pivot": "3/4",
+      "x": [
+        "1/3",
+        "1"
+      ],
+      "cut_pivot": "2/3",
+      "Q": "2/3",
+      "D": "2/3",
+      "formal_Q_minus_D": "0"
+    }
+  ],
+  "two_arm_model": {
+    "P": "2/3",
+    "b": "2/3",
+    "Q": "2/3",
+    "minimizing_t": [
+      "-1",
+      "-1"
+    ],
+    "one_arm_debit": "2/3",
+    "exact_two_arm_schur": "-2/3",
+    "one_debit_expression": "0",
+    "actual_weil_counterexample": false,
+    "scope": "Printed finite algebra and missing premise only; no arithmetic realization assumed"
+  }
+}

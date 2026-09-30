@@ -1,0 +1,24 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "research/strategy_reset/notes/finite_identity_checks.json",
+    "source_sha256": "b34b72ee849a04bfa539a533a67a06223b670ebd0c18d9f3ef8c6a536c8115b7",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {}
+  },
+  "purpose": "Finite exact sanity checks; general convergence and identities proved in the audit note",
+  "integer_limit": 1000,
+  "divisor_closure_cases": 1000,
+  "signed_log_identity_cases": 1000,
+  "generalized_mangoldt_polynomial_cases": 4000,
+  "arithmetic": "Exact integer coefficients in formal log-prime variables; no floating point",
+  "all_checks_passed": true,
+  "asymptotic_or_RH_inference": false
+}

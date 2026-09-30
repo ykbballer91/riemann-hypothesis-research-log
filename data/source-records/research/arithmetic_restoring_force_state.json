@@ -1,0 +1,82 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "research/arithmetic_restoring_force_state.json",
+    "source_sha256": "46c24890ec9192b672cc373d1a19cb3b6f202c5af036506adc434ac268d476a8",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {
+      "research/arithmetic_restoring_force/preservation_baseline.json": {
+        "public_path": null,
+        "status": "SOURCE_REFERENCE_NOT_INCLUDED"
+      },
+      "research/arithmetic_restoring_force/preservation_check.json": {
+        "public_path": "data/source-records/research/arithmetic_restoring_force/preservation_check.json",
+        "status": "EXPORTED"
+      }
+    }
+  },
+  "audit_date": "2026-09-30",
+  "rh_status": "OPEN",
+  "task_kind": "LIMITED_INDEPENDENT_AUDIT",
+  "scalar_restoring_sign_found": false,
+  "theta_off_axis_obstruction_found": false,
+  "zero_dynamics_restoring_law_found": false,
+  "prior_theta_overlap_checked": true,
+  "new_arithmetic_constraint_found": false,
+  "rh_closed": false,
+  "boolean_scope": "The false success flags mean no NEW RH-independent global confinement law was obtained. Known local/exterior scalar signs and forward strip contraction are retained, not denied.",
+  "known_partial_scalar_signs": [
+    "Q=Re(xi'/xi)>0 for sigma>1, and Q<0 for sigma<0",
+    "a*Q(1/2+a,0)>0 for real a!=0 by the positive actual theta kernel"
+  ],
+  "known_deformation_fact": "In the repository normalization the forward heat-parameter deformation contracts an initial strip of width Delta to sqrt(max(Delta^2-2h,0)). Delta=1/2 gives the classical safe time h=1/8, not a proof at time zero.",
+  "candidate_A_status": "STOP_GLOBAL_SIGN_RH_EQUIVALENT_OTHER_SIMPLE_LAWS_REFUTED",
+  "candidate_B_status": "STOP_EXACT_PRIOR_D4_OVERLAP_NO_INDEPENDENT_KERNEL_INEQUALITY",
+  "candidate_C_status": "STOP_KNOWN_FORWARD_CONTRACTION_NO_TIME_ZERO_BRIDGE",
+  "global_logxi_sign_equivalent_to_RH": true,
+  "negative_logxi_restoring_law_refuted": true,
+  "prime_only_fixed_sign_refuted": true,
+  "global_horizontal_log_convexity_refuted": true,
+  "center_positive_curvature_alone_insufficient": true,
+  "theta_kernel_positive_unconditionally": true,
+  "theta_equations_exact": true,
+  "theta_equations_new": false,
+  "theta_toeplitz_PFinfinity_membership": false,
+  "fourier_Laguerre_Polya_membership": "RH_EQUIVALENT_UNPROVED",
+  "individual_heat_zero_universal_inward_motion_refuted": true,
+  "current_obstruction": "The exact scalar sign and theta nonvanishing goals are RH-equivalent; actual theta positivity/known shape do not provide an independent oscillatory lower bound. Known deformation contraction does not identify time zero with the real-zero regime.",
+  "recommended_next_action": null,
+  "decision": "NO ARITHMETIC RESTORING FORCE IDENTIFIED",
+  "number_of_surviving_new_candidates": 0,
+  "hilbert_polya_reopened": false,
+  "new_positive_metric_or_topology": false,
+  "arbitrary_energy_weight_added": false,
+  "physical_analogy_used_as_evidence": false,
+  "proof_graph_merge": false,
+  "new_mertens_or_zero_bound": null,
+  "finite_diagnostics": {
+    "grid_points": 128,
+    "center_curvature_points": 16,
+    "theta_integral_comparisons": 5,
+    "mpmath_dps": 50,
+    "cross_check_dps": 80,
+    "interval_certificate": false,
+    "global_sign_counterexample_found": false,
+    "negative_horizontal_curvature_found": true,
+    "RH_inference_from_numerics": false
+  },
+  "prior_file_preservation": {
+    "baseline_count": 329,
+    "baseline": "research/arithmetic_restoring_force/preservation_baseline.json",
+    "verification": "research/arithmetic_restoring_force/preservation_check.json"
+  },
+  "source_scope": "Selected primary theorem statements and explicit calculations; not exhaustive literature coverage or full independent re-verification of all cited proofs.",
+  "termination": "AUDIT_COMPLETE_STOP_NO_FOURTH_CANDIDATE"
+}

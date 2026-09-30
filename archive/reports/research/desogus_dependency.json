@@ -1,0 +1,2939 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "research/desogus_dependency.json",
+    "source_sha256": "221e1f8fa2c82f90557895430d55a7dfc66820285387870a8c7b48148c71c5eb",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {
+      "experiments/results/desogus-safe-cut-repair.json": {
+        "public_path": "artifacts/experiments/results/desogus-safe-cut-repair.json",
+        "status": "EXPORTED"
+      },
+      "experiments/results/desogus-targeted-checks.json": {
+        "public_path": "artifacts/experiments/results/desogus-targeted-checks.json",
+        "status": "EXPORTED"
+      },
+      "experiments/scripts/desogus_safe_cut_repair.py": {
+        "public_path": "artifacts/experiments/scripts/desogus_safe_cut_repair.py",
+        "status": "EXPORTED"
+      },
+      "literature/source_cache/desogus-The_Three_Gates_Supplementary_V2.zip": {
+        "public_path": null,
+        "status": "SOURCE_REFERENCE_NOT_INCLUDED"
+      },
+      "proofs/audits/desogus-computation-and-repair.md": {
+        "public_path": "archive/audits/proofs/audits/desogus-computation-and-repair.md",
+        "status": "EXPORTED"
+      },
+      "proofs/audits/desogus-extra-debit-repair.md": {
+        "public_path": "archive/audits/proofs/audits/desogus-extra-debit-repair.md",
+        "status": "EXPORTED"
+      },
+      "proofs/audits/desogus-gate2.md": {
+        "public_path": "archive/audits/proofs/audits/desogus-gate2.md",
+        "status": "EXPORTED"
+      },
+      "proofs/audits/desogus-gate3.md": {
+        "public_path": "archive/audits/proofs/audits/desogus-gate3.md",
+        "status": "EXPORTED"
+      },
+      "proofs/audits/desogus-pivot-cancellation-stress.md": {
+        "public_path": "archive/audits/proofs/audits/desogus-pivot-cancellation-stress.md",
+        "status": "EXPORTED"
+      },
+      "research/desogus_source_provenance.json": {
+        "public_path": null,
+        "status": "SOURCE_REFERENCE_NOT_INCLUDED"
+      }
+    }
+  },
+  "checked_at": "2026-09-29",
+  "paper": "Marco Desogus, The Three Gates: A Rooted-Operator Approach to Weil Positivity",
+  "audit_version": "2609.20367v2",
+  "comparison_version": "2609.20367v1",
+  "status": "UNVERIFIED EXTERNAL PROOF CLAIM",
+  "provenance": "research/desogus_source_provenance.json",
+  "inventory_scope": "番号付き90 environments（定理・補題・系・命題・定義・注記・audit・certificate）。Appendixの番号なしcertificateは別表参照。全文をskimし主要依存を選別。完全独立証明ではない。",
+  "important_distinction": "PROVED_IN_PAPER is proof-text/certificate presence claimed by author, never an endorsement. All INDEPENDENTLY_VERIFIED=NO in this literature inventory. Other agent audits are separate.",
+  "nodes": [
+    {
+      "id": "D0.1",
+      "number": "0.1",
+      "title": "Theorem 0.1 (Main theorem).",
+      "tex_environment": "theorem",
+      "tex_label": "thm:main-rh",
+      "tex_line": 130,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S0.Thmtheorem1",
+      "types": [
+        "new analytic theorem",
+        "equivalence criterion"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT_IN_SECTION_7",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [],
+      "external_citation_keys": [],
+      "cited_node_ids": []
+    },
+    {
+      "id": "D1.1",
+      "number": "1.1",
+      "title": "Theorem 1.1 (Weil positivity criterion).",
+      "tex_environment": "theorem",
+      "tex_label": "thm:weil",
+      "tex_line": 234,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S1.Thmtheorem1",
+      "types": [
+        "classical known result",
+        "externally cited result",
+        "equivalence criterion"
+      ],
+      "PROVED_IN_PAPER": "EXTERNAL_RESULT_STATED",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [],
+      "external_citation_keys": [],
+      "cited_node_ids": []
+    },
+    {
+      "id": "D1.2",
+      "number": "1.2",
+      "title": "Theorem 1.2 (Restricted odd Weil criterion).",
+      "tex_environment": "theorem",
+      "tex_label": "thm:weil-odd",
+      "tex_line": 243,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S1.Thmtheorem2",
+      "types": [
+        "equivalence criterion",
+        "new analytic theorem"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "eq:centered-zero-sum",
+        "eq:PW-tail-q",
+        "eq:odd-transform-symmetry",
+        "eq:odd-tail-localization"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": [],
+      "audit_note": "全 real odd C_c^infty(R) を量化。finite supportの上限固定はない。zero orbit interpolation と convolution powers の tail kill。既知RHを仮定しない。"
+    },
+    {
+      "id": "D1.3",
+      "number": "1.3",
+      "title": "Lemma 1.3 (Exterior-harmonic cancellation).",
+      "tex_environment": "lemma",
+      "tex_label": "lem:zero-extension-proof",
+      "tex_line": 442,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S1.Thmtheorem3",
+      "types": [
+        "new analytic theorem",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "eq:exterior-harmonic",
+        "eq:endpoint-cancel"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": []
+    },
+    {
+      "id": "D1.4",
+      "number": "1.4",
+      "title": "Lemma 1.4 (Cofinal-support reduction).",
+      "tex_environment": "lemma",
+      "tex_label": "lem:cofinal",
+      "tex_line": 509,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S1.Thmtheorem4",
+      "types": [
+        "new analytic theorem",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "eq:zero-extension"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": []
+    },
+    {
+      "id": "D2.1",
+      "number": "2.1",
+      "title": "Theorem 2.1 (Global cellular covariance theorem).",
+      "tex_environment": "theorem",
+      "tex_label": "thm:gate1",
+      "tex_line": 623,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S2.Thmtheorem1",
+      "types": [
+        "computer-assisted theorem",
+        "interval certificate",
+        "new analytic theorem"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "eq:pi",
+        "eq:mu",
+        "eq:Mder",
+        "eq:hybrid"
+      ],
+      "external_citation_keys": [
+        "Johansson2015",
+        "FousseEtAl2007"
+      ],
+      "cited_node_ids": [],
+      "audit_note": "Y>=2,d>0,0<=s<=d/2。有限 compact boxes と全Y/large-d analytic tail の両方が必要。最終MASTERから明示引用なし。"
+    },
+    {
+      "id": "D2.2",
+      "number": "2.2",
+      "title": "Lemma 2.2 (Uniform derivative tail).",
+      "tex_environment": "lemma",
+      "tex_label": "lem:tail",
+      "tex_line": 688,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S2.Thmtheorem2",
+      "types": [
+        "new analytic theorem",
+        "limiting argument"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "eq:Mder",
+        "eq:Fk",
+        "eq:hybrid",
+        "eq:Gk",
+        "eq:Y-Lipschitz-tail"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": []
+    },
+    {
+      "id": "D2.3",
+      "number": "2.3",
+      "title": "Corollary 2.3 (Gate I: midpoint shell).",
+      "tex_environment": "corollary",
+      "tex_label": "cor:gate1",
+      "tex_line": 777,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S2.Thmtheorem3",
+      "types": [
+        "new analytic theorem"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "thm:gate1",
+        "eq:gate1-shell-positive",
+        "eq:shell-reserve-defined",
+        "eq:small-shell-linear-reserve"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": [
+        "D2.1"
+      ]
+    },
+    {
+      "id": "D2.4",
+      "number": "2.4",
+      "title": "Audit statement 2.4 (Scope of Gate I).",
+      "tex_environment": "audit",
+      "tex_label": null,
+      "tex_line": 802,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S2.Thmtheorem4",
+      "types": [
+        "scope commentary"
+      ],
+      "PROVED_IN_PAPER": "NOT_APPLICABLE",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "cor:gate1"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": [
+        "D2.3"
+      ]
+    },
+    {
+      "id": "D3.1",
+      "number": "3.1",
+      "title": "Lemma 3.1 (Exact full-space unit-cell decomposition).",
+      "tex_environment": "lemma",
+      "tex_label": "lem:ambient-unit-cells",
+      "tex_line": 847,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S3.Thmtheorem1",
+      "types": [
+        "new analytic theorem",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "eq:ambient-M4"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": []
+    },
+    {
+      "id": "D3.2",
+      "number": "3.2",
+      "title": "Lemma 3.2 (Divisor partial-isometry square).",
+      "tex_environment": "lemma",
+      "tex_label": "lem:divisor-square",
+      "tex_line": 871,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S3.Thmtheorem2",
+      "types": [
+        "new analytic theorem",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [],
+      "external_citation_keys": [],
+      "cited_node_ids": []
+    },
+    {
+      "id": "D3.3",
+      "number": "3.3",
+      "title": "Lemma 3.3 (True affine translation identity).",
+      "tex_environment": "lemma",
+      "tex_label": "lem:TR1",
+      "tex_line": 935,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S3.Thmtheorem3",
+      "types": [
+        "new analytic theorem",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [],
+      "external_citation_keys": [],
+      "cited_node_ids": []
+    },
+    {
+      "id": "D3.4",
+      "number": "3.4",
+      "title": "Lemma 3.4 (Unconditional Chebyshev capacity).",
+      "tex_environment": "lemma",
+      "tex_label": "lem:chebyshev-capacity",
+      "tex_line": 987,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S3.Thmtheorem4",
+      "types": [
+        "computer-assisted theorem",
+        "interval certificate",
+        "new analytic theorem"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "app:finite-certificates",
+        "eq:Ctail",
+        "eq:rhoaff",
+        "eq:iota"
+      ],
+      "external_citation_keys": [
+        "Schoenfeld1976",
+        "Dusart2010"
+      ],
+      "cited_node_ids": []
+    },
+    {
+      "id": "D4.1",
+      "number": "4.1",
+      "title": "Lemma 4.1 (Feshbach reserve and primal target diagonal).",
+      "tex_environment": "lemma",
+      "tex_label": "lem:fesh",
+      "tex_line": 1075,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S4.Thmtheorem1",
+      "types": [
+        "new analytic theorem",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "eq:young",
+        "eq:primal-target-diagonal",
+        "eq:fesh-reserve"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": []
+    },
+    {
+      "id": "D4.2",
+      "number": "4.2",
+      "title": "Lemma 4.2 (OSPR inequality).",
+      "tex_environment": "lemma",
+      "tex_label": "lem:OSPR",
+      "tex_line": 1128,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S4.Thmtheorem2",
+      "types": [
+        "classical known result",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [],
+      "external_citation_keys": [],
+      "cited_node_ids": []
+    },
+    {
+      "id": "D4.3",
+      "number": "4.3",
+      "title": "Lemma 4.3 (Analytic one-defect inequality).",
+      "tex_environment": "lemma",
+      "tex_label": "lem:onedefect-analytic",
+      "tex_line": 1204,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S4.Thmtheorem3",
+      "types": [
+        "classical known result",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "eq:onedefect"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": []
+    },
+    {
+      "id": "D5.1",
+      "number": "5.1",
+      "title": "Lemma 5.1 (Cauchy–Carleman kernel transport).",
+      "tex_environment": "lemma",
+      "tex_label": "lem:cc-kernel",
+      "tex_line": 1293,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S5.Thmtheorem1",
+      "types": [
+        "new analytic theorem",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "eq:rho-framework",
+        "eq:cauchy-transport-final",
+        "eq:carleman-transport-final",
+        "eq:collar-final"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": []
+    },
+    {
+      "id": "D5.2",
+      "number": "5.2",
+      "title": "Lemma 5.2 (Exact cancellation of the regular gamma kernel).",
+      "tex_environment": "lemma",
+      "tex_label": "lem:gamma-cancellation",
+      "tex_line": 1339,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S5.Thmtheorem2",
+      "types": [
+        "new analytic theorem",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "lem:cc-kernel",
+        "eq:gamma-operator-exact",
+        "prop:full-form-transport",
+        "eq:collar-final",
+        "eq:gamma-cancel-exact"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": [
+        "D5.1",
+        "D5.3"
+      ]
+    },
+    {
+      "id": "D5.3",
+      "number": "5.3",
+      "title": "Proposition 5.3 (Transport of the complete quadratic form).",
+      "tex_environment": "proposition",
+      "tex_label": "prop:full-form-transport",
+      "tex_line": 1402,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S5.Thmtheorem3",
+      "types": [
+        "new analytic theorem",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "eq:exact-localized-operator",
+        "lem:cc-kernel"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": [
+        "D5.1"
+      ],
+      "audit_note": "complete closed difference form の unitary transport を主張。off-diagonal kernel一致だけでは diagonal/killing identity を保証しない。最重要 exact-realization obligation。"
+    },
+    {
+      "id": "D6.1",
+      "number": "6.1",
+      "title": "Lemma 6.1 (Root-lift and associative shorting).",
+      "tex_environment": "lemma",
+      "tex_label": "lem:root-lift-final",
+      "tex_line": 1475,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem1",
+      "types": [
+        "classical known result",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "eq:rooted-Gram",
+        "eq:S-eta-final",
+        "eq:true-Tk"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": []
+    },
+    {
+      "id": "D6.2",
+      "number": "6.2",
+      "title": "Lemma 6.2 (Variational formula for the true rooted load).",
+      "tex_environment": "lemma",
+      "tex_label": "lem:root-load-final",
+      "tex_line": 1516,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem2",
+      "types": [
+        "classical known result",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "eq:rooted-two-block"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": [
+        "D6.1"
+      ]
+    },
+    {
+      "id": "D6.3",
+      "number": "6.3",
+      "title": "Lemma 6.3 (Polar moment identity).",
+      "tex_environment": "lemma",
+      "tex_label": "lem:polar-moment",
+      "tex_line": 1575,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem3",
+      "types": [
+        "new analytic theorem",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "eq:mellin-oddness-polar",
+        "eq:polar-moment"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": []
+    },
+    {
+      "id": "D6.4",
+      "number": "6.4",
+      "title": "Lemma 6.4 (Ground–reflection representation of the polar vector).",
+      "tex_environment": "lemma",
+      "tex_label": "lem:polar-ground-reflection",
+      "tex_line": 1603,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem4",
+      "types": [
+        "new analytic theorem",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "eq:polar-ground-reflection",
+        "eq:polar-ground-functional"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": []
+    },
+    {
+      "id": "D6.5",
+      "number": "6.5",
+      "title": "Remark 6.5.",
+      "tex_environment": "remark",
+      "tex_label": null,
+      "tex_line": 1652,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem5",
+      "types": [
+        "scope commentary"
+      ],
+      "PROVED_IN_PAPER": "NOT_APPLICABLE",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "lem:polar-ground-reflection"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": [
+        "D6.4"
+      ]
+    },
+    {
+      "id": "D6.6",
+      "number": "6.6",
+      "title": "Lemma 6.6 (Source/target ground-line invariance).",
+      "tex_environment": "lemma",
+      "tex_label": "lem:source-target-ground",
+      "tex_line": 1666,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem6",
+      "types": [
+        "new analytic theorem",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "eq:source-target-ground"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": []
+    },
+    {
+      "id": "D6.7",
+      "number": "6.7",
+      "title": "Lemma 6.7 (Exact root-adapted fibre normalization).",
+      "tex_environment": "lemma",
+      "tex_label": "lem:root-adapted-fibre",
+      "tex_line": 1717,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem7",
+      "types": [
+        "new analytic theorem",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "eq:Wk-root-constant"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": []
+    },
+    {
+      "id": "D6.8",
+      "number": "6.8",
+      "title": "Lemma 6.8 (Exact endpoint Möbius nesting).",
+      "tex_environment": "lemma",
+      "tex_label": "lem:endpoint-mobius-nesting",
+      "tex_line": 1754,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem8",
+      "types": [
+        "new analytic theorem",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "eq:endpoint-mobius-split",
+        "eq:Uk-old-new",
+        "eq:qk-Uk-one"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": []
+    },
+    {
+      "id": "D6.9",
+      "number": "6.9",
+      "title": "Lemma 6.9 (Edge-local gauge covariance).",
+      "tex_environment": "lemma",
+      "tex_label": "lem:edge-local-gauge",
+      "tex_line": 1846,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem9",
+      "types": [
+        "new analytic theorem",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [],
+      "external_citation_keys": [],
+      "cited_node_ids": []
+    },
+    {
+      "id": "D6.10",
+      "number": "6.10",
+      "title": "Audit statement 6.10 (What edge-local covariance does not prove).",
+      "tex_environment": "audit",
+      "tex_label": "audit:edge-local-limit",
+      "tex_line": 1885,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem10",
+      "types": [
+        "scope commentary"
+      ],
+      "PROVED_IN_PAPER": "NOT_APPLICABLE",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "lem:edge-local-gauge",
+        "eq:edge-local-young",
+        "sec:harmonic-graph-lock"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": [
+        "D6.9"
+      ]
+    },
+    {
+      "id": "D6.11",
+      "number": "6.11",
+      "title": "Audit statement 6.11 (Compatibility limit of the root-adapted normalization).",
+      "tex_environment": "audit",
+      "tex_label": "audit:root-adapted-limit",
+      "tex_line": 1900,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem11",
+      "types": [
+        "scope commentary"
+      ],
+      "PROVED_IN_PAPER": "NOT_APPLICABLE",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "eq:residue-vs-profile",
+        "sec:harmonic-graph-lock"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": []
+    },
+    {
+      "id": "D6.12",
+      "number": "6.12",
+      "title": "Lemma 6.12 (Exact common-cell unitary and true ground profile).",
+      "tex_environment": "lemma",
+      "tex_label": "lem:common-cell-unitary",
+      "tex_line": 1933,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem12",
+      "types": [
+        "new analytic theorem",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "lem:polar-ground-reflection"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": [
+        "D6.4"
+      ]
+    },
+    {
+      "id": "D6.13",
+      "number": "6.13",
+      "title": "Lemma 6.13 (DFT-compatible mean/mean-zero splitting).",
+      "tex_environment": "lemma",
+      "tex_label": "lem:common-r-dft",
+      "tex_line": 1965,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem13",
+      "types": [
+        "new analytic theorem",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "eq:qk-leak-exact",
+        "eq:DFT-P-commute",
+        "eq:qk-poincare",
+        "eq:qnum"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": []
+    },
+    {
+      "id": "D6.14",
+      "number": "6.14",
+      "title": "Corollary 6.14 (Familywise DFT-compatible ground splitting).",
+      "tex_environment": "corollary",
+      "tex_label": "cor:common-r-removes-gauge",
+      "tex_line": 2041,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem14",
+      "types": [
+        "new analytic theorem",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "ASSERTED_OR_DEFERRED",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [],
+      "external_citation_keys": [],
+      "cited_node_ids": []
+    },
+    {
+      "id": "D6.15",
+      "number": "6.15",
+      "title": "Audit statement 6.15 (Scope of the common-residue splitting).",
+      "tex_environment": "audit",
+      "tex_label": "audit:common-r-scope",
+      "tex_line": 2049,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem15",
+      "types": [
+        "scope commentary"
+      ],
+      "PROVED_IN_PAPER": "NOT_APPLICABLE",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "eq:epsilon-vs-reserve"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": [
+        "D6.13"
+      ]
+    },
+    {
+      "id": "D6.16",
+      "number": "6.16",
+      "title": "Lemma 6.16 (Fixed-target branch gauge).",
+      "tex_environment": "lemma",
+      "tex_label": "lem:fixed-target-gauge",
+      "tex_line": 2121,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem16",
+      "types": [
+        "new analytic theorem",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "eq:fixed-target-PQ"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": []
+    },
+    {
+      "id": "D6.17",
+      "number": "6.17",
+      "title": "Lemma 6.17 (Two-source mean-zero interaction).",
+      "tex_environment": "lemma",
+      "tex_label": "lem:pair-capacity",
+      "tex_line": 2163,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem17",
+      "types": [
+        "new analytic theorem"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "eq:pair-pointwise",
+        "eq:pair-capacity"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": []
+    },
+    {
+      "id": "D6.18",
+      "number": "6.18",
+      "title": "Analytic certificate 6.18 (Parent/source mean capacity).",
+      "tex_environment": "analyticcertificate",
+      "tex_label": "cert:pmc-analytic",
+      "tex_line": 2236,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem18",
+      "types": [
+        "new analytic theorem"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "eq:PMC-two"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": []
+    },
+    {
+      "id": "D6.19",
+      "number": "6.19",
+      "title": "Corollary 6.19 (Weighted Laplacian on the source means).",
+      "tex_environment": "corollary",
+      "tex_label": "cor:pmc-laplacian",
+      "tex_line": 2282,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem19",
+      "types": [
+        "new analytic theorem"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "cert:pmc-analytic",
+        "eq:PMC-global"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": [
+        "D6.18"
+      ]
+    },
+    {
+      "id": "D6.20",
+      "number": "6.20",
+      "title": "Theorem 6.20 (Coherent multi-source capacity).",
+      "tex_environment": "theorem",
+      "tex_label": "thm:CMC",
+      "tex_line": 2317,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem20",
+      "types": [
+        "new analytic theorem",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "lem:pair-capacity",
+        "eq:CMC-internal",
+        "eq:CMC-potential",
+        "eq:CMC-form",
+        "eq:CMC-short"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": [
+        "D6.17"
+      ]
+    },
+    {
+      "id": "D6.21",
+      "number": "6.21",
+      "title": "Corollary 6.21 (Source-resolved transverse Feshbach bound).",
+      "tex_environment": "corollary",
+      "tex_label": "cor:source-resolved-transverse",
+      "tex_line": 2455,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem21",
+      "types": [
+        "new analytic theorem",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "lem:fixed-target-gauge",
+        "eq:CMC-true-source",
+        "eq:source-resolved-loss",
+        "eq:fesh-reserve",
+        "eq:transverse-direct-pass"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": [
+        "D4.1",
+        "D6.16"
+      ]
+    },
+    {
+      "id": "D6.22",
+      "number": "6.22",
+      "title": "Audit statement 6.22 (What CMC closes, and what it does not).",
+      "tex_environment": "audit",
+      "tex_label": "audit:CMC-scope",
+      "tex_line": 2496,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem22",
+      "types": [
+        "scope commentary"
+      ],
+      "PROVED_IN_PAPER": "NOT_APPLICABLE",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "thm:CMC",
+        "cor:source-resolved-transverse",
+        "eq:transverse-direct-pass",
+        "sec:green-root-reduction"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": [
+        "D6.20",
+        "D6.21"
+      ]
+    },
+    {
+      "id": "D6.23",
+      "number": "6.23",
+      "title": "Lemma 6.23 (True-core finite Schur criterion).",
+      "tex_environment": "lemma",
+      "tex_label": "lem:true-core-finite-schur",
+      "tex_line": 2524,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem23",
+      "types": [
+        "equivalence criterion",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "eq:true-core-finite-barrier"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": [],
+      "audit_note": "P有限rank、P polar vector=polar vector、Q C Q>=gamma Q>0、B=QCP。尾とcouplingを含むSchur判定。有限matrixのみでは不足。"
+    },
+    {
+      "id": "D6.24",
+      "number": "6.24",
+      "title": "Corollary 6.24 (True-core endpoint Krylov–Radau criterion).",
+      "tex_environment": "corollary",
+      "tex_label": "cor:true-core-endpoint-radau",
+      "tex_line": 2569,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem24",
+      "types": [
+        "equivalence criterion",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "eq:lanczos-C-one-link",
+        "eq:true-core-finite-barrier",
+        "eq:KR-C-finite",
+        "lem:true-core-finite-schur"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": [
+        "D6.23"
+      ],
+      "audit_note": "cofinalな全endpointに有限rank P_N、tail下界と有限Schur判定が要る。単一baseの行列から全endpointへは進めない。"
+    },
+    {
+      "id": "D6.25",
+      "number": "6.25",
+      "title": "Remark 6.25 (Already proved tail mechanism).",
+      "tex_environment": "remark",
+      "tex_label": null,
+      "tex_line": 2595,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem25",
+      "types": [
+        "scope commentary"
+      ],
+      "PROVED_IN_PAPER": "NOT_APPLICABLE",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "eq:KR-C-tail",
+        "eq:KR-C-finite"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": [
+        "D6.24"
+      ]
+    },
+    {
+      "id": "D6.26",
+      "number": "6.26",
+      "title": "Lemma 6.26 (Sherman–Morrison root residual).",
+      "tex_environment": "lemma",
+      "tex_label": "lem:root-residual",
+      "tex_line": 2629,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem26",
+      "types": [
+        "classical known result",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "eq:SM-polar",
+        "eq:eta-delta-zeta",
+        "eq:true-load",
+        "eq:ell-residual"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": [
+        "D6.2"
+      ]
+    },
+    {
+      "id": "D6.27",
+      "number": "6.27",
+      "title": "Lemma 6.27 (Exact full-operator harmonic graph).",
+      "tex_environment": "lemma",
+      "tex_label": "lem:harmonic-graph",
+      "tex_line": 2697,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem27",
+      "types": [
+        "classical known result",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "lem:root-lift-final",
+        "eq:full-harmonic-pullback",
+        "lem:root-residual",
+        "eq:C-on-A-harmonic",
+        "eq:H-polar-pullback",
+        "eq:H-core-pullback"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": [
+        "D6.1",
+        "D6.26"
+      ],
+      "audit_note": "A_k正値かつ inverse/domain admissible。点ごとのstrict positivityとbounded invertibilityは無限次元では同義でない。"
+    },
+    {
+      "id": "D6.28",
+      "number": "6.28",
+      "title": "Lemma 6.28 (Exact post-short scalar cancellation).",
+      "tex_environment": "lemma",
+      "tex_label": "lem:post-short-scalar",
+      "tex_line": 2782,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem28",
+      "types": [
+        "classical known result",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "eq:postshort-divisibility",
+        "eq:postshort-Apre",
+        "eq:postshort-cut",
+        "eq:postshort-forcing",
+        "eq:postshort-moment",
+        "eq:postshort-hhat",
+        "eq:postshort-Pi",
+        "eq:postshort-scalar-bound"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": [],
+      "audit_note": "positive multiplication coefficients, 1-beta I>0。scalar inequality部分はPi_phys>0が明示条件。Pi=0 continuityはnegative pivotへ拡張しない。"
+    },
+    {
+      "id": "D6.29",
+      "number": "6.29",
+      "title": "Corollary 6.29 (FOLD-FORCING on the full-operator harmonic graph).",
+      "tex_environment": "corollary",
+      "tex_label": "cor:fold-forcing",
+      "tex_line": 2913,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem29",
+      "types": [
+        "new analytic theorem",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "lem:post-short-scalar",
+        "lem:harmonic-graph",
+        "prop:full-form-transport",
+        "lem:fixed-target-gauge",
+        "lem:endpoint-mobius-nesting"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": [
+        "D5.3",
+        "D6.16",
+        "D6.27",
+        "D6.28",
+        "D6.8"
+      ],
+      "audit_note": "true transported ground block=A_pre の同一性を主張する接続。g=A_pre xの代数だけでは実際のcoupling同定にならない。"
+    },
+    {
+      "id": "D6.30",
+      "number": "6.30",
+      "title": "Lemma 6.30 (Sharp true-ground rotation of the one-defect bound).",
+      "tex_environment": "lemma",
+      "tex_label": "lem:true-ground-rotation",
+      "tex_line": 2943,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem30",
+      "types": [
+        "new analytic theorem",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "eq:gamma-epsilon"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": []
+    },
+    {
+      "id": "D6.31",
+      "number": "6.31",
+      "title": "Lemma 6.31 (Shorting covariance under a split unitary).",
+      "tex_environment": "lemma",
+      "tex_label": "lem:split-unitary-short",
+      "tex_line": 3025,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem31",
+      "types": [
+        "classical known result",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [],
+      "external_citation_keys": [],
+      "cited_node_ids": []
+    },
+    {
+      "id": "D6.32",
+      "number": "6.32",
+      "title": "Corollary 6.32 (Exact physical/arithmetic short intertwining).",
+      "tex_environment": "corollary",
+      "tex_label": "cor:physical-arithmetic-short",
+      "tex_line": 3057,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem32",
+      "types": [
+        "new analytic theorem",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "lem:endpoint-mobius-nesting",
+        "lem:split-unitary-short"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": [
+        "D6.31",
+        "D6.8"
+      ]
+    },
+    {
+      "id": "D6.33",
+      "number": "6.33",
+      "title": "Lemma 6.33 (Exact true-metric nested Schur identity).",
+      "tex_environment": "lemma",
+      "tex_label": "lem:green-nested-schur",
+      "tex_line": 3098,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem33",
+      "types": [
+        "classical known result",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "eq:rooted-two-block",
+        "eq:green-2x2",
+        "eq:true-Sinv-energy-split",
+        "eq:pivot-recurrence-final",
+        "eq:green-pivot-z"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": [
+        "D6.1",
+        "D6.2"
+      ]
+    },
+    {
+      "id": "D6.34",
+      "number": "6.34",
+      "title": "Lemma 6.34 (Exact Green representation of the residual ground scalar).",
+      "tex_environment": "lemma",
+      "tex_label": "lem:green-representation",
+      "tex_line": 3172,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem34",
+      "types": [
+        "new analytic theorem",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "eq:C-harmonic-pullback",
+        "eq:green-Sp",
+        "eq:polar-ground-functional",
+        "eq:green-z-G",
+        "eq:green-pivot-G",
+        "eq:green-pivot-z"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": [
+        "D6.33",
+        "D6.4"
+      ]
+    },
+    {
+      "id": "D6.35",
+      "number": "6.35",
+      "title": "Definition 6.35 (Exact Green-root condition).",
+      "tex_environment": "definition",
+      "tex_label": "def:RGstar",
+      "tex_line": 3213,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem35",
+      "types": [
+        "equivalence criterion"
+      ],
+      "PROVED_IN_PAPER": "NOT_APPLICABLE",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [],
+      "external_citation_keys": [],
+      "cited_node_ids": []
+    },
+    {
+      "id": "D6.36",
+      "number": "6.36",
+      "title": "Theorem 6.36 (Exact one-step Green-root closure).",
+      "tex_environment": "theorem",
+      "tex_label": "thm:green-one-step",
+      "tex_line": 3233,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem36",
+      "types": [
+        "equivalence criterion",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "eq:transverse-direct-pass",
+        "eq:green-2x2",
+        "eq:green-pivot-G",
+        "eq:rooted-Gram"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": [
+        "D6.1",
+        "D6.21",
+        "D6.33",
+        "D6.34"
+      ],
+      "audit_note": "D_k positiveと exact RG* condition を前件とするone-step closure。RG*前件を未証明で消してはならない。"
+    },
+    {
+      "id": "D6.37",
+      "number": "6.37",
+      "title": "Lemma 6.37 (Second Sherman–Morrison reduction to one vector).",
+      "tex_environment": "lemma",
+      "tex_label": "lem:green-second-SM",
+      "tex_line": 3256,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem37",
+      "types": [
+        "classical known result",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "eq:green-z-zetaQ",
+        "eq:GF-sufficient",
+        "eq:GF-to-RG"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": []
+    },
+    {
+      "id": "D6.38",
+      "number": "6.38",
+      "title": "Lemma 6.38 (Hyperbolic-sine terminal scalar inequality).",
+      "tex_environment": "lemma",
+      "tex_label": "lem:terminal-scalar-closure",
+      "tex_line": 3334,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem38",
+      "types": [
+        "new analytic theorem"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "eq:terminal-scalar-rho",
+        "eq:terminal-scalar-sqrt",
+        "eq:terminal-sinh"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": []
+    },
+    {
+      "id": "D6.39",
+      "number": "6.39",
+      "title": "Corollary 6.39 (Exponential two-scale form).",
+      "tex_environment": "corollary",
+      "tex_label": "cor:terminal-two-scale",
+      "tex_line": 3389,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem39",
+      "types": [
+        "new analytic theorem"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "eq:terminal-alpha-beta",
+        "eq:terminal-scalar-rho"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": [
+        "D6.38"
+      ]
+    },
+    {
+      "id": "D6.40",
+      "number": "6.40",
+      "title": "Remark 6.40 (Equivalent monotonicity formulation).",
+      "tex_environment": "remark",
+      "tex_label": "rem:terminal-monotonicity",
+      "tex_line": 3413,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem40",
+      "types": [
+        "scope commentary"
+      ],
+      "PROVED_IN_PAPER": "NOT_APPLICABLE",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [],
+      "external_citation_keys": [],
+      "cited_node_ids": []
+    },
+    {
+      "id": "D6.41",
+      "number": "6.41",
+      "title": "Audit statement 6.41 (Scope of the terminal scalar closure).",
+      "tex_environment": "audit",
+      "tex_label": "audit:terminal-scalar-scope",
+      "tex_line": 3424,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem41",
+      "types": [
+        "scope commentary"
+      ],
+      "PROVED_IN_PAPER": "NOT_APPLICABLE",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "lem:terminal-scalar-closure",
+        "cor:terminal-two-scale",
+        "eq:terminal-alpha-beta",
+        "eq:terminal-scalar-rho",
+        "lem:Jsharp-clean",
+        "lem:mixed-parent-clean"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": [
+        "D6.38",
+        "D6.39",
+        "D6.58",
+        "D6.59"
+      ]
+    },
+    {
+      "id": "D6.42",
+      "number": "6.42",
+      "title": "Proposition 6.42 (Arithmetic weighted-ground certificate).",
+      "tex_environment": "proposition",
+      "tex_label": "thm:awgc",
+      "tex_line": 3491,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem42",
+      "types": [
+        "computer-assisted theorem",
+        "interval certificate",
+        "new analytic theorem"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "eq:sigma-tilde-lower",
+        "app:finite-certificates",
+        "lem:chebyshev-capacity",
+        "eq:awgc-tail-upper",
+        "eq:awgc-tail-lower"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": [
+        "D3.4"
+      ]
+    },
+    {
+      "id": "D6.43",
+      "number": "6.43",
+      "title": "Certified finite computation 6.43 (Finite AWGC interval run).",
+      "tex_environment": "computercertificate",
+      "tex_label": "cert:awgc-interval",
+      "tex_line": 3581,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem43",
+      "types": [
+        "computer-assisted theorem",
+        "finite computation",
+        "interval certificate"
+      ],
+      "PROVED_IN_PAPER": "CLAIMED_CERTIFICATE_APPENDIX_A",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "app:finite-certificates"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": []
+    },
+    {
+      "id": "D6.44",
+      "number": "6.44",
+      "title": "Theorem 6.44 (AWGC operator lift).",
+      "tex_environment": "theorem",
+      "tex_label": "def:AWGC-op-lift",
+      "tex_line": 3598,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem44",
+      "types": [
+        "new analytic theorem",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "DEFERRED_TO_COROLLARY_6.49",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "cor:exact-awgc-lift"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": [
+        "D6.49"
+      ]
+    },
+    {
+      "id": "D6.45",
+      "number": "6.45",
+      "title": "Corollary 6.45 (Arithmetic mismatch reserve).",
+      "tex_environment": "corollary",
+      "tex_label": "cor:awgc-reserve",
+      "tex_line": 3613,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem45",
+      "types": [
+        "new analytic theorem",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "ASSERTED_OR_DEFERRED",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [],
+      "external_citation_keys": [],
+      "cited_node_ids": []
+    },
+    {
+      "id": "D6.46",
+      "number": "6.46",
+      "title": "Lemma 6.46 (Exact inherited-ground two-scale surplus).",
+      "tex_environment": "lemma",
+      "tex_label": "lem:parent-ground-surplus",
+      "tex_line": 3622,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem46",
+      "types": [
+        "new analytic theorem",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "eq:parent-ground-mass",
+        "rem:terminal-monotonicity",
+        "eq:parent-theta-Phi"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": [
+        "D6.40"
+      ]
+    },
+    {
+      "id": "D6.47",
+      "number": "6.47",
+      "title": "Theorem 6.47 (MASTER double-load scalar budget).",
+      "tex_environment": "theorem",
+      "tex_label": "thm:MASTER-scalar",
+      "tex_line": 3690,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem47",
+      "types": [
+        "computer-assisted theorem",
+        "interval certificate",
+        "new analytic theorem"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "app:finite-certificates"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": []
+    },
+    {
+      "id": "D6.48",
+      "number": "6.48",
+      "title": "Lemma 6.48 (Exact short of the one-defect lower form).",
+      "tex_environment": "lemma",
+      "tex_label": "lem:exact-qkm",
+      "tex_line": 3733,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem48",
+      "types": [
+        "classical known result",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "eq:qkm-exact"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": []
+    },
+    {
+      "id": "D6.49",
+      "number": "6.49",
+      "title": "Corollary 6.49 (Uniform mismatch gap and operator AWGC lift).",
+      "tex_environment": "corollary",
+      "tex_label": "cor:exact-awgc-lift",
+      "tex_line": 3792,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem49",
+      "types": [
+        "new analytic theorem",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "eq:AWGC-op",
+        "eq:qM-half"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": [
+        "D6.44",
+        "D6.48"
+      ]
+    },
+    {
+      "id": "D6.50",
+      "number": "6.50",
+      "title": "Lemma 6.50 (Universal pair-deficit capacity).",
+      "tex_environment": "lemma",
+      "tex_label": "lem:pair-deficit-capacity",
+      "tex_line": 3834,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem50",
+      "types": [
+        "computer-assisted theorem",
+        "interval certificate",
+        "new analytic theorem"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [],
+      "external_citation_keys": [],
+      "cited_node_ids": []
+    },
+    {
+      "id": "D6.51",
+      "number": "6.51",
+      "title": "Lemma 6.51 (Exact baseline/residual split of the one-cell form).",
+      "tex_environment": "lemma",
+      "tex_label": "lem:b-L0-residual",
+      "tex_line": 3871,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem51",
+      "types": [
+        "classical known result",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "eq:b-one-cell-explicit",
+        "eq:residual-form"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": []
+    },
+    {
+      "id": "D6.52",
+      "number": "6.52",
+      "title": "Theorem 6.52 (Residual coherent capacity with free source means).",
+      "tex_environment": "theorem",
+      "tex_label": "thm:residual-CMC",
+      "tex_line": 3909,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem52",
+      "types": [
+        "new analytic theorem",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "lem:pair-deficit-capacity",
+        "eq:residual-CMC",
+        "eq:residual-CMC-uniform"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": [
+        "D6.50"
+      ]
+    },
+    {
+      "id": "D6.53",
+      "number": "6.53",
+      "title": "Theorem 6.53 (Simultaneous ground/transverse common-cut lower form).",
+      "tex_environment": "theorem",
+      "tex_label": "thm:MASTER-common-cut",
+      "tex_line": 4002,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem53",
+      "types": [
+        "new analytic theorem",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "lem:exact-qkm",
+        "lem:b-L0-residual",
+        "thm:residual-CMC",
+        "eq:MASTER-common-cut"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": [
+        "D6.48",
+        "D6.51",
+        "D6.52"
+      ],
+      "audit_note": "同一common complementで b=l0+r の事前分割を使う。異なるshortの下界を足してはいけない。真のWeil formへのtransportが別途必須。"
+    },
+    {
+      "id": "D6.54",
+      "number": "6.54",
+      "title": "Lemma 6.54 (Independent logarithmic endpoint bound).",
+      "tex_environment": "lemma",
+      "tex_label": "lem:fresh-Sk-log",
+      "tex_line": 4053,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem54",
+      "types": [
+        "computer-assisted theorem",
+        "interval certificate",
+        "new analytic theorem"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "app:finite-certificates",
+        "lem:chebyshev-capacity",
+        "eq:fresh-Sk-log"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": [
+        "D3.4"
+      ]
+    },
+    {
+      "id": "D6.55",
+      "number": "6.55",
+      "title": "Theorem 6.55 (Safe transverse reserve for MASTER).",
+      "tex_environment": "theorem",
+      "tex_label": "thm:MASTER-safe-transverse",
+      "tex_line": 4114,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem55",
+      "types": [
+        "computer-assisted theorem",
+        "interval certificate",
+        "new analytic theorem"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "app:finite-certificates",
+        "lem:fresh-Sk-log",
+        "lem:chebyshev-capacity",
+        "eq:safe-sigma-tail"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": [
+        "D3.4",
+        "D6.54"
+      ]
+    },
+    {
+      "id": "D6.56",
+      "number": "6.56",
+      "title": "Lemma 6.56 (Rational parent estimate).",
+      "tex_environment": "lemma",
+      "tex_label": "lem:P189-proved",
+      "tex_line": 4196,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem56",
+      "types": [
+        "new analytic theorem"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "eq:qM-half",
+        "eq:rhoPi-v"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": [
+        "D6.48"
+      ]
+    },
+    {
+      "id": "D6.57",
+      "number": "6.57",
+      "title": "Lemma 6.57 (Sharp MASTER mixed block).",
+      "tex_environment": "lemma",
+      "tex_label": "lem:master-mixed-block",
+      "tex_line": 4260,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem57",
+      "types": [
+        "new analytic theorem"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "lem:P189-proved"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": [
+        "D6.56"
+      ]
+    },
+    {
+      "id": "D6.58",
+      "number": "6.58",
+      "title": "Lemma 6.58 (True inherited-line surplus).",
+      "tex_environment": "lemma",
+      "tex_label": "lem:Jsharp-clean",
+      "tex_line": 4365,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem58",
+      "types": [
+        "new analytic theorem",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "eq:exact-pivot-lower-clean",
+        "lem:parent-ground-surplus"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": [
+        "D6.46"
+      ]
+    },
+    {
+      "id": "D6.59",
+      "number": "6.59",
+      "title": "Lemma 6.59 (Mixed inherited–mismatch block).",
+      "tex_environment": "lemma",
+      "tex_label": "lem:mixed-parent-clean",
+      "tex_line": 4418,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem59",
+      "types": [
+        "new analytic theorem",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "eq:Jsharp-clean",
+        "eq:Gamma-CS-clean",
+        "eq:rho-Pi-theta-clean"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": [
+        "D6.58"
+      ]
+    },
+    {
+      "id": "D6.60",
+      "number": "6.60",
+      "title": "Lemma 6.60 (Harmonic-vector identification).",
+      "tex_environment": "lemma",
+      "tex_label": "lem:Fsharp-harmonic-clean",
+      "tex_line": 4455,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem60",
+      "types": [
+        "new analytic theorem",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "eq:Fsharp-ID-clean"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": []
+    },
+    {
+      "id": "D6.61",
+      "number": "6.61",
+      "title": "Lemma 6.61 (Fold remainder on the identified harmonic vector).",
+      "tex_environment": "lemma",
+      "tex_label": "lem:fold-remainder-clean",
+      "tex_line": 4480,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem61",
+      "types": [
+        "new analytic theorem",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "lem:post-short-scalar",
+        "eq:fold-remainder-clean"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": [
+        "D6.28"
+      ]
+    },
+    {
+      "id": "D6.62",
+      "number": "6.62",
+      "title": "Certified finite computation 6.62 (Arithmetic base at Y=7Y=7).",
+      "tex_environment": "computercertificate",
+      "tex_label": "cert:base-Y7",
+      "tex_line": 4516,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S6.Thmtheorem62",
+      "types": [
+        "computer-assisted theorem",
+        "finite computation",
+        "interval certificate"
+      ],
+      "PROVED_IN_PAPER": "CLAIMED_CERTIFICATE_APPENDIX_A3",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [],
+      "external_citation_keys": [],
+      "cited_node_ids": [],
+      "audit_note": "a=.5 log7 の強いpolar係数4正値性を主張。Appendix A3の7x7 interval matrix→無限次元 core の同定/tailは別義務。"
+    },
+    {
+      "id": "D7.1",
+      "number": "7.1",
+      "title": "Lemma 7.1 (Odd-channel compatibility and closure).",
+      "tex_environment": "lemma",
+      "tex_label": "lem:closure-global",
+      "tex_line": 4555,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S7.Thmtheorem1",
+      "types": [
+        "closure argument",
+        "limiting argument",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [],
+      "external_citation_keys": [],
+      "cited_node_ids": [],
+      "audit_note": "全support positivityを前件とするclosure。RHへはcompact smooth coreだけで1.2を使えるので、global closed extensionは論理的に迂回可能。"
+    },
+    {
+      "id": "D8.1",
+      "number": "8.1",
+      "title": "Lemma 8.1 (Exact inherited-response placement).",
+      "tex_environment": "lemma",
+      "tex_label": "lem:MASTER-P2-response",
+      "tex_line": 4593,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S8.Thmtheorem1",
+      "types": [
+        "new analytic theorem",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "lem:Jsharp-clean",
+        "eq:P2-reduced-row",
+        "eq:P2-row",
+        "eq:P2-metric-normalization",
+        "eq:P2-cinh-def",
+        "eq:P2-actual-response",
+        "eq:MASTER-P2-certified"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": [
+        "D6.58"
+      ],
+      "audit_note": "surviving exact inherited pivot P_ex>0とsame Schur responseを前件にstationarity。metricの定義とarithmetic forcingの実同定を区別。"
+    },
+    {
+      "id": "D8.2",
+      "number": "8.2",
+      "title": "Lemma 8.2 (Homogeneous aligned-forcing penalty on the exact parent block).",
+      "tex_environment": "lemma",
+      "tex_label": "lem:MASTER-aligned-penalty",
+      "tex_line": 4671,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S8.Thmtheorem2",
+      "types": [
+        "classical known result",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "eq:aligned-parent-penalty"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": []
+    },
+    {
+      "id": "D8.3",
+      "number": "8.3",
+      "title": "Certified finite computation 8.3 (Aligned MASTER scalar margin).",
+      "tex_environment": "computercertificate",
+      "tex_label": "cert:MASTER-aligned-final",
+      "tex_line": 4723,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S8.Thmtheorem3",
+      "types": [
+        "computer-assisted theorem",
+        "finite computation",
+        "interval certificate"
+      ],
+      "PROVED_IN_PAPER": "CLAIMED_CERTIFICATE",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "app:finite-certificates",
+        "eq:MASTER-scalar-plus",
+        "lem:chebyshev-capacity",
+        "eq:MASTER-W-tail",
+        "eq:MASTER-gap-plus"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": [
+        "D3.4"
+      ],
+      "audit_note": "k>=7全整数。finite k<=3594641 + W tail k>=2000000 + variance analytic bound が必要。"
+    },
+    {
+      "id": "D8.4",
+      "number": "8.4",
+      "title": "Lemma 8.4 (Exact common-cut/fold intertwining (MASTER-P3)).",
+      "tex_environment": "lemma",
+      "tex_label": "lem:MASTER-P3-final",
+      "tex_line": 4816,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S8.Thmtheorem4",
+      "types": [
+        "new analytic theorem",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "eq:MASTER-P3a",
+        "prop:full-form-transport",
+        "lem:source-target-ground",
+        "lem:fixed-target-gauge",
+        "cor:physical-arithmetic-short",
+        "cor:fold-forcing",
+        "eq:two-arm-prefold-form",
+        "eq:postshort-cut",
+        "eq:MASTER-P3-D",
+        "lem:post-short-scalar",
+        "lem:fold-remainder-clean",
+        "eq:MASTER-P3b",
+        "eq:primal-target-diagonal",
+        "eq:primal-target-PQ-split",
+        "eq:MASTER-P3c"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": [
+        "D4.1",
+        "D5.3",
+        "D6.16",
+        "D6.28",
+        "D6.29",
+        "D6.32",
+        "D6.6",
+        "D6.61"
+      ],
+      "audit_note": "two endpoint armsが同じP_kとb_kを持つexact row、positiveP、fold前後同一ground contributionが核心。一般unitary congruenceだけでは結論しない。"
+    },
+    {
+      "id": "D8.5",
+      "number": "8.5",
+      "title": "Theorem 8.5 (MASTER coercivity on the exact harmonic graph).",
+      "tex_environment": "theorem",
+      "tex_label": "thm:final-master-harmonic",
+      "tex_line": 4973,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S8.Thmtheorem5",
+      "types": [
+        "new analytic theorem",
+        "operator-domain statement"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "thm:MASTER-common-cut",
+        "lem:MASTER-P2-response",
+        "lem:master-mixed-block",
+        "lem:MASTER-aligned-penalty",
+        "cor:exact-awgc-lift",
+        "lem:MASTER-P3-final",
+        "cert:MASTER-aligned-final",
+        "thm:MASTER-safe-transverse",
+        "eq:MASTER-scalar-plus",
+        "eq:final-master-harmonic",
+        "eq:final-T-positive"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": [
+        "D6.49",
+        "D6.53",
+        "D6.55",
+        "D6.57",
+        "D8.1",
+        "D8.2",
+        "D8.3",
+        "D8.4"
+      ],
+      "audit_note": "A_k>0の帰納仮定、same vector F=H_k f、6.53,8.1,8.2,8.3,8.4,6.49,6.55を合成するclaimed induction step。"
+    },
+    {
+      "id": "D8.6",
+      "number": "8.6",
+      "title": "Corollary 8.6 (Gate II induction).",
+      "tex_environment": "corollary",
+      "tex_label": "cor:final-gate2",
+      "tex_line": 5041,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S8.Thmtheorem6",
+      "types": [
+        "new analytic theorem",
+        "limiting argument"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "cert:base-Y7",
+        "thm:final-master-harmonic"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": [
+        "D6.62",
+        "D8.5"
+      ],
+      "audit_note": "全k>=7の8.5、base6.62、exact zero extensionを要する。有限個kのpositive certificateでは不足。"
+    },
+    {
+      "id": "D8.7",
+      "number": "8.7",
+      "title": "Theorem 8.7 (Odd Weil positivity and the Riemann hypothesis).",
+      "tex_environment": "theorem",
+      "tex_label": "thm:final-rh-closure",
+      "tex_line": 5063,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S8.Thmtheorem7",
+      "types": [
+        "new analytic theorem",
+        "equivalence criterion"
+      ],
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "cor:final-gate2",
+        "lem:closure-global",
+        "thm:weil-odd"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": [
+        "D1.2",
+        "D7.1",
+        "D8.6"
+      ]
+    },
+    {
+      "id": "D8.8",
+      "number": "8.8",
+      "title": "Remark 8.8 (Closure of the MASTER dependencies).",
+      "tex_environment": "remark",
+      "tex_label": null,
+      "tex_line": 5075,
+      "source_url": "https://arxiv.org/html/2609.20367v2#S8.Thmtheorem8",
+      "types": [
+        "scope commentary"
+      ],
+      "PROVED_IN_PAPER": "NOT_APPLICABLE",
+      "INDEPENDENTLY_VERIFIED": "NO",
+      "verification_scope": "statement/依存参照の棚卸し。証明全体・計算証明書・作用素domainの独立再構成ではない。",
+      "citation_labels": [
+        "thm:final-rh-closure",
+        "lem:MASTER-aligned-penalty",
+        "lem:MASTER-P2-response",
+        "lem:MASTER-P3-final",
+        "eq:P2-metric-normalization",
+        "eq:primal-target-diagonal",
+        "eq:primal-target-PQ-split"
+      ],
+      "external_citation_keys": [],
+      "cited_node_ids": [
+        "D4.1",
+        "D8.1",
+        "D8.2",
+        "D8.4",
+        "D8.7"
+      ]
+    }
+  ],
+  "semantic_edges": [
+    {
+      "from": "D8.7",
+      "to": "D0.1",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D8.6",
+      "to": "D8.7",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D7.1",
+      "to": "D8.7",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D1.2",
+      "to": "D8.7",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.62",
+      "to": "D8.6",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D8.5",
+      "to": "D8.6",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D1.3",
+      "to": "D8.6",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D1.4",
+      "to": "D8.6",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.1",
+      "to": "D8.6",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.27",
+      "to": "D8.5",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.53",
+      "to": "D8.5",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D8.1",
+      "to": "D8.5",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.57",
+      "to": "D8.5",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D8.2",
+      "to": "D8.5",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.49",
+      "to": "D8.5",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D8.3",
+      "to": "D8.5",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D8.4",
+      "to": "D8.5",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.55",
+      "to": "D8.5",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D5.3",
+      "to": "D8.4",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.6",
+      "to": "D8.4",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.16",
+      "to": "D8.4",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.8",
+      "to": "D8.4",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.32",
+      "to": "D8.4",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.29",
+      "to": "D8.4",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.28",
+      "to": "D8.4",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.61",
+      "to": "D8.4",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D4.1",
+      "to": "D8.4",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D3.4",
+      "to": "D8.3",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.42",
+      "to": "D8.3",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.56",
+      "to": "D8.2",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.58",
+      "to": "D8.1",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.46",
+      "to": "D8.1",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D1.3",
+      "to": "D7.1",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.28",
+      "to": "D6.61",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.60",
+      "to": "D6.61",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.27",
+      "to": "D6.60",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.37",
+      "to": "D6.60",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.48",
+      "to": "D6.58",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.49",
+      "to": "D6.58",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.46",
+      "to": "D6.58",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.56",
+      "to": "D6.57",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.38",
+      "to": "D6.56",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.48",
+      "to": "D6.56",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D3.4",
+      "to": "D6.55",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.54",
+      "to": "D6.55",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.53",
+      "to": "D6.55",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D3.4",
+      "to": "D6.54",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.48",
+      "to": "D6.53",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.51",
+      "to": "D6.53",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.52",
+      "to": "D6.53",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.50",
+      "to": "D6.52",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.51",
+      "to": "D6.52",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.48",
+      "to": "D6.49",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D4.3",
+      "to": "D6.48",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.49",
+      "to": "D6.44",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D3.4",
+      "to": "D6.42",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.43",
+      "to": "D6.42",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.33",
+      "to": "D6.37",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.34",
+      "to": "D6.37",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.33",
+      "to": "D6.36",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.34",
+      "to": "D6.36",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.35",
+      "to": "D6.36",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.33",
+      "to": "D6.34",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.26",
+      "to": "D6.33",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.1",
+      "to": "D6.33",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.31",
+      "to": "D6.32",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.8",
+      "to": "D6.32",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.27",
+      "to": "D6.29",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D5.3",
+      "to": "D6.29",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.16",
+      "to": "D6.29",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.8",
+      "to": "D6.29",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.28",
+      "to": "D6.29",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.1",
+      "to": "D6.27",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.26",
+      "to": "D6.27",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.1",
+      "to": "D6.26",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.23",
+      "to": "D6.24",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.20",
+      "to": "D6.21",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.16",
+      "to": "D6.21",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D4.1",
+      "to": "D6.21",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.17",
+      "to": "D6.20",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D6.18",
+      "to": "D6.19",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D5.1",
+      "to": "D5.3",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D5.1",
+      "to": "D5.2",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D5.3",
+      "to": "D5.2",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D3.3",
+      "to": "D4.1",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D2.1",
+      "to": "D2.3",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D2.2",
+      "to": "D2.1",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    },
+    {
+      "from": "D1.3",
+      "to": "D1.4",
+      "status": "AUTHOR_CLAIMED_DEPENDENCY_AUDITOR_SELECTED"
+    }
+  ],
+  "semantic_graph_scope": "Selected proof-critical implication graph; not a formal complete proof graph. citation_labels/cited_node_ids are syntax only and may contain forward references or definitions. No citation cycle is automatically mathematical circularity.",
+  "candidate_minimal_cutsets": [
+    {
+      "nodes": [
+        "D1.2"
+      ],
+      "status": "CANDIDATE_SINGLE_PREMISE_CUT_ON_DISPLAYED_MASTER_ROUTE",
+      "reason": "奇関数coreからRHへのequivalence"
+    },
+    {
+      "nodes": [
+        "D5.3"
+      ],
+      "status": "CANDIDATE_SINGLE_PREMISE_CUT_ON_DISPLAYED_MASTER_ROUTE",
+      "reason": "真のWeil operatorとCMC/fold modelのcomplete form同定"
+    },
+    {
+      "nodes": [
+        "D6.29"
+      ],
+      "status": "CANDIDATE_SINGLE_PREMISE_CUT_ON_DISPLAYED_MASTER_ROUTE",
+      "reason": "真のharmonic forcingとone-defect blockの接続"
+    },
+    {
+      "nodes": [
+        "D6.53"
+      ],
+      "status": "CANDIDATE_SINGLE_PREMISE_CUT_ON_DISPLAYED_MASTER_ROUTE",
+      "reason": "groundとtransverseのcommon-cut同時予算"
+    },
+    {
+      "nodes": [
+        "D6.62"
+      ],
+      "status": "CANDIDATE_SINGLE_PREMISE_CUT_ON_DISPLAYED_MASTER_ROUTE",
+      "reason": "帰納baseの無限次元正値性"
+    },
+    {
+      "nodes": [
+        "D8.1"
+      ],
+      "status": "CANDIDATE_SINGLE_PREMISE_CUT_ON_DISPLAYED_MASTER_ROUTE",
+      "reason": "inherited responseとcomparator surplusの同一metric配置"
+    },
+    {
+      "nodes": [
+        "D8.3"
+      ],
+      "status": "CANDIDATE_SINGLE_PREMISE_CUT_ON_DISPLAYED_MASTER_ROUTE",
+      "reason": "全整数kでaligned arithmetic scalar margin"
+    },
+    {
+      "nodes": [
+        "D8.4"
+      ],
+      "status": "CANDIDATE_SINGLE_PREMISE_CUT_ON_DISPLAYED_MASTER_ROUTE",
+      "reason": "common-cut/fold row同定と一回だけのscalar debit"
+    }
+  ],
+  "not_established_critical": [
+    "D2.1",
+    "D2.2",
+    "D2.3"
+  ],
+  "gate_i_note": "Explicit theorem-label search finds D2.1 used only by D2.3 and audit2.4. MASTER route has no explicit Gate-I dependency. A false Gate-I statement refutes that statement, not automatically the final route.",
+  "closure_bypass": "Given positivity on every compact smooth odd test, D1.2 already implies RH without a global closed-form-domain extension.",
+  "external_dependencies": [
+    {
+      "id": "EXT-Dusart-2010-Prop3.2",
+      "url": "https://arxiv.org/pdf/1002.0442",
+      "locator": "Proposition 3.2",
+      "claim": "psi(x)-theta(x)<1.00007 sqrt(x)+1.78 x^(1/3), x>0",
+      "RH_assumed": "NO",
+      "statement_checked": "YES",
+      "whole_proof_independently_verified": "NO"
+    },
+    {
+      "id": "EXT-Dusart-2010-Thm5.2",
+      "url": "https://arxiv.org/pdf/1002.0442",
+      "locator": "Theorem 5.2; eta_2=0.2, x_2=3594641",
+      "claim": "|theta(x)-x|<0.2x/log(x)^2 in the stated range; endpoint symbol PDF extraction should be cross-checked",
+      "RH_assumed": "NO",
+      "statement_checked": "YES",
+      "whole_proof_independently_verified": "NO"
+    }
+  ],
+  "audit_findings": [
+    {
+      "node_ids": [
+        "D1.2"
+      ],
+      "scope": "restricted odd Weil criterion, standard explicit formula input",
+      "result": "VALIDATED",
+      "INDEPENDENTLY_VERIFIED": "YES",
+      "source": "proofs/audits/desogus-gate3.md"
+    },
+    {
+      "node_ids": [
+        "D1.3"
+      ],
+      "scope": "exterior cancellation and zero-extension equality on smooth core / form domain; not every L2 operator bracket",
+      "result": "VALIDATED",
+      "INDEPENDENTLY_VERIFIED": "YES",
+      "source": "proofs/audits/desogus-gate3.md"
+    },
+    {
+      "node_ids": [
+        "D1.4",
+        "D8.6"
+      ],
+      "scope": "cofinal endpoint positivity implies compact support positivity only; endpoint premise unproved",
+      "result": "CONDITIONAL_VALIDATED",
+      "INDEPENDENTLY_VERIFIED": "YES_CONDITIONAL",
+      "source": "proofs/audits/desogus-gate3.md"
+    },
+    {
+      "node_ids": [
+        "D7.1"
+      ],
+      "scope": "radius independence and compact-core positivity, conditional on all-support positivity",
+      "result": "CONDITIONAL_VALIDATED",
+      "INDEPENDENTLY_VERIFIED": "YES_CONDITIONAL",
+      "source": "proofs/audits/desogus-gate3.md"
+    },
+    {
+      "node_ids": [
+        "D7.1"
+      ],
+      "scope": "global L2_odd(R) closure interpretation",
+      "result": "FAILED_NOT_ACTUALLY_NEEDED",
+      "INDEPENDENTLY_VERIFIED": "FAILED",
+      "source": "proofs/audits/desogus-gate3.md",
+      "note": "compact-core criterion bypasses this global-closure clause"
+    },
+    {
+      "node_ids": [
+        "D6.48",
+        "D6.53"
+      ],
+      "scope": "local rank-one short / one-cell simultaneous common-cut model",
+      "result": "VALIDATED_MODEL_ONLY",
+      "INDEPENDENTLY_VERIFIED": "YES_SCOPED",
+      "source": "proofs/audits/desogus-gate2.md",
+      "excluded": "identity of this model with actual transported Weil operator"
+    },
+    {
+      "node_ids": [
+        "D6.28"
+      ],
+      "scope": "scalar cancellation algebra under its explicit positive-pivot hypotheses",
+      "result": "VALIDATED_CONDITIONAL",
+      "INDEPENDENTLY_VERIFIED": "YES_SCOPED",
+      "source": "proofs/audits/desogus-gate3.md",
+      "excluded": "derivation of Pi_phys>0 from row identity"
+    },
+    {
+      "node_ids": [
+        "D8.1",
+        "D8.2"
+      ],
+      "scope": "one-dimensional stationarity / scalar Young algebra only",
+      "result": "VALIDATED_ALGEBRA_ONLY",
+      "INDEPENDENTLY_VERIFIED": "YES_SCOPED",
+      "source": "proofs/audits/desogus-gate2.md",
+      "excluded": "actual response/comparator placement in full Weil form"
+    },
+    {
+      "node_ids": [
+        "D6.29",
+        "D8.4",
+        "D8.5"
+      ],
+      "scope": "actual common-cut/fold bridge, missing positive-pivot supply and literal two-arm 2D versus final Q-D",
+      "result": "PROOF_CRITICAL_GAP",
+      "INDEPENDENTLY_VERIFIED": "NO; DISPLAYED_8.4_ASSEMBLY_FAILED",
+      "sources": [
+        "proofs/audits/desogus-gate2.md",
+        "proofs/audits/desogus-gate3.md",
+        "proofs/audits/desogus-computation-and-repair.md"
+      ],
+      "note": "same gap independently found by three mathematical auditors; not a negative Weil test or RH disproof"
+    },
+    {
+      "node_ids": [
+        "D6.62"
+      ],
+      "scope": "Appendix A3 printed 7x7 interval family scaled-Gershgorin via exact Fraction",
+      "result": "VALIDATED_MATRIX_ONLY",
+      "INDEPENDENTLY_VERIFIED": "YES_SCOPED",
+      "source": "proofs/audits/desogus-computation-and-repair.md",
+      "result_file": "experiments/results/desogus-targeted-checks.json",
+      "excluded": "operator assembly, all modes, analytic tail and coupling"
+    },
+    {
+      "node_ids": [
+        "D6.42",
+        "D6.47",
+        "D8.3"
+      ],
+      "scope": "nine k=2,3,7,8,32,33,34,4999,5000 scalar arithmetic points via independent Arb",
+      "result": "VALIDATED_SELECTED_POINTS_ONLY",
+      "INDEPENDENTLY_VERIFIED": "YES_SCOPED",
+      "source": "proofs/audits/desogus-computation-and-repair.md",
+      "excluded": "all k, analytic tails and operator lift"
+    },
+    {
+      "node_ids": [
+        "D6.55"
+      ],
+      "scope": "finite 7<=k<=4999, all4993 k, independent192bit Arb repair of safe-cut margin",
+      "result": "FINITE_COMPONENT_REPAIRED",
+      "INDEPENDENTLY_VERIFIED": "YES_SCOPED",
+      "result_file": "experiments/results/desogus-safe-cut-repair.json",
+      "script": "experiments/scripts/desogus_safe_cut_repair.py",
+      "minimum_lower_bound": "1.5202196525197510393 at k=7",
+      "excluded": "analytic k>=5000 tail, actual operator bridge, author C++ interval validity"
+    },
+    {
+      "node_ids": [
+        "D6.29",
+        "D8.4",
+        "D8.5"
+      ],
+      "scope": "Conditional repair retaining the literal second debit; actual response-map dictionary is still missing",
+      "result": "BOUNDED_REPAIR_STOPPED_NOT_REPAIRED",
+      "INDEPENDENTLY_VERIFIED": "YES_SCOPED_FOR_CONDITIONAL_ALGEBRA_AND_GENERIC_COUNTEREXAMPLE; NO_FOR_ACTUAL_WEIL_REPAIR",
+      "sources": [
+        "proofs/audits/desogus-extra-debit-repair.md",
+        "proofs/audits/desogus-pivot-cancellation-stress.md"
+      ],
+      "excluded": "Actual Weil negativity, RH disproof, and global propagation"
+    }
+  ],
+  "current_assessment": {
+    "status": "UNVERIFIED_EXTERNAL_PROOF_CLAIM_WITH_PROOF_CRITICAL_GAP",
+    "remaining_bottleneck": "Exact actual-Weil operator common-cut/fold bridge; 6.29 -> 8.4 -> 8.5",
+    "RH_status": "OPEN",
+    "gate_i_reexecution": "NOT_PRIORITIZED; explicit main-chain dependence not found",
+    "verified_independently_field_policy": "Original90 inventory rows retainNO as this literature task; subsequent scopedYES/FAILED appear only in audit_findings with named independent audit sources.",
+    "repair_search": "Extra-debit budget conditions made precise but not established; generic numerator-cancellation repair refuted; global polar-free core positivity is RH-equivalent"
+  },
+  "supplement": {
+    "doi": "10.5281/zenodo.22864087",
+    "conceptdoi": "10.5281/zenodo.22799712",
+    "version": "2.0.0",
+    "license": "MIT",
+    "publication_date": "2026-09-20",
+    "metadata_modified": "2026-09-22",
+    "url": "https://zenodo.org/api/records/22864087/files/The_Three_Gates_Supplementary_V2.zip/content",
+    "local_archive": "literature/source_cache/desogus-The_Three_Gates_Supplementary_V2.zip",
+    "sha256": "c46356c7961dba2651a22000564652779f6153eb8ecfcd8250208dd8a95106d1",
+    "bytes": 2171846,
+    "members": 213,
+    "manifest_verified_hashes": 185,
+    "manifest_mismatches": 0,
+    "executed_by_literature_agent": false,
+    "certificate_validity": "NOT established by hash match or author PASS logs"
+  }
+}

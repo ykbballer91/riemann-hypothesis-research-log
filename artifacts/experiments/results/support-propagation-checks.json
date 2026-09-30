@@ -1,0 +1,109 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "experiments/results/support-propagation-checks.json",
+    "source_sha256": "a90096f16689944c7110da677d610a00fb435fb150a039ed30f9716546841903",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {}
+  },
+  "kind": "support_propagation_countermodels",
+  "rh_status": "OPEN",
+  "proves_RH": false,
+  "refutes_RH": false,
+  "arithmetic": "Fraction and python-flint Arb",
+  "precision_bits": 224,
+  "python_flint_version": "0.9.0",
+  "source_sha256": "f25195613ea9208998f8f568f36613643d94678038691fe098b9d854ec08bf27",
+  "toeplitz_chain": {
+    "off_diagonal": "-3/4",
+    "pivots": [
+      "1",
+      "7/16",
+      "-2/7"
+    ],
+    "decision": "positive first two restrictions, negative third Schur pivot"
+  },
+  "cauchy_stieltjes_tail": {
+    "nodes": [
+      0,
+      1
+    ],
+    "measure_atoms": [
+      2,
+      3
+    ],
+    "tail": [
+      [
+        "13/36",
+        "2/3"
+      ],
+      [
+        "2/3",
+        "5/4"
+      ]
+    ],
+    "det_tail": "1/144",
+    "det_after_addition": "-583/144",
+    "schur_before": "-3",
+    "schur_after": "-583/196",
+    "decision": "strictly totally-positive tail improves Schur but does not make it positive"
+  },
+  "woodbury_identity_checks": [
+    {
+      "increment": "49/162",
+      "factored": "49/162",
+      "passed": true
+    },
+    {
+      "increment": "3844/91",
+      "factored": "3844/91",
+      "passed": true
+    }
+  ],
+  "small_gap_checks": [
+    {
+      "a": "1/100",
+      "safe_schur": "3/4",
+      "unsafe_schur": "-21/100"
+    },
+    {
+      "a": "1/10000",
+      "safe_schur": "3/4",
+      "unsafe_schur": "-201/10000"
+    },
+    {
+      "a": "1/100000000",
+      "safe_schur": "3/4",
+      "unsafe_schur": "-20001/100000000"
+    },
+    {
+      "a": "1/10000000000000000",
+      "safe_schur": "3/4",
+      "unsafe_schur": "-200000001/10000000000000000"
+    },
+    {
+      "a": "1/100000000000000000000000000000000",
+      "safe_schur": "3/4",
+      "unsafe_schur": "-20000000000000001/100000000000000000000000000000000"
+    }
+  ],
+  "logarithmic_countermodel": {
+    "symbol": "log(1+t^2)-1",
+    "small_L": "1/2",
+    "all_function_lower_bound": "[0.189783782922232781728115991493075063353719696596243517199779 +/- 3.26e-61]",
+    "large_L": "1",
+    "normalized_box_value": "[-0.0375342618204904527595198245163853587786471759835296488135131 +/- 2.53e-62]",
+    "local_extension_delta": "1e-30",
+    "shell_lower_bound": "[136.058270990221650770531877740853616743209678674836491196786 +/- 4.41e-58]",
+    "local_schur_lower_bound": "[32.0493377808588536932531306803559149279146927776194265965748 +/- 2.87e-60]",
+    "interpretation": "all functions positive at L=1/2 and a certified local extension, but a negative box at L=1"
+  },
+  "scope": "Failures of general propagation assumptions only; no actual Weil negative direction."
+}

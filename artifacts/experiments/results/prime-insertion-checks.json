@@ -1,0 +1,49 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "experiments/results/prime-insertion-checks.json",
+    "source_sha256": "36165cf31fe643c4fa99434efefb2b0c5c31b691eb5d77be8417455bc1cf4954",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {}
+  },
+  "status": "PRIME_INSERTION_AND_COMPLETION_CANDIDATES_REJECTED",
+  "source_sha256": "5982293321ee7469c7c60614b362432a3ebfa2455fd94d9e0f2a1d33287fe7e7",
+  "proves_RH": false,
+  "refutes_RH": false,
+  "actual_full_Riemann_kernel_counterexample": false,
+  "full_Gaussian_resolvent_analytic_bounds": {
+    "method": "exact rational Taylor inequalities plus analytic infinite tail",
+    "variance_upper_bound": "271/286",
+    "log_second_derivative_upper_bound": "-1021/7150",
+    "strict_negative_two_point_form": "analytic for all t>0; nodes 0,1"
+  },
+  "actual_prime2_cusp": {
+    "precision_bits": 192,
+    "smooth_head": "[8.26527956381008077537283904825407865750417326348e-8 +/- 4.45e-56]",
+    "smooth_absolute_tail_bound": "[2.182292285915651809029678801900250858859897463535242967e-340 +/- 1.98e-395]",
+    "omitted_n3_lower_bound": "[8.265279563810080775344141686194977057561556877789179329e-8 +/- 1.55e-63]",
+    "omitted_remaining_tail_upper_bound": "[3.012664604798641737218821114925590169812111662013805961e-28 +/- 5.26e-83]",
+    "positive_certified": true,
+    "integral_of_uncompleted_profile": "[-1.16223594530587653049026259713824365779233539444771627667 +/- 7.23e-57]",
+    "scope": "right derivative of finite-prime profile; not a zero of xi"
+  },
+  "numerical_cross_check": {
+    "method": "mpmath 60 decimal digits, 24 j terms, not certified",
+    "original_form": "-0.01177304839637905820708529677548766074647139762222055",
+    "positive_negative_ledger": "-0.01177304839637905820708529677548766074647139762222055",
+    "absolute_difference": "0.0"
+  },
+  "nonreal_zero_result": {
+    "family": "psi_P(t)=Phi_P(abs(t)) for finite prime sets P",
+    "proof": "positive cusp, Fourier asymptotics, order at most one, Hadamard",
+    "zero_enumeration_performed": false,
+    "full_xi_zero_claim": false
+  }
+}

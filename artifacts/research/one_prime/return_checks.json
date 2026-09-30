@@ -1,0 +1,117 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "research/one_prime/return_checks.json",
+    "source_sha256": "457ae8bf6cf4b5e48f0e427f17885e08e92d91a61a434daddfac6ca9a126873e",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {}
+  },
+  "exact_fraction_checks_passed": true,
+  "scope": "Synthetic counterexample diagnostics; not an actual-zeta norm estimate",
+  "certified_asymptotic_claims": false,
+  "analytic_proofs_in_notes": true,
+  "prime": 2,
+  "hyperbolic_norms": {
+    "-20": "95367431640625/1099511627776",
+    "-10": "9765625/1048576",
+    "-1": "5/4",
+    "0": "1",
+    "1": "5/4",
+    "10": "9765625/1048576",
+    "20": "95367431640625/1099511627776"
+  },
+  "interpolation_thresholds": [
+    {
+      "theta": "0.0",
+      "return_log_rate": "0.0",
+      "synthetic_evaluation_bounded": false,
+      "evaluation_norm_squared": null
+    },
+    {
+      "theta": "0.1",
+      "return_log_rate": "0.06931471805599453094172321214581765680755001343602552541206800094933936",
+      "synthetic_evaluation_bounded": false,
+      "evaluation_norm_squared": null
+    },
+    {
+      "theta": "0.2",
+      "return_log_rate": "0.1386294361119890618834464242916353136151000268720510508241360018986787",
+      "synthetic_evaluation_bounded": false,
+      "evaluation_norm_squared": null
+    },
+    {
+      "theta": "0.3",
+      "return_log_rate": "0.2079441541679835928251696364374529704226500403080765762362040028480181",
+      "synthetic_evaluation_bounded": true,
+      "evaluation_norm_squared": "6.0"
+    },
+    {
+      "theta": "1.0",
+      "return_log_rate": "0.6931471805599453094172321214581765680755001343602552541206800094933936",
+      "synthetic_evaluation_bounded": true,
+      "evaluation_norm_squared": "1.041666666666666666666666666666666666666666666666666666666666666666667"
+    }
+  ],
+  "dense_intertwiner_max_error": "0.0",
+  "dense_intertwiner_linear_growth_diagnostic": [
+    {
+      "j": 4,
+      "offdiagonal_over_n": "0.4735650251450755821895602855401355336174863467270780208746388413951788"
+    },
+    {
+      "j": 10,
+      "offdiagonal_over_n": "0.9998447027324292964504396690849281776433313369848776450455292093687022"
+    },
+    {
+      "j": 30,
+      "offdiagonal_over_n": "0.9999999999999998587514657613167699785595174456910325065983637578901854"
+    }
+  ],
+  "dilation_counterexample": {
+    "PUf": "1",
+    "TPf": "1/4"
+  },
+  "dense_kernel_correction_norms": [
+    {
+      "R": 10,
+      "l2_norm": "0.151509897872106384928380487530310091754768219958207159501557097151229"
+    },
+    {
+      "R": 100,
+      "l2_norm": "0.000000002307492675715659206652121298145163318366595515767637171742992772139155"
+    },
+    {
+      "R": 1000,
+      "l2_norm": "1.549293106845340796224146729248817011295098923734744442222792804689894e-87"
+    }
+  ],
+  "jordan_block_uniformity_diagnostic": [
+    {
+      "block_size": 64,
+      "iterate": 8,
+      "positive_norm_over_exponential_bound": 0.9730416583468648,
+      "inverse_norm_over_exponential_bound": 0.9167498059095923
+    },
+    {
+      "block_size": 256,
+      "iterate": 8,
+      "positive_norm_over_exponential_bound": 0.9933290075395987,
+      "inverse_norm_over_exponential_bound": 0.9798507803021911
+    },
+    {
+      "block_size": 1024,
+      "iterate": 8,
+      "positive_norm_over_exponential_bound": 0.9983364309214109,
+      "inverse_norm_over_exponential_bound": 0.9950009487004036
+    }
+  ],
+  "mpmath_precision": 70,
+  "script_sha256": "7aac7a8822280fe7b74a3f27b412d74a77c6ffb109064718e6fcc57abfbf3dd9"
+}

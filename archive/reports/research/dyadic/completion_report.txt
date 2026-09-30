@@ -1,0 +1,181 @@
+STATUS: RIEMANN HYPOTHESIS OPEN
+SANITIZED HISTORICAL SOURCE SNAPSHOT — not a new execution or proof validation.
+Public credit: @ykbballer91; AI-assisted research log; text CC BY 4.0.
+Source: research/dyadic/completion_report.txt
+Original SHA-256: 85716a929e939e4771d535e8b6528cd2dab6debef86720ca2cb50181692c597a
+Internal source paths are provenance identifiers; see data/source-manifest.json for public paths.
+
+Dyadic Arithmetic Reduction / Fundamental Domain 完了報告
+2026年9月30日
+
+RHはOPENです。この探索ではRHを証明していません。
+
+今回の成果は、既存の算術商 E/W と既存の dyadic translation を変えず、任意の入力について実際の算術補正 w_n を構成し、代表元の成長上界を 2^n 型から 2^(n/2)(1+n) 型へ下げたことです。固定されたコンパクト基本領域への完全な折り戻しはできませんが、非コンパクトな左裾を残し、右裾を完全に消すことはできます。
+
+ユーザー定義の Level 2（明示的 reduction）と Level 3（固定 c<1 の評価）を満たします。ただし、この評価を零点に適用して得るのは Re(rho)<=1 という既知の帯域だけです。新しい零点排除領域、新しいRHの証明入力、新規性の主張ではありません。指数1/2が最適であるとも証明していません。
+
+同じ固定アルゴリズムの準指数成長条件はRHと同値であることを、今回、両方向に確認しました。その条件を独立した新しい算術補題として採用することはできません。3つの主要機構の監査後に strategy review を実施し、このトラックを終了しました。別名の第4候補を継続していません。
+
+1. 以前の探索から引き継いだもの
+
+Phase I〜IV、Continuous Scale Flow、One-Prime Return の成果・反例・failed routes・state・proof graph は変更していません。今回は新しい dyadic 系ファイルだけを追加しました。
+
+開始時に追跡済みだった248ファイルのSHA-256を保存し、終了時に全件一致を確認しました。旧ファイルの変更・削除はいずれも0です。
+
+以前の探索で残った「正の ambient space と実際の零点を保持する算術商を同じ topology 上で結び付けられない」という問題を、今回は新しい metric や topology の設計へ戻さず、既存の代表元の相殺だけに限定しました。
+
+One-Prime Return で固定されていた E、W、p_N、q_N、非零 Mellin evaluation、全 zero jets、正規化 scaling をそのまま使いました。従来の p_1 の単純 translation estimate は 2^n(1+n log2) 型でした。商を先に取るか完備化を先に取るかという順序変更、L² completion、人工的な projection、零点からの内積設計は行っていません。
+
+2. 片方向だけで十分という出発点
+
+全非自明零点 rho について、ell_rho は非零の連続汎関数で、abs(ell_rho(x))<=4q_1(x)、ell_rho(T_2^n x)=2^(n(rho-1/2))ell_rho(x) が成立します。
+
+全 epsilon>0 に対する forward estimate q_1(T_2^n x)<=C_epsilon 2^(epsilon n)q_M(x) があれば、ell_rho(x) が非零となる固定の x を一つ選び、n を正の方向に無限大へ送るだけで Re(rho)<=1/2 になります。関数等式で 1-rho も零点なので、同じ forward estimate をその零点に適用すれば逆の不等式が出ます。逆時間の estimate は不要です。
+
+さらに g_*(t)=exp(-t^2) という、零点情報を全く使わず指定できる一つの入力が、全零点を同時に検出します。ell_rho(g_*)=sqrt(pi) exp((rho-1/2)^2/4) は決してゼロになりません。この単一軌道の準指数成長だけでも十分です。ただし、その成長条件自体は未証明です。今回の条件付き構成からRHならその条件が成り立つことも出るため、単一Gaussian軌道のendpointもRH同値です。
+
+3. 算術関係をどう固定したか
+
+adèlic Schwartz test eta に eta(0)=0 と integral eta=0 を課し、Q^times にわたり summation し、compact units で平均し、半密度 logarithmic coordinate に移した range の E 内 closure を W としました。
+
+実際に補正を作る際には、even real Schwartz f と有限側の product_p 1_Zp という既存の test だけで足りました。その summation は S f(x)=2 sum_{m>=1}f(mx) です。f(0)=integral_R f=0 を満たすなら J S f は実際の range に入ります。今回の w_n は closure でしか得られない抽象極限ではなく、この具体的 range の元です。
+
+Gamma factor や Euler factors を変えていません。有限素点、実素点、Poisson の境界項に対応する二つの pole conditions を最初から同じ test に含めています。正負どちらの scaling も条件を保存し、E 上の homeomorphism なので T_2^n W=W が全整数 n について成立します。
+
+4. 第一機構：有理数倍、2進格子、偶奇分解
+
+全adèle成分を同時に有理数2^nで変える操作は、Q^times summation の添字変更により恒等作用になります。しかし、T_2 に対応する実成分だけの scaling はこれとは違います。実成分を元へ戻すと、有限側では2進格子が 2^(-n)Z_2 に広がり、半密度係数 2^(-n/2) が残ります。
+
+この区別を曖昧にして、product formula から T_2=I を結論する案は誤りです。
+
+Theta_f(x)=Theta_f(2x)+O_f(x) という偶奇分解、および n=1,2,3,4 の展開は exact に導出しました。指定の Gaussian polynomial f=(8u^3-30u^2+15u)exp(-u), u=pi x^2 では Fourier f=-f、f(0)=integral f=0 も直接確認しました。
+
+ただし、この Gaussian の summation は最初から W に入っています。その展開を商へ移すと 0=0 です。一般の非零 class の reduction にはなりません。
+
+無限の odd dyadic 展開は点ごとには収束しますが、全指数重みの E 位相では残差の p_N が 2^((N-1/2)J) 型に増える例があります。bare L² で小さくなることを、零点を保持する E 位相の小ささに読み替えることはできません。この残差自体は W 内なので、商での全ての相殺が不可能という意味でもありません。
+
+5. 第二機構：Poisson、反転、固定基本領域
+
+Poisson による phi_f(t)=phi_Ff(-t) は正確ですが、それだけでは正の移動を相殺できません。反射は移動方向を交換するだけで、商上の恒等作用でも contraction でもありません。
+
+ここでは、より明確な障害を証明しました。
+
+W と C_c^infinity(R) の共通部分は {0} です。
+
+compact support の g の Laplace transform は exponential type の entire function で、非零なら零点数は重複度込みで O(R) です。一方 g が W に入れば、全Riemann非自明零点とその必要なjetsが消え、Riemann-von Mangoldt の R log R 個の零点を持たなければなりません。矛盾です。
+
+従って、二つの compact representatives が算術商で等価なら、実際に同じ関数です。遠方へ移した非零compact bumpを、Wの関係だけで別の固定compact intervalに完全に折り戻すことはできません。これは非compactな裾を残す構成や近似reductionを否定しません。
+
+また、全入力に適用できる有限 Laurent polynomial relation P(T_2)E subset W も、非零Pでは不可能です。幅がlog2より小さいcompact bumpを選べば、その有限translateは互いにdisjointになり、非零compact関数がWに入ってしまうためです。特定のnoncompact入力のcoboundaryまで否定するものではありません。
+
+6. 第三機構：実際に構成できたMöbius reduction
+
+a=2^n、H(x)=x^(-1/2)g(log x)、H_a(x)=a^(-1/2)H(x/a) とします。
+
+F_a(x)=(1/2) sum_{m>=1}mu(m)H_a(mx) を作ります。この和は正のxごとに微分も含め局所絶対収束します。
+
+固定 smooth cutoff chi を、x<=1/2で0、x>=1で1となるように選びます。固定 smooth psi を (1/2,1) 内に台を持ち、正の軸での積分が1となるように選びます。どちらも n、g、零点位置には依存させません。
+
+c_a=integral_0^infinity chi F_a、f_a=chi F_a-c_a psi を作り、偶延長します。すると f_a は原点近傍でゼロのeven Schwartzで、積分もゼロです。
+
+w_n(g)=-J S f_a、R_n(g)=T_2^n g+w_n(g) が求める具体的な算術補正と代表元です。
+
+x>=1では cutoff と mean correction が相殺の式を邪魔せず、2 sum_k F_a(kx)=sum_r H_a(rx)sum_{d|r}mu(d)=H_a(x) となります。従って R_n は t>=0 で厳密にゼロです。
+
+残った左裾については、abs(mu)<=1 と格子和の評価から、F_a の必要な導関数、c_a、f_a のL¹微分を制御できます。pole-free Poisson と2回部分積分により abs(Sf(x))<=x||f''||_1/12 が出ます。一階log微分については D=x d/dx、(Df)''=2f''+xf''' を使います。
+
+この計算により、全gと全n>=0について
+
+p_1(R_n(g)) <= C 2^(n/2)(1+n) p_4(g)
+
+を無条件に証明しました。各代表元に同じ構成を施してinfimumを取れば、q_1(T_2^n x)<=C2^(n/2)(1+n)q_4(x) も従います。
+
+これはp_4からp_1への評価です。q_1 Banach operator norm の評価や、そのfull spectral radiusの同定ではありません。また、returnは2の冪ですが、Möbius inverseには全整数の算術を使っています。「素数2だけの算術密度定理」ではありません。
+
+7. 各ステップのexact recurrence
+
+F_(2a)(x)=2^(-1/2)F_a(x/2) です。
+
+k_a=f_(2a)-2^(-1/2)f_a(x/2) と置くと、k_aは 1/2<=abs(x)<=2 に台を持ち、原点値と積分がゼロです。従って JSk_a は actual W に入ります。
+
+R_(n+1)=T_2 R_n-JS k_(2^n)
+
+が成立します。初期値はR_0=g-JSf_1で、一般にはgそのものではありません。n=1,2,3,4の展開を省略せず研究ログに保存しました。
+
+これはユーザーが要求した「毎回算術関係で代表元を戻す」実際の再帰式です。ただし補正の大きさは一様にはならず、証明できた費用は依然として指数率1/2です。k_aのreal-axis compact supportを、JSk_aのlog-compact supportと混同していません。
+
+8. なぜ準指数まで進めなかったか
+
+M(X)=sum_{m<=X}mu(m) に対し、0<theta<1 で abs(M(X))<=K_theta X^theta と仮定すると、同じ構成でさらに
+
+p_1(R_n(g)) <= C_theta K_theta 2^((theta-1/2)n)p_4(g)
+
+を証明できます。部分和分と、Mellin identityのs=1の極から integral F_a=0 を得ることが鍵です。mean correctionを絶対値だけで粗く評価すると、この改良を失います。
+
+しかし、全epsilon>0について M(X)=O_epsilon(X^(1/2+epsilon)) という評価はRHと同値な古典的条件です。RHならこの条件により、固定アルゴリズムの準指数boundが出ます。逆にそのboundがあれば、全zero evaluationsとreflectionからRHが出ます。
+
+従って、この特定のexplicit algorithmの準指数endpointについては、RHとの双方向の同値を確認しました。以前のOne-Prime Returnでは逆含意を未確認として残していましたが、今回、この構成を使った十分条件の範囲では確認できました。過去のファイルを遡って書き換えてはいません。
+
+この同値性を「RHより弱い局所算術補題」と呼び直して採用しない、というところで探索を終了しました。全ての未知のreduction方法がMertens評価を必要とする、と証明したわけではありません。
+
+9. Nyman–Beurling、Báez-Duarteとの比較
+
+Meyerの指定版にはinverse Euler operatorとcutoffを組み合わせる構成が既にあります。今回の方法の基本形には既知の先行研究があります。今回の特定のp_1/p_4上界が文字通り既刊のどの定理と同一か、また初出かどうかは判定していません。新規性は主張していません。
+
+Nyman–Beurling/Báez-Duarteは全整数dilationを使います。今回のT_2だけの時間サンプリングと、算術的生成族を2^jだけへ削る操作は別です。
+
+実際、Báez-Duarteのfractional-part generatorsを2^jだけにすると、target characteristic functionがそのL²閉包に入らないことを、三つの区間の値を比較して直接証明しました。二つの区間では極限を1に合わせられても、第三では2になって矛盾します。
+
+これはactual Wをdyadic-only quotientへ改変してはいけないという警告であり、今回のfull-arithmetic reductionの反例ではありません。今回のcriterionとNyman–Beurlingの文字通りの同一性も主張していません。
+
+10. 反証試験と独立監査
+
+builderがadèlic scaling、2進格子、Gaussian、Poisson、finite recurrenceを担当しました。literature担当がMeyer、Beurling、Báez-Duarteの指定原文を照合しました。destroyerがforward-only lemma、compact no-go、Möbius cutoff、p_4からp_1の評価、Mertensによる条件付き改良、Laurent polynomial gateを独立に検算しました。
+
+任意関数、compact support extreme、one-sided tail、oscillatory input、Gaussian、translated bump、synthetic off-line character、quotient collapse、evaluation loss、隠れたRH密度仮定を検査しました。off-line synthetic characterは指数率1/2の上界では排除されず、準指数条件で初めて排除されるため、弱い上界をRHと取り違えていません。
+
+数値試験では、コンパクトなsmooth Hを使い、n=1,2,3,4のexact cancellationとrecurrenceを40桁演算で確認しました。divisor identityは512件を整数演算で検査しました。標本中の最大恒等式残差は約1.57e-43でした。
+
+数値積分や有限標本はinterval certificateではありません。global seminormのsupremumや無限反復の証明にもしていません。small-nの表から準指数成長をfitしていません。Lean形式化は今回は実施せず、解析証明と独立監査を記録しています。
+
+11. 保存先
+
+主研究ログ：research/dyadic_arithmetic_reduction.md
+候補比較：research/dyadic_reduction_candidates.md
+統合監査：proofs/audits/dyadic_reduction_adversarial.md
+機械可読state：research/dyadic_reduction_state.json
+
+完全な明示的構成と評価：research/dyadic/notes/explicit_mobius_reduction.md
+dyadic/adelic辞書：research/dyadic/notes/dyadic_relations.md
+一次資料比較：research/dyadic/notes/literature_comparison.md
+独立監査原稿：research/dyadic/notes/independent_audit.md
+実行検証：research/dyadic/check_reduction.py
+計算結果：research/dyadic/reduction_checks.json
+旧ファイル保存確認：research/dyadic/preservation_baseline.json、preservation_check.json
+検証集約：research/dyadic/validation.json
+
+主要一次資料URL：
+https://arxiv.org/pdf/math/0703392v1
+https://arxiv.org/html/math/0311468v1#S5.SS3
+https://arxiv.org/html/math/0202141v2
+https://arxiv.org/html/math/0505453v1
+https://arxiv.org/pdf/0705.0723v2
+
+12. 終了時点の判定
+
+forward-only sufficiency：証明済み。
+actual Wの固定と両方向不変性：確認済み。
+任意入力へのexplicit arithmetic representative：構成済み。
+固定c<1の上界：c=1/2で証明済み。
+compact fundamental-domainへのexact folding：非零compact入力では不可。
+全epsilonのsubexponential bound：無条件には未証明。
+その固定構成のendpoint：RH同値。
+新しい独立RH bridge：なし。
+旧phaseへの自動merge：なし。
+RH：OPEN。
+
+この探索の最終的な縮約は、「代表元を算術的に戻す具体的な式そのものは作れる。問題はその戻し方の大きさを指数率1/2から0へ下げる、RHを先取りしない算術相殺にある」というものです。式の存在と、その極限の定量評価を切り分けた状態で、持ち帰り用の報告を完了します。
+
+
+PUBLIC EXPORT EDITORIAL NOTE — SOURCE REFERENCES NOT INCLUDED:
+- research/dyadic/preservation_baseline.json

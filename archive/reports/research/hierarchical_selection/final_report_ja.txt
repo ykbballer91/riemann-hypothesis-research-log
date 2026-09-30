@@ -1,0 +1,85 @@
+STATUS: RIEMANN HYPOTHESIS OPEN
+SANITIZED HISTORICAL SOURCE SNAPSHOT — not a new execution or proof validation.
+Public credit: @ykbballer91; AI-assisted research log; text CC BY 4.0.
+Source: research/hierarchical_selection/final_report_ja.txt
+Original SHA-256: 87fcfc43aa6c51ea75247ad5709a955dbc8709718c0fbdc128aaa0daab46abed
+Internal source paths are provenance identifiers; see data/source-manifest.json for public paths.
+
+RH HIERARCHICAL SELECTION / RESOLUTION SCALE — 完了報告
+2026-09-30。RH OPEN。
+
+今回は肯定的な限定結果を得た。
+固定した有限候補群では、単純な境界条件が階層的に縮退を解き、kを選ぶ。
+十分高いFourier解像度なら、その選択は既存のfull support＋Fourier射影系にも残る。
+
+最も重要な限定：ここでいう最低状態は、span{k,k'',...,k^(2m)}の有限像に制限した最低状態。
+全有限Fourier空間のactual groundとは同定できていない。
+G*、ES、Hurwitzへの接続、RHは未証明。
+
+1. support-only m=2,3でもkへ行くか。
+
+はい。任意の固定有限mで証明した。
+Y=πλ²、a=logλとして、単位最低状態はk/||k||へ収束し、最低値は
+
+  μ_(a,m) ~ a(m!)²/(√π ||k||²) Y^(7/2−2m) exp(−2Y).
+
+したがってm=2では4Y^(−1/2)、m=3では36Y^(−5/2)
+（共通因子a exp(−2Y)/(√π||k||²)を除く）。
+
+2. higher-order Γ-developmentとして厳密に整理できるか。
+
+はい。高階方向をactual形式でSchur消去し、Gramも同時に運んだ。
+隣接する採点階層はY^6の尺度で分かれ、最終的にkの方向だけが残る。
+正しい位相、compactness、liminf、recovery sequenceを固定した。
+Γ-convergenceという名称からの推論ではない。
+
+3. Fourier解像度の本当のscaleは何か。
+
+境界幅は1/(2Y)、周波数はΩ=πN/aなので、NがaYのオーダーで境界を見る。
+従来のN~a²,a³はこの意味ではunder-resolvedだった。
+ただし「選択の必要十分な臨界定数」は未同定。
+
+4. N/(aY)→∞ならfull系にも残るか。
+
+上記の固定有限候補群に制限した最低方向なら、はい。
+さらに強く、liminf N/(aY)>4/π²でkへの経路に依存しない収束を証明した。
+4/π²は十分条件であり、真の境目とは主張しない。
+
+周期射影によって両端の裾が折り返される効果を含めると、境界の極限採点は
+
+  J_h(F)=||F||² + 1/2 ||highpass_(|ξ|>h)(Fの偶延長)||²,
+  h=πN/(2aY).
+
+元の採点以上、2倍以下で、h→∞なら元の支持採点へ戻る。
+actual prime・Gamma・poleの各項をこの尺度で評価している。
+
+5. 素数冪rank-one更新には単純な反復法則があるか。
+
+微分の瞬間とfrozen模型にはある。
+しかしactual有限幅の新しい素数項は、constant方向には負、odd sine方向には正。
+従って有限追加全体はnegative rank-oneでなく、そのまま反復する案は止まった。
+境界評価という共通covectorは見つかったが、同一flowではない。
+
+6. Sonine/RKHS chainで二parameter cutoffを置換できるか。
+
+Weil energyと選択を保つ置換は見つからなかった。
+Gamma/Sonine/Suzuki間の正確な辞書と、supportだけのPaley–Wiener chainはある。
+しかし現在の非零compact-support有限vectorは自然な対応ではSonine gap spaceへ入らない。
+各有限段階のnorm<1も、極限でnorm→1となり、一様な保証にはならない。
+
+7. actual full ground→kの比較は前進したか。
+
+比較する候補方向と十分な解像度条件は厳密化できた。
+しかし全有限空間のgroundとその候補方向の距離・gap比較そのものは未取得。
+restricted minimumをfull groundと置き換えない。この点がG*への残る切断点。
+
+有限診断としてλ=3、N=4,8,12,20,40も検査した。
+k+bk''のrestricted最小方向で、低解像度ではb>0、高解像度ではb<0となった。
+これは構造の診断であり、上の証明は数値fitに依存しない。
+
+support階層・critical/resolved full境界形式・restricted transferは独立監査PASS。
+既存研究・state・proof graphは保存し、自動mergeは行わない。
+三系統の限定監査を終了する。
+
+HIERARCHICAL SELECTION IDENTIFIED:
+固定有限候補群では境界の階層がkを選び、十分高いFourier解像度でもそのrestricted選択が保存される。

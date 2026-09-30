@@ -1,0 +1,99 @@
+STATUS: RIEMANN HYPOTHESIS OPEN
+SANITIZED HISTORICAL SOURCE SNAPSHOT — not a new execution or proof validation.
+Public credit: @ykbballer91; AI-assisted research log; text CC BY 4.0.
+Source: research/rate_history/final_report_ja.txt
+Original SHA-256: 08ff61c2d66bfdd84fdaf7cc3f0537d54e96f5f97ec5d2fbfd1c6df6db3a629c
+Internal source paths are provenance identifiers; see data/source-manifest.json for public paths.
+
+RH DEGENERACY LIFTING / RATE-AND-HISTORY SELECTION
+2026-09-30
+RH OPEN
+
+指定されたsupport＋有限Fourier射影の全系についての結論：
+NO FINITE-SCALE SELECTION PRINCIPLE IDENTIFIED.
+
+今回は有限分裂の行列計算と、消失速度に対する解析的評価を得た。
+さらに支持切断だけ・二候補k,k''に限れば、最低方向が一意にkへ近づくことを証明した。
+ただし全canonical系の一意な最速状態や、履歴が選ぶ極限状態の同定には至っていない。
+
+1. 最終的に同点になる候補は、有限段階では本当に違う点数を持つか。
+
+はい。k,k'',k^(4),k^(6)をcanonicalな支持制限・Fourier射影・L²単位化で同じactual Weil行列へ入れ、Gramを含む一般化固有問題を解いた。
+
+λ=13,N=17の例：
+k単独                       約9.54×10^-12
+k,k''のspan内の最低点        約5.00×10^-15
+k,k'',k^(4)のspan内の最低点   約1.99×10^-18
+k,k'',k^(4),k^(6)の最低点     約1.42×10^-21
+全有限空間のactual ground     約9.66×10^-59
+
+33個のrestricted problemsを高精度で診断した。これは有限数値であり、区間認証や漸近証明ではない。
+
+2. 差はどの速さで消えるか。
+
+支持切断だけならactual Weil scoreの漸近式を証明した。
+a=log λ、Y=πλ²、f_j=k^(2j)とすると、
+
+Q(1_[-a,a] f_j) ~ (a 16^j/√π) Y^(4j+7/2) exp(-2Y).
+
+全員に共通するsuper-exponential因子に、微分次数別の異なるpolynomial factorが掛かる。
+これは単なるL² tailではなく、prime・Gamma・poleを含む実際の形式の値。
+
+さらにFourier射影も含む全有限認識行列に無条件上界を得た。
+Ω=π(N+1)/aなら、固定mについて
+
+|M_ij| ≤ C_m [a(1+Ω)^(4m+8) exp(a-πΩ/2)
+               + λ^(8m+24) exp(-2πλ²)].
+
+したがってN=max(4,ceil(a²))とN=max(4,ceil(a³))の両経路で、候補群の全Ritz値は0へ行く。これは上界であり、誰が本当に一番速いかを示すleading asymptoticではない。
+
+3. 一番速く同点に到達する状態は一意か。
+
+全canonical系の最速認識方向は未証明。支持切断の先頭採点は、境界値に対するrank-one形式だった。候補が3個以上なら、その先頭項を消す射影方向が複数残る。
+
+具体的に
+g_a = k - [k(a)/k''(a)] k''
+は境界値を消し、
+Q(1_[-a,a]g_a) / Q(1_[-a,a]k) ~ 2/Y²
+と、k単独より速く0へ近づく。
+
+さらに、支持切断だけの二候補k,k''については、Gramも含めたrescaled行列から、十分大きい窓で最低方向が一意となり、L²でk/||k||へ収束することを証明できた。これはsigned energyの最低方向に関する定理であり、absolute scoreの最速状態とは同一視しない。
+
+4. 選ばれるのはk / prolate proxyか。
+
+有限計算では混合状態。上のλ=13,N=17で、restricted最小方向とglobal kのoverlap²は約0.99346、prolate proxyとは約0.99319だった。
+支持切断だけ・二候補の場合の極限はkと証明できたが、Fourier射影込みの全parameterでkを選ぶ定理ではない。full groundとの比較には、消えつつあるgapと補空間couplingが残る。
+
+5. cutoffの増やし方を変えても同じ状態が選ばれるか。
+
+二つのadmissible経路を比較したが、共通の無限limitも異なる無限limitも証明していない。
+同じλでNが違えば有限の状態は違うが、それは別のendpointなので履歴依存の証拠にはならない。
+
+6. もし違うなら、履歴がselectionの一部か。
+
+同じ有限endpointでgroundが単純なら、projectorは現在のQだけで決まり、履歴は入らない。
+prime-power追加時には行列のjumpでなく、明示的なrank-oneの傾きの変化がある。
+無限極限が経路で変わると証明できればregularization pathがデータとなるが、今回はそこまで得ていない。
+任意の確率分布、Gibbs weight、新しいmetricは導入しなかった。
+
+今回分かった切れ目：
+候補全員が有限算術から同点へ近づくことは、二経路で無条件に定量化できた。
+しかし、その上界だけでは一人の最速状態を選べない。
+必要な次の情報はfull next-order splitting matrixの同定・一意性・uniform remainderであり、これを新仮定として採用してはいない。
+
+支持切断の主漸近・二候補の限定選択定理・全射影の上界は独立監査PASS。
+full canonical selector、actual full ground convergence、G*、RHは未証明。
+三系統で限定監査を終了し、第四候補や無限次次数探索には移らない。
+
+保存先：
+research/rate_history_selection.md
+research/radical_degeneracy_lifting.md
+research/ground_state_trajectory.md
+research/rate_history_candidate_matrix.md
+proofs/audits/rate_history_selection_adversarial.md
+research/rate_history_state.json
+
+既存研究・state・proof graphへの自動mergeなし。
+
+指定されたfull canonical系について：
+NO FINITE-SCALE SELECTION PRINCIPLE IDENTIFIED.

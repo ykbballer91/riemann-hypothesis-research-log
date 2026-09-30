@@ -1,0 +1,492 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "experiments/results/structural_falsification.json",
+    "source_sha256": "90244db985657ed46e8ff67677982bb13ba001a717cecee6458a5fa4a0802f01",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {}
+  },
+  "status": "EXPERIMENTAL EVIDENCE — NOT RH EVIDENCE",
+  "arithmetic": "Exact Fraction identities plus non-certified NumPy binary64 quadrature/eigenvalues",
+  "seed": 20260929,
+  "source_paper_physical_inputs": [],
+  "symmetry": {
+    "coefficients": [
+      "1",
+      "0",
+      "15/8",
+      "0",
+      "289/256"
+    ],
+    "roots": [
+      [
+        -0.24999999999999856,
+        1.0
+      ],
+      [
+        -0.24999999999999856,
+        -1.0
+      ],
+      [
+        0.24999999999999872,
+        1.0000000000000007
+      ],
+      [
+        0.24999999999999872,
+        -1.0000000000000007
+      ]
+    ],
+    "exact_critical_axis_square_remainder": "1/4"
+  },
+  "dilation_norms": [
+    {
+      "beta": -1.0,
+      "gamma": -1.0,
+      "norm_ratio": 1.0000000000000002,
+      "exact_ratio": 1.0,
+      "error": 2.220446049250313e-16
+    },
+    {
+      "beta": -1.0,
+      "gamma": 0.5,
+      "norm_ratio": 8.166169912567648,
+      "exact_ratio": 8.166169912567646,
+      "error": 1.7763568394002505e-15
+    },
+    {
+      "beta": 0.0,
+      "gamma": 0.0,
+      "norm_ratio": 1.0000000000000002,
+      "exact_ratio": 1.0,
+      "error": 2.220446049250313e-16
+    },
+    {
+      "beta": 0.0,
+      "gamma": 0.5,
+      "norm_ratio": 2.013752707470476,
+      "exact_ratio": 2.0137527074704766,
+      "error": 4.440892098500626e-16
+    },
+    {
+      "beta": 0.5,
+      "gamma": 0.5,
+      "norm_ratio": 1.0000000000000002,
+      "exact_ratio": 1.0,
+      "error": 2.220446049250313e-16
+    },
+    {
+      "beta": 0.5,
+      "gamma": 0.5,
+      "norm_ratio": 1.0000000000000002,
+      "exact_ratio": 1.0,
+      "error": 2.220446049250313e-16
+    },
+    {
+      "beta": 1.0,
+      "gamma": 1.0,
+      "norm_ratio": 1.0000000000000002,
+      "exact_ratio": 1.0,
+      "error": 2.220446049250313e-16
+    },
+    {
+      "beta": 1.0,
+      "gamma": 0.5,
+      "norm_ratio": 0.4965853037914096,
+      "exact_ratio": 0.4965853037914095,
+      "error": 5.551115123125783e-17
+    },
+    {
+      "beta": 2.0,
+      "gamma": 2.0,
+      "norm_ratio": 1.0000000000000002,
+      "exact_ratio": 1.0,
+      "error": 2.220446049250313e-16
+    },
+    {
+      "beta": 2.0,
+      "gamma": 0.5,
+      "norm_ratio": 0.12245642825298196,
+      "exact_ratio": 0.12245642825298195,
+      "error": 1.3877787807814457e-17
+    }
+  ],
+  "prime_translation": {
+    "form": "(log 2)/sqrt(2) * (tau_log2 + tau_minus_log2)",
+    "samples_per_family": 193,
+    "families": [
+      {
+        "family": "gaussian",
+        "minimum_rayleigh": -0.9510193419694126,
+        "carrier": -4.5,
+        "negative_candidate": true
+      },
+      {
+        "family": "compact_smooth",
+        "minimum_rayleigh": -0.9064406665433719,
+        "carrier": -4.5,
+        "negative_candidate": true
+      },
+      {
+        "family": "highly_localized",
+        "minimum_rayleigh": -0.004707764255514842,
+        "carrier": -4.5,
+        "negative_candidate": true
+      },
+      {
+        "family": "oscillatory",
+        "minimum_rayleigh": -0.17447115603488664,
+        "carrier": -4.5,
+        "negative_candidate": true
+      },
+      {
+        "family": "high_frequency",
+        "minimum_rayleigh": -0.9510564658597911,
+        "carrier": 11.75,
+        "negative_candidate": true
+      },
+      {
+        "family": "near_boundary",
+        "minimum_rayleigh": -0.8272538788010431,
+        "carrier": -4.5,
+        "negative_candidate": true
+      },
+      {
+        "family": "random_combination",
+        "minimum_rayleigh": -0.8435764124541622,
+        "carrier": -4.5,
+        "negative_candidate": true
+      },
+      {
+        "family": "approximate_translation_eigenfunction",
+        "minimum_rayleigh": -0.9726804668111506,
+        "carrier": -4.5,
+        "negative_candidate": true
+      }
+    ],
+    "exact_gaussian_rayleigh_at_pi_over_log2": -0.8693125224574247
+  },
+  "exact_restrictions": [
+    {
+      "dimension": 1,
+      "min_eigenvalue": 1.0
+    },
+    {
+      "dimension": 2,
+      "min_eigenvalue": -1.0
+    },
+    {
+      "dimension": 3,
+      "min_eigenvalue": -1.0
+    }
+  ],
+  "prime_jump_renormalization": [
+    {
+      "cutoff": 2,
+      "S": 0.49012907173427356,
+      "jump_energy": 0.9800661711957585,
+      "subtracted_diagonal": 0.9802581434685471,
+      "renormalized_prime_term": -0.00019197227278866524
+    },
+    {
+      "cutoff": 10,
+      "S": 3.537502814266249,
+      "jump_energy": 7.0748136562597095,
+      "subtracted_diagonal": 7.075005628532498,
+      "renormalized_prime_term": -0.00019197227278855422
+    },
+    {
+      "cutoff": 100,
+      "S": 16.896201344213686,
+      "jump_energy": 33.792210716154585,
+      "subtracted_diagonal": 33.79240268842737,
+      "renormalized_prime_term": -0.00019197227278766604
+    },
+    {
+      "cutoff": 1000,
+      "S": 60.507756467851905,
+      "jump_energy": 121.01532096343102,
+      "subtracted_diagonal": 121.01551293570381,
+      "renormalized_prime_term": -0.00019197227278766604
+    },
+    {
+      "cutoff": 10000,
+      "S": 197.4660526925656,
+      "jump_energy": 394.9319134128584,
+      "subtracted_diagonal": 394.9321053851312,
+      "renormalized_prime_term": -0.0001919722727734552
+    }
+  ],
+  "nonclosable_sampling_toy": [
+    {
+      "R": 1.0,
+      "L2_norm_squared": 0.28209479177387814,
+      "sampling_form": 1.3863184898642633,
+      "sampling_difference": 0.24037344384247017
+    },
+    {
+      "R": 2.0,
+      "L2_norm_squared": 0.14104739588693907,
+      "sampling_form": 1.0183157514239092,
+      "sampling_difference": 0.018225064099558874
+    },
+    {
+      "R": 4.0,
+      "L2_norm_squared": 0.07052369794346953,
+      "sampling_form": 1.0000001125351747,
+      "sampling_difference": 1.125351747107624e-07
+    },
+    {
+      "R": 8.0,
+      "L2_norm_squared": 0.03526184897173477,
+      "sampling_form": 1.0,
+      "sampling_difference": 1.6038108905486377e-28
+    },
+    {
+      "R": 16.0,
+      "L2_norm_squared": 0.017630924485867384,
+      "sampling_form": 1.0,
+      "sampling_difference": 6.616261056709485e-112
+    },
+    {
+      "R": 32.0,
+      "L2_norm_squared": 0.008815462242933692,
+      "sampling_form": 1.0,
+      "sampling_difference": 0.0
+    },
+    {
+      "R": 64.0,
+      "L2_norm_squared": 0.004407731121466846,
+      "sampling_form": 1.0,
+      "sampling_difference": 0.0
+    }
+  ],
+  "actual_Weil_window_cross_term": [
+    {
+      "epsilon": 0.015625,
+      "mixed_Weil_form": -0.595867690945422,
+      "prime_limit": -0.634284100597564,
+      "smooth_correction": 0.038416409652142006,
+      "window_difference_2x2_determinant": -0.355058305112629
+    },
+    {
+      "epsilon": 0.0078125,
+      "mixed_Weil_form": -0.6150758443412995,
+      "prime_limit": -0.634284100597564,
+      "smooth_correction": 0.019208256256264596,
+      "window_difference_2x2_determinant": -0.37831829429216246
+    },
+    {
+      "epsilon": 0.00390625,
+      "mixed_Weil_form": -0.6246799660454082,
+      "prime_limit": -0.634284100597564,
+      "smooth_correction": 0.009604134552155839,
+      "window_difference_2x2_determinant": -0.39022505997849233
+    },
+    {
+      "epsilon": 0.001953125,
+      "mixed_Weil_form": -0.6294820325186316,
+      "prime_limit": -0.634284100597564,
+      "smooth_correction": 0.004802068078932438,
+      "window_difference_2x2_determinant": -0.39624762926378754
+    }
+  ],
+  "positive_even_kernel": {
+    "z": [
+      0.25,
+      3.141592653589793
+    ],
+    "minimum_sampled_kernel": 0.0,
+    "direct_Laplace_residual": 1.2509268882771003e-17,
+    "exact_factor_numerical_residual": 3.0936086520432044e-17,
+    "exact_identity": "L_k(z)=H(z)*(cosh(1/4)+cosh(z))"
+  },
+  "dilation_eigenvalue_count": [
+    {
+      "T": 100,
+      "periodic_dilation_positive_eigenvalues": 31,
+      "Riemann_von_Mangoldt_main_term": 28.12734358732535,
+      "note": "Second quantity is only the known main term, not an exact zeta zero count."
+    },
+    {
+      "T": 1000,
+      "periodic_dilation_positive_eigenvalues": 318,
+      "Riemann_von_Mangoldt_main_term": 647.7412353129674,
+      "note": "Second quantity is only the known main term, not an exact zeta zero count."
+    },
+    {
+      "T": 10000,
+      "periodic_dilation_positive_eigenvalues": 3183,
+      "Riemann_von_Mangoldt_main_term": 10142.090347526813,
+      "note": "Second quantity is only the known main term, not an exact zeta zero count."
+    }
+  ],
+  "uniform_coercivity_sampling_toy": [
+    {
+      "R": 1.0,
+      "L2_norm_squared": 0.28209479177387814,
+      "sampling_form": 0.772390160120353
+    },
+    {
+      "R": 2.0,
+      "L2_norm_squared": 0.28209479177387814,
+      "sampling_form": 0.07326300569563562
+    },
+    {
+      "R": 4.0,
+      "L2_norm_squared": 0.28209479177387814,
+      "sampling_form": 9.00281397754073e-07
+    },
+    {
+      "R": 8.0,
+      "L2_norm_squared": 0.28209479177387814,
+      "sampling_form": 2.5660974248778203e-27
+    },
+    {
+      "R": 16.0,
+      "L2_norm_squared": 0.28209479177387814,
+      "sampling_form": 2.1172035381470353e-110
+    }
+  ],
+  "ground_state_counterexamples": [
+    {
+      "name": "positive_ground_vector_negative_energy",
+      "spectrum": [
+        -1.0,
+        1.0
+      ],
+      "positive_vector_rayleigh": -1.0
+    },
+    {
+      "name": "positive_eigenvector_not_ground_state",
+      "spectrum": [
+        -1.0,
+        3.0
+      ],
+      "positive_vector_rayleigh": 3.0
+    }
+  ],
+  "Euler_probability_boundary": [
+    {
+      "sigma": 1.1,
+      "t": 0.0,
+      "ratio": [
+        1.0,
+        0.0
+      ],
+      "absolute_value": 1.0
+    },
+    {
+      "sigma": 1.1,
+      "t": 0.5,
+      "ratio": [
+        0.0916727248106532,
+        -0.17829182625788334
+      ],
+      "absolute_value": 0.20047908565379335
+    },
+    {
+      "sigma": 1.1,
+      "t": 2.0,
+      "ratio": [
+        0.059584180046465963,
+        -0.03333902384214054
+      ],
+      "absolute_value": 0.06827711931940661
+    },
+    {
+      "sigma": 1.01,
+      "t": 0.0,
+      "ratio": [
+        1.0,
+        0.0
+      ],
+      "absolute_value": 1.0
+    },
+    {
+      "sigma": 1.01,
+      "t": 0.5,
+      "ratio": [
+        0.00615589474702219,
+        -0.019515201229774466
+      ],
+      "absolute_value": 0.02046309163286443
+    },
+    {
+      "sigma": 1.01,
+      "t": 2.0,
+      "ratio": [
+        0.005979723232144391,
+        -0.0035004468697646157
+      ],
+      "absolute_value": 0.006928940627620665
+    },
+    {
+      "sigma": 1.001,
+      "t": 0.0,
+      "ratio": [
+        1.0,
+        0.0
+      ],
+      "absolute_value": 1.0
+    },
+    {
+      "sigma": 1.001,
+      "t": 0.5,
+      "ratio": [
+        0.0005821699905789831,
+        -0.0019624135119727165
+      ],
+      "absolute_value": 0.002046946186372232
+    },
+    {
+      "sigma": 1.001,
+      "t": 2.0,
+      "ratio": [
+        0.0005981466073789912,
+        -0.0003516741399120151
+      ],
+      "absolute_value": 0.0006938689102430318
+    },
+    {
+      "sigma": 1.0001,
+      "t": 0.0,
+      "ratio": [
+        1.0,
+        0.0
+      ],
+      "absolute_value": 1.0
+    },
+    {
+      "sigma": 1.0001,
+      "t": 0.5,
+      "ratio": [
+        5.788069180196143e-05,
+        -0.00019634365717623563
+      ],
+      "absolute_value": 0.00020469735268638134
+    },
+    {
+      "sigma": 1.0001,
+      "t": 2.0,
+      "ratio": [
+        5.9816367711553756e-05,
+        -3.5183668872814156e-05
+      ],
+      "absolute_value": 6.939660223350739e-05
+    }
+  ],
+  "zeta_EM_sanity_error_at_2": 1.7763568394002505e-15,
+  "caveats": [
+    "No zeta zero search or RH conclusion.",
+    "Positive prime coefficients do not make a translation sum positive semidefinite.",
+    "Physical claims and constants from the source PDF are excluded.",
+    "Discrete spectral samples are a toy, not substituted for the full Weil form."
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "research/local_to_global/validation.json",
+    "source_sha256": "28eb70b141920997c0510379feb57008477f7b0b519140f35f718e429b2454f8",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {
+      "proofs/audits/local_global_zero_confinement_adversarial.md": {
+        "public_path": "archive/audits/proofs/audits/local_global_zero_confinement_adversarial.md",
+        "status": "EXPORTED"
+      },
+      "research/local_global_candidate_matrix.md": {
+        "public_path": "archive/reports/research/local_global_candidate_matrix.md",
+        "status": "EXPORTED"
+      },
+      "research/local_global_state.json": {
+        "public_path": "data/source-records/research/local_global_state.json",
+        "status": "EXPORTED"
+      },
+      "research/local_global_theorem_stack.md": {
+        "public_path": "archive/reports/research/local_global_theorem_stack.md",
+        "status": "EXPORTED"
+      },
+      "research/local_to_global/completion_report.txt": {
+        "public_path": "archive/reports/research/local_to_global/completion_report.txt",
+        "status": "EXPORTED"
+      },
+      "research/local_to_global/experiments/check_normalization_and_tail.py": {
+        "public_path": "artifacts/research/local_to_global/experiments/check_normalization_and_tail.py",
+        "status": "EXPORTED"
+      },
+      "research/local_to_global/experiments/results.json": {
+        "public_path": "artifacts/research/local_to_global/experiments/results.json",
+        "status": "EXPORTED"
+      },
+      "research/local_to_global/notes/convergence_destroyer.md": {
+        "public_path": "archive/reports/research/local_to_global/notes/convergence_destroyer.md",
+        "status": "EXPORTED"
+      },
+      "research/local_to_global/notes/local_rh_and_sauvalle.md": {
+        "public_path": "archive/reports/research/local_to_global/notes/local_rh_and_sauvalle.md",
+        "status": "EXPORTED"
+      },
+      "research/local_to_global/notes/search_scope_and_additional_inputs.md": {
+        "public_path": "archive/reports/research/local_to_global/notes/search_scope_and_additional_inputs.md",
+        "status": "EXPORTED"
+      },
+      "research/local_to_global/notes/semilocal_and_real_zero_theorems.md": {
+        "public_path": "archive/reports/research/local_to_global/notes/semilocal_and_real_zero_theorems.md",
+        "status": "EXPORTED"
+      },
+      "research/local_to_global/notes/spectral_approximants_and_exact_gap.md": {
+        "public_path": "archive/reports/research/local_to_global/notes/spectral_approximants_and_exact_gap.md",
+        "status": "EXPORTED"
+      },
+      "research/local_to_global/preservation_baseline.json": {
+        "public_path": null,
+        "status": "SOURCE_REFERENCE_NOT_INCLUDED"
+      },
+      "research/local_to_global/validation.json": {
+        "public_path": "data/source-records/research/local_to_global/validation.json",
+        "status": "EXPORTED"
+      },
+      "research/local_to_global_zero_confinement.md": {
+        "public_path": "archive/reports/research/local_to_global_zero_confinement.md",
+        "status": "EXPORTED"
+      }
+    }
+  },
+  "baseline_old_file_count": 343,
+  "old_files_changed": [],
+  "old_files_missing": [],
+  "baseline_head": "c4b6fc587ebb6ad2cec37b9a24c38a3a7e823423",
+  "current_head": "c4b6fc587ebb6ad2cec37b9a24c38a3a7e823423",
+  "head_unchanged": true,
+  "new_files_outside_authorized_track_paths": [],
+  "new_files": [
+    "proofs/audits/local_global_zero_confinement_adversarial.md",
+    "research/local_global_candidate_matrix.md",
+    "research/local_global_state.json",
+    "research/local_global_theorem_stack.md",
+    "research/local_to_global/completion_report.txt",
+    "research/local_to_global/experiments/check_normalization_and_tail.py",
+    "research/local_to_global/experiments/results.json",
+    "research/local_to_global/notes/convergence_destroyer.md",
+    "research/local_to_global/notes/local_rh_and_sauvalle.md",
+    "research/local_to_global/notes/search_scope_and_additional_inputs.md",
+    "research/local_to_global/notes/semilocal_and_real_zero_theorems.md",
+    "research/local_to_global/notes/spectral_approximants_and_exact_gap.md",
+    "research/local_to_global/preservation_baseline.json",
+    "research/local_to_global/validation.json",
+    "research/local_to_global_zero_confinement.md"
+  ],
+  "document_issues": [],
+  "broken_local_markdown_links": [],
+  "json_files_parsed": [
+    "research/local_global_state.json",
+    "research/local_to_global/experiments/results.json",
+    "research/local_to_global/preservation_baseline.json",
+    "research/local_to_global/validation.json"
+  ],
+  "rh_status": "OPEN",
+  "rh_closed": false,
+  "diagnostic_assertions_passed": true,
+  "scope": "Hash preservation and document consistency. Not a proof of cited mathematical theorems.",
+  "all_checks_passed": true,
+  "final_independent_review": "PASS including overlap clarification and resolved normal-family quantification",
+  "final_audit_sha256": "3674251579b8a19b71bfae82470b832a1e3c5702b7079c66d30ded066bc17116",
+  "final_old_files_rechecked_after_audit": 343
+}

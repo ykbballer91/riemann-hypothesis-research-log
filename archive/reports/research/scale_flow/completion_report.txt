@@ -1,0 +1,68 @@
+STATUS: RIEMANN HYPOTHESIS OPEN
+SANITIZED HISTORICAL SOURCE SNAPSHOT — not a new execution or proof validation.
+Public credit: @ykbballer91; AI-assisted research log; text CC BY 4.0.
+Source: research/scale_flow/completion_report.txt
+Original SHA-256: 62b3f3b62600cd9ce2747587b16ca0f9ce4943dde71db29d3fb821246c4097c1
+Internal source paths are provenance identifiers; see data/source-manifest.json for public paths.
+
+Continuous Scale Flow / Frobenius Section 完了報告
+2026-09-29
+
+追加された並列探索を完了しました。RHはOPENです。新しい正計量、独立な全零点no-growth定理、RH証明は得られませんでした。3候補の構成・反証・独立監査を行い、指定のkill条件でこの巡を終了しました。Phase IIIおよびPhase IVのファイル・state・主証明グラフは変更していません。
+
+今回の最も明確な結論は、「幾何学的な横断伸長」と「零点を担う表現の成長率」を分けなければならないことです。前者を全てゼロにする命題は、実際の算術的p-adic normal modelで反証されます。後者をゼロにする正計量は依然として未構成です。
+
+1. Frobenius mapping torusは既知のexactな構造です。
+Connes–Consaniの2016・2024・2025年の指定箇所を照合しました。素数pのbase orbitの長さはlog p。full liftは H_p=積_{q≠p} Z_q^× をfiberとするmapping torusです。deck monodromyはpにおけるarithmetic Galois Frobeniusで、増加するlog-scaleを正時間にすると帰還写像はpの逆になります。これは向きの規約差です。
+full profinite liftの軌道そのものは一般に閉じません。有限abelian coverではFrobeniusの位数f_pに応じ、f_p log pの閉軌道になります。滑らかな実Poincaré断面や曲線H1のweight-one Frobeniusを構成したことにはなりません。
+
+2. 局所正計量を実際に作ると、その限界を直接計算できます。
+Haar測度から局所mapping torusの正のL2内積を得られ、Koopman flowはunitaryです。全局所modeをcharacterとquasiperiodic Fourier basisで展開しました。
+ところが、無限個のfiber characterによって、有限の周波数帯に無限個の直交modeが入ります。このgeneratorはcompact resolventを持たず、有限高さで有限個しかないzeta零点のdivisorとそのまま一致しません。局所空間の完全性と全零点の完全性は別です。これを修復するためにmodeを恣意的に射影することはしていません。
+
+3. 算術的横断成長が「全てゼロ」という命題は棄却しました。
+actual adelic representativeのp成分zを動かしたnormal modelで、一周期後の帰還はz→p^-1 zです。p-adic normはp倍になります。log-scale時間でのnormal valued exponentは+1、逆時間では-1です。
+このnormal modelの連続fiber norm N=e^u |z|_pはdeck変換に不変で、flowにより正確にe^v倍になります。したがって単なる不適切なframeから作った指数ではありません。
+ただしこのnormal modelをsingularなambient adele商の滑らかなchartとはしていません。CRTを用いると、その連続単射が位相的embeddingではないことまで確認できます。同じ商点列がzero sectionと非零normal点の双方へ収束するためです。したがってnormal modelのnormをambient商の距離にはできません。この+1はzeta零点のRe(rho)-1/2ではなく、RHへの反例ではありません。
+
+4. 非零横断成長とexplicit formulaの局所係数は両立します。
+p-adic dilationのHaar半密度に対する局所fixed-point kernelは、lambda=p^{±k}について |lambda|_p^(1/2)/|1-lambda|_p = p^(-k/2) となります。primitive length log pと合わせると、centered explicit formulaのprime-power係数が現れます。
+これはlocal distributional traceです。通常のHilbert trace-class作用素でも、global Weil positivityの証明でもありません。Gamma因子、infinity、pole項、全零点とのglobal比較を省略していません。
+
+5. 全零点を保持する別の算術表現では、成長率を厳密に書けます。
+既存のCCM/Meyerのtest quotient上で、正規化scaling W_uと各零点のMellin汎関数ell_rhoは、ell_rho(W_u f)=exp((rho-1/2)u) ell_rho(f)を満たします。したがって双対指標の指数成長は正確にRe(rho)-1/2です。
+この意味ではLevel 2–3の定義・同定を満たします。しかし幾何学的横断接束との同定を得たとの意味ではありません。既存構成の整理であり、新規の純性定理ではありません。
+
+6. Phase IVのmetricに必要な条件を明確にしました。
+同じ算術商に不変な非負形式を構成し、radical quotientの完備化で強連続unitary群を得る必要があります。そのうえで全零点の非零汎関数が、その同じnormに関して有界に残らなければなりません。この条件があれば双対norm保存からRe(rho)=1/2が従います。
+ambient flowがunitaryというだけでは不十分です。裸のL2では単一点Fourier評価すら有界でなく、指定された算術rangeの閉包が全体になって零点商が消える場合があります。強い指数重みは評価を保持できますが、flowの成長を許します。
+
+7. 一周期からの正しい十分条件と、その不足を証明しました。
+同じHilbert空間のC0群で、一つの正の周期Lに対するW_Lがunitaryなら、全時間で一様有界になります。一周期で内積を平均すると、元のnormと等価な全時間不変の正内積を作れます。この補題は独立監査を通過しました。
+しかし、素数ごとに別々のfiberでunitaryなreturnがあることは、その共通Hilbert空間での前提を満たしません。全零点を保持する表現での算術的return制御が未証明です。
+
+8. 反例と既知programの比較を行いました。
+2x2のhyperbolic cocycleは、prime periods、symplectic性、determinant保存、非退化な不定pairing、時間反転を同時に保ちながら非零成長を持ちます。base Euler logがactual zetaと同じでも、このcocycleのtrace weightまで同じにはなりません。その差を隠した反例は採用していません。
+Berry–Keating、Connes spectral realization、CC scaling Hamiltonian、scaling site/adèle class space、Deninger、dynamical zeta、Selberg、Gutzwillerの8系統を比較しました。resonance、Hilbert eigenvalue、geometric Lyapunov exponentを区別し、追加の反復重みやGamma因子を落として一致と呼ぶことを避けました。Li(x)の角度表示はPNTの座標化として終了しました。
+
+最終判定
+Level 1: 既知のexact monodromyを整理。
+Level 2–3: actual arithmetic representationのspectral-characterの意味で定義・同定。幾何学的接束との同定は未達。
+Level 4–5: 未達。
+新しい算術的positive bridge: なし。
+主証明グラフへの合流: なし。
+RH: OPEN。
+
+再開に必要なのは、零点を定義入力にしない共通の算術的metricまたはreturn theoremと、全零点汎関数の有界かつ非零な保持です。既知のorbit log、局所Haar正性、全零点のalpha=0というRH同値命題を別名で繰り返すだけでは再開しません。
+
+成果物
+research/continuous_scale_flow_frobenius.md
+research/scale_flow/notes/frobenius_mapping_torus.md
+research/scale_flow/notes/spectral_growth.md
+research/scale_flow/notes/program_comparison.md
+research/scale_flow/notes/padic_transverse_audit.md
+research/scale_flow/notes/independent_audit.md
+research/scale_flow/state.json
+research/scale_flow/flow_checks.json
+
+この報告は新規parallel trackについてのものです。同時に実行したPhase IVの独立完了報告は research/phase4/completion_report.txt に保存しました。Phase I〜IIIの既存報告は上書きしていません。

@@ -1,0 +1,51 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "research/global_remainder/validation.json",
+    "source_sha256": "2590bee0169ef568f0b45cb7e9574f00a51e64d64b97af266c61697b139aab69",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {}
+  },
+  "prior_file_preservation": {
+    "baseline_commit": "c4b6fc587ebb6ad2cec37b9a24c38a3a7e823423",
+    "current_commit": "c4b6fc587ebb6ad2cec37b9a24c38a3a7e823423",
+    "prior_file_count": 302,
+    "changed_prior_files": [],
+    "missing_prior_files": [],
+    "prior_files_preserved": true,
+    "commit_unchanged": true
+  },
+  "markdown_files_checked": 6,
+  "broken_local_links": [],
+  "control_character_files": [],
+  "unbalanced_latex_delimiter_files": [],
+  "state_consistent": true,
+  "independent_reviews": [
+    "DESTROYER: Gaussian good-height and L2 PASS",
+    "BUILDER: completed inverse formulas and growth hierarchy PASS",
+    "LITERATURE: Gaussian grouping, trivial-residue divergence and signs PASS",
+    "DESTROYER: root synthesis and initial script PASS, J_T normalization clarified"
+  ],
+  "numerical_interval_certificate": false,
+  "all_required_artifacts_present": true,
+  "status": "PASS_WITH_DECLARED_NUMERICAL_AND_NOVELTY_LIMITS",
+  "experiment_assertions_passed": true,
+  "experiment_counts": {
+    "gaussian_samples": 3,
+    "finite_contours": 1,
+    "real_pair_samples": 6,
+    "nonreal_quartet_samples": 4,
+    "exact_rational_jets": 5,
+    "gamma_slopes": 7,
+    "finite_parameter_polynomials": 3
+  },
+  "check_global_remainder.py_sha256": "5e1a2f78e6b5e72c6cf437089144c567f3efbe7b97c79a191e129360453ec9a3",
+  "results.json_sha256": "74e0466eba9372f9de27801c759df016ac84b97df98d7c8bc1b1120cafc7b0a2"
+}

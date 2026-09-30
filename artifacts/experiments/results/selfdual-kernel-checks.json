@@ -1,0 +1,110 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "experiments/results/selfdual-kernel-checks.json",
+    "source_sha256": "a01129dec0baec15277624ef024f8b9265600d2d539f868dc21156fcfd5c5473",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {}
+  },
+  "status": "EXACT_POSITIVE_SELFDUAL_THETA_COUNTERMODEL_VERIFIED",
+  "source_sha256": "e6b4435965c0de88e18bb53460e72eec0ebd259a20660beff61f803be74fe5c7",
+  "proves_RH": false,
+  "refutes_RH": false,
+  "standard_xi_changed": true,
+  "Euler_core_zeta_changed": false,
+  "standard_zero_free_gamma_factor_preserved": false,
+  "parameters": {
+    "a": "524256/268468225",
+    "b": "256/268468225",
+    "normalizer": "16393/16385"
+  },
+  "R2": [
+    "1/4",
+    "-6",
+    "4"
+  ],
+  "R4": [
+    "1/16",
+    "-39",
+    "166",
+    "-112",
+    "16"
+  ],
+  "theta_derivative_polynomials": {
+    "V0": [
+      "0",
+      "-6",
+      "4"
+    ],
+    "V2": [
+      "0",
+      "-75/2",
+      "165",
+      "-112",
+      "16"
+    ],
+    "V4": [
+      "0",
+      "-1875/8",
+      "15465/4",
+      "-8512",
+      "5176",
+      "-1056",
+      "64"
+    ]
+  },
+  "global_unnormalized_seed_lower_ratio": "266973521/268468225",
+  "global_unnormalized_theta_lower_ratio": "46840521/268468225",
+  "exact_added_s_zeros": [
+    [
+      "1/4",
+      "-32"
+    ],
+    [
+      "1/4",
+      "32"
+    ],
+    [
+      "3/4",
+      "-32"
+    ],
+    [
+      "3/4",
+      "32"
+    ]
+  ],
+  "interval_checks": {
+    "precision_bits": 192,
+    "standard_xi_at_one_quarter_plus_32i": "[5.124196307056141049766954153188146485453550324455908520e-9 +/- 7.63e-64] + [-1.527964362036060674738342243380689207810789166229780015e-9 +/- 6.40e-64]j",
+    "standard_xi_nonzero_certified": true,
+    "modified_D_two_point_determinant": "[-1.641555090701364187009574668051469478621764887172503053e-27 +/- 4.89e-82]",
+    "modified_negative_determinant_certified": true
+  },
+  "groundstate_partial_sum_probe": {
+    "method": "mpmath finite sums at 50 digits, non-certified; analytic Riemann-sum proof in note",
+    "limit_at_u_zero": "-0.27152105630059338551208375418179964",
+    "values": [
+      {
+        "N": 8,
+        "normalized_partial_sum_at_minus_log_N": "-0.21636450695741132715850477416103953"
+      },
+      {
+        "N": 16,
+        "normalized_partial_sum_at_minus_log_N": "-0.24379722254339767518405473942450189"
+      },
+      {
+        "N": 32,
+        "normalized_partial_sum_at_minus_log_N": "-0.25762526352181165565984377899067354"
+      }
+    ],
+    "claims_L2_convergence": false
+  },
+  "scope": "Modified Mellin factor; a counterexample to broad structural forcing, not RH"
+}

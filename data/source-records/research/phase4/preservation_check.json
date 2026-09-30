@@ -1,0 +1,113 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "research/phase4/preservation_check.json",
+    "source_sha256": "bd8edfdf57886f690a663471b12617e18d713f84ea557bbf0df4c24b9b936d97",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {
+      "experiments/results/phase3-structural-checks.json": {
+        "public_path": "artifacts/experiments/results/phase3-structural-checks.json",
+        "status": "EXPORTED"
+      },
+      "experiments/scripts/phase3_structural_checks.py": {
+        "public_path": "artifacts/experiments/scripts/phase3_structural_checks.py",
+        "status": "EXPORTED"
+      },
+      "proofs/audits/phase3-independent-audit.md": {
+        "public_path": "archive/audits/proofs/audits/phase3-independent-audit.md",
+        "status": "EXPORTED"
+      },
+      "release/phase3_handoff_2026-09-29.txt": {
+        "public_path": "archive/reports/release/phase3_handoff_2026-09-29.txt",
+        "status": "EXPORTED"
+      },
+      "research/finite_field_dependency_spine.md": {
+        "public_path": "archive/reports/research/finite_field_dependency_spine.md",
+        "status": "EXPORTED"
+      },
+      "research/notes/phase3_connes_consani_audit.md": {
+        "public_path": "archive/reports/research/notes/phase3_connes_consani_audit.md",
+        "status": "EXPORTED"
+      },
+      "research/notes/phase3_deninger_audit.md": {
+        "public_path": "archive/reports/research/notes/phase3_deninger_audit.md",
+        "status": "EXPORTED"
+      },
+      "research/notes/phase3_finite_field_audit.md": {
+        "public_path": "archive/reports/research/notes/phase3_finite_field_audit.md",
+        "status": "EXPORTED"
+      },
+      "research/notes/phase3_structural_tests.md": {
+        "public_path": "archive/reports/research/notes/phase3_structural_tests.md",
+        "status": "EXPORTED"
+      },
+      "research/number_field_gap_matrix.md": {
+        "public_path": "archive/reports/research/number_field_gap_matrix.md",
+        "status": "EXPORTED"
+      },
+      "research/phase3_gap_state.json": {
+        "public_path": "data/source-records/research/phase3_gap_state.json",
+        "status": "EXPORTED"
+      },
+      "research/phase3_missing_frobenius.md": {
+        "public_path": "archive/reports/research/phase3_missing_frobenius.md",
+        "status": "EXPORTED"
+      },
+      "research/phase3_sources.json": {
+        "public_path": "archive/literature/research/phase3_sources.json",
+        "status": "EXPORTED"
+      },
+      "research/strategy_review.md": {
+        "public_path": "archive/reports/research/strategy_review.md",
+        "status": "EXPORTED"
+      },
+      "theorem_graph/assumptions.md": {
+        "public_path": "archive/reports/theorem_graph/assumptions.md",
+        "status": "EXPORTED"
+      },
+      "theorem_graph/graph.md": {
+        "public_path": "archive/reports/theorem_graph/graph.md",
+        "status": "EXPORTED"
+      },
+      "theorem_graph/nodes.yaml": {
+        "public_path": "archive/reports/theorem_graph/nodes.yaml",
+        "status": "EXPORTED"
+      }
+    }
+  },
+  "phase": 4,
+  "phase3_protected_files_unchanged": true,
+  "paths_checked": 22,
+  "checks": {
+    "README.md": true,
+    "RESEARCH_CHARTER.md": true,
+    "STATUS.md": true,
+    "experiments/results/phase3-structural-checks.json": true,
+    "experiments/scripts/phase3_structural_checks.py": true,
+    "proof_state.json": true,
+    "proofs/audits/phase3-independent-audit.md": true,
+    "release/phase3_handoff_2026-09-29.txt": true,
+    "research/notes/phase3_connes_consani_audit.md": true,
+    "research/notes/phase3_deninger_audit.md": true,
+    "research/notes/phase3_finite_field_audit.md": true,
+    "research/notes/phase3_structural_tests.md": true,
+    "research/phase3_gap_state.json": true,
+    "research/phase3_missing_frobenius.md": true,
+    "research/phase3_sources.json": true,
+    "research/strategy_review.md": true,
+    "scripts/validate_phase3.py": true,
+    "theorem_graph/assumptions.md": true,
+    "theorem_graph/graph.md": true,
+    "theorem_graph/nodes.yaml": true,
+    "research/finite_field_dependency_spine.md": true,
+    "research/number_field_gap_matrix.md": true
+  },
+  "canonical_graph_merge": false
+}

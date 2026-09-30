@@ -1,0 +1,188 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "research/rate_history/validation.json",
+    "source_sha256": "866dc9429203051697c09e2f21722f25da3f0e01b4aae1b2a1e007611d1428da",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {
+      "proofs/audits/rate_history_selection_adversarial.md": {
+        "public_path": "archive/audits/proofs/audits/rate_history_selection_adversarial.md",
+        "status": "EXPORTED"
+      },
+      "research/ground_state_trajectory.md": {
+        "public_path": "archive/reports/research/ground_state_trajectory.md",
+        "status": "EXPORTED"
+      },
+      "research/radical_degeneracy_lifting.md": {
+        "public_path": "archive/reports/research/radical_degeneracy_lifting.md",
+        "status": "EXPORTED"
+      },
+      "research/rate_history/charter.md": {
+        "public_path": null,
+        "status": "SOURCE_REFERENCE_NOT_INCLUDED"
+      },
+      "research/rate_history/experiments/prime_event_probe.py": {
+        "public_path": "artifacts/research/rate_history/experiments/prime_event_probe.py",
+        "status": "EXPORTED"
+      },
+      "research/rate_history/experiments/prime_event_results.json": {
+        "public_path": "artifacts/research/rate_history/experiments/prime_event_results.json",
+        "status": "EXPORTED"
+      },
+      "research/rate_history/experiments/prime_event_stdout.txt": {
+        "public_path": null,
+        "status": "SOURCE_REFERENCE_NOT_INCLUDED"
+      },
+      "research/rate_history/experiments/prolate_trials.json": {
+        "public_path": "artifacts/research/rate_history/experiments/prolate_trials.json",
+        "status": "EXPORTED"
+      },
+      "research/rate_history/experiments/proxy_stdout.txt": {
+        "public_path": null,
+        "status": "SOURCE_REFERENCE_NOT_INCLUDED"
+      },
+      "research/rate_history/experiments/proxy_trials.py": {
+        "public_path": "artifacts/research/rate_history/experiments/proxy_trials.py",
+        "status": "EXPORTED"
+      },
+      "research/rate_history/experiments/splitting_probe.py": {
+        "public_path": "artifacts/research/rate_history/experiments/splitting_probe.py",
+        "status": "EXPORTED"
+      },
+      "research/rate_history/experiments/splitting_results.json": {
+        "public_path": "artifacts/research/rate_history/experiments/splitting_results.json",
+        "status": "EXPORTED"
+      },
+      "research/rate_history/experiments/splitting_stdout.txt": {
+        "public_path": null,
+        "status": "SOURCE_REFERENCE_NOT_INCLUDED"
+      },
+      "research/rate_history/experiments/trajectory_diagnostics.py": {
+        "public_path": "artifacts/research/rate_history/experiments/trajectory_diagnostics.py",
+        "status": "EXPORTED"
+      },
+      "research/rate_history/experiments/trajectory_results.json": {
+        "public_path": "artifacts/research/rate_history/experiments/trajectory_results.json",
+        "status": "EXPORTED"
+      },
+      "research/rate_history/experiments/trajectory_stdout.txt": {
+        "public_path": null,
+        "status": "SOURCE_REFERENCE_NOT_INCLUDED"
+      },
+      "research/rate_history/experiments/validate_outputs.py": {
+        "public_path": "artifacts/research/rate_history/experiments/validate_outputs.py",
+        "status": "EXPORTED"
+      },
+      "research/rate_history/final_report_ja.txt": {
+        "public_path": "archive/reports/research/rate_history/final_report_ja.txt",
+        "status": "EXPORTED"
+      },
+      "research/rate_history/notes/boundary_rate_analysis.md": {
+        "public_path": "archive/reports/research/rate_history/notes/boundary_rate_analysis.md",
+        "status": "EXPORTED"
+      },
+      "research/rate_history/notes/full_projection_upper_bound.md": {
+        "public_path": "archive/reports/research/rate_history/notes/full_projection_upper_bound.md",
+        "status": "EXPORTED"
+      },
+      "research/rate_history/preservation_baseline.json": {
+        "public_path": null,
+        "status": "SOURCE_REFERENCE_NOT_INCLUDED"
+      },
+      "research/rate_history_candidate_matrix.md": {
+        "public_path": "archive/reports/research/rate_history_candidate_matrix.md",
+        "status": "EXPORTED"
+      },
+      "research/rate_history_selection.md": {
+        "public_path": "archive/reports/research/rate_history_selection.md",
+        "status": "EXPORTED"
+      },
+      "research/rate_history_state.json": {
+        "public_path": "data/source-records/research/rate_history_state.json",
+        "status": "EXPORTED"
+      }
+    }
+  },
+  "time_utc": "2026-09-30T02:29:53.627723+00:00",
+  "status": "PASS",
+  "rh_status": "OPEN",
+  "baseline_files_checked": 375,
+  "baseline_files_changed": [],
+  "head_unchanged": true,
+  "head": "c4b6fc587ebb6ad2cec37b9a24c38a3a7e823423",
+  "required_deliverables_present": [
+    "research/rate_history_selection.md",
+    "research/radical_degeneracy_lifting.md",
+    "research/ground_state_trajectory.md",
+    "research/rate_history_candidate_matrix.md",
+    "proofs/audits/rate_history_selection_adversarial.md",
+    "research/rate_history_state.json"
+  ],
+  "json_syntax_checked": [
+    "research/rate_history/experiments/prime_event_results.json",
+    "research/rate_history/experiments/prolate_trials.json",
+    "research/rate_history/experiments/splitting_results.json",
+    "research/rate_history/experiments/trajectory_results.json",
+    "research/rate_history/preservation_baseline.json",
+    "research/rate_history_state.json"
+  ],
+  "python_ast_checked_without_execution": [
+    "research/rate_history/experiments/prime_event_probe.py",
+    "research/rate_history/experiments/proxy_trials.py",
+    "research/rate_history/experiments/splitting_probe.py",
+    "research/rate_history/experiments/trajectory_diagnostics.py",
+    "research/rate_history/experiments/validate_outputs.py"
+  ],
+  "markdown_checked": [
+    "proofs/audits/rate_history_selection_adversarial.md",
+    "research/ground_state_trajectory.md",
+    "research/radical_degeneracy_lifting.md",
+    "research/rate_history/charter.md",
+    "research/rate_history/notes/boundary_rate_analysis.md",
+    "research/rate_history/notes/full_projection_upper_bound.md",
+    "research/rate_history_candidate_matrix.md",
+    "research/rate_history_selection.md"
+  ],
+  "broken_local_links": [],
+  "unbalanced_display_math": [],
+  "control_characters": [],
+  "finite_endpoints": 11,
+  "restricted_generalized_problems": 33,
+  "saved_rounded_matrix_max_generalized_residual": "4.51650865736e-47",
+  "saved_rounded_matrix_max_unit_error": "1.0235895732e-44",
+  "independent_audited_artifact_hashes_matched": 15,
+  "artifact_sha256": {
+    "proofs/audits/rate_history_selection_adversarial.md": "4abc2f83fe3149a5fec675fe85c362d6e7e40aaea5f808016b97ad1061a85aa9",
+    "research/ground_state_trajectory.md": "b956c37e70555f93670f4fc4947c6cf28e5b53d2c6579b10e5ec075463a3634b",
+    "research/radical_degeneracy_lifting.md": "31791fff51d87e2e80fe6e9dc04a4b76d4ed7dc407642a1dd6ea3a0c42b81c25",
+    "research/rate_history/charter.md": "79f870a9c66e0276325aff412c7fbfb19f743d69f1471f214d913fa59010ef12",
+    "research/rate_history/experiments/prime_event_probe.py": "6ab41fd1f67a94862beef409e3785696fc37c61457616071f28ebf198d976f44",
+    "research/rate_history/experiments/prime_event_results.json": "141aec90df16cb4d56a6fa6d6450be5dd5f7f5cbae78a61cd6f806e82bdb18db",
+    "research/rate_history/experiments/prime_event_stdout.txt": "141aec90df16cb4d56a6fa6d6450be5dd5f7f5cbae78a61cd6f806e82bdb18db",
+    "research/rate_history/experiments/prolate_trials.json": "67ee5c5344c744b9af092b0b721af19f1225324f994291ca33ad0617dda124fe",
+    "research/rate_history/experiments/proxy_stdout.txt": "e862b4c82c6760688f7c223fdf79e764d6c45bffa340c2d631463286ebd03058",
+    "research/rate_history/experiments/proxy_trials.py": "622d3db94923a4f66465a29d94890099f8e55c7c784eae04f6a6e88376dc45d2",
+    "research/rate_history/experiments/splitting_probe.py": "c768b6d405621a18611f7f903d378307363ec65e96885fc993d071b334b679eb",
+    "research/rate_history/experiments/splitting_results.json": "f7ecf08d520384344d5b043ded500bf28450049b6d26fb57fb5fe21cf74000fb",
+    "research/rate_history/experiments/splitting_stdout.txt": "8e7f3888848fcaa52ff9afc21699d2b82bee97ce0fba6ba0d5a14cc110b096c6",
+    "research/rate_history/experiments/trajectory_diagnostics.py": "69ad74d2fbae7e6a0e85bebd1333a726d5978e34cd613bd8bf898bc9cff2a9f4",
+    "research/rate_history/experiments/trajectory_results.json": "27f756e82d4cf7cfd03701213a05ac4769d00a1d1c30a7d79a5730ed6fd02951",
+    "research/rate_history/experiments/trajectory_stdout.txt": "27f756e82d4cf7cfd03701213a05ac4769d00a1d1c30a7d79a5730ed6fd02951",
+    "research/rate_history/experiments/validate_outputs.py": "7e6cfaeab9a054239ae46a1b55433b8d9cf4e3c2a3df9b6c38522695508f5e34",
+    "research/rate_history/final_report_ja.txt": "08ff61c2d66bfdd84fdaf7cc3f0537d54e96f5f97ec5d2fbfd1c6df6db3a629c",
+    "research/rate_history/notes/boundary_rate_analysis.md": "b73e96ddaa1cf47063b3924be2bacdfcaaf7963b83d26feb6a3c41219d94cd5a",
+    "research/rate_history/notes/full_projection_upper_bound.md": "46da953ab9ae37bf2dcf5740d1053df097a530b1bc0bdac95b15502f15614121",
+    "research/rate_history/preservation_baseline.json": "5a5cc95f6cfb77ee5d5be0939459d606045e556edd4ce5dc24bd7d1e9f0652c4",
+    "research/rate_history_candidate_matrix.md": "ceaf4c52c9b61c23aef69c74b42a5143f81915e541b74c0b2216cbe576120e9a",
+    "research/rate_history_selection.md": "e0759654a1878e8369845f7ebc097c7f1687592e9f82da75ba3dc811e064cfe3",
+    "research/rate_history_state.json": "6bd023a13702cb75a2b31969e37d06e3b96d879826c712e508c642315f5b2efd"
+  },
+  "scope": "Preservation, artifact syntax, saved numerical consistency and matching independent audit snapshot. Not an interval certificate, formal proof, external literature re-audit, or RH proof. Support-only R1 selection is distinct from unproved full canonical selection."
+}

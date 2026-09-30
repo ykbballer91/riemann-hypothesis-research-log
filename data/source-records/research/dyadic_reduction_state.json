@@ -1,0 +1,100 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "research/dyadic_reduction_state.json",
+    "source_sha256": "bee17461c9d3669b190cf55d949f60605cd19299e80d43f28ea4e37a6f40945c",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {
+      "research/dyadic/completion_report.txt": {
+        "public_path": "archive/reports/research/dyadic/completion_report.txt",
+        "status": "EXPORTED"
+      }
+    }
+  },
+  "track": "DYADIC_ARITHMETIC_REDUCTION_FUNDAMENTAL_DOMAIN",
+  "date": "2026-09-30",
+  "rh_status": "OPEN",
+  "prime": 2,
+  "status": "COMPLETED_BOUNDED_SEARCH_AFTER_STRATEGY_REVIEW",
+  "forward_only_sufficiency": true,
+  "arithmetic_relation_fixed": true,
+  "space": "Existing compact-unit invariant scalar quotient E/W over Q; unchanged",
+  "topology_changed": false,
+  "arithmetic_range_enlarged": false,
+  "explicit_reduction_found": true,
+  "explicit_reduction_scope": "Every g in E and every n>=0; w_n lies in the actual pole-free adelic summation range V, not merely its closure",
+  "representative_support": "(-infinity,0] in the unchanged logarithmic coordinate",
+  "compact_fundamental_domain_reduction": false,
+  "compact_folding_obstruction_proved": true,
+  "best_exponential_rate": 0.5,
+  "best_exponential_rate_is_proved_optimal": false,
+  "unconditional_bound": "p_1(T_2^n g+w_n(g)) <= C*2^(n/2)*(1+n)*p_4(g)",
+  "quotient_bound": "q_1(T_2^n x) <= C*2^(n/2)*(1+n)*q_4(x)",
+  "bound_type": "INTER_SEMINORM_NOT_Q1_BANACH_OPERATOR_NORM",
+  "subexponential_bound": false,
+  "rh_closed": false,
+  "success_level_under_user_definition": 3,
+  "success_level_scope": "Explicit representative plus fixed c<1; no new zero-free region beyond the known critical strip",
+  "new_independent_RH_bridge": false,
+  "novelty_claimed": false,
+  "actual_zero_evaluations_preserved": true,
+  "zero_jets_preserved": true,
+  "full_banach_spectrum_identified": false,
+  "uses_all_integer_arithmetic": true,
+  "only_return_sampling_is_dyadic": true,
+  "universal_witness": "g(t)=exp(-t^2), ell_rho(g)=sqrt(pi)*exp((rho-1/2)^2/4), always nonzero",
+  "conditional_bound": "If |M(X)| <= K_theta*X^theta, 0<theta<1, the same representatives obey p_1(R_n(g)) <= C_theta*K_theta*2^((theta-1/2)*n)*p_4(g)",
+  "fixed_algorithm_subexponential_endpoint_equivalent_to_RH": true,
+  "universal_gaussian_orbit_subexponential_condition_equivalent_to_RH": true,
+  "major_mechanisms_examined": 3,
+  "candidates": [
+    {
+      "id": "D1",
+      "name": "Rational scaling, 2-adic lattice and odd/even telescoping",
+      "decision": "REJECT_AS_GENERAL_CLASS_REDUCTION",
+      "reason": "Exact identities on arithmetic range do not control nonzero quotient classes; real-only and diagonal actions differ; infinite odd expansion fails in E"
+    },
+    {
+      "id": "D2",
+      "name": "Poisson reflection and compact fundamental-region folding",
+      "decision": "EXACT_COMPACT_FOLD_REFUTED",
+      "reason": "W intersect C_c_infinity is zero by full zero jets and Jensen versus Riemann-von Mangoldt"
+    },
+    {
+      "id": "D3",
+      "name": "Full-arithmetic Mobius inverse, cutoff and moment correction",
+      "decision": "RETAIN_EXPLICIT_RATE_HALF_BOUND_STOP_RH_EQUIVALENT_ENDPOINT",
+      "reason": "Unconditional explicit cancellation leaves a one-sided tail with rate <=1/2; the fixed algorithm's all-epsilon endpoint is RH-equivalent"
+    }
+  ],
+  "independent_audit": "PASS_FOR_STATED_SCOPE",
+  "numerical_falsification": "n=1,2,3,4 finite compact-bump identities and recurrence; 512 exact divisor identities; numerical samples are not interval certificates",
+  "lean_formalization_performed": false,
+  "prior_art": [
+    "Meyer math/0311468v1 section 5.3 Lemmas 5.3-5.4: inverse Euler operator and cutoff",
+    "CCM math/0703392v1: actual quotient, range closure and zero evaluations",
+    "Baez-Duarte math/0202141v2: full-integer criterion and conditional Mobius cancellation",
+    "Baez-Duarte math/0505453v1: Muntz/co-Poisson framework",
+    "Soundararajan 0705.0723v2 introduction Eq.(1): RH-equivalent Mertens growth"
+  ],
+  "current_obstruction": "No independent arithmetic cancellation estimate drives the fixed explicit representatives from exponent 1/2 to exponent 0. The all-epsilon endpoint is RH-equivalent, not a weaker proved local condition.",
+  "not_claimed": [
+    "No possible subexponential representative reduction exists",
+    "Every possible algorithm must use Mertens estimates",
+    "The achieved exponent 1/2 is optimal",
+    "A full q_1 Banach operator spectral radius bound follows",
+    "The construction or its exact seminorm bound is new"
+  ],
+  "strategy_review": "Three major mechanisms reviewed. Preserve the unconditional construction and bounded-search negative knowledge; do not introduce a fourth renamed mechanism.",
+  "prior_phase_files_changed": 0,
+  "proof_graph_merges": 0,
+  "next_action": null,
+  "completion_report": "research/dyadic/completion_report.txt"
+}

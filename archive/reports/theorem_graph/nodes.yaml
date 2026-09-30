@@ -1,0 +1,216 @@
+# STATUS: RIEMANN HYPOTHESIS OPEN
+# Historical source snapshot; no new proof validation.
+# Public credit: @ykbballer91; SPDX-License-Identifier: CC-BY-4.0
+# Source: theorem_graph/nodes.yaml
+# Original SHA-256: d4f906df8c0627f0ca5a766f5fcd65e8a91476cc25a94bf816c2b4b6213cb2b6
+{
+  "schema_version": 1,
+  "note": "JSON syntax is valid YAML 1.2",
+  "nodes": [
+    {
+      "id": "T000",
+      "title": "Riemann Hypothesis",
+      "status": "OPEN",
+      "resolution": "OPEN",
+      "dependencies": [
+        "T010",
+        "T100"
+      ],
+      "role": "target"
+    },
+    {
+      "id": "T001",
+      "title": "ξ の整関数性・対称性・零点計数",
+      "status": "KNOWN",
+      "resolution": "KNOWN",
+      "dependencies": [],
+      "source": "標準ゼータ理論；literature/ledger.md",
+      "independently_reproved": false
+    },
+    {
+      "id": "T010",
+      "title": "Weil 基準の同値定理",
+      "status": "KNOWN",
+      "resolution": "KNOWN",
+      "dependencies": [
+        "T001"
+      ],
+      "source": "Weil / Connes–Consani / Suzuki",
+      "note": "同値定理の既知性は正値性自体の証明を意味しない"
+    },
+    {
+      "id": "T020",
+      "title": "固定 support の Fourier strip decay と絶対収束",
+      "status": "PROVED",
+      "resolution": "PROVED",
+      "dependencies": [
+        "T001"
+      ],
+      "proof": "proofs/lemmas/finite_to_infinite.md",
+      "novelty": "NO_CLAIM",
+      "formalized": false
+    },
+    {
+      "id": "T030",
+      "title": "Weil形式の固定 support 連続性",
+      "status": "PROVED",
+      "resolution": "PROVED",
+      "dependencies": [
+        "T020"
+      ],
+      "proof": "proofs/lemmas/finite_to_infinite.md",
+      "novelty": "NO_CLAIM",
+      "formalized": false
+    },
+    {
+      "id": "T040",
+      "title": "明示的な bump 族の固定 support 稠密性",
+      "status": "PROVED",
+      "resolution": "PROVED",
+      "dependencies": [],
+      "proof": "proofs/lemmas/finite_to_infinite.md",
+      "novelty": "NO_CLAIM",
+      "formalized": false
+    },
+    {
+      "id": "T050",
+      "title": "全称有限 Gram 正値性からの移行定理",
+      "status": "PROVED",
+      "resolution": "PROVED",
+      "dependencies": [
+        "T030",
+        "T040"
+      ],
+      "proof": "proofs/lemmas/finite_to_infinite.md",
+      "note": "IF all L,N are PSD THEN Weil positivity。前件は未証明",
+      "novelty": "NO_CLAIM",
+      "formalized": false
+    },
+    {
+      "id": "T100",
+      "title": "全 C_c∞ に対する Weil 正値性",
+      "status": "EQUIVALENT-TO-RH",
+      "resolution": "OPEN",
+      "dependencies": [
+        "T050",
+        "T110"
+      ],
+      "independent_obligation_group": "RH-Weil"
+    },
+    {
+      "id": "T110",
+      "title": "すべての整数 L,N における exact Gram PSD",
+      "status": "EQUIVALENT-TO-RH",
+      "resolution": "OPEN",
+      "dependencies": [],
+      "independent_obligation_group": "RH-Weil",
+      "note": "全称命題を証明したコード・定理は存在しない"
+    },
+    {
+      "id": "F001",
+      "title": "連続性なしの稠密有限圧縮から全域正値性",
+      "status": "FALSE",
+      "resolution": "REFUTED",
+      "dependencies": [],
+      "proof": "proofs/failed/finite_positivity_shortcuts.md"
+    },
+    {
+      "id": "F002",
+      "title": "正の対角ブロックから全ブロック正値性",
+      "status": "FALSE",
+      "resolution": "REFUTED",
+      "dependencies": [],
+      "proof": "proofs/failed/finite_positivity_shortcuts.md"
+    },
+    {
+      "id": "F003",
+      "title": "虚部の自己共役スペクトル化から臨界線性",
+      "status": "FALSE",
+      "resolution": "REFUTED",
+      "dependencies": [],
+      "proof": "proofs/failed/finite_positivity_shortcuts.md"
+    },
+    {
+      "id": "F004",
+      "title": "軸外四重点の Weil 型和の普遍的非負性",
+      "status": "FALSE",
+      "resolution": "REFUTED",
+      "dependencies": [],
+      "proof": "proofs/failed/finite_positivity_shortcuts.md",
+      "note": "toy model。ζの反例ではない"
+    },
+    {
+      "id": "T060",
+      "title": "一般の正値性移行3補題と代数5宣言",
+      "status": "PROVED",
+      "resolution": "PROVED",
+      "dependencies": [],
+      "proof": "formal/lean/RhAudit.lean",
+      "formalized": true,
+      "novelty": "NO_CLAIM",
+      "note": "Weil形式・Arb・解析tailは含まない。二blockの実代数だけを追加。"
+    },
+    {
+      "id": "T070",
+      "title": "固定核汎関数の既知最適定数とgap",
+      "status": "PROVED",
+      "resolution": "PROVED",
+      "dependencies": [],
+      "proof": "proofs/lemmas/kernel_optimization_barrier.md",
+      "formalized": false,
+      "novelty": "NO_CLAIM"
+    },
+    {
+      "id": "F005",
+      "title": "有限個のGram PSDから全称PSD",
+      "status": "FALSE",
+      "resolution": "REFUTED",
+      "dependencies": [],
+      "proof": "proofs/lemmas/finite_to_infinite.md"
+    },
+    {
+      "id": "F006",
+      "title": "固定二次モーメント式で核交換だけから100%下界",
+      "status": "FALSE",
+      "resolution": "REFUTED",
+      "dependencies": [
+        "T070"
+      ],
+      "proof": "proofs/failed/kernel_only_improvement.md"
+    },
+    {
+      "id": "T080",
+      "title": "非負確率密度の全実線エネルギー平方完成",
+      "status": "PROVED",
+      "resolution": "PROVED",
+      "dependencies": [],
+      "proof": "proofs/lemmas/global_kernel_energy.md",
+      "audit": "proofs/audits/global-kernel-candidate.md",
+      "formalized": false,
+      "novelty": "KNOWN_MECHANISM_REDERIVED_NO_CLAIM",
+      "note": "RHへの接続なし。pair-correlation公式のsupport拡張を与えない"
+    },
+    {
+      "id": "T090",
+      "title": "support[-1/2,1/2]の全complex form-domainにおけるWeil正値性",
+      "status": "PROVED",
+      "resolution": "PROVED",
+      "dependencies": [
+        "T010"
+      ],
+      "proof": "proofs/audits/window-half-certificate.md",
+      "audit": "proofs/audits/window-half-independent.md",
+      "formalized": false,
+      "verification_kind": "COMPUTER_ASSISTED_INTERVAL_PLUS_ANALYTIC_TAIL",
+      "novelty": "KNOWN_METHOD_REIMPLEMENTED_NO_CLAIM",
+      "statement": "Q_W(f)>=9e-8 ||f||_2^2 on the single fixed support [-1/2,1/2]",
+      "known_inputs": [
+        "standard geometric Weil formula and normalization",
+        "digamma and spherical Bessel identities",
+        "Legendre completeness and Gauss quadrature exactness"
+      ],
+      "trusted_computation": "Arb/FLINT with enclosed rounding, quadrature, infinite tail and coupling",
+      "note": "全窓正値性の未解決前件を証明しない。T100/T110への依存矢印なし。"
+    }
+  ]
+}

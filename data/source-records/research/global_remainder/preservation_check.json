@@ -1,0 +1,23 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "research/global_remainder/preservation_check.json",
+    "source_sha256": "2f80f4580d3c265b09958a2e1ac82dbec81f8e0a808ed3cc8959fb4871dc2bf0",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {}
+  },
+  "baseline_commit": "c4b6fc587ebb6ad2cec37b9a24c38a3a7e823423",
+  "current_commit": "c4b6fc587ebb6ad2cec37b9a24c38a3a7e823423",
+  "prior_file_count": 302,
+  "changed_prior_files": [],
+  "missing_prior_files": [],
+  "prior_files_preserved": true,
+  "commit_unchanged": true
+}

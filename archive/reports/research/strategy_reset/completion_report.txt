@@ -1,0 +1,207 @@
+STATUS: RIEMANN HYPOTHESIS OPEN
+SANITIZED HISTORICAL SOURCE SNAPSHOT — not a new execution or proof validation.
+Public credit: @ykbballer91; AI-assisted research log; text CC BY 4.0.
+Source: research/strategy_reset/completion_report.txt
+Original SHA-256: bf164ba52fb46a20cf6014d4c4093548d2aff61b539afc6da21404a9e8ae9adc
+Internal source paths are provenance identifiers; see data/source-manifest.json for public paths.
+
+RH STRATEGY RESET — ARITHMETIC INVENTORY / MÖBIUS CLOSURE AUDIT
+完了報告
+2026年9月30日
+
+結論：NO JUSTIFIED NEXT TRACK。
+RHはOPENです。今回の監査から、次に一本の証明トラックを開始するだけの根拠がある候補は0件でした。新しい証明ルートは開始していません。既存の研究ファイル、state、proof graphへ自動統合していません。
+
+これは「利用できる算術理論を世界中で使い切った」という意味ではありません。過去の保存ログでは本質的に未適用だった、深い既知の算術定理は残っていました。しかし、それらを今回の固定Gaussian observableへ実際に適用すると、必要な率、全ての尺度における評価、例外の除去、非振動成分の相殺のどれかが不足します。この不足を新仮定にして続行することはしません。
+
+1. 今回固定した対象
+
+R(u) = Σ_{n≥1} μ(n) exp(−(u−log n)²)
+A(u) = exp(−u/2) R(u)
+
+前トラックで確認された faithful scalar criterion は、
+RH ⇔ 全ての ε>0 に対して A(u)=O_ε(exp(εu))、u→+∞
+です。
+
+この条件は今回の前提にせず、評価すべき未解決の対象として保ちました。固定kernelを可変幅へ変えること、平均評価へ弱めること、零点を保持しない空間へ移ることを、この条件の達成と数えていません。
+
+2. Möbius closure equationの再検算
+
+C1：Σ_{m≥1} R(u−log m) = exp(−u²)
+C2：Σ_{m≥1} m^(−1/2) A(u−log m) = exp(−u²−u/2)
+
+どちらも正しい恒等式です。任意の実数uとc>1に対し、交換前の絶対二重和は
+exp(cu+c²/4) ζ(c)²
+以下です。したがって全てのuで絶対収束し、compactなu区間では一様に交換できます。固定次数の微分・log重みも扱えます。
+
+根拠は μ*1=ε です。既存Dyadic Reductionでも本質的に使ったMöbius反転を、log Gaussianで表したものです。新規性は主張しません。
+
+bilateral Laplace transformでは、直接正当化できる Re z>1/2 において、
+ζ(1/2+z) LA(z) = √π exp((z+1/2)²/4)
+となります。従って、この恒等式だけなら同じ1/ζの反転表示です。
+
+3. 最も重要なdomain訂正
+
+「ζ零点はC2のhomogeneous solutions」という説明は、そのままでは正確ではありません。
+
+H(u)=exp(zu) を通常の和へ代入すると、Σ m^(−1/2−z) が必要です。この和が絶対収束する Re z>1/2 にζ零点はありません。非自明零点ρに対応する z=ρ−1/2 では、普通の和 Σ m^(−ρ) は発散します。
+
+したがって零点modeは、解析接続されたsymbolの形式的mode、または逆変換のresidue modeです。同じ絶対収束domainのclassical homogeneous solutionではありません。零点展開へC2の無限和を項別に作用させる操作も、自動では正当化されません。
+
+これは以前の算術quotientのdual zero evaluationsを否定しません。別のdomainの結果を同一視しない、という訂正です。
+
+4. 因果性と左境界で得られること
+
+左側u≤0で Gaussian的に急減衰し、右側にはgrowth conditionを置かない連続関数について、Möbiusのdelay inverseを絶対収束で構成できます。この範囲ではC1/C2の解は一意で、実際のR/Aそのものです。
+
+実際の左境界は、
+R(u)/exp(−u²) = A(u)/exp(−u²−u/2) = 1+O(2^(2u))
+です。
+
+しかし、一意性は右側の安定性を意味しません。a>1、L>0の有限遅延模型
+f(u)+a f(u−L)=exp(−u²)
+には、同じ左Gaussian条件を持つ唯一の解
+f₊(u)=Σ_{j≥0}(−a)^j exp(−(u−jL)²)
+があります。それでも右半平面にpolesを持ち、右方向に指数増大する部分列があります。
+
+同じ方程式には未来側の和で作るbounded solutionもありますが、それは指定した左Gaussian境界を満たしません。境界symbolが非零というだけでは、正しい向きのinverseとその安定性を同時に得られません。
+
+この模型はactual zetaの反例ではありません。一般原理「因果性＋左急減衰＋一意性なら安定」を反証したものです。
+
+5. 高次convolution、von Mangoldt、moment hierarchy
+
+符号を訂正しました。通常のDirichlet convolutionで、
+μ*log = +Λ
+(μ log)*1 = −Λ
+です。pointwiseにlogを掛ける操作とconvolutionを区別する必要があります。
+
+高次generalized Mangoldt Λ_k=μ*(log)^k は非負です。これは本当に存在する算術情報であり、捨てていません。有限差分の積分表示から直接証明でき、closureに正のforcingを与えます。
+
+しかし高次closureの右辺は0ではありません。transformは (−1)^k ζ^(k)/ζ となり、零点のpolesを保持し得ます。これを新しい条件 ζ^(k)(ρ)=0 と読むことはできません。u微分でもforcingを微分する必要があります。
+
+高次convolutionは同じMöbius反転代数から導かれます。正のmomentがあることは、元のsigned observableに準指数成長を与えたことではありません。一般に全monomial momentsが正でも、測度自体が正とは限りません。
+
+6. 全過去トラックの圧縮
+
+Phase I：全supportのWeil positivityを求めました。actual explicit formula、prime powers、Gamma/pole、Poissonを使いましたが、finite positivityから全域の符号へ進めませんでした。Schur補完の符号やcritical GCD formのdomain障害が残りました。
+
+Phase II：generatorを先に構成する方向を試しました。actual modular scatteringは存在しますが、ζ零点は通常のL²固有値ではなくresonancesとして現れます。自己共役性だけではその位置を制御しません。cutoffによる制御は全零点を失いました。
+
+Phase III：有限体のFrobeniusとpurityの差分を調べました。有限体では算術作用と正の幾何が同じ対象で結ばれます。数体のactual quotientやtraceはあっても、同じ零点空間上の独立polarizationが不足しました。ambient L² completionで算術商が消える障害もありました。
+
+Phase IV：actual算術空間のpositive pairingを探しました。ambientの正性、product formula、Fourier、Arakelov/heightは、全零点を保持したnondegenerateな正pairingへそのまま降りませんでした。metricの再定義だけでは不足しました。
+
+Continuous Scale Flow：局所Haar returnはunitaryでも、全零点のglobal scaling representationと同じspace上で同定できませんでした。局所の正性と実際のzero-character倍率の間のbounded transferが未取得でした。
+
+One-Prime Return：一つの素数のreturn growthで零点実部を検出できることを固定しました。必要なsubexponential controlは得られず、弱completionは評価を失い、強い重みは指数増大を許しました。
+
+Dyadic Arithmetic Reduction：actual Möbius反転からexplicit representativeを得て、無条件で2^(n/2)(1+n)規模まで改善しました。全εのsubexponential endpointは、固定algorithmではMertens/RHの障害へ戻りました。
+
+Prime Complex Parity Pairing：自然なmatchingとcritical cellsを明示できました。しかしtotal Betti/critical countは線形規模で、状態数を平方根規模へ減らす方法ではありません。残る符号差の評価が未取得でした。
+
+Arithmetic Comma：prime-log phaseの正確な記述と積分bridgeを得ました。一方、Möbius符号付きpolynomialと全正係数polynomialは同じHaar lawを持ちながら、指定readoutで全く異なります。phase distributionだけでは足りませんでした。
+
+Weighted Prime Half-Space：actual prime-log thresholdとparityの関係を固定しました。finite difference、tilt、Selberg–Delangeの局所係数消失は、signed boundary remainderの必要な評価を供給しませんでした。
+
+Global Remainder：全零点を失わない固定Gaussian scalar、正当なcontour、multiplicity込みのresidue分解、faithful growth criterionまで縮約しました。ただしglobal growthを算術から制御する独立入力は得られませんでした。
+
+共通の壁は、actual arithmeticを正確に保持したsigned observableへの大域的な相殺評価です。positivity、return stability、boundary correlation、remainder growthという異なる言葉で同じ必要評価を要求していた部分があります。
+
+ただし、全ての大きい幾何理論・operator構成がRHと双方向に同値だったとは主張しません。指定Weil形式や固定scalar criterionは同値ですが、完全な幾何構成などはより強いか、逆含意が未証明の場合があります。
+
+7. Candidate A：bilinear / Type I–II
+
+未使用の実算術情報はありました。actual μのVaughan型分解、Heath–Brown型有限分解、large sieve、dispersion、AP平均、Dirichlet polynomial平均、mollifierを調査しました。
+
+しかしGaussianの中心blockは非振動です。裸のType I内和は長さ程度の大きさを持ち、加法minor arcの相殺を与える仮定を満たしません。Mellin位相 n^(it) のType II長方形相関では位相が正確に消えます。
+
+Davenportの全加法周波数一様評価を適用しても、得られるのは任意固定Bについて
+A(u) ≪ exp(u/2) u^(−B)
+という既知PNT型の移し替えです。これでは指数率1/2を0にできません。α=0を除外すれば、まさに元のMertens成分を取り逃します。
+
+large sieveやDirichlet polynomialの平均平方根規模は、指定された一つのreadoutへそのまま移りません。AP平均にはprincipal成分を引いた誤差を扱うものがあり、q=1では差が恒等的に0になることもあります。mollifierの零点割合も、全零点を扱う今回の要求を満たしません。
+
+Candidate Aの採用入力は0件です。双線形法一般の不可能性を証明したわけではありません。
+
+8. Candidate B：causal closure / Wiener–Hopf
+
+C1/C2と左Gaussian解の一意性は確定しました。しかしclosureは同じ1/ζ反転であり、因果性は安定性を追加しません。
+
+kernelの総質量は無限なので標準renewal theoryをそのまま適用できません。指数tiltで有限massにできるのは元の目標から離れた領域で、tiltを戻す指数損失が残ります。Wiener–Hopfで右半平面全域のpole-free inverseを仮定すれば、必要なζの零点なし条件を先取りします。
+
+さらにGaussian transformはどの零点でも非零です。off-line zeroが存在するなら、actual forcingがそのresidueを0にするという回避策は使えません。解が一意に選ばれることと、その解に不安定なglobal polesがないことは別です。
+
+Candidate Bは厳密な解釈・監査結果として保存しますが、独立の安定性入力としては採用しません。
+
+9. Candidate C：短区間・平均Möbius相関
+
+MR、MR II、MRT、Tao、Tao–Teräväinen、2026改訂版のhigher uniformity/correlationを含め、定理文と量化を照合しました。
+
+MR IIには例外集合のpower savingがあり、「全ての既知結果は対数節約だけ」と片付けるのは誤りです。しかしその節約は誤差閾値と交換条件を持ち、全区間の平方根誤差を与えません。log平均、固定shift、almost-all scalesも区別しました。
+
+元のGaussianはn≈xで幅がxに比例するmultiplicative windowです。compact-window autocorrelationと導関数energyをactual μ(m)μ(n)の正確な二重和に展開できました。しかし固定log ratioは一般にadditive shift h≈xに対応し、固定shiftの定理の適用範囲とは違います。
+
+仮に対象重みでoffdiagonalをo(x²)まで評価しても、得られる和はo(x)です。目標の平方はO_ε(x^(1+2ε))です。率の差を隠せません。
+
+平均から点へ進むこと自体は可能です。局所Sobolev不等式は、
+|A(u₀)|² ≤ C ∫_{u₀−1}^{u₀+1} (|A|²+|A'|²)
+を与えます。しかし、この右辺を全ての移動窓で必要なsubexponential規模に抑える算術評価は得られていません。それを新しい仮定として置くことはしません。
+
+可変幅Gaussianをx^(−1/2)まで狭めれば、全係数を+1としても正規化和はboundedになります。これは標本数の縮小であり、固定kernelのRH criterionへ戻せたわけではありません。
+
+Candidate Cの採用入力も0件です。平均相関から各点評価への移行一般が不可能とは主張していません。
+
+10. その他の算術情報
+
+Kátai型の具体的定理としてBSZ criterionを確認しました。必要なのは小さいprime-dilation correlationsですが、raw Gaussian weightのp=2,3相関は自然な尺度で正定数に収束します。必要な一様小相関がなく、この直接適用では解決しません。
+
+unique factorizationは既にprime-log独立性以外にも使用しています。divisor lattice、Möbius inversion、Euler factorization、GCD特徴、prime powers、Poisson/summation rangeは過去に本質的に使いました。
+
+incidence algebraは同じ反転代数です。一般posetの可逆性だけではinverse係数の大きさは制御されません。既知の有限GCD sum inequalityも、旧critical domain障害やsigned readoutとの比較を解消しません。
+
+random multiplicative model、multiplicative chaos、entropy/complexityは、actual μへの定量transferがなければproof inputではありません。全素数−1の指定assignmentを平均momentから評価することはできません。
+
+既知zero-free region、zero density、解析的証明によるPNT誤差は別のanalytic zero-side inputとして記録しました。RHを仮定しないことと、既存の零点側情報にも依存しないことを区別しました。PNT自体には初等証明もあるため、名称だけで全証明を零点側に分類してはいません。
+
+11. 検証と保存
+
+closure、因果性、bilinear、相関を別担当で調べ、domain、符号、有限遅延反例、Gaussian平方完成、導関数energy、Sobolevの量化を相互監査しました。
+
+有限整数n≤1000で、Möbius反転1000件、log符号1000件、generalized Mangoldt多項式4000件をexact integer arithmeticで検算しました。一般証明を有限計算へ置換していません。数値growth fitは行っていません。
+
+旧315ファイルのSHA-256 baselineと照合し、過去の未追跡研究ファイルも含め、変更・欠落が0件であることを確認しました。Git commitも変わっていません。proof graphへのmerge、新しいmetric/topology/cohomology、新規証明ルートはありません。
+
+今回の報告は次の場所に保存しました。
+research/strategy_reset_arithmetic_inventory.md
+research/arithmetic_inventory_matrix.md
+proofs/audits/strategy_reset_adversarial.md
+research/strategy_reset_state.json
+research/strategy_reset/notes/
+
+このplain-text報告は research/strategy_reset/completion_report.txt です。primary sources、定理番号、適用範囲は各ノートに記録しています。全参照論文の全証明を独立に再検証したという主張ではありません。
+
+12. 要求された最終六回答
+
+1. 結局どの同じ壁へ収束したか。
+actual arithmeticを保持する対象の、全スケール・指定readoutでの定量的signed cancellationです。faithfulな表現を作ることと、その表現の必要な成長評価を独立に証明することの間が残りました。
+
+2. 未使用だった算術情報は本当に残っていたか。
+はい。深いbilinear、短区間・平均相関、progression/dispersion、Dirichlet polynomial技法などです。ただし今回の定理の量化と率では必要な橋を得られませんでした。
+
+3. closure identityは新しい研究入口か、1/ζの再表現か。
+検算と解の選択の整理には有用ですが、独立なgrowth inputとしては同じMöbius inverse / 1/ζの再表現です。因果性だけの安定化は反例で排除しました。
+
+4. Candidate A/B/Cのどれが生き残ったか。
+次の証明トラックを開始する候補としては0件です。Aは非振動成分のpointwise相殺、Bは独立安定性、Cは全移動窓と必要精度への橋がありません。
+
+5. 次に一本だけ走らせるなら何か。
+今回の監査から推奨できるものはありません。未証明条件を別名で置く第4候補を開始しません。
+
+6. 最終判定。
+NO JUSTIFIED NEXT TRACK。
+
+RH OPEN。監査を完了し、ここで停止します。
+
+
+PUBLIC EXPORT EDITORIAL NOTE — SOURCE REFERENCES NOT INCLUDED:
+- research/strategy_reset/notes

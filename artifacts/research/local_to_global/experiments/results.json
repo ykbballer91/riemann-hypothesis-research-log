@@ -1,0 +1,129 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "research/local_to_global/experiments/results.json",
+    "source_sha256": "2040c0f72e95247646cf1fb7f1308f0814f524ad581fbd1a3da5f490adc26425",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {}
+  },
+  "purpose": "normalization verification and explicit failed limiting path",
+  "precision_decimal_digits": 65,
+  "certified_interval_computation": false,
+  "proof_location": "../notes/spectral_approximants_and_exact_gap.md",
+  "mellin_checks": [
+    {
+      "s": {
+        "real": "2.0",
+        "imag": "0.0"
+      },
+      "mellin_abs_error": "1.4836825e-67",
+      "zeta_times_mellin_divided_by_xi": {
+        "real": "0.25",
+        "imag": "0.0"
+      }
+    },
+    {
+      "s": {
+        "real": "3.0",
+        "imag": "0.0"
+      },
+      "mellin_abs_error": "0.0",
+      "zeta_times_mellin_divided_by_xi": {
+        "real": "0.25",
+        "imag": "0.0"
+      }
+    },
+    {
+      "s": {
+        "real": "2.0",
+        "imag": "1.0"
+      },
+      "mellin_abs_error": "7.4184123e-68",
+      "zeta_times_mellin_divided_by_xi": {
+        "real": "0.25",
+        "imag": "-1.80766026227674599691393881268e-67"
+      }
+    }
+  ],
+  "fourier_checks": [
+    {
+      "z": {
+        "real": "0.0",
+        "imag": "0.0"
+      },
+      "fourier_abs_error": "0.0"
+    },
+    {
+      "z": {
+        "real": "2.0",
+        "imag": "0.0"
+      },
+      "fourier_abs_error": "4.2097469e-68"
+    },
+    {
+      "z": {
+        "real": "0.0",
+        "imag": "0.25"
+      },
+      "fourier_abs_error": "2.9673649e-67"
+    },
+    {
+      "z": {
+        "real": "3.0",
+        "imag": "0.3"
+      },
+      "fourier_abs_error": "2.7819046e-68"
+    }
+  ],
+  "N_zero_tail_diagnostic": [
+    {
+      "log_lambda": 4,
+      "N": 0,
+      "normalized_value_at_0": "0.85091812823932154513",
+      "normalized_value_at_i_over_4": "1",
+      "normalized_value_at_0_4i": "1.2633836476515347854",
+      "real_tail_spacing": "0.78539816339744830962"
+    },
+    {
+      "log_lambda": 8,
+      "N": 0,
+      "normalized_value_at_0": "0.55144112954356641552",
+      "normalized_value_at_i_over_4": "1",
+      "normalized_value_at_0_4i": "2.1102762822892368333",
+      "real_tail_spacing": "0.39269908169872415481"
+    },
+    {
+      "log_lambda": 16,
+      "N": 0,
+      "normalized_value_at_0": "0.14657428130346242386",
+      "normalized_value_at_i_over_4": "1",
+      "normalized_value_at_0_4i": "6.8917781516087805776",
+      "real_tail_spacing": "0.1963495408493620774"
+    },
+    {
+      "log_lambda": 32,
+      "N": 0,
+      "normalized_value_at_0": "0.0053674026504617844795",
+      "normalized_value_at_i_over_4": "1",
+      "normalized_value_at_0_4i": "75.944019495003968212",
+      "real_tail_spacing": "0.098174770424681038702"
+    },
+    {
+      "log_lambda": 64,
+      "N": 0,
+      "normalized_value_at_0": "3.6011255910163372697e-6",
+      "normalized_value_at_i_over_4": "1",
+      "normalized_value_at_0_4i": "9227.9884784859122495",
+      "real_tail_spacing": "0.049087385212340519351"
+    }
+  ],
+  "rh_inference": "NONE",
+  "all_diagnostic_assertions_passed": true
+}

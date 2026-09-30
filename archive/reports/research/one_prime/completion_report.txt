@@ -1,0 +1,91 @@
+STATUS: RIEMANN HYPOTHESIS OPEN
+SANITIZED HISTORICAL SOURCE SNAPSHOT — not a new execution or proof validation.
+Public credit: @ykbballer91; AI-assisted research log; text CC BY 4.0.
+Source: research/one_prime/completion_report.txt
+Original SHA-256: a14a3f6bd65f57dfd345ecd8554c35312edd994752c7d0f487a21afc67c19b82
+Internal source paths are provenance identifiers; see data/source-manifest.json for public paths.
+
+One-Prime Return Theorem 完了報告
+開始 2026-09-29、終了 2026-09-30（JST）
+
+今回の極小探索を完了しました。RHはOPENです。p=2だけを使いました。到達レベルはLevel 1と限定的なLevel 2です。Level 3の算術的subexponential-return boundは得られず、RHは証明していません。3つの主要構成を検査した後、指定のstrategy reviewでこの巡を終了しました。
+
+以前のPhase I〜IV、Continuous Scale Flow、主証明グラフ、canonical state、既存Lean成果を変更していません。本トラックの研究ログ、比較表、独立監査、機械可読stateを新規作成しました。
+
+1. 抽象的な成長の十分条件を確定しました。
+Hilbert正性、trace、determinant、compact resolvent、完全固有基底は不要です。全零点について非零の連続汎関数を保持し、一つのreturnの両方向成長を劣指数に抑えれば足ります。
+Banach設定で ell T=lambda ell なら、全m>=0について |lambda|^m<=||T^m||、|lambda|^-m<=||T^-m|| です。g_±=limsup log||T^(±m)||/mと置けば、-g_-<=log|lambda|<=g_+。lambda=2^(rho-1/2)を代入すると、|Re(rho)-1/2|<=max(g_+,g_-)/log 2 が従います。
+従って両方向の多項式成長でも十分です。unitaryにsimilarであることは要求しません。局所凸空間では、入力seminormの変更を許した指数重み付きequicontinuity、さらに各固定vectorのseminorm成長だけでも結論を得られることを証明しました。Fréchetの場合の量化はBaireの定理で確認しました。
+
+2. 抽象補題のスカラー部分をLeanで確認しました。
+幾何級数の成長比較、片方向subexponentialからmodulus上界、両方向からmodulus 1、正のscale長に対する実指数0、という4宣言がLean 4.19.0/Mathlibで通りました。sorryや新規公理はありません。
+ただし算術商、作用素の成長評価、RHそのものを形式化したわけではありません。形式化の範囲を成功出力とともに記録しました。
+
+3. 全零点を保持する具体的なBanach完備化を構成できました。
+CCM/Meyerの固定版を再確認し、Qのcompact-unit invariant scalar sectorを採用しました。一般のcyclic/bornological対象とFréchet表示を混同しません。
+半密度log座標で、p_N(g)=max_{j<=N} sup_t exp(N|t|)(1+|t|)^N |g^(j)(t)| を標準seminormとしました。算術rangeのclosure Wで先に割り、q_N([g])=inf_{w in W} p_N(g+w) と置きました。これは零点位置を入力にしたweightではありません。
+全非自明零点について |ell_rho([g])|<=4 q_1([g]) を直接証明しました。q_1のkernelを割ってBanach完備化したX_1にも、全てのell_rhoは非零の有界汎関数として残ります。零点の位数未満の有限Mellin jetsも、有界性と線形独立性を保ちます。
+これが今回の限定Level 2です。既存の算術構成からの直接的な帰結であり、新規性は主張しません。また元の商全体との位相同値、全classの単射的保持、余分なスペクトルがないことまでは証明していません。
+
+4. 一つのreturnは定義できましたが、上界に指数成長が残りました。
+X_1上でT_2とT_2^-1はboundedで互いに逆です。しかし今回得られた反復上界は
+
+||T_2^n|| <= 2^|n| (1+|n| log 2)
+
+です。これはsubexponentialではありません。ただしこれは上界にすぎず、実際の商の最良normが指数的に増えると証明したわけでもありません。
+Meyerのより強いintegrated/nuclear estimateも照合しましたが、smoothingされた作用とstrip幅を持つ評価であり、未積分T_2^nのtype 0評価へは転用できません。
+
+5. 残る評価を一つの出力seminormへ圧縮しました。
+全零点の評価をすでにq_1が支配するため、全seminormを同時に制御する必要はありません。必要な未証明評価は、全epsilon>0に対してMとC_epsilonを取り、正負の全整数nと全xについて
+
+q_1(T_2^n x) <= C_epsilon 2^(epsilon |n|) q_M(x)
+
+を示すことです。MとC_epsilonはnに依存してはいけません。これはX_1のoperator normそのものを劣指数に抑える要求より弱いものです。
+主計算式 2^(n(Re(rho)-1/2)) |ell_rho(x)| <= 4 q_1(T_2^n x) と合わせれば、各零点ごとに非零witnessを固定してRHの実部結論が従います。
+この見積もりを算術rangeの相殺から導く新しい独立定理は得られませんでした。
+
+6. 商を先に取るだけでは、同じnormのcollapseを回避できません。
+一般に、S/R上でinfimum seminormを作ってからHausdorff完備化した空間は、元のseminormによる完備化をrangeの閉包で割った空間と等長です。これは両手順の一般的な同定定理です。
+さらにrangeを消すfunctionalについて、元のnormでの有界性と商normでの有界性は同値で、最良定数も同じです。従って順序変更だけで失われたMellin評価を復活することはできません。
+一方、商によって最適なreturn normが小さくなる可能性は残ります。ambient normの指数成長を商の下界として誤用してはいません。
+
+7. 補間候補を反証しました。
+指数重みH_a=L2(exp(2a|t|)dt)では、complex interpolationとreal (theta,2) interpolationはH_(theta k)を与えます。反復normは2^(a|n|)、評価保持の閾値はa>|Re(rho)-1/2|です。成長を弱めるendpointでは複素評価が失われ、a=0では単一点Fourier評価も有界でなくなります。
+有限個のscaling derivativesを加えてもこの指数率は変わりません。多項式重みやGRS重みはsubexponential returnを作れますが、線外の評価を連続双対から外します。全零点保持を未証明のまま、その不在をRHの証明にはできません。
+Hardy半平面は片側semigroup、両側stripは指数重みに戻り、固定Paley–Wiener型はreturnでsupportが動きます。反復数ごとに別のweightを使う案も、同一空間での制御ではないため棄却しました。
+
+8. Local-to-global transferは全射まで要求しなくてよいことを確定しました。
+J U=T_2 Jで、local Uがunitary、各ell_rho Jが非零boundedなら、それだけで零点のmultiplierのmodulusは1になります。Jの全射性は不要で、連続Jのdense rangeは十分です。
+しかしactual profinite Haar returnからのliteralなtransferは、modulus 1に加えてmultiplierがroot of unityであることまで強制します。すなわち Im(rho) log2/(2pi) が有理数であるという追加条件が生じます。実際の零点についてこの有理性を肯定・否定したわけではありません。有限精度数値からは判定できません。
+必要な算術的Jは構成できませんでした。dense intertwinerがあるだけではglobal operator normの一様有界性は出ないという反例も、pure-point torsion sourceを使って作りました。逆方向のinjective mapだけでは指数成長さえ防げません。
+
+9. Similarityとdilationの役割を切り分けました。
+Sz.-Nagyの定理は、既にあるHilbert上の二側uniform boundからunitary similarityを得る定理です。そのbound自体の算術的証明を与えません。Banachでは等価な不変normが得られますが、Hilbert内積とは限りません。
+Jordan blockは多項式成長を持ち、subexponential条件を満たしてもunitaryとはsimilarでありません。従って今回の弱化は実質的です。全jetsを保つ空間でuniform boundを要求すれば、RHに加えてmultiple zerosまで排除する余分な条件になります。
+unitary dilationの負powersはTのinverse powersではなくadjoint powersです。scalar contractionのPoisson dilationで、誤った逆時間推論を反証しました。product formulaや保存則だけではexpansionとcontractionが相殺するだけで、normの成長を止めません。
+
+10. 最終判定です。
+Level 1: 抽象subexponential-return lemmaを証明。スカラー部分は形式検証済み。
+Level 2: actual arithmetic quotientから、全零点評価と有限jetsを保つX_1を構成。ただし既知構造からの帰結で新規性主張なし。
+Level 3: 一素数の算術的subexponential boundは未証明。
+Level 4–5: 未達。RHはOPEN。
+
+3つの主要構成は、既存算術商のgrowth改善、quotient-first/interpolation、local transfer/similarityです。主経路の算術的相殺見積もりも、別の十分経路である算術的Jも得られなかったため終了しました。この二つの経路が同値だとは主張していません。p=3を追加して前提を強める探索は行っていません。
+全ての自然位相が不可能だと証明したわけではありません。また、固定したX_1でのsubexponential boundがRHから逆に従うことも未証明であり、プログラム全体を無根拠にRH同値とは分類していません。
+
+次に再開するために必要なのは、上記の一つのq_1見積もりを既知算術から導く具体的な新補題、または全零点functionalを非零boundedに引き戻す算術的J_2です。topology、similarity、interpolationという名称を追加するだけでは、この不足を埋められません。
+
+主要成果物
+research/one_prime_return_theorem.md
+research/one_prime_topology_matrix.md
+proofs/audits/one_prime_return_adversarial.md
+research/one_prime_return_state.json
+research/one_prime/notes/
+research/one_prime/formal/ReturnLemma.lean
+research/one_prime/return_checks.json
+
+数値検査はsynthetic counterexampleの診断です。actual zetaの有限窓拡大や、数値的一致からRHを推定する作業は行っていません。主証明グラフへの合流はありません。
+
+
+PUBLIC EXPORT EDITORIAL NOTE — SOURCE REFERENCES NOT INCLUDED:
+- research/one_prime/notes

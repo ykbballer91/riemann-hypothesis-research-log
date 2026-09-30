@@ -1,0 +1,121 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "research/strategy_reset/validation.json",
+    "source_sha256": "acc7bd621d3bbb2588deb5fe1553ceb95c6d79c578e43bb27dddd9645afe05ae",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {
+      "proofs/audits/strategy_reset_adversarial.md": {
+        "public_path": "archive/audits/proofs/audits/strategy_reset_adversarial.md",
+        "status": "EXPORTED"
+      },
+      "research/arithmetic_inventory_matrix.md": {
+        "public_path": "archive/reports/research/arithmetic_inventory_matrix.md",
+        "status": "EXPORTED"
+      },
+      "research/strategy_reset/completion_report.txt": {
+        "public_path": "archive/reports/research/strategy_reset/completion_report.txt",
+        "status": "EXPORTED"
+      },
+      "research/strategy_reset/notes/bilinear_and_uniform_estimates.md": {
+        "public_path": "archive/reports/research/strategy_reset/notes/bilinear_and_uniform_estimates.md",
+        "status": "EXPORTED"
+      },
+      "research/strategy_reset/notes/check_finite_identities.py": {
+        "public_path": "artifacts/research/strategy_reset/notes/check_finite_identities.py",
+        "status": "EXPORTED"
+      },
+      "research/strategy_reset/notes/closure_causality.md": {
+        "public_path": "archive/reports/research/strategy_reset/notes/closure_causality.md",
+        "status": "EXPORTED"
+      },
+      "research/strategy_reset/notes/correlations_and_short_intervals.md": {
+        "public_path": "archive/reports/research/strategy_reset/notes/correlations_and_short_intervals.md",
+        "status": "EXPORTED"
+      },
+      "research/strategy_reset/notes/finite_identity_checks.json": {
+        "public_path": "artifacts/research/strategy_reset/notes/finite_identity_checks.json",
+        "status": "EXPORTED"
+      },
+      "research/strategy_reset/notes/inventory_scope_and_misc.md": {
+        "public_path": "archive/reports/research/strategy_reset/notes/inventory_scope_and_misc.md",
+        "status": "EXPORTED"
+      },
+      "research/strategy_reset/preservation_baseline.json": {
+        "public_path": null,
+        "status": "SOURCE_REFERENCE_NOT_INCLUDED"
+      },
+      "research/strategy_reset/preservation_check.json": {
+        "public_path": "data/source-records/research/strategy_reset/preservation_check.json",
+        "status": "EXPORTED"
+      },
+      "research/strategy_reset/validation.json": {
+        "public_path": "data/source-records/research/strategy_reset/validation.json",
+        "status": "EXPORTED"
+      },
+      "research/strategy_reset_arithmetic_inventory.md": {
+        "public_path": "archive/reports/research/strategy_reset_arithmetic_inventory.md",
+        "status": "EXPORTED"
+      },
+      "research/strategy_reset_state.json": {
+        "public_path": "data/source-records/research/strategy_reset_state.json",
+        "status": "EXPORTED"
+      }
+    }
+  },
+  "checks": {
+    "old_files_preserved": true,
+    "head_unchanged": true,
+    "no_unexpected_new_files": true,
+    "all_local_markdown_links_resolve": true,
+    "latex_delimiters_and_control_chars_ok": true,
+    "RH_OPEN": true,
+    "zero_survivors": true,
+    "no_recommended_route": true,
+    "no_new_proof_route": true,
+    "finite_exact_checks_passed": true,
+    "closure_identity_verified": true,
+    "prior_tracks_compressed": true
+  },
+  "all_checks_passed": true,
+  "new_files_checked": [
+    "proofs/audits/strategy_reset_adversarial.md",
+    "research/arithmetic_inventory_matrix.md",
+    "research/strategy_reset/completion_report.txt",
+    "research/strategy_reset/notes/bilinear_and_uniform_estimates.md",
+    "research/strategy_reset/notes/check_finite_identities.py",
+    "research/strategy_reset/notes/closure_causality.md",
+    "research/strategy_reset/notes/correlations_and_short_intervals.md",
+    "research/strategy_reset/notes/finite_identity_checks.json",
+    "research/strategy_reset/notes/inventory_scope_and_misc.md",
+    "research/strategy_reset/preservation_baseline.json",
+    "research/strategy_reset/preservation_check.json",
+    "research/strategy_reset/validation.json",
+    "research/strategy_reset_arithmetic_inventory.md",
+    "research/strategy_reset_state.json"
+  ],
+  "json_files_parsed": [
+    "research/strategy_reset/notes/finite_identity_checks.json",
+    "research/strategy_reset/preservation_baseline.json",
+    "research/strategy_reset/preservation_check.json",
+    "research/strategy_reset/validation.json",
+    "research/strategy_reset_state.json"
+  ],
+  "unexpected_files": [],
+  "broken_local_links": [],
+  "malformed_documents": [],
+  "independent_reviews": [
+    "builder: main SR2-SR12 and conclusions PASS",
+    "destroyer: closure CC2/CC3/CC5 PASS",
+    "destroyer: correlation C3-C5 PASS",
+    "builder: prior matrix/scope audited; four wording fixes applied"
+  ],
+  "scope": "Artifact and preservation checks; not formal proof verification or a proof of RH"
+}

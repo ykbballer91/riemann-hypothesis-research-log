@@ -1,0 +1,42 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "experiments/results/silva-degree-four-certificate.json",
+    "source_sha256": "ee328b0f1ff57437a9ece334ac922f4b97fdb7dcaf64bf47578867132807182a",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {}
+  },
+  "status": "DEGREE_FOUR_CERTIFIED",
+  "proves_RH": false,
+  "refutes_RH": false,
+  "refutes_Silva_stated_theorems": false,
+  "U4_has_no_unit_circle_zero": true,
+  "Z4_all_zeros_on_critical_line": true,
+  "precision_bits": 160,
+  "python_flint_version": "0.9.0",
+  "theta_terms": 4,
+  "integration_endpoint": 2,
+  "omitted_theta_bound": "[1.122857557789255285006745258662008405541e-30 +/- 3.26e-70]",
+  "integration_tail_bound": "[1.219564159711472260572370794284674778999e-70 +/- 4.54e-110]",
+  "P0": "[0.4999999999999999999999999999999756579905 +/- 1.13e-28]",
+  "a": "[0.9913631837040190215869764404366739145673 +/- 6.28e-28]",
+  "b": "[0.9885741829404394997392724982537669144256 +/- 7.40e-28]",
+  "numerator_quarter_discriminant": "[-0.0002412496275627353889784557989793945773206 +/- 9.42e-27]",
+  "Z4_coefficients": {
+    "A": "[2.248450043686773915931108455042375064548e-5 +/- 3.95e-28]",
+    "B": "[0.01721742134086978747814884141527611148881 +/- 1.20e-27]",
+    "C": "[0.9956942393835052488967653327033965706434 +/- 3.01e-28]",
+    "discriminant": "[0.0002068888473874179304868812569759375445084 +/- 1.62e-27]"
+  },
+  "generic_Stieltjes_counterexample_discriminant": "-35390625/142697516",
+  "generic_Stieltjes_Z4_counterexample_discriminant": "-425455975/143268306064",
+  "author_code_executed": false,
+  "source_sha256": "97cc252a36fbc4bd32ac219e306ddc3ebae42741d079ae010c91e73525b84409"
+}

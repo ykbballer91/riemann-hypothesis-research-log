@@ -1,0 +1,73 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "experiments/results/groskin-assembly-comparison.json",
+    "source_sha256": "67f465ce567a4b57847da40fef88be1ec078b3a621fecf45689aafbabb2b69d5",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {}
+  },
+  "kind": "independent_vs_author_assembly_comparison",
+  "rh_status": "OPEN",
+  "proves_RH": false,
+  "author_script_sha256": "ea475850cc79b80a2eb33b439435f3602b8d04523ecd3c08312e53ae3a735089",
+  "cases": [
+    {
+      "c": 13,
+      "N": 0,
+      "dimension": 1,
+      "positive_pivots": 1,
+      "entry_balls_overlap": 1,
+      "author_balls_contained_in_direct_quadrature_balls": 1,
+      "entries": 1,
+      "K_identity_overlap": true,
+      "pivots": [
+        "[0.0453328442159587070934518363426296228205739839485850074973884 +/- 1.49e-50]"
+      ]
+    },
+    {
+      "c": 13,
+      "N": 1,
+      "dimension": 3,
+      "positive_pivots": 3,
+      "entry_balls_overlap": 9,
+      "author_balls_contained_in_direct_quadrature_balls": 9,
+      "entries": 9,
+      "K_identity_overlap": true,
+      "pivots": [
+        "[0.0465118895436779793116060710600742533289478956395272610258696 +/- 3.97e-49]",
+        "[0.000390574661283784980127206242703439520205426005192401210930338 +/- 1.23e-48]",
+        "[1.95956914200662092847462263637460842871556288716719617303756e-5 +/- 2.11e-47]"
+      ]
+    },
+    {
+      "c": 13,
+      "N": 4,
+      "dimension": 9,
+      "positive_pivots": 9,
+      "entry_balls_overlap": 81,
+      "author_balls_contained_in_direct_quadrature_balls": 81,
+      "entries": 81,
+      "K_identity_overlap": true,
+      "pivots": [
+        "[0.0872497966746749009341832841048149477612183567576907794883091 +/- 1.55e-48]",
+        "[0.00230976199840059705516321561169038451435314338213260657778783 +/- 5.24e-48]",
+        "[5.42220094935059567892364486586241001900146674320962688861990e-5 +/- 4.79e-47]",
+        "[2.39243667062060922883848001237549574289013363252620654438092e-6 +/- 1.11e-45]",
+        "[1.70677322229119479987134130167774567616331132486237540526035e-7 +/- 5.26e-44]",
+        "[2.21871124206543104152647343340244758067181288793103161022046e-8 +/- 4.79e-42]",
+        "[4.14939811547677616422252410289272159658447777688968169781320e-9 +/- 8.10e-40]",
+        "[1.26472942343161100914422653324892941883703856290128694557854e-9 +/- 2.63e-37]",
+        "[7.87171928331790958674127945775767339876845307296208798903591e-10 +/- 1.82e-34]"
+      ]
+    }
+  ],
+  "serialized_matrix_replay_positive_pivots": 9,
+  "distinction": "overlap/containment checks agree; analytic identities need separate derivation"
+}

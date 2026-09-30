@@ -1,0 +1,117 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "research/phase4_state.json",
+    "source_sha256": "903b196b67629028af4d990d9422a2cb17075cd8bd6d88133b49f71ba1b28e5d",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {
+      "proofs/audits/phase4_pairing_adversarial.md": {
+        "public_path": "archive/audits/proofs/audits/phase4_pairing_adversarial.md",
+        "status": "EXPORTED"
+      },
+      "research/continuous_scale_flow_frobenius.md": {
+        "public_path": "archive/reports/research/continuous_scale_flow_frobenius.md",
+        "status": "EXPORTED"
+      },
+      "research/phase4/experiments/pairing_checks.json": {
+        "public_path": "artifacts/research/phase4/experiments/pairing_checks.json",
+        "status": "EXPORTED"
+      },
+      "research/phase4/sources.json": {
+        "public_path": "archive/literature/research/phase4/sources.json",
+        "status": "EXPORTED"
+      },
+      "research/phase4_arithmetic_polarization.md": {
+        "public_path": "archive/reports/research/phase4_arithmetic_polarization.md",
+        "status": "EXPORTED"
+      },
+      "research/phase4_pairing_matrix.md": {
+        "public_path": "archive/reports/research/phase4_pairing_matrix.md",
+        "status": "EXPORTED"
+      }
+    }
+  },
+  "phase": 4,
+  "rh_status": "OPEN",
+  "status": "BOUNDED_REVIEW_COMPLETE_NO_POSITIVE_BRIDGE",
+  "active_candidates": [],
+  "failed_candidates": [
+    {
+      "id": "PV-A",
+      "name": "Arakelov/intersection and height",
+      "major_attempt": 1,
+      "reason": "Spec Z primitive quotient zero; arithmetic-surface height lives on a different space with no exact zeta identification"
+    },
+    {
+      "id": "PV-B",
+      "name": "Explicit-formula intersection",
+      "major_attempt": null,
+      "stage": "INITIAL_SCREEN",
+      "reason": "Actual form fidelity exists; sign theorem and primitive intersection inequality are RH-equivalent without geometric comparison"
+    },
+    {
+      "id": "PV-D",
+      "name": "Product-formula and canonical-star metric",
+      "major_attempt": 2,
+      "reason": "Positive ambient norm and closed adjoint exist but not full-zero identification; Fourier twist is negative on an actual pole-free adelic test"
+    },
+    {
+      "id": "PV-C",
+      "name": "Closable positive form on the arithmetic quotient",
+      "major_attempt": 3,
+      "reason": "Dense arithmetic null space forces any positive closable form on the specified ambient H0 to vanish"
+    }
+  ],
+  "best_pairing_candidate": {
+    "id": "PV-C",
+    "scope": "The existing arithmetic quotient is the most faithful zero-bearing object; no independent positive metric obtained",
+    "status": "CLOSED_FOR_SPECIFIED_CLOSABLE_TRANSFER"
+  },
+  "actual_zeta_fidelity": false,
+  "positivity_independent_of_RH": false,
+  "adjoint_identity_proved": false,
+  "zero_spectrum_preserved": false,
+  "boolean_scope": "Fields concern one joint successful target construction on the actual zero-bearing space; component facts on other spaces are recorded separately.",
+  "component_facts": {
+    "actual_explicit_form_fidelity": true,
+    "ambient_adelic_metric_positive": true,
+    "ambient_closed_adjoint_identity": true,
+    "known_arithmetic_height_positive": true,
+    "positive_nonzero_closable_descent_on_H0": false,
+    "new_complete_zero_Hilbert_realization": false
+  },
+  "current_minimal_gap": {
+    "statement": "An independently arithmetic positive metric on a faithful completion of the actual zero quotient, compatible with scaling and retaining local terms, all zero modes and multiplicities",
+    "obtained": false,
+    "direct_Weil_positivity": "RH_EQUIVALENT_NOT_PROGRESS",
+    "full_geometric_bridge_RH_reverse_implication": "UNKNOWN",
+    "excluded_repair": "Nonzero positive closable form on the specified ambient weighted L2 while retaining its dense arithmetic radical"
+  },
+  "next_action": "This bounded Phase IV round is closed under the three-candidate kill rule. Do not repeat natural L2, its closable/unbounded repair, Fourier-positive projection, or renamed Weil positivity. Re-entry requires a specified arithmetic cycle/Green/Hodge comparison on another faithful topology. The independent continuous-scale-flow track proceeds in its own files.",
+  "success_level": 0,
+  "success_levels_1_to_5_achieved": false,
+  "major_attempts_completed": 3,
+  "initial_screen_kills": 1,
+  "strategy_review_completed": true,
+  "novel_positive_bridge": false,
+  "novelty_claimed": false,
+  "proves_RH": false,
+  "refutes_RH": false,
+  "phase3_files_or_state_modified": false,
+  "canonical_state_modified": false,
+  "phase3_graph_merges": [],
+  "source_ledger": "research/phase4/sources.json",
+  "log": "research/phase4_arithmetic_polarization.md",
+  "matrix": "research/phase4_pairing_matrix.md",
+  "audit": "proofs/audits/phase4_pairing_adversarial.md",
+  "numerical_result": "research/phase4/experiments/pairing_checks.json",
+  "formalization_added": false,
+  "independent_track": "research/continuous_scale_flow_frobenius.md"
+}

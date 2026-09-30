@@ -1,0 +1,38 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "research/scale_flow/flow_checks.json",
+    "source_sha256": "faab8288fe0fd21a6d630ae8c1bcd153914ea1e9df319327a86d454389858e5e",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {}
+  },
+  "scope": "Concrete counterexamples and convention checks; not verification of RH",
+  "exact_checks_passed": true,
+  "symplectic_and_indefinite_conservation": true,
+  "time_reversal": true,
+  "positive_invariant_matrix_impossible": "Both diagonal entries forced zero; only off-diagonal forms remain",
+  "offline_parameters_in_critical_strip": true,
+  "one_period_example_original_norm_invariant": false,
+  "one_period_example_averaged_norm_invariant": true,
+  "finite_cover_return_cycle": [
+    1,
+    3,
+    4,
+    2
+  ],
+  "finite_cover_period_over_log_2": 4,
+  "numeric_certified": false,
+  "precision_decimal_digits": 70,
+  "alpha": "0.3219280948873623478703194294893901758648313930245806120547563958159348",
+  "weighted_functional_norm_squared": "1.634477265151471370385323589835511142906755195479530884219479269404442",
+  "quadrature_error": "1.8111358157653424735018238581775583561365062396278276379165229779871e-71",
+  "finite_character_descent_max_error": "5.611807769004864461094699192512407811193762506495388822712932232755222e-71",
+  "script_sha256": "101f2803234de82da4e391ba4301d816fc4dfebf5817d79df043f209e645c8f8"
+}

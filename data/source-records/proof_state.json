@@ -1,0 +1,1049 @@
+{
+  "_public_export": {
+    "status": "RIEMANN HYPOTHESIS OPEN",
+    "record_type": "SANITIZED_HISTORICAL_SOURCE_SNAPSHOT",
+    "source_path": "proof_state.json",
+    "source_sha256": "86bb708e57914bb76d61c95fd4c3311d9380e05e226f29367e9a0fc9a7e77d90",
+    "exported_on": "2026-09-30",
+    "public_credit": "@ykbballer91",
+    "license": "CC-BY-4.0",
+    "ai_assisted": true,
+    "original_fields_are_historical": true,
+    "checks_rerun_in_public_export": false,
+    "scope": "Historical claims and verification records retain their original scope. Priority 1 cyclicity is even L2 only; full-ground capture and RH remain open.",
+    "references": {
+      "experiments/results/arithmetic-gram-checks.json": {
+        "public_path": "artifacts/experiments/results/arithmetic-gram-checks.json",
+        "status": "EXPORTED"
+      },
+      "experiments/results/groskin-c13-n4-independent.json": {
+        "public_path": "artifacts/experiments/results/groskin-c13-n4-independent.json",
+        "status": "EXPORTED"
+      },
+      "experiments/results/imbalance-checks.json": {
+        "public_path": "artifacts/experiments/results/imbalance-checks.json",
+        "status": "EXPORTED"
+      },
+      "experiments/results/internal-kernel-checks.json": {
+        "public_path": "artifacts/experiments/results/internal-kernel-checks.json",
+        "status": "EXPORTED"
+      },
+      "experiments/results/joint-symbol-tail-certificates.json": {
+        "public_path": "artifacts/experiments/results/joint-symbol-tail-certificates.json",
+        "status": "EXPORTED"
+      },
+      "experiments/results/phase2-boundary-falsification.json": {
+        "public_path": "artifacts/experiments/results/phase2-boundary-falsification.json",
+        "status": "EXPORTED"
+      },
+      "experiments/results/phase2-scattering-checks.json": {
+        "public_path": "artifacts/experiments/results/phase2-scattering-checks.json",
+        "status": "EXPORTED"
+      },
+      "experiments/results/support-propagation-checks.json": {
+        "public_path": "artifacts/experiments/results/support-propagation-checks.json",
+        "status": "EXPORTED"
+      },
+      "experiments/results/window-half-T32-cut64.json": {
+        "public_path": "artifacts/experiments/results/window-half-T32-cut64.json",
+        "status": "EXPORTED"
+      },
+      "experiments/results/window-half-independent-224.json": {
+        "public_path": "artifacts/experiments/results/window-half-independent-224.json",
+        "status": "EXPORTED"
+      },
+      "literature/notes/weil-frontier.md": {
+        "public_path": "archive/literature/literature/notes/weil-frontier.md",
+        "status": "EXPORTED"
+      },
+      "literature/source_cache/adam-202601.0459v4.web.json": {
+        "public_path": null,
+        "status": "SOURCE_REFERENCE_NOT_INCLUDED"
+      },
+      "literature/source_cache/freedman-2606.29555v1.html": {
+        "public_path": null,
+        "status": "SOURCE_REFERENCE_NOT_INCLUDED"
+      },
+      "literature/source_cache/mukha-chi-v4.pdf": {
+        "public_path": null,
+        "status": "SOURCE_REFERENCE_NOT_INCLUDED"
+      },
+      "literature/source_cache/zhang-202108.0146v61.web.json": {
+        "public_path": null,
+        "status": "SOURCE_REFERENCE_NOT_INCLUDED"
+      },
+      "proofs/audits/adam-projection-audit.md": {
+        "public_path": "archive/audits/proofs/audits/adam-projection-audit.md",
+        "status": "EXPORTED"
+      },
+      "proofs/audits/caceres-asymptotic-adversarial.md": {
+        "public_path": "archive/audits/proofs/audits/caceres-asymptotic-adversarial.md",
+        "status": "EXPORTED"
+      },
+      "proofs/audits/desogus-extra-debit-repair.md": {
+        "public_path": "archive/audits/proofs/audits/desogus-extra-debit-repair.md",
+        "status": "EXPORTED"
+      },
+      "proofs/audits/desogus-pivot-cancellation-stress.md": {
+        "public_path": "archive/audits/proofs/audits/desogus-pivot-cancellation-stress.md",
+        "status": "EXPORTED"
+      },
+      "proofs/audits/freedman-weyl-bridge-gate.md": {
+        "public_path": "archive/audits/proofs/audits/freedman-weyl-bridge-gate.md",
+        "status": "EXPORTED"
+      },
+      "proofs/audits/global-dependency.md": {
+        "public_path": "archive/audits/proofs/audits/global-dependency.md",
+        "status": "EXPORTED"
+      },
+      "proofs/audits/groskin-computation.md": {
+        "public_path": "archive/audits/proofs/audits/groskin-computation.md",
+        "status": "EXPORTED"
+      },
+      "proofs/audits/imbalance-adversarial.md": {
+        "public_path": "archive/audits/proofs/audits/imbalance-adversarial.md",
+        "status": "EXPORTED"
+      },
+      "proofs/audits/imbalance-reduction.md": {
+        "public_path": "archive/audits/proofs/audits/imbalance-reduction.md",
+        "status": "EXPORTED"
+      },
+      "proofs/audits/joint-symbol-certificate.md": {
+        "public_path": "archive/audits/proofs/audits/joint-symbol-certificate.md",
+        "status": "EXPORTED"
+      },
+      "proofs/audits/joint-symbol-reduction.md": {
+        "public_path": "archive/audits/proofs/audits/joint-symbol-reduction.md",
+        "status": "EXPORTED"
+      },
+      "proofs/audits/mukha-chi-lift-audit.md": {
+        "public_path": "archive/audits/proofs/audits/mukha-chi-lift-audit.md",
+        "status": "EXPORTED"
+      },
+      "proofs/audits/phase2-generator-boundary-audit.md": {
+        "public_path": "archive/audits/proofs/audits/phase2-generator-boundary-audit.md",
+        "status": "EXPORTED"
+      },
+      "proofs/audits/phase3-independent-audit.md": {
+        "public_path": "archive/audits/proofs/audits/phase3-independent-audit.md",
+        "status": "EXPORTED"
+      },
+      "proofs/audits/silva-finite-zero-audit.md": {
+        "public_path": "archive/audits/proofs/audits/silva-finite-zero-audit.md",
+        "status": "EXPORTED"
+      },
+      "proofs/audits/silva-jacobi-test.md": {
+        "public_path": "archive/audits/proofs/audits/silva-jacobi-test.md",
+        "status": "EXPORTED"
+      },
+      "proofs/audits/support-propagation-adversarial.md": {
+        "public_path": "archive/audits/proofs/audits/support-propagation-adversarial.md",
+        "status": "EXPORTED"
+      },
+      "proofs/audits/support-propagation-flow-renormalization.md": {
+        "public_path": "archive/audits/proofs/audits/support-propagation-flow-renormalization.md",
+        "status": "EXPORTED"
+      },
+      "proofs/audits/support-propagation-reduction.md": {
+        "public_path": "archive/audits/proofs/audits/support-propagation-reduction.md",
+        "status": "EXPORTED"
+      },
+      "proofs/audits/window-half-certificate.md": {
+        "public_path": "archive/audits/proofs/audits/window-half-certificate.md",
+        "status": "EXPORTED"
+      },
+      "proofs/audits/window-half-independent.md": {
+        "public_path": "archive/audits/proofs/audits/window-half-independent.md",
+        "status": "EXPORTED"
+      },
+      "proofs/audits/zhang-divisibility-audit.md": {
+        "public_path": "archive/audits/proofs/audits/zhang-divisibility-audit.md",
+        "status": "EXPORTED"
+      },
+      "proofs/audits/zhu-reduction-audit.md": {
+        "public_path": "archive/audits/proofs/audits/zhu-reduction-audit.md",
+        "status": "EXPORTED"
+      },
+      "proofs/failed/COUNTEREXAMPLE_LOG.md": {
+        "public_path": "archive/reports/proofs/failed/COUNTEREXAMPLE_LOG.md",
+        "status": "EXPORTED"
+      },
+      "proofs/latest_candidate.md": {
+        "public_path": null,
+        "status": "SOURCE_REFERENCE_NOT_INCLUDED"
+      },
+      "release/phase3_handoff_2026-09-29.txt": {
+        "public_path": "archive/reports/release/phase3_handoff_2026-09-29.txt",
+        "status": "EXPORTED"
+      },
+      "release/research_handoff_2026-09-29.txt": {
+        "public_path": "archive/reports/release/research_handoff_2026-09-29.txt",
+        "status": "EXPORTED"
+      },
+      "research/arithmetic_gram_generator.md": {
+        "public_path": "archive/reports/research/arithmetic_gram_generator.md",
+        "status": "EXPORTED"
+      },
+      "research/caceres_source_provenance.json": {
+        "public_path": null,
+        "status": "SOURCE_REFERENCE_NOT_INCLUDED"
+      },
+      "research/continuum_subtraction.md": {
+        "public_path": "archive/reports/research/continuum_subtraction.md",
+        "status": "EXPORTED"
+      },
+      "research/desogus_2609_20367_audit.md": {
+        "public_path": "archive/reports/research/desogus_2609_20367_audit.md",
+        "status": "EXPORTED"
+      },
+      "research/desogus_source_provenance.json": {
+        "public_path": null,
+        "status": "SOURCE_REFERENCE_NOT_INCLUDED"
+      },
+      "research/finite_field_dependency_spine.md": {
+        "public_path": "archive/reports/research/finite_field_dependency_spine.md",
+        "status": "EXPORTED"
+      },
+      "research/finite_negative_index_gate.md": {
+        "public_path": "archive/reports/research/finite_negative_index_gate.md",
+        "status": "EXPORTED"
+      },
+      "research/generator_boundary_hypothesis.md": {
+        "public_path": "archive/reports/research/generator_boundary_hypothesis.md",
+        "status": "EXPORTED"
+      },
+      "research/internal_first_principles.md": {
+        "public_path": "archive/reports/research/internal_first_principles.md",
+        "status": "EXPORTED"
+      },
+      "research/number_field_gap_matrix.md": {
+        "public_path": "archive/reports/research/number_field_gap_matrix.md",
+        "status": "EXPORTED"
+      },
+      "research/nyman_beurling_closure_gate.md": {
+        "public_path": "archive/reports/research/nyman_beurling_closure_gate.md",
+        "status": "EXPORTED"
+      },
+      "research/phase2_charter.md": {
+        "public_path": null,
+        "status": "SOURCE_REFERENCE_NOT_INCLUDED"
+      },
+      "research/phase2_sources.json": {
+        "public_path": "archive/literature/research/phase2_sources.json",
+        "status": "EXPORTED"
+      },
+      "research/phase3_gap_state.json": {
+        "public_path": "data/source-records/research/phase3_gap_state.json",
+        "status": "EXPORTED"
+      },
+      "research/phase3_missing_frobenius.md": {
+        "public_path": "archive/reports/research/phase3_missing_frobenius.md",
+        "status": "EXPORTED"
+      },
+      "research/phase3_sources.json": {
+        "public_path": "archive/literature/research/phase3_sources.json",
+        "status": "EXPORTED"
+      },
+      "research/prime_insertion_closure.md": {
+        "public_path": "archive/reports/research/prime_insertion_closure.md",
+        "status": "EXPORTED"
+      },
+      "research/selfdual_theta_boundary.md": {
+        "public_path": "archive/reports/research/selfdual_theta_boundary.md",
+        "status": "EXPORTED"
+      },
+      "research/silva_route_decision.md": {
+        "public_path": "archive/reports/research/silva_route_decision.md",
+        "status": "EXPORTED"
+      },
+      "research/silva_source_provenance.json": {
+        "public_path": null,
+        "status": "SOURCE_REFERENCE_NOT_INCLUDED"
+      },
+      "research/spiral_scale_flow.md": {
+        "public_path": "archive/reports/research/spiral_scale_flow.md",
+        "status": "EXPORTED"
+      },
+      "research/strategy_review.md": {
+        "public_path": "archive/reports/research/strategy_review.md",
+        "status": "EXPORTED"
+      },
+      "research/structural_audit.md": {
+        "public_path": "archive/reports/research/structural_audit.md",
+        "status": "EXPORTED"
+      },
+      "research/structural_heuristics.md": {
+        "public_path": "archive/reports/research/structural_heuristics.md",
+        "status": "EXPORTED"
+      },
+      "theorem_graph/graph.md": {
+        "public_path": "archive/reports/theorem_graph/graph.md",
+        "status": "EXPORTED"
+      }
+    }
+  },
+  "schema_version": 1,
+  "status": "OPEN",
+  "execution_status": "PHASE_III_STRATEGY_REVIEW_COMPLETE",
+  "rh_status": "OPEN",
+  "proof_complete": false,
+  "active_route": "PHASE_III_MISSING_PURITY: finite-field curve/general spines extracted; existing arithmetic cyclic quotient selected; three positivity/gluing transfer candidates closed; no independent positive comparison obtained",
+  "updated_at": "2026-09-29",
+  "checkpoint_version": "checkpoint-2026-09-29-06",
+  "open_nodes": [
+    "T000",
+    "T100",
+    "T110"
+  ],
+  "independent_open_obligation_classes": [
+    {
+      "id": "RH-Weil",
+      "nodes": [
+        "T000",
+        "T100",
+        "T110"
+      ],
+      "count": 1,
+      "meaning_ja": "同値な未解決命題の集約。技術的難度の低下を意味しない"
+    }
+  ],
+  "proved_nodes": [
+    "T020",
+    "T030",
+    "T040",
+    "T050",
+    "T060",
+    "T070",
+    "T080",
+    "T090"
+  ],
+  "known_inputs": [
+    "T001",
+    "T010"
+  ],
+  "failed_routes": [
+    {
+      "node": "F001",
+      "scope_ja": "一般的推論または特定の核最適化候補。RH自体の反証ではない"
+    },
+    {
+      "node": "F002",
+      "scope_ja": "一般的推論または特定の核最適化候補。RH自体の反証ではない"
+    },
+    {
+      "node": "F003",
+      "scope_ja": "一般的推論または特定の核最適化候補。RH自体の反証ではない"
+    },
+    {
+      "node": "F004",
+      "scope_ja": "一般的推論または特定の核最適化候補。RH自体の反証ではない"
+    },
+    {
+      "node": "F005",
+      "scope_ja": "一般的推論または特定の核最適化候補。RH自体の反証ではない"
+    },
+    {
+      "node": "F006",
+      "scope_ja": "一般的推論または特定の核最適化候補。RH自体の反証ではない"
+    }
+  ],
+  "candidate_lemmas": [],
+  "formalized_lemmas": [
+    "RhAudit.nonneg_of_pointwise_limit",
+    "RhAudit.nonneg_of_vanishing_lower_error",
+    "RhAudit.nonneg_on_dense",
+    "RhAudit.coordinate_restrictions_nonneg",
+    "RhAudit.larger_block_negative",
+    "RhAudit.quartet_coefficient",
+    "RhAudit.two_block_lower_bound",
+    "RhAudit.scalar_schur_equivalence"
+  ],
+  "formalization_exclusions": [
+    "zeta theory",
+    "Weil criterion",
+    "analytic strip estimates",
+    "smooth test-function density",
+    "Fourier quartet witness",
+    "kernel optimization",
+    "global density energy identity",
+    "Arb interval certificate internals",
+    "Legendre quadrature and infinite-tail analytic bounds",
+    "support Schur closed-form domain analysis",
+    "spiral-scale global indefinite sample representation",
+    "internal selfdual-kernel countermodel, Mellin continuation, ground-state domains and escaping-profile limit; analytically audited but not Lean-formalized",
+    "canonical continuum-subtraction Sobolev limits, energy and Gram obstructions; analytically audited, not Lean-formalized",
+    "full arithmetic GCD Gram, critical singularity, product measure and Mangoldt form analysis; independently audited, not Lean-formalized",
+    "Phase III synthetic all-n point-count model, LF/natural arithmetic quotient collapse and prime-orbit/Gamma gluing obstructions; analytically audited, not Lean-formalized"
+  ],
+  "known_risks": [
+    "全L,N正値性は未証明かつRH同値",
+    "有限窓を全supportへ延長していない",
+    "既知入力の完全な独立再証明は未実施",
+    "2026有限系の小例のみ独立認証済み。原著401次計算・全窓正値性は未認証",
+    "エージェント監査は外部査読ではない",
+    "補助エネルギー結果は既存の変分問題に対応し新規性を主張しない",
+    "構造ヒューリスティックの資料は数学的根拠ではない。global L²閉形式と固定窓形式を混同しない",
+    "T090は固定窓だけの計算機援用証明。Arb/FLINTと標準解析恒等式を信頼基盤とし、全窓・Lean完全形式化ではない",
+    "joint-symbolの高周波下界は全Q_W正値性ではない。新しい5窓のhead・無限basis tail・交差項は未認証",
+    "固定積imbalanceの零点での消滅はRH同値。toy反例と解析接続の符号反例はRH反例ではない",
+    "local Schur extension does not ensure all-support propagation; logarithmic countermodel crosses zero at finite radius",
+    "global Weil translation invariance is indefinite and does not imply positivity",
+    "Desogus2609.20367v2 asserts RH but all new critical claims begin independently unverified",
+    "Independent internal derivation is not a novelty claim. Toy-kernel negativity and exclusion of a proposed construction are not counterexamples to RH or to actual Weil positivity."
+  ],
+  "completed_cycles": [
+    {
+      "id": 1,
+      "result_ja": "固定support解析の橋を証明し4種の偽短絡を棄却"
+    },
+    {
+      "id": 2,
+      "result_ja": "既知の核最適定数を再導出し核交換だけの候補を棄却;160例の非認証反証探索"
+    },
+    {
+      "id": 3,
+      "result_ja": "全実線非負密度のエネルギー平方完成と等号条件を導出・独立監査。RH接続なし"
+    },
+    {
+      "id": 4,
+      "result_ja": "構造ヒューリスティックA〜Eを一次文献・解析反例・数値反証で検査。主グラフ合流0、RH未解決。"
+    },
+    {
+      "id": 5,
+      "result_ja": "Groskinv3の有限辞書・tailを独立監査し局所誤記を分離。c13,N4の9次行列を独立Arb直接積分で正定値認証、91成分照合。全窓への移行なし。"
+    },
+    {
+      "id": 6,
+      "result_ja": "Zhu有限還元の一般entry boundを厳密反証・修復。原著head未取得を区別し、a=.5の全complex form-domainでQ_W>=9e-8 norm²を独立Arb head+解析tailで証明。224bit別実行・別Cholesky・2担当監査済み。"
+    },
+    {
+      "id": 7,
+      "result_ja": "5固定窓でjoint symbol Psi_a>1/5を無限高周波まで認証。115995区間と解析終端、224bit独立再評価。resolution-height非負仮説を5厳密反例で棄却。全Weil正値性は未認証。"
+    },
+    {
+      "id": 8,
+      "result_ja": "ユーザー指定の固定積imbalanceをEuler展開・Hessian・Weilへ照合。zero-implies-zero-energyはRH同値で棄却。構造のみの強制は解析反例、正級数の解析接続による符号喪失もArb認証。候補を終了し主グラフ不採用。"
+    },
+    {
+      "id": 9,
+      "result_ja": "support Schur分解と局所延長を証明したが、全L propagationの一般論はlog-form反例で棄却。global mechanismなし、主グラフ合流0。"
+    },
+    {
+      "id": 10,
+      "result_ja": "scale-flowの既知unitarityと自然なglobal Weil保存則を再構成。不定A*JAは線外ペアを許す。新しい禁止機構なし、heuristic route終了、主グラフ合流0。"
+    },
+    {
+      "id": 11,
+      "result_ja": "Desogus v2を90nodeの依存グラフへ分解。6.29→8.4→8.5のactual-form同定と二arm debitにGAP。finite safe-cut4,993整数は修復したがRL-kは未修復。RH経路短縮なし。"
+    },
+    {
+      "id": 12,
+      "result_ja": "Caceres2609.28529v1のTheorem4.1を全stripのelementary ratio limitで反証。端点符号修正でも核心は直らずDIRECT route終了。"
+    },
+    {
+      "id": 13,
+      "result_ja": "Silvaの有限近似定理を確認。actualU4のunit-circle条件は区間積分と二tailで否定、actualZ4はline上。一般Stieltjesによるline強制も反例。特定LP模型の有限成功から全次数を推論しない。 同じ列の固定Jacobi主特性多項式への同定もE≤6の非零Favard残差で厳密棄却、独立監査PASS。"
+    },
+    {
+      "id": 14,
+      "result_ja": "Desogusのliteral2Dを残した修復条件を特定。固定forcingでD発散する厳密族によりgeneric支払いを棄却。actual response辞書なしで未修復停止。全窓polar-free coreの正値性もRH同値。主graph merge0。"
+    },
+    {
+      "id": 15,
+      "result_ja": "Zhang v61のLemma6を、全零点がstrip内・order1・絶対局所一様積を持つ対称整関数の厳密反例で棄却。multiplicity uniquenessは反射による因子交換を禁じない。ROOT/LITERATURE独立確認。RH経路短縮なし。"
+    },
+    {
+      "id": 16,
+      "result_ja": "Mukha v4本文のMobius因子2を技術的修復。ただし全zero→spectral zero橋は境界所属を先に必要とし未成立。Musinのmax-preserving familyへのdivisibility移植もRH同値と判定。原論文のRH反証・全文否定とはしない。"
+    },
+    {
+      "id": 17,
+      "result_ja": "Adam v4のLemma1を実際のfractional-part核と固定指示関数で反証。正しいGalerkin圧縮への修正後も共通coercivityは不可能。有限負指数だけの閉鎖は不定toyと一次文献の限定scopeにより採用せず。RH経路短縮なし。"
+    },
+    {
+      "id": 18,
+      "result_ja": "Freedman v1のactual Weyl kernelからde Branges型kernelへのFourier恒等式を独立導出。ただし中心核PSDは既知のRH同値条件。Appendix Cのstationarity+pointwise contractionからcompressed contractionへの一般推論を厳密有限模型で反証。actual arithmetic liftの評価は未証明で主graph不採用。"
+    },
+    {
+      "id": 19,
+      "result_ja": "ユーザーの最新指示により内部構築へ変更。境界平方＋残差の恒等式、位数1にも延ばせる形状条件の反例、実theta核のGaussian実因子積閉包への障害を導出。実核の微分fluxと整数移動和も構成したが全域正値性に到達せず。主graph合流0、RH経路短縮なし。"
+    },
+    {
+      "id": 20,
+      "result_ja": "Mangoldt畳み込みと一素数の正負Gram更新を内部導出。全幾何級数の二点反例でPSD保存を否定。actual有限素数theta和の大域modular欠損を証明し、正半直線の偶延長にも全有限段階で無限個の非実零点があると解析的に証明。候補終了、主graph合流0。"
+    },
+    {
+      "id": 21,
+      "result_ja": "Poisson対称性を保つ自己Fourier seedを構成。正seed・正completed kernel・帯内限定・端点規格化を保持してMellin因子だけを変え、1/4,3/4±32iの四点を追加する厳密模型を得た。全域有理下界とArb Gram検証、独立監査を完了。Gaussian ground-state直和のdomain/L²失敗も確認。標準ξの反例ではなく主graph合流0。"
+    },
+    {
+      "id": 22,
+      "result_ja": "標準Gaussianの和−積分補正を内部導出し、全H^kで鋭いN^(-1/2)収束と正Laplace Gram増分を証明。一方、自然energyはN=1→2で厳密に減少し、補正核の偶対称化には全Nで負Gram方向がある。指数重み付き端点の不収束も明示。独立監査と有理数・Arb検算を保存、正値性伝播候補を終了。主graph合流0。"
+    },
+    {
+      "id": 23,
+      "result_ja": "全整数のGCD相関をJordan totient平方和へ分解し、等長表現と対数共役のMangoldt係数を内部導出。標準ℓ²の閉可能性閾値1/2と有界性閾値1を証明。臨界値では全featureがsingular、共役Hermitian formもSchur式で下半有界性を否定。独立監査・有理数・Arb検算・構成後の限定既知性照合済み。Weil同定未達、主graph合流0。"
+    },
+    {
+      "id": 24,
+      "phase": "II",
+      "result_ja": "Generator/Boundary四トラックを比較しCへ集中。actual modular Laplacianから全ζ零点の散乱極対応と境界再構成を導出するが、自己共役固有値との不一致と全cutoffでの零点回収失敗を証明。full prime mの正性はRH同値。actual Newmanの算術時計・定量Gaussian境界を導出したが全負時間の非実零点と両立。Gaussian格子liftの非可換性も検査。3 major attempts後のstrategy reviewを完了、独立監査済み、主graph合流0。"
+    },
+    {
+      "id": 25,
+      "phase": "III",
+      "result_ja": "有限体曲線のRosati正性と算術adjoint、Deligneのtensor/pole機構を分離。既存CCM算術商の全零点traceを確認しMissing purityへ集中。全正整数点数を持つq9合成反例、商位相によるmode喪失とactual weighted L2商ゼロ、prime circle/Γ直和接着の障害を検算。3限定試行後のstrategy review完了。新非同値lemmaなし、Level1未達、主graph合流0。"
+    }
+  ],
+  "audit_scope": {
+    "local": "補助解析ノートPASS",
+    "global": "main19nodes unchanged; Lean8 declarations, no full RH candidate validated",
+    "full_RH_audit_A": false,
+    "full_RH_audit_B": false,
+    "full_RH_audit_C": false
+  },
+  "next_action": "Do not restart the same three mechanisms or finite-window enlargement. Re-entry requires a concrete independent arithmetic intersection or tensor/pole identity on the existing quotient, with exact topology/trace compatibility. No such unprocessed candidate was obtained in this round.",
+  "resume_read_order": [
+    "STATUS.md",
+    "proof_state.json",
+    "research/phase3_missing_frobenius.md",
+    "research/phase3_gap_state.json",
+    "research/finite_field_dependency_spine.md",
+    "research/number_field_gap_matrix.md",
+    "proofs/audits/phase3-independent-audit.md",
+    "research/arithmetic_gram_generator.md",
+    "research/continuum_subtraction.md",
+    "research/selfdual_theta_boundary.md",
+    "research/prime_insertion_closure.md",
+    "research/internal_first_principles.md",
+    "research/strategy_review.md",
+    "proofs/audits/freedman-weyl-bridge-gate.md",
+    "proofs/audits/adam-projection-audit.md",
+    "research/finite_negative_index_gate.md",
+    "proofs/audits/zhang-divisibility-audit.md",
+    "proofs/audits/mukha-chi-lift-audit.md",
+    "proofs/audits/desogus-extra-debit-repair.md",
+    "proofs/audits/desogus-pivot-cancellation-stress.md",
+    "research/nyman_beurling_closure_gate.md",
+    "proofs/audits/silva-jacobi-test.md",
+    "research/silva_route_decision.md",
+    "proofs/audits/silva-finite-zero-audit.md",
+    "proofs/audits/caceres-asymptotic-adversarial.md",
+    "research/desogus_2609_20367_audit.md",
+    "research/desogus_source_provenance.json",
+    "theorem_graph/graph.md",
+    "proofs/latest_candidate.md",
+    "proofs/failed/COUNTEREXAMPLE_LOG.md",
+    "proofs/audits/global-dependency.md",
+    "literature/notes/weil-frontier.md",
+    "research/structural_heuristics.md",
+    "research/structural_audit.md",
+    "proofs/audits/groskin-computation.md",
+    "proofs/audits/window-half-certificate.md",
+    "proofs/audits/zhu-reduction-audit.md",
+    "proofs/audits/joint-symbol-certificate.md",
+    "proofs/audits/imbalance-reduction.md",
+    "proofs/audits/imbalance-adversarial.md"
+  ],
+  "publication": {
+    "uploaded": false,
+    "posted_to_X": false,
+    "doi": null,
+    "proof_release_frozen": false,
+    "checkpoint_bundle": true,
+    "authorship_assigned": false,
+    "license_selected": false
+  },
+  "secondary_tracks": [
+    {
+      "id": "structural_heuristics",
+      "status": "AUDITED_CHECKPOINT",
+      "path": "research/structural_heuristics.md",
+      "audit": "research/structural_audit.md",
+      "role": "heuristic_only",
+      "source_as_proof_premise": false,
+      "merged_nodes": [
+        "T090"
+      ],
+      "novelty_claimed": false,
+      "additional_Lean_declarations": 1,
+      "latest_finite_audit": "proofs/audits/window-half-certificate.md",
+      "latest_merge_scope": "single fixed support [-1/2,1/2], all complex form-domain; auxiliary node without edge to global positivity",
+      "latest_subtrack_audit": "proofs/audits/support-propagation-adversarial.md",
+      "fixed_product_imbalance_status": "REJECTED_RH_EQUIVALENCE_AND_STRUCTURAL_COUNTEREXAMPLE",
+      "additional_merged_nodes_this_cycle": [],
+      "support_propagation_status": "STOPPED_NO_GLOBAL_MECHANISM"
+    },
+    {
+      "id": "spiral_scale_flow",
+      "status": "STOPPED_NO_INDEPENDENT_EXCLUSION_MECHANISM",
+      "path": "research/spiral_scale_flow.md",
+      "role": "HEURISTIC",
+      "source_as_proof_premise": false,
+      "main_graph_merge": false,
+      "novelty_claimed": false
+    }
+  ],
+  "finite_certificates": [
+    {
+      "c": 13,
+      "N": 4,
+      "dimension": 9,
+      "arithmetic": "Arb192bits",
+      "n_positive": 9,
+      "n_negative": 0,
+      "independent_assembly": true,
+      "result": "experiments/results/groskin-c13-n4-independent.json",
+      "scope": "one finite matrix; no global RH conclusion"
+    }
+  ],
+  "fixed_window_certificates": [
+    {
+      "node": "T090",
+      "support": [
+        "-1/2",
+        "1/2"
+      ],
+      "scope": "all complex form-domain functions",
+      "lower_bound": "9e-8",
+      "proof": "proofs/audits/window-half-certificate.md",
+      "audit": "proofs/audits/window-half-independent.md",
+      "certificate": "experiments/results/window-half-T32-cut64.json",
+      "independent_certificate": "experiments/results/window-half-independent-224.json",
+      "global_RH_conclusion": false
+    }
+  ],
+  "joint_symbol_certificates": {
+    "certificate": "experiments/results/joint-symbol-tail-certificates.json",
+    "proof": "proofs/audits/joint-symbol-certificate.md",
+    "independent_audit": "proofs/audits/joint-symbol-reduction.md",
+    "floor": "1/5",
+    "fixed_windows": [
+      "4/5",
+      "1",
+      "119/100",
+      "6/5",
+      "7/5"
+    ],
+    "cutoffs": [
+      111,
+      1552,
+      5549,
+      21231,
+      132510
+    ],
+    "certified_closed_intervals": 115995,
+    "proves_full_window_positivity": false,
+    "global_RH_conclusion": false
+  },
+  "rejected_imbalance_track": {
+    "status": "STOPPED",
+    "reason": "vanishing at all xi zeros is exactly RH; fixed product and positive symmetric structure do not force it",
+    "record": "research/structural_heuristics.md",
+    "reduction": "proofs/audits/imbalance-reduction.md",
+    "audit": "proofs/audits/imbalance-adversarial.md",
+    "experiment": "experiments/results/imbalance-checks.json",
+    "main_graph_merge": false,
+    "refutes_RH": false
+  },
+  "rejected_support_propagation_track": {
+    "status": "STOPPED",
+    "record": "research/structural_heuristics.md",
+    "reduction": "proofs/audits/support-propagation-reduction.md",
+    "audit": "proofs/audits/support-propagation-adversarial.md",
+    "flow": "proofs/audits/support-propagation-flow-renormalization.md",
+    "experiment": "experiments/results/support-propagation-checks.json",
+    "main_graph_merge": false,
+    "local_extension_proved": true,
+    "global_propagation_proved": false,
+    "refutes_RH": false
+  },
+  "external_proof_claims": [
+    {
+      "id": "Desogus2609.20367v2",
+      "status": "UNVERIFIED_EXTERNAL_PROOF_CLAIM_WITH_PROOF_CRITICAL_GAP",
+      "class": "DIRECT",
+      "audit": "research/desogus_2609_20367_audit.md",
+      "provenance": "research/desogus_source_provenance.json",
+      "claim_accepted": false,
+      "community_acceptance_verified": false,
+      "critical_cut": [
+        "Corollary 6.29",
+        "Lemma 8.4",
+        "Theorem 8.5"
+      ],
+      "minimal_repair": "RL-k exact arithmetic kernel/block identity; not repaired",
+      "finite_safe_cut_repair": "4993 integers k=7..4999 verified independently; no analytic tail or operator lift",
+      "extra_debit_repair": {
+        "status": "NOT_REPAIRED_BOUNDED_SEARCH_STOPPED",
+        "conditions": "ED2/3 or concrete ED4/5/6 require an independently derived actual response map and arithmetic bound",
+        "audit": "proofs/audits/desogus-extra-debit-repair.md",
+        "generic_cancellation": "REJECTED by fixed forcing family with positive pivots and D=1/epsilon",
+        "stress_audit": "proofs/audits/desogus-pivot-cancellation-stress.md",
+        "polar_free_global_core": "RH_EQUIVALENT; not an easier premise",
+        "actual_Weil_counterexample": false
+      }
+    },
+    {
+      "id": "Caceres2609.28529v1",
+      "status": "REJECTED_FATAL_COUNTEREXAMPLE_TO_THEOREM_4_1",
+      "audit": "proofs/audits/caceres-asymptotic-adversarial.md",
+      "provenance": "research/caceres_source_provenance.json",
+      "claim_accepted": false,
+      "refutes_RH": false,
+      "main_graph_merge": false,
+      "class": "DIRECT"
+    },
+    {
+      "id": "Zhang202108.0146v61",
+      "class": "DIRECT",
+      "status": "REJECTED_FATAL_COUNTEREXAMPLE_TO_LEMMA_6",
+      "audit": "proofs/audits/zhang-divisibility-audit.md",
+      "source_url": "https://www.preprints.org/manuscript/202108.0146/v61",
+      "source_snapshot": "literature/source_cache/zhang-202108.0146v61.web.json",
+      "snapshot_type": "primary HTML web-tool extraction, not raw HTML or PDF",
+      "snapshot_sha256": "fb2acf93ed8e13778c8eb1aa51dd0c51c865ca0c25c0c15362213b900ca3f29c",
+      "critical_cut": "Lemma 6, Eq (17) -> Eq (19): reflection permutation incorrectly forced to fix each factor",
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "FAILED_AS_STATED",
+      "counterexample_independently_verified": true,
+      "claim_accepted": false,
+      "community_acceptance_verified": false,
+      "refutes_RH": false,
+      "main_graph_merge": false
+    },
+    {
+      "id": "MukhaCoe2026m9xcxv4",
+      "class": "DIRECT",
+      "status": "STOPPED_PROOF_CRITICAL_ALL_ZERO_IDENTIFICATION_GAP",
+      "audit": "proofs/audits/mukha-chi-lift-audit.md",
+      "source_url": "https://doi.org/10.33774/coe-2026-m9xcx-v4",
+      "source_pdf": "literature/source_cache/mukha-chi-v4.pdf",
+      "source_sha256": "2f288cf39a480d9c24c367a804df54512d48b760164090f5138a5d39f25f3d51",
+      "source_pages": 95,
+      "audit_scope": "coordinate definitions; sections 6 and 10 all-zero bridge; section 12 equivalence chain, not complete 95-page validation",
+      "critical_cut": "Definition 10.1.E all-zero existence is not supplied by Theorem 10.2.C, whose premise already includes boundary membership",
+      "geometric_repair": "factor-two Mobius correction independently checked; technical only",
+      "metadata_vs_pdf": "exponential lift in landing abstract, Mobius lift in PDF; periodicity objection not applied to v4 PDF",
+      "claim_accepted": false,
+      "community_acceptance_verified": false,
+      "refutes_RH": false,
+      "main_graph_merge": false
+    },
+    {
+      "id": "Adam202601.0459v4",
+      "class": "DIRECT",
+      "status": "REJECTED_FATAL_COUNTEREXAMPLE_TO_LEMMA_1",
+      "audit": "proofs/audits/adam-projection-audit.md",
+      "source_url": "https://www.preprints.org/manuscript/202601.0459/v4",
+      "source_snapshot": "literature/source_cache/adam-202601.0459v4.web.json",
+      "snapshot_type": "primary web-tool extraction response, not raw HTML or PDF",
+      "snapshot_sha256": "f4923774fc4ef3d9454e670b337a4020312a9d0675f569a0e6c2282ecec90b0f",
+      "critical_cut": "Eq.(7), Note 2 -> Lemma 1.1 -> Theorem 4: literal operator approximation fails even strongly for a fixed input",
+      "PROVED_IN_PAPER": "YES_PROOF_TEXT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "FAILED_AS_STATED",
+      "counterexample_independently_verified": true,
+      "minimal_repair": "genuine Galerkin compressions converge in norm, but no common positive lower bound is possible for the compact operator",
+      "claim_accepted": false,
+      "community_acceptance_verified": false,
+      "refutes_RH": false,
+      "main_graph_merge": false
+    },
+    {
+      "id": "ArnethSSRN7483040",
+      "class": "DIRECT",
+      "source_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7483040",
+      "status": "ACCESS_BLOCKED_NOT_AUDITED",
+      "scope": "landing metadata and abstract only; full text retrieval failed",
+      "claim_accepted": false,
+      "mathematically_rejected": false,
+      "main_graph_merge": false
+    }
+  ],
+  "proof_distance": {
+    "rh_open_nodes": [
+      "T000",
+      "T100",
+      "T110"
+    ],
+    "critical_unknowns": [
+      "unconditional all-test Weil positivity, equivalently RH",
+      "an independently provable arithmetic mechanism supplying global positivity/zero exclusion; internal kernel identities do not yet provide it"
+    ],
+    "new_assumptions_introduced": [],
+    "rh_equivalent_restatements": [
+      "zero imbalance energy",
+      "bounded normalized scale characters at all zeros",
+      "global Weil positivity or positive restriction of J",
+      "actual xi logarithmic derivative Herglotz on full upper half-plane",
+      "all nontrivial modular scattering poles in 0<Re(s)<1/2 lie at Re(s)=1/4",
+      "actual Newman real-zero threshold equals zero"
+    ],
+    "genuinely_new_proved_nodes_on_RH_path": [],
+    "shortest_remaining_proof_path": "unchanged: no independently proved global arithmetic closure mechanism",
+    "classification_ja": "Phase IIでもRHへの主経路短縮なし。actual算術の境界再構成は得たが零点はresonanceとして現れ、正生成子との完全同定は未達。算術時計とNewman閾値も別。具体候補の選別・反証・同値性確認を証明距離短縮に数えない。"
+  },
+  "portfolio": [
+    {
+      "class": "DIRECT",
+      "route": "Desogus RL-k actual-form identification",
+      "status": "BOUNDED_REPAIR_STOPPED_PENDING_NEW_ARITHMETIC_INPUT"
+    },
+    {
+      "class": "DIRECT",
+      "route": "Zhang v61 factor-divisibility; Mukha v4 chi-lift",
+      "status": "BOUNDED_AUDITS_COMPLETE_ZHANG_FATAL_LEMMA_MUKHA_ALL_ZERO_GAP"
+    },
+    {
+      "class": "ENABLING",
+      "route": "Silva unit-circle and fixed-Jacobi shortcuts",
+      "status": "BOUNDED_TEST_COMPLETE_CANDIDATE_REJECTED"
+    },
+    {
+      "class": "HEURISTIC",
+      "route": "fixed-product, generic support propagation, spiral-scale",
+      "status": "STOPPED"
+    },
+    {
+      "class": "DIRECT",
+      "route": "Adam v4 compact-operator injectivity claim",
+      "status": "REJECTED_FATAL_APPROXIMATION_ERROR"
+    },
+    {
+      "class": "ENABLING",
+      "route": "finite negative index / Pontryagin closure",
+      "status": "STOPPED_NO_ARITHMETIC_NO_FINITE_EXCEPTION_THEOREM",
+      "record": "research/finite_negative_index_gate.md"
+    },
+    {
+      "class": "ENABLING",
+      "route": "Freedman2606.29555v1 closed-trace quotient",
+      "status": "STOPPED_RH_EQUIVALENT_ENDPOINT_AND_UNPROVED_GREEN_LIFT_CONTRACTION",
+      "audit": "proofs/audits/freedman-weyl-bridge-gate.md"
+    }
+  ],
+  "execution_policy": {
+    "ask_user_for_research_route": false,
+    "priority": [
+      "INTERNAL_FIRST_PRINCIPLES",
+      "ADVERSARIAL_CHECK",
+      "TARGETED_PRIOR_ART_AFTER_CONCRETE_IDEA"
+    ],
+    "no_fixed_window_bruteforce_as_main": true,
+    "no_busywork_counted_as_progress": true,
+    "strategy_review_after_three_cycles_without_graph_reduction": true,
+    "no_RH_solved_label_without_external_acceptance": true,
+    "latest_user_override": "2026-09-29: explicit restart RH PHASE II GENERATOR / BOUNDARY HYPOTHESIS; independent of previous Weil-first program; four-track comparison then concrete generator; strategy review after three consecutive major failed attempts; no intermediate confirmation.",
+    "external_proof_claim_rotation": false,
+    "internal_first_principles": true,
+    "research_paused_for_user_policy_review": false
+  },
+  "external_enabling_results": [
+    {
+      "id": "Silva2609.25564v1",
+      "classification": "ENABLING",
+      "not_RH_proof_claim": true,
+      "status": "PARTIAL_APPROXIMATION_VALIDATED_GENERAL_ZERO_FORCE_REJECTED",
+      "audit": "proofs/audits/silva-finite-zero-audit.md",
+      "decision": "research/silva_route_decision.md",
+      "provenance": "research/silva_source_provenance.json",
+      "actual_U4_all_off_unit_circle": true,
+      "actual_Z4_all_on_critical_line": true,
+      "main_graph_merge": false,
+      "novelty_claimed": false,
+      "jacobi_principal_sequence": "REJECTED: nonzero exact recurrence residual already at E=6",
+      "jacobi_audit": "proofs/audits/silva-jacobi-test.md"
+    },
+    {
+      "id": "Musin2609.33794v1",
+      "classification": "ENABLING",
+      "not_RH_proof_claim": true,
+      "status": "DIVISIBILITY_TRANSFER_CANDIDATE_REJECTED_AS_RH_EQUIVALENT",
+      "source_url": "https://arxiv.org/html/2609.33794v1",
+      "scope": "Theorem 4.1, Lemma 2.1 and attempted transfer of section 3 divisibility; not complete paper verification",
+      "record": "research/strategy_review.md",
+      "main_graph_merge": false,
+      "novelty_claimed": false
+    },
+    {
+      "id": "Freedman2606.29555v1",
+      "classification": "ENABLING",
+      "not_RH_proof_claim": true,
+      "status": "NOT_ADOPTED_PROOF_CRITICAL_GREEN_LIFT_CONTRACTION_GAP",
+      "audit": "proofs/audits/freedman-weyl-bridge-gate.md",
+      "source_url": "https://arxiv.org/html/2606.29555v1",
+      "source_html": "literature/source_cache/freedman-2606.29555v1.html",
+      "source_sha256": "90697240319ea6149c7723baabc9a5b5c5ee2332e8f68c8b6397df1d71ff68c3",
+      "scope": "Eq.(6), Appendix C contraction inference and C.1 bridge; not full 102-page or certificate validation",
+      "source_status_inconsistency": "Theorem2.2/section16/AppendixA leave lift open; AppendixC later asserts its closure",
+      "fourier_identity": "independently derived D(K_nu)=(pi/4)partial_nu(deBranges_kernel); no zero assumption",
+      "center_kernel_positivity": "RH_EQUIVALENT; exact reduction to known complex Laguerre criterion",
+      "PROVED_IN_PAPER": "APPENDIX_C_CONTRACTION_ARGUMENT_PRESENT",
+      "INDEPENDENTLY_VERIFIED": "NO_GREEN_LIFT_NORM_BOUND_SUPPLIED",
+      "generic_inference_counterexample": "finite complete model has norm(C)=1, norm(K)=1/2, CE=I, Euler stationarity, but norm(CKE)=3/2",
+      "actual_Riemann_kernel_counterexample": false,
+      "main_graph_merge": false,
+      "novelty_claimed": false
+    }
+  ],
+  "internal_research": {
+    "policy": "INTERNAL_FIRST_PRINCIPLES",
+    "record": "research/internal_first_principles.md",
+    "checks": "experiments/results/internal-kernel-checks.json",
+    "current_cycle": "BOUNDED_CANDIDATES_CLOSED_NO_GLOBAL_MECHANISM",
+    "exact_boundary_identity": true,
+    "shape_only_force": "REJECTED_EVEN_WITH_ORDER_ONE_FOURIER_TRANSFORM",
+    "Gaussian_real_linear_factor_cone": "ACTUAL_KERNEL_EXCLUDED_EVEN_WITH_VARYING_GAUSSIAN_PARAMETER",
+    "actual_theta_positive_flux": "LOW_ORDER_ONLY_BERNSTEIN_UPGRADE_FALSE",
+    "positive_shift_transfer": "GENERIC_TRANSFER_FALSE_ACTUAL_LOG_WEIGHTED_DIFFERENCE_UNCONTROLLED",
+    "main_graph_merge": false,
+    "novelty_claimed": false,
+    "proves_RH": false,
+    "refutes_RH": false,
+    "latest_record": "research/arithmetic_gram_generator.md",
+    "latest_checks": "experiments/results/arithmetic-gram-checks.json",
+    "prime_insertion": {
+      "Mangoldt_convolution": "PROVED_IDENTITY",
+      "one_prime_update": "PROVED_POSITIVE_MINUS_POSITIVE_IDENTITY",
+      "generic_PSD_preservation": "REJECTED_WITH_FULL_GEOMETRIC_SERIES",
+      "actual_finite_prime_global_limit": "COMPACT_CONVERGENCE_BUT_GLOBAL_MASS_AND_ENERGY_DIVERGE",
+      "reflected_positive_halfline_completion": "EACH_FINITE_PRIME_SET_HAS_INFINITELY_MANY_NONREAL_ZEROS",
+      "scope": "a particular finite-prime approximation family, not the full xi function",
+      "status": "STOPPED_NO_PROPAGATION_MECHANISM"
+    },
+    "selfdual_theta": {
+      "general_Mellin_factorization": "xi times entire factor; original zeros cannot be removed",
+      "generic_structural_zero_forcing": "REJECTED_BY_EXACT_POSITIVE_SELFDUAL_MODEL",
+      "added_zeros": [
+        "1/4+32i",
+        "1/4-32i",
+        "3/4+32i",
+        "3/4-32i"
+      ],
+      "global_seed_and_completed_kernel_positivity": "PROVED_BY_RATIONAL_LOWER_BOUNDS",
+      "standard_gamma_factor_preserved": false,
+      "standard_xi_nonzero_at_inserted_points": "ARBITRARY_PRECISION_BALL_CERTIFIED_192_BITS",
+      "novelty_claimed": false,
+      "targeted_prior_art_after_construction": "Bump-Choi-Kurlberg-Vaaler, author preliminary PDF, section 1 Theorem 1; individual oscillator eigenfunctions, not arbitrary self-Fourier combinations",
+      "heat_positive_increment": "EXACT_BUT_DOES_NOT_REMOVE_OFF_REAL_ZEROS",
+      "naive_groundstate_direct_sum": "CRITICAL_VECTOR_NOT_IN_HILBERT_SPACE_AND_NATURAL_SCALAR_PARTIAL_SUMS_NOT_L2_CONVERGENT",
+      "status": "BOUNDED_CANDIDATES_CLOSED_NO_RH_PROOF"
+    },
+    "continuum_subtraction": {
+      "standard_Gaussian_preserved": true,
+      "all_Hk_convergence": "PROVED_SHARP_RATE_N_MINUS_ONE_HALF",
+      "positive_primitive_order": "PROVED",
+      "positive_Laplace_Gram_increment": "PROVED_ON_COMMON_POSITIVE_MEASURE_BUT_NOT_WEIL_IDENTIFIED",
+      "scalar_energy_monotone_increase": "REJECTED_EXACTLY_AT_N1_TO_N2",
+      "symmetrized_finite_kernel_PSD": "REJECTED_FOR_EVERY_N_BY_FIXED_COMPLEX_EVALUATION",
+      "weighted_endpoint_transfer": "REJECTED_FINITE_VALUE_ONE_QUARTER_VS_ACTUAL_ONE_HALF",
+      "status": "STOPPED_AS_POSITIVITY_PROPAGATION_ROUTE",
+      "source_sha256": "2c1537e5c30fddab4608acf1818b542e8084ae81b768cadced74878685408df9",
+      "main_graph_merge": false,
+      "novelty_claimed": false,
+      "proves_RH": false,
+      "refutes_RH": false
+    },
+    "arithmetic_gram": {
+      "positive_divisor_factorization": "PROVED_ON_ALL_FINITE_INTEGER_SEQUENCES",
+      "standard_l2_closability": "IFF_ALPHA_GREATER_THAN_ONE_HALF",
+      "standard_l2_boundedness": "IFF_ALPHA_GREATER_THAN_ONE",
+      "critical_adjoint_domain": "ZERO; graph closure is full product space",
+      "Gram_completion_and_isometries": "EXIST_FOR_EVERY_ALPHA_POSITIVE",
+      "Poisson_product_measure": "SINGULAR_TO_HAAR_AT_ALPHA_AT_MOST_ONE_HALF; L2_DENSITY_ABOVE",
+      "Mangoldt_conjugation": "EXACT_ON_C00_WITH_NEW_PRIME_BOUNDARY_FACTORS",
+      "critical_Hermitian_form": "NOT_SEMIBOUNDED; finite scalar shifts fail by exact prime-star Schur complement",
+      "actual_Weil_identification": false,
+      "status": "STOPPED_AS_POSITIVE_GRAM_TRANSFER_ROUTE",
+      "source_sha256": "246542040f0211b97a16d917d0461aae9848331654c997696187d9b1e9cbd708",
+      "main_graph_merge": false,
+      "novelty_claimed": false,
+      "proves_RH": false,
+      "refutes_RH": false
+    }
+  },
+  "previous_goal_turn_classification": {
+    "classification": "PROGRESS",
+    "basis": "Explicit Phase III user policy carried out with concrete exact countermodels, primary dependency comparison and independent audits. RH proof gap did not shrink."
+  },
+  "unstarted_next_candidate_before_user_review": "Start from the actual full Weil explicit form with its prescribed Gamma/archimedean and pole terms, not another positive Gram model. Derive a concrete identity for coherent arithmetic cross terms and their canonical completion, and test it before proposing any positivity transfer. Do not reuse finite theta enlargement, GCD-Gram closability at the critical exponent, positivity of logarithmic derivatives, arbitrary counterterms, or a renamed RH-equivalent premise. Continue internal-first construction; prior-art verification follows a concrete candidate.",
+  "handoff_report": {
+    "path": "release/research_handoff_2026-09-29.txt",
+    "format": "plain_text_Japanese",
+    "scope": "thread beginning through cycle23",
+    "research_baseline_commit": "624dea1",
+    "research_completed_cycles": 23,
+    "RH_proved": false,
+    "new_research_started_after_request": false,
+    "awaiting_user_policy": false,
+    "delivered_in_full_to_user": true,
+    "report_commit": "b7f67e8",
+    "policy_received": "RH PHASE II — GENERATOR / BOUNDARY HYPOTHESIS"
+  },
+  "phase1_goal_continuation_audit": {
+    "blocker": "Awaiting the user's revised research policy after the requested completed handoff; automatic goal continuation supplies no revised policy.",
+    "consecutive_blocked_goal_turns": 3,
+    "current_turn_classification": "NO_PROGRESS",
+    "basis": "Read-only checks confirmed the report exists, the worktree was clean, RH remains OPEN and execution remains AWAITING_USER_RESEARCH_POLICY. Recording this gate is bookkeeping, not mathematical progress or a verified wait on a live process.",
+    "goal_status_changed": true,
+    "goal_status": "blocked",
+    "goal_status_basis": "The same missing user research policy was revalidated on three consecutive automatic goal turns. The requested handoff is complete; no authorized research step remains before the user's policy decision. update_goal confirmed blocked; RH remains OPEN and the full objective is unchanged.",
+    "new_research_started": false
+  },
+  "phase_ii": {
+    "charter": "research/phase2_charter.md",
+    "log": "research/generator_boundary_hypothesis.md",
+    "status": "STOPPED_AFTER_THREE_MAJOR_ATTEMPTS",
+    "major_attempts_completed": 3,
+    "consecutive_failed_major_attempts": 3,
+    "main_graph_merges": [],
+    "additional_assumptions": [],
+    "major_attempt_order": [
+      "C_MODULAR_SCATTERING",
+      "B_FULL_PRIME_WEYL",
+      "A_NEWMAN_CLOCK_BOUNDARY"
+    ],
+    "initial_screen": "D_GAUSSIAN_MODULAR_LIFT",
+    "strategy_review_completed": true,
+    "candidate_statuses": {
+      "C": "EXACT_SCATTERING_NOT_SELFADJOINT_ZERO_SPECTRUM; CUTOFF_COMPLETENESS_FAILS",
+      "B": "HERGLOTZ_INPUT_IFF_RH",
+      "A": "ARITHMETIC_CLOCK_FIXED; ZERO_THRESHOLD_UNCONTROLLED; COMPACTIFICATION_LOSES_ESCAPING_ZEROS",
+      "D": "ACTUAL_GAUSSIAN_LATTICE_INTERTWINING_FALSE"
+    },
+    "source_ledger": "research/phase2_sources.json",
+    "numerical_checks": [
+      "experiments/results/phase2-scattering-checks.json",
+      "experiments/results/phase2-boundary-falsification.json"
+    ],
+    "audit": "proofs/audits/phase2-generator-boundary-audit.md",
+    "novelty_claimed": false,
+    "proves_RH": false,
+    "refutes_RH": false
+  },
+  "goal_continuation_audit": {
+    "blocker": null,
+    "consecutive_blocked_goal_turns": 0,
+    "basis": "Explicit Phase III instruction authorizes research. Three bounded mechanisms closed under its kill rule; no missing user approval is asserted.",
+    "new_research_started": true
+  },
+  "phase_iii": {
+    "log": "research/phase3_missing_frobenius.md",
+    "finite_field_spine": "research/finite_field_dependency_spine.md",
+    "gap_matrix": "research/number_field_gap_matrix.md",
+    "gap_state": "research/phase3_gap_state.json",
+    "source_ledger": "research/phase3_sources.json",
+    "audit": "proofs/audits/phase3-independent-audit.md",
+    "status": "STOPPED_AFTER_THREE_BOUNDED_ATTEMPTS_AND_STRATEGY_REVIEW",
+    "major_attempts_completed": 3,
+    "strategy_review_completed": true,
+    "selected_track": "B_MISSING_PURITY",
+    "success_levels_achieved": [],
+    "main_graph_merges": [],
+    "additional_assumptions": [],
+    "proves_RH": false,
+    "refutes_RH": false,
+    "novelty_claimed": false,
+    "handoff_report": "release/phase3_handoff_2026-09-29.txt"
+  }
+}
