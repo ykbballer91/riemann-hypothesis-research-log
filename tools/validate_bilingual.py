@@ -55,7 +55,8 @@ def check():
                 require(any((path.parent/unquote(urlsplit(x.get('href','')).path)).resolve()==(site/route(lc,navkey)).resolve() for x in d.links if not urlsplit(x.get('href','')).scheme),f'Navigation absent: {lc}/{key}/{navkey}')
             require(len(d.ids)==len(set(d.ids)),f'Duplicate heading IDs: {lc}/{key}')
             if lc=='en':require(not re.search(r'[ぁ-んァ-ン一-龥]',body),f'Japanese prose in English main: {key}')
-            old=ROOT/'archive/editorial/pre-bilingual-2026-10-01/docs'/(key+'.md')
+            snapshot=ROOT/'archive/editorial/pre-bilingual-2026-10-01'
+            old=snapshot/'README.md' if key=='home' else snapshot/'docs'/(key+'.md')
             if old.is_file():
                 oldids=set(re.findall(r'\bid="([^"]+)"',render_markdown(old.read_text())))
                 require(oldids.issubset(set(d.ids)),f'Legacy heading lost: {lc}/{key}')

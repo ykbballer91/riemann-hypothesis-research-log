@@ -115,7 +115,8 @@ def rewrite_links(body, source, destination, existing):
 
 def legacy_anchors(body, key):
     """Retain bookmarks from the old editorial URLs, without a second body copy."""
-    old = ROOT / "archive/editorial/pre-bilingual-2026-10-01/docs" / (key + ".md")
+    snapshot = ROOT / "archive/editorial/pre-bilingual-2026-10-01"
+    old = snapshot / "README.md" if key == "home" else snapshot / "docs" / (key + ".md")
     if not old.is_file():
         return body
     previous = set(re.findall(r'\bid="([^"]+)"', render_markdown(old.read_text())))
