@@ -25,4 +25,3 @@ The workflow builds on a push to `main` and uploads a Pages artifact. It **does 
 Public visibility, the actual public release date, the approval variable, and live deployment are recorded in the current publication report after all review gates pass. A build artifact is not a published website. Availability of Pages for private repositories depends on the account plan; this phase does not rely on private Pages hosting.
 
 The workflow uses the official [GitHub Pages actions](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages), pinned to inspected revisions. There is no separate application framework or database.
-

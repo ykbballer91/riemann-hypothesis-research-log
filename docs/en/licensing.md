@@ -11,4 +11,3 @@ Third-party works remain under their original rights. The repository does not in
 For attribution, use **Riemann Hypothesis Research Log, @ykbballer91, version 0.1.0**, and the repository address. The actual public release date is **2026-09-30**, recorded in `CITATION.cff`.
 
 The licenses apply to the exported original material to the extent rights are held. AI assistance and the distinction between internal audit and external peer review are described in [methodology](methodology.md). Historical empty authorship or license fields in archived state files record an earlier state; they do not override this publication policy.
-

@@ -65,4 +65,3 @@ None of the auxiliary results above bypasses these obligations. The [roadmap](ro
 These are written auxiliary arguments with internal independent AI audit records. Selected earlier Lean declarations formalize particular elementary lemmas; they do not formalize the current entire research chain. Numerical overlap, finite spectral agreement, source-preservation checks, and publication validation have their own narrower scopes.
 
 No new unconditional bound on the real parts of all zeta zeros has been obtained here. No percentage of RH completion is assigned.
-

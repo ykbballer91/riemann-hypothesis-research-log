@@ -17,4 +17,3 @@
 `PASS` in an audit or JSON record is a check result, not one of the mathematical labels above. It may concern a finite experiment, source preservation, publication hygiene, or a precisely scoped argument.
 
 Historical labels stay attached to their original objects. Track-specific success levels are not combined into an overall score. There is no percentage-complete measure for RH in this log.
-

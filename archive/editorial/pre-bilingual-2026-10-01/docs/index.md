@@ -49,4 +49,3 @@ The [cyclicity update](tracks/18-even-l2-cyclicity.md) establishes that $\{k,k''
 The subsequent [finite-head update](tracks/19-finite-even-head-spanning.md) gives a rank theorem, explicit tail criteria, and two finite interval certificates. Exact representation in a fixed projected space does not control a moving ground or its Weil energy.
 
 [Publication report](../../../../audit/publication_report.md) · [Phase 3 publication review](../../../../audit/phase3_final_content_review.md) · [Methodology](methodology.md) · [Licensing](licensing.md)
-

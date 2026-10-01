@@ -36,4 +36,3 @@ Known results are attributed to primary literature where the research records pr
 ## Publication scope
 
 Version 0.1.0 was made public on 2026-09-30, after the creator-authorized Phase 3 review gates and final private-branch CI passed. Publication metadata records release state separately from the historical research snapshots. This repository's licenses govern original exported material; third-party works retain their own rights.
-
