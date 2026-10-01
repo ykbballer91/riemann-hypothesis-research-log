@@ -6,6 +6,7 @@ Copyright (c) 2026 @ykbballer91. SPDX-License-Identifier: MIT
 from __future__ import annotations
 
 import argparse
+import hashlib
 import html
 import json
 import os
@@ -132,6 +133,8 @@ def page(body, title, destination, lang="en", key=None, redirect=None):
     release_label = ("初回公開 " if lang == "ja" else "First published ") + date + " · v0.1.0"
     def link(p):
         return quote(os.path.relpath(p, destination.parent), safe="/-_.~")
+    css_revision = hashlib.sha256((ROOT / "assets/site.css").read_bytes()).hexdigest()[:12]
+    stylesheet = f"{link('assets/site.css')}?v={css_revision}"
     links = "".join(f'<a href="{link(route(lang,k))}"'+(' aria-current="page"' if k==key else '')+f'>{label}</a>' for label,k in NAV[lang])
     pair_key = key or "source-map"
     language_links = " | ".join(
@@ -164,7 +167,7 @@ def page(body, title, destination, lang="en", key=None, redirect=None):
 <title>{html.escape(document_title)}</title>
 <meta name="description" content="{description}">
 <link rel="canonical" href="{canonical}">{alternates}{redirects}
-<link rel="stylesheet" href="{link('assets/site.css')}">
+<link rel="stylesheet" href="{stylesheet}">
 <script>window.MathJax={{tex:{{inlineMath:[['\\\\(','\\\\)']],displayMath:[['\\\\[','\\\\]']],tags:'ams'}},options:{{skipHtmlTags:['script','noscript','style','textarea','pre','code']}}}};</script>
 <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script>
 </head><body>
