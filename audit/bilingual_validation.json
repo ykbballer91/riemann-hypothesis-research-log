@@ -55,9 +55,10 @@
       "Legacy docs/index.html → English guide",
       "Legacy index.html → Japanese home"
     ],
-    "long_math_and_tables": "Scroll within their own containers; do not widen the document"
+    "long_math_and_tables": "Scroll within their own containers; do not widen the document",
+    "japanese_heading_wrap": "Balanced lines, visually checked on the latest update at a 390-pixel viewport."
   },
-  "deployment_verification": "Post-push deployment and anonymous-access results are reported with the delivered commit and workflow run; this local record does not pre-certify deployment.",
+  "deployment_verification": "Initial deployed revision verified below. Final heading-wrap adjustment and delivery revision are verified again in the delivery report.",
   "publication_checks": {
     "status": "PASS",
     "scope": "Publication files and local link/build consistency; no external URL crawl or mathematical proof check",
@@ -76,5 +77,16 @@
     "findings": [],
     "secret_scan_findings": 0,
     "unexpected_sensitive_path_or_identity_findings": 0
+  },
+  "initial_public_deployment": {
+    "status": "PASS",
+    "commit": "bda70202dbf7870d6b9b1f4513fa7e24c42e8ffa",
+    "workflow_run": "https://github.com/ykbballer91/riemann-hypothesis-research-log/actions/runs/36795255204",
+    "build": "PASS",
+    "deploy": "PASS",
+    "anonymous_pages_and_assets_matching_build": 101,
+    "anonymous_repository_http_status": 200,
+    "public_browser_language_switch": "PASS",
+    "public_math_rendering": "PASS"
   }
 }
