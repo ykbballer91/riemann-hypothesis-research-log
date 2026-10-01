@@ -25,3 +25,8 @@
 **/*.pyc
 /.preview/
 /.local/
+
+# Bilingual editorial review (no private source inventory).
+!/audit/bilingual_review.md
+!/audit/bilingual_inventory.json
+!/audit/bilingual_validation.json

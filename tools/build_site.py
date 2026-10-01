@@ -15,9 +15,11 @@ import shutil
 from urllib.parse import quote, unquote, urlsplit
 
 import markdown
+from site_routes import SITE_URL, LANGUAGES, NAV, editorial_info, legacy_info, route, source_for, url_for
 
 ROOT = Path(__file__).resolve().parents[1]
 PUBLIC_AUDITS = {
+    "bilingual_review.md", "bilingual_inventory.json", "bilingual_validation.json",
     "rewrite_manifest.md", "phase2_safety_report.md",
     "phase2_independent_review.md", "phase2_publication_review.md",
     "phase2_validation_summary.json",
@@ -28,7 +30,7 @@ PUBLIC_AUDITS = {
     "phase3_content_changes.md", "publication_report.md",
 }
 ROOT_FILES = {
-    "README.md", "LICENSE-TEXT", "LICENSE-CODE", "CITATION.cff",
+    "README.md", "README.ja.md", "LICENSE-TEXT", "LICENSE-CODE", "CITATION.cff",
     "requirements-site.txt",
 }
 
@@ -79,6 +81,9 @@ def render_markdown(text):
 
 
 def site_path(path):
+    info = editorial_info(path)
+    if info:
+        return route(*info)
     return path.with_suffix(".html") if path.suffix.lower() == ".md" else path
 
 
@@ -108,32 +113,65 @@ def rewrite_links(body, source, destination, existing):
     return re.sub(r'(href|src)="([^"]*)"', fix, body)
 
 
-def page(body, title, destination):
-    publication = json.loads((ROOT / "data/publication.json").read_text()) if (ROOT / "data/publication.json").exists() else {}
-    release_label = ("Published " + publication["publication_date"] + " · v0.1.0"
-                     if publication.get("status") == "PUBLIC" and publication.get("publication_date")
-                     else "Publication-review draft · v0.1.0")
+def legacy_anchors(body, key):
+    """Retain bookmarks from the old editorial URLs, without a second body copy."""
+    old = ROOT / "archive/editorial/pre-bilingual-2026-10-01/docs" / (key + ".md")
+    if not old.is_file():
+        return body
+    previous = set(re.findall(r'\bid="([^"]+)"', render_markdown(old.read_text())))
+    current = set(re.findall(r'\bid="([^"]+)"', body))
+    aliases = "".join(f'<span class="legacy-anchor" id="{html.escape(i, quote=True)}"></span>'
+                      for i in sorted(previous - current))
+    return aliases + body
+
+
+def page(body, title, destination, lang="en", key=None, redirect=None):
+    publication = json.loads((ROOT / "data/publication.json").read_text())
+    date = publication.get("publication_date", "")
+    release_label = ("初回公開 " if lang == "ja" else "First published ") + date + " · v0.1.0"
     def link(p):
         return quote(os.path.relpath(p, destination.parent), safe="/-_.~")
-    nav = [
-        ("Guide", "docs/index.html"), ("Current state", "docs/current-state.html"),
-        ("Timeline", "docs/timeline.html"), ("Roadmap", "docs/roadmap.html"),
-        ("Sources", "docs/source-map.html"),
-    ]
-    links = "".join(f'<a href="{link(p)}">{label}</a>' for label, p in nav)
+    links = "".join(f'<a href="{link(route(lang,k))}"'+(' aria-current="page"' if k==key else '')+f'>{label}</a>' for label,k in NAV[lang])
+    pair_key = key or "source-map"
+    language_links = " | ".join(
+        f'<a lang="{lc}" hreflang="{lc}" href="{link(route(lc,pair_key))}"'+
+        (' aria-current="page"' if lc==lang and key else '')+f'>{label}</a>'
+        for lc,label in (("ja","日本語"),("en","English")))
+    canonical = url_for(route(lang,key)) if key else url_for(destination)
+    alternates = "".join(f'<link rel="alternate" hreflang="{lc}" href="{url_for(route(lc,key))}">' for lc in LANGUAGES) if key else ""
+    if key: alternates += f'<link rel="alternate" hreflang="x-default" href="{url_for(route("ja",key))}">'
+    title_suffix = "リーマン予想が解けるか。" if lang=="ja" else "RH Research Log"
+    document_title = title if title == title_suffix else f"{title} · {title_suffix}"
+    description = "AIを用いた研究記録。リーマン予想は未解決。補助結果、失敗した方針、未証明の課題を記録します。" if lang=="ja" else "AI-assisted research log. Riemann Hypothesis OPEN. Auxiliary results, failed routes, and unresolved gaps."
+    skip = "本文へ" if lang=="ja" else "Skip to content"
+    nav_label = "主要ページ" if lang=="ja" else "Main navigation"
+    brand = "リーマン予想が解けるか。" if lang=="ja" else "RH Research Log"
+    foot = "AIを用いた研究記録" if lang=="ja" else "AI-assisted research"
+    methods = "方法と証拠" if lang=="ja" else "Evidence & method"
+    license_label = "本文 CC BY 4.0 / コード MIT" if lang=="ja" else "CC BY 4.0 text / MIT code"
+    redirects = ""
+    if redirect:
+        target = link(redirect)
+        # JavaScript retains query/fragment; meta refresh and a visible link are fallbacks.
+        redirects = f'<meta http-equiv="refresh" content="0;url={html.escape(target,quote=True)}">'+"<script>location.replace("+json.dumps(target)+"+location.search+location.hash);</script>"
+    evidence_notice = ""
+    if not key:
+        note = "原文資料：翻訳せず保存しています。上の言語切替は各言語の出典案内へ戻ります。" if lang=="ja" else "Original evidence: retained without translation. The language links return to each language’s source guide."
+        evidence_notice = f'<aside class="evidence-note">{note}</aside>'
     return f'''<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{html.escape(title)} · RH Research Log</title>
-<meta name="description" content="AI-assisted research log. Riemann Hypothesis OPEN. Auxiliary results, failed routes, and unresolved gaps.">
+<html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{html.escape(document_title)}</title>
+<meta name="description" content="{description}">
+<link rel="canonical" href="{canonical}">{alternates}{redirects}
 <link rel="stylesheet" href="{link('assets/site.css')}">
 <script>window.MathJax={{tex:{{inlineMath:[['\\\\(','\\\\)']],displayMath:[['\\\\[','\\\\]']],tags:'ams'}},options:{{skipHtmlTags:['script','noscript','style','textarea','pre','code']}}}};</script>
 <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script>
 </head><body>
-<a class="skip" href="#content">Skip to content</a>
-<header><a class="brand" href="{link('index.html')}">RH <span>Research Log</span></a><nav aria-label="Main navigation">{links}</nav></header>
-<div class="status-band"><strong>STATUS: RIEMANN HYPOTHESIS OPEN</strong><span>{html.escape(release_label)}</span></div>
-<main id="content">{body}</main>
-<footer><span>@ykbballer91 · AI-assisted research</span><a href="{link('docs/methodology.html')}">Evidence &amp; method</a><a href="{link('docs/licensing.html')}">CC BY 4.0 text / MIT code</a></footer>
+<a class="skip" href="#content">{skip}</a>
+<header><div class="masthead"><a class="brand" href="{link(route(lang,'home'))}">{brand}</a><nav class="language-switch" aria-label="Language / 言語">{language_links}</nav></div><nav class="main-nav" aria-label="{nav_label}">{links}</nav></header>
+<div class="status-band"><strong>STATUS: RIEMANN HYPOTHESIS OPEN.</strong><span>{html.escape(release_label)}</span></div>
+<main id="content">{evidence_notice}{body}</main>
+<footer><span>@ykbballer91 · {foot}</span><a href="{link(route(lang,'methodology'))}">{methods}</a><a href="{link(route(lang,'licensing'))}">{license_label}</a></footer>
 </body></html>'''
 
 
@@ -155,16 +193,24 @@ def build(output):
         if source.suffix.lower() != ".md":
             shutil.copyfile(source, target)
             continue
-        text = source.read_text(encoding="utf-8")
+        info = editorial_info(relative)
+        legacy = legacy_info(relative)
+        content_source = source
+        if legacy:
+            content_source = ROOT / source_for(*legacy)
+        text = content_source.read_text(encoding="utf-8")
         title_match = re.search(r"^#\s+(.+)", text, re.M)
         title = title_match.group(1).strip() if title_match else source.stem
-        body = rewrite_links(render_markdown(text), source, destination, existing)
-        target.write_text(page(body, title, destination), encoding="utf-8")
+        lang, key = info or legacy or ("ja" if re.search(r"[ぁ-んァ-ン]",text) else "en", None)
+        body = rewrite_links(render_markdown(text), content_source, destination, existing)
+        if key:
+            body = legacy_anchors(body, key)
+        target.write_text(page(body,title,destination,lang,key,route(*legacy) if legacy else None),encoding="utf-8")
         rendered += 1
-        if relative.as_posix() == "docs/index.md":
-            home = Path("index.html")
-            homebody = rewrite_links(render_markdown(text), source, home, existing)
-            (output / home).write_text(page(homebody, title, home), encoding="utf-8")
+    # One canonical home source; neither root nor the old docs entry maintains a second snapshot.
+    home=Path("index.html")
+    body='<h1>リーマン予想が解けるか。</h1><p><a href="ja/">日本語ホームへ</a></p>'
+    (output/home).write_text(page(body,"リーマン予想が解けるか。",home,"ja","home",route("ja","home")),encoding="utf-8")
     (output / ".nojekyll").write_text("")
     print(json.dumps({"rendered_markdown_pages": rendered, "copied_or_rendered_public_files": len(sources), "output": "_site", "deployment_performed": False}))
 

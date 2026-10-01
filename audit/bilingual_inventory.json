@@ -1,0 +1,342 @@
+{
+  "date": "2026-10-01",
+  "scope": "All 31 existing editorial docs plus root and README: 33 anonymous HTTP reads before implementation. Archive/artifact/audit/data payloads inventoried by hash and retained untranslated.",
+  "pages": [
+    {
+      "url_path": "index.html",
+      "http_status": 200,
+      "editorial_language": "mixed language",
+      "html_lang": "en",
+      "latest_state": "2026-10-01 CMP/ES",
+      "paired_translation": false,
+      "language_switch": false,
+      "body_sha256": "f2be05175698ff8e99f369a53cc6b1e99e282e9a3412b9e0f0222922cb6b131c"
+    },
+    {
+      "url_path": "README.html",
+      "http_status": 200,
+      "editorial_language": "mixed language",
+      "html_lang": "en",
+      "latest_state": "2026-10-01 CMP/ES",
+      "paired_translation": false,
+      "language_switch": false,
+      "body_sha256": "2cf45f74ab0ca42ab4d092238feadb2a428b56524ff9eb247820add26b033bc6"
+    },
+    {
+      "url_path": "docs/current-state.html",
+      "http_status": 200,
+      "editorial_language": "mixed language",
+      "html_lang": "en",
+      "latest_state": "2026-10-01 CMP/ES",
+      "paired_translation": false,
+      "language_switch": false,
+      "body_sha256": "6650eaf3e964820c833956b79a1444c3589b4e7407f0c27685cfc4f052600607"
+    },
+    {
+      "url_path": "docs/index.html",
+      "http_status": 200,
+      "editorial_language": "mixed language",
+      "html_lang": "en",
+      "latest_state": "2026-10-01 CMP/ES",
+      "paired_translation": false,
+      "language_switch": false,
+      "body_sha256": "f2be05175698ff8e99f369a53cc6b1e99e282e9a3412b9e0f0222922cb6b131c"
+    },
+    {
+      "url_path": "docs/licensing.html",
+      "http_status": 200,
+      "editorial_language": "English only",
+      "html_lang": "en",
+      "latest_state": "earlier snapshot",
+      "paired_translation": false,
+      "language_switch": false,
+      "body_sha256": "f42a59ea72502f1c217aa5f8383b2930107b4d44bd97d05a67899632620c73ba"
+    },
+    {
+      "url_path": "docs/methodology.html",
+      "http_status": 200,
+      "editorial_language": "English only",
+      "html_lang": "en",
+      "latest_state": "earlier snapshot",
+      "paired_translation": false,
+      "language_switch": false,
+      "body_sha256": "9fa71282fc48bf9cdc2cf0a30893d953cc20394b97bd62a789b7755763c65dd7"
+    },
+    {
+      "url_path": "docs/references.html",
+      "http_status": 200,
+      "editorial_language": "English only",
+      "html_lang": "en",
+      "latest_state": "earlier snapshot",
+      "paired_translation": false,
+      "language_switch": false,
+      "body_sha256": "d2b0ea094e8de6b9b4fe957c8645c1e7778f170fa37349450b15985f84229ec3"
+    },
+    {
+      "url_path": "docs/reproducibility.html",
+      "http_status": 200,
+      "editorial_language": "English only",
+      "html_lang": "en",
+      "latest_state": "earlier snapshot",
+      "paired_translation": false,
+      "language_switch": false,
+      "body_sha256": "042372baf0fe814558bdddbf317e4c9e58a0b3e5873c13f4bf11c92863e68a6a"
+    },
+    {
+      "url_path": "docs/roadmap.html",
+      "http_status": 200,
+      "editorial_language": "mixed language",
+      "html_lang": "en",
+      "latest_state": "2026-10-01 CMP/ES",
+      "paired_translation": false,
+      "language_switch": false,
+      "body_sha256": "7035d87bf03fcc1d22c09cf3ba5c3083a3dc29fe9de7c085dc8ad1cde96d3585"
+    },
+    {
+      "url_path": "docs/site-building.html",
+      "http_status": 200,
+      "editorial_language": "English only",
+      "html_lang": "en",
+      "latest_state": "earlier snapshot",
+      "paired_translation": false,
+      "language_switch": false,
+      "body_sha256": "a062629e65d53fb06864f3ed406717d1411b8a0fb56145c59947ded585ffda6a"
+    },
+    {
+      "url_path": "docs/source-map.html",
+      "http_status": 200,
+      "editorial_language": "English only",
+      "html_lang": "en",
+      "latest_state": "earlier snapshot",
+      "paired_translation": false,
+      "language_switch": false,
+      "body_sha256": "46b01958b6ea35be82163bf3bea05dc2209b6e5195fb339532b1834bbf0d0076"
+    },
+    {
+      "url_path": "docs/status-legend.html",
+      "http_status": 200,
+      "editorial_language": "English only",
+      "html_lang": "en",
+      "latest_state": "earlier snapshot",
+      "paired_translation": false,
+      "language_switch": false,
+      "body_sha256": "b5ba0fe307509ef50cc050b72a88a924c581da4e2a945f2c1bc617f99e91bf2b"
+    },
+    {
+      "url_path": "docs/timeline.html",
+      "http_status": 200,
+      "editorial_language": "mixed language",
+      "html_lang": "en",
+      "latest_state": "2026-10-01 CMP/ES",
+      "paired_translation": false,
+      "language_switch": false,
+      "body_sha256": "887094e6f086d767e5647d8473b9cd432b2656ec0086ab4e782250e3feecac7a"
+    },
+    {
+      "url_path": "docs/tracks/01-initial-weil-program.html",
+      "http_status": 200,
+      "editorial_language": "English only",
+      "html_lang": "en",
+      "latest_state": "earlier snapshot",
+      "paired_translation": false,
+      "language_switch": false,
+      "body_sha256": "56c05e66904709e0f2f8acd7b131ef6a93aa4c830f5b0263dd159f7ffa788f23"
+    },
+    {
+      "url_path": "docs/tracks/02-generator-boundary.html",
+      "http_status": 200,
+      "editorial_language": "English only",
+      "html_lang": "en",
+      "latest_state": "earlier snapshot",
+      "paired_translation": false,
+      "language_switch": false,
+      "body_sha256": "713c0af1541e5207d12207cd1a519ebedb7f07735d32cfa3fa6cf2c6cc1d6d5f"
+    },
+    {
+      "url_path": "docs/tracks/03-missing-frobenius.html",
+      "http_status": 200,
+      "editorial_language": "English only",
+      "html_lang": "en",
+      "latest_state": "earlier snapshot",
+      "paired_translation": false,
+      "language_switch": false,
+      "body_sha256": "5ff0ab4fb617ba23bdd16e2fde5b24a6fc67ef995436ad075860da28d7b23799"
+    },
+    {
+      "url_path": "docs/tracks/04-arithmetic-polarization.html",
+      "http_status": 200,
+      "editorial_language": "English only",
+      "html_lang": "en",
+      "latest_state": "earlier snapshot",
+      "paired_translation": false,
+      "language_switch": false,
+      "body_sha256": "8b6001fe097ce117a56c8127d4864a0ce0b839c14d02254871b1ec86454158fb"
+    },
+    {
+      "url_path": "docs/tracks/05-continuous-scale-flow.html",
+      "http_status": 200,
+      "editorial_language": "English only",
+      "html_lang": "en",
+      "latest_state": "earlier snapshot",
+      "paired_translation": false,
+      "language_switch": false,
+      "body_sha256": "688a29937d040cca307fcf407e885459e0ff10ab7279f5fa9246daabf4dca902"
+    },
+    {
+      "url_path": "docs/tracks/06-one-prime-return.html",
+      "http_status": 200,
+      "editorial_language": "English only",
+      "html_lang": "en",
+      "latest_state": "earlier snapshot",
+      "paired_translation": false,
+      "language_switch": false,
+      "body_sha256": "c4cb1054537306a82df407e132b356db7c8bf5167c07772d44e25e8503aa4381"
+    },
+    {
+      "url_path": "docs/tracks/07-dyadic-arithmetic-reduction.html",
+      "http_status": 200,
+      "editorial_language": "English only",
+      "html_lang": "en",
+      "latest_state": "earlier snapshot",
+      "paired_translation": false,
+      "language_switch": false,
+      "body_sha256": "6887f10c5603f35d42ec242e25a1f42da85f87a88e095322129818e45322d5f6"
+    },
+    {
+      "url_path": "docs/tracks/08-prime-complex-parity.html",
+      "http_status": 200,
+      "editorial_language": "English only",
+      "html_lang": "en",
+      "latest_state": "earlier snapshot",
+      "paired_translation": false,
+      "language_switch": false,
+      "body_sha256": "e6223e06ebd27036cee6c1c192465342a05cb36623177c6f7ec8f83dbb8714c0"
+    },
+    {
+      "url_path": "docs/tracks/09-arithmetic-comma.html",
+      "http_status": 200,
+      "editorial_language": "English only",
+      "html_lang": "en",
+      "latest_state": "earlier snapshot",
+      "paired_translation": false,
+      "language_switch": false,
+      "body_sha256": "951df6501354c2e376f249d9671e39cd68abc144566df440cd6edbd7f085faa1"
+    },
+    {
+      "url_path": "docs/tracks/10-weighted-prime-half-space.html",
+      "http_status": 200,
+      "editorial_language": "English only",
+      "html_lang": "en",
+      "latest_state": "earlier snapshot",
+      "paired_translation": false,
+      "language_switch": false,
+      "body_sha256": "90622f0e6100be424a344ec90961e4326509b74eeddeb3cb3fd0233baea96b95"
+    },
+    {
+      "url_path": "docs/tracks/11-global-remainder.html",
+      "http_status": 200,
+      "editorial_language": "English only",
+      "html_lang": "en",
+      "latest_state": "earlier snapshot",
+      "paired_translation": false,
+      "language_switch": false,
+      "body_sha256": "b9a05eb44006cfd27c4bf4b9027c842fe38b30d6093b95dee36e7a096c6bfca3"
+    },
+    {
+      "url_path": "docs/tracks/12-mobius-closure-audit.html",
+      "http_status": 200,
+      "editorial_language": "English only",
+      "html_lang": "en",
+      "latest_state": "earlier snapshot",
+      "paired_translation": false,
+      "language_switch": false,
+      "body_sha256": "cf7ec63d1acdd0ff434bacb06e6f58566aa8d69ea6b2c0a93d06f6d3b50ce692"
+    },
+    {
+      "url_path": "docs/tracks/13-restoring-force.html",
+      "http_status": 200,
+      "editorial_language": "English only",
+      "html_lang": "en",
+      "latest_state": "earlier snapshot",
+      "paired_translation": false,
+      "language_switch": false,
+      "body_sha256": "8a18bd8e3e1453b3a292292ea24f3768994d71e4fcd2890db1bfc77ed319cb68"
+    },
+    {
+      "url_path": "docs/tracks/14-local-to-global.html",
+      "http_status": 200,
+      "editorial_language": "English only",
+      "html_lang": "en",
+      "latest_state": "earlier snapshot",
+      "paired_translation": false,
+      "language_switch": false,
+      "body_sha256": "ba84fe9e3ea1c8d5cb22a6e4791f33cb0d44324cc86a7c4ed0321e2da327e218"
+    },
+    {
+      "url_path": "docs/tracks/15-common-parent.html",
+      "http_status": 200,
+      "editorial_language": "English only",
+      "html_lang": "en",
+      "latest_state": "earlier snapshot",
+      "paired_translation": false,
+      "language_switch": false,
+      "body_sha256": "64c494e37ad4b6a2122e1f9a65730cbc237ccb41103f512ccd63a25422231256"
+    },
+    {
+      "url_path": "docs/tracks/16-rate-history.html",
+      "http_status": 200,
+      "editorial_language": "English only",
+      "html_lang": "en",
+      "latest_state": "earlier snapshot",
+      "paired_translation": false,
+      "language_switch": false,
+      "body_sha256": "d3f18fed771e1b20e356b215e30564f628710ec9846c6372bb9106f3eb94364b"
+    },
+    {
+      "url_path": "docs/tracks/17-hierarchical-selection.html",
+      "http_status": 200,
+      "editorial_language": "English only",
+      "html_lang": "en",
+      "latest_state": "earlier snapshot",
+      "paired_translation": false,
+      "language_switch": false,
+      "body_sha256": "86e48c7f6a7925eb600083b1f20174c57d7233c4395025cb454822e085db712e"
+    },
+    {
+      "url_path": "docs/tracks/18-even-l2-cyclicity.html",
+      "http_status": 200,
+      "editorial_language": "English only",
+      "html_lang": "en",
+      "latest_state": "earlier snapshot",
+      "paired_translation": false,
+      "language_switch": false,
+      "body_sha256": "d4792aeac191aba02a26783350d300d64bad02fc7b7923d832ba2d114277368b"
+    },
+    {
+      "url_path": "docs/tracks/19-finite-even-head-spanning.html",
+      "http_status": 200,
+      "editorial_language": "English only",
+      "html_lang": "en",
+      "latest_state": "earlier snapshot",
+      "paired_translation": false,
+      "language_switch": false,
+      "body_sha256": "1bcf13bc6ac1daaaa9fc668a75792c15eaf809a0ca922b27c66b2bcd94229979"
+    },
+    {
+      "url_path": "docs/updates/2026-10-01-cmp-es.html",
+      "http_status": 200,
+      "editorial_language": "Japanese only",
+      "html_lang": "en",
+      "latest_state": "2026-10-01 CMP/ES",
+      "paired_translation": false,
+      "language_switch": false,
+      "body_sha256": "89a526b68dff7d90464a844b0ae431d33dc33c47c87087b41f3ad246e83ceac2"
+    }
+  ],
+  "navigation_findings": [
+    "No paired translations or language switch on 33 pages.",
+    "Japanese update has html lang=en.",
+    "Root browser initially retained September 30 copy; fresh anonymous root/docs reads both contain October 1 update. Duplicate entry rendering and cache divergence must be removed.",
+    "Primary navigation is English even on Japanese update."
+  ]
+}

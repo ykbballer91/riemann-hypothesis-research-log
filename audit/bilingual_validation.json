@@ -1,0 +1,80 @@
+{
+  "bilingual_checks": {
+    "status": "PASS",
+    "scope": "Editorial routing, language metadata, preserved scope and formula consistency; no mathematical verification",
+    "paired_pages": 32,
+    "canonical_language_pages": 64,
+    "compatibility_pages_including_root": 34,
+    "errors": []
+  },
+  "editorial_change_date": "2026-10-01",
+  "research_change": false,
+  "evidence_preservation": {
+    "status": "PASS",
+    "preexisting_archive_artifact_audit_data_files_checked": 447,
+    "modified": 0,
+    "canonical_research_repository_modified": false,
+    "source_manifest_records": 378
+  },
+  "browser_validation": {
+    "status": "PASS",
+    "engine": "Codex in-app browser",
+    "mobile_viewport": {
+      "width": 390,
+      "height": 844,
+      "document_content_width": 375,
+      "scrollbar_width": 15
+    },
+    "editorial_pages_checked": 64,
+    "page_horizontal_overflow": 0,
+    "math_rendering_errors": 0,
+    "rendered_math_containers_observed": 267,
+    "language_switch_visible_pages": 64,
+    "extra_small_viewport": {
+      "width": 320,
+      "height": 740,
+      "document_content_width": 305,
+      "pages_checked": 6,
+      "page_horizontal_overflow": 0
+    },
+    "desktop_viewport": {
+      "width": 1280,
+      "height": 900,
+      "document_content_width": 1265,
+      "page_horizontal_overflow": 0
+    },
+    "visual_inspection": [
+      "Japanese home",
+      "Japanese update and technical math",
+      "English update",
+      "English roadmap"
+    ],
+    "interaction_checks": [
+      "Japanese update → matching English update → Japanese update",
+      "Japanese roadmap → matching English roadmap",
+      "Legacy docs/index.html → English guide",
+      "Legacy index.html → Japanese home"
+    ],
+    "long_math_and_tables": "Scroll within their own containers; do not widen the document"
+  },
+  "deployment_verification": "Post-push deployment and anonymous-access results are reported with the delivered commit and workflow run; this local record does not pre-certify deployment.",
+  "publication_checks": {
+    "status": "PASS",
+    "scope": "Publication files and local link/build consistency; no external URL crawl or mathematical proof check",
+    "public_files": 543,
+    "source_records": 378,
+    "markdown_local_links_checked": 2283,
+    "site_local_links_checked": 7047,
+    "errors": []
+  },
+  "publication_safety_scan": {
+    "status": "PASS",
+    "scope": "Tracked worktree plus all reachable Git blobs, commit messages and identities; pattern scan, no claim of universal detection",
+    "tracked_files_scanned": 545,
+    "git_blobs_scanned": 492,
+    "commits_checked": 10,
+    "findings": [],
+    "secret_scan_findings": 0,
+    "unexpected_sensitive_path_or_identity_findings": 0
+  }
+}

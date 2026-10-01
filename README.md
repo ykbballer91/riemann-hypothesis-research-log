@@ -1,5 +1,7 @@
 # Riemann Hypothesis Research Log
 
+[日本語版はこちら](README.ja.md) · [English website](https://ykbballer91.github.io/riemann-hypothesis-research-log/en/)
+
 **STATUS: RIEMANN HYPOTHESIS OPEN**
 
 An AI-assisted research record curated by **[@ykbballer91](https://github.com/ykbballer91)**. This repository documents attempts, auxiliary results, counterexamples, and unresolved dependencies. It does not establish the Riemann Hypothesis.
@@ -8,19 +10,21 @@ The organizing question is what additional arithmetic information could constrai
 
 ## Start here
 
-- [Reader's guide](docs/index.md): the question, terminology, and how to read the evidence.
-- [Research timeline](docs/timeline.md): 17 tracks in the original inventory, followed by dated auxiliary-result and research-status updates.
-- [Current state](docs/current-state.md): established auxiliary results and the remaining gap.
-- [Dependency roadmap](docs/roadmap.md): which implications are conditional or open.
-- [Methodology](docs/methodology.md) and [status legend](docs/status-legend.md): what each label means.
-- [Source map](docs/source-map.md), [references](docs/references.md), and [reproducibility](docs/reproducibility.md): the supporting record.
-- [Build the documentation site](docs/site-building.md): local preview and the gated Pages workflow.
+- [Reader's guide](docs/en/index.md): the question, terminology, and how to read the evidence.
+- [Research timeline](docs/en/timeline.md): 17 tracks in the original inventory, followed by dated auxiliary-result and research-status updates.
+- [Current state](docs/en/current-state.md): established auxiliary results and the remaining gap.
+- [Dependency roadmap](docs/en/roadmap.md): which implications are conditional or open.
+- [Methodology](docs/en/methodology.md) and [status legend](docs/en/status-legend.md): what each label means.
+- [Source map](docs/en/source-map.md), [references](docs/en/references.md), and [reproducibility](docs/en/reproducibility.md): the supporting record.
+- [Build the documentation site](docs/en/site-building.md): local preview and the gated Pages workflow.
 
-## Latest update — 2026-10-01
+## Latest research update — 2026-10-01
 
-[既存定理の委譲と CMP / ES](docs/updates/2026-10-01-cmp-es.md)：19項目中12項目の一般理論・固定範囲の証明を既存定理へ委譲。新たに解決した actual moving-Weil の漸近評価は0。現在採用する直接ルートの未証明の中心義務は、複素領域での最低状態・プロレート近似の比較（CMP）と、同じ共終列上での最終的な単純・偶性（ES）の二種類に絞られた。
+The [CMP / ES update](docs/en/updates/2026-10-01-cmp-es.md) focuses the selected direct route on two unproved obligations: complex comparison of the actual finite Weil ground with the known prolate proxy, and eventual simplicity and evenness on the same cofinal sequence. Neither is proved. Ordinary L² convergence and one finite certificate do not replace these obligations.
 
-**CASE D — CMP OPEN + ES OPEN.** 通常の $L^2$ 収束や一点の有限認証でこれらを置き換えない。**EVEN FULL-GROUND CAPTURE: NOT ESTABLISHED.**
+The import count, CASE D classification, and sufficient CMP-R rate are retained in the update's technical details. This is not a claim that 12 RH obstacles have been solved or that RH is close to completion.
+
+**EVEN FULL-GROUND CAPTURE: NOT ESTABLISHED.**
 
 ## Retained frontier snapshot — 2026-09-30
 
@@ -45,11 +49,11 @@ $$
 =L^2_{\mathrm{even}}(\mathbb R).
 $$
 
-Cyclicity itself is qualitative density. A subsequent [finite-head update](docs/tracks/19-finite-even-head-spanning.md) proves exact spanning by some finite derivative prefix for each fixed head, and minimal-prefix spanning on specified ranges. It separates coordinate conditioning from physical lift cost. Neither result supplies uniform approximation of a parameter-dependent ground state or Weil-form control. **Growing-order selection, full finite-ground capture, the required even/simple ground-state condition, the transform comparison $G^*$, and RH remain open.** See the [current state](docs/current-state.md) for the exact boundaries.
+Cyclicity itself is qualitative density. A subsequent [finite-head update](docs/en/tracks/19-finite-even-head-spanning.md) proves exact spanning by some finite derivative prefix for each fixed head, and minimal-prefix spanning on specified ranges. It separates coordinate conditioning from physical lift cost. Neither result supplies uniform approximation of a parameter-dependent ground state or Weil-form control. **Growing-order selection, full finite-ground capture, the required even/simple ground-state condition, the transform comparison $G^*$, and RH remain open.** See the [current state](docs/en/current-state.md) for the exact boundaries.
 
 ## What is in this repository
 
-The edited English guide is intended to stand alone. The supporting research archive retains its original language, predominantly Japanese, with publication edits for portable references and context. Historical states remain historical; the editorial summary does not silently overwrite them.
+The paired Japanese and English editorial guides are intended to stand alone. The supporting research archive retains its original language, predominantly Japanese, with publication edits for portable references and context. Historical states remain historical; the editorial summary does not silently overwrite them.
 
 `PROVED` refers to the scope of a particular auxiliary argument. Internal independent AI audits, numerical checks, and selected Lean declarations have different evidential roles. They are not external peer review or formal verification of the complete research program.
 
@@ -59,7 +63,7 @@ The [source manifest](data/source-manifest.json) records original and exported h
 
 Version **0.1.0** was published on **2026-09-30**, after the Phase 3 review and final private-branch CI passed. Read the [documentation website](https://ykbballer91.github.io/riemann-hypothesis-research-log/) and [publication report](audit/publication_report.md). The [pre-publication content review](audit/phase3_final_content_review.md) records the release gate. The Pages workflow retains its explicit deployment guard.
 
-If you use this research log, please cite this repository using [CITATION.cff](CITATION.cff). The author display is `@ykbballer91`; AI assistance is disclosed in [methodology](docs/methodology.md).
+If you use this research log, please cite this repository using [CITATION.cff](CITATION.cff). The author display is `@ykbballer91`; AI assistance is disclosed in [methodology](docs/en/methodology.md).
 
 ## Licenses
 
@@ -67,4 +71,4 @@ If you use this research log, please cite this repository using [CITATION.cff](C
 - Original source code and experiment scripts are licensed under the **MIT License**, unless otherwise noted: [LICENSE-CODE](LICENSE-CODE).
 - Third-party quotations and cited works remain under their original rights. Links and bibliographic descriptions do not relicense the cited works.
 
-Original prose in structured records follows the text license; original executable code and formal proof source follow the code license. Historical attribution/license fields are preserved as snapshot data, not as the current publication policy. See [licensing and attribution](docs/licensing.md).
+Original prose in structured records follows the text license; original executable code and formal proof source follow the code license. Historical attribution/license fields are preserved as snapshot data, not as the current publication policy. See [licensing and attribution](docs/en/licensing.md).
