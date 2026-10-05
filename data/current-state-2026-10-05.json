@@ -1,0 +1,51 @@
+{
+  "schema_version": "public-current-state-v2",
+  "as_of": "2026-10-05",
+  "research_record_dates": [
+    "2026-10-01",
+    "2026-10-02"
+  ],
+  "rh_status": "OPEN",
+  "CMP": "OPEN",
+  "ES": "OPEN",
+  "full_even_ground_capture_proved": false,
+  "theta_metric_proved": false,
+  "rh_closed": false,
+  "historical_state": "research-state.json",
+  "public_summaries": {
+    "ja": "../docs/ja/updates/2026-10-05-joint-transfer.md",
+    "en": "../docs/en/updates/2026-10-05-joint-transfer.md"
+  },
+  "review": "../audit/handoff_2026_10_05_review.md",
+  "combined_case": "CASE D — CMP OPEN + ES OPEN",
+  "conditional_joint_transfer": "ACCEPTED_CONDITIONAL_ONLY",
+  "CK_original_theorem_and_relevant_proof_checked": true,
+  "joint_hypotheses": [
+    "On one cofinal sequence: eventual ES of the full finite Weil ground",
+    "D=||(I-P_v)P_N ell_lambda||_2 ->0",
+    "a=log(lambda), a/(N+1)->0"
+  ],
+  "same_cofinal_sequence_established": false,
+  "actual_strong_L2_capture_proved": false,
+  "actual_eventual_ES_proved": false,
+  "lambda_power_rate_required_in_joint_branch": false,
+  "old_ES_independent_CMP_R_preserved": true,
+  "ordinary_L2_alone_suffices": false,
+  "proxy_odd_bound": "Derived corollary of existing seed/projection bounds; raw proxy not assumed exactly even",
+  "new_actual_asymptotic_obligations_discharged": 0,
+  "prior_import_audit": {
+    "items": 19,
+    "generic_or_fixed_scope_delegated": 12
+  },
+  "finite_diagnostics": {
+    "count": 4,
+    "stored_values_rechecked": true,
+    "eigenproblems_rerun": false,
+    "interval_certificate": false,
+    "asymptotic_proof": false
+  },
+  "review_scope": "Primary-source/hypothesis audit plus separate reverse-order pass by the same AI reviewer; not external peer review or formal verification",
+  "source_bundle_published": false,
+  "new_research_automatically_started": false,
+  "next_research_question": "Eventual ES and strong L2 capture on the same sequence; no automatic restart."
+}

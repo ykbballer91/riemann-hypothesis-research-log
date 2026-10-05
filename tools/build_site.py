@@ -20,6 +20,7 @@ from site_routes import SITE_URL, LANGUAGES, NAV, editorial_info, legacy_info, r
 
 ROOT = Path(__file__).resolve().parents[1]
 PUBLIC_AUDITS = {
+    "handoff_2026_10_05_review.md",
     "bilingual_review.md", "bilingual_inventory.json", "bilingual_validation.json",
     "rewrite_manifest.md", "phase2_safety_report.md",
     "phase2_independent_review.md", "phase2_publication_review.md",

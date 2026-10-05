@@ -2,30 +2,29 @@
 
 **STATUS: RIEMANN HYPOTHESIS OPEN**
 
-The current route separates the comparison of two families from the spectral properties of the actual finite ground. Both require new actual estimates. The two categories are not a measure of the distance or difficulty remaining before RH.
+The 2026-10-05 review adds a conditional ES-plus-strong-L² branch within direct CMP/ES. The number of obligations is not a measure of the distance or difficulty remaining before RH.
 
 ## Current direction
 
-| Obligation | What must be shown | Boundary |
+| Branch or obligation | Required input | Status |
 |---|---|---|
-| CMP | Value-normalized transforms of the actual ground and prolate proxy approach each other uniformly on compact subsets of $\lvert\Im z\rvert<1/2$ | OPEN; reduction to a sufficient rate is not a proof of comparison |
-| ES | Eventual strict even/odd ground ordering and simplicity within the even sector | OPEN; one finite certificate does not settle a cofinal sequence |
-| Common sequence | Both obligations hold on the same admissible cofinal sequence | OPEN; separate existence results cannot be combined automatically |
-| Downstream implications | Apply the finite real-zero theorem, proxy convergence to $\Xi$, and Hurwitz/Rouché after checking every hypothesis | Existing theorems are available; the application is incomplete |
+| Earlier CMP-R | Without assuming ES, prove $\lambda^rD_{\lambda,N}\to0$ and the corresponding projection rate for every $0<r<1/2$ | Retained sufficient condition; actual estimate OPEN |
+| ES in the joint branch | The full finite Weil minimum is eventually simple and even on one sequence | OPEN; requires $e_->e_+$ and $\Delta_+>0$ |
+| Capture in the joint branch | $D_{\lambda,N}\to0$ and $\log\lambda/(N+1)\to0$ | Proxy projection is controlled; actual ground capture OPEN |
+| Conditional transfer | ES gives finite real zeros and LP membership; strong L² gives real-axis convergence in measure; CK gives complex local uniform convergence | Accepted after checking primary sources and hypotheses; explicitly assumes ES |
+| Value normalization and zero preservation | After verifying the nonzero limit and all hypotheses, use known proxy convergence and Hurwitz/Rouché | Existing implications; actual antecedents remain unproved |
 
-**Shortest dependency chain:** CMP + ES on the same sequence → verify the imported hypotheses → finite real-zero property and known proxy convergence → zero preservation in the required complex domain. RH remains OPEN.
+The joint chain is **ES + strong L² capture on one sequence → finite real zeros and real-axis convergence → complex local uniform convergence → CMP**. Results on unrelated sequences cannot be combined. The hypotheses needed to conclude RH are not yet available.
 
 ## Why this direction
 
-The import audit separates existing general mathematics from the unresolved arithmetic estimates. Earlier auxiliary results remain in the record; they need not all be rebuilt as compulsory stages of the direct route.
+Generating-formula and positive-metric investigations remain in the history; an unconstructed positive metric is not added to the main route. The derivative hierarchy is retained as auxiliary work, not a mandatory stage of the joint branch. The transfer does not contradict the general L² obstruction: it uses an additional real-zero hypothesis.
 
-## Next action
+## Next action and stopping point
 
-Examine the required ground/proxy comparison rate and eventual simple-even ground condition independently. Keep the common-sequence requirement explicit; do not introduce a third main route automatically.
+CMP/ES remain the main route. The joint branch leaves ES and strong L² capture on one sequence open; CMP-R remains an alternative sufficient condition. This publication update does not automatically launch the next research task.
 
-## Technical audit context
-
-**CASE D — CMP OPEN + ES OPEN.** General theory or fixed-scope proofs for **12 of 19 items** can be delegated. Newly resolved asymptotic estimates for the actual moving family: **0**. This is not the resolution of 12 RH obstacles. [Exact CMP-R and ES conditions](updates/2026-10-01-cmp-es.md).
+**CASE D — CMP OPEN + ES OPEN.** The earlier delegation of **12 of 19 items** of generic or fixed-scope theory is unchanged. Newly discharged actual asymptotic obligations: **0**. [Current formulas, hypotheses and sources](updates/2026-10-05-joint-transfer.md) · [Earlier CMP-R](updates/2026-10-01-cmp-es.md).
 
 ## Retained derivative-route roadmap — 2026-09-30
 

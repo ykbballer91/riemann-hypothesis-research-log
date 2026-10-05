@@ -2,29 +2,30 @@
 
 **STATUS: RIEMANN HYPOTHESIS OPEN**
 
-Latest public research update: **2026-10-01**, reporting completed work dated **2026-09-30**. This is the canonical editorial overview. The language reorganization adds no research result and leaves [research-state.json](../../data/research-state.json) unchanged.
+Latest public update: **2026-10-05**. Research records dated 2026-10-01–02 have been imported, and the conditional transfer was checked against primary sources and its hypotheses. This is the canonical editorial overview. A [new state record](../../data/current-state-2026-10-05.json) has been added; the [earlier state record](../../data/research-state.json) is preserved.
 
 ## The selected direct route
 
-Two questions now define the active comparison. Does the actual finite Weil ground state approach the known prolate proxy fast enough in a complex strip (**CMP**)? Is that ground state eventually simple and even on the same cofinal sequence (**ES**)? Both remain unproved.
+**CMP**, the complex comparison between the actual finite Weil ground and the prolate proxy, and **ES**, eventual simplicity and evenness of that ground, both remain open. Their hypotheses must hold on the same cofinal sequence.
 
-A cofinal sequence increases the cutoffs while retaining the necessary resolution conditions. Proving the obligations on unrelated sequences would not complete this route.
+The review accepts a conditional branch: **if ES and strong L² capture of the theta kernel hold on that sequence**, an existing real-zero convergence theorem yields CMP without prescribing a convergence rate. ES is an explicit hypothesis of this branch. The earlier, ES-independent CMP-R remains a valid rate-based sufficient condition.
 
 ## Current boundary and next action
 
-Ordinary $L^2$ convergence does not supply the complex comparison. A certificate for a single finite matrix does not establish eventual simplicity or evenness. Full even-ground capture is not established.
+General L² convergence alone does not yield complex convergence. This branch uses the additional real-zero, real-type and exponential-type structure obtained under ES. Neither eventual ES nor actual strong L² capture has been established.
 
-Study CMP and ES independently, with the same-sequence requirement retained. Do not automatically expand into a third route or reconstruct generic operator theory already covered by the literature.
+The remaining questions concern simple-even ground states and strong L² capture on one sequence. This task stops at import, review and publication; no further proof search or numerical investigation has been started automatically.
 
 ## Technical details of the latest update
 
-**CASE D — CMP OPEN + ES OPEN.** The import audit delegates general theory or fixed-scope proofs for **12 of 19 items**. It does not resolve 12 RH obstacles; newly discharged asymptotic estimates for the parameter-dependent actual Weil system: **0**.
+**CASE D — CMP OPEN + ES OPEN.** The earlier **12 of 19 items** refers to delegated generic or fixed-scope proofs, not 12 solved RH obstacles. Newly discharged asymptotic obligations for the actual Weil family: **0**.
 
-- CMP concerns value-normalized transforms, anchored at $z_*=i/4$, uniformly on every compact subset of $|\Im z|<1/2$. The condition $\lambda^rD_{\lambda,N}\to0$ for every $0<r<1/2$, with the stated resolution condition, is sufficient and still unproved. It is not asserted equivalent to CMP.
-- ES requires eventual $e_->e_+$ and $\Delta_+>0$ on the same sequence. The certificate at $c=\lambda^2=13$, $N=4$ concerns one endpoint only.
-- If both hold on that sequence and all other hypotheses are checked, the finite real-zero theorem, known proxy convergence to $\Xi$, and Hurwitz/Rouché implications can be imported. Their application has not been completed.
+- With $p_{\lambda,N}=P_N\ell_\lambda$ and $D_{\lambda,N}=\|(I-P_v)p_{\lambda,N}\|_2$, the joint sufficient condition is eventual ES, $D_{\lambda,N}\to0$ and $\log\lambda/(N+1)\to0$ on one sequence. This package remains unproved.
+- ES requires eventual $e_->e_+$ and $\Delta_+>0$. The certificate at $c=\lambda^2=13$, $N=4$ remains a single-endpoint result.
+- The raw proxy is not assumed exactly even. Its odd-component bound and ordinary projection error follow from existing estimates. Four diagnostic cases are not promoted to asymptotic proofs.
+- The joint transfer applies to real-type transforms before value normalization. Normalization at $z_*=i/4$, the known proxy limit and zero preservation remain conditional on the preceding hypotheses.
 
-[Full update and formulas](updates/2026-10-01-cmp-es.md) · [Dependency roadmap](roadmap.md) · [Sources](source-map.md)
+[Latest update and adoption review](updates/2026-10-05-joint-transfer.md) · [Earlier CMP-R update](updates/2026-10-01-cmp-es.md) · [Roadmap](roadmap.md)
 
 **EVEN FULL-GROUND CAPTURE: NOT ESTABLISHED.**
 

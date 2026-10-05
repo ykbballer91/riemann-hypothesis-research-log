@@ -35,7 +35,7 @@ def check():
     errors=[];site=ROOT/'_site'
     sources={lc:{p.relative_to(ROOT/'docs'/lc).with_suffix('').as_posix() for p in (ROOT/'docs'/lc).rglob('*.md')} for lc in LANGUAGES}
     if sources['ja'] != sources['en']:errors.append('Unpaired editorial source')
-    if len(sources['en'])!=32:errors.append('Expected 32 editorial page pairs')
+    if len(sources['en'])!=33:errors.append('Expected 33 editorial page pairs')
     def require(ok,msg):
         if not ok:errors.append(msg)
     for lc in LANGUAGES:
@@ -77,6 +77,22 @@ def check():
         overview=(ROOT/source_for(lc,'current-state')).read_text()
         require('CASE D — CMP OPEN + ES OPEN' in overview,'Current-state status drift: '+lc)
     require(formula_sets[0]==formula_sets[1],'Paired update display formulas differ')
+    joint_formulas=[]
+    for lc in LANGUAGES:
+        src=(ROOT/source_for(lc,'updates/2026-10-05-joint-transfer')).read_text()
+        joint_formulas.append([re.sub(r'\s+','',x) for x in re.findall(r'\$\$(.*?)\$\$',src,re.S)])
+        for marker in ['2026-10-05','CASE D — CMP OPEN + ES OPEN','19','12','**0**','CMP-R','i/4','Clunie','1.3','5.10','EVEN FULL-GROUND CAPTURE: NOT ESTABLISHED.']:
+            require(marker in src,f'Missing joint-update scope: {lc}: {marker}')
+        for key in ['home','index','current-state','roadmap','timeline','source-map']:
+            require('2026-10-05-joint-transfer.md' in (ROOT/source_for(lc,key)).read_text(),f'Latest update not reachable from {lc}/{key}')
+    require(joint_formulas[0]==joint_formulas[1],'Joint-transfer display formulas differ')
+    current=json.loads((ROOT/'data/current-state-2026-10-05.json').read_text())
+    require(current['rh_status']==current['CMP']==current['ES']=='OPEN','Latest status drift')
+    require(current['conditional_joint_transfer']=='ACCEPTED_CONDITIONAL_ONLY','Joint implication scope drift')
+    for key in ['rh_closed','full_even_ground_capture_proved','actual_strong_L2_capture_proved','actual_eventual_ES_proved','same_cofinal_sequence_established','ordinary_L2_alone_suffices','source_bundle_published','new_research_automatically_started']:
+        require(current[key] is False,'Unexpected proved/action flag: '+key)
+    require(current['new_actual_asymptotic_obligations_discharged']==0,'Actual asymptotic count drift')
+    require(current['old_ES_independent_CMP_R_preserved'] is True,'Old sufficient route lost')
     readme=(ROOT/'README.md').read_text();readme_without_switch='\n'.join(line for line in readme.splitlines() if '日本語版はこちら' not in line)
     require(not re.search(r'[ぁ-んァ-ン一-龥]',readme_without_switch),'Japanese body text in canonical README')
     state=json.loads((ROOT/'data/research-state.json').read_text())

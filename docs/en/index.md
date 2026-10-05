@@ -8,7 +8,7 @@ Curated by **@ykbballer91**, with AI assistance. Research dates, public-update d
 
 ## Three ways to read
 
-**For the result and its limits:** start with [current state](current-state.md), then the [roadmap](roadmap.md). The latest [CMP/ES update](updates/2026-10-01-cmp-es.md) explains the two unproved obligations in the selected direct route.
+**For the result and its limits:** start with [current state](current-state.md), then the [roadmap](roadmap.md). The latest [CMP/ES update](updates/2026-10-05-joint-transfer.md) explains the two unproved obligations in the selected direct route.
 
 **For the reasoning across attempts:** read the [timeline](timeline.md). Each track records its starting idea, tests, retained results, stopping point, and next question. Parallel investigations are not presented as a single serial proof.
 

@@ -18,7 +18,11 @@ The organizing question is what additional arithmetic information could constrai
 - [Source map](docs/en/source-map.md), [references](docs/en/references.md), and [reproducibility](docs/en/reproducibility.md): the supporting record.
 - [Build the documentation site](docs/en/site-building.md): local preview and the gated Pages workflow.
 
-## Latest research update — 2026-10-01
+## Latest research update — 2026-10-05
+
+The [joint-transfer review](docs/en/updates/2026-10-05-joint-transfer.md) accepts a conditional connection: eventual ES and strong L² capture on the same sequence imply complex comparison without a prescribed rate, using the real-zero structure. ES and actual capture remain unproved; CMP and RH remain OPEN. The earlier ES-independent CMP-R is retained. No new actual asymptotic obligation has been discharged.
+
+## Retained update — 2026-10-01
 
 The [CMP / ES update](docs/en/updates/2026-10-01-cmp-es.md) focuses the selected direct route on two unproved obligations: complex comparison of the actual finite Weil ground with the known prolate proxy, and eventual simplicity and evenness on the same cofinal sequence. Neither is proved. Ordinary L² convergence and one finite certificate do not replace these obligations.
 

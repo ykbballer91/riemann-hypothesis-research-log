@@ -4,6 +4,11 @@
 
 The Japanese and English editorial pages are paired guides by **@ykbballer91** to a Japanese, AI-assisted research record. The archive preserves the argument and its historical scope. It is not a collection of peer-reviewed papers. Internal agents sometimes checked the same statement independently; that is an internal review process, not independent external validation.
 
+## Import and review — 2026-10-05
+
+The [joint-transfer summary](updates/2026-10-05-joint-transfer.md) records a conditional implication checked against primary sources. A [new state record](../../data/current-state-2026-10-05.json) and [review record](../../audit/handoff_2026_10_05_review.md) have been added. Existing evidence and hashes are preserved; the private handoff bundle and third-party PDFs are not redistributed.
+
+
 ## What is canonical here
 
 The Phase 1 inventory identified 17 tracks. This publication adds separately dated Priority 1 cyclicity and Priority 2 finite-head updates. There are 378 selected source files: the 359-file historical selection, five cyclicity files, and fourteen finite-head files. The [source manifest](../../data/source-manifest.json) is the complete file-level authority. It records the original relative source identifier, public destination, original hash and exported hash. Publication headers, removal of private paths and repaired links can change an exported hash without changing the mathematical claim.

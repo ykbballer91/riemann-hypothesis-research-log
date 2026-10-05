@@ -246,3 +246,19 @@ Internal audits are not external peer review. A proved auxiliary statement, a co
 **Technical scope.** The audit delegates general theory or fixed-scope proofs for 12 of 19 items. Newly resolved asymptotic estimates for the actual moving Weil family: 0. CMP-R is a sufficient rate condition, not CMP itself. The single finite simple-even certificate does not prove eventual ES.
 
 **Status.** CASE D — CMP OPEN + ES OPEN. EVEN FULL-GROUND CAPTURE: NOT ESTABLISHED. STATUS: RIEMANN HYPOTHESIS OPEN.
+
+## 21. Public addition — 2026-10-05: October 1–2 records and [joint transfer](updates/2026-10-05-joint-transfer.md)
+
+**Change of question.** The investigation moved from comparing finished objects to asking whether they shared generating rules or an underlying structure. Records on generating formulas, prime repetitions, mean drift and dilation were imported with their originals preserved.
+
+| Research-record date | Imported scope | Correction or boundary |
+|---|---|---|
+| 2026-10-01 | One-sided generating formulas, phase and cancellation, integers, primes and historical formulas | Simple amplitude dominance or cancellation descriptions did not yield zero confinement; known formulas are not new results |
+| 2026-10-02 | No-drift models, structural candidates, object versus readout | Mean zero does not constrain all zeros. Candidate rankings based on negative signs and absent mixed terms were revised |
+| 2026-10-02 | Spiral/dilation interpretation and Theta positive-metric audit | The half-density coefficient depends on the measure convention. Symmetry does not automatically construct the required positive metric |
+| 2026-10-02 | Route review, direct CMP/ES transfer proposal and four finite diagnostics | Return to direct CMP/ES; diagnostics are not interval certificates or asymptotic proofs |
+| 2026-10-05 | Primary-source and hypothesis review of the transfer | Accept ES plus strong L² as a conditional transfer; actual ES and capture remain open |
+
+**Adopted difference.** With ES on the same sequence, the real-zero structure permits transfer from strong L² capture to complex local uniform convergence without a prescribed rate. The earlier CMP-R remains a separate sufficient condition. This review does not independently re-prove every claim in the generating-formula and metric records.
+
+**Stop.** The task ends at import, review and publication. CMP, ES, full even-ground capture and RH remain unproved. This is not completion of the earlier, unstarted residual-bottleneck audit.
