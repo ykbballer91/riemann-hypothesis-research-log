@@ -10,9 +10,9 @@ Curated by **[@ykbballer91](https://github.com/ykbballer91)**. The original rese
 
 The current direct route focuses on two unproved obligations: comparing the actual finite Weil ground state with a known prolate approximation in a complex strip (**CMP**), and establishing eventual simplicity and evenness of that ground state (**ES**). This is a description of the selected route, not a count of how close RH is to a proof.
 
-[Read the current state](current-state.md) · [Latest update: 2026-10-05](updates/2026-10-05-joint-transfer.md)
+[Read the current state](current-state.md) · [Latest update: 2026-10-07](updates/2026-10-07-core-s.md)
 
-The latest review adds a rate-free conditional transfer under ES and strong L² capture on the same sequence. Its hypotheses remain unproved.
+Strict ordering of the even and odd minima forces simplicity in the actual finite Weil family. This removes the separate simplicity check, leaving capture and strict parity on the same sequence. Their cofinal validity remains unproved. The [earlier joint-transfer update](updates/2026-10-05-joint-transfer.md) is retained.
 
 ## Explore the record
 

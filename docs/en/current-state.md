@@ -2,32 +2,39 @@
 
 **STATUS: RIEMANN HYPOTHESIS OPEN**
 
-Latest public update: **2026-10-05**. Research records dated 2026-10-01–02 have been imported, and the conditional transfer was checked against primary sources and its hypotheses. This is the canonical editorial overview. A [new state record](../../data/current-state-2026-10-05.json) has been added; the [earlier state record](../../data/research-state.json) is preserved.
+Latest public update: **2026-10-07**. Research completed: **2026-10-06**. CORE-S derives simplicity of the even ground from strict parity ordering using the known commutator structure of the actual finite Weil matrices. A [new state record](../../data/current-state-2026-10-07.json) is added; the [2026-10-05 state](../../data/current-state-2026-10-05.json) and [earlier record](../../data/research-state.json) are preserved.
 
 ## The selected direct route
 
-**CMP**, the complex comparison between the actual finite Weil ground and the prolate proxy, and **ES**, eventual simplicity and evenness of that ground, both remain open. Their hypotheses must hold on the same cofinal sequence.
+**CMP**, complex comparison between the actual finite Weil ground and the prolate proxy, and **ES**, eventual simplicity and evenness of that ground, both remain open.
 
-The review accepts a conditional branch: **if ES and strong L² capture of the theta kernel hold on that sequence**, an existing real-zero convergence theorem yields CMP without prescribing a convergence rate. ES is an explicit hypothesis of this branch. The earlier, ES-independent CMP-R remains a valid rate-based sufficient condition.
+CORE-S shows that $e_+<e_-$ forces a one-dimensional even ground eigenspace in the actual finite family. ES is therefore equivalent to strict parity ordering; the internal even gap $\Delta_+>0$ no longer requires an independent proof. The current joint sufficient route is **theta-kernel capture + strict parity on the same resolving cofinal sequence → ES → adopted transfer → RH**.
 
 ## Current boundary and next action
 
-General L² convergence alone does not yield complex convergence. This branch uses the additional real-zero, real-type and exponential-type structure obtained under ES. Neither eventual ES nor actual strong L² capture has been established.
+Actual capture and eventual strict parity ordering on a cofinal sequence remain unproved. Neither compatibility nor incompatibility on the same sequence has been established. The finite conditional simplicity result supplies neither a uniform spectral gap nor eventual ES.
 
-The remaining questions concern simple-even ground states and strong L² capture on one sequence. This task stops at import, review and publication; no further proof search or numerical investigation has been started automatically.
+General L² convergence alone does not imply complex convergence. The adopted joint transfer uses the additional real-zero, real-type and exponential-type structure obtained under ES. The earlier ES-independent CMP-R remains a separate rate-based sufficient condition.
+
+The research questions concern capture and parity ordering on that same sequence. This task stops at synchronizing the completed result with the public record; it starts no proof search or numerical investigation.
 
 ## Technical details of the latest update
 
-**CASE D — CMP OPEN + ES OPEN.** The earlier **12 of 19 items** refers to delegated generic or fixed-scope proofs, not 12 solved RH obstacles. Newly discharged asymptotic obligations for the actual Weil family: **0**.
+**CASE D — CMP OPEN + ES OPEN.** The earlier **12 of 19 items** refers to delegated generic or fixed-scope proofs, not 12 solved RH obstacles. This result removes the independent simplicity check; newly discharged asymptotic obligations for the actual Weil family remain **0**.
 
-- With $p_{\lambda,N}=P_N\ell_\lambda$ and $D_{\lambda,N}=\|(I-P_v)p_{\lambda,N}\|_2$, the joint sufficient condition is eventual ES, $D_{\lambda,N}\to0$ and $\log\lambda/(N+1)\to0$ on one sequence. This package remains unproved.
-- ES requires eventual $e_->e_+$ and $\Delta_+>0$. The certificate at $c=\lambda^2=13$, $N=4$ remains a single-endpoint result.
-- The raw proxy is not assumed exactly even. Its odd-component bound and ordinary projection error follow from existing estimates. Four diagnostic cases are not promoted to asymptotic proofs.
-- The joint transfer applies to real-type transforms before value normalization. Normalization at $z_*=i/4$, the known proxy limit and zero preservation remain conditional on the preceding hypotheses.
+- For every $a>0$ and integer $N\ge1$, $\mathrm{ES}(a,N)\iff e_-(a,N)>e_+(a,N)$. The finite lemma passed a separate internal audit; that is not external peer review.
+- With $G_{+,j}$ the orthogonal projector onto the entire even ground eigenspace, the open joint proposition is $C_j=\|(I-G_{+,j})P_{N_j}R_{a_j}k\|_2\to0$ and eventual $e_->e_+$ on one sequence with $a_j\to\infty$ and $a_j/(N_j+1)\to0$.
+- CORE-S removes the separate $\Delta_+>0$ condition, without proving a uniform gap bound. The certificate at $c=\lambda^2=13$, $N=4$ remains a single-endpoint result.
+- The October 5 proxy-based capture condition and its ordinary projection estimates are retained. The raw proxy is not assumed exactly even. Finite diagnostics are not promoted to asymptotic proofs.
+- The joint transfer applies to real-type transforms before value normalization. Normalization at $z_*=i/4$, known proxy convergence and zero preservation follow only after the hypotheses are established. No CMP-R $\lambda^r$ rate is added to this branch.
 
-[Latest update and adoption review](updates/2026-10-05-joint-transfer.md) · [Earlier CMP-R update](updates/2026-10-01-cmp-es.md) · [Roadmap](roadmap.md)
+[Latest update: CORE-S](updates/2026-10-07-core-s.md) · [Joint-transfer sources and hypotheses](updates/2026-10-05-joint-transfer.md) · [Earlier CMP-R](updates/2026-10-01-cmp-es.md) · [Roadmap](roadmap.md)
 
 **EVEN FULL-GROUND CAPTURE: NOT ESTABLISHED.**
+
+**COFINAL COMPATIBILITY: NOT ESTABLISHED.**
+
+**COFINAL INCOMPATIBILITY: NOT ESTABLISHED.**
 
 ## Retained snapshot — 2026-09-30, before the import/CMP/ES update
 

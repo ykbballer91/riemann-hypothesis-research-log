@@ -8,7 +8,7 @@ Curated by **@ykbballer91**, with AI assistance. Research dates, public-update d
 
 ## Three ways to read
 
-**For the result and its limits:** start with [current state](current-state.md), then the [roadmap](roadmap.md). The latest [CMP/ES update](updates/2026-10-05-joint-transfer.md) explains the two unproved obligations in the selected direct route.
+**For the result and its limits:** start with [current state](current-state.md), then the [roadmap](roadmap.md). The latest [CORE-S update](updates/2026-10-07-core-s.md) removes the independent simplicity check and states the remaining same-sequence capture and strict parity conditions. The [October 5 joint-transfer update](updates/2026-10-05-joint-transfer.md) is retained as history.
 
 **For the reasoning across attempts:** read the [timeline](timeline.md). Each track records its starting idea, tests, retained results, stopping point, and next question. Parallel investigations are not presented as a single serial proof.
 

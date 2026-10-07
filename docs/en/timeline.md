@@ -262,3 +262,11 @@ Internal audits are not external peer review. A proved auxiliary statement, a co
 **Adopted difference.** With ES on the same sequence, the real-zero structure permits transfer from strong L² capture to complex local uniform convergence without a prescribed rate. The earlier CMP-R remains a separate sufficient condition. This review does not independently re-prove every claim in the generating-formula and metric records.
 
 **Stop.** The task ends at import, review and publication. CMP, ES, full even-ground capture and RH remain unproved. This is not completion of the earlier, unstarted residual-bottleneck audit.
+
+## 22. Public addition — 2026-10-07: [Reducing ES to strict parity](updates/2026-10-07-core-s.md)
+
+**Research completed: 2026-10-06.** The known commutator structure of the finite Weil matrices shows that strict ordering of the even and odd minima forces a one-dimensional even ground eigenspace. The separate simplicity condition is removed. The joint sufficient route is same-sequence capture + strict parity → ES → adopted transfer → RH.
+
+**Boundary.** This is an auxiliary result at each finite point. Cofinal capture, strict parity, compatibility and incompatibility remain unproved. No uniform gap is obtained. The separate internal audit passed, but is not external peer review; no new asymptotic estimate is claimed.
+
+**Publication and stop.** The October 5 update and original evidence are preserved; only the completed result is added to the bilingual guides. No new proof search or numerical work is started. CMP / ES OPEN. EVEN FULL-GROUND CAPTURE: NOT ESTABLISHED. STATUS: RIEMANN HYPOTHESIS OPEN.

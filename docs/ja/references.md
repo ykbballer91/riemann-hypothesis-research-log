@@ -26,6 +26,7 @@
 | 熱変形 | [Rodgers–Tao, 1801.05914v5](https://arxiv.org/pdf/1801.05914v5) | de Bruijn–Newman定数の非負性。時刻0で不足する上界は証明しない。 |
 | 局所Weil形式と算術radical | [Connes–Consani, Spectral triples and ζ-cycles](https://ems.press/journals/lem/articles/11033001) | 既知の算術radicalの帰属を明示。それだけで一意の有限最低状態を選ばない。 |
 | 実零点定理とプロレート近似 | [Connes–van Suijlekom, 2511.23257v1](https://arxiv.org/html/2511.23257v1); [Connes–Consani–Moscovici, 2511.22755v1](https://arxiv.org/html/2511.22755v1) | 条件付き最低状態の前提、既知の近似収束、未証明の規格化比較を分離する。 |
+| CORE-Sの有限構造入力 | [Connes–Consani–Moscovici, 2511.22755v1, §5.1–5.2, Lemmas 5.1–5.2](https://arxiv.org/html/2511.22755v1#S5) | 行列の差商・交換関係は既知入力。厳密な偶奇順序から単純性への帰結と、未証明の共終的順序を分離する。 |
 | Sonin空間 | [Burnol, math/0203120v6](https://arxiv.org/pdf/math/0203120v6) | 指定空間の完備性・極小性。現在の射影Weilエネルギーをこの空間列で置換しない。 |
 | モーメント稠密性 | [de Jeu, math/0111019v2](https://arxiv.org/pdf/math/0111019v2), 定理2.3、p.5 | 定理2.3、p.5のCarleman条件から有限正測度のL²多項式稠密性を使う。定理5.1のStieltjes条件は別。 |
 | Xiの指数減衰 | [DLMF 5.11.9](https://dlmf.nist.gov/5.11#E9), [25.9.3](https://dlmf.nist.gov/25.9#E3), [25.4.4](https://dlmf.nist.gov/25.4#E4) | 標準Gamma減衰、無条件ゼータ評価、完備化規約。RHは不要。 |

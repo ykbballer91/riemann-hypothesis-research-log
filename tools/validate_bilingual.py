@@ -35,7 +35,7 @@ def check():
     errors=[];site=ROOT/'_site'
     sources={lc:{p.relative_to(ROOT/'docs'/lc).with_suffix('').as_posix() for p in (ROOT/'docs'/lc).rglob('*.md')} for lc in LANGUAGES}
     if sources['ja'] != sources['en']:errors.append('Unpaired editorial source')
-    if len(sources['en'])!=33:errors.append('Expected 33 editorial page pairs')
+    if len(sources['en'])!=34:errors.append('Expected 34 editorial page pairs')
     def require(ok,msg):
         if not ok:errors.append(msg)
     for lc in LANGUAGES:
@@ -86,6 +86,35 @@ def check():
         for key in ['home','index','current-state','roadmap','timeline','source-map']:
             require('2026-10-05-joint-transfer.md' in (ROOT/source_for(lc,key)).read_text(),f'Latest update not reachable from {lc}/{key}')
     require(joint_formulas[0]==joint_formulas[1],'Joint-transfer display formulas differ')
+    core_formulas=[]
+    for lc in LANGUAGES:
+        src=(ROOT/source_for(lc,'updates/2026-10-07-core-s')).read_text()
+        core_formulas.append([re.sub(r'\s+','',x) for x in re.findall(r'\$\$(.*?)\$\$',src,re.S)])
+        for marker in ['2026-10-06','2026-10-07','CORE-S','N\\ge1','\\Delta_+',
+                       'CASE D — CMP OPEN + ES OPEN','19','12','**0**','CMP-R',
+                       'COFINAL COMPATIBILITY: NOT ESTABLISHED.',
+                       'COFINAL INCOMPATIBILITY: NOT ESTABLISHED.',
+                       'EVEN FULL-GROUND CAPTURE: NOT ESTABLISHED.',
+                       '2511.22755v1#S5','Lemmas 5.1–5.2']:
+            require(marker in src,f'Missing CORE-S scope marker: {lc}: {marker}')
+        for key in ['home','index','current-state','roadmap','timeline','source-map']:
+            require('2026-10-07-core-s.md' in (ROOT/source_for(lc,key)).read_text(),f'CORE-S update not reachable from {lc}/{key}')
+    require(core_formulas[0]==core_formulas[1],'CORE-S display formulas differ')
+    core_state=json.loads((ROOT/'data/current-state-2026-10-07.json').read_text())
+    require(core_state['rh_status']==core_state['CMP']==core_state['ES']=='OPEN','CORE-S state status drift')
+    require(core_state['core_s']['independent_even_simplicity_obligation_removed'] is True,'CORE-S obligation reduction lost')
+    require(core_state['conditional_joint_transfer']=='ACCEPTED_CONDITIONAL_ONLY','CORE-S transfer scope drift')
+    for key in ['actual_strong_L2_capture_proved','actual_eventual_strict_parity_proved',
+                'actual_eventual_ES_proved','same_cofinal_sequence_established',
+                'cofinal_compatibility_proved','cofinal_incompatibility_proved',
+                'full_even_ground_capture_proved','rh_closed','ordinary_L2_alone_suffices',
+                'lambda_power_rate_required_in_joint_branch','private_source_directory_published',
+                'source_bundle_published','diagnostics_or_internal_agent_logs_published',
+                'new_research_automatically_started']:
+        require(core_state[key] is False,'Unexpected CORE-S proved/action flag: '+key)
+    require(core_state['core_s']['uniform_gap_bound_proved'] is False,'CORE-S uniform gap overclaim')
+    require(core_state['new_actual_asymptotic_obligations_discharged']==0,'CORE-S asymptotic count drift')
+    require(core_state['old_ES_independent_CMP_R_preserved'] is True,'Earlier CMP-R lost in CORE-S state')
     current=json.loads((ROOT/'data/current-state-2026-10-05.json').read_text())
     require(current['rh_status']==current['CMP']==current['ES']=='OPEN','Latest status drift')
     require(current['conditional_joint_transfer']=='ACCEPTED_CONDITIONAL_ONLY','Joint implication scope drift')

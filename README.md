@@ -18,7 +18,11 @@ The organizing question is what additional arithmetic information could constrai
 - [Source map](docs/en/source-map.md), [references](docs/en/references.md), and [reproducibility](docs/en/reproducibility.md): the supporting record.
 - [Build the documentation site](docs/en/site-building.md): local preview and the gated Pages workflow.
 
-## Latest research update — 2026-10-05
+## Latest research update — 2026-10-07
+
+[CORE-S](docs/en/updates/2026-10-07-core-s.md) shows that strict parity ordering forces simplicity of the even ground in the actual finite Weil family. The joint route no longer needs an independent simplicity check: it requires theta-kernel capture and strict parity on the same resolving cofinal sequence. Their cofinal validity, CMP, ES and RH remain unproved. The research was completed on 2026-10-06; this publication update adds no new asymptotic estimate or proof search.
+
+## Retained update — 2026-10-05
 
 The [joint-transfer review](docs/en/updates/2026-10-05-joint-transfer.md) accepts a conditional connection: eventual ES and strong L² capture on the same sequence imply complex comparison without a prescribed rate, using the real-zero structure. ES and actual capture remain unproved; CMP and RH remain OPEN. The earlier ES-independent CMP-R is retained. No new actual asymptotic obligation has been discharged.
 

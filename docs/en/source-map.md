@@ -4,6 +4,10 @@
 
 The Japanese and English editorial pages are paired guides by **@ykbballer91** to a Japanese, AI-assisted research record. The archive preserves the argument and its historical scope. It is not a collection of peer-reviewed papers. Internal agents sometimes checked the same statement independently; that is an internal review process, not independent external validation.
 
+## CORE-S public addition — 2026-10-07
+
+The [latest finite lemma](updates/2026-10-07-core-s.md) is a derived consequence of CCM's known matrix and commutator structure. The [public state record](../../data/current-state-2026-10-07.json) separates its finite scope from the open cofinal conditions. Private research directories, diagnostic caches and internal audit logs are not distributed; the update provides the primary-source link and a short public proof. Existing evidence and hashes are unchanged.
+
 ## Import and review — 2026-10-05
 
 The [joint-transfer summary](updates/2026-10-05-joint-transfer.md) records a conditional implication checked against primary sources. A [new state record](../../data/current-state-2026-10-05.json) and [review record](../../audit/handoff_2026_10_05_review.md) have been added. Existing evidence and hashes are preserved; the private handoff bundle and third-party PDFs are not redistributed.

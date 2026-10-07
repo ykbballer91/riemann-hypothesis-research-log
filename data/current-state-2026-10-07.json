@@ -1,0 +1,56 @@
+{
+  "schema_version": "public-current-state-v3",
+  "as_of": "2026-10-07",
+  "research_completed": "2026-10-06",
+  "rh_status": "OPEN",
+  "CMP": "OPEN",
+  "ES": "OPEN",
+  "combined_case": "CASE D — CMP OPEN + ES OPEN",
+  "previous_state": "current-state-2026-10-05.json",
+  "historical_state": "research-state.json",
+  "public_summaries": {
+    "ja": "../docs/ja/updates/2026-10-07-core-s.md",
+    "en": "../docs/en/updates/2026-10-07-core-s.md"
+  },
+  "core_s": {
+    "scope": "Every canonical actual finite Weil matrix at a>0, integer N>=1",
+    "statement": "e_+<e_- implies dim ker(Q^+-e_+ I)=1",
+    "finite_ES_equivalence": "ES(a,N) iff e_-(a,N)>e_+(a,N)",
+    "derived_from": "CCM, arXiv:2511.22755v1, Section 5.1-5.2, Lemmas 5.1-5.2",
+    "primary_source": "https://arxiv.org/html/2511.22755v1#S5",
+    "independent_even_simplicity_obligation_removed": true,
+    "uniform_gap_bound_proved": false,
+    "bibliographic_novelty_claimed": false,
+    "internal_independent_audit": "PASS",
+    "audit_is_external_peer_review": false,
+    "numerical_observations_used_as_proof": false
+  },
+  "joint_hypotheses": [
+    "On one and the same sequence: a_j -> infinity, a_j/(N_j+1) ->0",
+    "C_j=||(I-G_{+,j})P_{N_j}R_{a_j}k||_2 ->0, with G_+ the full even ground eigenspace projector",
+    "e_-(a_j,N_j)>e_+(a_j,N_j) eventually"
+  ],
+  "shortest_sufficient_route": "Same-sequence capture + strict parity -> ES -> adopted transfer -> RH; actual antecedents OPEN",
+  "conditional_joint_transfer": "ACCEPTED_CONDITIONAL_ONLY",
+  "ordinary_L2_alone_suffices": false,
+  "lambda_power_rate_required_in_joint_branch": false,
+  "old_ES_independent_CMP_R_preserved": true,
+  "actual_strong_L2_capture_proved": false,
+  "actual_eventual_strict_parity_proved": false,
+  "actual_eventual_ES_proved": false,
+  "same_cofinal_sequence_established": false,
+  "cofinal_compatibility_proved": false,
+  "cofinal_incompatibility_proved": false,
+  "full_even_ground_capture_proved": false,
+  "rh_closed": false,
+  "prior_import_audit": {
+    "items": 19,
+    "generic_or_fixed_scope_delegated": 12
+  },
+  "new_actual_asymptotic_obligations_discharged": 0,
+  "private_source_directory_published": false,
+  "source_bundle_published": false,
+  "diagnostics_or_internal_agent_logs_published": false,
+  "new_research_automatically_started": false,
+  "next_research_question": "Capture and strict parity on the same resolving cofinal sequence; publication ends without automatic restart."
+}
