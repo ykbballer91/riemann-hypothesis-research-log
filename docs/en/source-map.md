@@ -4,9 +4,13 @@
 
 The Japanese and English editorial pages are paired guides by **@ykbballer91** to a Japanese, AI-assisted research record. The archive preserves the argument and its historical scope. It is not a collection of peer-reviewed papers. Internal agents sometimes checked the same statement independently; that is an internal review process, not independent external validation.
 
+## Cycles 6–17 public addition — 2026-10-08
+
+The [latest research update](updates/2026-10-08-cycles-6-17.md) is an edited summary and auxiliary argument grounded in each cycle's original research, integration, state and independent internal audits. The [latest state and source hashes](../../data/current-state-2026-10-08.json) record selected read-only inputs. Private bundles, prompts, diagnostics, third-party PDFs and internal agent logs are not redistributed. Earlier evidence, article bodies and exported hashes remain unchanged.
+
 ## CORE-S public addition — 2026-10-07
 
-The [latest finite lemma](updates/2026-10-07-core-s.md) is a derived consequence of CCM's known matrix and commutator structure. The [public state record](../../data/current-state-2026-10-07.json) separates its finite scope from the open cofinal conditions. Private research directories, diagnostic caches and internal audit logs are not distributed; the update provides the primary-source link and a short public proof. Existing evidence and hashes are unchanged.
+The [CORE-S finite lemma](updates/2026-10-07-core-s.md) is a derived consequence of CCM's known matrix and commutator structure. The [public state record](../../data/current-state-2026-10-07.json) separates its finite scope from the open cofinal conditions. Private research directories, diagnostic caches and internal audit logs are not distributed; the update provides the primary-source link and a short public proof. Existing evidence and hashes are unchanged.
 
 ## Import and review — 2026-10-05
 

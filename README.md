@@ -18,7 +18,11 @@ The organizing question is what additional arithmetic information could constrai
 - [Source map](docs/en/source-map.md), [references](docs/en/references.md), and [reproducibility](docs/en/reproducibility.md): the supporting record.
 - [Build the documentation site](docs/en/site-building.md): local preview and the gated Pages workflow.
 
-## Latest research update — 2026-10-07
+## Latest research update — 2026-10-08
+
+The [Cycles 6–17 release](docs/en/updates/2026-10-08-cycles-6-17.md) publishes an auxiliary theorem: the completed residual of a fixed smooth endpoint trial takes both signs arbitrarily far out. It is a project-derived consequence of existing unconditional theorems; internal AI audit PASS is not external peer review or formal verification. It does not prove oscillation of the true minimum difference or disprove CAP/PAR. The adopted obligations remain same-sequence capture (CAP) and strict parity (PAR), **2 → 2**. CMP, ES, full even-ground capture, cofinal compatibility/incompatibility and RH remain unproved.
+
+## Retained update — 2026-10-07
 
 [CORE-S](docs/en/updates/2026-10-07-core-s.md) shows that strict parity ordering forces simplicity of the even ground in the actual finite Weil family. The joint route no longer needs an independent simplicity check: it requires theta-kernel capture and strict parity on the same resolving cofinal sequence. Their cofinal validity, CMP, ES and RH remain unproved. The research was completed on 2026-10-06; this publication update adds no new asymptotic estimate or proof search.
 

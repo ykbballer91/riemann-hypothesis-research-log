@@ -1,40 +1,48 @@
-# Current state — what is established and what remains open
+# Current state: what is established and what remains
 
 **STATUS: RIEMANN HYPOTHESIS OPEN**
 
-Latest public update: **2026-10-07**. Research completed: **2026-10-06**. CORE-S derives simplicity of the even ground from strict parity ordering using the known commutator structure of the actual finite Weil matrices. A [new state record](../../data/current-state-2026-10-07.json) is added; the [2026-10-05 state](../../data/current-state-2026-10-05.json) and [earlier record](../../data/research-state.json) are preserved.
+The latest state is **2026-10-08, at the end of Cycle 17**. This release adds the [Cycles 6–17 update](updates/2026-10-08-cycles-6-17.md) and [current state record](../../data/current-state-2026-10-08.json). [CORE-S](updates/2026-10-07-core-s.md), the [October 5 joint transfer](updates/2026-10-05-joint-transfer.md) and earlier records remain dated history.
 
-## The selected direct route
+## The adopted direct route
 
-**CMP**, complex comparison between the actual finite Weil ground and the prolate proxy, and **ES**, eventual simplicity and evenness of that ground, both remain open.
+The central obligations are **capture in the full even ground space (CAP)** and **strict parity ordering (PAR)** on the same resolving cofinal sequence. Both are unproved: **2 → 2**. This counts obligation types in the chosen sufficient route, not distance to RH or a universal minimum number of propositions.
 
-CORE-S shows that $e_+<e_-$ forces a one-dimensional even ground eigenspace in the actual finite family. ES is therefore equivalent to strict parity ordering; the internal even gap $\Delta_+>0$ no longer requires an independent proof. The current joint sufficient route is **theta-kernel capture + strict parity on the same resolving cofinal sequence → ES → adopted transfer → RH**.
+$$a_j\to\infty,\qquad\frac{a_j}{N_j+1}\to0,$$
 
-## Current boundary and next action
+$$\mathrm{CAP}:\quad\|(I-G_{+,j})P_{N_j}R_{a_j}k\|_2\to0,$$
 
-Actual capture and eventual strict parity ordering on a cofinal sequence remain unproved. Neither compatibility nor incompatibility on the same sequence has been established. The finite conditional simplicity result supplies neither a uniform spectral gap nor eventual ES.
+$$\mathrm{PAR}:\quad e_-(a_j,N_j)>e_+(a_j,N_j)\quad\text{eventually}.$$
 
-General L² convergence alone does not imply complex convergence. The adopted joint transfer uses the additional real-zero, real-type and exponential-type structure obtained under ES. The earlier ES-independent CMP-R remains a separate rate-based sufficient condition.
+$$\mathrm{CAP}+\mathrm{PAR}\Longrightarrow\mathrm{CORE\text{-}S}/\mathrm{ES}\Longrightarrow\text{adopted transfer}\Longrightarrow\mathrm{RH}.$$
 
-The research questions concern capture and parity ordering on that same sequence. This task stops at synchronizing the completed result with the public record; it starts no proof search or numerical investigation.
+$G_{+,j}$ is the physical L² orthogonal projector onto the entire even ground eigenspace. Results on separate sequences cannot be joined. CORE-S supplies finite simplicity from strict parity in the actual matrix family; the independent $\Delta_+>0$ condition remains removed. The adopted transfer is conditional on additional real-zero structure.
 
-## Technical details of the latest update
+## Latest auxiliary results and their limits
 
-**CASE D — CMP OPEN + ES OPEN.** The earlier **12 of 19 items** refers to delegated generic or fixed-scope proofs, not 12 solved RH obstacles. This result removes the independent simplicity check; newly discharged asymptotic obligations for the actual Weil family remain **0**.
+Cycle 15 proved that **prime-only** minimization cannot capture a fixed nonzero even L² target on any resolving cofinal sequence. This is not a counterexample to capture for the completed Weil form.
 
-- For every $a>0$ and integer $N\ge1$, $\mathrm{ES}(a,N)\iff e_-(a,N)>e_+(a,N)$. The finite lemma passed a separate internal audit; that is not external peer review.
-- With $G_{+,j}$ the orthogonal projector onto the entire even ground eigenspace, the open joint proposition is $C_j=\|(I-G_{+,j})P_{N_j}R_{a_j}k\|_2\to0$ and eventual $e_->e_+$ on one sequence with $a_j\to\infty$ and $a_j/(N_j+1)\to0$.
-- CORE-S removes the separate $\Delta_+>0$ condition, without proving a uniform gap bound. The certificate at $c=\lambda^2=13$, $N=4$ remains a single-endpoint result.
-- The October 5 proxy-based capture condition and its ordinary projection estimates are retained. The raw proxy is not assumed exactly even. Finite diagnostics are not promoted to asymptotic proofs.
-- The joint transfer applies to real-type transforms before value normalization. Normalization at $z_*=i/4$, known proxy convergence and zero preservation follow only after the hypotheses are established. No CMP-R $\lambda^r$ rate is added to this branch.
+Cycle 16 identified the completed endpoint residual. Cycle 17 established unconditionally that it takes both signs arbitrarily far out for every fixed nonzero real $h\in C_c^\infty(0,b)$. The result extends to fixed smooth linear kernels.
 
-[Latest update: CORE-S](updates/2026-10-07-core-s.md) · [Joint-transfer sources and hypotheses](updates/2026-10-05-joint-transfer.md) · [Earlier CMP-R](updates/2026-10-01-cmp-es.md) · [Roadmap](roadmap.md)
+**A fixed-trial difference is not the difference of the true minima.** This oscillation excludes fixed-profile one-sided trial ordering for all sufficiently large continuous parameters. It does not extend to every cofinal subsequence, adaptive profiles, actual ground crossings or a disproof of CAP/PAR.
 
-**EVEN FULL-GROUND CAPTURE: NOT ESTABLISHED.**
+## Unproved status
 
-**COFINAL COMPATIBILITY: NOT ESTABLISHED.**
+- **CMP: NOT ESTABLISHED.**
+- **ES: NOT ESTABLISHED.**
+- **EVEN FULL-GROUND CAPTURE: NOT ESTABLISHED.**
+- **COFINAL COMPATIBILITY: NOT ESTABLISHED.**
+- **COFINAL INCOMPATIBILITY: NOT ESTABLISHED.**
 
-**COFINAL INCOMPATIBILITY: NOT ESTABLISHED.**
+**CASE D — CMP OPEN + ES OPEN.** The earlier import audit delegated 12 of 19 items to general theory or fixed-scope results; it did not solve 12 RH obstacles. Cycles 6–17 closed 0 adopted CAP/PAR obligations.
+
+Ordinary L² proximity alone does not yield complex comparison. The adopted ES-plus-strong-L² transfer uses additional real-zero structure. The ES-independent [earlier CMP-R](updates/2026-10-01-cmp-es.md) remains a separate rate-based sufficient condition. The simple-even certificate at $c=13,N=4$ still covers only that point.
+
+## Next question and stopping point
+
+Actual arithmetic input proving capture and strict parity on one sequence remains missing. Cycle 17 passed independent internal AI review in its fixed-kernel scope; this is not external peer review, formal verification or academic approval. This publication release stops without Cycle 18, new proof exploration or numerical work.
+
+[Mathematical details and sources](updates/2026-10-08-cycles-6-17.md) · [Roadmap](roadmap.md) · [Timeline](timeline.md)
 
 ## Retained snapshot — 2026-09-30, before the import/CMP/ES update
 

@@ -270,3 +270,24 @@ Internal audits are not external peer review. A proved auxiliary statement, a co
 **Boundary.** This is an auxiliary result at each finite point. Cofinal capture, strict parity, compatibility and incompatibility remain unproved. No uniform gap is obtained. The separate internal audit passed, but is not external peer review; no new asymptotic estimate is claimed.
 
 **Publication and stop.** The October 5 update and original evidence are preserved; only the completed result is added to the bilingual guides. No new proof search or numerical work is started. CMP / ES OPEN. EVEN FULL-GROUND CAPTURE: NOT ESTABLISHED. STATUS: RIEMANN HYPOTHESIS OPEN.
+
+## 23. Public addition — 2026-10-08: [Established results through Cycles 6–17](updates/2026-10-08-cycles-6-17.md)
+
+The later Cycles 6–14 are source-dated 2026-10-07; Cycles 15–17 are dated 2026-10-08. Their numbering is distinct from the earlier tracks above. CORE-S retains its original research date, 2026-10-06, and its public-update date, 2026-10-07.
+
+| Cycle | Retained result | Boundary |
+|---|---|---|
+| 6 | Finite scalar root equation and state reconstruction from the CORE-S commutator | Root existence and target capture remain separate inputs |
+| 7 | Arithmetic comparison of capture's mixed evaluation and parity's quadratic evaluation | A common prime error does not merge the two requirements |
+| 8 | Obstructions to background-only comparisons with theta and same-coefficient parity trials | Not a disproof of background sector-minimum ordering or full Weil ordering |
+| 9 | Finite conditional parity gate retaining the constant even component | No universal sign from individual primes or powers of one prime |
+| 10 | Background competitors orthogonal to theta and finite-source obstructions | A small source does not identify the ground target |
+| 11 | A1: finite real-zero bridge for the boundary-visible direction in the lowest space | Cofinal visibility and canonical-direction convergence remain open |
+| 12 | A1 allows ties and multiplicity at finite level, but no actual shortening was obtained | Frozen as an auxiliary theorem; future shortening is not proved impossible |
+| 13 | Search for a global arithmetic selection law; scoped rejection of specified Euler-kernel and bounded-mass connections | No exclusion of the whole finite-Weil route or every selection law |
+| 14 | Outcome F; specified F-RM and C-QP connections rejected | B-PO remains an unproved parked candidate; no positive cofinal theorem |
+| 15 | Exact finite prime-power phases, prime-only cofinal no-go, leading prime/pole cancellation | Completed-form CAP/PAR remain open |
+| 16 | Exact completed endpoint residual | No law transferring trial signs to the true minima; Outcome F |
+| 17 | SUCCESS A: auxiliary fixed-profile oscillation; extension to fixed linear kernels | Excludes only fixed-trial ordering for all large continuous parameters; 2 → 2 |
+
+**Current boundary.** Cycle 17 is SUCCESS A, an auxiliary oscillation theorem, not a theorem of true ground crossings. It excludes fixed-trial one-sided ordering for all large continuous parameters, not selected cofinal subsequences or moving profiles. Cofinal compatibility and incompatibility of CAP/PAR remain unproved. Adopted obligations: 2 → 2. Internal AI review is not external peer review or formal verification. Publication stops without Cycle 18.

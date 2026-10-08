@@ -2,36 +2,50 @@
 
 **STATUS: RIEMANN HYPOTHESIS OPEN**
 
-CORE-S, completed on 2026-10-06 and published here on 2026-10-07, derives simplicity from strict parity ordering in the actual finite Weil family. This removes one independent condition in the joint route. Counting obligations does not measure the distance or difficulty remaining before RH.
+As of 2026-10-08, at the end of Cycle 17, the adopted obligations remain **CAP / PAR, 2 → 2**. Auxiliary no-go results prune invalid shortcuts; neither actual cofinal obligation has been closed.
 
 ## Current direction
 
-| Branch or obligation | Required input | Status |
+| Node | Requirement | Status |
 |---|---|---|
-| Capture on one sequence | $C_j=\|(I-G_{+,j})P_{N_j}R_{a_j}k\|_2\to0$, with $a_j\to\infty$ and $a_j/(N_j+1)\to0$ | Actual capture OPEN |
-| Strict parity ordering | Eventual $e_->e_+$ on that same sequence | OPEN; compatibility and incompatibility with capture also unproved |
-| CORE-S supplies ES | Strict parity forces a one-dimensional even ground eigenspace | Auxiliary PROVED result at each finite point; no separate $\Delta_+>0$ condition |
-| Adopted joint transfer | ES gives finite real zeros and LP membership; strong L² capture and Clunie–Kuijlaars give complex local uniform convergence | Accepted conditionally; actual hypotheses remain unproved |
-| Value normalization and zero preservation | After checking the nonzero limit and all hypotheses, use known proxy convergence and Hurwitz/Rouché | Existing implications; RH OPEN |
-| Earlier CMP-R | Without assuming ES, prove $\lambda^rD_{\lambda,N}\to0$ and the corresponding projection rate for every $0<r<1/2$ | Retained separate sufficient condition; actual estimate OPEN |
+| CAP | $\|(I-G_{+,j})P_{N_j}R_{a_j}k\|_2\to0$ | Actual capture in the full even ground space remains unproved |
+| PAR | Eventually $e_->e_+$ on that same sequence | Strict parity remains unproved |
+| CORE-S → ES | At each finite point, strict parity gives a simple even ground | Auxiliary finite result; no independent $\Delta_+>0$ obligation |
+| Adopted transfer | Real-zero structure from ES and strong-L² capture give complex locally uniform convergence | Conditional implication; actual antecedents unproved |
+| Value normalization and zero preservation | After nonzero-limit and convention checks, use proxy convergence and Hurwitz/Rouché | Existing implications; RH remains unproved |
 
-The shortest joint sufficient route is **same-sequence capture + strict parity → CORE-S supplies ES → adopted transfer → RH**. Capture and parity results on unrelated sequences cannot be combined. Neither a uniform gap nor the old CMP-R rate is added as a hypothesis of this branch.
+The resolving sequence satisfies $a_j\to\infty$ and $a_j/(N_j+1)\to0$. CAP and PAR must hold on the same sequence.
 
-## Why this direction
+$$a_j\to\infty,\qquad\frac{a_j}{N_j+1}\to0,$$
 
-The [2026-10-05 joint-transfer record](updates/2026-10-05-joint-transfer.md) listed capture, parity ordering and simplicity separately. CORE-S removes the independent simplicity check. Boundary mass and individual prime terms remain auxiliary records. The derivative hierarchy is also retained as auxiliary work, not a mandatory stage of the current joint branch.
+$$\mathrm{CAP}:\quad\|(I-G_{+,j})P_{N_j}R_{a_j}k\|_2\to0,$$
 
-## Next action and stopping point
+$$\mathrm{PAR}:\quad e_-(a_j,N_j)>e_+(a_j,N_j)\quad\text{eventually}.$$
 
-CMP/ES remain the main route. The research questions concern capture and strict parity on the same resolving cofinal sequence. This publication synchronization does not launch the next research task.
+$$\mathrm{CAP}+\mathrm{PAR}\Longrightarrow\mathrm{CORE\text{-}S}/\mathrm{ES}\Longrightarrow\text{adopted transfer}\Longrightarrow\mathrm{RH}.$$
 
-**CASE D — CMP OPEN + ES OPEN.** The earlier delegation of **12 of 19 items** of generic or fixed-scope theory is unchanged. Newly discharged actual asymptotic obligations: **0**. [Latest finite lemma and hypotheses](updates/2026-10-07-core-s.md) · [Earlier CMP-R](updates/2026-10-01-cmp-es.md).
+[CORE-S](updates/2026-10-07-core-s.md) and the [joint transfer](updates/2026-10-05-joint-transfer.md) remain adopted. The ES-independent [earlier CMP-R](updates/2026-10-01-cmp-es.md) is a separate sufficient condition; its rate is not added to the joint branch. **CASE D — CMP OPEN + ES OPEN.**
+
+## Branches kept off the main route
+
+- A1's boundary-visible direction remains an auxiliary finite theorem. Actual cofinal shortening through visibility and canonical convergence was not obtained; future shortening is not proved impossible.
+- F-RM and C-QP were rejected only in their specified connection classes. B-PO remains an unproved parked candidate.
+- Prime-only minimization and positive affine/isometric phase representations preserving its minimizers fall under the Cycle 15 no-go. The completed form does not.
+- Cycle 17 excludes a fixed-profile completed residual with one sign for all sufficiently large continuous parameters. It does not exclude selected cofinal subsequences, adaptive trials or ordering of the true minima.
+
+## Next question and stopping point
+
+No third route, truncation or generic operator theory is started automatically. The remaining question is actual CAP and PAR on one sequence. Rebuilding existing transfer theory does not establish its antecedents. This release stops without Cycle 18.
+
+**CMP: NOT ESTABLISHED. ES: NOT ESTABLISHED.**
 
 **EVEN FULL-GROUND CAPTURE: NOT ESTABLISHED.**
 
 **COFINAL COMPATIBILITY: NOT ESTABLISHED.**
 
 **COFINAL INCOMPATIBILITY: NOT ESTABLISHED.**
+
+[Latest research update](updates/2026-10-08-cycles-6-17.md) · [Timeline](timeline.md) · [State record](../../data/current-state-2026-10-08.json)
 
 ## Retained derivative-route roadmap — 2026-09-30
 

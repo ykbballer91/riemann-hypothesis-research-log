@@ -1,0 +1,330 @@
+{
+  "schema_version": "public-current-state-v4",
+  "as_of": "2026-10-08",
+  "research_through_cycle": 17,
+  "rh_status": "OPEN",
+  "CMP": "NOT ESTABLISHED",
+  "ES": "NOT ESTABLISHED",
+  "combined_case": "CASE D — CMP OPEN + ES OPEN",
+  "previous_state": "current-state-2026-10-07.json",
+  "public_summaries": {
+    "ja": "../docs/ja/updates/2026-10-08-cycles-6-17.md",
+    "en": "../docs/en/updates/2026-10-08-cycles-6-17.md"
+  },
+  "adopted_obligations": {
+    "before": 2,
+    "after": 2,
+    "scope": "Types of actual obligations in the adopted sufficient route, not universal minimality or proof distance",
+    "CAP": "||(I-G_+)P_N R_a k||_2 ->0 on one resolving cofinal sequence",
+    "PAR": "e_->e_+ eventually on that same sequence",
+    "sequence": "a_j -> infinity; a_j/(N_j+1) ->0"
+  },
+  "core_s_preserved": true,
+  "independent_even_simplicity_obligation_removed": true,
+  "conditional_joint_transfer": "ACCEPTED_CONDITIONAL_ONLY",
+  "ordinary_L2_alone_suffices": false,
+  "old_ES_independent_CMP_R_preserved": true,
+  "actual_strong_L2_capture_proved": false,
+  "actual_eventual_strict_parity_proved": false,
+  "actual_eventual_ES_proved": false,
+  "same_cofinal_sequence_established": false,
+  "cofinal_compatibility_proved": false,
+  "cofinal_incompatibility_proved": false,
+  "full_even_ground_capture_proved": false,
+  "rh_closed": false,
+  "new_adopted_actual_obligations_discharged": 0,
+  "cycle14": {
+    "outcome": "F",
+    "F_RM_rejection": "Specified raw same-variable connection only",
+    "C_QP_rejection": "Specified scalar/positive-quadratic pullback only",
+    "B_PO": "PARKED_UNPROVED"
+  },
+  "cycle15": {
+    "prime_phase_identity": "EXACT_FINITE",
+    "prime_only_no_go": "Any resolving cofinal sequence, prime-only even-head ground projector, fixed nonzero even L2 target",
+    "scope": "Prime-only minimization and positive affine/isometric representations preserving minimizers; not the completed form",
+    "CAP_PAR_closed": false
+  },
+  "cycle16": {
+    "outcome": "F",
+    "completed_endpoint_residual": "EXACT_TRIAL_IDENTITY",
+    "actual_minimum_ordering_proved": false
+  },
+  "cycle17": {
+    "outcome": "SUCCESS A",
+    "fixed_profile_oscillation_proved": true,
+    "scope": "Every fixed nonzero real h in C_c^infinity(0,b); both strict signs arbitrarily far out in continuous a",
+    "fixed_linear_kernel_extension_proved": true,
+    "kernel_factor": "H_h(s)^2, not absolute square",
+    "mellin_shift": "s+1/2",
+    "log_derivative_poles": "Simple; zeta-zero multiplicity enters the residue",
+    "inputs": [
+      "PNT",
+      "Weil explicit formula",
+      "Jensen",
+      "Conrey 1989 Theorem 1 simple critical-line zero proportion",
+      "FRS 2012 published Lemma 4.12 Landau"
+    ],
+    "arbitrary_cofinal_subsequence_oscillation_proved": false,
+    "moving_profile_uniformity_proved": false,
+    "actual_parity_minima_oscillation_proved": false,
+    "CAP_PAR_closed": false,
+    "internal_independent_audit": "PASS in stated scope",
+    "external_peer_review": false,
+    "formal_verification": false,
+    "bibliographic_novelty_claimed": false
+  },
+  "source_read_only_provenance": [
+    {
+      "cycle": 6,
+      "research_date": "2026-10-07",
+      "read_only_source_documents": [
+        {
+          "name": "integration.md",
+          "sha256": "b3a74a9463143c3635fc352c996ba837b0843326af104ac36f5174f047f3efcb"
+        },
+        {
+          "name": "state.json",
+          "sha256": "5a31a9853313f7d038b368dccfa4738e811cec1befb8132cf94fd0f48b65a4c3"
+        },
+        {
+          "name": "adversarial_review.md",
+          "sha256": "80163619c2af2b427887f770dc553e8554966bf6c4407240d17f96a2dc366d8b"
+        }
+      ]
+    },
+    {
+      "cycle": 7,
+      "research_date": "2026-10-07",
+      "read_only_source_documents": [
+        {
+          "name": "integration.md",
+          "sha256": "b7595c5e9fd6982626defd67656d8643125b488b1241107f15f25b48bd253448"
+        },
+        {
+          "name": "state.json",
+          "sha256": "e0454753593b355f0364fbd139e01ffacb3f385fe34b9bd20c904c1e539eaea6"
+        },
+        {
+          "name": "adversarial_review.md",
+          "sha256": "9dd0f9902751c50b1ea15aa940470eaf16a63ce1bd57fba29a4a1a7640121445"
+        }
+      ]
+    },
+    {
+      "cycle": 8,
+      "research_date": "2026-10-07",
+      "read_only_source_documents": [
+        {
+          "name": "integration.md",
+          "sha256": "e0545d7c3714ff905c8d42ba97fa68ce2428ffe0792a33c7f3eede27cf5f89d2"
+        },
+        {
+          "name": "state.json",
+          "sha256": "7540d8076a95e7a7792085b155cd2bf39f24f5a7d566edd23d2a318b4e6b9a15"
+        },
+        {
+          "name": "adversarial_review.md",
+          "sha256": "d73b3f8723c8d8e0a3d9f2a2c163e6c382f6c5bd005b0cea2bce494875269750"
+        }
+      ]
+    },
+    {
+      "cycle": 9,
+      "research_date": "2026-10-07",
+      "read_only_source_documents": [
+        {
+          "name": "integration.md",
+          "sha256": "8750e9a1775101900ab7f14d84cd75f0177855ba683f3f7f4d0ce4cd32dfd208"
+        },
+        {
+          "name": "state.json",
+          "sha256": "85adf494ee5ec2ae79988b2168022f5bc35a73380473510136ba92f5ca69f5d1"
+        },
+        {
+          "name": "adversarial_review.md",
+          "sha256": "047cfddc5a5bcbdf2feb0ff467535ab37a0f0eb29a41a638faf5780ee1a651c3"
+        }
+      ]
+    },
+    {
+      "cycle": 10,
+      "research_date": "2026-10-07",
+      "read_only_source_documents": [
+        {
+          "name": "integration.md",
+          "sha256": "3489669cda0072a81765fe33d3b6522d72b77f22c024f3d1b596ef729edce917"
+        },
+        {
+          "name": "state.json",
+          "sha256": "d563fa2abf4a20b3eb95f5ee1b4104e98f2feff5304739b01568a51af925c320"
+        },
+        {
+          "name": "adversarial_review.md",
+          "sha256": "430e8bb41e78d1cb626a3cb9dcb0ce2fe61b3fad1d08a606c510599e7bfc5905"
+        }
+      ]
+    },
+    {
+      "cycle": 11,
+      "research_date": "2026-10-07",
+      "read_only_source_documents": [
+        {
+          "name": "integration.md",
+          "sha256": "1f241e87fcf695606a572fec301bd63f81ba8e81f6cdb05185e61de00fcdd760"
+        },
+        {
+          "name": "state.json",
+          "sha256": "f25cd1018fdc8dd1f3619fb044e0292292bb10313786a1999b31555c9bcfb165"
+        },
+        {
+          "name": "adversarial_review.md",
+          "sha256": "8de08a2797fb541ec442d0cc642648582463dd00826dec68263a4228033079e1"
+        }
+      ]
+    },
+    {
+      "cycle": 12,
+      "research_date": "2026-10-07",
+      "read_only_source_documents": [
+        {
+          "name": "integration.md",
+          "sha256": "373cbf3fe27f199d8a301195222b1e7b7b7cabe4ebc238b5416dc022bee94ac9"
+        },
+        {
+          "name": "state.json",
+          "sha256": "057d7bb007fc0e3eeb3c880246fbdab74b5485170bc09109dec28f24ffc42129"
+        },
+        {
+          "name": "adversarial_review.md",
+          "sha256": "04ac72382893e722e0c7c337ab13587c118029a46e05451b1f78cf07c1413b05"
+        }
+      ]
+    },
+    {
+      "cycle": 13,
+      "research_date": "2026-10-07",
+      "read_only_source_documents": [
+        {
+          "name": "integration.md",
+          "sha256": "483543cfbc4a3f3dd873ea0d36dd670dce128b3681b5e061ac3d7fabec201a41"
+        },
+        {
+          "name": "state.json",
+          "sha256": "25dc6c813446be2587b1f8752fd31f3f261cd0ae9fd35cca83d0f9510f60a7a1"
+        },
+        {
+          "name": "adversarial_review.md",
+          "sha256": "8f161ece6b1326510b61f3a1fd6de5f7839492e1e718c74d85d5151b3cce920a"
+        }
+      ]
+    },
+    {
+      "cycle": 14,
+      "research_date": "2026-10-07",
+      "read_only_source_documents": [
+        {
+          "name": "integration.md",
+          "sha256": "91f1811386f432105af9b16197393b28c8cdb3450b558373b2be21898662c726"
+        },
+        {
+          "name": "state.json",
+          "sha256": "26200ffd8fd6fc8f870a528af847d485ae0c3def78d6f1441f19f0c0382a1a5f"
+        },
+        {
+          "name": "adversarial_review.md",
+          "sha256": "a5037936ef3e80d2a9e62eae7de8ed09810d1486798357f1a431661eae68d14b"
+        }
+      ]
+    },
+    {
+      "cycle": 15,
+      "research_date": "2026-10-08",
+      "read_only_source_documents": [
+        {
+          "name": "integration.md",
+          "sha256": "ee9f94f540c2e8b2742b492baaa7f95003acb41ad20aef44968cce869e227ec7"
+        },
+        {
+          "name": "state.json",
+          "sha256": "63cdfa0f01504619d329339cf5693e2a6d956cf9eaab6a637846381721f1ab1a"
+        },
+        {
+          "name": "adversarial_review.md",
+          "sha256": "26fb371db5d6d7a301c0f6de0ae425c67e558d4a8b21529c1661fde09cb05d10"
+        }
+      ]
+    },
+    {
+      "cycle": 16,
+      "research_date": "2026-10-08",
+      "read_only_source_documents": [
+        {
+          "name": "integration.md",
+          "sha256": "cd2b8d4cb0dd0f10e9feb0be02c70c735fef5ef8c18993d2fa3d7c7ed10e2a34"
+        },
+        {
+          "name": "state.json",
+          "sha256": "c86bd58bdf2da17ac42c6430f088e1ad4d828d76251385ec321c4b2b4138f968"
+        },
+        {
+          "name": "adversarial_review.md",
+          "sha256": "fdc485beee7a45e4bcbc0b21f03b3f1e6cf23e9b3d46e96b40e68f6a72bccdd2"
+        }
+      ]
+    },
+    {
+      "cycle": 17,
+      "research_date": "2026-10-08",
+      "read_only_source_documents": [
+        {
+          "name": "integration.md",
+          "sha256": "b25cdd8c146b82c3972ff9faab15860388f521af2fd8419ea2df2e8f373f58c2"
+        },
+        {
+          "name": "state.json",
+          "sha256": "29d77056d680b73afe23d74a0a8a5d203c3234ab2e2cd27986844760f2b17f7d"
+        },
+        {
+          "name": "adversarial_review.md",
+          "sha256": "f4adcc9bf017cfc1fe77bca79670790658be0af51b8460f736224483f8ae73ac"
+        },
+        {
+          "name": "mellin_factorization.md",
+          "sha256": "bc55eda12c6bde76384ecbd0c72d759cf778ce402dd3f01ec7c215739f55c83e"
+        },
+        {
+          "name": "audit_factorization_independent.md",
+          "sha256": "cba6f07b727eef005f0e0607d2130953e00b1bdd1c42aa1c52a0a699d44167f2"
+        },
+        {
+          "name": "audit_oscillation_independent.md",
+          "sha256": "57899fc3aaa5a641660216804f91922fce0d65e584794a4184bd4c25529d1927"
+        },
+        {
+          "name": "landau_route.md",
+          "sha256": "9ee9d68f6947f4c239d22e8e98e393447c10a220317f10bb01fba25b9f55171a"
+        },
+        {
+          "name": "zeta_pole_survival.md",
+          "sha256": "5cab1907ff1b95af335fda71e339e97c2eb1edf66bfcf01469ce0118436633ae"
+        },
+        {
+          "name": "explicit_formula_crosscheck.md",
+          "sha256": "6f4da8d52c08a5040a84610878325cfc1d8b6b328fd2f5db0ded0e214d24ba2a"
+        },
+        {
+          "name": "scope_extension.md",
+          "sha256": "45f5c7cbf3a0684458ee18202ef72237afad804a0120e58f50f71e6571e86292"
+        }
+      ]
+    }
+  ],
+  "private_bundle_or_internal_logs_published": false,
+  "new_proof_exploration_started": false,
+  "cycle18_started": false,
+  "publication_mathematics_audit": "PASS",
+  "publication_site_audit": "PASS — LOCAL_PREPUBLICATION_SCOPE",
+  "next_action": "STOP after publication; research resumes only on explicit user instruction",
+  "production_verification": "Performed separately after commit/push/deployment; not inferred from local checks"
+}

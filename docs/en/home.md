@@ -8,11 +8,13 @@ Curated by **[@ykbballer91](https://github.com/ykbballer91)**. The original rese
 
 ## Where the work stands
 
-The current direct route focuses on two unproved obligations: comparing the actual finite Weil ground state with a known prolate approximation in a complex strip (**CMP**), and establishing eventual simplicity and evenness of that ground state (**ES**). This is a description of the selected route, not a count of how close RH is to a proof.
+The adopted central obligations are **capture in the even ground space (CAP)** and **strict parity ordering (PAR)** on one resolving cofinal sequence. Both remain unproved: 2 → 2. This is not a completion percentage or a measure of distance to RH.
 
-[Read the current state](current-state.md) · [Latest update: 2026-10-07](updates/2026-10-07-core-s.md)
+[Read the current state](current-state.md) · [Latest update: 2026-10-08](updates/2026-10-08-cycles-6-17.md)
 
-Strict ordering of the even and odd minima forces simplicity in the actual finite Weil family. This removes the separate simplicity check, leaving capture and strict parity on the same sequence. Their cofinal validity remains unproved. The [earlier joint-transfer update](updates/2026-10-05-joint-transfer.md) is retained.
+This release adds Cycles 6–17. The latest auxiliary theorem shows that a fixed smooth endpoint trial's completed residual takes both signs arbitrarily far out. **It is not oscillation of the true ground-energy difference.** CMP, ES and full even-ground capture remain unproved.
+
+The finite simplicity consequence of [CORE-S](updates/2026-10-07-core-s.md) and the [earlier joint transfer](updates/2026-10-05-joint-transfer.md) are retained.
 
 ## Explore the record
 
