@@ -1,23 +1,30 @@
-# Source map and archival boundaries
+# Source map and archival boundaries {#source-map-and-archival-boundaries}
 
 **STATUS: RIEMANN HYPOTHESIS OPEN**
 
 The Japanese and English editorial pages are paired guides by **@ykbballer91** to a Japanese, AI-assisted research record. The archive preserves the argument and its historical scope. It is not a collection of peer-reviewed papers. Internal agents sometimes checked the same statement independently; that is an internal review process, not independent external validation.
 
-## Cycles 6–17 public addition — 2026-10-08
+## Selective publication through L7 — 2026-10-09
 
-The [latest research update](updates/2026-10-08-cycles-6-17.md) is an edited summary and auxiliary argument grounded in each cycle's original research, integration, state and independent internal audits. The [latest state and source hashes](../../data/current-state-2026-10-08.json) record selected read-only inputs. Private bundles, prompts, diagnostics, third-party PDFs and internal agent logs are not redistributed. Earlier evidence, article bodies and exported hashes remain unchanged.
+The [new research update](updates/2026-10-09-logic-rh-l7.md) is a selected editorial summary based on fixed-version research manuscripts, constructions, integrations and internal audits. L0–L7 research originals remain privately preserved. Complete new proofs, full internal audits, instructions, conversations, definition DAGs and internal validation outputs are not published. This summary is not the full evidence for third-party reproduction of every claim.
 
-## CORE-S public addition — 2026-10-07
+The [public state record](../../data/current-state-2026-10-09.json) contains publishable summaries and references to the update. The detailed manuscript-to-paragraph correspondence is privately retained. Existing manifests, source links and hashes below concern historically published material; complete new manuscripts have not been added to that evidence set.
+
+
+## Cycles 6–17 public addition — 2026-10-08 {#cycles-617-public-addition-2026-10-08}
+
+The [update through Cycle 17](updates/2026-10-08-cycles-6-17.md) is an edited summary and auxiliary argument grounded in each cycle's original research, integration, state and independent internal audits. The [historical state and source hashes](../../data/current-state-2026-10-08.json) record selected read-only inputs. Private bundles, prompts, diagnostics, third-party PDFs and internal agent logs are not redistributed. Earlier evidence, article bodies and exported hashes remain unchanged.
+
+## CORE-S public addition — 2026-10-07 {#core-s-public-addition-2026-10-07}
 
 The [CORE-S finite lemma](updates/2026-10-07-core-s.md) is a derived consequence of CCM's known matrix and commutator structure. The [public state record](../../data/current-state-2026-10-07.json) separates its finite scope from the open cofinal conditions. Private research directories, diagnostic caches and internal audit logs are not distributed; the update provides the primary-source link and a short public proof. Existing evidence and hashes are unchanged.
 
-## Import and review — 2026-10-05
+## Import and review — 2026-10-05 {#import-and-review-2026-10-05}
 
 The [joint-transfer summary](updates/2026-10-05-joint-transfer.md) records a conditional implication checked against primary sources. A [new state record](../../data/current-state-2026-10-05.json) and [review record](../../audit/handoff_2026_10_05_review.md) have been added. Existing evidence and hashes are preserved; the private handoff bundle and third-party PDFs are not redistributed.
 
 
-## What is canonical here
+## What is canonical here {#what-is-canonical-here}
 
 The Phase 1 inventory identified 17 tracks. This publication adds separately dated Priority 1 cyclicity and Priority 2 finite-head updates. There are 378 selected source files: the 359-file historical selection, five cyclicity files, and fourteen finite-head files. The [source manifest](../../data/source-manifest.json) is the complete file-level authority. It records the original relative source identifier, public destination, original hash and exported hash. Publication headers, removal of private paths and repaired links can change an exported hash without changing the mathematical claim.
 
@@ -45,7 +52,7 @@ The table identifies the main argument, its scoped audit and its state. A state 
 | 18 | [Cyclicity of the even derivative family](tracks/18-even-l2-cyclicity.md) | [Report](../../archive/reports/research/full_ground_capture/cyclicity.md) | [Audit](../../archive/audits/proofs/audits/full_ground_cyclicity_adversarial.md) | [State](../../data/source-records/research/full_ground_capture/state.json) |
 | 19 | [Finite even Fourier heads](tracks/19-finite-even-head-spanning.md) | [Report](../../archive/reports/research/full_ground_capture/priority2/finite_even_head_spanning.md) | [Audit](../../archive/audits/proofs/audits/full_ground_finite_head_adversarial.md) | [State](../../data/source-records/research/full_ground_capture/priority2/state.json) |
 
-## Historical records that must not be merged silently
+## Historical records that must not be merged silently {#historical-records-that-must-not-be-merged-silently}
 
 - The initial handoff covers cycles 1–23. Its date does not timestamp every cycle. The historical `proof_state.json` was subsequently updated through Phase III; its top-level summary does not include all later independent tracks.
 - The old main dependency graph is preserved as a checkpoint. Later auxiliary theorems were not automatically promoted into a proof of RH or silently inserted into that graph.
@@ -56,7 +63,7 @@ The table identifies the main argument, its scoped audit and its state. A state 
 
 - The later finite-head update adds fourteen scoped reports, code/results and audit/state artifacts. Its private preservation manifest is excluded; publication checks do not reclassify diagnostics as certified results.
 
-## Theorem stacks and dependencies worth reading together
+## Theorem stacks and dependencies worth reading together {#theorem-stacks-and-dependencies-worth-reading-together}
 
 - [Historical dependency graph](../../archive/reports/theorem_graph/graph.md): Read at its stated checkpoint; an edge or criterion does not prove its hypothesis.
 - [Local-to-global theorem stack](../../archive/reports/research/local_global_theorem_stack.md): Separates conditional real-zero ground statements from known proxy convergence and missing G*.
@@ -67,7 +74,7 @@ The table identifies the main argument, its scoped audit and its state. A state 
 - [Sonin filtration audit](../../archive/reports/research/sonine_filtration_audit.md): An exact transform dictionary is distinguished from an unproved selector correspondence.
 - [Cyclicity sources and proof](../../archive/reports/research/full_ground_capture/notes/moment_problem_sources.md): Exponential moments, the correct moment criterion and ordinary even L² density.
 
-## What is included and excluded
+## What is included and excluded {#what-is-included-and-excluded}
 
 Original project reports and audits are under `archive/`; selected state records are under `data/source-records/`; code, recorded results and small formal sources are under `artifacts/`. The manifest resolves every selected identifier to one canonical public copy. Preserved source prose may point to an omitted file; the export marks that omission rather than manufacturing a destination.
 

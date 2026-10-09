@@ -1,4 +1,4 @@
-# References and verification scope
+# References and verification scope {#references-and-verification-scope}
 
 **STATUS: RIEMANN HYPOTHESIS OPEN**
 
@@ -6,7 +6,23 @@ This publication credits **@ykbballer91** for the project record. The authors of
 
 The [machine-readable reference uses](../../data/references.json) preserve 108 statement-level records from six historical ledgers and add three uses from the dated cyclicity notes. The same work can appear more than once when a theorem, a conditional criterion and a heuristic discussion have different dependencies. Later prose citations also have an external-link discovery index with source locations. That index is not a list of verified theorems, and this is not an exhaustive bibliography.
 
-## How to read a verification status
+## Public primary sources for L0–L7 and their scope
+
+These fixed versions support the [2026-10-09 update](updates/2026-10-09-logic-rh-l7.md). Reading and comparison concern selected statements, not full reproofs or an exhaustive academic-novelty survey.
+
+| Source and version | Checked statement and use |
+|---|---|
+| Jeffrey C. Lagarias, *An Elementary Problem Equivalent to the Riemann Hypothesis*, author version July 29, 2001. [Primary author PDF](https://websites.umich.edu/~lagarias/doc/elementaryrh.pdf), [publication listing](https://websites.umich.edu/~lagarias/PUBLICATIONS/papers.html) | Problem E / Theorem 1.1, RH equivalence. It does not supply the fixed finite rational comparison, L7 precision function or proof cost |
+| Y. Choie, N. Lichiardopol, P. Moree, P. Solé, *On Robin’s criterion for the Riemann hypothesis*, JTNB 19 (2007), 357–372. [Publication page](https://jtnb.centre-mersenne.org/articles/10.5802/jtnb.591/), [primary PDF](https://www.numdam.org/item/10.5802/jtnb.591.pdf) | Section 5, Proposition 5.1, Lemmas 5.2–5.5: extremization by prime replacement and exponent ordering. Do not identify its family with L7's C without exponent ordering, or its comparison with fixed Lagarias |
+| Andrew MacArevey, *On the Lagarias Inequality and Superabundant Numbers*, [arXiv:2602.15905v2](https://arxiv.org/abs/2602.15905v2), revised 2026-02-19. [Primary HTML](https://arxiv.org/html/2602.15905v2) | Section 2, Lemmas 2.1–2.7, Proposition 2.1, Corollary 2.1; Section 3, Theorem 3.1. Monotonicity of the normalized value and superabundance of a least counterexample. Fixed finite q and L7 precision/proof costs are separate |
+| OpenAI, *The Quasi-Riemann Hypothesis*, 30 September 2026. [7/8 main manuscript](https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/build/paper.tex), [official Lean nonvanishing theorem](https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/OAI/NumberTheory/DirichletL/Nonvanishing.lean) | Official revision `fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb`. Main theorem, selected proof chain and settings checked. Scoped adoption as an external theorem retains strict Re(s)>7/8 and s≠1 in ordinary analysis |
+| OpenAI, *The Quasi-Riemann Hypothesis*, October 5, 2026. [11/12 separate manuscript](https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-Quasi-Riemann-Hypothesis-October-5-2026/build/paper2.tex) | Same fixed official revision. Local checks of mean-to-pointwise extraction, Mellin nonvanishing and selected cancellation/descent. Faithful Lean translation of the entire separate paper is not certified |
+| Dave Goldblatt, [external rechecking REPORT](https://github.com/davegoldblatt/openai-zeta-proof-check/blob/3f11b2203b76902f1b6b234115437302a94b79c3/REPORT.md), [raw logs](https://github.com/davegoldblatt/openai-zeta-proof-check/tree/3f11b2203b76902f1b6b234115437302a94b79c3/evidence) | Revision `3f11b2203b76902f1b6b234115437302a94b79c3`. External Lean/nanoda success logs and settings compared with target sources. Our own kernel/comparator not run; no external peer-review certification |
+
+The external papers and formal proofs belong to their respective authors. They are not counted as our original proof of RH. Third-party full texts, libraries and caches are not redistributed. [Methodology](methodology.md) and [reproduction limits](reproducibility.md) explain the trust boundary.
+
+
+## How to read a verification status {#how-to-read-a-verification-status}
 
 - **Publication status** concerns the journal, preprint or reference source. It does not state that this project has verified the proof.
 - **Primary text checked** means the indicated statement or passage was read. It does not mean every lemma in the paper was reconstructed.
@@ -16,7 +32,7 @@ The [machine-readable reference uses](../../data/references.json) preserve 108 s
 
 The inherited bibliography includes bounded audits of proof claims and exploratory analogies. Such entries are historical context, not accepted RH inputs. The track reports state what survived each audit. No source was newly promoted to “independently verified” during publication editing.
 
-## Selected mathematical entry points
+## Selected mathematical entry points {#selected-mathematical-entry-points}
 
 | Topic | Primary or official source | Exact use and boundary |
 |---|---|---|
@@ -32,7 +48,7 @@ The inherited bibliography includes bounded audits of proof claims and explorato
 | Exponential decay of Xi | [DLMF 5.11.9](https://dlmf.nist.gov/5.11#E9), [25.9.3](https://dlmf.nist.gov/25.9#E3), [25.4.4](https://dlmf.nist.gov/25.4#E4) | Standard Gamma decay, an unconditional zeta estimate and completion conventions. No RH input. |
 | Supplementary moments | [Simonič–Starichkova, 2105.06821v3](https://arxiv.org/html/2105.06821v3) | A mean-square error estimate used for a moment asymptotic; the cyclicity theorem does not depend on that refinement. |
 
-## Finite-head interpolation and conditioning
+## Finite-head interpolation and conditioning {#finite-head-interpolation-and-conditioning}
 
 The [Priority 2 update](tracks/19-finite-even-head-spanning.md) uses the following established tools. These prose citations supplement the historical statement ledger; they do not change its recorded verification statuses.
 
@@ -45,7 +61,7 @@ The [Priority 2 update](tracks/19-finite-even-head-spanning.md) uses the followi
 
 The [conditioning note](../../archive/reports/research/full_ground_capture/priority2/notes/conditioning_literature.md) records the exact matrix conventions and the distinction between raw coefficients, head norm and physical norm. Reading these passages is a scoped citation check, not a new verification of every proof in the cited works.
 
-## Where the exact statement-level records live
+## Where the exact statement-level records live {#where-the-exact-statement-level-records-live}
 
 - [Initial theorem and computation ledger](../../archive/literature/literature/sources.json).
 - [Weil frontier source notes](../../archive/literature/literature/notes/weil-sources.json).
@@ -56,6 +72,6 @@ The [conditioning note](../../archive/reports/research/full_ground_capture/prior
 
 For later tracks, the canonical report and its supporting note provide theorem numbers, hypotheses, versions and failed applicability checks. Particularly relevant are [the local-to-global stack](../../archive/reports/research/local_global_theorem_stack.md), [the Sonin audit](../../archive/reports/research/sonine_filtration_audit.md) and [the cyclicity source note](../../archive/reports/research/full_ground_capture/notes/moment_problem_sources.md).
 
-## Rights and retrieval
+## Rights and retrieval {#rights-and-retrieval}
 
 Only project commentary and bibliographic metadata are reproduced here. Third-party full texts, cached PDFs/HTML/TeX and ancillary software are excluded. External links point to the relevant publisher, repository or official reference; their content and rights are outside this publication. Source retrieval dates and versions are preserved where the research recorded them. No unrecorded access date, peer-review outcome or new author identity is supplied.

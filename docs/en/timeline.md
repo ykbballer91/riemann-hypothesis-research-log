@@ -1,6 +1,9 @@
-# Research timeline
+# Research timeline {#research-timeline}
 
-**STATUS: RIEMANN HYPOTHESIS OPEN**
+**STATUS: RIEMANN HYPOTHESIS OPEN.**
+
+**B PROGRAM: CONTINUE. L7 complete. L8 not started.** The [2026-10-09 update](updates/2026-10-09-logic-rh-l7.md) and section 24 below state the latest question and limited results. Earlier sections record decisions at their respective checkpoints.
+
 
 This is the edited research sequence maintained by **@ykbballer91**, with AI-assisted derivations and internal audits. It contains the 17 tracks identified by the read-only publication inventory followed by separately dated cyclicity, finite-head, and CMP/ES updates. A track is a bounded investigation, not a claim of a new theorem of independent research significance.
 
@@ -8,7 +11,7 @@ Dates below come from the named research or completion reports. They are not est
 
 The Phase 1 Git inventory records 29 commits. Those commits are an archival chronology, not a substitute for report dates: some research was added as a later working-tree snapshot. Historical states are preserved at their own scope; the old main state and release README do not summarize every later track. See the [source map](source-map.md).
 
-## 01. 2026-09-29 — [Initial Weil program: finite positivity and its limits](tracks/01-initial-weil-program.md)
+## 01. 2026-09-29 — [Initial Weil program: finite positivity and its limits](tracks/01-initial-weil-program.md) {#01-2026-09-29-initial-weil-program-finite-positivity-and-its-limits}
 
 **Question and test.** The opening program asked whether finite certificates, kernel identities and continuity could establish positivity of the Weil quadratic form on every compact support. Weil positivity is a criterion for RH; proving an equivalent statement still requires an independent argument. Twenty-three recorded cycles checked finite forms, fixed support bounds, operator dictionaries, arithmetic identities and selected external proof claims. Tests repeatedly separated a finite matrix from its infinite tail and from the coupling between the two.
 
@@ -20,7 +23,7 @@ The Phase 1 Git inventory records 29 commits. Those commits are an archival chro
 
 **Status.** Completed exploratory program; all-support Weil positivity and RH remain open.
 
-## 02. 2026-09-29 — [Arithmetic generators and boundary conditions](tracks/02-generator-boundary.md)
+## 02. 2026-09-29 — [Arithmetic generators and boundary conditions](tracks/02-generator-boundary.md) {#02-2026-09-29-arithmetic-generators-and-boundary-conditions}
 
 **Question and test.** Could a generator reconstructed from primes and Gamma factors carry boundary conditions that force the zero spectrum onto the critical line? The comparison covered de Bruijn–Newman evolution, an inverse spectral m-function and modular-surface scattering. In each case the question was whether the actual arithmetic object, including multiplicities, was preserved.
 
@@ -32,7 +35,7 @@ The Phase 1 Git inventory records 29 commits. Those commits are an archival chro
 
 **Status.** Exact correspondences retained; no independent confinement mechanism obtained.
 
-## 03. 2026-09-29 — [The missing Frobenius mechanism](tracks/03-missing-frobenius.md)
+## 03. 2026-09-29 — [The missing Frobenius mechanism](tracks/03-missing-frobenius.md) {#03-2026-09-29-the-missing-frobenius-mechanism}
 
 **Question and test.** Finite-field proofs supply a model for asking where arithmetic origin, trace, duality and purity enter. The aim was to identify the missing theorem over the integers, not to transfer a finite-field analogy by name. The audit compared the curve/Jacobian polarization argument, broader cohomological purity, Deninger proposals and the existing adelic quotient that represents zeta zeros.
 
@@ -44,7 +47,7 @@ The Phase 1 Git inventory records 29 commits. Those commits are an archival chro
 
 **Status.** Missing positivity/purity isolated. The historical main state stops here; later tracks have separate states.
 
-## 04. 2026-09-29 — [Arithmetic polarization and intersection pairings](tracks/04-arithmetic-polarization.md)
+## 04. 2026-09-29 — [Arithmetic polarization and intersection pairings](tracks/04-arithmetic-polarization.md) {#04-2026-09-29-arithmetic-polarization-and-intersection-pairings}
 
 **Question and test.** Could an existing arithmetic intersection or height theorem provide the positive pairing missing from the zero-bearing quotient? The track compared Arakelov heights, explicit-formula “intersection” language, adelic Fourier involutions and product formulas, checking the actual spaces and subtraction of pole terms.
 
@@ -56,7 +59,7 @@ The Phase 1 Git inventory records 29 commits. Those commits are an archival chro
 
 **Status.** Existing geometric theorems retained; the required arithmetic polarization was not constructed.
 
-## 05. 2026-09-29 — [Continuous scale flow and prime return maps](tracks/05-continuous-scale-flow.md)
+## 05. 2026-09-29 — [Continuous scale flow and prime return maps](tracks/05-continuous-scale-flow.md) {#05-2026-09-29-continuous-scale-flow-and-prime-return-maps}
 
 **Question and test.** Prime periodic orbits have lengths log p. The question was whether their actual arithmetic return maps could explain the real part 1/2 of every zero. The audit separated a mapping torus, its fiber monodromy, local p-adic transverse action and a genuine smooth Poincaré return map. It also separated local orbit modes from the global zero representation.
 
@@ -68,7 +71,7 @@ The Phase 1 Git inventory records 29 commits. Those commits are an archival chro
 
 **Status.** Known arithmetic geometry clarified; no new purity theorem or spectral realization claimed.
 
-## 06. 2026-09-30 — [One-prime return and a faithful Banach completion](tracks/06-one-prime-return.md)
+## 06. 2026-09-30 — [One-prime return and a faithful Banach completion](tracks/06-one-prime-return.md) {#06-2026-09-30-one-prime-return-and-a-faithful-banach-completion}
 
 **Question and test.** If one arithmetic return operator grows subexponentially in both directions while retaining every zero evaluation, can it force every zero character to have zero real exponent? The work fixed the actual test quotient and constructed a normed completion from a specified quotient seminorm. It checked continuity of zero evaluations and finite jets, rather than assuming a Hilbert space or an exact spectrum.
 
@@ -80,7 +83,7 @@ The Phase 1 Git inventory records 29 commits. Those commits are an archival chro
 
 **Status.** Faithful evaluation retention and an abstract sufficient lemma proved; its arithmetic growth hypothesis remains open.
 
-## 07. 2026-09-30 — [Dyadic arithmetic reduction](tracks/07-dyadic-arithmetic-reduction.md)
+## 07. 2026-09-30 — [Dyadic arithmetic reduction](tracks/07-dyadic-arithmetic-reduction.md) {#07-2026-09-30-dyadic-arithmetic-reduction}
 
 **Question and test.** Can the representative of a class be pushed into one side of the logarithmic line with a quantitatively small norm after repeated dilation by 2? The construction used full integer Möbius inversion of the arithmetic sum, a smooth cutoff and a moment correction. Sampling the flow at powers of 2 does not restrict the arithmetic input to powers of 2.
 
@@ -92,7 +95,7 @@ The Phase 1 Git inventory records 29 commits. Those commits are an archival chro
 
 **Status.** Explicit reduction and unconditional rate retained; the desired endpoint is an equivalent reformulation, not progress toward proving RH.
 
-## 08. 2026-09-30 — [Prime complexes and parity pairing](tracks/08-prime-complex-parity.md)
+## 08. 2026-09-30 — [Prime complexes and parity pairing](tracks/08-prime-complex-parity.md) {#08-2026-09-30-prime-complexes-and-parity-pairing}
 
 **Question and test.** The Möbius sum is a signed Euler characteristic. Could a canonical matching on a prime complex leave only a square-root-sized obstruction? The complex Δ_X consists of finite prime subsets whose product is at most X. The convention is M(X) = − reduced χ(Δ_X). Toggling the smallest prime, 2, yields an explicit matching and filtered chain description.
 
@@ -104,7 +107,7 @@ The Phase 1 Git inventory records 29 commits. Those commits are an archival chro
 
 **Status.** Exact combinatorial identities retained; no square-root estimate for M(X) obtained.
 
-## 09. 2026-09-30 — [Prime-logarithm phases: the arithmetic comma track](tracks/09-arithmetic-comma.md)
+## 09. 2026-09-30 — [Prime-logarithm phases: the arithmetic comma track](tracks/09-arithmetic-comma.md) {#09-2026-09-30-prime-logarithm-phases-the-arithmetic-comma-track}
 
 **Question and test.** Prime logarithms generate a torus flow. Could nonresonance, long-time phase statistics or pretentious distance control the distinguished phase at which the Möbius sum is read? Exact finite Fourier identities, Mellin/Perron reconstruction, time-averaged sinc factors, high moments and near returns were checked. The cost of removing smoothing was kept explicit.
 
@@ -116,7 +119,7 @@ The Phase 1 Git inventory records 29 commits. Those commits are an archival chro
 
 **Status.** Exact bridges and their losses retained; phase statistics alone did not provide the missing estimate.
 
-## 10. 2026-09-30 — [Weighted prime halfspaces](tracks/10-weighted-prime-half-space.md)
+## 10. 2026-09-30 — [Weighted prime halfspaces](tracks/10-weighted-prime-half-space.md) {#10-2026-09-30-weighted-prime-halfspaces}
 
 **Question and test.** Write squarefree integers as prime subsets subject to a logarithmic weight bound. The question was whether this structure forces cancellation between even and odd subset sizes. The track checked finite-difference bounds, exact large-prime decompositions, Gibbs tilts and the Selberg–Delange family S_z(X) = Σ_{n≤X} μ²(n)z^{ω(n)}. Here μ is the Möbius function and ω counts distinct prime factors.
 
@@ -128,7 +131,7 @@ The Phase 1 Git inventory records 29 commits. Those commits are an archival chro
 
 **Status.** Local expansions and exact finite identities retained; no fixed-power cancellation estimate obtained.
 
-## 11. 2026-09-30 — [The global remainder beyond local asymptotic orders](tracks/11-global-remainder.md)
+## 11. 2026-09-30 — [The global remainder beyond local asymptotic orders](tracks/11-global-remainder.md) {#11-2026-09-30-the-global-remainder-beyond-local-asymptotic-orders}
 
 **Question and test.** If every coefficient in a local asymptotic expansion vanishes, where does the Möbius sum remain? The work used a fixed Gaussian readout to separate local expansion data from global singularities. For R(u) = Σ μ(n)e^{−(u−log n)²}, absolute convergence gives the transform √π e^{s²/4}/ζ(s) for Re s > 1. Contour shifts were checked with explicit height grouping and multiplicities.
 
@@ -140,7 +143,7 @@ The Phase 1 Git inventory records 29 commits. Those commits are an archival chro
 
 **Status.** Exact transform and finite-shift statements retained; the target growth estimate remains equivalent to RH.
 
-## 12. 2026-09-30 — [Strategy reset: arithmetic estimates and closure](tracks/12-mobius-closure-audit.md)
+## 12. 2026-09-30 — [Strategy reset: arithmetic estimates and closure](tracks/12-mobius-closure-audit.md) {#12-2026-09-30-strategy-reset-arithmetic-estimates-and-closure}
 
 **Question and test.** This was an inventory rather than a new proof route. It asked whether existing bilinear, short-interval, correlation or causal-closure estimates already supplied the missing pointwise bound. The audit distinguished pointwise estimates, almost-all statements, logarithmic averages and shift averages. It checked the fixed Gaussian window, sliding derivative energies and the arithmetic delay equations.
 
@@ -152,7 +155,7 @@ The Phase 1 Git inventory records 29 commits. Those commits are an archival chro
 
 **Status.** Three proposed mechanisms were not justified. The audit did not claim that all mathematical strategies were exhausted.
 
-## 13. 2026-09-30 — [Arithmetic restoring force](tracks/13-restoring-force.md)
+## 13. 2026-09-30 — [Arithmetic restoring force](tracks/13-restoring-force.md) {#13-2026-09-30-arithmetic-restoring-force}
 
 **Question and test.** Could the actual theta kernel impose a force that confines zeros, without simply assuming a global sign condition equivalent to RH? The track derived off-axis cosine/hyperbolic-sine equations, examined logarithmic derivatives and fixed the de Bruijn–Newman heat sign and time convention. It separated real-axis repulsion from confinement of complex branches.
 
@@ -164,7 +167,7 @@ The Phase 1 Git inventory records 29 commits. Those commits are an archival chro
 
 **Status.** Correct evolution laws retained; the time-zero confinement regime remains unproved.
 
-## 14. 2026-09-30 — [Local-to-global zero confinement](tracks/14-local-to-global.md)
+## 14. 2026-09-30 — [Local-to-global zero confinement](tracks/14-local-to-global.md) {#14-2026-09-30-local-to-global-zero-confinement}
 
 **Question and test.** Several local or constrained transforms have real zeros. The task was to identify exactly what must converge to transfer that conclusion to Xi. The audit compared Hermite–Mellin results, local-field statements, completed transforms with finite correction factors, semilocal Sonin stability and the finite Weil-ground construction.
 
@@ -176,7 +179,7 @@ The Phase 1 Git inventory records 29 commits. Those commits are an archival chro
 
 **Status.** Local theorems and proxy convergence retained; the global bridge remains open.
 
-## 15. 2026-09-30 — [A common variational parent?](tracks/15-common-parent.md)
+## 15. 2026-09-30 — [A common variational parent?](tracks/15-common-parent.md) {#15-2026-09-30-a-common-variational-parent}
 
 **Question and test.** The actual Weil ground state and a prolate proxy both appear near the arithmetic kernel. Could one variational principle force them to agree? The work fixed the pullback Q(Eh), its induced metric E*E, and the difference between the prolate h₀/h₄ zero-integral mixture and a usual concentration ground state. It tested energy excess, residuals and gaps.
 
@@ -188,7 +191,7 @@ The Phase 1 Git inventory records 29 commits. Those commits are an archival chro
 
 **Status.** An exact variational dictionary and sufficient estimates retained; full ground comparison remains open.
 
-## 16. 2026-09-30 — [Rates, history and finite-cutoff splitting](tracks/16-rate-history.md)
+## 16. 2026-09-30 — [Rates, history and finite-cutoff splitting](tracks/16-rate-history.md) {#16-2026-09-30-rates-history-and-finite-cutoff-splitting}
 
 **Question and test.** Could the way support and Fourier cutoffs increase select the arithmetic kernel from the global radical? The track separated support restriction R_a from periodic Fourier projection P_N, examined prime-power threshold events, and compared diagnostic paths N ≍ a² and N ≍ a³.
 
@@ -200,7 +203,7 @@ The Phase 1 Git inventory records 29 commits. Those commits are an archival chro
 
 **Status.** Rate and finite-endpoint facts retained. Later refinements apply to restricted families and do not retrospectively prove a full-ground statement here.
 
-## 17. 2026-09-30 — [Hierarchical selection in fixed derivative families](tracks/17-hierarchical-selection.md)
+## 17. 2026-09-30 — [Hierarchical selection in fixed derivative families](tracks/17-hierarchical-selection.md) {#17-2026-09-30-hierarchical-selection-in-fixed-derivative-families}
 
 **Question and test.** After the leading boundary energy becomes degenerate, do successive terms select k within F_m = span{k,k″,…,k⁽²ᵐ⁾}? The order of operations is the actual projection P_N R_a. The work derived fixed-m support asymptotics, controlled their Gram matrices, compared Fourier resolution with the boundary scale, and separately audited prime rank-one perturbations and Sonin filtrations.
 
@@ -212,7 +215,7 @@ The Phase 1 Git inventory records 29 commits. Those commits are an archival chro
 
 **Status.** Fixed finite-m hierarchy established within its stated domain; full ground, growing m and RH remain open.
 
-## 18. 2026-09-30 — [Cyclicity of the even derivative family](tracks/18-even-l2-cyclicity.md)
+## 18. 2026-09-30 — [Cyclicity of the even derivative family](tracks/18-even-l2-cyclicity.md) {#18-2026-09-30-cyclicity-of-the-even-derivative-family}
 
 **Question and test.** Is the union of all even derivative families dense in the actual even L² space? Carleman density and an independent analytic-Fourier uniqueness argument.
 
@@ -226,7 +229,7 @@ The Phase 1 Git inventory records 29 commits. Those commits are an archival chro
 
 Internal audits are not external peer review. A proved auxiliary statement, a conditional criterion, an interval computation and a floating-point diagnostic are different kinds of evidence. None of the entries establishes RH.
 
-## 19. 2026-09-30 — [Finite even Fourier heads](tracks/19-finite-even-head-spanning.md)
+## 19. 2026-09-30 — [Finite even Fourier heads](tracks/19-finite-even-head-spanning.md) {#19-2026-09-30-finite-even-fourier-heads}
 
 **Question and test.** After cyclicity, the next authorized task fixed the actual even Fourier head, separated ideal full-line samples from support-restricted columns, and compared tail errors with Vandermonde inverse bounds.
 
@@ -237,7 +240,7 @@ Internal audits are not external peer review. A proved auxiliary statement, a co
 **Transition and status.** Priority 2 stopped here. Growing-order selection, full-ground capture, parity/ES, G* and RH remain open. No later priority was started.
 
 
-## 20. 2026-10-01 public update — [Existing-theorem imports and CMP / ES](updates/2026-10-01-cmp-es.md)
+## 20. 2026-10-01 public update — [Existing-theorem imports and CMP / ES](updates/2026-10-01-cmp-es.md) {#20-2026-10-01-public-update-existing-theorem-imports-and-cmp-es}
 
 **What changed.** The selected direct route now focuses on complex comparison of the actual finite ground with the prolate proxy, and eventual simplicity and evenness of that ground. Both remain unproved and must hold on the same cofinal sequence.
 
@@ -247,7 +250,7 @@ Internal audits are not external peer review. A proved auxiliary statement, a co
 
 **Status.** CASE D — CMP OPEN + ES OPEN. EVEN FULL-GROUND CAPTURE: NOT ESTABLISHED. STATUS: RIEMANN HYPOTHESIS OPEN.
 
-## 21. Public addition — 2026-10-05: October 1–2 records and [joint transfer](updates/2026-10-05-joint-transfer.md)
+## 21. Public addition — 2026-10-05: October 1–2 records and [joint transfer](updates/2026-10-05-joint-transfer.md) {#21-public-addition-2026-10-05-october-12-records-and-joint-transfer}
 
 **Change of question.** The investigation moved from comparing finished objects to asking whether they shared generating rules or an underlying structure. Records on generating formulas, prime repetitions, mean drift and dilation were imported with their originals preserved.
 
@@ -263,7 +266,7 @@ Internal audits are not external peer review. A proved auxiliary statement, a co
 
 **Stop.** The task ends at import, review and publication. CMP, ES, full even-ground capture and RH remain unproved. This is not completion of the earlier, unstarted residual-bottleneck audit.
 
-## 22. Public addition — 2026-10-07: [Reducing ES to strict parity](updates/2026-10-07-core-s.md)
+## 22. Public addition — 2026-10-07: [Reducing ES to strict parity](updates/2026-10-07-core-s.md) {#22-public-addition-2026-10-07-reducing-es-to-strict-parity}
 
 **Research completed: 2026-10-06.** The known commutator structure of the finite Weil matrices shows that strict ordering of the even and odd minima forces a one-dimensional even ground eigenspace. The separate simplicity condition is removed. The joint sufficient route is same-sequence capture + strict parity → ES → adopted transfer → RH.
 
@@ -271,7 +274,7 @@ Internal audits are not external peer review. A proved auxiliary statement, a co
 
 **Publication and stop.** The October 5 update and original evidence are preserved; only the completed result is added to the bilingual guides. No new proof search or numerical work is started. CMP / ES OPEN. EVEN FULL-GROUND CAPTURE: NOT ESTABLISHED. STATUS: RIEMANN HYPOTHESIS OPEN.
 
-## 23. Public addition — 2026-10-08: [Established results through Cycles 6–17](updates/2026-10-08-cycles-6-17.md)
+## 23. Public addition — 2026-10-08: [Established results through Cycles 6–17](updates/2026-10-08-cycles-6-17.md) {#23-public-addition-2026-10-08-established-results-through-cycles-617}
 
 The later Cycles 6–14 are source-dated 2026-10-07; Cycles 15–17 are dated 2026-10-08. Their numbering is distinct from the earlier tracks above. CORE-S retains its original research date, 2026-10-06, and its public-update date, 2026-10-07.
 
@@ -290,4 +293,19 @@ The later Cycles 6–14 are source-dated 2026-10-07; Cycles 15–17 are dated 20
 | 16 | Exact completed endpoint residual | No law transferring trial signs to the true minima; Outcome F |
 | 17 | SUCCESS A: auxiliary fixed-profile oscillation; extension to fixed linear kernels | Excludes only fixed-trial ordering for all large continuous parameters; 2 → 2 |
 
-**Current boundary.** Cycle 17 is SUCCESS A, an auxiliary oscillation theorem, not a theorem of true ground crossings. It excludes fixed-trial one-sided ordering for all large continuous parameters, not selected cofinal subsequences or moving profiles. Cofinal compatibility and incompatibility of CAP/PAR remain unproved. Adopted obligations: 2 → 2. Internal AI review is not external peer review or formal verification. Publication stops without Cycle 18.
+**Boundary at Cycle 17.** Cycle 17 is SUCCESS A, an auxiliary oscillation theorem, not a theorem of true ground crossings. It excludes fixed-trial one-sided ordering for all large continuous parameters, not selected cofinal subsequences or moving profiles. Cofinal compatibility and incompatibility of CAP/PAR remain unproved. Adopted obligations: 2 → 2. Internal AI review is not external peer review or formal verification. Publication stops without Cycle 18.
+
+## 24. Public update 2026-10-09 — [Investigating provability](updates/2026-10-09-logic-rh-l7.md)
+
+After Cycle 17, the conditional finite-Weil route was retained on HOLD and the question moved to B, the investigation of fixed RH's ZFC independence. B is the researcher's choice, not a theorem establishing either the universal impossibility of analytic proof or the promise of independence.
+
+| Recorded research date | Change | Scope and remaining gap |
+|---|---|---|
+| 2026-10-08 | Preflight / P1 series; L0–L2 | Examined specified routes and constructions; arithmetized the target and organized two independence obligations. No new bridge |
+| 2026-10-08 | L2-F → L2-D | Confirmed non-certification of the old format and explicitly defined another method. Arithmetic equivalence in PA and RH equivalence in ZFC through usual mathematics; no retroactive certification |
+| 2026-10-08 | L3–L4 | Counterexample-integer amplification, model transfer with premises and finite proof transformations. No new input supplying existence or missing premise proofs |
+| Begun 2026-10-08; completion checks 2026-10-09 | L5 | Compression for some inputs and rejection of the specified policy that all proofs literally contain huge checking outputs. No lower bound for all proofs |
+| 2026-10-09 | L6 | Scoped external 7/8 nonvanishing adoption. Our own kernel/comparator not run; not counted as our proof of RH |
+| 2026-10-09 | L7 | Prime-support normalization, precision bound and proof transfer with costs in the same full-strength ZFC system. No new independence consequence |
+
+**Current state.** L7 complete, L8 not started. RH OPEN; B CONTINUE. I/II OPEN, 2 → 2. Finite Weil HOLD; CAP/PAR separately OPEN, 2 → 2. This release publishes edited summaries; complete new proofs, audits and code remain privately preserved. Publication editing starts neither the original research nor a new cycle.

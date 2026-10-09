@@ -4,7 +4,9 @@
 
 The Markdown editorial sources live under `docs/ja/` and `docs/en/`. The builder maps matching source names to `/ja/` and `/en/` routes. Each page has a paired language switch, a language-specific navigation bar, a canonical URL, `html lang`, and reciprocal `hreflang` links. The source key `index` maps to `guide`, `source-map` to `sources`, and `home` to the language root.
 
-The root and old `/docs/*.html` URLs are compatibility pages, generated from the canonical language source with a redirect and a visible fallback. They do not maintain a separate latest-state snapshot. Redirects retain the query and fragment in JavaScript. Historical anchor aliases are preserved. The unmodified research-state record remains the source of status metadata; this editorial reorganization does not update research claims.
+The root and old `/docs/*.html` URLs are compatibility pages, generated from the canonical language source with a redirect and a visible fallback. They do not maintain a separate latest-state snapshot. Redirects retain the query and fragment in JavaScript. Historical anchor aliases are preserved. The historical research-state record and its status metadata remain unchanged.
+
+The latest edited public snapshot is [the October 9 state record](../../data/current-state-2026-10-09.json). Older dated records remain historical evidence. The paired current-state pages explain program B and the separate finite-Weil account; no new full research originals are copied into the build inputs.
 
 ```sh
 python3 -m venv .venv

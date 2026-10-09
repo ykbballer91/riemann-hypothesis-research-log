@@ -35,7 +35,7 @@ def check():
     errors=[];site=ROOT/'_site'
     sources={lc:{p.relative_to(ROOT/'docs'/lc).with_suffix('').as_posix() for p in (ROOT/'docs'/lc).rglob('*.md')} for lc in LANGUAGES}
     if sources['ja'] != sources['en']:errors.append('Unpaired editorial source')
-    if len(sources['en'])!=35:errors.append('Expected 35 editorial page pairs')
+    if len(sources['en'])!=36:errors.append('Expected 36 editorial page pairs')
     def require(ok,msg):
         if not ok:errors.append(msg)
     for lc in LANGUAGES:
@@ -158,6 +158,36 @@ def check():
                 'actual_parity_minima_oscillation_proved','CAP_PAR_closed','external_peer_review',
                 'formal_verification','bibliographic_novelty_claimed']:
         require(release['cycle17'][key] is False,'Cycle17 scope inflation: '+key)
+    # Latest editorial summary is separate from immutable historical evidence.
+    latest_key='updates/2026-10-09-logic-rh-l7'
+    latest_formulas=[]
+    for lc in LANGUAGES:
+        src=(ROOT/source_for(lc,latest_key)).read_text()
+        latest_formulas.append([re.sub(r'\s+','',x) for x in re.findall(r'\$\$(.*?)\$\$',src,re.S)])
+        for marker in ['2026-10-09','L7','L8','ZFC','L2-D','1.0.0','HOLD','CAP','PAR','2 → 2']:
+            require(marker in src,f'Missing L7 publication marker: {lc}: {marker}')
+        for key in ['home','index','current-state','roadmap','timeline','source-map']:
+            page=(ROOT/source_for(lc,key)).read_text()
+            require(latest_key.split('/')[-1]+'.md' in page,f'L7 update not reachable from {lc}/{key}')
+        for key in ['current-state','roadmap']:
+            page=(ROOT/source_for(lc,key)).read_text()
+            require('L7' in page and 'HOLD' in page and '2 → 2' in page,f'Latest B/Weil state mismatch: {lc}/{key}')
+    require(latest_formulas[0]==latest_formulas[1],'L7 display formulas differ')
+    latest=json.loads((ROOT/'data/current-state-2026-10-09.json').read_text())
+    require(latest['rh_status']=='OPEN' and latest['latest_completed_stage']=='LOGIC-RH L7','L7 latest status drift')
+    require(latest['program_decision']=='RESEARCHER_CHOICE_TO_CONTINUE','B researcher decision drift')
+    require(latest['canonical_definition_version']=='L2-D 1.0.0','Canonical definition version drift')
+    b=latest['b_obligations'];weil=latest['finite_weil_route']
+    require(b['I']['status']==b['II']['status']=='OPEN' and b['before']==b['after']==2,'B obligation count/status drift')
+    require(weil['status']=='HOLD' and weil['CAP']==weil['PAR']=='OPEN' and weil['before']==weil['after']==2 and weil['separate_from_b_accounting'],'Separate finite-Weil account drift')
+    require(latest['l6']['own_lean_or_comparator_execution']=='NOT RUN','L6 own-kernel scope drift')
+    require(latest['l6']['zero_free_region']=='Re(s) > 7/8 and s != 1' and latest['l6']['remaining_closed_band']=='[1/8,7/8]','L6 analytic boundary drift')
+    for key in ['global_violation_preservation_pa_certified','hilbert_proof_strings_generated','proof_transformer_implemented','full_proof_system_lower_bound_obtained','new_independence_bridge_obtained']:
+        require(latest['l7'][key] is False,'L7 scope inflation: '+key)
+    for key in ['new_rh_truth_or_independence_result','new_mathematical_exploration_in_this_release','l8_started','cycle18_started','new_full_research_originals_published','new_internal_logs_or_definition_dag_published']:
+        require(latest[key] is False,'Unexpected L7 release action/result: '+key)
+    for key in ['finite_execution_checks_are_universal_proofs','project_proofs_machine_verified','external_peer_review_claimed','academic_novelty_claimed']:
+        require(latest['evidence_level'][key] is False,'Evidence scope inflation: '+key)
     readme=(ROOT/'README.md').read_text();readme_without_switch='\n'.join(line for line in readme.splitlines() if '日本語版はこちら' not in line)
     require(not re.search(r'[ぁ-んァ-ン一-龥]',readme_without_switch),'Japanese body text in canonical README')
     state=json.loads((ROOT/'data/research-state.json').read_text())

@@ -1,26 +1,28 @@
-# Riemann Hypothesis Research Log
+# Riemann Hypothesis Research Log {#riemann-hypothesis-research-log}
 
 **STATUS: RIEMANN HYPOTHESIS OPEN.**
 
-What might force every nontrivial zero of the Riemann zeta function onto the critical line? This AI-assisted research log records attempts, auxiliary results, failed approaches, and the gaps that remain. It does not establish RH.
+**B PROGRAM: CONTINUE. L7 complete. L8 not started.**
 
-Curated by **[@ykbballer91](https://github.com/ykbballer91)**. The original research record begins on 2026-09-29; the repository was first published on 2026-09-30.
+The Riemann Hypothesis says that every nontrivial zero of the zeta function has real part $1/2$. This AI-assisted log follows attempts at an analytic proof and the subsequent investigation of whether a fixed arithmetic RH sentence is provable in, or independent of, ZFC. No new proof of RH, its negation, either side of unprovability, or full independence has been obtained.
 
-## Where the work stands
+Curated by **[@ykbballer91](https://github.com/ykbballer91)**. The original record begins on 2026-09-29; first publication was on 2026-09-30.
 
-The adopted central obligations are **capture in the even ground space (CAP)** and **strict parity ordering (PAR)** on one resolving cofinal sequence. Both remain unproved: 2 → 2. This is not a completion percentage or a measure of distance to RH.
+## Where the work stands {#where-the-work-stands}
 
-[Read the current state](current-state.md) · [Latest update: 2026-10-08](updates/2026-10-08-cycles-6-17.md)
+B is the researcher's chosen program to investigate the ZFC independence of fixed RH. Independence means that neither a statement nor its negation can be proved from the specified axioms. Both consistency obligations remain OPEN: **2 → 2**. This neither establishes independence as promising nor measures RH completion.
 
-This release adds Cycles 6–17. The latest auxiliary theorem shows that a fixed smooth endpoint trial's completed residual takes both signs arbitrarily far out. **It is not oscillation of the true ground-energy difference.** CMP, ES and full even-ground capture remain unproved.
+L7 restricts the integers under consideration to those with no gaps in their prime support, while controlling precision and proof cost when returning to the original finite comparison. Transferring proofs does not establish their absence. No new independence consequence follows.
 
-The finite simplicity consequence of [CORE-S](updates/2026-10-07-core-s.md) and the [earlier joint transfer](updates/2026-10-05-joint-transfer.md) are retained.
+[Read the current state](current-state.md) · [Latest update: 2026-10-09](updates/2026-10-09-logic-rh-l7.md)
 
-## Explore the record
+The earlier finite-Weil route is **HOLD**. Capture CAP and strict parity PAR on one sequence remain OPEN, 2 → 2, in an account separate from B. This does not prove that route impossible. [Cycles 6–17](updates/2026-10-08-cycles-6-17.md), [CORE-S](updates/2026-10-07-core-s.md), and the [joint transfer](updates/2026-10-05-joint-transfer.md) remain dated results.
+
+## Explore the record {#explore-the-record}
 
 - [Guide](index.md) — the question, notation, and evidence labels.
-- [Timeline](timeline.md) — what was tried, what survived, and why work moved on.
-- [Roadmap](roadmap.md) — established implications and unproved inputs.
-- [Sources](source-map.md) — original reports, audits, computations, and references.
+- [Timeline](timeline.md) — what was tried, what survived, and why the question changed.
+- [Roadmap](roadmap.md) — current B and the analytic route on hold.
+- [Sources](source-map.md) — public evidence and the boundaries of edited summaries.
 
-The editorial pages are available in Japanese and English. Research evidence remains in its original language. An auxiliary proof, a conditional result, and a numerical diagnostic retain their distinct scopes.
+L0–L7 research originals remain privately preserved; this release publishes selected editorial summaries. Complete new proofs, internal audits, and code are not published. These summaries are not the full evidence needed for third-party reproduction of every claim. The paired guides, historical public articles, and earlier evidence each retain their stated scope.

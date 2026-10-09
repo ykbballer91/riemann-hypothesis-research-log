@@ -1,12 +1,37 @@
-# Current state: what is established and what remains
+# Current state: what is established and what remains {#current-state-what-is-established-and-what-remains}
 
 **STATUS: RIEMANN HYPOTHESIS OPEN**
 
-The latest state is **2026-10-08, at the end of Cycle 17**. This release adds the [Cycles 6–17 update](updates/2026-10-08-cycles-6-17.md) and [current state record](../../data/current-state-2026-10-08.json). [CORE-S](updates/2026-10-07-core-s.md), the [October 5 joint transfer](updates/2026-10-05-joint-transfer.md) and earlier records remain dated history.
+**B PROGRAM: CONTINUE. L7 complete. L8 not started.**
 
-## The adopted direct route
+The latest state is **2026-10-09, at the completion of L7**. The [research update](updates/2026-10-09-logic-rh-l7.md) and [public state record](../../data/current-state-2026-10-09.json) summarize the editorial changes after Cycle 17.
 
-The central obligations are **capture in the full even ground space (CAP)** and **strict parity ordering (PAR)** on the same resolving cofinal sequence. Both are unproved: **2 → 2**. This counts obligation types in the chosen sufficient route, not distance to RH or a universal minimum number of propositions.
+## Current question: ZFC independence of fixed RH
+
+B is the researcher's chosen continuing program. Independence means that neither a statement nor its negation can be proved from the specified axioms. $T=\mathrm{ZFC}$; $\rho$ is the arithmetic RH sentence fixed in L2-D 1.0.0. Its RH equivalence in the same ZFC was established at the level of usual mathematics.
+
+$$I:\operatorname{Con}(T+\neg\rho)\;\text{— OPEN},\qquad II:\operatorname{Con}(T+\rho)\;\text{— OPEN}.$$
+
+$\operatorname{Con}$ means the absence of a finite proof of contradiction in the indicated theory. Both I and II remain open: **2 → 2**. This classifies research obligations; it is not a minimum problem count or an independence probability. No new proof of RH, its negation, either side of ZFC unprovability, or full independence has been obtained. Gödel's general theorems alone do not establish RH's independence.
+
+## What L7 supplies and what is missing
+
+Usual ZFC arguments move a violation of the fixed finite rational comparison to an integer whose prime support has no gaps. The integer does not increase, and each replacement decreases it, while output precision is controlled by the original precision and a quadratic bound in the original integer. In the same full-strength ZFC proof system fixed in L5, an additional-character bound transfers any proof of the restricted finite section to the original finite section. The [technical section](updates/2026-10-09-logic-rh-l7.md#l7-technical) states hypotheses, boundaries and costs.
+
+The level is usual mathematical reasoning inside ZFC and a syntactic length bound. PA-provability of global violation preservation, a complete generated Hilbert proof string, machine proof and measured cost constants are not certified. No lower bound for all proofs, new reduction to finite consistency, or new relative-consistency input has been obtained.
+
+L6's 7/8 nonvanishing is a scoped adoption of an external theorem. It retains strict $\Re(s)>7/8$, excludes the ordinary analytic pole $s=1$, and leaves the corresponding closed band $[1/8,7/8]$. Our own Lean/kernel/comparator runs were not performed. Adoption rests on external raw logs, version comparison and local mathematical checks. This is not counted as our proof of RH.
+
+Research originals remain privately preserved; these pages publish edited summaries. Complete new proofs, audits and code are not published, so the current page and update do not supply the full evidence needed to reproduce every claim.
+
+## Finite-Weil route on hold
+
+The following records **the results and open conditions at the end of Cycle 17, 2026-10-08**. The route is HOLD. CAP/PAR remain OPEN, 2 → 2, in a separate account from B. They are neither renamed I/II nor combined into four obligations. No impossibility or error of finite Weil has been established.
+
+The [Cycles 6–17 update](updates/2026-10-08-cycles-6-17.md) and [historical state record](../../data/current-state-2026-10-08.json), [CORE-S](updates/2026-10-07-core-s.md), and the [October 5 joint transfer](updates/2026-10-05-joint-transfer.md) are preserved.
+## Conditional route adopted through Cycle 17 {#the-adopted-direct-route}
+
+The central obligations at that checkpoint were **capture in the full even ground space (CAP)** and **strict parity ordering (PAR)** on the same resolving cofinal sequence. Both are unproved: **2 → 2**. This counts obligation types in the chosen sufficient route, not distance to RH or a universal minimum number of propositions.
 
 $$a_j\to\infty,\qquad\frac{a_j}{N_j+1}\to0,$$
 
@@ -18,7 +43,7 @@ $$\mathrm{CAP}+\mathrm{PAR}\Longrightarrow\mathrm{CORE\text{-}S}/\mathrm{ES}\Lon
 
 $G_{+,j}$ is the physical L² orthogonal projector onto the entire even ground eigenspace. Results on separate sequences cannot be joined. CORE-S supplies finite simplicity from strict parity in the actual matrix family; the independent $\Delta_+>0$ condition remains removed. The adopted transfer is conditional on additional real-zero structure.
 
-## Latest auxiliary results and their limits
+## Cycle 15–17 auxiliary results and their limits {#latest-auxiliary-results-and-their-limits}
 
 Cycle 15 proved that **prime-only** minimization cannot capture a fixed nonzero even L² target on any resolving cofinal sequence. This is not a counterexample to capture for the completed Weil form.
 
@@ -26,7 +51,7 @@ Cycle 16 identified the completed endpoint residual. Cycle 17 established uncond
 
 **A fixed-trial difference is not the difference of the true minima.** This oscillation excludes fixed-profile one-sided trial ordering for all sufficiently large continuous parameters. It does not extend to every cofinal subsequence, adaptive profiles, actual ground crossings or a disproof of CAP/PAR.
 
-## Unproved status
+## Unproved status {#unproved-status}
 
 - **CMP: NOT ESTABLISHED.**
 - **ES: NOT ESTABLISHED.**
@@ -38,17 +63,17 @@ Cycle 16 identified the completed endpoint residual. Cycle 17 established uncond
 
 Ordinary L² proximity alone does not yield complex comparison. The adopted ES-plus-strong-L² transfer uses additional real-zero structure. The ES-independent [earlier CMP-R](updates/2026-10-01-cmp-es.md) remains a separate rate-based sufficient condition. The simple-even certificate at $c=13,N=4$ still covers only that point.
 
-## Next question and stopping point
+## Cycle 17 stopping point {#next-question-and-stopping-point}
 
-Actual arithmetic input proving capture and strict parity on one sequence remains missing. Cycle 17 passed independent internal AI review in its fixed-kernel scope; this is not external peer review, formal verification or academic approval. This publication release stops without Cycle 18, new proof exploration or numerical work.
+Actual arithmetic input proving capture and strict parity on one sequence remains missing. Cycle 17 passed independent internal AI review in its fixed-kernel scope; this is not external peer review, formal verification or academic approval. That research unit stopped without Cycle 18, new proof exploration or numerical work.
 
 [Mathematical details and sources](updates/2026-10-08-cycles-6-17.md) · [Roadmap](roadmap.md) · [Timeline](timeline.md)
 
-## Retained snapshot — 2026-09-30, before the import/CMP/ES update
+## Retained snapshot — 2026-09-30, before the import/CMP/ES update {#retained-snapshot-2026-09-30-before-the-importcmpes-update}
 
 The following earlier summary is preserved as history, not as an expanded list of current main tracks. Its evidence is mapped in [source-map](source-map.md).
 
-## Fixed finite derivative spaces
+## Fixed finite derivative spaces {#fixed-finite-derivative-spaces}
 
 Set $a=\log\lambda$, $Y=\pi\lambda^2$, and
 
@@ -60,7 +85,7 @@ $$\liminf\frac{N}{aY}>\frac4{\pi^2}.$$
 
 This is a sufficient resolution condition. The record does not identify it as necessary or optimal. Constants in a fixed-$m$ statement have not been made uniform for $m\to\infty$. See [hierarchical selection](tracks/17-hierarchical-selection.md).
 
-## Unconditional cyclicity
+## Unconditional cyclicity {#unconditional-cyclicity}
 
 The subsequent auxiliary theorem states
 
@@ -70,7 +95,7 @@ The proof uses exponential integrability of $|\Xi(x)|^2dx$, a polynomial-density
 
 Qualitative $L^2$ density does not give a uniform approximation rate for a changing ground state. It also does not establish density in a Weil form norm, stability of a finite derivative-column system, or convergence of Fourier transforms throughout a complex strip.
 
-## Fixed finite even heads
+## Fixed finite even heads {#fixed-finite-even-heads}
 
 The [Priority 2 update](tracks/19-finite-even-head-spanning.md) proves that each fixed head $E_N^+$, of dimension $N+1$, is exactly spanned by a sufficiently long initial derivative family after sharp restriction and projection. The ideal no-tail rank is $\min(m+1,r)$, where $r$ counts nonzero Xi grid samples. Without a grid hit, the ideal minimal order is $m=N$.
 
@@ -78,7 +103,7 @@ For each fixed $N$, the actual minimal prefix $m=N$ works for all sufficiently l
 
 Exact spanning does not give uniform conditioning: with $N=m$ fixed, the physical smallest singular value still decays in the large-window limit. No quantitative order bound or form-norm estimate for a moving ground follows.
 
-## What remains open
+## What remains open {#what-remains-open}
 
 1. An explicit optimal derivative cutoff at every parameter, and uniform quantitative conditioning/lift bounds for changing finite heads. The fixed-head exact-spanning existence theorem and specified finite certificates are established.
 2. Bounds on every relevant constant when the derivative cutoff $m$ grows with $a,N$.
@@ -89,8 +114,8 @@ Exact spanning does not give uniform conditioning: with $N=m$ fixed, the physica
 
 None of the auxiliary results above bypasses these obligations. The [roadmap](roadmap.md) separates established arrows from open ones.
 
-## Evidence boundaries
+## Evidence boundaries {#evidence-boundaries}
 
 These are written auxiliary arguments with internal independent AI audit records. Selected earlier Lean declarations formalize particular elementary lemmas; they do not formalize the current entire research chain. Numerical overlap, finite spectral agreement, source-preservation checks, and publication validation have their own narrower scopes.
 
-No new unconditional bound on the real parts of all zeta zeros has been obtained here. No percentage of RH completion is assigned.
+No new unconditional bound on the real parts of all zeta zeros was obtained from this finite-Weil route. No percentage of RH completion is assigned.

@@ -1,0 +1,69 @@
+{
+  "snapshot_date": "2026-10-09",
+  "record_kind": "edited_public_summary",
+  "rh_status": "OPEN",
+  "research_program": "B — fixed-statement ZFC independence",
+  "program_decision": "RESEARCHER_CHOICE_TO_CONTINUE",
+  "latest_completed_stage": "LOGIC-RH L7",
+  "canonical_definition_version": "L2-D 1.0.0",
+  "target_theory": "ZFC",
+  "target_sentence": "rho_can",
+  "b_obligations": {
+    "I": {"statement": "Con(ZFC + NOT rho_can)", "status": "OPEN"},
+    "II": {"statement": "Con(ZFC + rho_can)", "status": "OPEN"},
+    "before": 2,
+    "after": 2,
+    "accounting_scope": "Research obligations, not a theorem of logical independence or universal minimality"
+  },
+  "finite_weil_route": {
+    "status": "HOLD",
+    "CAP": "OPEN",
+    "PAR": "OPEN",
+    "before": 2,
+    "after": 2,
+    "separate_from_b_accounting": true,
+    "core_s_and_historical_results_preserved": true
+  },
+  "l7": {
+    "arithmetic_normalization": "PROVED — USUAL ZFC MATHEMATICS",
+    "one_step_conditions": "p < r primes; a,e,k >= 1; gcd(a,pr) = 1; R = a r^e; z = a p^e",
+    "one_step_precision": "K = z(5R+7), K <= 12R^2",
+    "one_step_conclusion": "q(z,K)/z < q(R,k)/R; V(R,k) implies V(z,K)",
+    "normalized_class": "Initial-segment prime support; no ordering of exponents is required",
+    "normalization_precision_bound": "k_* <= max(k,12n^2)",
+    "finite_section_implication": "G_C(2m+4) implies G(m)",
+    "proof_transfer": "Same full-strength L5 proof system P; arbitrary input proofs",
+    "proof_length_upper_bound": "|tau_m(pi)| <= |pi| + A ell(m)^2 + B; fixed constants A,B not numerically measured",
+    "global_violation_preservation_pa_certified": false,
+    "hilbert_proof_strings_generated": false,
+    "proof_transformer_implemented": false,
+    "full_proof_system_lower_bound_obtained": false,
+    "new_independence_bridge_obtained": false
+  },
+  "l6": {
+    "external_theorem_adoption": "SCOPED EXTERNAL-THEOREM LEVEL",
+    "zero_free_region": "Re(s) > 7/8 and s != 1",
+    "remaining_closed_band": "[1/8,7/8]",
+    "band_scope": "Nontrivial zeros only; trivial zeros and the pole are treated separately",
+    "own_lean_or_comparator_execution": "NOT RUN",
+    "evidence": "External kernel-check report, static comparison, local mathematical checks; not our own kernel rerun or full paper reproof"
+  },
+  "evidence_level": {
+    "usual_mathematics_pa_zfc_internal_arguments": true,
+    "internal_ai_audit": true,
+    "finite_execution_checks_are_universal_proofs": false,
+    "project_proofs_machine_verified": false,
+    "external_peer_review_claimed": false,
+    "academic_novelty_claimed": false
+  },
+  "new_rh_truth_or_independence_result": false,
+  "new_mathematical_exploration_in_this_release": false,
+  "l8_started": false,
+  "cycle18_started": false,
+  "new_full_research_originals_published": false,
+  "new_internal_logs_or_definition_dag_published": false,
+  "public_update": {
+    "ja": "docs/ja/updates/2026-10-09-logic-rh-l7.md",
+    "en": "docs/en/updates/2026-10-09-logic-rh-l7.md"
+  }
+}

@@ -1,4 +1,4 @@
-# 参考文献と確認範囲
+# 参考文献と確認範囲 {#_1}
 
 **STATUS: RIEMANN HYPOTHESIS OPEN**
 
@@ -6,7 +6,23 @@
 
 [機械可読な参照記録](../../data/references.json)は、旧6台帳の108件と巡回性ノートの3件の使用記録を保存します。同じ論文も定理・条件付き判定・類比で依存関係が違えば複数回現れます。後続の本文引用には参照元付き外部リンク索引もありますが、検証済み定理一覧や網羅的文献表ではありません。
 
-## 確認ラベルの読み方
+## L0〜L7の公開一次資料と確認範囲
+
+以下は[2026-10-09の更新](updates/2026-10-09-logic-rh-l7.md)で使用する固定版です。限定箇所の読取・照合であり、原典全文の再証明や学術的新規性の網羅調査ではありません。
+
+| 出典・版 | 確認箇所と使用範囲 |
+|---|---|
+| Jeffrey C. Lagarias, *An Elementary Problem Equivalent to the Riemann Hypothesis*, 著者版 July 29, 2001。[著者一次PDF](https://websites.umich.edu/~lagarias/doc/elementaryrh.pdf)、[掲載情報](https://websites.umich.edu/~lagarias/PUBLICATIONS/papers.html) | Problem E / Theorem 1.1のRH同値性。固定有限有理比較、L7の精度関数や証明費用を与える定理ではない |
+| Y. Choie, N. Lichiardopol, P. Moree, P. Solé, *On Robin’s criterion for the Riemann hypothesis*, JTNB 19 (2007), 357–372。[刊行ページ](https://jtnb.centre-mersenne.org/articles/10.5802/jtnb.591/)、[一次PDF](https://www.numdam.org/item/10.5802/jtnb.591.pdf) | §5、Proposition 5.1、Lemmas 5.2–5.5。素数交換・指数整列による極値化。指数順序を要求しないL7の族Cや、固定Lagarias比較と同一視しない |
+| Andrew MacArevey, *On the Lagarias Inequality and Superabundant Numbers*, [arXiv:2602.15905v2](https://arxiv.org/abs/2602.15905v2)、2026-02-19改訂。[一次HTML](https://arxiv.org/html/2602.15905v2) | §2 Lemmas 2.1–2.7、Proposition 2.1、Corollary 2.1、§3 Theorem 3.1。正規化値の増加と最小反例の超過剰性。固定有限qやL7の具体的精度・証明費用は別 |
+| OpenAI, *The Quasi-Riemann Hypothesis*, 30 September 2026。[7/8主稿](https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/build/paper.tex)、[公式Lean非消失定理](https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/OAI/NumberTheory/DirichletL/Nonvanishing.lean) | 固定公式版 `fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb`。主定理と選択した証明連鎖・設定を確認。通常解析で厳密なRe(s)>7/8、s≠1を保持し、外部定理として限定採用 |
+| OpenAI, *The Quasi-Riemann Hypothesis*, October 5, 2026。[11/12別稿](https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-Quasi-Riemann-Hypothesis-October-5-2026/build/paper2.tex) | 同じ固定公式版。平均評価から個別抽出・Mellin非消失、選択した相殺・降下を局所検算。別稿全体の忠実なLean翻訳を認定しない |
+| Dave Goldblatt, [外部再検証REPORT](https://github.com/davegoldblatt/openai-zeta-proof-check/blob/3f11b2203b76902f1b6b234115437302a94b79c3/REPORT.md)、[生ログ](https://github.com/davegoldblatt/openai-zeta-proof-check/tree/3f11b2203b76902f1b6b234115437302a94b79c3/evidence) | 固定版 `3f11b2203b76902f1b6b234115437302a94b79c3`。外部Lean/nanoda成功ログ・設定と対象版のソースを照合。自前kernel/comparator未実行であり、外部査読認定ではない |
+
+外部の論文・形式証明は各著者の成果です。当研究の独自RH証明として数えず、第三者全文・ライブラリ・キャッシュは転載していません。[方法と証拠](methodology.md)と[再現の限界](reproducibility.md)で信頼境界を説明しています。
+
+
+## 確認ラベルの読み方 {#_2}
 
 - 出版状態は雑誌・プレプリント等の区別で、証明を独立検証したという意味ではない。
 - 一次本文確認は指定の主張・箇所を読んだこと。論文全補題の再構成ではない。
@@ -16,7 +32,7 @@
 
 過去の証明主張の限定監査や類比は履歴であり、採用済みRH入力ではありません。公開編集で文献を新たに「独立検証済み」へ昇格させていません。論文タイトルと著者名は原表記を保持します。
 
-## 主な数学的参照先
+## 主な数学的参照先 {#_3}
 
 | 分野 | 一次資料・公式資料 | 使用箇所と限界 |
 |---|---|---|
@@ -32,7 +48,7 @@
 | Xiの指数減衰 | [DLMF 5.11.9](https://dlmf.nist.gov/5.11#E9), [25.9.3](https://dlmf.nist.gov/25.9#E3), [25.4.4](https://dlmf.nist.gov/25.4#E4) | 標準Gamma減衰、無条件ゼータ評価、完備化規約。RHは不要。 |
 | 補足モーメント | [Simonič–Starichkova, 2105.06821v3](https://arxiv.org/html/2105.06821v3) | 補足モーメント漸近に二乗平均誤差評価を使う。巡回性証明はこの精密化に依存しない。 |
 
-## 有限空間の補間と条件数
+## 有限空間の補間と条件数 {#_4}
 
 [Priority 2](tracks/19-finite-even-head-spanning.md)は次の既知道具を使います。旧台帳の確認状態を変更しません。
 
@@ -45,7 +61,7 @@
 
 [条件数ノート](../../archive/reports/research/full_ground_capture/priority2/notes/conditioning_literature.md)に行列規約、係数・有限空間・物理ノルムの区別を記録しています。指定箇所の読解であり、引用論文の全証明の新たな検証ではありません。
 
-## 命題単位の原記録
+## 命題単位の原記録 {#_5}
 
 - [初期定理・計算台帳](../../archive/literature/literature/sources.json)
 - [Weil評価の出典](../../archive/literature/literature/notes/weil-sources.json)
@@ -56,6 +72,6 @@
 
 後続は各主報告・補足に定理番号、前提、版、不適用の理由を記録しています。[局所大域の定理構成](../../archive/reports/research/local_global_theorem_stack.md)、[Sonin監査](../../archive/reports/research/sonine_filtration_audit.md)、[巡回性の出典](../../archive/reports/research/full_ground_capture/notes/moment_problem_sources.md)を参照してください。
 
-## 権利と取得情報
+## 権利と取得情報 {#_6}
 
 掲載するのは本プロジェクトの説明と書誌情報です。第三者全文・PDF/HTML/TeXキャッシュ・補助ソフトは除外しています。外部リンク先の内容と権利はこの公開の管理外です。元の記録にある取得日と版は保持し、記録のない閲覧日、査読結果、著者名は補いません。

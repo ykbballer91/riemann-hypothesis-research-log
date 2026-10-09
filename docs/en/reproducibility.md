@@ -1,10 +1,19 @@
-# Reproducibility and limits of the checks
+# Reproducibility and limits of the checks {#reproducibility-and-limits-of-the-checks}
 
 **STATUS: RIEMANN HYPOTHESIS OPEN**
 
 The public archive preserves selected code, output and written arguments. Publication preparation did not rerun the mathematical experiments, interval certificates or Lean builds. A historical `PASS` must be read with its input, version, precision and domain. Internal AI-agent agreement is not external peer review.
 
-## Start without executing research code
+## Reproducibility boundary for L0–L7
+
+The [2026-10-09 update](updates/2026-10-09-logic-rh-l7.md) is a selective public summary. Complete new proofs, internal audits, code and rational endpoints remain privately preserved; this public tree is not presented as sufficient to reproduce every claim independently. The replay helper and public manifest below cover previously published material.
+
+L7's usual-ZFC argument and length bound are not a generated complete Hilbert proof string or a machine proof. Original finite comparisons included no accepted input violation, so they are not counted as an execution success for violation preservation. L6 uses external public raw verification logs, fixed-version comparisons and local checks; our own kernel/comparator was not run. [References](references.md) links the fixed external manuscripts and report.
+
+This publication edit did not rerun research code, mathematical experiments or Lean. Site construction and checks of documents, links, languages and publication safety are separate from mathematical reproof.
+
+
+## Start without executing research code {#start-without-executing-research-code}
 
 From the public repository root:
 
@@ -31,7 +40,7 @@ python3 artifacts/replay.py \
 
 Arguments following `--` are passed to the script. New outputs stay in the isolated workspace. The helper does not compare them with old results or declare a certificate valid. Review the script and linked mathematical obligations before a full run. Do not use `python -O` for certificate scripts: their assertions check required inequalities.
 
-## Four kinds of evidence
+## Four kinds of evidence {#four-kinds-of-evidence}
 
 | Kind | What it can establish | What it does not establish |
 |---|---|---|
@@ -40,7 +49,7 @@ Arguments following `--` are passed to the script. New outputs stay in the isola
 | Ball/interval certificate plus analytic bounds | The specified finite inequalities and, where supplied, the infinite tail and coupling estimate | Uniform positivity for every support or every parameter |
 | Lean proof | The named declarations under their explicit hypotheses | Unformalized analytic hypotheses, the Weil criterion or RH |
 
-## Selected historical computations
+## Selected historical computations {#selected-historical-computations}
 
 - [Exact finite models](../../artifacts/experiments/scripts/falsify_models.py): Fraction calculations are exact; Decimal quadrature in the same script is explicitly non-certified. The countermodels refute proposed implications, not RH.
 - [Small finite Weil matrix](../../artifacts/experiments/scripts/groskin_independent_certificate.py): Independent assembly and certification concern c = 13, N = 4, a 9-dimensional matrix. The large original 401-dimensional calculation was not independently reproduced here.
@@ -55,7 +64,7 @@ Later common-parent, rate-history and hierarchy experiments are finite diagnosti
 
 Two historical scripts require excluded third-party material: the original-assembly Groskin comparison and the Desogus TeX extraction check. The replay helper refuses to run those as standalone reproducers. Old repository-preservation validators also require private baselines and are not validators of this public tree. Nothing is silently downloaded to fill these gaps.
 
-## Formal verification
+## Formal verification {#formal-verification}
 
 [The Lean scope note](../../artifacts/formal/lean/README.md) records Lean 4.19.0 and a pinned Mathlib revision. [RhAudit.lean](../../artifacts/formal/lean/RhAudit.lean) contains eight declarations: positivity under explicit limits or continuity, elementary block inequalities, a finite counterexample coefficient, and a scalar Schur equivalence. [The saved axiom log](../../artifacts/formal/lean/verification/axioms.txt) lists the ordinary Lean logical axioms and no `sorryAx`.
 
@@ -63,12 +72,12 @@ Two historical scripts require excluded third-party material: the original-assem
 
 Toolchains and Mathlib are not vendored. To rebuild, first reconstruct the layout, then use the saved toolchain and manifest in its `formal/lean` directory. The historical instructions include `lake build` and `lake env lean RhAudit.lean`; fetching the pinned dependencies is a separate network operation. Preserve the manifest rather than treating a freshly updated dependency tree as the historical build.
 
-## The latest cyclicity update
+## Historical cyclicity update {#the-latest-cyclicity-update}
 
 The result is an ordinary analytic proof of density of the even derivatives in even L². Its internal audit checks the Fourier normalization, exponential moments, moment criterion and direct uniqueness proof. It has no finite-head numerical certificate and no claimed conditioning estimate. Density in L² is not a statement about the Weil form topology or full ground capture.
 
 A new rerun should record the script and dependency versions, exported payload hash, parameters, precision, output and which analytic assumptions were checked. That would be new evidence with a new scope. It should not overwrite a historical claim or turn a scoped check into a global RH assertion.
 
-## Subsequent finite-head update
+## Subsequent finite-head update {#subsequent-finite-head-update}
 
 The [Priority 2 record](tracks/19-finite-even-head-spanning.md) separates written rank arguments, high-precision diagnostics and analytic-plus-Arb certificates. Its raw singular-value/rank certificates apply to two stated parameter intervals. Physical-Gram SVD values use finite theta sums and a finite integration interval and remain diagnostic. The code, original outputs and independent internal audit are linked on the track page. Their original research executions are not represented as new publication-review runs.
